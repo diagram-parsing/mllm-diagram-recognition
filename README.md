@@ -133,7 +133,7 @@ The tables below show F1 scores for our evaluation results across the several se
     <tr><td>sap-sam-bpmn</td><td><b>1.0000 ± 0.0000</b></td><td><b>0.7511 ± 0.0002</b></td><td>0.9952 ± 0.0000</td><td>0.5569 ± 0.0094</td><td>0.7372 ± 0.0234</td><td>0.5581 ± 0.0240</td></tr>
     <tr><td>sap-sam-uml</td><td><b>1.0000 ± 0.0000</b></td><td><b>0.2017 ± 0.0043</b></td><td>0.9952 ± 0.0000</td><td>0.1069 ± 0.0093</td><td>0.7373 ± 0.0777</td><td>0.1289 ± 0.0342</td></tr>
     <tr><td>sems</td><td><b>0.9992 ± 0.0000</b></td><td><b>0.8769 ± 0.0011</b></td><td>0.9877 ± 0.0037</td><td>0.5225 ± 0.0030</td><td>0.8392 ± 0.0204</td><td>0.7417 ± 0.0202</td></tr>
-    <tr><td>synth_sem</td><td><b>0.9670 ± 0.0000</b></td><td><b>0.4622 ± 0.0045</b></td><td><b>0.9670 ± 0.0000</b></td><td>0.2790 ± 0.0055</td><td>&ndash;</td><td>&ndash;</td></tr>
+    <tr><td>synth_sem</td><td><b>0.9670 ± 0.0000</b></td><td><b>0.4622 ± 0.0045</b></td><td><b>0.9670 ± 0.0000</b></td><td>0.2790 ± 0.0055</td><td>&ndash;</td><td>0.2078 ± 0.0486</td></tr>
     <tr><td>synth_fc</td><td><b>1.0000 ± 0.0000</b></td><td><b>0.7600 ± 0.0008</b></td><td><b>1.0000 ± 0.0000</b></td><td>0.7167 ± 0.0026</td><td>0.4895 ± 0.0625</td><td>0.3968 ± 0.0511</td></tr>
   </tbody>
 </table>
