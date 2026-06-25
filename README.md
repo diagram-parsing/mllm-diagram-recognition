@@ -22,11 +22,7 @@ The tables below show F1 scores for our evaluation results across the several se
 
 ### End-to-End Recognition (Baseline) (Levenshtein threshold = 0)
 
-**Nodetext_{text}
-text​ / Edge_{text_{part}}
-.** F1. Node text extracted with either PaddleOCR or Qwen3.5-4B. Node_{text}
- combines text and class; Edgetextpart_{text_{part}}
-textpart​​ uses endpoints (head and tail) only. Note: scores in the paper refer to Node Recognition for text only.
+Node<sub>text</sub> / Edge<sub>text-part</sub>. F1. Node text extracted with either PaddleOCR or Qwen3.5-4B. Node<sub>text</sub> combines text and class; Edge<sub>text-part</sub> uses endpoints (head and tail) only. Note: scores in the paper refer to Node Recognition for text only.
 
 <table>
   <thead>
@@ -51,11 +47,7 @@ textpart​​ uses endpoints (head and tail) only. Note: scores in the paper re
 
 ### End-to-End Recognition (five-shot, Levenshtein threshold = 0)
 
-**Nodetext_{text}
-text​ / Edgetextfull_{text_{full}}
-textfull​​.** F1 ± std across 5 runs. Nodetext_{text}
-text​ combines text and class; Edgetextfull_{text_{full}}
-textfull​​ combines endpoints, label, and class.
+Node<sub>text</sub> / Edge<sub>text-full</sub>. F1 ± std across 5 runs. Node<sub>text</sub> combines text and class; Edge<sub>text-full</sub> combines endpoints, label, and class.
 
 <table>
   <thead>
@@ -86,11 +78,7 @@ textfull​​ combines endpoints, label, and class.
 
 ### End-to-End Recognition (five-shot, Levenshtein threshold = 0.1)
 
-**Nodetext_{text}
-text​ / Edgetextfull_{text_{full}}
-textfull​​.** F1 ± std across 5 runs. Nodetext_{text}
-text​ combines text and class; Edgetextfull_{text_{full}}
-textfull​​ combines endpoints, label, and class.
+Node<sub>text</sub> / Edge<sub>text-full</sub>. F1 ± std across 5 runs. Node<sub>text</sub> combines text and class; Edge<sub>text-full</sub> combines endpoints, label, and class.
 
 <table>
   <thead>
@@ -121,11 +109,7 @@ textfull​​ combines endpoints, label, and class.
 
 ### Isolated Edge Recognition (five-shot, Levenshtein threshold = 0)
 
-**Nodetext_{text}
-text​ / Edgetextfull_{text_{full}}
-textfull​​.** F1 ± std across 5 runs, with ground-truth node names provided to isolate edge recognition. Nodetext_{text}
-text​ combines text and class; Edgetextfull_{text_{full}}
-textfull​​ combines endpoints, label, and class.
+Node<sub>text</sub> / Edge<sub>text-full</sub>. F1 ± std across 5 runs, with ground-truth node names provided to isolate edge recognition. Node<sub>text</sub> combines text and class; Edge<sub>text-full</sub> combines endpoints, label, and class.
 
 <table>
   <thead>
@@ -155,11 +139,8 @@ textfull​​ combines endpoints, label, and class.
 </table>
 
 ### Bounding-Box Recognition — Gemma4 vs Arrow R-CNN (IoU threshold = 0.5)
-**Nodebbox_{bbox}
-bbox​ / Edgebbox_{bbox}
-bbox​.** Gemma4 is mean F1 ± std across 5 runs. Nodebbox_{bbox}
-bbox​ uses bounding box and class; Edgebbox_{bbox}
-bbox​ uses bounding box, class, and endpoints. SEM is excluded, since its ground-truth labels have no arrow keypoints.
+
+Node<sub>bbox</sub> / Edge<sub>bbox</sub>. Gemma4 is mean F1 ± std across 5 runs. Node<sub>bbox</sub> uses bounding box and class; Edge<sub>bbox</sub> uses bounding box, class, and endpoints. SEM is excluded, since its ground-truth labels have no arrow keypoints.
 
 <table>
   <thead>
