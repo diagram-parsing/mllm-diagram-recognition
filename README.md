@@ -14,7 +14,7 @@ This repository contains the code, data, and evaluation scripts for our research
 - `evaluation/`: Evaluation scripts and MLLM extraction scripts. 
 - `results/`: CSV files for our results 
 - `prompts/`: Text files for the prompts we used 
-- `qualitative/`: Image examples of ground-truth/predictions for the bounding box task
+- `qualitative_results/`: Image examples of ground-truth/predictions for the bounding box task
 
 
 ## Results 
