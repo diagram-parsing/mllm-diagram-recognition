@@ -18,11 +18,11 @@ This repository contains the code, data, and evaluation scripts for our research
 
 
 ## Results 
-The tables below show F1 scores for our evaluation results across the several settings discussed in the paper. Note: In contrast to the scores in the paper, here we evaluate nodes and edges requiring text and class, as well as endpoints, label, and class to match for node recognition and edge recognition respectively.
+The tables below show F1 scores for our evaluation results across the several settings discussed in the paper. 
 
 ### End-to-End Recognition (Baseline) (Levenshtein threshold = 0)
 
-**F1.** Node text extracted with either PaddleOCR or Qwen3.5-4B. Node Recognition combines text and class; Edge Recognition uses endpoints.
+**F1.** Node text extracted with either PaddleOCR or Qwen3.5-4B. Node Recognition combines text and class; Edge Recognition uses endpoints. Note: Scores in the paper refer to Node Recognition for text only. 
 
 <table>
   <thead>
