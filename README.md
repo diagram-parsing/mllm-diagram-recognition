@@ -71,7 +71,7 @@ The tables below show F1 scores for our evaluation results across the several se
     <tr><td>sap-sam-bpmn</td><td>0.3967 ± 0.0052</td><td>0.2142 ± 0.0042</td><td><b>0.6227 ± 0.0022</b></td><td>0.1901 ± 0.0051</td><td>0.5788 ± 0.0569</td><td><b>0.3440 ± 0.0506</b></td></tr>
     <tr><td>sap-sam-uml</td><td><b>0.9461 ± 0.0052</b></td><td><b>0.2034 ± 0.0051</b></td><td>0.7500 ± 0.0185</td><td>0.0792 ± 0.0062</td><td>0.7327 ± 0.0378</td><td>0.1203 ± 0.0247</td></tr>
     <tr><td>sems</td><td><b>0.7291 ± 0.0026</b></td><td><b>0.6915 ± 0.0045</b></td><td>0.6373 ± 0.0039</td><td>0.3107 ± 0.0088</td><td>0.6006 ± 0.0184</td><td>0.5290 ± 0.0099</td></tr>
-    <tr><td>synth_dir</td><td><b>0.7455 ± 0.0060</b></td><td><b>0.2987 ± 0.0033</b></td><td>0.5821 ± 0.0060</td><td>0.1223 ± 0.0033</td><td>0.3720 ± 0.0214</td><td>0.1552 ± 0.0054</td></tr>
+    <tr><td>synth_sem</td><td><b>0.7455 ± 0.0060</b></td><td><b>0.2987 ± 0.0033</b></td><td>0.5821 ± 0.0060</td><td>0.1223 ± 0.0033</td><td>0.3720 ± 0.0214</td><td>0.1552 ± 0.0054</td></tr>
     <tr><td>synth_fc</td><td><b>0.7458 ± 0.0046</b></td><td><b>0.6179 ± 0.0036</b></td><td>0.3300 ± 0.1845</td><td>0.2370 ± 0.1326</td><td>0.3611 ± 0.0342</td><td>0.2511 ± 0.0170</td></tr>
   </tbody>
 </table>
@@ -102,8 +102,8 @@ The tables below show F1 scores for our evaluation results across the several se
     <tr><td>sap-sam-bpmn</td><td>0.4034 ± 0.0062</td><td>0.2213 ± 0.0054</td><td><b>0.6593 ± 0.0018</b></td><td>0.2239 ± 0.0022</td><td>0.5949 ± 0.0581</td><td><b>0.3699 ± 0.0536</b></td></tr>
     <tr><td>sap-sam-uml</td><td><b>0.9572 ± 0.0043</b></td><td><b>0.2085 ± 0.0051</b></td><td>0.7763 ± 0.0172</td><td>0.0803 ± 0.0050</td><td>0.7404 ± 0.0361</td><td>0.1221 ± 0.0239</td></tr>
     <tr><td>sems</td><td><b>0.7482 ± 0.0029</b></td><td><b>0.7283 ± 0.0048</b></td><td>0.6616 ± 0.0027</td><td>0.3391 ± 0.0107</td><td>0.6667 ± 0.0189</td><td>0.6746 ± 0.0158</td></tr>
-    <tr><td>synth_dir</td><td><b>0.9050 ± 0.0079</b></td><td><b>0.3938 ± 0.0041</b></td><td>0.7666 ± 0.0027</td><td>0.1721 ± 0.0074</td><td>0.4600 ± 0.0307</td><td>0.2405 ± 0.0195</td></tr>
-    <tr><td>synth_fc_a</td><td><b>0.8058 ± 0.0031</b></td><td><b>0.7186 ± 0.0018</b></td><td>0.4146 ± 0.2315</td><td>0.3698 ± 0.2067</td><td>0.4540 ± 0.0463</td><td>0.3934 ± 0.0293</td></tr>
+    <tr><td>synth_sem</td><td><b>0.9050 ± 0.0079</b></td><td><b>0.3938 ± 0.0041</b></td><td>0.7666 ± 0.0027</td><td>0.1721 ± 0.0074</td><td>0.4600 ± 0.0307</td><td>0.2405 ± 0.0195</td></tr>
+    <tr><td>synth_fc</td><td><b>0.8058 ± 0.0031</b></td><td><b>0.7186 ± 0.0018</b></td><td>0.4146 ± 0.2315</td><td>0.3698 ± 0.2067</td><td>0.4540 ± 0.0463</td><td>0.3934 ± 0.0293</td></tr>
   </tbody>
 </table>
 
@@ -133,7 +133,7 @@ The tables below show F1 scores for our evaluation results across the several se
     <tr><td>sap-sam-bpmn</td><td><b>1.0000 ± 0.0000</b></td><td><b>0.7511 ± 0.0002</b></td><td>0.9952 ± 0.0000</td><td>0.5569 ± 0.0094</td><td>0.7372 ± 0.0234</td><td>0.5581 ± 0.0240</td></tr>
     <tr><td>sap-sam-uml</td><td><b>1.0000 ± 0.0000</b></td><td><b>0.2017 ± 0.0043</b></td><td>0.9952 ± 0.0000</td><td>0.1069 ± 0.0093</td><td>0.7373 ± 0.0777</td><td>0.1289 ± 0.0342</td></tr>
     <tr><td>sems</td><td><b>0.9992 ± 0.0000</b></td><td><b>0.8769 ± 0.0011</b></td><td>0.9877 ± 0.0037</td><td>0.5225 ± 0.0030</td><td>0.8392 ± 0.0204</td><td>0.7417 ± 0.0202</td></tr>
-    <tr><td>synth_dir</td><td><b>0.9670 ± 0.0000</b></td><td><b>0.4622 ± 0.0045</b></td><td><b>0.9670 ± 0.0000</b></td><td>0.2790 ± 0.0055</td><td>&ndash;</td><td>&ndash;</td></tr>
+    <tr><td>synth_sem</td><td><b>0.9670 ± 0.0000</b></td><td><b>0.4622 ± 0.0045</b></td><td><b>0.9670 ± 0.0000</b></td><td>0.2790 ± 0.0055</td><td>&ndash;</td><td>&ndash;</td></tr>
     <tr><td>synth_fc</td><td><b>1.0000 ± 0.0000</b></td><td><b>0.7600 ± 0.0008</b></td><td><b>1.0000 ± 0.0000</b></td><td>0.7167 ± 0.0026</td><td>0.4895 ± 0.0625</td><td>0.3968 ± 0.0511</td></tr>
   </tbody>
 </table>
@@ -156,7 +156,7 @@ Gemma4 is mean F1 ± std across 5 runs. Node Recognition uses bounding box and c
     <tr><td>fa</td><td><b>1.0000</b></td><td><b>0.9728</b></td><td>0.9477 ± 0.0028</td><td>0.6210 ± 0.0124</td></tr>
     <tr><td>fc_a</td><td><b>0.9976</b></td><td><b>0.9244</b></td><td>0.8562 ± 0.0034</td><td>0.2091 ± 0.0041</td></tr>
     <tr><td>hdBPMN-icdar2021</td><td><b>0.9022</b></td><td><b>0.8337</b></td><td>0.5126 ± 0.0043</td><td>0.0257 ± 0.0014</td></tr>
-    <tr><td>synth_dir</td><td>&ndash;</td><td>&ndash;</td><td>0.8610 ± 0.0013</td><td>0.2215 ± 0.0042</td></tr>
+    <tr><td>synth_sem</td><td>&ndash;</td><td>&ndash;</td><td>0.8610 ± 0.0013</td><td>0.2215 ± 0.0042</td></tr>
     <tr><td>synth_fc</td><td>&ndash;</td><td>&ndash;</td><td>0.7427 ± 0.0040</td><td>0.0392 ± 0.0038</td></tr>
   </tbody>
 </table>
