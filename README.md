@@ -1,4 +1,4 @@
-# MLLM-diagram-recognition
+# Evaluating multimodal large language models for end-to-end diagram recognition
 
 ## Overview
 
