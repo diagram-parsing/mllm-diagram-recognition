@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "unmake",
+      "id": "unmake",
+      "class": "circle"
+    },
+    {
+      "text": "vainful",
+      "id": "vainful",
+      "class": "document"
+    },
+    {
+      "text": "cathograph unfeigningness",
+      "id": "cathograph unfeigningness",
+      "class": "document"
+    },
+    {
+      "text": "monobutyrin",
+      "id": "monobutyrin",
+      "class": "diamond"
+    },
+    {
+      "text": "antilift gonorrheic",
+      "id": "antilift gonorrheic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "gnarliness",
+      "id": "gnarliness",
+      "class": "diamond"
+    },
+    {
+      "text": "atavi",
+      "id": "atavi",
+      "class": "box"
+    },
+    {
+      "text": "brandisite",
+      "id": "brandisite",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unmake",
+      "head": "vainful",
+      "label": null
+    },
+    {
+      "tail": "vainful",
+      "head": "cathograph unfeigningness",
+      "label": null
+    },
+    {
+      "tail": "cathograph unfeigningness",
+      "head": "monobutyrin",
+      "label": null
+    },
+    {
+      "tail": "monobutyrin",
+      "head": "antilift gonorrheic",
+      "label": "YES"
+    },
+    {
+      "tail": "monobutyrin",
+      "head": "vainful",
+      "label": "YES"
+    },
+    {
+      "tail": "antilift gonorrheic",
+      "head": "gnarliness",
+      "label": null
+    },
+    {
+      "tail": "gnarliness",
+      "head": "atavi",
+      "label": "no"
+    },
+    {
+      "tail": "gnarliness",
+      "head": "cathograph unfeigningness",
+      "label": "no"
+    },
+    {
+      "tail": "atavi",
+      "head": "brandisite",
+      "label": null
+    }
+  ]
+}

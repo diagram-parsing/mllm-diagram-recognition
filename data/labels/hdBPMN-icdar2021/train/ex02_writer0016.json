@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "claim reiceved",
+      "id": "claim reiceved",
+      "class": "event"
+    },
+    {
+      "text": "claims register",
+      "id": "claims register",
+      "class": "dataStore"
+    },
+    {
+      "text": "settlement accepted",
+      "id": "settlement accepted",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "evaluate settlement recommendation",
+      "id": "evaluate settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim reiceved",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "evaluate settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "evaluate settlement recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "settlement accepted",
+      "class": "sequenceFlow",
+      "label": "OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": "not OK"
+    },
+    {
+      "tail": "register claim",
+      "head": "claims register",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claims register",
+      "head": "evaluate settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "evaluate settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "claims officer",
+        "senior c. officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "register claim",
+        "write settlement recommendation",
+        "claim reiceved",
+        "claims register",
+        "settlement recommendation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior c. officer",
+      "nodes": [
+        "settlement accepted",
+        "exclusiveGateway_1",
+        "evaluate settlement recommendation"
+      ],
+      "class": "lane"
+    }
+  ]
+}

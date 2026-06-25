@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "text": "Order handled",
+      "id": "Order handled",
+      "class": "event"
+    },
+    {
+      "text": "attach order note to pinboard",
+      "id": "attach order note to pinboard",
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "take order by phone",
+      "id": "take order by phone",
+      "class": "task"
+    },
+    {
+      "text": "receive order by Website",
+      "id": "receive order by Website",
+      "class": "task"
+    },
+    {
+      "text": "receive order by Lieferando",
+      "id": "receive order by Lieferando",
+      "class": "task"
+    },
+    {
+      "text": "Phone call received",
+      "id": "Phone call received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Order received",
+      "id": "Order received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Order Received",
+      "id": "Order Received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Order",
+      "id": "Order",
+      "class": "dataObject"
+    },
+    {
+      "text": "Order physical",
+      "id": "Order physical",
+      "class": "dataObject"
+    },
+    {
+      "text": "Pinboard",
+      "id": "Pinboard",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive order by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Order Received",
+      "head": "receive order by Lieferando",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Order received",
+      "head": "receive order by Website",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "Order handled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach order note to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "take order by phone",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Phone call received",
+      "head": "take order by phone",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive order by Website",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Order physical",
+      "head": "attach order note to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "Pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "Order physical",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order",
+      "head": "write down order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "Order physical",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order",
+      "head": "confirm order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "take order by phone",
+      "head": "Order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "receive order by Website",
+      "head": "Order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "receive order by Lieferando",
+      "head": "Order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "Phone call received",
+      "class": "messageFlow",
+      "label": "call to order"
+    },
+    {
+      "tail": "customer",
+      "head": "Order received",
+      "class": "messageFlow",
+      "label": "order by website"
+    },
+    {
+      "tail": "customer",
+      "head": "Order Received",
+      "class": "messageFlow",
+      "label": "order by Lieferando"
+    },
+    {
+      "tail": "confirm order",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": "confirm order"
+    }
+  ],
+  "groups": [
+    {
+      "name": "pizzeria",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

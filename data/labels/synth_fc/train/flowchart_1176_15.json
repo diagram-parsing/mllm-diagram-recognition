@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "text": "azurite soybean",
+      "id": "azurite soybean",
+      "class": "circle"
+    },
+    {
+      "text": "macao roscoelite",
+      "id": "macao roscoelite",
+      "class": "diamond"
+    },
+    {
+      "text": "saffrontree illogic",
+      "id": "saffrontree illogic",
+      "class": "diamond"
+    },
+    {
+      "text": "intendantship",
+      "id": "intendantship",
+      "class": "box"
+    },
+    {
+      "text": "unwhimsical",
+      "id": "unwhimsical",
+      "class": "hexagon"
+    },
+    {
+      "text": "dextro hepatoumbilical",
+      "id": "dextro hepatoumbilical",
+      "class": "hexagon"
+    },
+    {
+      "text": "unfrill",
+      "id": "unfrill",
+      "class": "diamond"
+    },
+    {
+      "text": "monosyllabism unrepresentative",
+      "id": "monosyllabism unrepresentative",
+      "class": "diamond"
+    },
+    {
+      "text": "nobleheartedness quinovin magn",
+      "id": "nobleheartedness quinovin magn",
+      "class": "parallelogram"
+    },
+    {
+      "text": "distinct",
+      "id": "distinct",
+      "class": "document"
+    },
+    {
+      "text": "acupunctuation relade",
+      "id": "acupunctuation relade",
+      "class": "document"
+    },
+    {
+      "text": "freezable",
+      "id": "freezable",
+      "class": "box"
+    },
+    {
+      "text": "mettled",
+      "id": "mettled",
+      "class": "box"
+    },
+    {
+      "text": "walt thatness hostlerwife",
+      "id": "walt thatness hostlerwife",
+      "class": "diamond"
+    },
+    {
+      "text": "rhythmicize",
+      "id": "rhythmicize",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "azurite soybean",
+      "head": "macao roscoelite",
+      "label": null
+    },
+    {
+      "tail": "macao roscoelite",
+      "head": "saffrontree illogic",
+      "label": "no"
+    },
+    {
+      "tail": "macao roscoelite",
+      "head": "intendantship",
+      "label": "no"
+    },
+    {
+      "tail": "saffrontree illogic",
+      "head": "unwhimsical",
+      "label": "Yes"
+    },
+    {
+      "tail": "saffrontree illogic",
+      "head": "dextro hepatoumbilical",
+      "label": "Yes"
+    },
+    {
+      "tail": "unwhimsical",
+      "head": "unfrill",
+      "label": null
+    },
+    {
+      "tail": "unfrill",
+      "head": "monosyllabism unrepresentative",
+      "label": "NO"
+    },
+    {
+      "tail": "unfrill",
+      "head": "unwhimsical",
+      "label": "NO"
+    },
+    {
+      "tail": "monosyllabism unrepresentative",
+      "head": "intendantship",
+      "label": "no"
+    },
+    {
+      "tail": "monosyllabism unrepresentative",
+      "head": "saffrontree illogic",
+      "label": "no"
+    },
+    {
+      "tail": "intendantship",
+      "head": "nobleheartedness quinovin magn",
+      "label": null
+    },
+    {
+      "tail": "nobleheartedness quinovin magn",
+      "head": "distinct",
+      "label": null
+    },
+    {
+      "tail": "distinct",
+      "head": "acupunctuation relade",
+      "label": null
+    },
+    {
+      "tail": "acupunctuation relade",
+      "head": "freezable",
+      "label": null
+    },
+    {
+      "tail": "freezable",
+      "head": "mettled",
+      "label": null
+    },
+    {
+      "tail": "mettled",
+      "head": "dextro hepatoumbilical",
+      "label": null
+    },
+    {
+      "tail": "dextro hepatoumbilical",
+      "head": "walt thatness hostlerwife",
+      "label": null
+    },
+    {
+      "tail": "walt thatness hostlerwife",
+      "head": "rhythmicize",
+      "label": "YES"
+    },
+    {
+      "tail": "walt thatness hostlerwife",
+      "head": "freezable",
+      "label": "YES"
+    }
+  ]
+}

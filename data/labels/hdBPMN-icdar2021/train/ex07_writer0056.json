@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "End",
+      "id": "End",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "task"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Fill results",
+      "id": "Fill results",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Ask exp to review",
+      "id": "Ask exp to review",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "class": "timerEvent"
+    },
+    {
+      "text": "expertise recieved",
+      "id": "expertise recieved",
+      "class": "timerEvent"
+    },
+    {
+      "text": "Interview patient",
+      "id": "Interview patient",
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fill cheque",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "expertise recieved",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "expertise recieved",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask exp to review",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Ask exp to review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "End",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Fill results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "Fill results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Interview patient",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Interview patient",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "timerEvent_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "external expert",
+      "head": "expertise recieved",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask exp to review",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "managing Director",
+        "QA"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing Director",
+      "nodes": [
+        "forward expertise",
+        "fill cheque",
+        "exclusiveGateway_1",
+        "Ask exp to review",
+        "eventBasedGateway_1",
+        "parallelGateway_3",
+        "timerEvent_1",
+        "expertise recieved"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA",
+      "nodes": [
+        "event_1",
+        "End",
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "Fill results",
+        "parallelGateway_4",
+        "Interview patient"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

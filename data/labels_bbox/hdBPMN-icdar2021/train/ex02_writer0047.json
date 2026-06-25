@@ -1,0 +1,453 @@
+{
+  "nodes": [
+    {
+      "text": "writes settlement recommendation",
+      "id": "writes settlement recommendation",
+      "bbox": [
+        1690,
+        788,
+        2149,
+        1044
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "bbox": [
+        1662,
+        1466,
+        2123,
+        1694
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1495,
+        919,
+        1567,
+        1011
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "makr \"Not OK\"",
+      "id": "makr \"Not OK\"",
+      "bbox": [
+        1025,
+        1376,
+        1352,
+        1577
+      ],
+      "class": "task"
+    },
+    {
+      "text": "mark \"OK\"",
+      "id": "mark \"OK\"",
+      "bbox": [
+        1041,
+        1650,
+        1353,
+        1833
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receives claim",
+      "id": "receives claim",
+      "bbox": [
+        617,
+        913,
+        743,
+        1011
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        858,
+        921,
+        929,
+        1005
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        1090,
+        711,
+        1346,
+        901
+      ],
+      "class": "task"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "bbox": [
+        1082,
+        973,
+        1339,
+        1156
+      ],
+      "class": "task"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "bbox": [
+        2223,
+        1122,
+        2302,
+        1233
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "Claim",
+      "id": "Claim",
+      "bbox": [
+        1627,
+        1331,
+        1696,
+        1416
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1452,
+        1555,
+        1535,
+        1646
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Claim",
+      "id": "Claim",
+      "bbox": [
+        897,
+        1865,
+        967,
+        1964
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "Claim",
+      "id": "Claim",
+      "bbox": [
+        834,
+        1156,
+        907,
+        1271
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        894,
+        806,
+        1092,
+        923
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        894,
+        1005,
+        1084,
+        1094
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1339,
+        1009,
+        1531,
+        1096
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1346,
+        806,
+        1531,
+        923
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "writes settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1567,
+        932,
+        1692,
+        1000
+      ],
+      "label": null
+    },
+    {
+      "tail": "writes settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1898,
+        1044,
+        1966,
+        1467
+      ],
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1535,
+        1568,
+        1664,
+        1636
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "makr \"Not OK\"",
+      "class": "sequenceFlow",
+      "bbox": [
+        1352,
+        1466,
+        1501,
+        1563
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark \"OK\"",
+      "class": "sequenceFlow",
+      "bbox": [
+        1352,
+        1646,
+        1495,
+        1761
+      ],
+      "label": null
+    },
+    {
+      "tail": "makr \"Not OK\"",
+      "head": "writes settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1211,
+        1044,
+        1722,
+        1378
+      ],
+      "label": null
+    },
+    {
+      "tail": "receives claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        743,
+        930,
+        859,
+        998
+      ],
+      "label": null
+    },
+    {
+      "tail": "Claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        848,
+        872,
+        1092,
+        1149
+      ],
+      "label": null
+    },
+    {
+      "tail": "Claim",
+      "head": "examine claim",
+      "class": "dataAssociation",
+      "bbox": [
+        907,
+        1148,
+        1157,
+        1216
+      ],
+      "label": null
+    },
+    {
+      "tail": "Claim",
+      "head": "writes settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        1696,
+        1050,
+        1805,
+        1344
+      ],
+      "label": null
+    },
+    {
+      "tail": "writes settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        2149,
+        935,
+        2272,
+        1122
+      ],
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        2123,
+        1233,
+        2272,
+        1597
+      ],
+      "label": null
+    },
+    {
+      "tail": "makr \"Not OK\"",
+      "head": "Claim",
+      "class": "dataAssociation",
+      "bbox": [
+        1329,
+        1328,
+        1628,
+        1396
+      ],
+      "label": null
+    },
+    {
+      "tail": "mark \"OK\"",
+      "head": "Claim",
+      "class": "dataAssociation",
+      "bbox": [
+        967,
+        1833,
+        1173,
+        1916
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "receives claim",
+      "class": "messageFlow",
+      "bbox": [
+        648,
+        476,
+        716,
+        901
+      ],
+      "label": "Claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "bbox": [
+        280,
+        659,
+        2340,
+        2089
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "writes settlement recommendation",
+        "parallelGateway_1",
+        "receives claim",
+        "parallelGateway_2",
+        "register claim",
+        "examine claim",
+        "settlement recommendation",
+        "Claim"
+      ],
+      "bbox": [
+        389,
+        659,
+        2340,
+        1301
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check recommendation",
+        "makr \"Not OK\"",
+        "mark \"OK\"",
+        "Claim",
+        "exclusiveGateway_1",
+        "Claim"
+      ],
+      "bbox": [
+        389,
+        1301,
+        2340,
+        2091
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        289,
+        348,
+        2339,
+        476
+      ],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "tonograph",
+      "id": "tonograph",
+      "class": "ellipse"
+    },
+    {
+      "text": "whitter",
+      "id": "whitter",
+      "class": "parallelogram"
+    },
+    {
+      "text": "loathful citizen",
+      "id": "loathful citizen",
+      "class": "diamond"
+    },
+    {
+      "text": "Rusty",
+      "id": "Rusty",
+      "class": "parallelogram"
+    },
+    {
+      "text": "thermalgesia snaggletooth",
+      "id": "thermalgesia snaggletooth",
+      "class": "hexagon"
+    },
+    {
+      "text": "microtomical",
+      "id": "microtomical",
+      "class": "box"
+    },
+    {
+      "text": "unguent",
+      "id": "unguent",
+      "class": "hexagon"
+    },
+    {
+      "text": "unannexedness",
+      "id": "unannexedness",
+      "class": "document"
+    },
+    {
+      "text": "teca absolvatory pervadingness",
+      "id": "teca absolvatory pervadingness",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tonograph",
+      "head": "whitter",
+      "label": null
+    },
+    {
+      "tail": "whitter",
+      "head": "loathful citizen",
+      "label": null
+    },
+    {
+      "tail": "loathful citizen",
+      "head": "Rusty",
+      "label": "YES"
+    },
+    {
+      "tail": "loathful citizen",
+      "head": "thermalgesia snaggletooth",
+      "label": "YES"
+    },
+    {
+      "tail": "Rusty",
+      "head": "thermalgesia snaggletooth",
+      "label": null
+    },
+    {
+      "tail": "thermalgesia snaggletooth",
+      "head": "microtomical",
+      "label": null
+    },
+    {
+      "tail": "microtomical",
+      "head": "unguent",
+      "label": null
+    },
+    {
+      "tail": "unguent",
+      "head": "unannexedness",
+      "label": null
+    },
+    {
+      "tail": "unannexedness",
+      "head": "teca absolvatory pervadingness",
+      "label": null
+    }
+  ]
+}

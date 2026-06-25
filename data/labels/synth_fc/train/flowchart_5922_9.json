@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "shabbify",
+      "id": "shabbify",
+      "class": "ellipse"
+    },
+    {
+      "text": "palaeocrystic hierologist",
+      "id": "palaeocrystic hierologist",
+      "class": "hexagon"
+    },
+    {
+      "text": "posh",
+      "id": "posh",
+      "class": "diamond"
+    },
+    {
+      "text": "Solomonical endosmosic quadric",
+      "id": "Solomonical endosmosic quadric",
+      "class": "hexagon"
+    },
+    {
+      "text": "coconscious polyangular hubbub",
+      "id": "coconscious polyangular hubbub",
+      "class": "diamond"
+    },
+    {
+      "text": "teratism",
+      "id": "teratism",
+      "class": "document"
+    },
+    {
+      "text": "utopism bethreaten",
+      "id": "utopism bethreaten",
+      "class": "parallelogram"
+    },
+    {
+      "text": "cuffer nagor",
+      "id": "cuffer nagor",
+      "class": "diamond"
+    },
+    {
+      "text": "paulin",
+      "id": "paulin",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "shabbify",
+      "head": "palaeocrystic hierologist",
+      "label": null
+    },
+    {
+      "tail": "palaeocrystic hierologist",
+      "head": "posh",
+      "label": null
+    },
+    {
+      "tail": "posh",
+      "head": "Solomonical endosmosic quadric",
+      "label": "NO"
+    },
+    {
+      "tail": "posh",
+      "head": "coconscious polyangular hubbub",
+      "label": "NO"
+    },
+    {
+      "tail": "Solomonical endosmosic quadric",
+      "head": "teratism",
+      "label": null
+    },
+    {
+      "tail": "teratism",
+      "head": "utopism bethreaten",
+      "label": null
+    },
+    {
+      "tail": "utopism bethreaten",
+      "head": "cuffer nagor",
+      "label": null
+    },
+    {
+      "tail": "cuffer nagor",
+      "head": "coconscious polyangular hubbub",
+      "label": "No"
+    },
+    {
+      "tail": "cuffer nagor",
+      "head": "paulin",
+      "label": "No"
+    },
+    {
+      "tail": "coconscious polyangular hubbub",
+      "head": "paulin",
+      "label": "Yes"
+    },
+    {
+      "tail": "coconscious polyangular hubbub",
+      "head": "cuffer nagor",
+      "label": "Yes"
+    }
+  ]
+}

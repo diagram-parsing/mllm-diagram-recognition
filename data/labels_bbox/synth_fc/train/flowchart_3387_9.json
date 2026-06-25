@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "howdah",
+      "id": "howdah",
+      "class": "oval",
+      "bbox": [
+        32,
+        5,
+        124,
+        53
+      ]
+    },
+    {
+      "text": "Veronicella",
+      "id": "Veronicella",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        64,
+        150,
+        112
+      ]
+    },
+    {
+      "text": "hypocrisy",
+      "id": "hypocrisy",
+      "class": "diamond",
+      "bbox": [
+        15,
+        162,
+        141,
+        210
+      ]
+    },
+    {
+      "text": "iridoceratitic",
+      "id": "iridoceratitic",
+      "class": "box",
+      "bbox": [
+        42,
+        240,
+        114,
+        288
+      ]
+    },
+    {
+      "text": "curio",
+      "id": "curio",
+      "class": "diamond",
+      "bbox": [
+        186,
+        84,
+        282,
+        132
+      ]
+    },
+    {
+      "text": "periglottic",
+      "id": "periglottic",
+      "class": "box",
+      "bbox": [
+        38,
+        318,
+        117,
+        363
+      ]
+    },
+    {
+      "text": "befringe",
+      "id": "befringe",
+      "class": "parallelogram",
+      "bbox": [
+        187,
+        149,
+        281,
+        222
+      ]
+    },
+    {
+      "text": "picryl preacceptance",
+      "id": "picryl preacceptance",
+      "class": "oval",
+      "bbox": [
+        175,
+        316,
+        288,
+        363
+      ]
+    },
+    {
+      "text": "crosshaul construct",
+      "id": "crosshaul construct",
+      "class": "box",
+      "bbox": [
+        198,
+        240,
+        270,
+        288
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "howdah",
+      "head": "Veronicella",
+      "label": null,
+      "bbox": [
+        72,
+        50,
+        84,
+        63
+      ]
+    },
+    {
+      "tail": "Veronicella",
+      "head": "hypocrisy",
+      "label": null,
+      "bbox": [
+        51,
+        112,
+        63,
+        170
+      ]
+    },
+    {
+      "tail": "hypocrisy",
+      "head": "iridoceratitic",
+      "label": "NO",
+      "bbox": [
+        72,
+        210,
+        84,
+        239
+      ]
+    },
+    {
+      "tail": "hypocrisy",
+      "head": "curio",
+      "label": "NO",
+      "bbox": [
+        99,
+        112,
+        205,
+        169
+      ]
+    },
+    {
+      "tail": "iridoceratitic",
+      "head": "periglottic",
+      "label": null,
+      "bbox": [
+        72,
+        288,
+        84,
+        318
+      ]
+    },
+    {
+      "tail": "periglottic",
+      "head": "curio",
+      "label": null,
+      "bbox": [
+        117,
+        117,
+        215,
+        343
+      ]
+    },
+    {
+      "tail": "curio",
+      "head": "befringe",
+      "label": "NO",
+      "bbox": [
+        228,
+        132,
+        240,
+        149
+      ]
+    },
+    {
+      "tail": "curio",
+      "head": "picryl preacceptance",
+      "label": "NO",
+      "bbox": [
+        175,
+        127,
+        223,
+        331
+      ]
+    },
+    {
+      "tail": "befringe",
+      "head": "crosshaul construct",
+      "label": null,
+      "bbox": [
+        228,
+        223,
+        240,
+        240
+      ]
+    },
+    {
+      "tail": "crosshaul construct",
+      "head": "picryl preacceptance",
+      "label": null,
+      "bbox": [
+        228,
+        288,
+        240,
+        316
+      ]
+    }
+  ]
+}

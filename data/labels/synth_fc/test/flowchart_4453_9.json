@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "carcinolysin silvanity",
+      "id": "carcinolysin silvanity",
+      "class": "oval"
+    },
+    {
+      "text": "septiferous",
+      "id": "septiferous",
+      "class": "diamond"
+    },
+    {
+      "text": "bagnut trypograph",
+      "id": "bagnut trypograph",
+      "class": "diamond"
+    },
+    {
+      "text": "nonbusiness",
+      "id": "nonbusiness",
+      "class": "box"
+    },
+    {
+      "text": "fratcher untasty metachlamydeo",
+      "id": "fratcher untasty metachlamydeo",
+      "class": "ellipse"
+    },
+    {
+      "text": "psychomotor trafficway",
+      "id": "psychomotor trafficway",
+      "class": "hexagon"
+    },
+    {
+      "text": "grissens guillochee asta",
+      "id": "grissens guillochee asta",
+      "class": "hexagon"
+    },
+    {
+      "text": "paramenia rodomontadist",
+      "id": "paramenia rodomontadist",
+      "class": "diamond"
+    },
+    {
+      "text": "gastrohysterotomy",
+      "id": "gastrohysterotomy",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "carcinolysin silvanity",
+      "head": "septiferous",
+      "label": null
+    },
+    {
+      "tail": "septiferous",
+      "head": "bagnut trypograph",
+      "label": "No"
+    },
+    {
+      "tail": "septiferous",
+      "head": "nonbusiness",
+      "label": "No"
+    },
+    {
+      "tail": "bagnut trypograph",
+      "head": "nonbusiness",
+      "label": "yes"
+    },
+    {
+      "tail": "bagnut trypograph",
+      "head": "fratcher untasty metachlamydeo",
+      "label": "yes"
+    },
+    {
+      "tail": "nonbusiness",
+      "head": "psychomotor trafficway",
+      "label": null
+    },
+    {
+      "tail": "psychomotor trafficway",
+      "head": "grissens guillochee asta",
+      "label": null
+    },
+    {
+      "tail": "grissens guillochee asta",
+      "head": "paramenia rodomontadist",
+      "label": null
+    },
+    {
+      "tail": "paramenia rodomontadist",
+      "head": "gastrohysterotomy",
+      "label": "YES"
+    },
+    {
+      "tail": "paramenia rodomontadist",
+      "head": "septiferous",
+      "label": "YES"
+    },
+    {
+      "tail": "gastrohysterotomy",
+      "head": "fratcher untasty metachlamydeo",
+      "label": null
+    }
+  ]
+}

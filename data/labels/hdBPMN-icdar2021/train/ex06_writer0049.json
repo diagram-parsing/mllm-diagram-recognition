@@ -1,0 +1,152 @@
+{
+  "nodes": [
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "class": "task"
+    },
+    {
+      "text": "print order",
+      "id": "print order",
+      "class": "task"
+    },
+    {
+      "text": "attach note to pinboard",
+      "id": "attach note to pinboard",
+      "class": "task"
+    },
+    {
+      "text": "order recived completed",
+      "id": "order recived completed",
+      "class": "event"
+    },
+    {
+      "text": "recieve Order",
+      "id": "recieve Order",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Order",
+      "id": "Order",
+      "class": "dataObject"
+    },
+    {
+      "text": "note",
+      "id": "note",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "attach note to pinboard",
+      "head": "order recived completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "attach note to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": "Lieferando"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "label": "phone"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": "Website"
+    },
+    {
+      "tail": "recieve Order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "Order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order",
+      "head": "print order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "note",
+      "head": "attach note to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": []
+}

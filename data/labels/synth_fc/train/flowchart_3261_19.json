@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "text": "albuminimeter",
+      "id": "albuminimeter",
+      "class": "circle"
+    },
+    {
+      "text": "insalubrious pulselike trucks",
+      "id": "insalubrious pulselike trucks",
+      "class": "diamond"
+    },
+    {
+      "text": "nonharmonic",
+      "id": "nonharmonic",
+      "class": "hexagon"
+    },
+    {
+      "text": "vet",
+      "id": "vet",
+      "class": "diamond"
+    },
+    {
+      "text": "dischargee dabby versicler",
+      "id": "dischargee dabby versicler",
+      "class": "hexagon"
+    },
+    {
+      "text": "unailing",
+      "id": "unailing",
+      "class": "hexagon"
+    },
+    {
+      "text": "aenach",
+      "id": "aenach",
+      "class": "diamond"
+    },
+    {
+      "text": "Coriolanus",
+      "id": "Coriolanus",
+      "class": "hexagon"
+    },
+    {
+      "text": "neuroplasmic",
+      "id": "neuroplasmic",
+      "class": "diamond"
+    },
+    {
+      "text": "manglingly",
+      "id": "manglingly",
+      "class": "box"
+    },
+    {
+      "text": "thionobenzoic discuss",
+      "id": "thionobenzoic discuss",
+      "class": "hexagon"
+    },
+    {
+      "text": "lenis retiral joyleaf",
+      "id": "lenis retiral joyleaf",
+      "class": "diamond"
+    },
+    {
+      "text": "hemihypesthesia aromatically",
+      "id": "hemihypesthesia aromatically",
+      "class": "diamond"
+    },
+    {
+      "text": "spectral",
+      "id": "spectral",
+      "class": "diamond"
+    },
+    {
+      "text": "nonliquid chidingness",
+      "id": "nonliquid chidingness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "misfigure",
+      "id": "misfigure",
+      "class": "diamond"
+    },
+    {
+      "text": "prostatitis nonacute",
+      "id": "prostatitis nonacute",
+      "class": "parallelogram"
+    },
+    {
+      "text": "myelemia",
+      "id": "myelemia",
+      "class": "diamond"
+    },
+    {
+      "text": "uncontrollability wheellike",
+      "id": "uncontrollability wheellike",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "albuminimeter",
+      "head": "insalubrious pulselike trucks",
+      "label": null
+    },
+    {
+      "tail": "insalubrious pulselike trucks",
+      "head": "nonharmonic",
+      "label": "no"
+    },
+    {
+      "tail": "insalubrious pulselike trucks",
+      "head": "vet",
+      "label": "no"
+    },
+    {
+      "tail": "nonharmonic",
+      "head": "dischargee dabby versicler",
+      "label": null
+    },
+    {
+      "tail": "dischargee dabby versicler",
+      "head": "unailing",
+      "label": null
+    },
+    {
+      "tail": "unailing",
+      "head": "aenach",
+      "label": null
+    },
+    {
+      "tail": "aenach",
+      "head": "Coriolanus",
+      "label": "Yes"
+    },
+    {
+      "tail": "aenach",
+      "head": "unailing",
+      "label": "Yes"
+    },
+    {
+      "tail": "Coriolanus",
+      "head": "neuroplasmic",
+      "label": null
+    },
+    {
+      "tail": "neuroplasmic",
+      "head": "manglingly",
+      "label": "no"
+    },
+    {
+      "tail": "neuroplasmic",
+      "head": "thionobenzoic discuss",
+      "label": "no"
+    },
+    {
+      "tail": "manglingly",
+      "head": "lenis retiral joyleaf",
+      "label": null
+    },
+    {
+      "tail": "lenis retiral joyleaf",
+      "head": "vet",
+      "label": "no"
+    },
+    {
+      "tail": "lenis retiral joyleaf",
+      "head": "dischargee dabby versicler",
+      "label": "no"
+    },
+    {
+      "tail": "vet",
+      "head": "hemihypesthesia aromatically",
+      "label": "YES"
+    },
+    {
+      "tail": "vet",
+      "head": "neuroplasmic",
+      "label": "YES"
+    },
+    {
+      "tail": "hemihypesthesia aromatically",
+      "head": "spectral",
+      "label": "no"
+    },
+    {
+      "tail": "hemihypesthesia aromatically",
+      "head": "neuroplasmic",
+      "label": "no"
+    },
+    {
+      "tail": "spectral",
+      "head": "thionobenzoic discuss",
+      "label": "YES"
+    },
+    {
+      "tail": "spectral",
+      "head": "unailing",
+      "label": "YES"
+    },
+    {
+      "tail": "thionobenzoic discuss",
+      "head": "nonliquid chidingness",
+      "label": null
+    },
+    {
+      "tail": "nonliquid chidingness",
+      "head": "misfigure",
+      "label": null
+    },
+    {
+      "tail": "misfigure",
+      "head": "prostatitis nonacute",
+      "label": "No"
+    },
+    {
+      "tail": "misfigure",
+      "head": "unailing",
+      "label": "No"
+    },
+    {
+      "tail": "prostatitis nonacute",
+      "head": "myelemia",
+      "label": null
+    },
+    {
+      "tail": "myelemia",
+      "head": "uncontrollability wheellike",
+      "label": "yes"
+    },
+    {
+      "tail": "myelemia",
+      "head": "dischargee dabby versicler",
+      "label": "yes"
+    }
+  ]
+}

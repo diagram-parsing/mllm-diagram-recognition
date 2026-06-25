@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "uncaptioned resinousness",
+      "id": "uncaptioned resinousness",
+      "class": "circle"
+    },
+    {
+      "text": "phlobaphene",
+      "id": "phlobaphene",
+      "class": "hexagon"
+    },
+    {
+      "text": "phyma tringoid unplacable",
+      "id": "phyma tringoid unplacable",
+      "class": "diamond"
+    },
+    {
+      "text": "rufflike",
+      "id": "rufflike",
+      "class": "diamond"
+    },
+    {
+      "text": "unreworded",
+      "id": "unreworded",
+      "class": "parallelogram"
+    },
+    {
+      "text": "abortional",
+      "id": "abortional",
+      "class": "parallelogram"
+    },
+    {
+      "text": "bavian",
+      "id": "bavian",
+      "class": "diamond"
+    },
+    {
+      "text": "anode",
+      "id": "anode",
+      "class": "document"
+    },
+    {
+      "text": "superexacting cylinder",
+      "id": "superexacting cylinder",
+      "class": "box"
+    },
+    {
+      "text": "tenacious",
+      "id": "tenacious",
+      "class": "parallelogram"
+    },
+    {
+      "text": "sonlikeness",
+      "id": "sonlikeness",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "uncaptioned resinousness",
+      "head": "phlobaphene",
+      "label": null
+    },
+    {
+      "tail": "phlobaphene",
+      "head": "phyma tringoid unplacable",
+      "label": null
+    },
+    {
+      "tail": "phyma tringoid unplacable",
+      "head": "rufflike",
+      "label": "no"
+    },
+    {
+      "tail": "phyma tringoid unplacable",
+      "head": "uncaptioned resinousness",
+      "label": "no"
+    },
+    {
+      "tail": "rufflike",
+      "head": "unreworded",
+      "label": "YES"
+    },
+    {
+      "tail": "rufflike",
+      "head": "abortional",
+      "label": "YES"
+    },
+    {
+      "tail": "unreworded",
+      "head": "abortional",
+      "label": null
+    },
+    {
+      "tail": "abortional",
+      "head": "bavian",
+      "label": null
+    },
+    {
+      "tail": "bavian",
+      "head": "anode",
+      "label": "Yes"
+    },
+    {
+      "tail": "bavian",
+      "head": "abortional",
+      "label": "Yes"
+    },
+    {
+      "tail": "anode",
+      "head": "superexacting cylinder",
+      "label": null
+    },
+    {
+      "tail": "superexacting cylinder",
+      "head": "tenacious",
+      "label": null
+    },
+    {
+      "tail": "tenacious",
+      "head": "sonlikeness",
+      "label": null
+    }
+  ]
+}

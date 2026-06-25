@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "distinct",
+      "id": "distinct",
+      "class": "circle"
+    },
+    {
+      "text": "fustigate",
+      "id": "fustigate",
+      "class": "hexagon"
+    },
+    {
+      "text": "tricussate",
+      "id": "tricussate",
+      "class": "diamond"
+    },
+    {
+      "text": "jujuist",
+      "id": "jujuist",
+      "class": "diamond"
+    },
+    {
+      "text": "undilatable underlooker compos",
+      "id": "undilatable underlooker compos",
+      "class": "box"
+    },
+    {
+      "text": "comprachico",
+      "id": "comprachico",
+      "class": "box"
+    },
+    {
+      "text": "descendentalist uneruptive",
+      "id": "descendentalist uneruptive",
+      "class": "diamond"
+    },
+    {
+      "text": "Aphelandra explosiveness",
+      "id": "Aphelandra explosiveness",
+      "class": "document"
+    },
+    {
+      "text": "Iceland sustentacula sherbetle",
+      "id": "Iceland sustentacula sherbetle",
+      "class": "diamond"
+    },
+    {
+      "text": "skelic",
+      "id": "skelic",
+      "class": "document"
+    },
+    {
+      "text": "carboxy isoseist",
+      "id": "carboxy isoseist",
+      "class": "diamond"
+    },
+    {
+      "text": "spherule",
+      "id": "spherule",
+      "class": "parallelogram"
+    },
+    {
+      "text": "undieted sciaeniform",
+      "id": "undieted sciaeniform",
+      "class": "diamond"
+    },
+    {
+      "text": "browden",
+      "id": "browden",
+      "class": "document"
+    },
+    {
+      "text": "unoffset Talmud",
+      "id": "unoffset Talmud",
+      "class": "box"
+    },
+    {
+      "text": "malnutrite",
+      "id": "malnutrite",
+      "class": "diamond"
+    },
+    {
+      "text": "ideogenical mortalwise metal",
+      "id": "ideogenical mortalwise metal",
+      "class": "parallelogram"
+    },
+    {
+      "text": "midseason",
+      "id": "midseason",
+      "class": "document"
+    },
+    {
+      "text": "hyoidal kindly",
+      "id": "hyoidal kindly",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "distinct",
+      "head": "fustigate",
+      "label": null
+    },
+    {
+      "tail": "fustigate",
+      "head": "tricussate",
+      "label": null
+    },
+    {
+      "tail": "tricussate",
+      "head": "jujuist",
+      "label": "YES"
+    },
+    {
+      "tail": "tricussate",
+      "head": "undilatable underlooker compos",
+      "label": "YES"
+    },
+    {
+      "tail": "jujuist",
+      "head": "comprachico",
+      "label": "YES"
+    },
+    {
+      "tail": "jujuist",
+      "head": "tricussate",
+      "label": "YES"
+    },
+    {
+      "tail": "comprachico",
+      "head": "descendentalist uneruptive",
+      "label": null
+    },
+    {
+      "tail": "descendentalist uneruptive",
+      "head": "Aphelandra explosiveness",
+      "label": "YES"
+    },
+    {
+      "tail": "descendentalist uneruptive",
+      "head": "Iceland sustentacula sherbetle",
+      "label": "YES"
+    },
+    {
+      "tail": "Aphelandra explosiveness",
+      "head": "Iceland sustentacula sherbetle",
+      "label": null
+    },
+    {
+      "tail": "Iceland sustentacula sherbetle",
+      "head": "skelic",
+      "label": "Yes"
+    },
+    {
+      "tail": "Iceland sustentacula sherbetle",
+      "head": "carboxy isoseist",
+      "label": "Yes"
+    },
+    {
+      "tail": "skelic",
+      "head": "spherule",
+      "label": null
+    },
+    {
+      "tail": "spherule",
+      "head": "undieted sciaeniform",
+      "label": null
+    },
+    {
+      "tail": "undieted sciaeniform",
+      "head": "undilatable underlooker compos",
+      "label": "NO"
+    },
+    {
+      "tail": "undieted sciaeniform",
+      "head": "comprachico",
+      "label": "NO"
+    },
+    {
+      "tail": "undilatable underlooker compos",
+      "head": "browden",
+      "label": null
+    },
+    {
+      "tail": "browden",
+      "head": "unoffset Talmud",
+      "label": null
+    },
+    {
+      "tail": "unoffset Talmud",
+      "head": "carboxy isoseist",
+      "label": null
+    },
+    {
+      "tail": "carboxy isoseist",
+      "head": "malnutrite",
+      "label": "yes"
+    },
+    {
+      "tail": "carboxy isoseist",
+      "head": "jujuist",
+      "label": "yes"
+    },
+    {
+      "tail": "malnutrite",
+      "head": "ideogenical mortalwise metal",
+      "label": "YES"
+    },
+    {
+      "tail": "malnutrite",
+      "head": "fustigate",
+      "label": "YES"
+    },
+    {
+      "tail": "ideogenical mortalwise metal",
+      "head": "midseason",
+      "label": null
+    },
+    {
+      "tail": "midseason",
+      "head": "hyoidal kindly",
+      "label": null
+    }
+  ]
+}

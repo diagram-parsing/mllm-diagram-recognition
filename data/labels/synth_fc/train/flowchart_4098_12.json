@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "text": "kreis",
+      "id": "kreis",
+      "class": "oval"
+    },
+    {
+      "text": "bassine",
+      "id": "bassine",
+      "class": "diamond"
+    },
+    {
+      "text": "gonfaloniership lecanoroid",
+      "id": "gonfaloniership lecanoroid",
+      "class": "box"
+    },
+    {
+      "text": "hypernutrition",
+      "id": "hypernutrition",
+      "class": "diamond"
+    },
+    {
+      "text": "intranslatable",
+      "id": "intranslatable",
+      "class": "parallelogram"
+    },
+    {
+      "text": "pythonical Staphylinus",
+      "id": "pythonical Staphylinus",
+      "class": "hexagon"
+    },
+    {
+      "text": "scythestone",
+      "id": "scythestone",
+      "class": "hexagon"
+    },
+    {
+      "text": "monospermy microcosmology",
+      "id": "monospermy microcosmology",
+      "class": "diamond"
+    },
+    {
+      "text": "archiepiscopacy",
+      "id": "archiepiscopacy",
+      "class": "diamond"
+    },
+    {
+      "text": "anthropometry consigner unsupp",
+      "id": "anthropometry consigner unsupp",
+      "class": "document"
+    },
+    {
+      "text": "undualize",
+      "id": "undualize",
+      "class": "ellipse"
+    },
+    {
+      "text": "gamasid Ichneumonidae",
+      "id": "gamasid Ichneumonidae",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "kreis",
+      "head": "bassine",
+      "label": null
+    },
+    {
+      "tail": "bassine",
+      "head": "gonfaloniership lecanoroid",
+      "label": "Yes"
+    },
+    {
+      "tail": "bassine",
+      "head": "hypernutrition",
+      "label": "Yes"
+    },
+    {
+      "tail": "gonfaloniership lecanoroid",
+      "head": "intranslatable",
+      "label": null
+    },
+    {
+      "tail": "intranslatable",
+      "head": "pythonical Staphylinus",
+      "label": null
+    },
+    {
+      "tail": "pythonical Staphylinus",
+      "head": "scythestone",
+      "label": null
+    },
+    {
+      "tail": "scythestone",
+      "head": "monospermy microcosmology",
+      "label": null
+    },
+    {
+      "tail": "monospermy microcosmology",
+      "head": "archiepiscopacy",
+      "label": "yes"
+    },
+    {
+      "tail": "monospermy microcosmology",
+      "head": "kreis",
+      "label": "yes"
+    },
+    {
+      "tail": "archiepiscopacy",
+      "head": "hypernutrition",
+      "label": "no"
+    },
+    {
+      "tail": "archiepiscopacy",
+      "head": "scythestone",
+      "label": "no"
+    },
+    {
+      "tail": "hypernutrition",
+      "head": "anthropometry consigner unsupp",
+      "label": "yes"
+    },
+    {
+      "tail": "hypernutrition",
+      "head": "undualize",
+      "label": "yes"
+    },
+    {
+      "tail": "anthropometry consigner unsupp",
+      "head": "gamasid Ichneumonidae",
+      "label": null
+    },
+    {
+      "tail": "gamasid Ichneumonidae",
+      "head": "undualize",
+      "label": "No"
+    },
+    {
+      "tail": "gamasid Ichneumonidae",
+      "head": "gonfaloniership lecanoroid",
+      "label": "No"
+    }
+  ]
+}

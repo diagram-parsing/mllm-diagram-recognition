@@ -1,0 +1,189 @@
+{
+  "nodes": [
+    {
+      "text": "register & examine",
+      "id": "register & examine",
+      "class": "task"
+    },
+    {
+      "text": "write settlementrecommendation",
+      "id": "write settlementrecommendation",
+      "class": "task"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation not ok",
+      "id": "settlement recommendation not ok",
+      "class": "dataObject"
+    },
+    {
+      "text": "send back recommendation",
+      "id": "send back recommendation",
+      "class": "task"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "class": "task"
+    },
+    {
+      "text": "settlement recommendation checked",
+      "id": "settlement recommendation checked",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "event"
+    },
+    {
+      "text": "process proceeds",
+      "id": "process proceeds",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "register & examine",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register & examine",
+      "head": "write settlementrecommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "process proceeds",
+      "class": "sequenceFlow",
+      "label": "OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "send back recommendation",
+      "class": "sequenceFlow",
+      "label": "not ok"
+    },
+    {
+      "tail": "send back recommendation",
+      "head": "write settlementrecommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write settlementrecommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register & examine",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation not ok",
+      "head": "write settlementrecommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write settlementrecommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation checked",
+      "head": "send back recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "send back recommendation",
+      "head": "settlement recommendation not ok",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "settlement recommendation checked",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claim officer",
+        "senior claim officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "register & examine",
+        "write settlementrecommendation",
+        "settlement recommendation",
+        "claim",
+        "claim received"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claim officer",
+      "nodes": [
+        "settlement recommendation not ok",
+        "send back recommendation",
+        "check recommendation",
+        "settlement recommendation checked",
+        "process proceeds",
+        "exclusiveGateway_1"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

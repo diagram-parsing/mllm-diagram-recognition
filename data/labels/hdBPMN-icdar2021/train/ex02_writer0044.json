@@ -1,0 +1,183 @@
+{
+  "nodes": [
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "check and mark recommendation",
+      "id": "check and mark recommendation",
+      "class": "task"
+    },
+    {
+      "text": "send back recommendation",
+      "id": "send back recommendation",
+      "class": "task"
+    },
+    {
+      "text": "proceed with claim handling",
+      "id": "proceed with claim handling",
+      "class": "event"
+    },
+    {
+      "text": "recommendation",
+      "id": "recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "claims DB",
+      "id": "claims DB",
+      "class": "dataStore"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "event"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "class": "task"
+    },
+    {
+      "text": "recommendation [not ok]",
+      "id": "recommendation [not ok]",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "register claim",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check and mark recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "send back recommendation",
+      "class": "sequenceFlow",
+      "label": "not ok"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "proceed with claim handling",
+      "class": "sequenceFlow",
+      "label": "ok"
+    },
+    {
+      "tail": "send back recommendation",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claims DB",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "recommendation",
+      "head": "check and mark recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "send back recommendation",
+      "head": "recommendation [not ok]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "examine claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "recommendation [not ok]",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "recommendation",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "register claim",
+        "recommendation",
+        "claims DB",
+        "claim received",
+        "write settlement recommendation",
+        "examine claim",
+        "recommendation [not ok]"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check and mark recommendation",
+        "send back recommendation",
+        "proceed with claim handling",
+        "exclusiveGateway_1"
+      ],
+      "class": "lane"
+    }
+  ]
+}

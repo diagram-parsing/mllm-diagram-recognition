@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "text": "phyllomorphy",
+      "id": "phyllomorphy",
+      "class": "ellipse"
+    },
+    {
+      "text": "signpost sunderwise",
+      "id": "signpost sunderwise",
+      "class": "document"
+    },
+    {
+      "text": "foreclose",
+      "id": "foreclose",
+      "class": "diamond"
+    },
+    {
+      "text": "preallowable",
+      "id": "preallowable",
+      "class": "document"
+    },
+    {
+      "text": "neurectasy",
+      "id": "neurectasy",
+      "class": "diamond"
+    },
+    {
+      "text": "Diaspinae",
+      "id": "Diaspinae",
+      "class": "parallelogram"
+    },
+    {
+      "text": "acetylfluoride peptonate",
+      "id": "acetylfluoride peptonate",
+      "class": "hexagon"
+    },
+    {
+      "text": "tracksick",
+      "id": "tracksick",
+      "class": "parallelogram"
+    },
+    {
+      "text": "undisputableness",
+      "id": "undisputableness",
+      "class": "box"
+    },
+    {
+      "text": "doomsday",
+      "id": "doomsday",
+      "class": "parallelogram"
+    },
+    {
+      "text": "potherb pygmyship",
+      "id": "potherb pygmyship",
+      "class": "document"
+    },
+    {
+      "text": "finfoot",
+      "id": "finfoot",
+      "class": "parallelogram"
+    },
+    {
+      "text": "dimethylamine",
+      "id": "dimethylamine",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "phyllomorphy",
+      "head": "signpost sunderwise",
+      "label": null
+    },
+    {
+      "tail": "signpost sunderwise",
+      "head": "foreclose",
+      "label": null
+    },
+    {
+      "tail": "foreclose",
+      "head": "preallowable",
+      "label": "NO"
+    },
+    {
+      "tail": "foreclose",
+      "head": "neurectasy",
+      "label": "NO"
+    },
+    {
+      "tail": "preallowable",
+      "head": "Diaspinae",
+      "label": null
+    },
+    {
+      "tail": "Diaspinae",
+      "head": "acetylfluoride peptonate",
+      "label": null
+    },
+    {
+      "tail": "acetylfluoride peptonate",
+      "head": "tracksick",
+      "label": null
+    },
+    {
+      "tail": "tracksick",
+      "head": "undisputableness",
+      "label": null
+    },
+    {
+      "tail": "undisputableness",
+      "head": "doomsday",
+      "label": null
+    },
+    {
+      "tail": "doomsday",
+      "head": "neurectasy",
+      "label": null
+    },
+    {
+      "tail": "neurectasy",
+      "head": "potherb pygmyship",
+      "label": "YES"
+    },
+    {
+      "tail": "neurectasy",
+      "head": "phyllomorphy",
+      "label": "YES"
+    },
+    {
+      "tail": "potherb pygmyship",
+      "head": "finfoot",
+      "label": null
+    },
+    {
+      "tail": "finfoot",
+      "head": "dimethylamine",
+      "label": null
+    }
+  ]
+}

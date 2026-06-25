@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "pickerel unbereft",
+      "id": "pickerel unbereft",
+      "class": "node",
+      "bbox": [
+        37,
+        159,
+        134,
+        217
+      ]
+    },
+    {
+      "text": "undoneness",
+      "id": "undoneness",
+      "class": "node",
+      "bbox": [
+        44,
+        285,
+        127,
+        335
+      ]
+    },
+    {
+      "text": "reperception",
+      "id": "reperception",
+      "class": "node",
+      "bbox": [
+        168,
+        27,
+        278,
+        75
+      ]
+    },
+    {
+      "text": "detainal",
+      "id": "detainal",
+      "class": "node",
+      "bbox": [
+        27,
+        27,
+        136,
+        75
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pickerel unbereft",
+      "head": "undoneness",
+      "label": "0.72",
+      "class": "unidirectional",
+      "bbox": [
+        83,
+        217,
+        88,
+        281
+      ]
+    },
+    {
+      "tail": "reperception",
+      "head": "pickerel unbereft",
+      "label": "-0.53** y = 0.546",
+      "class": "unidirectional",
+      "bbox": [
+        113,
+        74,
+        200,
+        160
+      ]
+    },
+    {
+      "tail": "detainal",
+      "head": "pickerel unbereft",
+      "label": "0.94 f = 0.743",
+      "class": "unidirectional",
+      "bbox": [
+        82,
+        75,
+        87,
+        155
+      ]
+    }
+  ]
+}

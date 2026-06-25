@@ -1,0 +1,266 @@
+{
+  "nodes": [
+    {
+      "text": "receive order by Lieferando",
+      "id": "receive order by Lieferando",
+      "class": "task"
+    },
+    {
+      "text": "receive order by Website",
+      "id": "receive order by Website",
+      "class": "task"
+    },
+    {
+      "text": "receive order by phone",
+      "id": "receive order by phone",
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "write down order note",
+      "id": "write down order note",
+      "class": "task"
+    },
+    {
+      "text": "print out order note",
+      "id": "print out order note",
+      "class": "task"
+    },
+    {
+      "text": "attach order note to pinboard",
+      "id": "attach order note to pinboard",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "Bestellungsprozess startet",
+      "id": "Bestellungsprozess startet",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order note",
+      "id": "order note",
+      "class": "dataObject"
+    },
+    {
+      "text": "pinwall",
+      "id": "pinwall",
+      "class": "dataStore"
+    },
+    {
+      "text": "order note/ priinted order",
+      "id": "order note/ priinted order",
+      "class": "dataObject"
+    },
+    {
+      "text": "confirmed order",
+      "id": "confirmed order",
+      "class": "dataObject"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "class": "dataObject"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "class": "dataObject"
+    },
+    {
+      "text": "confirmed order",
+      "id": "confirmed order",
+      "class": "dataObject"
+    },
+    {
+      "text": "Database",
+      "id": "Database",
+      "class": "dataStore"
+    },
+    {
+      "text": "Weborder",
+      "id": "Weborder",
+      "class": "dataObject"
+    },
+    {
+      "text": "Weborder",
+      "id": "Weborder",
+      "class": "dataObject"
+    },
+    {
+      "text": "painted order",
+      "id": "painted order",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "receive order by Website",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive order by phone",
+      "head": "write down order note",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by phone",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach order note to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "print out order note",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "print out order note",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive order by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by Lieferando",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by Website",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Bestellungsprozess startet",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive order by Lieferando",
+      "head": "order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "receive order by Website",
+      "head": "Weborder",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "order",
+      "head": "confirm order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "Database",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "confirmed order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "confirmed order",
+      "head": "print out order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Weborder",
+      "head": "print out order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print out order note",
+      "head": "painted order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "order note/ priinted order",
+      "head": "attach order note to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "pinwall",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": []
+}

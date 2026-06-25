@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "tangling",
+      "id": "tangling",
+      "class": "circle",
+      "bbox": [
+        46,
+        5,
+        125,
+        85
+      ]
+    },
+    {
+      "text": "tarrying",
+      "id": "tarrying",
+      "class": "box",
+      "bbox": [
+        49,
+        96,
+        121,
+        144
+      ]
+    },
+    {
+      "text": "Gregor subfacies",
+      "id": "Gregor subfacies",
+      "class": "hexagon",
+      "bbox": [
+        35,
+        276,
+        136,
+        336
+      ]
+    },
+    {
+      "text": "vade rift",
+      "id": "vade rift",
+      "class": "diamond",
+      "bbox": [
+        44,
+        418,
+        127,
+        492
+      ]
+    },
+    {
+      "text": "Clerus",
+      "id": "Clerus",
+      "class": "diamond",
+      "bbox": [
+        29,
+        580,
+        142,
+        628
+      ]
+    },
+    {
+      "text": "chemicovital",
+      "id": "chemicovital",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        729,
+        166,
+        777
+      ]
+    },
+    {
+      "text": "counterchange",
+      "id": "counterchange",
+      "class": "oval",
+      "bbox": [
+        25,
+        878,
+        145,
+        921
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tangling",
+      "head": "tarrying",
+      "label": null,
+      "bbox": [
+        81,
+        80,
+        90,
+        94
+      ]
+    },
+    {
+      "tail": "tarrying",
+      "head": "Gregor subfacies",
+      "label": null,
+      "bbox": [
+        81,
+        144,
+        90,
+        274
+      ]
+    },
+    {
+      "tail": "Gregor subfacies",
+      "head": "vade rift",
+      "label": null,
+      "bbox": [
+        81,
+        336,
+        90,
+        416
+      ]
+    },
+    {
+      "tail": "vade rift",
+      "head": "Clerus",
+      "label": "NO",
+      "bbox": [
+        95,
+        480,
+        104,
+        584
+      ]
+    },
+    {
+      "tail": "vade rift",
+      "head": "tarrying",
+      "label": "NO",
+      "bbox": [
+        123,
+        116,
+        154,
+        455
+      ]
+    },
+    {
+      "tail": "Clerus",
+      "head": "chemicovital",
+      "label": "no",
+      "bbox": [
+        81,
+        629,
+        90,
+        727
+      ]
+    },
+    {
+      "tail": "Clerus",
+      "head": "vade rift",
+      "label": "no",
+      "bbox": [
+        67,
+        481,
+        76,
+        586
+      ]
+    },
+    {
+      "tail": "chemicovital",
+      "head": "counterchange",
+      "label": null,
+      "bbox": [
+        81,
+        778,
+        90,
+        876
+      ]
+    }
+  ]
+}

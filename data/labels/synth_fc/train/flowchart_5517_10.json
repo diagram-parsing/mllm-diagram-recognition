@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "ependytes",
+      "id": "ependytes",
+      "class": "ellipse"
+    },
+    {
+      "text": "interdependence",
+      "id": "interdependence",
+      "class": "hexagon"
+    },
+    {
+      "text": "cetorhinid corsepresent",
+      "id": "cetorhinid corsepresent",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unrefine",
+      "id": "unrefine",
+      "class": "document"
+    },
+    {
+      "text": "quinova",
+      "id": "quinova",
+      "class": "diamond"
+    },
+    {
+      "text": "caudices",
+      "id": "caudices",
+      "class": "diamond"
+    },
+    {
+      "text": "pseudepiscopy",
+      "id": "pseudepiscopy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "albitization",
+      "id": "albitization",
+      "class": "parallelogram"
+    },
+    {
+      "text": "delectus Hippocratea",
+      "id": "delectus Hippocratea",
+      "class": "box"
+    },
+    {
+      "text": "hypocrisy",
+      "id": "hypocrisy",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "ependytes",
+      "head": "interdependence",
+      "label": null
+    },
+    {
+      "tail": "interdependence",
+      "head": "cetorhinid corsepresent",
+      "label": null
+    },
+    {
+      "tail": "cetorhinid corsepresent",
+      "head": "unrefine",
+      "label": null
+    },
+    {
+      "tail": "unrefine",
+      "head": "quinova",
+      "label": null
+    },
+    {
+      "tail": "quinova",
+      "head": "caudices",
+      "label": "YES"
+    },
+    {
+      "tail": "quinova",
+      "head": "pseudepiscopy",
+      "label": "YES"
+    },
+    {
+      "tail": "caudices",
+      "head": "albitization",
+      "label": "yes"
+    },
+    {
+      "tail": "caudices",
+      "head": "unrefine",
+      "label": "yes"
+    },
+    {
+      "tail": "albitization",
+      "head": "delectus Hippocratea",
+      "label": null
+    },
+    {
+      "tail": "delectus Hippocratea",
+      "head": "pseudepiscopy",
+      "label": null
+    },
+    {
+      "tail": "pseudepiscopy",
+      "head": "hypocrisy",
+      "label": null
+    }
+  ]
+}

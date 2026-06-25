@@ -1,0 +1,174 @@
+{
+  "nodes": [
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "register and examine claim",
+      "id": "register and examine claim",
+      "class": "task"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "checked recommendation",
+      "id": "checked recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim process continued",
+      "id": "claim process continued",
+      "class": "event"
+    },
+    {
+      "text": "handle proceeding process",
+      "id": "handle proceeding process",
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "handle proceeding process",
+      "head": "claim process continued",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "handle proceeding process",
+      "class": "sequenceFlow",
+      "label": "recommendation\u00c3\u0083\u00c2\u0082\u00c3\u0082\u00c2\u00a0 OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": "recommendation not OK"
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register and examine claim",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "register and examine claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "checked recommendation",
+      "head": "handle proceeding process",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "checked recommendation",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "label": "claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "Disbursement organization",
+        "claim officer",
+        "senior claims officer",
+        "claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Disbursement organization",
+      "nodes": [
+        "claim process continued",
+        "handle proceeding process"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "check recommendation",
+        "exclusiveGateway_1",
+        "register and examine claim",
+        "settlement recommendation",
+        "checked recommendation",
+        "claim received",
+        "write settlement recommendation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check recommendation",
+        "exclusiveGateway_1",
+        "checked recommendation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "register and examine claim",
+        "settlement recommendation",
+        "claim received",
+        "write settlement recommendation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

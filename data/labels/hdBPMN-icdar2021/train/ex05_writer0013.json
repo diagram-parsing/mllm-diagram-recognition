@@ -1,0 +1,290 @@
+{
+  "nodes": [
+    {
+      "text": "check Documentation",
+      "id": "check Documentation",
+      "class": "task"
+    },
+    {
+      "text": "Documentation cancelled",
+      "id": "Documentation cancelled",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Register documentation",
+      "id": "Register documentation",
+      "class": "task"
+    },
+    {
+      "text": "check insurance",
+      "id": "check insurance",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Authorize repairs",
+      "id": "Authorize repairs",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Auhtorize repairs",
+      "id": "Auhtorize repairs",
+      "class": "messageEvent"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "class": "task"
+    },
+    {
+      "text": "claim documentation",
+      "id": "claim documentation",
+      "class": "dataObject"
+    },
+    {
+      "text": "letter to customer",
+      "id": "letter to customer",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "label": "Assessment not ok"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "label": "Insurance not ok"
+    },
+    {
+      "tail": "Documentation cancelled",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "label": "Documentation incomplete"
+    },
+    {
+      "tail": "schedule payment",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Auhtorize repairs",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Authorize repairs",
+      "head": "Auhtorize repairs",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Authorize repairs",
+      "class": "sequenceFlow",
+      "label": "Assessment ok"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "label": "Insurance ok"
+    },
+    {
+      "tail": "check insurance",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Register documentation",
+      "head": "check insurance",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Documentation cancelled",
+      "head": "Register documentation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check Documentation",
+      "head": "Documentation cancelled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "check Documentation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "claim documentation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim documentation",
+      "head": "check Documentation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check Documentation",
+      "head": "letter to customer",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim documentation",
+      "head": "Register documentation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim documentation",
+      "head": "check insurance",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check insurance",
+      "head": "letter to customer",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim documentation",
+      "head": "perform assessment",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "perform assessment",
+      "head": "letter to customer",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "letter to customer",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Authorize repairs",
+      "head": "Garage",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Garage",
+      "head": "Auhtorize repairs",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "letter to customer",
+      "head": "messageEvent_2",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurance",
+      "nodes": [
+        "Handling department",
+        "Notification Department"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Handling department",
+      "nodes": [
+        "check insurance",
+        "exclusiveGateway_1",
+        "perform assessment",
+        "exclusiveGateway_2",
+        "Authorize repairs",
+        "Auhtorize repairs",
+        "schedule payment"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Notification Department",
+      "nodes": [
+        "check Documentation",
+        "Documentation cancelled",
+        "Register documentation",
+        "claim documentation",
+        "letter to customer",
+        "messageEvent_1",
+        "messageEvent_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Garage",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

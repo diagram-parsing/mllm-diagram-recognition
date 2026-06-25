@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "text": "register insurance claim",
+      "id": "register insurance claim",
+      "class": "task"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "unite settlement recommendation",
+      "id": "unite settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "Insurance\nclaim",
+      "id": "Insurance\nclaim",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "messageEvent_1",
+      "head": "register insurance claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register insurance claim",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "unite settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": "marked \"Not OK\""
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "unite settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Insurance\nclaim",
+      "head": "register insurance claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "Insurance\nclaim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "label": "Insurance claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "register insurance claim",
+        "examine claim",
+        "Insurance\nclaim",
+        "messageEvent_1"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "exclusiveGateway_1",
+        "unite settlement recommendation",
+        "check recommendation",
+        "exclusiveGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

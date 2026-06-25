@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "equimodal petalite",
+      "id": "equimodal petalite",
+      "class": "node",
+      "bbox": [
+        213,
+        113,
+        327,
+        174
+      ]
+    },
+    {
+      "text": "myelemia",
+      "id": "myelemia",
+      "class": "node",
+      "bbox": [
+        5,
+        120,
+        106,
+        168
+      ]
+    },
+    {
+      "text": "reslate",
+      "id": "reslate",
+      "class": "node",
+      "bbox": [
+        429,
+        164,
+        504,
+        212
+      ]
+    },
+    {
+      "text": "jasmone undeceivable Capsidae",
+      "id": "jasmone undeceivable Capsidae",
+      "class": "node",
+      "bbox": [
+        217,
+        208,
+        323,
+        256
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "equimodal petalite",
+      "head": "myelemia",
+      "label": "0.3523",
+      "class": "unidirectional",
+      "bbox": [
+        106,
+        136,
+        213,
+        151
+      ]
+    },
+    {
+      "tail": "reslate",
+      "head": "equimodal petalite",
+      "label": "-1",
+      "class": "bidirectional",
+      "bbox": [
+        323,
+        151,
+        412,
+        175
+      ]
+    },
+    {
+      "tail": "reslate",
+      "head": "jasmone undeceivable Capsidae",
+      "label": "0.56 t = 0.9",
+      "class": "unidirectional",
+      "bbox": [
+        323,
+        212,
+        441,
+        250
+      ]
+    }
+  ]
+}

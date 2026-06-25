@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "Glis concutient",
+      "id": "Glis concutient",
+      "class": "circle"
+    },
+    {
+      "text": "metronomical",
+      "id": "metronomical",
+      "class": "document"
+    },
+    {
+      "text": "cutleriaceous",
+      "id": "cutleriaceous",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hookmaker",
+      "id": "hookmaker",
+      "class": "box"
+    },
+    {
+      "text": "uncomplaisant unadaptedly",
+      "id": "uncomplaisant unadaptedly",
+      "class": "hexagon"
+    },
+    {
+      "text": "masterer",
+      "id": "masterer",
+      "class": "diamond"
+    },
+    {
+      "text": "liguloid flaring",
+      "id": "liguloid flaring",
+      "class": "diamond"
+    },
+    {
+      "text": "sarcocele",
+      "id": "sarcocele",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Glis concutient",
+      "head": "metronomical",
+      "label": null
+    },
+    {
+      "tail": "metronomical",
+      "head": "cutleriaceous",
+      "label": null
+    },
+    {
+      "tail": "cutleriaceous",
+      "head": "hookmaker",
+      "label": null
+    },
+    {
+      "tail": "hookmaker",
+      "head": "uncomplaisant unadaptedly",
+      "label": null
+    },
+    {
+      "tail": "uncomplaisant unadaptedly",
+      "head": "masterer",
+      "label": null
+    },
+    {
+      "tail": "masterer",
+      "head": "liguloid flaring",
+      "label": "Yes"
+    },
+    {
+      "tail": "masterer",
+      "head": "uncomplaisant unadaptedly",
+      "label": "Yes"
+    },
+    {
+      "tail": "liguloid flaring",
+      "head": "sarcocele",
+      "label": "yes"
+    },
+    {
+      "tail": "liguloid flaring",
+      "head": "Glis concutient",
+      "label": "yes"
+    }
+  ]
+}

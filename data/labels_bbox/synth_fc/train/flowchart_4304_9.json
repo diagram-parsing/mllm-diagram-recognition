@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "Colosseum",
+      "id": "Colosseum",
+      "class": "ellipse",
+      "bbox": [
+        20,
+        5,
+        116,
+        53
+      ]
+    },
+    {
+      "text": "epirrhema",
+      "id": "epirrhema",
+      "class": "diamond",
+      "bbox": [
+        19,
+        77,
+        116,
+        150
+      ]
+    },
+    {
+      "text": "Agriotes scarproof",
+      "id": "Agriotes scarproof",
+      "class": "diamond",
+      "bbox": [
+        5,
+        161,
+        130,
+        234
+      ]
+    },
+    {
+      "text": "tannogelatin",
+      "id": "tannogelatin",
+      "class": "parallelogram",
+      "bbox": [
+        9,
+        413,
+        126,
+        481
+      ]
+    },
+    {
+      "text": "Dolicholus",
+      "id": "Dolicholus",
+      "class": "box",
+      "bbox": [
+        32,
+        257,
+        104,
+        305
+      ]
+    },
+    {
+      "text": "stoled",
+      "id": "stoled",
+      "class": "parallelogram",
+      "bbox": [
+        181,
+        89,
+        289,
+        137
+      ]
+    },
+    {
+      "text": "chicane",
+      "id": "chicane",
+      "class": "document",
+      "bbox": [
+        26,
+        320,
+        109,
+        368
+      ]
+    },
+    {
+      "text": "Timonian",
+      "id": "Timonian",
+      "class": "box",
+      "bbox": [
+        200,
+        173,
+        272,
+        221
+      ]
+    },
+    {
+      "text": "ichthyographer Bellacoola",
+      "id": "ichthyographer Bellacoola",
+      "class": "oval",
+      "bbox": [
+        177,
+        276,
+        289,
+        328
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Colosseum",
+      "head": "epirrhema",
+      "label": null,
+      "bbox": [
+        63,
+        54,
+        72,
+        75
+      ]
+    },
+    {
+      "tail": "epirrhema",
+      "head": "Agriotes scarproof",
+      "label": "yes",
+      "bbox": [
+        63,
+        145,
+        72,
+        159
+      ]
+    },
+    {
+      "tail": "epirrhema",
+      "head": "tannogelatin",
+      "label": "yes",
+      "bbox": [
+        76,
+        145,
+        153,
+        455
+      ]
+    },
+    {
+      "tail": "Agriotes scarproof",
+      "head": "Dolicholus",
+      "label": "no",
+      "bbox": [
+        63,
+        234,
+        72,
+        255
+      ]
+    },
+    {
+      "tail": "Agriotes scarproof",
+      "head": "stoled",
+      "label": "no",
+      "bbox": [
+        80,
+        115,
+        192,
+        167
+      ]
+    },
+    {
+      "tail": "Dolicholus",
+      "head": "chicane",
+      "label": null,
+      "bbox": [
+        63,
+        306,
+        72,
+        319
+      ]
+    },
+    {
+      "tail": "chicane",
+      "head": "tannogelatin",
+      "label": null,
+      "bbox": [
+        63,
+        368,
+        72,
+        411
+      ]
+    },
+    {
+      "tail": "tannogelatin",
+      "head": "stoled",
+      "label": null,
+      "bbox": [
+        118,
+        139,
+        198,
+        412
+      ]
+    },
+    {
+      "tail": "stoled",
+      "head": "Timonian",
+      "label": null,
+      "bbox": [
+        231,
+        138,
+        240,
+        171
+      ]
+    },
+    {
+      "tail": "Timonian",
+      "head": "ichthyographer Bellacoola",
+      "label": null,
+      "bbox": [
+        231,
+        222,
+        240,
+        275
+      ]
+    }
+  ]
+}

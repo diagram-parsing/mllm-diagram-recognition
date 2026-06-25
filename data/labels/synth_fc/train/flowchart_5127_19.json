@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "text": "Peracarida",
+      "id": "Peracarida",
+      "class": "ellipse"
+    },
+    {
+      "text": "foolhardy",
+      "id": "foolhardy",
+      "class": "document"
+    },
+    {
+      "text": "polytrochal",
+      "id": "polytrochal",
+      "class": "document"
+    },
+    {
+      "text": "examinative departed coleopter",
+      "id": "examinative departed coleopter",
+      "class": "hexagon"
+    },
+    {
+      "text": "tweenlight",
+      "id": "tweenlight",
+      "class": "diamond"
+    },
+    {
+      "text": "bronchohemorrhagia",
+      "id": "bronchohemorrhagia",
+      "class": "document"
+    },
+    {
+      "text": "Bostrychidae",
+      "id": "Bostrychidae",
+      "class": "document"
+    },
+    {
+      "text": "pyopneumoperitonitis",
+      "id": "pyopneumoperitonitis",
+      "class": "hexagon"
+    },
+    {
+      "text": "ketonuria",
+      "id": "ketonuria",
+      "class": "hexagon"
+    },
+    {
+      "text": "august",
+      "id": "august",
+      "class": "hexagon"
+    },
+    {
+      "text": "counterstimulate",
+      "id": "counterstimulate",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Shaker",
+      "id": "Shaker",
+      "class": "hexagon"
+    },
+    {
+      "text": "harengiform parapleuritis cogn",
+      "id": "harengiform parapleuritis cogn",
+      "class": "diamond"
+    },
+    {
+      "text": "pseudochromia squealer",
+      "id": "pseudochromia squealer",
+      "class": "box"
+    },
+    {
+      "text": "elmy",
+      "id": "elmy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "semirigid deguelin",
+      "id": "semirigid deguelin",
+      "class": "diamond"
+    },
+    {
+      "text": "foraminulose kind",
+      "id": "foraminulose kind",
+      "class": "document"
+    },
+    {
+      "text": "legenda",
+      "id": "legenda",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Testudinata pilidium",
+      "id": "Testudinata pilidium",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Peracarida",
+      "head": "foolhardy",
+      "label": null
+    },
+    {
+      "tail": "foolhardy",
+      "head": "polytrochal",
+      "label": null
+    },
+    {
+      "tail": "polytrochal",
+      "head": "examinative departed coleopter",
+      "label": null
+    },
+    {
+      "tail": "examinative departed coleopter",
+      "head": "tweenlight",
+      "label": null
+    },
+    {
+      "tail": "tweenlight",
+      "head": "bronchohemorrhagia",
+      "label": "YES"
+    },
+    {
+      "tail": "tweenlight",
+      "head": "polytrochal",
+      "label": "YES"
+    },
+    {
+      "tail": "bronchohemorrhagia",
+      "head": "Bostrychidae",
+      "label": null
+    },
+    {
+      "tail": "Bostrychidae",
+      "head": "pyopneumoperitonitis",
+      "label": null
+    },
+    {
+      "tail": "pyopneumoperitonitis",
+      "head": "ketonuria",
+      "label": null
+    },
+    {
+      "tail": "ketonuria",
+      "head": "august",
+      "label": null
+    },
+    {
+      "tail": "august",
+      "head": "counterstimulate",
+      "label": null
+    },
+    {
+      "tail": "counterstimulate",
+      "head": "Shaker",
+      "label": null
+    },
+    {
+      "tail": "Shaker",
+      "head": "harengiform parapleuritis cogn",
+      "label": null
+    },
+    {
+      "tail": "harengiform parapleuritis cogn",
+      "head": "pseudochromia squealer",
+      "label": "YES"
+    },
+    {
+      "tail": "harengiform parapleuritis cogn",
+      "head": "bronchohemorrhagia",
+      "label": "YES"
+    },
+    {
+      "tail": "pseudochromia squealer",
+      "head": "elmy",
+      "label": null
+    },
+    {
+      "tail": "elmy",
+      "head": "semirigid deguelin",
+      "label": null
+    },
+    {
+      "tail": "semirigid deguelin",
+      "head": "foraminulose kind",
+      "label": "no"
+    },
+    {
+      "tail": "semirigid deguelin",
+      "head": "harengiform parapleuritis cogn",
+      "label": "no"
+    },
+    {
+      "tail": "foraminulose kind",
+      "head": "legenda",
+      "label": null
+    },
+    {
+      "tail": "legenda",
+      "head": "Testudinata pilidium",
+      "label": null
+    }
+  ]
+}

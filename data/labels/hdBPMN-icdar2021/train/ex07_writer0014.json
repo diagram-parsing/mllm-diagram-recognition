@@ -1,0 +1,312 @@
+{
+  "nodes": [
+    {
+      "text": "New case started",
+      "id": "New case started",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "Doctor reviewed",
+      "id": "Doctor reviewed",
+      "class": "event"
+    },
+    {
+      "text": "fill a cheque to pay expenes of expert",
+      "id": "fill a cheque to pay expenes of expert",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "External expert asked to review work of doctor",
+      "id": "External expert asked to review work of doctor",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Expected response time",
+      "id": "Expected response time",
+      "class": "timerEvent"
+    },
+    {
+      "text": "Another external expert asked to review work of doctor",
+      "id": "Another external expert asked to review work of doctor",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "File results",
+      "id": "File results",
+      "class": "task"
+    },
+    {
+      "text": "Expertise received",
+      "id": "Expertise received",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Expertise received",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "File results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "Expertise received",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Another external expert asked to review work of doctor",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Expected response time",
+      "head": "Another external expert asked to review work of doctor",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "Expected response time",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "External expert asked to review work of doctor",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "External expert asked to review work of doctor",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "fill a cheque to pay expenes of expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "New case started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "File results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "Doctor reviewed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill a cheque to pay expenes of expert",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "External expert asked to review work of doctor",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": "Review request"
+    },
+    {
+      "tail": "Expert",
+      "head": "Expertise received",
+      "class": "messageFlow",
+      "label": "Expertise"
+    },
+    {
+      "tail": "Another external expert asked to review work of doctor",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": "Review request"
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": "Cheque"
+    },
+    {
+      "tail": "interview patients",
+      "head": "Patient",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Managing director",
+        "Quality Assurance Departement",
+        "QA Specialist"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing director",
+      "nodes": [
+        "fill a cheque to pay expenes of expert",
+        "messageEvent_1",
+        "External expert asked to review work of doctor",
+        "Expected response time",
+        "Another external expert asked to review work of doctor",
+        "eventBasedGateway_1",
+        "Expertise received",
+        "exclusiveGateway_1",
+        "forward expertise"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality Assurance Departement",
+      "nodes": [
+        "New case started",
+        "parallelGateway_1",
+        "create report",
+        "Doctor reviewed",
+        "File results",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "interview patients"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA Specialist",
+      "nodes": [
+        "New case started",
+        "parallelGateway_1",
+        "create report",
+        "Doctor reviewed",
+        "File results",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "interview patients"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

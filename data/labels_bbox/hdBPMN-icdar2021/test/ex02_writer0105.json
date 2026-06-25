@@ -1,0 +1,498 @@
+{
+  "nodes": [
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        800,
+        700,
+        1013,
+        846
+      ],
+      "class": "task"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "bbox": [
+        1166,
+        700,
+        1453,
+        844
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1540,
+        717,
+        1626,
+        802
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "bbox": [
+        1755,
+        1080,
+        2389,
+        1175
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1555,
+        1084,
+        1640,
+        1173
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claim handling process proceeds",
+      "id": "claim handling process proceeds",
+      "bbox": [
+        1566,
+        1357,
+        1635,
+        1406
+      ],
+      "class": "event"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "bbox": [
+        2006,
+        951,
+        2049,
+        991
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claims",
+      "id": "claims",
+      "bbox": [
+        1140,
+        573,
+        1193,
+        624
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        400,
+        695,
+        528,
+        788
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "bbox": [
+        1713,
+        684,
+        2224,
+        820
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        697,
+        491,
+        768,
+        555
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claims\nDB",
+      "id": "claims\nDB",
+      "bbox": [
+        917,
+        397,
+        1002,
+        453
+      ],
+      "class": "dataStore"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1626,
+        732,
+        1715,
+        785
+      ],
+      "kps": [
+        1626.87,
+        760.095,
+        2.0,
+        1713.548,
+        755.65,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "claim handling process proceeds",
+      "class": "sequenceFlow",
+      "bbox": [
+        1572,
+        1173,
+        1625,
+        1351
+      ],
+      "kps": [
+        1597.978,
+        1173.48,
+        2.0,
+        1597.978,
+        1349.058,
+        2.0
+      ],
+      "label": "OK"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1559,
+        802,
+        1612,
+        1100
+      ],
+      "kps": [
+        1584.643,
+        1097.915,
+        2.0,
+        1584.643,
+        802.323,
+        2.0
+      ],
+      "label": "not OK"
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1635,
+        1107,
+        1757,
+        1161
+      ],
+      "kps": [
+        1755.775,
+        1133.475,
+        2.0,
+        1635.76,
+        1133.475,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1808,
+        820,
+        1861,
+        1082
+      ],
+      "kps": [
+        1833.563,
+        820.103,
+        2.0,
+        1833.563,
+        1080.135,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1453,
+        736,
+        1542,
+        790
+      ],
+      "kps": [
+        1453.515,
+        764.54,
+        2.0,
+        1540.192,
+        760.095,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1013,
+        718,
+        1169,
+        772
+      ],
+      "kps": [
+        1013.46,
+        744.538,
+        2.0,
+        1166.812,
+        744.538,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        528,
+        707,
+        802,
+        761
+      ],
+      "kps": [
+        528.955,
+        733.425,
+        2.0,
+        800.1,
+        733.425,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        771,
+        524,
+        824,
+        704
+      ],
+      "kps": [
+        782.32,
+        524.51,
+        2.0,
+        811.213,
+        702.31,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claims\nDB",
+      "class": "dataAssociation",
+      "bbox": [
+        867,
+        431,
+        921,
+        702
+      ],
+      "kps": [
+        893.445,
+        700.088,
+        2.0,
+        917.892,
+        431.165,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claims",
+      "class": "dataAssociation",
+      "bbox": [
+        1013,
+        602,
+        1142,
+        697
+      ],
+      "kps": [
+        1013.46,
+        695.642,
+        2.0,
+        1140.143,
+        602.298,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claims",
+      "head": "examine claim",
+      "class": "dataAssociation",
+      "bbox": [
+        1193,
+        600,
+        1302,
+        702
+      ],
+      "kps": [
+        1193.482,
+        600.075,
+        2.0,
+        1300.163,
+        700.088,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        2018,
+        991,
+        2071,
+        1082
+      ],
+      "kps": [
+        2033.588,
+        991.235,
+        2.0,
+        2053.59,
+        1080.135,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        2004,
+        820,
+        2058,
+        937
+      ],
+      "kps": [
+        2031.365,
+        820.103,
+        2.0,
+        2029.143,
+        935.672,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        453,
+        304,
+        506,
+        684
+      ],
+      "kps": [
+        468.948,
+        304.482,
+        2.0,
+        488.95,
+        682.308,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurance",
+      "nodes": [
+        "senior claims officer",
+        "claims officer"
+      ],
+      "bbox": [
+        182,
+        635,
+        2486,
+        1869
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check recommendation",
+        "exclusiveGateway_2",
+        "claim handling process proceeds",
+        "settlement recommendation"
+      ],
+      "bbox": [
+        248,
+        915,
+        2486,
+        1869
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "register claim",
+        "examine claim",
+        "exclusiveGateway_1",
+        "claim received",
+        "write settlement recommendation"
+      ],
+      "bbox": [
+        248,
+        635,
+        2486,
+        915
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        306,
+        206,
+        686,
+        303
+      ],
+      "class": "pool"
+    }
+  ]
+}

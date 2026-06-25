@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "thiophosgene",
+      "id": "thiophosgene",
+      "class": "circle"
+    },
+    {
+      "text": "enterocele isostrychnine wheen",
+      "id": "enterocele isostrychnine wheen",
+      "class": "diamond"
+    },
+    {
+      "text": "sibilantly",
+      "id": "sibilantly",
+      "class": "diamond"
+    },
+    {
+      "text": "lithoglyphic",
+      "id": "lithoglyphic",
+      "class": "ellipse"
+    },
+    {
+      "text": "oneiroscopic",
+      "id": "oneiroscopic",
+      "class": "diamond"
+    },
+    {
+      "text": "dietotoxic opinionedness aline",
+      "id": "dietotoxic opinionedness aline",
+      "class": "hexagon"
+    },
+    {
+      "text": "carder enteropneustan",
+      "id": "carder enteropneustan",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "thiophosgene",
+      "head": "enterocele isostrychnine wheen",
+      "label": null
+    },
+    {
+      "tail": "enterocele isostrychnine wheen",
+      "head": "sibilantly",
+      "label": "YES"
+    },
+    {
+      "tail": "enterocele isostrychnine wheen",
+      "head": "lithoglyphic",
+      "label": "YES"
+    },
+    {
+      "tail": "sibilantly",
+      "head": "oneiroscopic",
+      "label": "yes"
+    },
+    {
+      "tail": "sibilantly",
+      "head": "thiophosgene",
+      "label": "yes"
+    },
+    {
+      "tail": "oneiroscopic",
+      "head": "dietotoxic opinionedness aline",
+      "label": "YES"
+    },
+    {
+      "tail": "oneiroscopic",
+      "head": "thiophosgene",
+      "label": "YES"
+    },
+    {
+      "tail": "dietotoxic opinionedness aline",
+      "head": "carder enteropneustan",
+      "label": null
+    },
+    {
+      "tail": "carder enteropneustan",
+      "head": "lithoglyphic",
+      "label": null
+    }
+  ]
+}

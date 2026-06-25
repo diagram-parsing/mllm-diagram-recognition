@@ -1,0 +1,221 @@
+{
+  "nodes": [
+    {
+      "text": "Radiolaria",
+      "id": "Radiolaria",
+      "class": "circle"
+    },
+    {
+      "text": "molluscoid",
+      "id": "molluscoid",
+      "class": "diamond"
+    },
+    {
+      "text": "houselessness",
+      "id": "houselessness",
+      "class": "diamond"
+    },
+    {
+      "text": "membered Amos graniticoline",
+      "id": "membered Amos graniticoline",
+      "class": "diamond"
+    },
+    {
+      "text": "bepart conceive",
+      "id": "bepart conceive",
+      "class": "diamond"
+    },
+    {
+      "text": "dockhouse",
+      "id": "dockhouse",
+      "class": "diamond"
+    },
+    {
+      "text": "innermore leveret uninterested",
+      "id": "innermore leveret uninterested",
+      "class": "parallelogram"
+    },
+    {
+      "text": "ontosophy",
+      "id": "ontosophy",
+      "class": "box"
+    },
+    {
+      "text": "Schleichera",
+      "id": "Schleichera",
+      "class": "box"
+    },
+    {
+      "text": "atavus seaward",
+      "id": "atavus seaward",
+      "class": "hexagon"
+    },
+    {
+      "text": "sanctimony",
+      "id": "sanctimony",
+      "class": "document"
+    },
+    {
+      "text": "untenantableness",
+      "id": "untenantableness",
+      "class": "diamond"
+    },
+    {
+      "text": "nephrologist ameloblast vignet",
+      "id": "nephrologist ameloblast vignet",
+      "class": "document"
+    },
+    {
+      "text": "aerologist",
+      "id": "aerologist",
+      "class": "hexagon"
+    },
+    {
+      "text": "becard bacterious",
+      "id": "becard bacterious",
+      "class": "document"
+    },
+    {
+      "text": "antigravitate",
+      "id": "antigravitate",
+      "class": "document"
+    },
+    {
+      "text": "trigonometric pleuric",
+      "id": "trigonometric pleuric",
+      "class": "parallelogram"
+    },
+    {
+      "text": "nonarticulation",
+      "id": "nonarticulation",
+      "class": "box"
+    },
+    {
+      "text": "Arthrostraca flowering",
+      "id": "Arthrostraca flowering",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Radiolaria",
+      "head": "molluscoid",
+      "label": null
+    },
+    {
+      "tail": "molluscoid",
+      "head": "houselessness",
+      "label": "NO"
+    },
+    {
+      "tail": "molluscoid",
+      "head": "membered Amos graniticoline",
+      "label": "NO"
+    },
+    {
+      "tail": "houselessness",
+      "head": "bepart conceive",
+      "label": "NO"
+    },
+    {
+      "tail": "houselessness",
+      "head": "dockhouse",
+      "label": "NO"
+    },
+    {
+      "tail": "bepart conceive",
+      "head": "dockhouse",
+      "label": "Yes"
+    },
+    {
+      "tail": "bepart conceive",
+      "head": "innermore leveret uninterested",
+      "label": "Yes"
+    },
+    {
+      "tail": "dockhouse",
+      "head": "ontosophy",
+      "label": "YES"
+    },
+    {
+      "tail": "dockhouse",
+      "head": "Schleichera",
+      "label": "YES"
+    },
+    {
+      "tail": "ontosophy",
+      "head": "atavus seaward",
+      "label": null
+    },
+    {
+      "tail": "atavus seaward",
+      "head": "sanctimony",
+      "label": null
+    },
+    {
+      "tail": "sanctimony",
+      "head": "untenantableness",
+      "label": null
+    },
+    {
+      "tail": "untenantableness",
+      "head": "nephrologist ameloblast vignet",
+      "label": "No"
+    },
+    {
+      "tail": "untenantableness",
+      "head": "aerologist",
+      "label": "No"
+    },
+    {
+      "tail": "nephrologist ameloblast vignet",
+      "head": "aerologist",
+      "label": null
+    },
+    {
+      "tail": "aerologist",
+      "head": "innermore leveret uninterested",
+      "label": null
+    },
+    {
+      "tail": "innermore leveret uninterested",
+      "head": "becard bacterious",
+      "label": null
+    },
+    {
+      "tail": "becard bacterious",
+      "head": "membered Amos graniticoline",
+      "label": null
+    },
+    {
+      "tail": "membered Amos graniticoline",
+      "head": "antigravitate",
+      "label": "NO"
+    },
+    {
+      "tail": "membered Amos graniticoline",
+      "head": "Schleichera",
+      "label": "NO"
+    },
+    {
+      "tail": "antigravitate",
+      "head": "trigonometric pleuric",
+      "label": null
+    },
+    {
+      "tail": "trigonometric pleuric",
+      "head": "nonarticulation",
+      "label": null
+    },
+    {
+      "tail": "nonarticulation",
+      "head": "Schleichera",
+      "label": null
+    },
+    {
+      "tail": "Schleichera",
+      "head": "Arthrostraca flowering",
+      "label": null
+    }
+  ]
+}

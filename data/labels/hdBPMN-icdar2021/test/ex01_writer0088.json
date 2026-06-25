@@ -1,0 +1,317 @@
+{
+  "nodes": [
+    {
+      "text": "assess risk",
+      "id": "assess risk",
+      "bbox": [
+        578.2,
+        252.84,
+        156.8,
+        98.0
+      ],
+      "class": "task"
+    },
+    {
+      "text": "carry out risk assessment",
+      "id": "carry out risk assessment",
+      "bbox": [
+        803.6,
+        233.24,
+        196,
+        150.92
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1058.4,
+        292.04,
+        45.08,
+        54.88
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "organize distursement",
+      "id": "organize distursement",
+      "bbox": [
+        1297.52,
+        503.72,
+        254.8,
+        98.0
+      ],
+      "class": "task"
+    },
+    {
+      "text": "credit request sucessfully completed",
+      "id": "credit request sucessfully completed",
+      "bbox": [
+        1695.4,
+        395.92,
+        45.08,
+        47.04
+      ],
+      "class": "event"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "bbox": [
+        1244.6,
+        109.76,
+        70.56,
+        70.56
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "bbox": [
+        1323,
+        356.72,
+        180.32,
+        123.48
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1213.24,
+        397.88,
+        50.96,
+        60.76
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "credit request received",
+      "id": "credit request received",
+      "bbox": [
+        264.6,
+        243.04,
+        96.04,
+        76.44
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1569.96,
+        392,
+        49,
+        60.76
+      ],
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "credit request sucessfully completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1618.96,
+        404.577,
+        78.073,
+        39.2
+      ],
+      "kps": [
+        1618.96,
+        423.36,
+        2.0,
+        1695.4,
+        423.36,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customer",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1503.32,
+        408.497,
+        68.273,
+        39.2
+      ],
+      "kps": [
+        1503.32,
+        431.2,
+        2.0,
+        1569.96,
+        423.36,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "organize distursement",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1552.32,
+        450.8,
+        44.753,
+        103.553
+      ],
+      "kps": [
+        1552.32,
+        552.72,
+        2.0,
+        1595.44,
+        450.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "organize distursement",
+      "class": "sequenceFlow",
+      "bbox": [
+        1248.52,
+        446.88,
+        50.633,
+        107.473
+      ],
+      "kps": [
+        1248.52,
+        446.88,
+        2.0,
+        1297.52,
+        552.72,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "carry out risk assessment",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        999.6,
+        296.777,
+        62.393,
+        39.2
+      ],
+      "kps": [
+        999.6,
+        309.68,
+        2.0,
+        1060.36,
+        321.44,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "assess risk",
+      "head": "carry out risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        735,
+        286.977,
+        70.233,
+        39.2
+      ],
+      "kps": [
+        735.0,
+        301.84,
+        2.0,
+        803.6,
+        309.68,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "credit request received",
+      "head": "assess risk",
+      "class": "sequenceFlow",
+      "bbox": [
+        354.76,
+        284.037,
+        225.073,
+        39.2
+      ],
+      "kps": [
+        354.76,
+        303.8,
+        2.0,
+        578.2,
+        301.84,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1262.24,
+        406.537,
+        62.393,
+        39.2
+      ],
+      "kps": [
+        1262.24,
+        425.32,
+        2.0,
+        1323.0,
+        425.32,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1058.4,
+        343,
+        158.433,
+        83.953
+      ],
+      "kps": [
+        1078.0,
+        343.0,
+        2.0,
+        1215.2,
+        425.32,
+        2.0
+      ],
+      "label": "request accepted"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1083.88,
+        145.04,
+        162.353,
+        152.553
+      ],
+      "kps": [
+        1083.88,
+        295.96,
+        2.0,
+        1244.6,
+        145.04,
+        2.0
+      ],
+      "label": "request respected"
+    }
+  ],
+  "groups": []
+}

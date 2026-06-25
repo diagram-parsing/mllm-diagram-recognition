@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "workbag",
+      "id": "workbag",
+      "class": "oval"
+    },
+    {
+      "text": "isogram",
+      "id": "isogram",
+      "class": "diamond"
+    },
+    {
+      "text": "acrestaff",
+      "id": "acrestaff",
+      "class": "parallelogram"
+    },
+    {
+      "text": "disconvenient cosmosphere",
+      "id": "disconvenient cosmosphere",
+      "class": "ellipse"
+    },
+    {
+      "text": "seilenos",
+      "id": "seilenos",
+      "class": "hexagon"
+    },
+    {
+      "text": "spermatorrhea",
+      "id": "spermatorrhea",
+      "class": "diamond"
+    },
+    {
+      "text": "depravingly understimulus",
+      "id": "depravingly understimulus",
+      "class": "box"
+    },
+    {
+      "text": "prepatellar porcelainization",
+      "id": "prepatellar porcelainization",
+      "class": "document"
+    },
+    {
+      "text": "angiomyosarcoma",
+      "id": "angiomyosarcoma",
+      "class": "parallelogram"
+    },
+    {
+      "text": "poorly",
+      "id": "poorly",
+      "class": "diamond"
+    },
+    {
+      "text": "tyrantship",
+      "id": "tyrantship",
+      "class": "document"
+    },
+    {
+      "text": "ironheartedness rustyback gall",
+      "id": "ironheartedness rustyback gall",
+      "class": "parallelogram"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "workbag",
+      "head": "isogram",
+      "label": null
+    },
+    {
+      "tail": "isogram",
+      "head": "acrestaff",
+      "label": "Yes"
+    },
+    {
+      "tail": "isogram",
+      "head": "disconvenient cosmosphere",
+      "label": "Yes"
+    },
+    {
+      "tail": "acrestaff",
+      "head": "seilenos",
+      "label": null
+    },
+    {
+      "tail": "seilenos",
+      "head": "spermatorrhea",
+      "label": null
+    },
+    {
+      "tail": "spermatorrhea",
+      "head": "depravingly understimulus",
+      "label": "NO"
+    },
+    {
+      "tail": "spermatorrhea",
+      "head": "seilenos",
+      "label": "NO"
+    },
+    {
+      "tail": "depravingly understimulus",
+      "head": "prepatellar porcelainization",
+      "label": null
+    },
+    {
+      "tail": "prepatellar porcelainization",
+      "head": "angiomyosarcoma",
+      "label": null
+    },
+    {
+      "tail": "angiomyosarcoma",
+      "head": "poorly",
+      "label": null
+    },
+    {
+      "tail": "poorly",
+      "head": "tyrantship",
+      "label": "yes"
+    },
+    {
+      "tail": "poorly",
+      "head": "disconvenient cosmosphere",
+      "label": "yes"
+    },
+    {
+      "tail": "tyrantship",
+      "head": "ironheartedness rustyback gall",
+      "label": null
+    },
+    {
+      "tail": "ironheartedness rustyback gall",
+      "head": "disconvenient cosmosphere",
+      "label": null
+    }
+  ]
+}

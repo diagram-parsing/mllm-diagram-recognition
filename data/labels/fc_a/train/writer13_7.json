@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "start",
+      "id": "start",
+      "class": "terminator"
+    },
+    {
+      "text": "i=0 swapped=false",
+      "id": "i=0 swapped=false",
+      "class": "process"
+    },
+    {
+      "text": "i<=length(A)-2",
+      "id": "i<=length(A)-2",
+      "class": "decision"
+    },
+    {
+      "text": "A[i]>A[i+1]",
+      "id": "A[i]>A[i+1]",
+      "class": "decision"
+    },
+    {
+      "text": "swap(A[i],A[i+1])",
+      "id": "swap(A[i],A[i+1])",
+      "class": "process"
+    },
+    {
+      "text": "swapped=true",
+      "id": "swapped=true",
+      "class": "process"
+    },
+    {
+      "text": "i=i+1",
+      "id": "i=i+1",
+      "class": "process"
+    },
+    {
+      "text": "swapped=true",
+      "id": "swapped=true",
+      "class": "decision"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "start",
+      "head": "i=0 swapped=false",
+      "label": null
+    },
+    {
+      "tail": "i=0 swapped=false",
+      "head": "i<=length(A)-2",
+      "label": null
+    },
+    {
+      "tail": "i<=length(A)-2",
+      "head": "A[i]>A[i+1]",
+      "label": "yes"
+    },
+    {
+      "tail": "A[i]>A[i+1]",
+      "head": "swap(A[i],A[i+1])",
+      "label": "then"
+    },
+    {
+      "tail": "swap(A[i],A[i+1])",
+      "head": "swapped=true",
+      "label": null
+    },
+    {
+      "tail": "swapped=true",
+      "head": "i<=length(A)-2",
+      "label": null
+    },
+    {
+      "tail": "A[i]>A[i+1]",
+      "head": "i=i+1",
+      "label": "else"
+    },
+    {
+      "tail": "i=i+1",
+      "head": "i<=length(A)-2",
+      "label": null
+    },
+    {
+      "tail": "i<=length(A)-2",
+      "head": "swapped=true",
+      "label": "No"
+    },
+    {
+      "tail": "swapped=true",
+      "head": "end",
+      "label": "false"
+    },
+    {
+      "tail": "swapped=true",
+      "head": "i=0 swapped=false",
+      "label": "true"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "start",
+      "id": "start",
+      "bbox": [
+        435,
+        4,
+        647,
+        110
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "i=0 swapped=false",
+      "id": "i=0 swapped=false",
+      "bbox": [
+        353,
+        178,
+        767,
+        322
+      ],
+      "class": "process"
+    },
+    {
+      "text": "i<=length(A)-2",
+      "id": "i<=length(A)-2",
+      "bbox": [
+        302,
+        403,
+        849,
+        559
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "swapped=true",
+      "id": "swapped=true",
+      "bbox": [
+        959,
+        405,
+        1330,
+        554
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "End",
+      "id": "End",
+      "bbox": [
+        1060,
+        632,
+        1260,
+        726
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "A[i]>A[i+1]",
+      "id": "A[i]>A[i+1]",
+      "bbox": [
+        368,
+        619,
+        782,
+        780
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "i=i+1",
+      "id": "i=i+1",
+      "bbox": [
+        69,
+        545,
+        293,
+        631
+      ],
+      "class": "process"
+    },
+    {
+      "text": "swap(A[i],A[i+1])",
+      "id": "swap(A[i],A[i+1])",
+      "bbox": [
+        369,
+        816,
+        992,
+        940
+      ],
+      "class": "process"
+    },
+    {
+      "text": "swapped=true",
+      "id": "swapped=true",
+      "bbox": [
+        462,
+        1035,
+        889,
+        1126
+      ],
+      "class": "process"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "start",
+      "head": "i=0 swapped=false",
+      "bbox": [
+        500,
+        114,
+        549,
+        188
+      ],
+      "label": null
+    },
+    {
+      "tail": "i<=length(A)-2",
+      "head": "swapped=true",
+      "bbox": [
+        846,
+        463,
+        971,
+        500
+      ],
+      "label": "No"
+    },
+    {
+      "tail": "i=0 swapped=false",
+      "head": "i<=length(A)-2",
+      "bbox": [
+        529,
+        317,
+        568,
+        407
+      ],
+      "label": null
+    },
+    {
+      "tail": "swapped=true",
+      "head": "i=0 swapped=false",
+      "bbox": [
+        518,
+        119,
+        1157,
+        413
+      ],
+      "label": "true"
+    },
+    {
+      "tail": "swapped=true",
+      "head": "End",
+      "bbox": [
+        1156,
+        550,
+        1204,
+        636
+      ],
+      "label": "false"
+    },
+    {
+      "tail": "i<=length(A)-2",
+      "head": "A[i]>A[i+1]",
+      "bbox": [
+        552,
+        551,
+        588,
+        626
+      ],
+      "label": "yes"
+    },
+    {
+      "tail": "i=i+1",
+      "head": "i<=length(A)-2",
+      "bbox": [
+        159,
+        467,
+        314,
+        544
+      ],
+      "label": null
+    },
+    {
+      "tail": "A[i]>A[i+1]",
+      "head": "i=i+1",
+      "bbox": [
+        145,
+        625,
+        372,
+        710
+      ],
+      "label": "else"
+    },
+    {
+      "tail": "A[i]>A[i+1]",
+      "head": "swap(A[i],A[i+1])",
+      "bbox": [
+        557,
+        771,
+        595,
+        828
+      ],
+      "label": "then"
+    },
+    {
+      "tail": "swap(A[i],A[i+1])",
+      "head": "swapped=true",
+      "bbox": [
+        604,
+        941,
+        654,
+        1043
+      ],
+      "label": null
+    },
+    {
+      "tail": "swapped=true",
+      "head": "i<=length(A)-2",
+      "bbox": [
+        4,
+        336,
+        670,
+        1185
+      ],
+      "label": null
+    }
+  ]
+}

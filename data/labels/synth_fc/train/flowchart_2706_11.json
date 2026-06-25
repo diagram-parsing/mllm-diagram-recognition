@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "unflouted",
+      "id": "unflouted",
+      "class": "circle"
+    },
+    {
+      "text": "glasshouse",
+      "id": "glasshouse",
+      "class": "hexagon"
+    },
+    {
+      "text": "pyrexic",
+      "id": "pyrexic",
+      "class": "diamond"
+    },
+    {
+      "text": "counterstimulate",
+      "id": "counterstimulate",
+      "class": "diamond"
+    },
+    {
+      "text": "nonvoting",
+      "id": "nonvoting",
+      "class": "box"
+    },
+    {
+      "text": "Hondurean whalebird",
+      "id": "Hondurean whalebird",
+      "class": "ellipse"
+    },
+    {
+      "text": "towd auriculately",
+      "id": "towd auriculately",
+      "class": "box"
+    },
+    {
+      "text": "Woodwardia",
+      "id": "Woodwardia",
+      "class": "diamond"
+    },
+    {
+      "text": "infracephalic",
+      "id": "infracephalic",
+      "class": "hexagon"
+    },
+    {
+      "text": "citadel",
+      "id": "citadel",
+      "class": "box"
+    },
+    {
+      "text": "Heliconiinae patterist",
+      "id": "Heliconiinae patterist",
+      "class": "parallelogram"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unflouted",
+      "head": "glasshouse",
+      "label": null
+    },
+    {
+      "tail": "glasshouse",
+      "head": "pyrexic",
+      "label": null
+    },
+    {
+      "tail": "pyrexic",
+      "head": "counterstimulate",
+      "label": "Yes"
+    },
+    {
+      "tail": "pyrexic",
+      "head": "glasshouse",
+      "label": "Yes"
+    },
+    {
+      "tail": "counterstimulate",
+      "head": "nonvoting",
+      "label": "Yes"
+    },
+    {
+      "tail": "counterstimulate",
+      "head": "Hondurean whalebird",
+      "label": "Yes"
+    },
+    {
+      "tail": "nonvoting",
+      "head": "towd auriculately",
+      "label": null
+    },
+    {
+      "tail": "towd auriculately",
+      "head": "Woodwardia",
+      "label": null
+    },
+    {
+      "tail": "Woodwardia",
+      "head": "infracephalic",
+      "label": "Yes"
+    },
+    {
+      "tail": "Woodwardia",
+      "head": "glasshouse",
+      "label": "Yes"
+    },
+    {
+      "tail": "infracephalic",
+      "head": "citadel",
+      "label": null
+    },
+    {
+      "tail": "citadel",
+      "head": "Heliconiinae patterist",
+      "label": null
+    },
+    {
+      "tail": "Heliconiinae patterist",
+      "head": "Hondurean whalebird",
+      "label": null
+    }
+  ]
+}

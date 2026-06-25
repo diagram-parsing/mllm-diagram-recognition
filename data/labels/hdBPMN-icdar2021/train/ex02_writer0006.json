@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "process proceeds",
+      "id": "process proceeds",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "sent back",
+      "id": "sent back",
+      "class": "task"
+    },
+    {
+      "text": "check recommnedation",
+      "id": "check recommnedation",
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "claim\nreceived",
+      "id": "claim\nreceived",
+      "class": "messageEvent"
+    },
+    {
+      "text": "recommendation repeats",
+      "id": "recommendation repeats",
+      "class": "event"
+    },
+    {
+      "text": "register",
+      "id": "register",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "examine",
+      "id": "examine",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "write settlement recommendation",
+      "head": "check recommnedation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim\nreceived",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "register",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "examine",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check recommnedation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "sent back",
+      "class": "sequenceFlow",
+      "label": "not ok"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "process proceeds",
+      "class": "sequenceFlow",
+      "label": "ok"
+    },
+    {
+      "tail": "sent back",
+      "head": "recommendation repeats",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim\nreceived",
+      "class": "messageFlow",
+      "label": "receive\nclaim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "write settlement recommendation",
+        "parallelGateway_1",
+        "claim\nreceived",
+        "recommendation repeats",
+        "register",
+        "parallelGateway_2",
+        "examine"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "process proceeds",
+        "exclusiveGateway_1",
+        "sent back",
+        "check recommnedation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

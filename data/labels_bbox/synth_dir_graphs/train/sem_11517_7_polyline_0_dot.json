@@ -1,0 +1,179 @@
+{
+  "nodes": [
+    {
+      "text": "medullary",
+      "id": "medullary",
+      "class": "node",
+      "bbox": [
+        182,
+        753,
+        323,
+        801
+      ]
+    },
+    {
+      "text": "asak hemiprotein",
+      "id": "asak hemiprotein",
+      "class": "node",
+      "bbox": [
+        472,
+        565,
+        668,
+        643
+      ]
+    },
+    {
+      "text": "workshop",
+      "id": "workshop",
+      "class": "node",
+      "bbox": [
+        174,
+        580,
+        323,
+        628
+      ]
+    },
+    {
+      "text": "chloroformic",
+      "id": "chloroformic",
+      "class": "node",
+      "bbox": [
+        55,
+        377,
+        210,
+        455
+      ]
+    },
+    {
+      "text": "siffilate",
+      "id": "siffilate",
+      "class": "node",
+      "bbox": [
+        242,
+        392,
+        383,
+        440
+      ]
+    },
+    {
+      "text": "Huguenotism Serpentinian elect",
+      "id": "Huguenotism Serpentinian elect",
+      "class": "node",
+      "bbox": [
+        165,
+        189,
+        460,
+        267
+      ]
+    },
+    {
+      "text": "hammerless",
+      "id": "hammerless",
+      "class": "node",
+      "bbox": [
+        5,
+        753,
+        127,
+        801
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "medullary",
+      "head": "asak hemiprotein",
+      "label": "0.62 y = 0.788",
+      "class": "unidirectional",
+      "bbox": [
+        301,
+        641,
+        520,
+        759
+      ]
+    },
+    {
+      "tail": "workshop",
+      "head": "chloroformic",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        158,
+        457,
+        234,
+        580
+      ]
+    },
+    {
+      "tail": "siffilate",
+      "head": "Huguenotism Serpentinian elect",
+      "label": "-0.35* t = 0.389",
+      "class": "unidirectional",
+      "bbox": [
+        306,
+        273,
+        320,
+        392
+      ]
+    },
+    {
+      "tail": "workshop",
+      "head": "siffilate",
+      "label": "-0.54 h = 0.225",
+      "class": "bidirectional",
+      "bbox": [
+        243,
+        443,
+        284,
+        555
+      ]
+    },
+    {
+      "tail": "medullary",
+      "head": "siffilate",
+      "label": "0.2653",
+      "class": "unidirectional",
+      "bbox": [
+        267,
+        444,
+        353,
+        753
+      ]
+    },
+    {
+      "tail": "hammerless",
+      "head": "siffilate",
+      "label": "-0.32* h = 0.777",
+      "class": "bidirectional",
+      "bbox": [
+        48,
+        440,
+        273,
+        728
+      ]
+    },
+    {
+      "tail": "hammerless",
+      "head": "workshop",
+      "label": "0.71 H = 0.904",
+      "class": "bidirectional",
+      "bbox": [
+        94,
+        628,
+        207,
+        732
+      ]
+    },
+    {
+      "tail": "medullary",
+      "head": "workshop",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        243,
+        634,
+        257,
+        753
+      ]
+    }
+  ]
+}

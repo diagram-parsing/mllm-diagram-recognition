@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "text": "wheer",
+      "id": "wheer",
+      "class": "node"
+    },
+    {
+      "text": "ballant",
+      "id": "ballant",
+      "class": "node"
+    },
+    {
+      "text": "Saliaric tarau",
+      "id": "Saliaric tarau",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "wheer",
+      "head": "ballant",
+      "label": "-1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "wheer",
+      "head": "Saliaric tarau",
+      "label": "1",
+      "class": "bidirectional"
+    }
+  ]
+}

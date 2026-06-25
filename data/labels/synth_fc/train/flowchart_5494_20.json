@@ -1,0 +1,231 @@
+{
+  "nodes": [
+    {
+      "text": "Giovanni",
+      "id": "Giovanni",
+      "class": "oval"
+    },
+    {
+      "text": "gismondite rattrap",
+      "id": "gismondite rattrap",
+      "class": "hexagon"
+    },
+    {
+      "text": "Baginda",
+      "id": "Baginda",
+      "class": "document"
+    },
+    {
+      "text": "unfrill",
+      "id": "unfrill",
+      "class": "box"
+    },
+    {
+      "text": "mesocoracoid",
+      "id": "mesocoracoid",
+      "class": "hexagon"
+    },
+    {
+      "text": "lamented geographize",
+      "id": "lamented geographize",
+      "class": "box"
+    },
+    {
+      "text": "Decemberly impotency diaphther",
+      "id": "Decemberly impotency diaphther",
+      "class": "box"
+    },
+    {
+      "text": "queasiness",
+      "id": "queasiness",
+      "class": "box"
+    },
+    {
+      "text": "Nudibranchia Meriones",
+      "id": "Nudibranchia Meriones",
+      "class": "diamond"
+    },
+    {
+      "text": "silicula antistrumatic",
+      "id": "silicula antistrumatic",
+      "class": "diamond"
+    },
+    {
+      "text": "helodes",
+      "id": "helodes",
+      "class": "circle"
+    },
+    {
+      "text": "guttide",
+      "id": "guttide",
+      "class": "document"
+    },
+    {
+      "text": "termage",
+      "id": "termage",
+      "class": "diamond"
+    },
+    {
+      "text": "pathwayed cystigerous",
+      "id": "pathwayed cystigerous",
+      "class": "diamond"
+    },
+    {
+      "text": "polyonymist cookstove",
+      "id": "polyonymist cookstove",
+      "class": "box"
+    },
+    {
+      "text": "endopleura",
+      "id": "endopleura",
+      "class": "parallelogram"
+    },
+    {
+      "text": "neurolymph contraband",
+      "id": "neurolymph contraband",
+      "class": "diamond"
+    },
+    {
+      "text": "pipery",
+      "id": "pipery",
+      "class": "hexagon"
+    },
+    {
+      "text": "cetorhinid corsepresent",
+      "id": "cetorhinid corsepresent",
+      "class": "box"
+    },
+    {
+      "text": "zoomorphic unwealthy",
+      "id": "zoomorphic unwealthy",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Giovanni",
+      "head": "gismondite rattrap",
+      "label": null
+    },
+    {
+      "tail": "gismondite rattrap",
+      "head": "Baginda",
+      "label": null
+    },
+    {
+      "tail": "Baginda",
+      "head": "unfrill",
+      "label": null
+    },
+    {
+      "tail": "unfrill",
+      "head": "mesocoracoid",
+      "label": null
+    },
+    {
+      "tail": "mesocoracoid",
+      "head": "lamented geographize",
+      "label": null
+    },
+    {
+      "tail": "lamented geographize",
+      "head": "Decemberly impotency diaphther",
+      "label": null
+    },
+    {
+      "tail": "Decemberly impotency diaphther",
+      "head": "queasiness",
+      "label": null
+    },
+    {
+      "tail": "queasiness",
+      "head": "Nudibranchia Meriones",
+      "label": null
+    },
+    {
+      "tail": "Nudibranchia Meriones",
+      "head": "silicula antistrumatic",
+      "label": "No"
+    },
+    {
+      "tail": "Nudibranchia Meriones",
+      "head": "helodes",
+      "label": "No"
+    },
+    {
+      "tail": "silicula antistrumatic",
+      "head": "guttide",
+      "label": "No"
+    },
+    {
+      "tail": "silicula antistrumatic",
+      "head": "termage",
+      "label": "No"
+    },
+    {
+      "tail": "guttide",
+      "head": "pathwayed cystigerous",
+      "label": null
+    },
+    {
+      "tail": "pathwayed cystigerous",
+      "head": "polyonymist cookstove",
+      "label": "Yes"
+    },
+    {
+      "tail": "pathwayed cystigerous",
+      "head": "gismondite rattrap",
+      "label": "Yes"
+    },
+    {
+      "tail": "polyonymist cookstove",
+      "head": "termage",
+      "label": null
+    },
+    {
+      "tail": "termage",
+      "head": "endopleura",
+      "label": "No"
+    },
+    {
+      "tail": "termage",
+      "head": "neurolymph contraband",
+      "label": "No"
+    },
+    {
+      "tail": "endopleura",
+      "head": "neurolymph contraband",
+      "label": null
+    },
+    {
+      "tail": "neurolymph contraband",
+      "head": "pipery",
+      "label": "YES"
+    },
+    {
+      "tail": "neurolymph contraband",
+      "head": "pathwayed cystigerous",
+      "label": "YES"
+    },
+    {
+      "tail": "pipery",
+      "head": "cetorhinid corsepresent",
+      "label": null
+    },
+    {
+      "tail": "cetorhinid corsepresent",
+      "head": "zoomorphic unwealthy",
+      "label": null
+    },
+    {
+      "tail": "zoomorphic unwealthy",
+      "head": "helodes",
+      "label": "no"
+    },
+    {
+      "tail": "zoomorphic unwealthy",
+      "head": "endopleura",
+      "label": "no"
+    }
+  ]
+}

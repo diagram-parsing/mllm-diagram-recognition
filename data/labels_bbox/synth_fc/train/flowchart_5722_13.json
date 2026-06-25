@@ -1,0 +1,314 @@
+{
+  "nodes": [
+    {
+      "text": "ungradually jumpable",
+      "id": "ungradually jumpable",
+      "class": "circle",
+      "bbox": [
+        38,
+        5,
+        139,
+        106
+      ]
+    },
+    {
+      "text": "flounderingly",
+      "id": "flounderingly",
+      "class": "parallelogram",
+      "bbox": [
+        31,
+        195,
+        146,
+        269
+      ]
+    },
+    {
+      "text": "mechanics spikebill",
+      "id": "mechanics spikebill",
+      "class": "document",
+      "bbox": [
+        43,
+        343,
+        135,
+        404
+      ]
+    },
+    {
+      "text": "pantochrome glycolipin",
+      "id": "pantochrome glycolipin",
+      "class": "diamond",
+      "bbox": [
+        5,
+        513,
+        172,
+        586
+      ]
+    },
+    {
+      "text": "sutlerage Sinae",
+      "id": "sutlerage Sinae",
+      "class": "diamond",
+      "bbox": [
+        28,
+        619,
+        149,
+        692
+      ]
+    },
+    {
+      "text": "handclap",
+      "id": "handclap",
+      "class": "document",
+      "bbox": [
+        43,
+        766,
+        135,
+        827
+      ]
+    },
+    {
+      "text": "Anopla",
+      "id": "Anopla",
+      "class": "diamond",
+      "bbox": [
+        309,
+        67,
+        432,
+        115
+      ]
+    },
+    {
+      "text": "streptococcal porodine",
+      "id": "streptococcal porodine",
+      "class": "hexagon",
+      "bbox": [
+        308,
+        237,
+        434,
+        297
+      ]
+    },
+    {
+      "text": "posterish torsibility unsponge",
+      "id": "posterish torsibility unsponge",
+      "class": "hexagon",
+      "bbox": [
+        299,
+        308,
+        438,
+        368
+      ]
+    },
+    {
+      "text": "sramana",
+      "id": "sramana",
+      "class": "box",
+      "bbox": [
+        334,
+        490,
+        408,
+        538
+      ]
+    },
+    {
+      "text": "tohubohu halfheartedly",
+      "id": "tohubohu halfheartedly",
+      "class": "hexagon",
+      "bbox": [
+        306,
+        626,
+        436,
+        685
+      ]
+    },
+    {
+      "text": "reptiliform",
+      "id": "reptiliform",
+      "class": "document",
+      "bbox": [
+        325,
+        766,
+        417,
+        827
+      ]
+    },
+    {
+      "text": "bangtail",
+      "id": "bangtail",
+      "class": "oval",
+      "bbox": [
+        332,
+        914,
+        410,
+        956
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "ungradually jumpable",
+      "head": "flounderingly",
+      "label": null,
+      "bbox": [
+        83,
+        106,
+        95,
+        196
+      ]
+    },
+    {
+      "tail": "flounderingly",
+      "head": "mechanics spikebill",
+      "label": null,
+      "bbox": [
+        83,
+        268,
+        95,
+        343
+      ]
+    },
+    {
+      "tail": "mechanics spikebill",
+      "head": "pantochrome glycolipin",
+      "label": null,
+      "bbox": [
+        67,
+        404,
+        79,
+        520
+      ]
+    },
+    {
+      "tail": "pantochrome glycolipin",
+      "head": "sutlerage Sinae",
+      "label": "No",
+      "bbox": [
+        103,
+        577,
+        115,
+        631
+      ]
+    },
+    {
+      "tail": "pantochrome glycolipin",
+      "head": "mechanics spikebill",
+      "label": "No",
+      "bbox": [
+        98,
+        404,
+        110,
+        520
+      ]
+    },
+    {
+      "tail": "sutlerage Sinae",
+      "head": "handclap",
+      "label": "yes",
+      "bbox": [
+        83,
+        692,
+        95,
+        766
+      ]
+    },
+    {
+      "tail": "sutlerage Sinae",
+      "head": "pantochrome glycolipin",
+      "label": "yes",
+      "bbox": [
+        63,
+        577,
+        75,
+        631
+      ]
+    },
+    {
+      "tail": "handclap",
+      "head": "Anopla",
+      "label": null,
+      "bbox": [
+        135,
+        88,
+        316,
+        798
+      ]
+    },
+    {
+      "tail": "Anopla",
+      "head": "streptococcal porodine",
+      "label": "Yes",
+      "bbox": [
+        365,
+        115,
+        377,
+        238
+      ]
+    },
+    {
+      "tail": "Anopla",
+      "head": "mechanics spikebill",
+      "label": "Yes",
+      "bbox": [
+        134,
+        80,
+        337,
+        362
+      ]
+    },
+    {
+      "tail": "streptococcal porodine",
+      "head": "posterish torsibility unsponge",
+      "label": null,
+      "bbox": [
+        365,
+        295,
+        377,
+        308
+      ]
+    },
+    {
+      "tail": "posterish torsibility unsponge",
+      "head": "sramana",
+      "label": null,
+      "bbox": [
+        365,
+        368,
+        377,
+        491
+      ]
+    },
+    {
+      "tail": "sramana",
+      "head": "tohubohu halfheartedly",
+      "label": null,
+      "bbox": [
+        365,
+        538,
+        377,
+        626
+      ]
+    },
+    {
+      "tail": "tohubohu halfheartedly",
+      "head": "reptiliform",
+      "label": null,
+      "bbox": [
+        365,
+        685,
+        377,
+        766
+      ]
+    },
+    {
+      "tail": "reptiliform",
+      "head": "bangtail",
+      "label": null,
+      "bbox": [
+        365,
+        827,
+        377,
+        914
+      ]
+    }
+  ]
+}

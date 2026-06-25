@@ -1,0 +1,365 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        554,
+        1138,
+        683,
+        1238
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        1009,
+        975,
+        1397,
+        1342
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        1805,
+        750,
+        2097,
+        992
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        1751,
+        1138,
+        2093,
+        1359
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        2873,
+        1080,
+        3019,
+        1247
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        2331,
+        738,
+        2748,
+        950
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "bbox": [
+        3174,
+        1001,
+        3624,
+        1251
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_3",
+      "bbox": [
+        2756,
+        1405,
+        3253,
+        1710
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_4",
+      "bbox": [
+        4045,
+        1192,
+        4542,
+        1572
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        1526,
+        1564,
+        1764,
+        1810
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        3762,
+        1347,
+        3916,
+        1534
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        4612,
+        1651,
+        4788,
+        1805
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "event_1",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        684,
+        1134,
+        1031,
+        1234
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1205,
+        871,
+        1810,
+        980
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1359,
+        1101,
+        1756,
+        1256
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "messageEvent_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1205,
+        1342,
+        1531,
+        1698
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2097,
+        815,
+        2336,
+        915
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2748,
+        846,
+        2916,
+        1122
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2093,
+        1161,
+        2874,
+        1262
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        3007,
+        1091,
+        3179,
+        1191
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "task_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1764,
+        1610,
+        2761,
+        1710
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        3624,
+        1080,
+        3825,
+        1377
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_3",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        3261,
+        1443,
+        3771,
+        1564
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "task_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        3916,
+        1385,
+        4050,
+        1485
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_4",
+      "head": "event_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        4333,
+        1572,
+        4617,
+        1731
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "messageEvent_3",
+      "class": "messageFlow",
+      "bbox": [
+        1526,
+        1810,
+        1627,
+        2440
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "messageEvent_2",
+      "class": "messageFlow",
+      "bbox": [
+        2010,
+        1397,
+        2203,
+        2440
+      ],
+      "label": null
+    },
+    {
+      "tail": "Lieferando",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        1950,
+        475,
+        2050,
+        739
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Lieferando",
+      "nodes": [],
+      "bbox": [
+        104,
+        187,
+        4838,
+        475
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        16,
+        2435,
+        4988,
+        2706
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Pizzeria",
+      "nodes": [],
+      "bbox": [
+        33,
+        654,
+        4996,
+        2160
+      ],
+      "class": "pool"
+    }
+  ]
+}

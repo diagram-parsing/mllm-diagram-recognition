@@ -1,0 +1,233 @@
+{
+  "nodes": [
+    {
+      "text": "retrieves the file",
+      "id": "retrieves the file",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "acceptable for filling",
+      "id": "acceptable for filling",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "compliant with the description",
+      "id": "compliant with the description",
+      "class": "task"
+    },
+    {
+      "text": "need to set a hearing date",
+      "id": "need to set a hearing date",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "cashier allocates a hearing date",
+      "id": "cashier allocates a hearing date",
+      "class": "task"
+    },
+    {
+      "text": "event ends",
+      "id": "event ends",
+      "class": "event"
+    },
+    {
+      "text": "fees notice",
+      "id": "fees notice",
+      "class": "task"
+    },
+    {
+      "text": "wait for the owner to pay the fees",
+      "id": "wait for the owner to pay the fees",
+      "class": "task"
+    },
+    {
+      "text": "owner paid the fees",
+      "id": "owner paid the fees",
+      "class": "task"
+    },
+    {
+      "text": "cashier DB",
+      "id": "cashier DB",
+      "class": "dataStore"
+    },
+    {
+      "text": "cashier",
+      "id": "cashier",
+      "class": "dataStore"
+    },
+    {
+      "text": "hearing date",
+      "id": "hearing date",
+      "class": "dataObject"
+    },
+    {
+      "text": "request letter",
+      "id": "request letter",
+      "class": "messageEvent"
+    },
+    {
+      "text": "received a request",
+      "id": "received a request",
+      "class": "messageEvent"
+    },
+    {
+      "text": "event ends",
+      "id": "event ends",
+      "class": "event"
+    },
+    {
+      "text": "fees informations",
+      "id": "fees informations",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "received a request",
+      "head": "retrieves the file",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieves the file",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "acceptable for filling",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "acceptable for filling",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "compliant with the description",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "compliant with the description",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "need to set a hearing date",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "need to set a hearing date",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "cashier allocates a hearing date",
+      "class": "sequenceFlow",
+      "label": "paid?"
+    },
+    {
+      "tail": "cashier allocates a hearing date",
+      "head": "event ends",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "fees notice",
+      "class": "sequenceFlow",
+      "label": "not paid?"
+    },
+    {
+      "tail": "fees notice",
+      "head": "wait for the owner to pay the fees",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "wait for the owner to pay the fees",
+      "head": "owner paid the fees",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "owner paid the fees",
+      "head": "event ends",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "need to set a hearing date",
+      "head": "hearing date",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "cashier allocates a hearing date",
+      "head": "cashier",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "cashier",
+      "head": "owner paid the fees",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "owner paid the fees",
+      "head": "cashier DB",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "owner",
+      "head": "received a request",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "fees informations",
+      "head": "owner",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "cashier",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "owner",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

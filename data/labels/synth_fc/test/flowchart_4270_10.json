@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "reabsent demivol",
+      "id": "reabsent demivol",
+      "class": "circle"
+    },
+    {
+      "text": "canjac",
+      "id": "canjac",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hierarchal",
+      "id": "hierarchal",
+      "class": "diamond"
+    },
+    {
+      "text": "entosternal",
+      "id": "entosternal",
+      "class": "box"
+    },
+    {
+      "text": "cantaloupe freshwoman",
+      "id": "cantaloupe freshwoman",
+      "class": "diamond"
+    },
+    {
+      "text": "laudableness coarsish",
+      "id": "laudableness coarsish",
+      "class": "document"
+    },
+    {
+      "text": "doctor",
+      "id": "doctor",
+      "class": "document"
+    },
+    {
+      "text": "dumbledore curine",
+      "id": "dumbledore curine",
+      "class": "box"
+    },
+    {
+      "text": "overdestructive funt",
+      "id": "overdestructive funt",
+      "class": "box"
+    },
+    {
+      "text": "enallage",
+      "id": "enallage",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "reabsent demivol",
+      "head": "canjac",
+      "label": null
+    },
+    {
+      "tail": "canjac",
+      "head": "hierarchal",
+      "label": null
+    },
+    {
+      "tail": "hierarchal",
+      "head": "entosternal",
+      "label": "Yes"
+    },
+    {
+      "tail": "hierarchal",
+      "head": "cantaloupe freshwoman",
+      "label": "Yes"
+    },
+    {
+      "tail": "entosternal",
+      "head": "laudableness coarsish",
+      "label": null
+    },
+    {
+      "tail": "laudableness coarsish",
+      "head": "doctor",
+      "label": null
+    },
+    {
+      "tail": "doctor",
+      "head": "dumbledore curine",
+      "label": null
+    },
+    {
+      "tail": "dumbledore curine",
+      "head": "overdestructive funt",
+      "label": null
+    },
+    {
+      "tail": "overdestructive funt",
+      "head": "cantaloupe freshwoman",
+      "label": null
+    },
+    {
+      "tail": "cantaloupe freshwoman",
+      "head": "enallage",
+      "label": "YES"
+    },
+    {
+      "tail": "cantaloupe freshwoman",
+      "head": "laudableness coarsish",
+      "label": "YES"
+    }
+  ]
+}

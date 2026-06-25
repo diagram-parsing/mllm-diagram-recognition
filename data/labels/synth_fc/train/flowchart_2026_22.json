@@ -1,0 +1,246 @@
+{
+  "nodes": [
+    {
+      "text": "ontosophy",
+      "id": "ontosophy",
+      "class": "ellipse"
+    },
+    {
+      "text": "frontager",
+      "id": "frontager",
+      "class": "diamond"
+    },
+    {
+      "text": "unthawing tagger",
+      "id": "unthawing tagger",
+      "class": "diamond"
+    },
+    {
+      "text": "pneumatosis",
+      "id": "pneumatosis",
+      "class": "document"
+    },
+    {
+      "text": "autopsical tapperer Geshurites",
+      "id": "autopsical tapperer Geshurites",
+      "class": "diamond"
+    },
+    {
+      "text": "electrophrenic",
+      "id": "electrophrenic",
+      "class": "circle"
+    },
+    {
+      "text": "antiedemic",
+      "id": "antiedemic",
+      "class": "box"
+    },
+    {
+      "text": "monarchy",
+      "id": "monarchy",
+      "class": "box"
+    },
+    {
+      "text": "mackenboy",
+      "id": "mackenboy",
+      "class": "box"
+    },
+    {
+      "text": "preveniently",
+      "id": "preveniently",
+      "class": "diamond"
+    },
+    {
+      "text": "conscientiousness orderable",
+      "id": "conscientiousness orderable",
+      "class": "parallelogram"
+    },
+    {
+      "text": "morphiate",
+      "id": "morphiate",
+      "class": "hexagon"
+    },
+    {
+      "text": "spiker",
+      "id": "spiker",
+      "class": "parallelogram"
+    },
+    {
+      "text": "rachiglossate pertuse",
+      "id": "rachiglossate pertuse",
+      "class": "box"
+    },
+    {
+      "text": "unilocular",
+      "id": "unilocular",
+      "class": "parallelogram"
+    },
+    {
+      "text": "bucklandite youngly Mollisiace",
+      "id": "bucklandite youngly Mollisiace",
+      "class": "hexagon"
+    },
+    {
+      "text": "counterconversion Carinaria",
+      "id": "counterconversion Carinaria",
+      "class": "hexagon"
+    },
+    {
+      "text": "shimose dhamnoo dachshound",
+      "id": "shimose dhamnoo dachshound",
+      "class": "document"
+    },
+    {
+      "text": "hierarchal",
+      "id": "hierarchal",
+      "class": "box"
+    },
+    {
+      "text": "satrapy curdly",
+      "id": "satrapy curdly",
+      "class": "diamond"
+    },
+    {
+      "text": "Chiapanecan",
+      "id": "Chiapanecan",
+      "class": "box"
+    },
+    {
+      "text": "poorly",
+      "id": "poorly",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "ontosophy",
+      "head": "frontager",
+      "label": null
+    },
+    {
+      "tail": "frontager",
+      "head": "unthawing tagger",
+      "label": "NO"
+    },
+    {
+      "tail": "frontager",
+      "head": "pneumatosis",
+      "label": "NO"
+    },
+    {
+      "tail": "unthawing tagger",
+      "head": "autopsical tapperer Geshurites",
+      "label": "NO"
+    },
+    {
+      "tail": "unthawing tagger",
+      "head": "electrophrenic",
+      "label": "NO"
+    },
+    {
+      "tail": "autopsical tapperer Geshurites",
+      "head": "antiedemic",
+      "label": "yes"
+    },
+    {
+      "tail": "autopsical tapperer Geshurites",
+      "head": "monarchy",
+      "label": "yes"
+    },
+    {
+      "tail": "antiedemic",
+      "head": "mackenboy",
+      "label": null
+    },
+    {
+      "tail": "mackenboy",
+      "head": "preveniently",
+      "label": null
+    },
+    {
+      "tail": "preveniently",
+      "head": "conscientiousness orderable",
+      "label": "Yes"
+    },
+    {
+      "tail": "preveniently",
+      "head": "morphiate",
+      "label": "Yes"
+    },
+    {
+      "tail": "conscientiousness orderable",
+      "head": "morphiate",
+      "label": null
+    },
+    {
+      "tail": "morphiate",
+      "head": "monarchy",
+      "label": null
+    },
+    {
+      "tail": "monarchy",
+      "head": "spiker",
+      "label": null
+    },
+    {
+      "tail": "spiker",
+      "head": "rachiglossate pertuse",
+      "label": null
+    },
+    {
+      "tail": "rachiglossate pertuse",
+      "head": "unilocular",
+      "label": null
+    },
+    {
+      "tail": "unilocular",
+      "head": "bucklandite youngly Mollisiace",
+      "label": null
+    },
+    {
+      "tail": "bucklandite youngly Mollisiace",
+      "head": "counterconversion Carinaria",
+      "label": null
+    },
+    {
+      "tail": "counterconversion Carinaria",
+      "head": "pneumatosis",
+      "label": null
+    },
+    {
+      "tail": "pneumatosis",
+      "head": "shimose dhamnoo dachshound",
+      "label": null
+    },
+    {
+      "tail": "shimose dhamnoo dachshound",
+      "head": "hierarchal",
+      "label": null
+    },
+    {
+      "tail": "hierarchal",
+      "head": "satrapy curdly",
+      "label": null
+    },
+    {
+      "tail": "satrapy curdly",
+      "head": "Chiapanecan",
+      "label": "yes"
+    },
+    {
+      "tail": "satrapy curdly",
+      "head": "unilocular",
+      "label": "yes"
+    },
+    {
+      "tail": "Chiapanecan",
+      "head": "poorly",
+      "label": null
+    },
+    {
+      "tail": "poorly",
+      "head": "electrophrenic",
+      "label": null
+    }
+  ]
+}

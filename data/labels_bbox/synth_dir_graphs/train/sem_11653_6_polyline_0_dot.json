@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "angelhood",
+      "id": "angelhood",
+      "class": "node",
+      "bbox": [
+        240,
+        112,
+        334,
+        176
+      ]
+    },
+    {
+      "text": "prebalance Tiliaceae",
+      "id": "prebalance Tiliaceae",
+      "class": "node",
+      "bbox": [
+        447,
+        108,
+        598,
+        180
+      ]
+    },
+    {
+      "text": "rectogenital skippable",
+      "id": "rectogenital skippable",
+      "class": "node",
+      "bbox": [
+        230,
+        26,
+        345,
+        75
+      ]
+    },
+    {
+      "text": "moldiness semiroyal",
+      "id": "moldiness semiroyal",
+      "class": "node",
+      "bbox": [
+        452,
+        12,
+        598,
+        84
+      ]
+    },
+    {
+      "text": "beltwise concordant",
+      "id": "beltwise concordant",
+      "class": "node",
+      "bbox": [
+        5,
+        69,
+        126,
+        126
+      ]
+    },
+    {
+      "text": "advertise",
+      "id": "advertise",
+      "class": "node",
+      "bbox": [
+        473,
+        204,
+        578,
+        247
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "angelhood",
+      "head": "prebalance Tiliaceae",
+      "label": "0.54* y = 0.769",
+      "class": "unidirectional",
+      "bbox": [
+        334,
+        141,
+        447,
+        147
+      ]
+    },
+    {
+      "tail": "rectogenital skippable",
+      "head": "moldiness semiroyal",
+      "label": "0.64*** H = 0.78",
+      "class": "unidirectional",
+      "bbox": [
+        345,
+        46,
+        452,
+        52
+      ]
+    },
+    {
+      "tail": "beltwise concordant",
+      "head": "angelhood",
+      "label": "0.55 h = 0.502",
+      "class": "unidirectional",
+      "bbox": [
+        115,
+        114,
+        241,
+        140
+      ]
+    },
+    {
+      "tail": "beltwise concordant",
+      "head": "rectogenital skippable",
+      "label": "-0.59 y = 0.288",
+      "class": "unidirectional",
+      "bbox": [
+        122,
+        60,
+        235,
+        86
+      ]
+    },
+    {
+      "tail": "angelhood",
+      "head": "advertise",
+      "label": "1",
+      "class": "bidirectional",
+      "bbox": [
+        336,
+        161,
+        483,
+        214
+      ]
+    }
+  ]
+}

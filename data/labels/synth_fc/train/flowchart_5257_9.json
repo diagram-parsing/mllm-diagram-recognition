@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "grit",
+      "id": "grit",
+      "class": "circle"
+    },
+    {
+      "text": "Ecuadorian goodyship",
+      "id": "Ecuadorian goodyship",
+      "class": "hexagon"
+    },
+    {
+      "text": "Sambucus",
+      "id": "Sambucus",
+      "class": "diamond"
+    },
+    {
+      "text": "onefold",
+      "id": "onefold",
+      "class": "box"
+    },
+    {
+      "text": "diorite",
+      "id": "diorite",
+      "class": "diamond"
+    },
+    {
+      "text": "synenergistical",
+      "id": "synenergistical",
+      "class": "document"
+    },
+    {
+      "text": "aonach",
+      "id": "aonach",
+      "class": "hexagon"
+    },
+    {
+      "text": "apertly rehang",
+      "id": "apertly rehang",
+      "class": "parallelogram"
+    },
+    {
+      "text": "poverty gaugeable preternormal",
+      "id": "poverty gaugeable preternormal",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "grit",
+      "head": "Ecuadorian goodyship",
+      "label": null
+    },
+    {
+      "tail": "Ecuadorian goodyship",
+      "head": "Sambucus",
+      "label": null
+    },
+    {
+      "tail": "Sambucus",
+      "head": "onefold",
+      "label": "yes"
+    },
+    {
+      "tail": "Sambucus",
+      "head": "diorite",
+      "label": "yes"
+    },
+    {
+      "tail": "onefold",
+      "head": "synenergistical",
+      "label": null
+    },
+    {
+      "tail": "synenergistical",
+      "head": "aonach",
+      "label": null
+    },
+    {
+      "tail": "aonach",
+      "head": "apertly rehang",
+      "label": null
+    },
+    {
+      "tail": "apertly rehang",
+      "head": "diorite",
+      "label": null
+    },
+    {
+      "tail": "diorite",
+      "head": "poverty gaugeable preternormal",
+      "label": "no"
+    },
+    {
+      "tail": "diorite",
+      "head": "synenergistical",
+      "label": "no"
+    }
+  ]
+}

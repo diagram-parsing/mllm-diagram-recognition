@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "pintado",
+      "id": "pintado",
+      "class": "oval"
+    },
+    {
+      "text": "litheness",
+      "id": "litheness",
+      "class": "diamond"
+    },
+    {
+      "text": "unharmonize dicranaceous",
+      "id": "unharmonize dicranaceous",
+      "class": "box"
+    },
+    {
+      "text": "cobwebbing reapable",
+      "id": "cobwebbing reapable",
+      "class": "hexagon"
+    },
+    {
+      "text": "abnormity",
+      "id": "abnormity",
+      "class": "diamond"
+    },
+    {
+      "text": "nonirreparable personating",
+      "id": "nonirreparable personating",
+      "class": "box"
+    },
+    {
+      "text": "preserval sag detoxication",
+      "id": "preserval sag detoxication",
+      "class": "document"
+    },
+    {
+      "text": "rancer nosohemia",
+      "id": "rancer nosohemia",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pintado",
+      "head": "litheness",
+      "label": null
+    },
+    {
+      "tail": "litheness",
+      "head": "unharmonize dicranaceous",
+      "label": "YES"
+    },
+    {
+      "tail": "litheness",
+      "head": "pintado",
+      "label": "YES"
+    },
+    {
+      "tail": "unharmonize dicranaceous",
+      "head": "cobwebbing reapable",
+      "label": null
+    },
+    {
+      "tail": "cobwebbing reapable",
+      "head": "abnormity",
+      "label": null
+    },
+    {
+      "tail": "abnormity",
+      "head": "nonirreparable personating",
+      "label": "Yes"
+    },
+    {
+      "tail": "abnormity",
+      "head": "cobwebbing reapable",
+      "label": "Yes"
+    },
+    {
+      "tail": "nonirreparable personating",
+      "head": "preserval sag detoxication",
+      "label": null
+    },
+    {
+      "tail": "preserval sag detoxication",
+      "head": "rancer nosohemia",
+      "label": null
+    }
+  ]
+}

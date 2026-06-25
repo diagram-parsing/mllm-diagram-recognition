@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "unmasking epiblastema",
+      "id": "unmasking epiblastema",
+      "class": "circle"
+    },
+    {
+      "text": "sejant",
+      "id": "sejant",
+      "class": "diamond"
+    },
+    {
+      "text": "bionomic caffeinic",
+      "id": "bionomic caffeinic",
+      "class": "box"
+    },
+    {
+      "text": "sackdoudle",
+      "id": "sackdoudle",
+      "class": "parallelogram"
+    },
+    {
+      "text": "channel Clarinda",
+      "id": "channel Clarinda",
+      "class": "diamond"
+    },
+    {
+      "text": "palaeoclimatology microclimate",
+      "id": "palaeoclimatology microclimate",
+      "class": "diamond"
+    },
+    {
+      "text": "ornithomantic",
+      "id": "ornithomantic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "bronchohemorrhagia",
+      "id": "bronchohemorrhagia",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unmasking epiblastema",
+      "head": "sejant",
+      "label": null
+    },
+    {
+      "tail": "sejant",
+      "head": "bionomic caffeinic",
+      "label": "yes"
+    },
+    {
+      "tail": "sejant",
+      "head": "sackdoudle",
+      "label": "yes"
+    },
+    {
+      "tail": "bionomic caffeinic",
+      "head": "channel Clarinda",
+      "label": null
+    },
+    {
+      "tail": "channel Clarinda",
+      "head": "palaeoclimatology microclimate",
+      "label": "YES"
+    },
+    {
+      "tail": "channel Clarinda",
+      "head": "ornithomantic",
+      "label": "YES"
+    },
+    {
+      "tail": "palaeoclimatology microclimate",
+      "head": "ornithomantic",
+      "label": "yes"
+    },
+    {
+      "tail": "palaeoclimatology microclimate",
+      "head": "sejant",
+      "label": "yes"
+    },
+    {
+      "tail": "ornithomantic",
+      "head": "sackdoudle",
+      "label": null
+    },
+    {
+      "tail": "sackdoudle",
+      "head": "bronchohemorrhagia",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "nonspecie geohydrology",
+      "id": "nonspecie geohydrology",
+      "class": "circle"
+    },
+    {
+      "text": "muskish",
+      "id": "muskish",
+      "class": "box"
+    },
+    {
+      "text": "carpetmaking",
+      "id": "carpetmaking",
+      "class": "box"
+    },
+    {
+      "text": "vanishing",
+      "id": "vanishing",
+      "class": "document"
+    },
+    {
+      "text": "reclass",
+      "id": "reclass",
+      "class": "diamond"
+    },
+    {
+      "text": "supraintellectual",
+      "id": "supraintellectual",
+      "class": "diamond"
+    },
+    {
+      "text": "trochiscus",
+      "id": "trochiscus",
+      "class": "parallelogram"
+    },
+    {
+      "text": "astrolithology",
+      "id": "astrolithology",
+      "class": "diamond"
+    },
+    {
+      "text": "subsensual clavodeltoid",
+      "id": "subsensual clavodeltoid",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "nonspecie geohydrology",
+      "head": "muskish",
+      "label": null
+    },
+    {
+      "tail": "muskish",
+      "head": "carpetmaking",
+      "label": null
+    },
+    {
+      "tail": "carpetmaking",
+      "head": "vanishing",
+      "label": null
+    },
+    {
+      "tail": "vanishing",
+      "head": "reclass",
+      "label": null
+    },
+    {
+      "tail": "reclass",
+      "head": "supraintellectual",
+      "label": "Yes"
+    },
+    {
+      "tail": "reclass",
+      "head": "trochiscus",
+      "label": "Yes"
+    },
+    {
+      "tail": "supraintellectual",
+      "head": "trochiscus",
+      "label": "YES"
+    },
+    {
+      "tail": "supraintellectual",
+      "head": "reclass",
+      "label": "YES"
+    },
+    {
+      "tail": "trochiscus",
+      "head": "astrolithology",
+      "label": null
+    },
+    {
+      "tail": "astrolithology",
+      "head": "subsensual clavodeltoid",
+      "label": "NO"
+    },
+    {
+      "tail": "astrolithology",
+      "head": "vanishing",
+      "label": "NO"
+    }
+  ]
+}

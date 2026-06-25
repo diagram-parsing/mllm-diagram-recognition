@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "fumigant",
+      "id": "fumigant",
+      "class": "circle",
+      "bbox": [
+        58,
+        74,
+        141,
+        158
+      ]
+    },
+    {
+      "text": "minutia",
+      "id": "minutia",
+      "class": "document",
+      "bbox": [
+        49,
+        199,
+        150,
+        265
+      ]
+    },
+    {
+      "text": "fancysick",
+      "id": "fancysick",
+      "class": "hexagon",
+      "bbox": [
+        50,
+        362,
+        150,
+        410
+      ]
+    },
+    {
+      "text": "collin choirmaster pleuroperic",
+      "id": "collin choirmaster pleuroperic",
+      "class": "diamond",
+      "bbox": [
+        5,
+        466,
+        194,
+        539
+      ]
+    },
+    {
+      "text": "probowling unaggressive",
+      "id": "probowling unaggressive",
+      "class": "diamond",
+      "bbox": [
+        20,
+        698,
+        179,
+        771
+      ]
+    },
+    {
+      "text": "aminopurine",
+      "id": "aminopurine",
+      "class": "hexagon",
+      "bbox": [
+        347,
+        208,
+        471,
+        256
+      ]
+    },
+    {
+      "text": "homocercy caky",
+      "id": "homocercy caky",
+      "class": "hexagon",
+      "bbox": [
+        44,
+        782,
+        155,
+        836
+      ]
+    },
+    {
+      "text": "aquatically unmember dissoconc",
+      "id": "aquatically unmember dissoconc",
+      "class": "oval",
+      "bbox": [
+        341,
+        360,
+        472,
+        412
+      ]
+    },
+    {
+      "text": "Frisian",
+      "id": "Frisian",
+      "class": "document",
+      "bbox": [
+        358,
+        5,
+        459,
+        72
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fumigant",
+      "head": "minutia",
+      "label": null,
+      "bbox": [
+        95,
+        158,
+        104,
+        197
+      ]
+    },
+    {
+      "tail": "minutia",
+      "head": "fancysick",
+      "label": null,
+      "bbox": [
+        95,
+        265,
+        104,
+        361
+      ]
+    },
+    {
+      "tail": "fancysick",
+      "head": "collin choirmaster pleuroperic",
+      "label": null,
+      "bbox": [
+        95,
+        411,
+        104,
+        464
+      ]
+    },
+    {
+      "tail": "collin choirmaster pleuroperic",
+      "head": "probowling unaggressive",
+      "label": "YES",
+      "bbox": [
+        95,
+        540,
+        104,
+        696
+      ]
+    },
+    {
+      "tail": "collin choirmaster pleuroperic",
+      "head": "aminopurine",
+      "label": "YES",
+      "bbox": [
+        172,
+        227,
+        345,
+        493
+      ]
+    },
+    {
+      "tail": "probowling unaggressive",
+      "head": "homocercy caky",
+      "label": "no",
+      "bbox": [
+        95,
+        766,
+        104,
+        780
+      ]
+    },
+    {
+      "tail": "probowling unaggressive",
+      "head": "aquatically unmember dissoconc",
+      "label": "no",
+      "bbox": [
+        179,
+        414,
+        413,
+        735
+      ]
+    },
+    {
+      "tail": "homocercy caky",
+      "head": "Frisian",
+      "label": null,
+      "bbox": [
+        155,
+        34,
+        357,
+        812
+      ]
+    },
+    {
+      "tail": "Frisian",
+      "head": "aminopurine",
+      "label": null,
+      "bbox": [
+        404,
+        72,
+        413,
+        206
+      ]
+    },
+    {
+      "tail": "aminopurine",
+      "head": "aquatically unmember dissoconc",
+      "label": null,
+      "bbox": [
+        404,
+        256,
+        413,
+        359
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "Irritila egipto zeunerite",
+      "id": "Irritila egipto zeunerite",
+      "class": "circle"
+    },
+    {
+      "text": "demiflouncing henad",
+      "id": "demiflouncing henad",
+      "class": "document"
+    },
+    {
+      "text": "asininely",
+      "id": "asininely",
+      "class": "document"
+    },
+    {
+      "text": "estrone",
+      "id": "estrone",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Erythroxylum",
+      "id": "Erythroxylum",
+      "class": "diamond"
+    },
+    {
+      "text": "clientship",
+      "id": "clientship",
+      "class": "diamond"
+    },
+    {
+      "text": "trichomoniasis",
+      "id": "trichomoniasis",
+      "class": "document"
+    },
+    {
+      "text": "postepileptic",
+      "id": "postepileptic",
+      "class": "box"
+    },
+    {
+      "text": "lodgeman",
+      "id": "lodgeman",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Irritila egipto zeunerite",
+      "head": "demiflouncing henad",
+      "label": null
+    },
+    {
+      "tail": "demiflouncing henad",
+      "head": "asininely",
+      "label": null
+    },
+    {
+      "tail": "asininely",
+      "head": "estrone",
+      "label": null
+    },
+    {
+      "tail": "estrone",
+      "head": "Erythroxylum",
+      "label": null
+    },
+    {
+      "tail": "Erythroxylum",
+      "head": "clientship",
+      "label": "no"
+    },
+    {
+      "tail": "Erythroxylum",
+      "head": "Irritila egipto zeunerite",
+      "label": "no"
+    },
+    {
+      "tail": "clientship",
+      "head": "trichomoniasis",
+      "label": "YES"
+    },
+    {
+      "tail": "clientship",
+      "head": "estrone",
+      "label": "YES"
+    },
+    {
+      "tail": "trichomoniasis",
+      "head": "postepileptic",
+      "label": null
+    },
+    {
+      "tail": "postepileptic",
+      "head": "lodgeman",
+      "label": null
+    }
+  ]
+}

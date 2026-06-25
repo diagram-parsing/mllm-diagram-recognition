@@ -1,0 +1,243 @@
+{
+  "nodes": [
+    {
+      "text": "register",
+      "id": "register",
+      "class": "task"
+    },
+    {
+      "text": "check by senior",
+      "id": "check by senior",
+      "class": "task"
+    },
+    {
+      "text": "mark claim",
+      "id": "mark claim",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "sent back",
+      "id": "sent back",
+      "class": "task"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "event"
+    },
+    {
+      "text": "proceed claim handling",
+      "id": "proceed claim handling",
+      "class": "task"
+    },
+    {
+      "text": "rewrite settlement",
+      "id": "rewrite settlement",
+      "class": "task"
+    },
+    {
+      "text": "examine",
+      "id": "examine",
+      "class": "task"
+    },
+    {
+      "text": "insurance claim",
+      "id": "insurance claim",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "marked claim",
+      "id": "marked claim",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim procesed",
+      "id": "claim procesed",
+      "class": "event"
+    },
+    {
+      "text": "write recommendation",
+      "id": "write recommendation",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "register",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register",
+      "head": "examine",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine",
+      "head": "write recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write recommendation",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "check by senior",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check by senior",
+      "head": "mark claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "mark claim",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "sent back",
+      "class": "sequenceFlow",
+      "label": "\"not OK\""
+    },
+    {
+      "tail": "sent back",
+      "head": "rewrite settlement",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "rewrite settlement",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "proceed claim handling",
+      "class": "sequenceFlow",
+      "label": "\"OK\""
+    },
+    {
+      "tail": "proceed claim handling",
+      "head": "claim procesed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check by senior",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataObject_1",
+      "head": "check by senior",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataObject_1",
+      "head": "mark claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark claim",
+      "head": "marked claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "insurance claim",
+      "head": "examine",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insur",
+      "nodes": [
+        "claim officer",
+        "senior"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "register",
+        "claim received",
+        "rewrite settlement",
+        "examine",
+        "insurance claim",
+        "exclusiveGateway_2",
+        "write recommendation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior",
+      "nodes": [
+        "check by senior",
+        "mark claim",
+        "exclusiveGateway_1",
+        "sent back",
+        "proceed claim handling",
+        "marked claim",
+        "dataObject_1",
+        "settlement recommendation",
+        "claim procesed"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

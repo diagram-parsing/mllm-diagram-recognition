@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "text": "semispheric illuviate",
+      "id": "semispheric illuviate",
+      "class": "node"
+    },
+    {
+      "text": "bijouterie",
+      "id": "bijouterie",
+      "class": "node"
+    },
+    {
+      "text": "geobotanical shinty",
+      "id": "geobotanical shinty",
+      "class": "node"
+    },
+    {
+      "text": "hyperneuria livable",
+      "id": "hyperneuria livable",
+      "class": "node"
+    },
+    {
+      "text": "alternance",
+      "id": "alternance",
+      "class": "node"
+    },
+    {
+      "text": "hora",
+      "id": "hora",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "semispheric illuviate",
+      "head": "bijouterie",
+      "label": "0.22 a = 0.748",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "geobotanical shinty",
+      "head": "hyperneuria livable",
+      "label": "-1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "geobotanical shinty",
+      "head": "alternance",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "hora",
+      "head": "geobotanical shinty",
+      "label": "-0.75** t = 0.943",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "semispheric illuviate",
+      "head": "geobotanical shinty",
+      "label": "0.383",
+      "class": "unidirectional"
+    }
+  ]
+}

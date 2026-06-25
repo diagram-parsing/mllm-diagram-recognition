@@ -1,0 +1,374 @@
+{
+  "nodes": [
+    {
+      "text": "Begin",
+      "id": "Begin",
+      "bbox": [
+        667,
+        4,
+        279,
+        84
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "more examples?",
+      "id": "more examples?",
+      "bbox": [
+        679,
+        165,
+        268,
+        185
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "update weights",
+      "id": "update weights",
+      "bbox": [
+        665,
+        510,
+        296,
+        105
+      ],
+      "class": "process"
+    },
+    {
+      "text": "next example",
+      "id": "next example",
+      "bbox": [
+        1057,
+        348,
+        197,
+        77
+      ],
+      "class": "process"
+    },
+    {
+      "text": "error<best_error",
+      "id": "error<best_error",
+      "bbox": [
+        12,
+        347,
+        163,
+        160
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "best_error=error",
+      "id": "best_error=error",
+      "bbox": [
+        293,
+        365,
+        248,
+        107
+      ],
+      "class": "process"
+    },
+    {
+      "text": "save weights",
+      "id": "save weights",
+      "bbox": [
+        289,
+        613,
+        254,
+        82
+      ],
+      "class": "process"
+    },
+    {
+      "text": "k++",
+      "id": "k++",
+      "bbox": [
+        4,
+        628,
+        191,
+        68
+      ],
+      "class": "process"
+    },
+    {
+      "text": "k<limit?",
+      "id": "k<limit?",
+      "bbox": [
+        19,
+        836,
+        170,
+        153
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "bbox": [
+        24,
+        1086,
+        189,
+        61
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "back to first example",
+      "id": "back to first example",
+      "bbox": [
+        576,
+        833,
+        274,
+        122
+      ],
+      "class": "process"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Begin",
+      "head": "more examples?",
+      "bbox": [
+        788,
+        85,
+        29,
+        82
+      ],
+      "kps": [
+        799.0,
+        86.0,
+        2.0,
+        801.0,
+        165.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "more examples?",
+      "head": "update weights",
+      "bbox": [
+        806,
+        344,
+        23,
+        162
+      ],
+      "kps": [
+        817.0,
+        346.0,
+        2.0,
+        817.0,
+        504.0,
+        2.0
+      ],
+      "label": "true"
+    },
+    {
+      "tail": "next example",
+      "head": "more examples?",
+      "bbox": [
+        947,
+        223,
+        207,
+        135
+      ],
+      "kps": [
+        1151.0,
+        356.0,
+        2.0,
+        948.0,
+        245.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "update weights",
+      "head": "next example",
+      "bbox": [
+        963,
+        422,
+        207,
+        151
+      ],
+      "kps": [
+        965.0,
+        566.0,
+        2.0,
+        1148.0,
+        423.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "more examples?",
+      "head": "error<best_error",
+      "bbox": [
+        76,
+        230,
+        619,
+        118
+      ],
+      "kps": [
+        692.0,
+        244.0,
+        2.0,
+        94.0,
+        346.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "error<best_error",
+      "head": "k++",
+      "bbox": [
+        80,
+        498,
+        21,
+        139
+      ],
+      "kps": [
+        99.0,
+        500.0,
+        2.0,
+        91.0,
+        635.0,
+        2.0
+      ],
+      "label": "No"
+    },
+    {
+      "tail": "error<best_error",
+      "head": "best_error=error",
+      "bbox": [
+        167,
+        405,
+        132,
+        27
+      ],
+      "kps": [
+        169.0,
+        415.0,
+        2.0,
+        297.0,
+        414.0,
+        2.0
+      ],
+      "label": "Yes"
+    },
+    {
+      "tail": "best_error=error",
+      "head": "save weights",
+      "bbox": [
+        387,
+        470,
+        26,
+        149
+      ],
+      "kps": [
+        410.0,
+        472.0,
+        2.0,
+        402.0,
+        617.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "save weights",
+      "head": "k++",
+      "bbox": [
+        184,
+        642,
+        237,
+        95
+      ],
+      "kps": [
+        414.0,
+        680.0,
+        2.0,
+        186.0,
+        655.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "k++",
+      "head": "k<limit?",
+      "bbox": [
+        74,
+        694,
+        29,
+        133
+      ],
+      "kps": [
+        93.0,
+        695.0,
+        2.0,
+        92.0,
+        825.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "k<limit?",
+      "head": "end",
+      "bbox": [
+        89,
+        983,
+        22,
+        103
+      ],
+      "kps": [
+        107.0,
+        985.0,
+        2.0,
+        107.0,
+        1084.0,
+        2.0
+      ],
+      "label": "else"
+    },
+    {
+      "tail": "k<limit?",
+      "head": "back to first example",
+      "bbox": [
+        185,
+        891,
+        389,
+        29
+      ],
+      "kps": [
+        186.0,
+        914.0,
+        2.0,
+        566.0,
+        908.0,
+        2.0
+      ],
+      "label": "then"
+    },
+    {
+      "tail": "back to first example",
+      "head": "more examples?",
+      "bbox": [
+        795,
+        106,
+        535,
+        813
+      ],
+      "kps": [
+        845.0,
+        905.0,
+        2.0,
+        829.0,
+        139.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

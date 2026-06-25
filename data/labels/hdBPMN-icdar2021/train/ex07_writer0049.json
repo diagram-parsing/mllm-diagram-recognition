@@ -1,0 +1,224 @@
+{
+  "nodes": [
+    {
+      "text": "start doctor rating",
+      "id": "start doctor rating",
+      "class": "event"
+    },
+    {
+      "text": "creates report",
+      "id": "creates report",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "files result",
+      "id": "files result",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "ask Expert to review",
+      "id": "ask Expert to review",
+      "class": "task"
+    },
+    {
+      "text": "recieves Expertise",
+      "id": "recieves Expertise",
+      "class": "task"
+    },
+    {
+      "text": "forward to QA",
+      "id": "forward to QA",
+      "class": "task"
+    },
+    {
+      "text": "fills out check",
+      "id": "fills out check",
+      "class": "task"
+    },
+    {
+      "text": "completed rating",
+      "id": "completed rating",
+      "class": "event"
+    },
+    {
+      "text": "send check",
+      "id": "send check",
+      "class": "messageEvent"
+    },
+    {
+      "text": "patient interview",
+      "id": "patient interview",
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send check",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "fills out check",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "recieves Expertise",
+      "head": "forward to QA",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask Expert to review",
+      "head": "recieves Expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask Expert to review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "completed rating",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "creates report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "creates report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "files result",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "files result",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "patient interview",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "start doctor rating",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask Expert to review",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": "review"
+    },
+    {
+      "tail": "Expert",
+      "head": "recieves Expertise",
+      "class": "messageFlow",
+      "label": "expert opinion"
+    },
+    {
+      "tail": "Expert",
+      "head": "send check",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "patient interview",
+      "head": "Patient",
+      "class": "messageFlow",
+      "label": "request"
+    },
+    {
+      "tail": "Patient",
+      "head": "patient interview",
+      "class": "messageFlow",
+      "label": "statement"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Director",
+        "Quality Ins. Dept"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Director",
+      "nodes": [
+        "ask Expert to review",
+        "recieves Expertise",
+        "forward to QA",
+        "fills out check",
+        "send check"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality Ins. Dept",
+      "nodes": [
+        "start doctor rating",
+        "creates report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "files result",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "completed rating",
+        "patient interview"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

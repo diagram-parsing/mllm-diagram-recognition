@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "reedling",
+      "id": "reedling",
+      "class": "oval"
+    },
+    {
+      "text": "phenanthrol uncrystallizabilit",
+      "id": "phenanthrol uncrystallizabilit",
+      "class": "parallelogram"
+    },
+    {
+      "text": "fizzer unsoulful semioxygenize",
+      "id": "fizzer unsoulful semioxygenize",
+      "class": "parallelogram"
+    },
+    {
+      "text": "flare heterophoric",
+      "id": "flare heterophoric",
+      "class": "document"
+    },
+    {
+      "text": "anteroparietal gent",
+      "id": "anteroparietal gent",
+      "class": "document"
+    },
+    {
+      "text": "ungood",
+      "id": "ungood",
+      "class": "diamond"
+    },
+    {
+      "text": "incognoscible bienness hydroxy",
+      "id": "incognoscible bienness hydroxy",
+      "class": "diamond"
+    },
+    {
+      "text": "teacherlike nonconjectural",
+      "id": "teacherlike nonconjectural",
+      "class": "diamond"
+    },
+    {
+      "text": "monovariant",
+      "id": "monovariant",
+      "class": "box"
+    },
+    {
+      "text": "balinghasay",
+      "id": "balinghasay",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "reedling",
+      "head": "phenanthrol uncrystallizabilit",
+      "label": null
+    },
+    {
+      "tail": "phenanthrol uncrystallizabilit",
+      "head": "fizzer unsoulful semioxygenize",
+      "label": null
+    },
+    {
+      "tail": "fizzer unsoulful semioxygenize",
+      "head": "flare heterophoric",
+      "label": null
+    },
+    {
+      "tail": "flare heterophoric",
+      "head": "anteroparietal gent",
+      "label": null
+    },
+    {
+      "tail": "anteroparietal gent",
+      "head": "ungood",
+      "label": null
+    },
+    {
+      "tail": "ungood",
+      "head": "incognoscible bienness hydroxy",
+      "label": "no"
+    },
+    {
+      "tail": "ungood",
+      "head": "flare heterophoric",
+      "label": "no"
+    },
+    {
+      "tail": "incognoscible bienness hydroxy",
+      "head": "teacherlike nonconjectural",
+      "label": "YES"
+    },
+    {
+      "tail": "incognoscible bienness hydroxy",
+      "head": "monovariant",
+      "label": "YES"
+    },
+    {
+      "tail": "teacherlike nonconjectural",
+      "head": "monovariant",
+      "label": "NO"
+    },
+    {
+      "tail": "teacherlike nonconjectural",
+      "head": "anteroparietal gent",
+      "label": "NO"
+    },
+    {
+      "tail": "monovariant",
+      "head": "balinghasay",
+      "label": null
+    }
+  ]
+}

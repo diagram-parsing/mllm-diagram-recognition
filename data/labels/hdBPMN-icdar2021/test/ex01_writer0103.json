@@ -1,0 +1,368 @@
+{
+  "nodes": [
+    {
+      "text": "new credit requested",
+      "id": "new credit requested",
+      "bbox": [
+        673.312,
+        24.938,
+        33.25,
+        29.688
+      ],
+      "class": "event"
+    },
+    {
+      "text": "assess risk",
+      "id": "assess risk",
+      "bbox": [
+        579.975,
+        128.25,
+        233.7,
+        101.175
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        644.1,
+        306.375,
+        71.25,
+        71.25
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "carry out advanced risk assessment",
+      "id": "carry out advanced risk assessment",
+      "bbox": [
+        336.3,
+        374.775,
+        253.65,
+        65.55
+      ],
+      "class": "task"
+    },
+    {
+      "text": "carry out simple assessment",
+      "id": "carry out simple assessment",
+      "bbox": [
+        816.525,
+        374.775,
+        256.5,
+        71.25
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        644.1,
+        548.625,
+        71.25,
+        71.25
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        644.1,
+        691.125,
+        64.125,
+        61.275
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify customer result of assessment",
+      "id": "notify customer result of assessment",
+      "bbox": [
+        347.7,
+        618.45,
+        226.575,
+        65.55
+      ],
+      "class": "task"
+    },
+    {
+      "text": "organize distursement",
+      "id": "organize distursement",
+      "bbox": [
+        813.675,
+        619.875,
+        237.975,
+        71.25
+      ],
+      "class": "task"
+    },
+    {
+      "text": "request fulfilled",
+      "id": "request fulfilled",
+      "bbox": [
+        679.725,
+        796.575,
+        38.475,
+        24.225
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_4",
+      "bbox": [
+        644.1,
+        440.325,
+        72.675,
+        65.55
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "request fulfilled",
+      "class": "sequenceFlow",
+      "bbox": [
+        671.056,
+        749.55,
+        28.5,
+        43.938
+      ],
+      "kps": [
+        679.725,
+        749.55,
+        2.0,
+        689.7,
+        792.3,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "organize distursement",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        703.95,
+        691.125,
+        175.038,
+        35.387
+      ],
+      "kps": [
+        877.8,
+        691.125,
+        2.0,
+        703.95,
+        725.325,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customer result of assessment",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        480.225,
+        684,
+        167.912,
+        41.088
+      ],
+      "kps": [
+        480.225,
+        684.0,
+        2.0,
+        646.95,
+        723.9,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "notify customer result of assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        480.225,
+        584.25,
+        165.062,
+        35.387
+      ],
+      "kps": [
+        644.1,
+        584.25,
+        2.0,
+        480.225,
+        618.45,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "organize distursement",
+      "class": "sequenceFlow",
+      "bbox": [
+        715.35,
+        584.25,
+        165.062,
+        36.812
+      ],
+      "kps": [
+        715.35,
+        584.25,
+        2.0,
+        879.225,
+        619.875,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_4",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        666.069,
+        505.875,
+        28.5,
+        43.938
+      ],
+      "kps": [
+        679.725,
+        505.875,
+        2.0,
+        679.725,
+        548.625,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "carry out advanced risk assessment",
+      "head": "exclusiveGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        478.8,
+        440.325,
+        169.337,
+        31.112
+      ],
+      "kps": [
+        478.8,
+        440.325,
+        2.0,
+        646.95,
+        470.25,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "carry out simple assessment",
+      "head": "exclusiveGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        716.775,
+        445.906,
+        166.487,
+        28.5
+      ],
+      "kps": [
+        882.075,
+        446.025,
+        2.0,
+        716.775,
+        473.1,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "assess risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        666.069,
+        229.425,
+        28.5,
+        78.138
+      ],
+      "kps": [
+        679.725,
+        229.425,
+        2.0,
+        679.725,
+        306.375,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "new credit requested",
+      "head": "assess risk",
+      "class": "sequenceFlow",
+      "bbox": [
+        666.781,
+        54.625,
+        28.5,
+        74.812
+      ],
+      "kps": [
+        682.812,
+        54.625,
+        2.0,
+        684.0,
+        128.25,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out simple assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        715.35,
+        342,
+        183.588,
+        33.963
+      ],
+      "kps": [
+        715.35,
+        342.0,
+        2.0,
+        897.75,
+        374.775,
+        2.0
+      ],
+      "label": "risk below threshold"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out advanced risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        464.55,
+        342,
+        180.737,
+        33.963
+      ],
+      "kps": [
+        644.1,
+        342.0,
+        2.0,
+        464.55,
+        374.775,
+        2.0
+      ],
+      "label": "risk above threshold"
+    }
+  ],
+  "groups": []
+}

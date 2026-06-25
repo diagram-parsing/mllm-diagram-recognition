@@ -1,0 +1,308 @@
+{
+  "nodes": [
+    {
+      "text": "Request for compensation received",
+      "id": "Request for compensation received",
+      "bbox": [
+        219,
+        993,
+        295,
+        1065
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        951,
+        981,
+        1034,
+        1064
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Produce fees notice",
+      "id": "Produce fees notice",
+      "bbox": [
+        1092,
+        1088,
+        1257,
+        1254
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Wait for owner to pay the fees",
+      "id": "Wait for owner to pay the fees",
+      "bbox": [
+        1340,
+        1072,
+        1521,
+        1287
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Allocate hearing",
+      "id": "Allocate hearing",
+      "bbox": [
+        1554,
+        791,
+        1753,
+        940
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Hearing allocated",
+      "id": "Hearing allocated",
+      "bbox": [
+        1819,
+        817,
+        1893,
+        890
+      ],
+      "class": "event"
+    },
+    {
+      "text": "File for promises",
+      "id": "File for promises",
+      "bbox": [
+        632,
+        783,
+        708,
+        865
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        376,
+        981,
+        459,
+        1064
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Check request",
+      "id": "Check request",
+      "bbox": [
+        745,
+        955,
+        893,
+        1087
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Retrieve file",
+      "id": "Retrieve file",
+      "bbox": [
+        499,
+        956,
+        684,
+        1083
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Request for compensation received",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        295,
+        999,
+        378,
+        1047
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Retrieve file",
+      "class": "sequenceFlow",
+      "bbox": [
+        456,
+        999,
+        503,
+        1047
+      ],
+      "label": null
+    },
+    {
+      "tail": "Retrieve file",
+      "head": "Check request",
+      "class": "sequenceFlow",
+      "bbox": [
+        684,
+        998,
+        746,
+        1046
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Produce fees notice",
+      "class": "sequenceFlow",
+      "bbox": [
+        993,
+        1064,
+        1093,
+        1173
+      ],
+      "label": "Fees due to be paid"
+    },
+    {
+      "tail": "Produce fees notice",
+      "head": "Wait for owner to pay the fees",
+      "class": "sequenceFlow",
+      "bbox": [
+        1257,
+        1150,
+        1341,
+        1198
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Allocate hearing",
+      "class": "sequenceFlow",
+      "bbox": [
+        993,
+        857,
+        1556,
+        983
+      ],
+      "label": "Fees paid"
+    },
+    {
+      "tail": "Allocate hearing",
+      "head": "Hearing allocated",
+      "class": "sequenceFlow",
+      "bbox": [
+        1753,
+        835,
+        1820,
+        883
+      ],
+      "label": null
+    },
+    {
+      "tail": "Wait for owner to pay the fees",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        418,
+        1064,
+        1432,
+        1388
+      ],
+      "label": null
+    },
+    {
+      "tail": "Check request",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        893,
+        998,
+        955,
+        1045
+      ],
+      "label": null
+    },
+    {
+      "tail": "Retrieve file",
+      "head": "File for promises",
+      "class": "dataAssociation",
+      "bbox": [
+        561,
+        824,
+        634,
+        958
+      ],
+      "label": null
+    },
+    {
+      "tail": "File for promises",
+      "head": "Check request",
+      "class": "dataAssociation",
+      "bbox": [
+        708,
+        824,
+        798,
+        956
+      ],
+      "label": null
+    },
+    {
+      "tail": "Produce fees notice",
+      "head": "Owner",
+      "class": "messageFlow",
+      "bbox": [
+        1151,
+        593,
+        1199,
+        1090
+      ],
+      "label": "Fees notice"
+    },
+    {
+      "tail": "Owner",
+      "head": "Wait for owner to pay the fees",
+      "class": "messageFlow",
+      "bbox": [
+        1407,
+        593,
+        1455,
+        1074
+      ],
+      "label": "Payment"
+    },
+    {
+      "tail": "Owner",
+      "head": "Request for compensation received",
+      "class": "messageFlow",
+      "bbox": [
+        236,
+        593,
+        284,
+        993
+      ],
+      "label": "Request"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Owner",
+      "nodes": [],
+      "bbox": [
+        1,
+        180,
+        2364,
+        593
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Tribunal Cashier",
+      "nodes": [],
+      "bbox": [
+        1,
+        659,
+        2381,
+        1435
+      ],
+      "class": "pool"
+    }
+  ]
+}

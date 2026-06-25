@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "text": "tribracteolate haematoxylic",
+      "id": "tribracteolate haematoxylic",
+      "class": "circle"
+    },
+    {
+      "text": "otherwhither deprecable",
+      "id": "otherwhither deprecable",
+      "class": "diamond"
+    },
+    {
+      "text": "zirconofluoride",
+      "id": "zirconofluoride",
+      "class": "parallelogram"
+    },
+    {
+      "text": "septangle oosporous",
+      "id": "septangle oosporous",
+      "class": "box"
+    },
+    {
+      "text": "bathman",
+      "id": "bathman",
+      "class": "hexagon"
+    },
+    {
+      "text": "azotate untactfulness helicine",
+      "id": "azotate untactfulness helicine",
+      "class": "diamond"
+    },
+    {
+      "text": "molligrant",
+      "id": "molligrant",
+      "class": "diamond"
+    },
+    {
+      "text": "defunctness Haiathalah iatroph",
+      "id": "defunctness Haiathalah iatroph",
+      "class": "document"
+    },
+    {
+      "text": "Aporobranchiata",
+      "id": "Aporobranchiata",
+      "class": "document"
+    },
+    {
+      "text": "vicine",
+      "id": "vicine",
+      "class": "diamond"
+    },
+    {
+      "text": "puffingly",
+      "id": "puffingly",
+      "class": "document"
+    },
+    {
+      "text": "piezoelectricity",
+      "id": "piezoelectricity",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tribracteolate haematoxylic",
+      "head": "otherwhither deprecable",
+      "label": null
+    },
+    {
+      "tail": "otherwhither deprecable",
+      "head": "zirconofluoride",
+      "label": "No"
+    },
+    {
+      "tail": "otherwhither deprecable",
+      "head": "septangle oosporous",
+      "label": "No"
+    },
+    {
+      "tail": "zirconofluoride",
+      "head": "septangle oosporous",
+      "label": null
+    },
+    {
+      "tail": "septangle oosporous",
+      "head": "bathman",
+      "label": null
+    },
+    {
+      "tail": "bathman",
+      "head": "azotate untactfulness helicine",
+      "label": null
+    },
+    {
+      "tail": "azotate untactfulness helicine",
+      "head": "molligrant",
+      "label": "YES"
+    },
+    {
+      "tail": "azotate untactfulness helicine",
+      "head": "defunctness Haiathalah iatroph",
+      "label": "YES"
+    },
+    {
+      "tail": "molligrant",
+      "head": "defunctness Haiathalah iatroph",
+      "label": "Yes"
+    },
+    {
+      "tail": "molligrant",
+      "head": "Aporobranchiata",
+      "label": "Yes"
+    },
+    {
+      "tail": "defunctness Haiathalah iatroph",
+      "head": "Aporobranchiata",
+      "label": null
+    },
+    {
+      "tail": "Aporobranchiata",
+      "head": "vicine",
+      "label": null
+    },
+    {
+      "tail": "vicine",
+      "head": "puffingly",
+      "label": "no"
+    },
+    {
+      "tail": "vicine",
+      "head": "otherwhither deprecable",
+      "label": "no"
+    },
+    {
+      "tail": "puffingly",
+      "head": "piezoelectricity",
+      "label": null
+    }
+  ]
+}

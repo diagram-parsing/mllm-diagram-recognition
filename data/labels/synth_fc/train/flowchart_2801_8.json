@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "shadowfoot",
+      "id": "shadowfoot",
+      "class": "ellipse"
+    },
+    {
+      "text": "Endophyllum",
+      "id": "Endophyllum",
+      "class": "diamond"
+    },
+    {
+      "text": "medialkaline priacanthid",
+      "id": "medialkaline priacanthid",
+      "class": "diamond"
+    },
+    {
+      "text": "anele",
+      "id": "anele",
+      "class": "hexagon"
+    },
+    {
+      "text": "berigora hackleback",
+      "id": "berigora hackleback",
+      "class": "box"
+    },
+    {
+      "text": "hermitary",
+      "id": "hermitary",
+      "class": "ellipse"
+    },
+    {
+      "text": "sprent",
+      "id": "sprent",
+      "class": "diamond"
+    },
+    {
+      "text": "unoutlawed",
+      "id": "unoutlawed",
+      "class": "parallelogram"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "shadowfoot",
+      "head": "Endophyllum",
+      "label": null
+    },
+    {
+      "tail": "Endophyllum",
+      "head": "medialkaline priacanthid",
+      "label": "No"
+    },
+    {
+      "tail": "Endophyllum",
+      "head": "anele",
+      "label": "No"
+    },
+    {
+      "tail": "medialkaline priacanthid",
+      "head": "berigora hackleback",
+      "label": "No"
+    },
+    {
+      "tail": "medialkaline priacanthid",
+      "head": "hermitary",
+      "label": "No"
+    },
+    {
+      "tail": "berigora hackleback",
+      "head": "anele",
+      "label": null
+    },
+    {
+      "tail": "anele",
+      "head": "sprent",
+      "label": null
+    },
+    {
+      "tail": "sprent",
+      "head": "unoutlawed",
+      "label": "no"
+    },
+    {
+      "tail": "sprent",
+      "head": "hermitary",
+      "label": "no"
+    },
+    {
+      "tail": "unoutlawed",
+      "head": "hermitary",
+      "label": null
+    }
+  ]
+}

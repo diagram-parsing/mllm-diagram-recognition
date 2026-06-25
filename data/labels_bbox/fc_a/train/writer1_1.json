@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "bbox": [
+        341,
+        4,
+        613,
+        94
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Read N",
+      "id": "Read N",
+      "bbox": [
+        288,
+        153,
+        614,
+        249
+      ],
+      "class": "data"
+    },
+    {
+      "text": "M=1 F=1",
+      "id": "M=1 F=1",
+      "bbox": [
+        302,
+        311,
+        593,
+        430
+      ],
+      "class": "process"
+    },
+    {
+      "text": "F=F.M",
+      "id": "F=F.M",
+      "bbox": [
+        302,
+        509,
+        612,
+        625
+      ],
+      "class": "process"
+    },
+    {
+      "text": "M=N",
+      "id": "M=N",
+      "bbox": [
+        374,
+        670,
+        597,
+        903
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "M=M+1",
+      "id": "M=M+1",
+      "bbox": [
+        4,
+        629,
+        246,
+        730
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Print F",
+      "id": "Print F",
+      "bbox": [
+        314,
+        990,
+        647,
+        1124
+      ],
+      "class": "data"
+    },
+    {
+      "text": "End",
+      "id": "End",
+      "bbox": [
+        325,
+        1199,
+        647,
+        1330
+      ],
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "Read N",
+      "bbox": [
+        460,
+        84,
+        502,
+        170
+      ],
+      "label": null
+    },
+    {
+      "tail": "Read N",
+      "head": "M=1 F=1",
+      "bbox": [
+        431,
+        242,
+        486,
+        318
+      ],
+      "label": null
+    },
+    {
+      "tail": "M=1 F=1",
+      "head": "F=F.M",
+      "bbox": [
+        417,
+        424,
+        465,
+        514
+      ],
+      "label": null
+    },
+    {
+      "tail": "F=F.M",
+      "head": "M=N",
+      "bbox": [
+        445,
+        621,
+        493,
+        699
+      ],
+      "label": null
+    },
+    {
+      "tail": "M=N",
+      "head": "M=M+1",
+      "bbox": [
+        113,
+        716,
+        374,
+        792
+      ],
+      "label": "NO"
+    },
+    {
+      "tail": "M=M+1",
+      "head": "F=F.M",
+      "bbox": [
+        118,
+        546,
+        315,
+        637
+      ],
+      "label": null
+    },
+    {
+      "tail": "M=N",
+      "head": "Print F",
+      "bbox": [
+        450,
+        883,
+        517,
+        980
+      ],
+      "label": "YES"
+    },
+    {
+      "tail": "Print F",
+      "head": "End",
+      "bbox": [
+        439,
+        1121,
+        499,
+        1205
+      ],
+      "label": null
+    }
+  ]
+}

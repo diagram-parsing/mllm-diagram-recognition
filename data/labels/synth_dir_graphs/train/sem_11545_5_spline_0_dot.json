@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "text": "clovered psykter ornithosauria",
+      "id": "clovered psykter ornithosauria",
+      "class": "node"
+    },
+    {
+      "text": "castellate  tetrapodic",
+      "id": "castellate  tetrapodic",
+      "class": "node"
+    },
+    {
+      "text": "dap",
+      "id": "dap",
+      "class": "node"
+    },
+    {
+      "text": "Terebellidae Isolde",
+      "id": "Terebellidae Isolde",
+      "class": "node"
+    },
+    {
+      "text": "fuggy epipleural",
+      "id": "fuggy epipleural",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "clovered psykter ornithosauria",
+      "head": "castellate  tetrapodic",
+      "label": "0.25",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "clovered psykter ornithosauria",
+      "head": "dap",
+      "label": "0.03",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Terebellidae Isolde",
+      "head": "fuggy epipleural",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "clovered psykter ornithosauria",
+      "head": "Terebellidae Isolde",
+      "label": "1",
+      "class": "unidirectional"
+    }
+  ]
+}

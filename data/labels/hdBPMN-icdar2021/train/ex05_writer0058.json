@@ -1,0 +1,386 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "class": "task"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "class": "task"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "class": "task"
+    },
+    {
+      "text": "send letter",
+      "id": "send letter",
+      "class": "task"
+    },
+    {
+      "text": "[rejected] letter",
+      "id": "[rejected] letter",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "[rejected] letter",
+      "id": "[rejected] letter",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "class": "event"
+    },
+    {
+      "text": "[rejected] letter",
+      "id": "[rejected] letter",
+      "class": "dataObject"
+    },
+    {
+      "text": "customer submited claim",
+      "id": "customer submited claim",
+      "class": "messageEvent"
+    },
+    {
+      "text": "documentation of claim",
+      "id": "documentation of claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "check documentation",
+      "id": "check documentation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check insurence",
+      "id": "check insurence",
+      "class": "task"
+    },
+    {
+      "text": "[rejected] letter",
+      "id": "[rejected] letter",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "class": "task"
+    },
+    {
+      "text": "call garage",
+      "id": "call garage",
+      "class": "task"
+    },
+    {
+      "text": "authorize repair",
+      "id": "authorize repair",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_4",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "send letter",
+      "id": "send letter",
+      "class": "task"
+    },
+    {
+      "text": "[accepted]\nletter",
+      "id": "[accepted]\nletter",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim accepted",
+      "id": "claim accepted",
+      "class": "event"
+    },
+    {
+      "text": "Claim rejected",
+      "id": "Claim rejected",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send letter",
+      "head": "claim accepted",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "send letter",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_4",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "label": "gargae authorize repair"
+    },
+    {
+      "tail": "exclusiveGateway_4",
+      "head": "send letter",
+      "class": "sequenceFlow",
+      "label": "garage doesn\u00c3\u0082\u00c2\u00b4t authorize repair"
+    },
+    {
+      "tail": "authorize repair",
+      "head": "exclusiveGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "call garage",
+      "head": "authorize repair",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "call garage",
+      "class": "sequenceFlow",
+      "label": "assessment is positive"
+    },
+    {
+      "tail": "reject claim",
+      "head": "claim rejected",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "label": "assessment is negativ"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "label": "check passed"
+    },
+    {
+      "tail": "reject claim",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "label": "check failed"
+    },
+    {
+      "tail": "check insurence",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "check insurence",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": "check passed"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "label": "check failed"
+    },
+    {
+      "tail": "check documentation",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "customer submited claim",
+      "head": "check documentation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "claim rejected",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send letter",
+      "head": "Claim rejected",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "documentation of claim",
+      "head": "check documentation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "garage",
+      "head": "authorize repair",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "call garage",
+      "head": "garage",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "client",
+      "head": "customer submited claim",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "client",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "client",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "client",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "send letter",
+      "head": "client",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "send letter",
+      "head": "client",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "handling departement",
+        "notification departement"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling departement",
+      "nodes": [
+        "exclusiveGateway_1",
+        "reject claim",
+        "reject claim",
+        "schedule payment",
+        "send letter",
+        "[rejected] letter",
+        "event_1",
+        "[rejected] letter",
+        "check insurence",
+        "claim rejected",
+        "exclusiveGateway_3",
+        "perform assessment",
+        "call garage",
+        "authorize repair",
+        "exclusiveGateway_4",
+        "send letter",
+        "[accepted]\nletter",
+        "claim accepted",
+        "Claim rejected"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification departement",
+      "nodes": [
+        "reject claim",
+        "register claim",
+        "claim rejected",
+        "[rejected] letter",
+        "customer submited claim",
+        "documentation of claim",
+        "check documentation",
+        "exclusiveGateway_2",
+        "[rejected] letter"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "client",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "garage",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

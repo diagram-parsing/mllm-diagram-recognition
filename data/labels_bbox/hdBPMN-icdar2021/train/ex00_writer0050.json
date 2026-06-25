@@ -1,0 +1,295 @@
+{
+  "nodes": [
+    {
+      "text": "Received bank\naccount opening",
+      "id": "Received bank\naccount opening",
+      "bbox": [
+        202,
+        918,
+        323,
+        1048
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluat\napplication",
+      "id": "evaluat\napplication",
+      "bbox": [
+        680,
+        867,
+        1026,
+        1105
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1260,
+        928,
+        1384,
+        1061
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "create new\nbank account",
+      "id": "create new\nbank account",
+      "bbox": [
+        1513,
+        392,
+        1925,
+        623
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send\nwelcome pack",
+      "id": "send\nwelcome pack",
+      "bbox": [
+        2277,
+        386,
+        2622,
+        630
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send\nbank card",
+      "id": "send\nbank card",
+      "bbox": [
+        2277,
+        693,
+        2613,
+        921
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send\nPIN",
+      "id": "send\nPIN",
+      "bbox": [
+        2270,
+        978,
+        2619,
+        1219
+      ],
+      "class": "task"
+    },
+    {
+      "text": "notify\ncustomer",
+      "id": "notify\ncustomer",
+      "bbox": [
+        1444,
+        1346,
+        1802,
+        1589
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application\nrejected",
+      "id": "application\nrejected",
+      "bbox": [
+        2042,
+        1399,
+        2156,
+        1513
+      ],
+      "class": "event"
+    },
+    {
+      "text": "bank account\nfinished",
+      "id": "bank account\nfinished",
+      "bbox": [
+        3043,
+        452,
+        3157,
+        566
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        2036,
+        446,
+        2160,
+        573
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2739,
+        452,
+        2863,
+        579
+      ],
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Received bank\naccount opening",
+      "head": "evaluat\napplication",
+      "class": "sequenceFlow",
+      "bbox": [
+        323,
+        961,
+        684,
+        1030
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluat\napplication",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1026,
+        954,
+        1270,
+        1024
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create new\nbank account",
+      "class": "sequenceFlow",
+      "bbox": [
+        1323,
+        519,
+        1517,
+        934
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify\ncustomer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1323,
+        1057,
+        1447,
+        1466
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify\ncustomer",
+      "head": "application\nrejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        1802,
+        1423,
+        2046,
+        1493
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new\nbank account",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1925,
+        478,
+        2042,
+        547
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "send\nwelcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        2160,
+        476,
+        2280,
+        546
+      ],
+      "label": null
+    },
+    {
+      "tail": "send\nwelcome pack",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2622,
+        476,
+        2749,
+        546
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "bank account\nfinished",
+      "class": "sequenceFlow",
+      "bbox": [
+        2853,
+        473,
+        3046,
+        543
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "send\nbank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        2099,
+        570,
+        2280,
+        823
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "send\nPIN",
+      "class": "sequenceFlow",
+      "bbox": [
+        2099,
+        570,
+        2274,
+        1111
+      ],
+      "label": null
+    },
+    {
+      "tail": "send\nPIN",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2619,
+        576,
+        2806,
+        1102
+      ],
+      "label": null
+    },
+    {
+      "tail": "send\nbank card",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2613,
+        573,
+        2809,
+        810
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

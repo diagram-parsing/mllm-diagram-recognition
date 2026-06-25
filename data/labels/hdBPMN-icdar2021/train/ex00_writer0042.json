@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "text": "application received",
+      "id": "application received",
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "class": "task"
+    },
+    {
+      "text": "opening failed",
+      "id": "opening failed",
+      "class": "event"
+    },
+    {
+      "text": "create new bank account",
+      "id": "create new bank account",
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack",
+      "id": "send welcome pack",
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "class": "task"
+    },
+    {
+      "text": "opening succeeded",
+      "id": "opening succeeded",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "approve application",
+      "id": "approve application",
+      "class": "task"
+    },
+    {
+      "text": "reject application",
+      "id": "reject application",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "send PIN number",
+      "id": "send PIN number",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send PIN number",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send PIN number",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "opening succeeded",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send welcome pack",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send welcome pack",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create new bank account",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "approve application",
+      "head": "create new bank account",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "approve application",
+      "class": "sequenceFlow",
+      "label": "complete application"
+    },
+    {
+      "tail": "notify customer",
+      "head": "opening failed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "reject application",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject application",
+      "class": "sequenceFlow",
+      "label": "incomplete application"
+    },
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "application received",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "label": null
+    }
+  ],
+  "groups": []
+}

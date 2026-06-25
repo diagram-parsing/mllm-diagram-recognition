@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "maxillodental nonforested ulul",
+      "id": "maxillodental nonforested ulul",
+      "class": "circle"
+    },
+    {
+      "text": "leery",
+      "id": "leery",
+      "class": "hexagon"
+    },
+    {
+      "text": "procumbent",
+      "id": "procumbent",
+      "class": "document"
+    },
+    {
+      "text": "clavolet fascioplasty alitrunk",
+      "id": "clavolet fascioplasty alitrunk",
+      "class": "diamond"
+    },
+    {
+      "text": "ketolysis gratility",
+      "id": "ketolysis gratility",
+      "class": "hexagon"
+    },
+    {
+      "text": "aftercome heteroinoculable",
+      "id": "aftercome heteroinoculable",
+      "class": "hexagon"
+    },
+    {
+      "text": "precommunion",
+      "id": "precommunion",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "maxillodental nonforested ulul",
+      "head": "leery",
+      "label": null
+    },
+    {
+      "tail": "leery",
+      "head": "procumbent",
+      "label": null
+    },
+    {
+      "tail": "procumbent",
+      "head": "clavolet fascioplasty alitrunk",
+      "label": null
+    },
+    {
+      "tail": "clavolet fascioplasty alitrunk",
+      "head": "ketolysis gratility",
+      "label": "no"
+    },
+    {
+      "tail": "clavolet fascioplasty alitrunk",
+      "head": "maxillodental nonforested ulul",
+      "label": "no"
+    },
+    {
+      "tail": "ketolysis gratility",
+      "head": "aftercome heteroinoculable",
+      "label": null
+    },
+    {
+      "tail": "aftercome heteroinoculable",
+      "head": "precommunion",
+      "label": null
+    }
+  ]
+}

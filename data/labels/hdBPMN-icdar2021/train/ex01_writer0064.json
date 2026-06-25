@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "text": "credit request received",
+      "id": "credit request received",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "carry out advanced risk assessment",
+      "id": "carry out advanced risk assessment",
+      "class": "task"
+    },
+    {
+      "text": "simple risk assessment",
+      "id": "simple risk assessment",
+      "class": "task"
+    },
+    {
+      "text": "notify customer with result of assessment",
+      "id": "notify customer with result of assessment",
+      "class": "task"
+    },
+    {
+      "text": "Organisation of disbursment",
+      "id": "Organisation of disbursment",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "class": "task"
+    },
+    {
+      "text": "process finished",
+      "id": "process finished",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_1",
+      "head": "process finished",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Organisation of disbursment",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "Organisation of disbursment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "notify customer with result of assessment",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "notify customer with result of assessment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": "risk beneath threshold"
+    },
+    {
+      "tail": "carry out advanced risk assessment",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "simple risk assessment",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "credit request received",
+      "head": "simple risk assessment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out advanced risk assessment",
+      "class": "sequenceFlow",
+      "label": "risk above threshold"
+    }
+  ],
+  "groups": []
+}

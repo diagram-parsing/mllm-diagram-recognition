@@ -1,0 +1,231 @@
+{
+  "nodes": [
+    {
+      "text": "writes settlement recommendation",
+      "id": "writes settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "makr \"Not OK\"",
+      "id": "makr \"Not OK\"",
+      "class": "task"
+    },
+    {
+      "text": "mark \"OK\"",
+      "id": "mark \"OK\"",
+      "class": "task"
+    },
+    {
+      "text": "receives claim",
+      "id": "receives claim",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "class": "task"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "Claim",
+      "id": "Claim",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Claim",
+      "id": "Claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "Claim",
+      "id": "Claim",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "writes settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "writes settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "makr \"Not OK\"",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark \"OK\"",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "makr \"Not OK\"",
+      "head": "writes settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receives claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Claim",
+      "head": "examine claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Claim",
+      "head": "writes settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "writes settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "makr \"Not OK\"",
+      "head": "Claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark \"OK\"",
+      "head": "Claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "receives claim",
+      "class": "messageFlow",
+      "label": "Claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "writes settlement recommendation",
+        "parallelGateway_1",
+        "receives claim",
+        "parallelGateway_2",
+        "register claim",
+        "examine claim",
+        "settlement recommendation",
+        "Claim"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check recommendation",
+        "makr \"Not OK\"",
+        "mark \"OK\"",
+        "Claim",
+        "exclusiveGateway_1",
+        "Claim"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "nodes": [
+    {
+      "text": "end",
+      "id": "end",
+      "bbox": [
+        1303,
+        757,
+        1361,
+        825
+      ],
+      "class": "event"
+    },
+    {
+      "text": "start",
+      "id": "start",
+      "bbox": [
+        389,
+        501,
+        459,
+        571
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        709,
+        332,
+        860,
+        429
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "bbox": [
+        957,
+        332,
+        1162,
+        417
+      ],
+      "class": "task"
+    },
+    {
+      "text": "attach order to pinboard",
+      "id": "attach order to pinboard",
+      "bbox": [
+        1235,
+        501,
+        1428,
+        646
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write order down",
+      "id": "write order down",
+      "bbox": [
+        721,
+        658,
+        897,
+        743
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1102,
+        510,
+        1170,
+        583
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Lieferando order",
+      "id": "Lieferando order",
+      "bbox": [
+        1261,
+        307,
+        1400,
+        408
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "website order",
+      "id": "website order",
+      "bbox": [
+        935,
+        429,
+        1072,
+        516
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "phone order",
+      "id": "phone order",
+      "bbox": [
+        754,
+        888,
+        909,
+        1003
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "bbox": [
+        996,
+        743,
+        1135,
+        868
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        502,
+        502,
+        580,
+        581
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "bbox": [
+        725,
+        493,
+        884,
+        590
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        884,
+        528,
+        1104,
+        561
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "bbox": [
+        580,
+        525,
+        726,
+        559
+      ],
+      "label": "received by website"
+    },
+    {
+      "tail": "write order down",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        898,
+        581,
+        1139,
+        702
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "write order down",
+      "class": "sequenceFlow",
+      "bbox": [
+        542,
+        580,
+        723,
+        702
+      ],
+      "label": "received by phone"
+    },
+    {
+      "tail": "attach order to pinboard",
+      "head": "end",
+      "class": "sequenceFlow",
+      "bbox": [
+        1316,
+        646,
+        1349,
+        764
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "attach order to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        1170,
+        530,
+        1237,
+        563
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1122,
+        417,
+        1155,
+        513
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "bbox": [
+        859,
+        364,
+        959,
+        397
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        542,
+        380,
+        710,
+        505
+      ],
+      "label": "received by Lieferando"
+    },
+    {
+      "tail": "start",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        458,
+        518,
+        513,
+        551
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "Lieferando order",
+      "class": "dataAssociation",
+      "bbox": [
+        1163,
+        355,
+        1263,
+        389
+      ],
+      "label": null
+    },
+    {
+      "tail": "order",
+      "head": "attach order to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        1135,
+        645,
+        1248,
+        781
+      ],
+      "label": null
+    },
+    {
+      "tail": "write order down",
+      "head": "phone order",
+      "class": "dataAssociation",
+      "bbox": [
+        795,
+        743,
+        828,
+        889
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "website order",
+      "class": "dataAssociation",
+      "bbox": [
+        882,
+        475,
+        936,
+        509
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "start",
+      "class": "messageFlow",
+      "bbox": [
+        408,
+        139,
+        441,
+        503
+      ],
+      "label": "order"
+    }
+  ],
+  "groups": [
+    {
+      "name": "pizza worker",
+      "nodes": [],
+      "bbox": [
+        268,
+        259,
+        1453,
+        1045
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        268,
+        54,
+        1428,
+        139
+      ],
+      "class": "pool"
+    }
+  ]
+}

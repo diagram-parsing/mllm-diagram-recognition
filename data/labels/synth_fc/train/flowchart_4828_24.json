@@ -1,0 +1,256 @@
+{
+  "nodes": [
+    {
+      "text": "photochromatic",
+      "id": "photochromatic",
+      "class": "circle"
+    },
+    {
+      "text": "cora",
+      "id": "cora",
+      "class": "box"
+    },
+    {
+      "text": "rascette orthotoluidin",
+      "id": "rascette orthotoluidin",
+      "class": "hexagon"
+    },
+    {
+      "text": "anemogram retemper",
+      "id": "anemogram retemper",
+      "class": "document"
+    },
+    {
+      "text": "arrhenotokous premiss",
+      "id": "arrhenotokous premiss",
+      "class": "hexagon"
+    },
+    {
+      "text": "home macrophagocyte",
+      "id": "home macrophagocyte",
+      "class": "diamond"
+    },
+    {
+      "text": "tesack stifle",
+      "id": "tesack stifle",
+      "class": "hexagon"
+    },
+    {
+      "text": "symphonion",
+      "id": "symphonion",
+      "class": "box"
+    },
+    {
+      "text": "overgood",
+      "id": "overgood",
+      "class": "box"
+    },
+    {
+      "text": "Chickasaw",
+      "id": "Chickasaw",
+      "class": "hexagon"
+    },
+    {
+      "text": "Bixa",
+      "id": "Bixa",
+      "class": "box"
+    },
+    {
+      "text": "agalite Arctalian decampment",
+      "id": "agalite Arctalian decampment",
+      "class": "hexagon"
+    },
+    {
+      "text": "paga foreseat",
+      "id": "paga foreseat",
+      "class": "hexagon"
+    },
+    {
+      "text": "casbah rhabdomantist perfect",
+      "id": "casbah rhabdomantist perfect",
+      "class": "diamond"
+    },
+    {
+      "text": "semigenuflection",
+      "id": "semigenuflection",
+      "class": "box"
+    },
+    {
+      "text": "philosophy",
+      "id": "philosophy",
+      "class": "diamond"
+    },
+    {
+      "text": "antimilitarist hawkish",
+      "id": "antimilitarist hawkish",
+      "class": "document"
+    },
+    {
+      "text": "brimborium",
+      "id": "brimborium",
+      "class": "parallelogram"
+    },
+    {
+      "text": "provect",
+      "id": "provect",
+      "class": "parallelogram"
+    },
+    {
+      "text": "overmeddle",
+      "id": "overmeddle",
+      "class": "box"
+    },
+    {
+      "text": "udomograph",
+      "id": "udomograph",
+      "class": "box"
+    },
+    {
+      "text": "wheelrace",
+      "id": "wheelrace",
+      "class": "box"
+    },
+    {
+      "text": "hydrophoria",
+      "id": "hydrophoria",
+      "class": "document"
+    },
+    {
+      "text": "noninformative",
+      "id": "noninformative",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "photochromatic",
+      "head": "cora",
+      "label": null
+    },
+    {
+      "tail": "cora",
+      "head": "rascette orthotoluidin",
+      "label": null
+    },
+    {
+      "tail": "rascette orthotoluidin",
+      "head": "anemogram retemper",
+      "label": null
+    },
+    {
+      "tail": "anemogram retemper",
+      "head": "arrhenotokous premiss",
+      "label": null
+    },
+    {
+      "tail": "arrhenotokous premiss",
+      "head": "home macrophagocyte",
+      "label": null
+    },
+    {
+      "tail": "home macrophagocyte",
+      "head": "tesack stifle",
+      "label": "Yes"
+    },
+    {
+      "tail": "home macrophagocyte",
+      "head": "photochromatic",
+      "label": "Yes"
+    },
+    {
+      "tail": "tesack stifle",
+      "head": "symphonion",
+      "label": null
+    },
+    {
+      "tail": "symphonion",
+      "head": "overgood",
+      "label": null
+    },
+    {
+      "tail": "overgood",
+      "head": "Chickasaw",
+      "label": null
+    },
+    {
+      "tail": "Chickasaw",
+      "head": "Bixa",
+      "label": null
+    },
+    {
+      "tail": "Bixa",
+      "head": "agalite Arctalian decampment",
+      "label": null
+    },
+    {
+      "tail": "agalite Arctalian decampment",
+      "head": "paga foreseat",
+      "label": null
+    },
+    {
+      "tail": "paga foreseat",
+      "head": "casbah rhabdomantist perfect",
+      "label": null
+    },
+    {
+      "tail": "casbah rhabdomantist perfect",
+      "head": "semigenuflection",
+      "label": "NO"
+    },
+    {
+      "tail": "casbah rhabdomantist perfect",
+      "head": "photochromatic",
+      "label": "NO"
+    },
+    {
+      "tail": "semigenuflection",
+      "head": "philosophy",
+      "label": null
+    },
+    {
+      "tail": "philosophy",
+      "head": "antimilitarist hawkish",
+      "label": "yes"
+    },
+    {
+      "tail": "philosophy",
+      "head": "home macrophagocyte",
+      "label": "yes"
+    },
+    {
+      "tail": "antimilitarist hawkish",
+      "head": "brimborium",
+      "label": null
+    },
+    {
+      "tail": "brimborium",
+      "head": "provect",
+      "label": null
+    },
+    {
+      "tail": "provect",
+      "head": "overmeddle",
+      "label": null
+    },
+    {
+      "tail": "overmeddle",
+      "head": "udomograph",
+      "label": null
+    },
+    {
+      "tail": "udomograph",
+      "head": "wheelrace",
+      "label": null
+    },
+    {
+      "tail": "wheelrace",
+      "head": "hydrophoria",
+      "label": null
+    },
+    {
+      "tail": "hydrophoria",
+      "head": "noninformative",
+      "label": null
+    }
+  ]
+}

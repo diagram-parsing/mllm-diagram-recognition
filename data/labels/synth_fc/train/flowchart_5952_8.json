@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "prequote",
+      "id": "prequote",
+      "class": "oval"
+    },
+    {
+      "text": "superadmiration Iliadize hydri",
+      "id": "superadmiration Iliadize hydri",
+      "class": "hexagon"
+    },
+    {
+      "text": "penny Lord unjaunty",
+      "id": "penny Lord unjaunty",
+      "class": "parallelogram"
+    },
+    {
+      "text": "copiously podobranchiate",
+      "id": "copiously podobranchiate",
+      "class": "hexagon"
+    },
+    {
+      "text": "gastroenterocolostomy",
+      "id": "gastroenterocolostomy",
+      "class": "diamond"
+    },
+    {
+      "text": "smoothification reboil vanilli",
+      "id": "smoothification reboil vanilli",
+      "class": "diamond"
+    },
+    {
+      "text": "counterdifficulty",
+      "id": "counterdifficulty",
+      "class": "box"
+    },
+    {
+      "text": "chlorazide",
+      "id": "chlorazide",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "prequote",
+      "head": "superadmiration Iliadize hydri",
+      "label": null
+    },
+    {
+      "tail": "superadmiration Iliadize hydri",
+      "head": "penny Lord unjaunty",
+      "label": null
+    },
+    {
+      "tail": "penny Lord unjaunty",
+      "head": "copiously podobranchiate",
+      "label": null
+    },
+    {
+      "tail": "copiously podobranchiate",
+      "head": "gastroenterocolostomy",
+      "label": null
+    },
+    {
+      "tail": "gastroenterocolostomy",
+      "head": "smoothification reboil vanilli",
+      "label": "yes"
+    },
+    {
+      "tail": "gastroenterocolostomy",
+      "head": "counterdifficulty",
+      "label": "yes"
+    },
+    {
+      "tail": "smoothification reboil vanilli",
+      "head": "counterdifficulty",
+      "label": "YES"
+    },
+    {
+      "tail": "smoothification reboil vanilli",
+      "head": "prequote",
+      "label": "YES"
+    },
+    {
+      "tail": "counterdifficulty",
+      "head": "chlorazide",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": [
+    {
+      "text": "assess risk",
+      "id": "assess risk",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "carry out an advanced risk assessment",
+      "id": "carry out an advanced risk assessment",
+      "class": "task"
+    },
+    {
+      "text": "carry out a simple risk assessment",
+      "id": "carry out a simple risk assessment",
+      "class": "task"
+    },
+    {
+      "text": "notify customer with the result of the assesment",
+      "id": "notify customer with the result of the assesment",
+      "class": "task"
+    },
+    {
+      "text": "organize disbursement",
+      "id": "organize disbursement",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "credit card request received",
+      "id": "credit card request received",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "credit card request accepted",
+      "id": "credit card request accepted",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "organize disbursement",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "organize disbursement",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "credit card request accepted",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "notify customer with the result of the assesment",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "notify customer with the result of the assesment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "carry out a simple risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "carry out an advanced risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "assess risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "credit card request received",
+      "head": "assess risk",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out a simple risk assessment",
+      "class": "sequenceFlow",
+      "label": "risk below a threshold"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out an advanced risk assessment",
+      "class": "sequenceFlow",
+      "label": "risk above a threshold"
+    }
+  ],
+  "groups": []
+}

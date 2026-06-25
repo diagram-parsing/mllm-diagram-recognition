@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "anthological panpharmacon",
+      "id": "anthological panpharmacon",
+      "class": "circle"
+    },
+    {
+      "text": "Anax",
+      "id": "Anax",
+      "class": "diamond"
+    },
+    {
+      "text": "Cumanagoto splenoceratosis",
+      "id": "Cumanagoto splenoceratosis",
+      "class": "diamond"
+    },
+    {
+      "text": "cackerel geld",
+      "id": "cackerel geld",
+      "class": "box"
+    },
+    {
+      "text": "Candlemas subsultorily",
+      "id": "Candlemas subsultorily",
+      "class": "diamond"
+    },
+    {
+      "text": "Diaspinae",
+      "id": "Diaspinae",
+      "class": "hexagon"
+    },
+    {
+      "text": "unreworded timeful unlidded",
+      "id": "unreworded timeful unlidded",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "anthological panpharmacon",
+      "head": "Anax",
+      "label": null
+    },
+    {
+      "tail": "Anax",
+      "head": "Cumanagoto splenoceratosis",
+      "label": "NO"
+    },
+    {
+      "tail": "Anax",
+      "head": "cackerel geld",
+      "label": "NO"
+    },
+    {
+      "tail": "Cumanagoto splenoceratosis",
+      "head": "Candlemas subsultorily",
+      "label": "yes"
+    },
+    {
+      "tail": "Cumanagoto splenoceratosis",
+      "head": "anthological panpharmacon",
+      "label": "yes"
+    },
+    {
+      "tail": "Candlemas subsultorily",
+      "head": "Diaspinae",
+      "label": "no"
+    },
+    {
+      "tail": "Candlemas subsultorily",
+      "head": "anthological panpharmacon",
+      "label": "no"
+    },
+    {
+      "tail": "Diaspinae",
+      "head": "cackerel geld",
+      "label": null
+    },
+    {
+      "tail": "cackerel geld",
+      "head": "unreworded timeful unlidded",
+      "label": null
+    }
+  ]
+}

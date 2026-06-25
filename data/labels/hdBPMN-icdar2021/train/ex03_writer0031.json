@@ -1,0 +1,353 @@
+{
+  "nodes": [
+    {
+      "text": "claim DB",
+      "id": "claim DB",
+      "class": "dataStore"
+    },
+    {
+      "text": "process ended",
+      "id": "process ended",
+      "class": "event"
+    },
+    {
+      "text": "updated forms",
+      "id": "updated forms",
+      "class": "dataObject"
+    },
+    {
+      "text": "get updated forms",
+      "id": "get updated forms",
+      "class": "task"
+    },
+    {
+      "text": "send relevant forms",
+      "id": "send relevant forms",
+      "class": "task"
+    },
+    {
+      "text": "forms DB",
+      "id": "forms DB",
+      "class": "dataStore"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "send automatic notification",
+      "id": "send automatic notification",
+      "class": "task"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "evaluate severity of claim",
+      "id": "evaluate severity of claim",
+      "class": "task"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim\nreceived",
+      "id": "claim\nreceived",
+      "class": "event"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "insurance\nDB",
+      "id": "insurance\nDB",
+      "class": "dataStore"
+    },
+    {
+      "text": "updated\nforms",
+      "id": "updated\nforms",
+      "class": "dataObject"
+    },
+    {
+      "text": "inform",
+      "id": "inform",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check for completness",
+      "id": "check for completness",
+      "class": "task"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "check claimant insurer",
+      "id": "check claimant insurer",
+      "class": "task"
+    },
+    {
+      "text": "claim (approved)",
+      "id": "claim (approved)",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "register claim",
+      "head": "process ended",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": "provide all relevant information"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "inform",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check for completness",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "get updated forms",
+      "head": "check for completness",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "send automatic notification",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "evaluate severity of claim",
+      "head": "send relevant forms",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "evaluate severity of claim",
+      "class": "sequenceFlow",
+      "label": "insured"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "label": "not insured"
+    },
+    {
+      "tail": "check claimant insurer",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim\nreceived",
+      "head": "check claimant insurer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "get updated forms",
+      "head": "updated forms",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "send relevant forms",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "forms DB",
+      "head": "send relevant forms",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "send automatic notification",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "send automatic notification",
+      "head": "dataObject_1",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "evaluate severity of claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim\nreceived",
+      "head": "claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "updated\nforms",
+      "head": "check for completness",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim (approved)",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim DB",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "insurance\nDB",
+      "head": "check claimant insurer",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "send automatic notification",
+      "head": "claimant",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "send relevant forms",
+      "head": "claimant",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "claimant",
+      "head": "get updated forms",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "claimant",
+      "head": "claim\nreceived",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "inform",
+      "head": "claimant",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "claimant",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "insurer",
+      "nodes": [
+        "senior claims officer",
+        "claims management system",
+        "SAP system",
+        "claim officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "evaluate severity of claim",
+        "claim"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims management system",
+      "nodes": [
+        "claim DB",
+        "process ended",
+        "register claim",
+        "claim (approved)"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "SAP system",
+      "nodes": [
+        "updated forms",
+        "get updated forms",
+        "send relevant forms",
+        "forms DB",
+        "claim",
+        "send automatic notification",
+        "claim",
+        "dataObject_1"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "reject claim",
+        "exclusiveGateway_1",
+        "claim\nreceived",
+        "claim",
+        "insurance\nDB",
+        "updated\nforms",
+        "inform",
+        "exclusiveGateway_2",
+        "check for completness",
+        "check claimant insurer"
+      ],
+      "class": "lane"
+    }
+  ]
+}

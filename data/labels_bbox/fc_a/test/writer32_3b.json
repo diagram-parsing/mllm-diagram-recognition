@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "text": "Begin",
+      "id": "Begin",
+      "bbox": [
+        4,
+        198,
+        270,
+        341
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input X,Y",
+      "id": "Input X,Y",
+      "bbox": [
+        374,
+        189,
+        658,
+        331
+      ],
+      "class": "data"
+    },
+    {
+      "text": "X>=Y",
+      "id": "X>=Y",
+      "bbox": [
+        737,
+        122,
+        973,
+        387
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "display Y",
+      "id": "display Y",
+      "bbox": [
+        1018,
+        4,
+        1329,
+        127
+      ],
+      "class": "data"
+    },
+    {
+      "text": "display X",
+      "id": "display X",
+      "bbox": [
+        1036,
+        353,
+        1316,
+        521
+      ],
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Begin",
+      "head": "Input X,Y",
+      "bbox": [
+        266,
+        250,
+        390,
+        281
+      ],
+      "kps": [
+        267.0,
+        263.0,
+        2.0,
+        388.0,
+        263.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input X,Y",
+      "head": "X>=Y",
+      "bbox": [
+        634,
+        241,
+        743,
+        277
+      ],
+      "kps": [
+        636.0,
+        254.0,
+        2.0,
+        740.0,
+        256.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display Y",
+      "bbox": [
+        969,
+        114,
+        1176,
+        259
+      ],
+      "kps": [
+        970.0,
+        251.0,
+        2.0,
+        1155.0,
+        116.0,
+        2.0
+      ],
+      "label": "0"
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display X",
+      "bbox": [
+        846,
+        381,
+        1063,
+        458
+      ],
+      "kps": [
+        849.0,
+        383.0,
+        2.0,
+        1060.0,
+        439.0,
+        2.0
+      ],
+      "label": "1"
+    }
+  ]
+}

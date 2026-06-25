@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "class": "task"
+    },
+    {
+      "text": "print order",
+      "id": "print order",
+      "class": "task"
+    },
+    {
+      "text": "attach to clipboard",
+      "id": "attach to clipboard",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "Liferando",
+      "id": "Liferando",
+      "class": "messageEvent"
+    },
+    {
+      "text": "website",
+      "id": "website",
+      "class": "messageEvent"
+    },
+    {
+      "text": "phone",
+      "id": "phone",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order note paper",
+      "id": "order note paper",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "print order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach to clipboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "phone",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "website",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Liferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "website",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "phone",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "Liferando",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "order note paper",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "order note paper",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "order note paper",
+      "head": "attach to clipboard",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": []
+}

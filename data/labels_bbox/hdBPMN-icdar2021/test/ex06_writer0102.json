@@ -1,0 +1,501 @@
+{
+  "nodes": [
+    {
+      "text": "receive order by Lieferando",
+      "id": "receive order by Lieferando",
+      "bbox": [
+        1567,
+        456,
+        2162,
+        768
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive order by Website",
+      "id": "receive order by Website",
+      "bbox": [
+        1533,
+        881,
+        2190,
+        1193
+      ],
+      "class": "task"
+    },
+    {
+      "text": "take order by phone",
+      "id": "take order by phone",
+      "bbox": [
+        1524,
+        1334,
+        2162,
+        1731
+      ],
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        2516,
+        484,
+        3182,
+        768
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order note",
+      "id": "write down order note",
+      "bbox": [
+        2375,
+        1334,
+        3211,
+        1760
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "bbox": [
+        3721,
+        881,
+        4305,
+        1221
+      ],
+      "class": "task"
+    },
+    {
+      "text": "attach order to pinboard",
+      "id": "attach order to pinboard",
+      "bbox": [
+        4203,
+        1363,
+        4741,
+        1816
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        4265,
+        2003,
+        4515,
+        2211
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        803,
+        963,
+        972,
+        1158
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1212,
+        963,
+        1398,
+        1184
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        3315,
+        998,
+        3526,
+        1203
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        3868,
+        1468,
+        4054,
+        1750
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order confirmation",
+      "id": "order confirmation",
+      "bbox": [
+        3330,
+        342,
+        3466,
+        527
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order note",
+      "id": "order note",
+      "bbox": [
+        3472,
+        1984,
+        3664,
+        2227
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "write down order note",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        3209,
+        1500,
+        3913,
+        1600
+      ],
+      "kps": [
+        3209.6,
+        1548.8,
+        2.0,
+        3910.4,
+        1548.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "take order by phone",
+      "head": "write down order note",
+      "class": "sequenceFlow",
+      "bbox": [
+        2163,
+        1536,
+        2377,
+        1635
+      ],
+      "kps": [
+        2163.2,
+        1584.0,
+        2.0,
+        2374.4,
+        1584.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "take order by phone",
+      "class": "sequenceFlow",
+      "bbox": [
+        1305,
+        1184,
+        1529,
+        1491
+      ],
+      "kps": [
+        1305.6,
+        1184.0,
+        2.0,
+        1526.4,
+        1488.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "attach order to pinboard",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        4361,
+        1817,
+        4461,
+        1987
+      ],
+      "kps": [
+        4409.6,
+        1817.6,
+        2.0,
+        4409.6,
+        1984.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "attach order to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        4054,
+        1561,
+        4208,
+        1660
+      ],
+      "kps": [
+        4054.4,
+        1609.6,
+        2.0,
+        4204.8,
+        1609.6,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        3913,
+        1219,
+        4012,
+        1472
+      ],
+      "kps": [
+        3961.6,
+        1219.2,
+        2.0,
+        3961.6,
+        1468.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "bbox": [
+        3526,
+        1052,
+        3724,
+        1152
+      ],
+      "kps": [
+        3526.4,
+        1100.8,
+        2.0,
+        3721.6,
+        1100.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive order by Website",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2188,
+        988,
+        3385,
+        1088
+      ],
+      "kps": [
+        2188.8,
+        1036.8,
+        2.0,
+        3382.4,
+        1036.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by Website",
+      "class": "sequenceFlow",
+      "bbox": [
+        1388,
+        1012,
+        1536,
+        1112
+      ],
+      "kps": [
+        1388.8,
+        1062.4,
+        2.0,
+        1532.8,
+        1059.2,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        3184,
+        646,
+        3481,
+        1014
+      ],
+      "kps": [
+        3184.0,
+        646.4,
+        2.0,
+        3433.6,
+        1011.2,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive order by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        2163,
+        577,
+        2521,
+        676
+      ],
+      "kps": [
+        2163.2,
+        624.0,
+        2.0,
+        2518.4,
+        627.2,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by Lieferando",
+      "class": "sequenceFlow",
+      "bbox": [
+        1305,
+        611,
+        1571,
+        966
+      ],
+      "kps": [
+        1305.6,
+        963.2,
+        2.0,
+        1568.0,
+        611.2,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        972,
+        1014,
+        1225,
+        1113
+      ],
+      "kps": [
+        972.8,
+        1062.4,
+        2.0,
+        1222.4,
+        1062.4,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "order confirmation",
+      "class": "dataAssociation",
+      "bbox": [
+        3065,
+        201,
+        3334,
+        486
+      ],
+      "kps": [
+        3065.6,
+        483.2,
+        2.0,
+        3331.2,
+        342.4,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "order note",
+      "class": "dataAssociation",
+      "bbox": [
+        3126,
+        1760,
+        3475,
+        2019
+      ],
+      "kps": [
+        3126.4,
+        1760.0,
+        2.0,
+        3472.0,
+        2016.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "order note",
+      "class": "dataAssociation",
+      "bbox": [
+        3635,
+        1219,
+        3753,
+        1987
+      ],
+      "kps": [
+        3750.4,
+        1219.2,
+        2.0,
+        3635.2,
+        1984.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "order note",
+      "head": "attach order to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        3667,
+        1801,
+        4214,
+        2097
+      ],
+      "kps": [
+        3667.2,
+        2044.8,
+        2.0,
+        4211.2,
+        1801.6,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

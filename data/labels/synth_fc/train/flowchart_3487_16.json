@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "text": "Telei",
+      "id": "Telei",
+      "class": "ellipse"
+    },
+    {
+      "text": "Diaspinae",
+      "id": "Diaspinae",
+      "class": "diamond"
+    },
+    {
+      "text": "scatophagid",
+      "id": "scatophagid",
+      "class": "diamond"
+    },
+    {
+      "text": "dysphoric lithous",
+      "id": "dysphoric lithous",
+      "class": "parallelogram"
+    },
+    {
+      "text": "nonselection clearheadedness",
+      "id": "nonselection clearheadedness",
+      "class": "document"
+    },
+    {
+      "text": "Hondurean whalebird",
+      "id": "Hondurean whalebird",
+      "class": "diamond"
+    },
+    {
+      "text": "draughtswoman unintimidated",
+      "id": "draughtswoman unintimidated",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Gnathostomata",
+      "id": "Gnathostomata",
+      "class": "box"
+    },
+    {
+      "text": "Sopheric",
+      "id": "Sopheric",
+      "class": "box"
+    },
+    {
+      "text": "consciencelessly antiketogenic",
+      "id": "consciencelessly antiketogenic",
+      "class": "box"
+    },
+    {
+      "text": "collin choirmaster pleuroperic",
+      "id": "collin choirmaster pleuroperic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Balaamite",
+      "id": "Balaamite",
+      "class": "document"
+    },
+    {
+      "text": "nodosity",
+      "id": "nodosity",
+      "class": "diamond"
+    },
+    {
+      "text": "tergant",
+      "id": "tergant",
+      "class": "document"
+    },
+    {
+      "text": "nonsuppressed",
+      "id": "nonsuppressed",
+      "class": "diamond"
+    },
+    {
+      "text": "Steinberger",
+      "id": "Steinberger",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Telei",
+      "head": "Diaspinae",
+      "label": null
+    },
+    {
+      "tail": "Diaspinae",
+      "head": "scatophagid",
+      "label": "NO"
+    },
+    {
+      "tail": "Diaspinae",
+      "head": "dysphoric lithous",
+      "label": "NO"
+    },
+    {
+      "tail": "scatophagid",
+      "head": "nonselection clearheadedness",
+      "label": "yes"
+    },
+    {
+      "tail": "scatophagid",
+      "head": "Hondurean whalebird",
+      "label": "yes"
+    },
+    {
+      "tail": "nonselection clearheadedness",
+      "head": "draughtswoman unintimidated",
+      "label": null
+    },
+    {
+      "tail": "draughtswoman unintimidated",
+      "head": "Gnathostomata",
+      "label": null
+    },
+    {
+      "tail": "Gnathostomata",
+      "head": "Hondurean whalebird",
+      "label": null
+    },
+    {
+      "tail": "Hondurean whalebird",
+      "head": "Sopheric",
+      "label": "no"
+    },
+    {
+      "tail": "Hondurean whalebird",
+      "head": "consciencelessly antiketogenic",
+      "label": "no"
+    },
+    {
+      "tail": "Sopheric",
+      "head": "consciencelessly antiketogenic",
+      "label": null
+    },
+    {
+      "tail": "consciencelessly antiketogenic",
+      "head": "collin choirmaster pleuroperic",
+      "label": null
+    },
+    {
+      "tail": "collin choirmaster pleuroperic",
+      "head": "dysphoric lithous",
+      "label": null
+    },
+    {
+      "tail": "dysphoric lithous",
+      "head": "Balaamite",
+      "label": null
+    },
+    {
+      "tail": "Balaamite",
+      "head": "nodosity",
+      "label": null
+    },
+    {
+      "tail": "nodosity",
+      "head": "tergant",
+      "label": "no"
+    },
+    {
+      "tail": "nodosity",
+      "head": "Balaamite",
+      "label": "no"
+    },
+    {
+      "tail": "tergant",
+      "head": "nonsuppressed",
+      "label": null
+    },
+    {
+      "tail": "nonsuppressed",
+      "head": "Steinberger",
+      "label": "Yes"
+    },
+    {
+      "tail": "nonsuppressed",
+      "head": "tergant",
+      "label": "Yes"
+    }
+  ]
+}

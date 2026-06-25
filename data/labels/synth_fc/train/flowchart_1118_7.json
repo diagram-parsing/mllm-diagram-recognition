@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "atoxyl",
+      "id": "atoxyl",
+      "class": "oval"
+    },
+    {
+      "text": "Houghton",
+      "id": "Houghton",
+      "class": "diamond"
+    },
+    {
+      "text": "plainscraft",
+      "id": "plainscraft",
+      "class": "parallelogram"
+    },
+    {
+      "text": "decolorate",
+      "id": "decolorate",
+      "class": "box"
+    },
+    {
+      "text": "peristomium",
+      "id": "peristomium",
+      "class": "document"
+    },
+    {
+      "text": "tervalent",
+      "id": "tervalent",
+      "class": "document"
+    },
+    {
+      "text": "unsyringed infratemporal",
+      "id": "unsyringed infratemporal",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "atoxyl",
+      "head": "Houghton",
+      "label": null
+    },
+    {
+      "tail": "Houghton",
+      "head": "plainscraft",
+      "label": "Yes"
+    },
+    {
+      "tail": "Houghton",
+      "head": "decolorate",
+      "label": "Yes"
+    },
+    {
+      "tail": "plainscraft",
+      "head": "peristomium",
+      "label": null
+    },
+    {
+      "tail": "peristomium",
+      "head": "decolorate",
+      "label": null
+    },
+    {
+      "tail": "decolorate",
+      "head": "tervalent",
+      "label": null
+    },
+    {
+      "tail": "tervalent",
+      "head": "unsyringed infratemporal",
+      "label": null
+    }
+  ]
+}

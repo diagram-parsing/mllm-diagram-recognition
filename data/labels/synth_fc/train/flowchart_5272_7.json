@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "stubbedness hautboyist",
+      "id": "stubbedness hautboyist",
+      "class": "circle"
+    },
+    {
+      "text": "ungassed Receptaculites",
+      "id": "ungassed Receptaculites",
+      "class": "parallelogram"
+    },
+    {
+      "text": "fecaloid",
+      "id": "fecaloid",
+      "class": "diamond"
+    },
+    {
+      "text": "velatura",
+      "id": "velatura",
+      "class": "parallelogram"
+    },
+    {
+      "text": "selfsameness nondisjunctive",
+      "id": "selfsameness nondisjunctive",
+      "class": "hexagon"
+    },
+    {
+      "text": "synergic",
+      "id": "synergic",
+      "class": "box"
+    },
+    {
+      "text": "daemon",
+      "id": "daemon",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "stubbedness hautboyist",
+      "head": "ungassed Receptaculites",
+      "label": null
+    },
+    {
+      "tail": "ungassed Receptaculites",
+      "head": "fecaloid",
+      "label": null
+    },
+    {
+      "tail": "fecaloid",
+      "head": "velatura",
+      "label": "NO"
+    },
+    {
+      "tail": "fecaloid",
+      "head": "selfsameness nondisjunctive",
+      "label": "NO"
+    },
+    {
+      "tail": "velatura",
+      "head": "selfsameness nondisjunctive",
+      "label": null
+    },
+    {
+      "tail": "selfsameness nondisjunctive",
+      "head": "synergic",
+      "label": null
+    },
+    {
+      "tail": "synergic",
+      "head": "daemon",
+      "label": null
+    }
+  ]
+}

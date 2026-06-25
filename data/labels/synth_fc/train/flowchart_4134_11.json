@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "text": "redlegs chivalrousness Pindari",
+      "id": "redlegs chivalrousness Pindari",
+      "class": "circle"
+    },
+    {
+      "text": "Boltonia plumemaker",
+      "id": "Boltonia plumemaker",
+      "class": "diamond"
+    },
+    {
+      "text": "factiousness lupeose concavene",
+      "id": "factiousness lupeose concavene",
+      "class": "diamond"
+    },
+    {
+      "text": "bedeaf rumourmonger kinetics",
+      "id": "bedeaf rumourmonger kinetics",
+      "class": "diamond"
+    },
+    {
+      "text": "Pantotheria sip",
+      "id": "Pantotheria sip",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Cetacea pourparler chlorophane",
+      "id": "Cetacea pourparler chlorophane",
+      "class": "parallelogram"
+    },
+    {
+      "text": "tastableness",
+      "id": "tastableness",
+      "class": "box"
+    },
+    {
+      "text": "questorial trilby lateen",
+      "id": "questorial trilby lateen",
+      "class": "diamond"
+    },
+    {
+      "text": "churlishly depositive",
+      "id": "churlishly depositive",
+      "class": "hexagon"
+    },
+    {
+      "text": "irresistibility",
+      "id": "irresistibility",
+      "class": "box"
+    },
+    {
+      "text": "reside",
+      "id": "reside",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "redlegs chivalrousness Pindari",
+      "head": "Boltonia plumemaker",
+      "label": null
+    },
+    {
+      "tail": "Boltonia plumemaker",
+      "head": "factiousness lupeose concavene",
+      "label": "no"
+    },
+    {
+      "tail": "Boltonia plumemaker",
+      "head": "bedeaf rumourmonger kinetics",
+      "label": "no"
+    },
+    {
+      "tail": "factiousness lupeose concavene",
+      "head": "Pantotheria sip",
+      "label": "No"
+    },
+    {
+      "tail": "factiousness lupeose concavene",
+      "head": "Cetacea pourparler chlorophane",
+      "label": "No"
+    },
+    {
+      "tail": "Pantotheria sip",
+      "head": "Cetacea pourparler chlorophane",
+      "label": null
+    },
+    {
+      "tail": "Cetacea pourparler chlorophane",
+      "head": "tastableness",
+      "label": null
+    },
+    {
+      "tail": "tastableness",
+      "head": "questorial trilby lateen",
+      "label": null
+    },
+    {
+      "tail": "questorial trilby lateen",
+      "head": "churlishly depositive",
+      "label": "YES"
+    },
+    {
+      "tail": "questorial trilby lateen",
+      "head": "redlegs chivalrousness Pindari",
+      "label": "YES"
+    },
+    {
+      "tail": "churlishly depositive",
+      "head": "bedeaf rumourmonger kinetics",
+      "label": null
+    },
+    {
+      "tail": "bedeaf rumourmonger kinetics",
+      "head": "irresistibility",
+      "label": "yes"
+    },
+    {
+      "tail": "bedeaf rumourmonger kinetics",
+      "head": "Pantotheria sip",
+      "label": "yes"
+    },
+    {
+      "tail": "irresistibility",
+      "head": "reside",
+      "label": null
+    }
+  ]
+}

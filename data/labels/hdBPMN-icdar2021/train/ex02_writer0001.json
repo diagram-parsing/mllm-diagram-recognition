@@ -1,0 +1,225 @@
+{
+  "nodes": [
+    {
+      "text": "claim closed",
+      "id": "claim closed",
+      "class": "event"
+    },
+    {
+      "text": "proceed handling process",
+      "id": "proceed handling process",
+      "class": "task"
+    },
+    {
+      "text": "check the settlement recommendation",
+      "id": "check the settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation [OK]",
+      "id": "settlement recommendation [OK]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "examine clime",
+      "id": "examine clime",
+      "class": "task"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "claim [examined]",
+      "id": "claim [examined]",
+      "class": "dataObject"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "settlement recommendation [NOT OK]",
+      "id": "settlement recommendation [NOT OK]",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "proceed handling process",
+      "head": "claim closed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "examine clime",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine clime",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check the settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check the settlement recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": "Not OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "proceed handling process",
+      "class": "sequenceFlow",
+      "label": "OK"
+    },
+    {
+      "tail": "settlement recommendation [OK]",
+      "head": "proceed handling process",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check the settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check the settlement recommendation",
+      "head": "settlement recommendation [NOT OK]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check the settlement recommendation",
+      "head": "settlement recommendation [OK]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "examine clime",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "examine clime",
+      "head": "claim [examined]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation [NOT OK]",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [examined]",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "pool_1",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "label": "claim of costumer"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "settlement recommendation",
+        "claim",
+        "examine clime",
+        "register claim",
+        "claim [examined]",
+        "write settlement recommendation",
+        "messageEvent_1",
+        "settlement recommendation [NOT OK]"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "claim closed",
+        "proceed handling process",
+        "check the settlement recommendation",
+        "exclusiveGateway_1",
+        "settlement recommendation [OK]"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

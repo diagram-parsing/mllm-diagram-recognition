@@ -1,0 +1,476 @@
+{
+  "nodes": [
+    {
+      "text": "patients interviewed",
+      "id": "patients interviewed",
+      "bbox": [
+        188,
+        384,
+        244,
+        435
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "create the report",
+      "id": "create the report",
+      "bbox": [
+        1246,
+        400,
+        1471,
+        489
+      ],
+      "class": "task"
+    },
+    {
+      "text": "integrate in the new workflow",
+      "id": "integrate in the new workflow",
+      "bbox": [
+        347,
+        357,
+        562,
+        489
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        157,
+        710,
+        227,
+        785
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        280,
+        715,
+        341,
+        782
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        599,
+        709,
+        677,
+        781
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        730,
+        700,
+        796,
+        766
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        876,
+        699,
+        957,
+        767
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        863,
+        384,
+        932,
+        470
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "par the flees",
+      "id": "par the flees",
+      "bbox": [
+        1024,
+        623,
+        1185,
+        729
+      ],
+      "class": "task"
+    },
+    {
+      "text": "file the results",
+      "id": "file the results",
+      "bbox": [
+        1005,
+        393,
+        1186,
+        490
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1474,
+        494,
+        1532,
+        564
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_4",
+      "bbox": [
+        410,
+        710,
+        489,
+        784
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "sended the cheque",
+      "id": "sended the cheque",
+      "bbox": [
+        1540,
+        749,
+        1589,
+        796
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        311,
+        764,
+        766,
+        861
+      ],
+      "label": "response not approved"
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "sended the cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        1526,
+        537,
+        1569,
+        749
+      ],
+      "label": null
+    },
+    {
+      "tail": "par the flees",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1185,
+        564,
+        1504,
+        681
+      ],
+      "label": null
+    },
+    {
+      "tail": "create the report",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1471,
+        441,
+        1509,
+        501
+      ],
+      "label": null
+    },
+    {
+      "tail": "file the results",
+      "head": "create the report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1186,
+        436,
+        1247,
+        471
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "file the results",
+      "class": "sequenceFlow",
+      "bbox": [
+        932,
+        417,
+        1006,
+        452
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "par the flees",
+      "class": "sequenceFlow",
+      "bbox": [
+        897,
+        469,
+        1025,
+        659
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        814,
+        424,
+        918,
+        694
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "messageEvent_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        796,
+        717,
+        877,
+        752
+      ],
+      "label": "response approved"
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        677,
+        723,
+        738,
+        758
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        489,
+        729,
+        600,
+        764
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        341,
+        732,
+        411,
+        766
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        227,
+        729,
+        285,
+        763
+      ],
+      "label": null
+    },
+    {
+      "tail": "integrate in the new workflow",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        209,
+        489,
+        367,
+        718
+      ],
+      "label": null
+    },
+    {
+      "tail": "patients interviewed",
+      "head": "integrate in the new workflow",
+      "class": "sequenceFlow",
+      "bbox": [
+        239,
+        407,
+        348,
+        441
+      ],
+      "label": null
+    },
+    {
+      "tail": "patients",
+      "head": "patients interviewed",
+      "class": "messageFlow",
+      "bbox": [
+        198,
+        237,
+        233,
+        382
+      ],
+      "label": "Interviwe"
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "external experts",
+      "class": "messageFlow",
+      "bbox": [
+        170,
+        782,
+        205,
+        976
+      ],
+      "label": "review"
+    },
+    {
+      "tail": "external experts",
+      "head": "messageEvent_4",
+      "class": "messageFlow",
+      "bbox": [
+        417,
+        783,
+        452,
+        976
+      ],
+      "label": "ask for review the work"
+    },
+    {
+      "tail": "external experts",
+      "head": "messageEvent_2",
+      "class": "messageFlow",
+      "bbox": [
+        617,
+        783,
+        652,
+        976
+      ],
+      "label": "ask for response"
+    },
+    {
+      "tail": "sended the cheque",
+      "head": "external experts",
+      "class": "messageFlow",
+      "bbox": [
+        1539,
+        795,
+        1573,
+        976
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "quality assurance"
+      ],
+      "bbox": [
+        23,
+        286,
+        1664,
+        920
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "messageEvent_1",
+        "exclusiveGateway_1",
+        "messageEvent_2",
+        "exclusiveGateway_2",
+        "messageEvent_3",
+        "par the flees",
+        "messageEvent_4",
+        "sended the cheque"
+      ],
+      "bbox": [
+        59,
+        621,
+        1664,
+        920
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance",
+      "nodes": [
+        "patients interviewed",
+        "create the report",
+        "integrate in the new workflow",
+        "parallelGateway_1",
+        "file the results",
+        "parallelGateway_2"
+      ],
+      "bbox": [
+        59,
+        286,
+        1664,
+        621
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "external experts",
+      "nodes": [],
+      "bbox": [
+        119,
+        975,
+        1665,
+        1042
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "patients",
+      "nodes": [],
+      "bbox": [
+        131,
+        166,
+        1652,
+        238
+      ],
+      "class": "pool"
+    }
+  ]
+}

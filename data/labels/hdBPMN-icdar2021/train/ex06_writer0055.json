@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "write down order note",
+      "id": "write down order note",
+      "class": "task"
+    },
+    {
+      "text": "print order",
+      "id": "print order",
+      "class": "task"
+    },
+    {
+      "text": "attach order (note) to pinboard",
+      "id": "attach order (note) to pinboard",
+      "class": "task"
+    },
+    {
+      "text": "order processed",
+      "id": "order processed",
+      "class": "event"
+    },
+    {
+      "text": "order received",
+      "id": "order received",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order confirmation",
+      "id": "order confirmation",
+      "class": "dataObject"
+    },
+    {
+      "text": "order note",
+      "id": "order note",
+      "class": "dataObject"
+    },
+    {
+      "text": "order management system",
+      "id": "order management system",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": "received by lieferando"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": "received by website"
+    },
+    {
+      "tail": "attach order (note) to pinboard",
+      "head": "order processed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "attach order (note) to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write down order note",
+      "class": "sequenceFlow",
+      "label": "received by phone call"
+    },
+    {
+      "tail": "order received",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "order management system",
+      "head": "confirm order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "order confirmation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "order note",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": []
+}

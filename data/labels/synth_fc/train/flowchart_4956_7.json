@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "deemstership anhydride",
+      "id": "deemstership anhydride",
+      "class": "ellipse"
+    },
+    {
+      "text": "blackwood",
+      "id": "blackwood",
+      "class": "diamond"
+    },
+    {
+      "text": "viduity",
+      "id": "viduity",
+      "class": "parallelogram"
+    },
+    {
+      "text": "churchgoer miscreative",
+      "id": "churchgoer miscreative",
+      "class": "diamond"
+    },
+    {
+      "text": "bow octennial",
+      "id": "bow octennial",
+      "class": "parallelogram"
+    },
+    {
+      "text": "cleptobiotic vestalship anchor",
+      "id": "cleptobiotic vestalship anchor",
+      "class": "parallelogram"
+    },
+    {
+      "text": "pyroxyle",
+      "id": "pyroxyle",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "deemstership anhydride",
+      "head": "blackwood",
+      "label": null
+    },
+    {
+      "tail": "blackwood",
+      "head": "viduity",
+      "label": "no"
+    },
+    {
+      "tail": "blackwood",
+      "head": "churchgoer miscreative",
+      "label": "no"
+    },
+    {
+      "tail": "viduity",
+      "head": "churchgoer miscreative",
+      "label": null
+    },
+    {
+      "tail": "churchgoer miscreative",
+      "head": "bow octennial",
+      "label": "yes"
+    },
+    {
+      "tail": "churchgoer miscreative",
+      "head": "deemstership anhydride",
+      "label": "yes"
+    },
+    {
+      "tail": "bow octennial",
+      "head": "cleptobiotic vestalship anchor",
+      "label": null
+    },
+    {
+      "tail": "cleptobiotic vestalship anchor",
+      "head": "pyroxyle",
+      "label": null
+    }
+  ]
+}

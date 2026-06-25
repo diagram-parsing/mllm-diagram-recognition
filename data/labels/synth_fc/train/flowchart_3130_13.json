@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "text": "syncategoreme",
+      "id": "syncategoreme",
+      "class": "oval"
+    },
+    {
+      "text": "premanhood Puseyite filopodium",
+      "id": "premanhood Puseyite filopodium",
+      "class": "diamond"
+    },
+    {
+      "text": "rainlight emprise",
+      "id": "rainlight emprise",
+      "class": "diamond"
+    },
+    {
+      "text": "disinfector",
+      "id": "disinfector",
+      "class": "diamond"
+    },
+    {
+      "text": "pulsatance",
+      "id": "pulsatance",
+      "class": "box"
+    },
+    {
+      "text": "mesoplastic",
+      "id": "mesoplastic",
+      "class": "hexagon"
+    },
+    {
+      "text": "withdraw",
+      "id": "withdraw",
+      "class": "diamond"
+    },
+    {
+      "text": "guariba Tanoan",
+      "id": "guariba Tanoan",
+      "class": "box"
+    },
+    {
+      "text": "forblow demean collegianer",
+      "id": "forblow demean collegianer",
+      "class": "box"
+    },
+    {
+      "text": "coconnection uninforming",
+      "id": "coconnection uninforming",
+      "class": "hexagon"
+    },
+    {
+      "text": "replevin",
+      "id": "replevin",
+      "class": "box"
+    },
+    {
+      "text": "vacouf broozled molybdomenite",
+      "id": "vacouf broozled molybdomenite",
+      "class": "hexagon"
+    },
+    {
+      "text": "caudices",
+      "id": "caudices",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "syncategoreme",
+      "head": "premanhood Puseyite filopodium",
+      "label": null
+    },
+    {
+      "tail": "premanhood Puseyite filopodium",
+      "head": "rainlight emprise",
+      "label": "No"
+    },
+    {
+      "tail": "premanhood Puseyite filopodium",
+      "head": "disinfector",
+      "label": "No"
+    },
+    {
+      "tail": "rainlight emprise",
+      "head": "pulsatance",
+      "label": "YES"
+    },
+    {
+      "tail": "rainlight emprise",
+      "head": "mesoplastic",
+      "label": "YES"
+    },
+    {
+      "tail": "pulsatance",
+      "head": "disinfector",
+      "label": null
+    },
+    {
+      "tail": "disinfector",
+      "head": "withdraw",
+      "label": "YES"
+    },
+    {
+      "tail": "disinfector",
+      "head": "pulsatance",
+      "label": "YES"
+    },
+    {
+      "tail": "withdraw",
+      "head": "guariba Tanoan",
+      "label": "YES"
+    },
+    {
+      "tail": "withdraw",
+      "head": "premanhood Puseyite filopodium",
+      "label": "YES"
+    },
+    {
+      "tail": "guariba Tanoan",
+      "head": "forblow demean collegianer",
+      "label": null
+    },
+    {
+      "tail": "forblow demean collegianer",
+      "head": "coconnection uninforming",
+      "label": null
+    },
+    {
+      "tail": "coconnection uninforming",
+      "head": "replevin",
+      "label": null
+    },
+    {
+      "tail": "replevin",
+      "head": "mesoplastic",
+      "label": null
+    },
+    {
+      "tail": "mesoplastic",
+      "head": "vacouf broozled molybdomenite",
+      "label": null
+    },
+    {
+      "tail": "vacouf broozled molybdomenite",
+      "head": "caudices",
+      "label": null
+    }
+  ]
+}

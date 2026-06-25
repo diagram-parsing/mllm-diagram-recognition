@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "text": "bedye",
+      "id": "bedye",
+      "class": "node"
+    },
+    {
+      "text": "stepless",
+      "id": "stepless",
+      "class": "node"
+    },
+    {
+      "text": "holstered",
+      "id": "holstered",
+      "class": "node"
+    },
+    {
+      "text": "hysterocystic  nonpopularity",
+      "id": "hysterocystic  nonpopularity",
+      "class": "node"
+    },
+    {
+      "text": "monoplegia",
+      "id": "monoplegia",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "bedye",
+      "head": "stepless",
+      "label": "0.18 t = 0.631",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "holstered",
+      "head": "bedye",
+      "label": "-0.19 f = 0.297",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "hysterocystic  nonpopularity",
+      "head": "bedye",
+      "label": "-0.1 t = 0.449",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "monoplegia",
+      "head": "bedye",
+      "label": "0.08*** s = 0.935",
+      "class": "unidirectional"
+    }
+  ]
+}

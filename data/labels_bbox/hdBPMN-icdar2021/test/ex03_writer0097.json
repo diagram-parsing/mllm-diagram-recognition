@@ -1,0 +1,1077 @@
+{
+  "nodes": [
+    {
+      "text": "check if the claiment is insured",
+      "id": "check if the claiment is insured",
+      "bbox": [
+        1215,
+        1181,
+        1730,
+        1545
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1390,
+        1667,
+        1545,
+        1852
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claim [checked]",
+      "id": "claim [checked]",
+      "bbox": [
+        2051,
+        1064,
+        2148,
+        1190
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "notify claiment",
+      "id": "notify claiment",
+      "bbox": [
+        1531,
+        2163,
+        1958,
+        2328
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim [checked]",
+      "id": "claim [checked]",
+      "bbox": [
+        1288,
+        2377,
+        1434,
+        2552
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "bbox": [
+        2065,
+        1745,
+        2347,
+        1973
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "bbox": [
+        2070,
+        1370,
+        2182,
+        1477
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "send relevant forms",
+      "id": "send relevant forms",
+      "bbox": [
+        2114,
+        2396,
+        2498,
+        2649
+      ],
+      "class": "task"
+    },
+    {
+      "text": "simple claim",
+      "id": "simple claim",
+      "bbox": [
+        2134,
+        2863,
+        2279,
+        3008
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "evaluate the severity of the claim",
+      "id": "evaluate the severity of the claim",
+      "bbox": [
+        787,
+        2921,
+        1487,
+        3344
+      ],
+      "class": "task"
+    },
+    {
+      "text": "complex claim",
+      "id": "complex claim",
+      "bbox": [
+        2493,
+        3086,
+        2649,
+        3252
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "forms",
+      "id": "forms",
+      "bbox": [
+        2552,
+        2075,
+        2751,
+        2231
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "check forms for completness",
+      "id": "check forms for completness",
+      "bbox": [
+        2722,
+        1244,
+        3188,
+        1565
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forms",
+      "id": "forms",
+      "bbox": [
+        3815,
+        2099,
+        4000,
+        2270
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        3767,
+        1239,
+        4125,
+        1500
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forms",
+      "id": "forms",
+      "bbox": [
+        3893,
+        1647,
+        4044,
+        1764
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "management system",
+      "id": "management system",
+      "bbox": [
+        4282,
+        1672,
+        4399,
+        1784
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "claim approved",
+      "id": "claim approved",
+      "bbox": [
+        4325,
+        1308,
+        4422,
+        1405
+      ],
+      "class": "event"
+    },
+    {
+      "text": "inform the claiment to update the forms",
+      "id": "inform the claiment to update the forms",
+      "bbox": [
+        3149,
+        2192,
+        3626,
+        2561
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim\napproved",
+      "id": "claim\napproved",
+      "bbox": [
+        4185,
+        879,
+        4311,
+        1015
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        1049,
+        1035,
+        1161,
+        1171
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        719,
+        1244,
+        952,
+        1468
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        3286,
+        1263,
+        3436,
+        1458
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "bbox": [
+        2498,
+        1769,
+        2615,
+        1876
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "reject claim",
+      "head": "claim rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        2347,
+        1802,
+        2502,
+        1895
+      ],
+      "kps": [
+        2347.907,
+        1861.785,
+        2.0,
+        2498.569,
+        1832.615,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check forms for completness",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        3186,
+        1325,
+        3298,
+        1418
+      ],
+      "kps": [
+        3186.42,
+        1370.007,
+        2.0,
+        3294.173,
+        1370.007,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "inform the claiment to update the forms",
+      "class": "sequenceFlow",
+      "bbox": [
+        3322,
+        1453,
+        3414,
+        2196
+      ],
+      "kps": [
+        3363.867,
+        1453.439,
+        2.0,
+        3368.716,
+        2192.319,
+        2.0
+      ],
+      "label": "details not completed"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        3417,
+        1291,
+        3771,
+        1383
+      ],
+      "kps": [
+        3417.32,
+        1335.372,
+        2.0,
+        3767.518,
+        1335.372,
+        2.0
+      ],
+      "label": "details provided"
+    },
+    {
+      "tail": "inform the claiment to update the forms",
+      "head": "check forms for completness",
+      "class": "sequenceFlow",
+      "bbox": [
+        2965,
+        1565,
+        3153,
+        2448
+      ],
+      "kps": [
+        3149.976,
+        2445.116,
+        2.0,
+        3018.71,
+        1565.271,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        4125,
+        1310,
+        4329,
+        1402
+      ],
+      "kps": [
+        4125.413,
+        1354.613,
+        2.0,
+        4325.527,
+        1354.613,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send relevant forms",
+      "head": "check forms for completness",
+      "class": "sequenceFlow",
+      "bbox": [
+        2498,
+        1565,
+        2915,
+        2526
+      ],
+      "kps": [
+        2498.569,
+        2522.89,
+        2.0,
+        2911.764,
+        1565.271,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate the severity of the claim",
+      "head": "send relevant forms",
+      "class": "sequenceFlow",
+      "bbox": [
+        1487,
+        2522,
+        2118,
+        3114
+      ],
+      "kps": [
+        1487.496,
+        3111.07,
+        2.0,
+        2114.544,
+        2522.89,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify claiment",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1958,
+        1842,
+        2069,
+        2235
+      ],
+      "kps": [
+        1958.994,
+        2231.225,
+        2.0,
+        2065.939,
+        1842.351,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify claiment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1450,
+        1842,
+        1542,
+        2235
+      ],
+      "kps": [
+        1458.326,
+        1842.351,
+        2.0,
+        1531.213,
+        2231.225,
+        2.0
+      ],
+      "label": "not insured"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "evaluate the severity of the claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        923,
+        1745,
+        1408,
+        2925
+      ],
+      "kps": [
+        1404.834,
+        1745.104,
+        2.0,
+        1045.13,
+        2921.501,
+        2.0
+      ],
+      "label": "insured"
+    },
+    {
+      "tail": "check if the claiment is insured",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1418,
+        1545,
+        1511,
+        1680
+      ],
+      "kps": [
+        1468.024,
+        1545.799,
+        2.0,
+        1458.326,
+        1677.065,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "check if the claiment is insured",
+      "class": "sequenceFlow",
+      "bbox": [
+        952,
+        1326,
+        1219,
+        1418
+      ],
+      "kps": [
+        952.77,
+        1370.815,
+        2.0,
+        1215.265,
+        1370.815,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "check if the claiment is insured",
+      "class": "dataAssociation",
+      "bbox": [
+        1162,
+        1083,
+        1355,
+        1181
+      ],
+      "kps": [
+        1162.197,
+        1123.713,
+        2.0,
+        1350.765,
+        1177.59,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if the claiment is insured",
+      "head": "claim [checked]",
+      "class": "dataAssociation",
+      "bbox": [
+        1706,
+        1105,
+        2055,
+        1197
+      ],
+      "kps": [
+        1706.236,
+        1186.095,
+        2.0,
+        2051.354,
+        1113.169,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "notify claiment",
+      "class": "dataAssociation",
+      "bbox": [
+        1434,
+        2328,
+        1676,
+        2458
+      ],
+      "kps": [
+        1434.004,
+        2454.813,
+        2.0,
+        1672.216,
+        2328.434,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "reject claim",
+      "class": "dataAssociation",
+      "bbox": [
+        1984,
+        1186,
+        2077,
+        1798
+      ],
+      "kps": [
+        2051.354,
+        1186.095,
+        2.0,
+        2065.939,
+        1793.747,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "claim rejected",
+      "class": "dataAssociation",
+      "bbox": [
+        2031,
+        1463,
+        2123,
+        1748
+      ],
+      "kps": [
+        2109.695,
+        1745.104,
+        2.0,
+        2070.827,
+        1463.175,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "send relevant forms",
+      "class": "dataAssociation",
+      "bbox": [
+        1434,
+        2430,
+        2118,
+        2522
+      ],
+      "kps": [
+        1434.004,
+        2474.286,
+        2.0,
+        2114.544,
+        2474.286,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "complex claim",
+      "head": "send relevant forms",
+      "class": "dataAssociation",
+      "bbox": [
+        2406,
+        2649,
+        2551,
+        3090
+      ],
+      "kps": [
+        2547.173,
+        3086.787,
+        2.0,
+        2406.209,
+        2649.27,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "simple claim",
+      "head": "send relevant forms",
+      "class": "dataAssociation",
+      "bbox": [
+        2123,
+        2649,
+        2216,
+        2862
+      ],
+      "kps": [
+        2168.036,
+        2858.311,
+        2.0,
+        2168.036,
+        2649.27,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send relevant forms",
+      "head": "forms",
+      "class": "dataAssociation",
+      "bbox": [
+        2498,
+        2231,
+        2628,
+        2453
+      ],
+      "kps": [
+        2498.569,
+        2449.964,
+        2.0,
+        2624.987,
+        2231.225,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "evaluate the severity of the claim",
+      "class": "dataAssociation",
+      "bbox": [
+        1068,
+        2488,
+        1292,
+        2925
+      ],
+      "kps": [
+        1288.191,
+        2488.871,
+        2.0,
+        1137.49,
+        2921.501,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate the severity of the claim",
+      "head": "simple claim",
+      "class": "dataAssociation",
+      "bbox": [
+        1487,
+        2936,
+        2137,
+        3071
+      ],
+      "kps": [
+        1487.496,
+        3067.314,
+        2.0,
+        2134.016,
+        2936.086,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate the severity of the claim",
+      "head": "complex claim",
+      "class": "dataAssociation",
+      "bbox": [
+        1487,
+        3190,
+        2575,
+        3283
+      ],
+      "kps": [
+        1487.496,
+        3213.166,
+        2.0,
+        2571.495,
+        3256.921,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "forms",
+      "head": "check forms for completness",
+      "class": "dataAssociation",
+      "bbox": [
+        2728,
+        1565,
+        2821,
+        2157
+      ],
+      "kps": [
+        2751.366,
+        2148.601,
+        2.0,
+        2795.121,
+        1565.271,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "forms",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        3892,
+        1500,
+        3984,
+        1650
+      ],
+      "kps": [
+        3936.845,
+        1647.087,
+        2.0,
+        3936.845,
+        1500.85,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim\napproved",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        4039,
+        962,
+        4190,
+        1231
+      ],
+      "kps": [
+        4186.987,
+        962.083,
+        2.0,
+        4083.082,
+        1227.618,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "management system",
+      "class": "dataAssociation",
+      "bbox": [
+        4113,
+        1489,
+        4287,
+        1747
+      ],
+      "kps": [
+        4113.868,
+        1489.305,
+        2.0,
+        4283.195,
+        1743.295,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "forms",
+      "head": "inform the claiment to update the forms",
+      "class": "dataAssociation",
+      "bbox": [
+        3621,
+        2167,
+        3819,
+        2259
+      ],
+      "kps": [
+        3815.93,
+        2197.206,
+        2.0,
+        3621.474,
+        2226.376,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify claiment",
+      "head": "claiment",
+      "class": "messageFlow",
+      "bbox": [
+        1866,
+        627,
+        1958,
+        2167
+      ],
+      "kps": [
+        1910.39,
+        2163.187,
+        2.0,
+        1910.39,
+        627.086,
+        2.0
+      ],
+      "label": "claim\n[rejected]"
+    },
+    {
+      "tail": "claiment",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        791,
+        627,
+        884,
+        1243
+      ],
+      "kps": [
+        836.089,
+        627.086,
+        2.0,
+        836.089,
+        1239.587,
+        2.0
+      ],
+      "label": "claim"
+    },
+    {
+      "tail": "send relevant forms",
+      "head": "claiment",
+      "class": "messageFlow",
+      "bbox": [
+        2337,
+        627,
+        2430,
+        2400
+      ],
+      "kps": [
+        2381.926,
+        2396.511,
+        2.0,
+        2381.926,
+        627.086,
+        2.0
+      ],
+      "label": "forms"
+    },
+    {
+      "tail": "inform the claiment to update the forms",
+      "head": "claiment",
+      "class": "messageFlow",
+      "bbox": [
+        3178,
+        627,
+        3270,
+        2196
+      ],
+      "kps": [
+        3222.864,
+        2192.319,
+        2.0,
+        3222.864,
+        627.086,
+        2.0
+      ],
+      "label": "update forms"
+    },
+    {
+      "tail": "claiment",
+      "head": "check forms for completness",
+      "class": "messageFlow",
+      "bbox": [
+        2872,
+        627,
+        2964,
+        1248
+      ],
+      "kps": [
+        2916.613,
+        627.086,
+        2.0,
+        2916.613,
+        1244.436,
+        2.0
+      ],
+      "label": "forms"
+    },
+    {
+      "tail": "claiment",
+      "head": "check forms for completness",
+      "class": "messageFlow",
+      "bbox": [
+        3013,
+        627,
+        3776,
+        1248
+      ],
+      "kps": [
+        3772.175,
+        627.086,
+        2.0,
+        3013.861,
+        1244.436,
+        2.0
+      ],
+      "label": "forms [updated]"
+    }
+  ],
+  "groups": [
+    {
+      "name": "claiment",
+      "nodes": [],
+      "bbox": [
+        291,
+        335,
+        4472,
+        627
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Insurer",
+      "nodes": [
+        "Senior claims officer",
+        "SAP-System",
+        "claims officer"
+      ],
+      "bbox": [
+        243,
+        991,
+        4579,
+        3397
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Senior claims officer",
+      "nodes": [
+        "simple claim",
+        "evaluate the severity of the claim",
+        "complex claim"
+      ],
+      "bbox": [
+        388,
+        2717,
+        4579,
+        3397
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "SAP-System",
+      "nodes": [
+        "notify claiment",
+        "claim [checked]",
+        "send relevant forms",
+        "forms",
+        "forms",
+        "inform the claiment to update the forms"
+      ],
+      "bbox": [
+        388,
+        1988,
+        4579,
+        2717
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "check if the claiment is insured",
+        "exclusiveGateway_1",
+        "claim [checked]",
+        "reject claim",
+        "claim rejected",
+        "check forms for completness",
+        "register claim",
+        "forms",
+        "management system",
+        "claim approved",
+        "claim",
+        "claim received",
+        "exclusiveGateway_2",
+        "claim rejected"
+      ],
+      "bbox": [
+        388,
+        991,
+        4579,
+        1988
+      ],
+      "class": "lane"
+    }
+  ]
+}

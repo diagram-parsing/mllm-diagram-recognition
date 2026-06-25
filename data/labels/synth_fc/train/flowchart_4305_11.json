@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "text": "undersomething",
+      "id": "undersomething",
+      "class": "oval"
+    },
+    {
+      "text": "unalcoholized",
+      "id": "unalcoholized",
+      "class": "diamond"
+    },
+    {
+      "text": "parthenic",
+      "id": "parthenic",
+      "class": "diamond"
+    },
+    {
+      "text": "ahungry",
+      "id": "ahungry",
+      "class": "box"
+    },
+    {
+      "text": "reimage",
+      "id": "reimage",
+      "class": "diamond"
+    },
+    {
+      "text": "parasitoid",
+      "id": "parasitoid",
+      "class": "document"
+    },
+    {
+      "text": "symbranchous Baruch knower",
+      "id": "symbranchous Baruch knower",
+      "class": "diamond"
+    },
+    {
+      "text": "unsparred chemicoengineering",
+      "id": "unsparred chemicoengineering",
+      "class": "diamond"
+    },
+    {
+      "text": "Habab",
+      "id": "Habab",
+      "class": "parallelogram"
+    },
+    {
+      "text": "chaffseed",
+      "id": "chaffseed",
+      "class": "diamond"
+    },
+    {
+      "text": "overfaint downsitting collecte",
+      "id": "overfaint downsitting collecte",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "undersomething",
+      "head": "unalcoholized",
+      "label": null
+    },
+    {
+      "tail": "unalcoholized",
+      "head": "parthenic",
+      "label": "no"
+    },
+    {
+      "tail": "unalcoholized",
+      "head": "ahungry",
+      "label": "no"
+    },
+    {
+      "tail": "parthenic",
+      "head": "ahungry",
+      "label": "Yes"
+    },
+    {
+      "tail": "parthenic",
+      "head": "reimage",
+      "label": "Yes"
+    },
+    {
+      "tail": "ahungry",
+      "head": "parasitoid",
+      "label": null
+    },
+    {
+      "tail": "parasitoid",
+      "head": "symbranchous Baruch knower",
+      "label": null
+    },
+    {
+      "tail": "symbranchous Baruch knower",
+      "head": "unsparred chemicoengineering",
+      "label": "No"
+    },
+    {
+      "tail": "symbranchous Baruch knower",
+      "head": "reimage",
+      "label": "No"
+    },
+    {
+      "tail": "unsparred chemicoengineering",
+      "head": "Habab",
+      "label": "No"
+    },
+    {
+      "tail": "unsparred chemicoengineering",
+      "head": "reimage",
+      "label": "No"
+    },
+    {
+      "tail": "Habab",
+      "head": "reimage",
+      "label": null
+    },
+    {
+      "tail": "reimage",
+      "head": "chaffseed",
+      "label": "No"
+    },
+    {
+      "tail": "reimage",
+      "head": "ahungry",
+      "label": "No"
+    },
+    {
+      "tail": "chaffseed",
+      "head": "overfaint downsitting collecte",
+      "label": "Yes"
+    },
+    {
+      "tail": "chaffseed",
+      "head": "parasitoid",
+      "label": "Yes"
+    }
+  ]
+}

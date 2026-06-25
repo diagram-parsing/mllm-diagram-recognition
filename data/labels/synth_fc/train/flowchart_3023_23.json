@@ -1,0 +1,251 @@
+{
+  "nodes": [
+    {
+      "text": "etalon",
+      "id": "etalon",
+      "class": "circle"
+    },
+    {
+      "text": "mesocoracoid",
+      "id": "mesocoracoid",
+      "class": "box"
+    },
+    {
+      "text": "coccygine",
+      "id": "coccygine",
+      "class": "hexagon"
+    },
+    {
+      "text": "somedeal",
+      "id": "somedeal",
+      "class": "diamond"
+    },
+    {
+      "text": "begat viceroyship",
+      "id": "begat viceroyship",
+      "class": "diamond"
+    },
+    {
+      "text": "aiguilletted",
+      "id": "aiguilletted",
+      "class": "parallelogram"
+    },
+    {
+      "text": "cochineal uratoma",
+      "id": "cochineal uratoma",
+      "class": "document"
+    },
+    {
+      "text": "unstaying bounceably",
+      "id": "unstaying bounceably",
+      "class": "hexagon"
+    },
+    {
+      "text": "tenebrious",
+      "id": "tenebrious",
+      "class": "hexagon"
+    },
+    {
+      "text": "syndicalistic",
+      "id": "syndicalistic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "pommel",
+      "id": "pommel",
+      "class": "document"
+    },
+    {
+      "text": "unmeddling stekan ectrodactyli",
+      "id": "unmeddling stekan ectrodactyli",
+      "class": "hexagon"
+    },
+    {
+      "text": "uraturia Aryanization melomane",
+      "id": "uraturia Aryanization melomane",
+      "class": "hexagon"
+    },
+    {
+      "text": "exteriorness",
+      "id": "exteriorness",
+      "class": "document"
+    },
+    {
+      "text": "atoxyl",
+      "id": "atoxyl",
+      "class": "parallelogram"
+    },
+    {
+      "text": "floggingly",
+      "id": "floggingly",
+      "class": "parallelogram"
+    },
+    {
+      "text": "seminaphthylamine",
+      "id": "seminaphthylamine",
+      "class": "diamond"
+    },
+    {
+      "text": "Loricariidae perscrutation",
+      "id": "Loricariidae perscrutation",
+      "class": "diamond"
+    },
+    {
+      "text": "hippy",
+      "id": "hippy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "womby nosographer",
+      "id": "womby nosographer",
+      "class": "box"
+    },
+    {
+      "text": "cruzeiro",
+      "id": "cruzeiro",
+      "class": "box"
+    },
+    {
+      "text": "xylopyrography foolproofness",
+      "id": "xylopyrography foolproofness",
+      "class": "document"
+    },
+    {
+      "text": "turns",
+      "id": "turns",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "etalon",
+      "head": "mesocoracoid",
+      "label": null
+    },
+    {
+      "tail": "mesocoracoid",
+      "head": "coccygine",
+      "label": null
+    },
+    {
+      "tail": "coccygine",
+      "head": "somedeal",
+      "label": null
+    },
+    {
+      "tail": "somedeal",
+      "head": "begat viceroyship",
+      "label": "YES"
+    },
+    {
+      "tail": "somedeal",
+      "head": "etalon",
+      "label": "YES"
+    },
+    {
+      "tail": "begat viceroyship",
+      "head": "aiguilletted",
+      "label": "no"
+    },
+    {
+      "tail": "begat viceroyship",
+      "head": "cochineal uratoma",
+      "label": "no"
+    },
+    {
+      "tail": "aiguilletted",
+      "head": "unstaying bounceably",
+      "label": null
+    },
+    {
+      "tail": "unstaying bounceably",
+      "head": "cochineal uratoma",
+      "label": null
+    },
+    {
+      "tail": "cochineal uratoma",
+      "head": "tenebrious",
+      "label": null
+    },
+    {
+      "tail": "tenebrious",
+      "head": "syndicalistic",
+      "label": null
+    },
+    {
+      "tail": "syndicalistic",
+      "head": "pommel",
+      "label": null
+    },
+    {
+      "tail": "pommel",
+      "head": "unmeddling stekan ectrodactyli",
+      "label": null
+    },
+    {
+      "tail": "unmeddling stekan ectrodactyli",
+      "head": "uraturia Aryanization melomane",
+      "label": null
+    },
+    {
+      "tail": "uraturia Aryanization melomane",
+      "head": "exteriorness",
+      "label": null
+    },
+    {
+      "tail": "exteriorness",
+      "head": "atoxyl",
+      "label": null
+    },
+    {
+      "tail": "atoxyl",
+      "head": "floggingly",
+      "label": null
+    },
+    {
+      "tail": "floggingly",
+      "head": "seminaphthylamine",
+      "label": null
+    },
+    {
+      "tail": "seminaphthylamine",
+      "head": "Loricariidae perscrutation",
+      "label": "YES"
+    },
+    {
+      "tail": "seminaphthylamine",
+      "head": "coccygine",
+      "label": "YES"
+    },
+    {
+      "tail": "Loricariidae perscrutation",
+      "head": "hippy",
+      "label": "No"
+    },
+    {
+      "tail": "Loricariidae perscrutation",
+      "head": "unstaying bounceably",
+      "label": "No"
+    },
+    {
+      "tail": "hippy",
+      "head": "womby nosographer",
+      "label": null
+    },
+    {
+      "tail": "womby nosographer",
+      "head": "cruzeiro",
+      "label": null
+    },
+    {
+      "tail": "cruzeiro",
+      "head": "xylopyrography foolproofness",
+      "label": null
+    },
+    {
+      "tail": "xylopyrography foolproofness",
+      "head": "turns",
+      "label": null
+    }
+  ]
+}

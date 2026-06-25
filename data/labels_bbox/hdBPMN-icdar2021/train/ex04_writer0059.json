@@ -1,0 +1,400 @@
+{
+  "nodes": [
+    {
+      "text": "request for compensation",
+      "id": "request for compensation",
+      "bbox": [
+        468,
+        1058,
+        534,
+        1130
+      ],
+      "class": "event"
+    },
+    {
+      "text": "retrieve files",
+      "id": "retrieve files",
+      "bbox": [
+        1014,
+        988,
+        1319,
+        1218
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check if request is acceptable with files",
+      "id": "check if request is acceptable with files",
+      "bbox": [
+        1654,
+        956,
+        2090,
+        1276
+      ],
+      "class": "task"
+    },
+    {
+      "text": "set hearing date",
+      "id": "set hearing date",
+      "bbox": [
+        2526,
+        1014,
+        2875,
+        1305
+      ],
+      "class": "task"
+    },
+    {
+      "text": "allocate a hearing date",
+      "id": "allocate a hearing date",
+      "bbox": [
+        2671,
+        2061,
+        3427,
+        2351
+      ],
+      "class": "task"
+    },
+    {
+      "text": "produce a fees notice",
+      "id": "produce a fees notice",
+      "bbox": [
+        1363,
+        1537,
+        1857,
+        1828
+      ],
+      "class": "task"
+    },
+    {
+      "text": "wait for owner ot pay",
+      "id": "wait for owner ot pay",
+      "bbox": [
+        404,
+        1625,
+        840,
+        2032
+      ],
+      "class": "task"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "bbox": [
+        1892,
+        2302,
+        1979,
+        2380
+      ],
+      "class": "event"
+    },
+    {
+      "text": "request",
+      "id": "request",
+      "bbox": [
+        1947,
+        782,
+        2003,
+        831
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "fees notice",
+      "id": "fees notice",
+      "bbox": [
+        1703,
+        1366,
+        1738,
+        1409
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "premises contracts",
+      "id": "premises contracts",
+      "bbox": [
+        1058,
+        1357,
+        1244,
+        1473
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "payment invoice",
+      "id": "payment invoice",
+      "bbox": [
+        479,
+        1383,
+        532,
+        1444
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        2657,
+        1482,
+        2735,
+        1561
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "file of premises",
+      "id": "file of premises",
+      "bbox": [
+        1177,
+        793,
+        1229,
+        854
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "request for compensation",
+      "head": "retrieve files",
+      "class": "sequenceFlow",
+      "bbox": [
+        532,
+        1069,
+        1017,
+        1142
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve files",
+      "head": "check if request is acceptable with files",
+      "class": "sequenceFlow",
+      "bbox": [
+        1319,
+        1081,
+        1657,
+        1154
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if request is acceptable with files",
+      "head": "set hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        2090,
+        1088,
+        2529,
+        1161
+      ],
+      "label": null
+    },
+    {
+      "tail": "set hearing date",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2665,
+        1305,
+        2738,
+        1491
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "allocate a hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        2680,
+        1558,
+        2753,
+        2064
+      ],
+      "label": "fees pid"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "produce a fees notice",
+      "class": "sequenceFlow",
+      "bbox": [
+        1857,
+        1535,
+        2674,
+        1616
+      ],
+      "label": "fees not paid"
+    },
+    {
+      "tail": "produce a fees notice",
+      "head": "wait for owner ot pay",
+      "class": "sequenceFlow",
+      "bbox": [
+        840,
+        1691,
+        1366,
+        1764
+      ],
+      "label": null
+    },
+    {
+      "tail": "wait for owner ot pay",
+      "head": "allocate a hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        840,
+        1889,
+        2674,
+        2160
+      ],
+      "label": null
+    },
+    {
+      "tail": "allocate a hearing date",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1979,
+        2277,
+        2674,
+        2350
+      ],
+      "label": null
+    },
+    {
+      "tail": "premises contracts",
+      "head": "retrieve files",
+      "class": "dataAssociation",
+      "bbox": [
+        1084,
+        1218,
+        1157,
+        1360
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve files",
+      "head": "file of premises",
+      "class": "dataAssociation",
+      "bbox": [
+        1114,
+        825,
+        1187,
+        991
+      ],
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "check if request is acceptable with files",
+      "class": "dataAssociation",
+      "bbox": [
+        1927,
+        831,
+        2000,
+        959
+      ],
+      "label": null
+    },
+    {
+      "tail": "file of premises",
+      "head": "check if request is acceptable with files",
+      "class": "dataAssociation",
+      "bbox": [
+        1244,
+        793,
+        1819,
+        959
+      ],
+      "label": null
+    },
+    {
+      "tail": "produce a fees notice",
+      "head": "fees notice",
+      "class": "dataAssociation",
+      "bbox": [
+        1654,
+        1421,
+        1726,
+        1540
+      ],
+      "label": null
+    },
+    {
+      "tail": "payment invoice",
+      "head": "wait for owner ot pay",
+      "class": "dataAssociation",
+      "bbox": [
+        468,
+        1444,
+        540,
+        1628
+      ],
+      "label": null
+    },
+    {
+      "tail": "The Owner",
+      "head": "request for compensation",
+      "class": "messageFlow",
+      "bbox": [
+        508,
+        462,
+        901,
+        1066
+      ],
+      "label": null
+    },
+    {
+      "tail": "The Owner",
+      "head": "wait for owner ot pay",
+      "class": "messageFlow",
+      "bbox": [
+        764,
+        462,
+        988,
+        1628
+      ],
+      "label": null
+    },
+    {
+      "tail": "produce a fees notice",
+      "head": "The Owner",
+      "class": "messageFlow",
+      "bbox": [
+        1473,
+        462,
+        1546,
+        1540
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "cashier of the tribunal",
+      "nodes": [],
+      "bbox": [
+        55,
+        752,
+        3514,
+        2526
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "The Owner",
+      "nodes": [],
+      "bbox": [
+        869,
+        229,
+        2264,
+        462
+      ],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "vagabondage",
+      "id": "vagabondage",
+      "class": "oval"
+    },
+    {
+      "text": "Lewisia resilium undercolor",
+      "id": "Lewisia resilium undercolor",
+      "class": "document"
+    },
+    {
+      "text": "hypogynic",
+      "id": "hypogynic",
+      "class": "diamond"
+    },
+    {
+      "text": "Magyaran osmotactic",
+      "id": "Magyaran osmotactic",
+      "class": "diamond"
+    },
+    {
+      "text": "gismondite rattrap",
+      "id": "gismondite rattrap",
+      "class": "diamond"
+    },
+    {
+      "text": "corporeity tutelary",
+      "id": "corporeity tutelary",
+      "class": "document"
+    },
+    {
+      "text": "tiltmaking calculable",
+      "id": "tiltmaking calculable",
+      "class": "box"
+    },
+    {
+      "text": "vidually",
+      "id": "vidually",
+      "class": "diamond"
+    },
+    {
+      "text": "gaited",
+      "id": "gaited",
+      "class": "diamond"
+    },
+    {
+      "text": "padcloth",
+      "id": "padcloth",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "vagabondage",
+      "head": "Lewisia resilium undercolor",
+      "label": null
+    },
+    {
+      "tail": "Lewisia resilium undercolor",
+      "head": "hypogynic",
+      "label": null
+    },
+    {
+      "tail": "hypogynic",
+      "head": "Magyaran osmotactic",
+      "label": "No"
+    },
+    {
+      "tail": "hypogynic",
+      "head": "gismondite rattrap",
+      "label": "No"
+    },
+    {
+      "tail": "Magyaran osmotactic",
+      "head": "corporeity tutelary",
+      "label": "NO"
+    },
+    {
+      "tail": "Magyaran osmotactic",
+      "head": "tiltmaking calculable",
+      "label": "NO"
+    },
+    {
+      "tail": "corporeity tutelary",
+      "head": "gismondite rattrap",
+      "label": null
+    },
+    {
+      "tail": "gismondite rattrap",
+      "head": "tiltmaking calculable",
+      "label": "YES"
+    },
+    {
+      "tail": "gismondite rattrap",
+      "head": "vidually",
+      "label": "YES"
+    },
+    {
+      "tail": "tiltmaking calculable",
+      "head": "gaited",
+      "label": null
+    },
+    {
+      "tail": "gaited",
+      "head": "vidually",
+      "label": "yes"
+    },
+    {
+      "tail": "gaited",
+      "head": "Lewisia resilium undercolor",
+      "label": "yes"
+    },
+    {
+      "tail": "vidually",
+      "head": "padcloth",
+      "label": "NO"
+    },
+    {
+      "tail": "vidually",
+      "head": "vagabondage",
+      "label": "NO"
+    }
+  ]
+}

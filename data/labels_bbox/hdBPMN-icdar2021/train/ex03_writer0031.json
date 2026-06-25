@@ -1,0 +1,695 @@
+{
+  "nodes": [
+    {
+      "text": "claim DB",
+      "id": "claim DB",
+      "bbox": [
+        1298,
+        1020,
+        1336,
+        1056
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "process ended",
+      "id": "process ended",
+      "bbox": [
+        1529,
+        873,
+        1573,
+        912
+      ],
+      "class": "event"
+    },
+    {
+      "text": "updated forms",
+      "id": "updated forms",
+      "bbox": [
+        1326,
+        617,
+        1365,
+        658
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "get updated forms",
+      "id": "get updated forms",
+      "bbox": [
+        1153,
+        612,
+        1265,
+        712
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send relevant forms",
+      "id": "send relevant forms",
+      "bbox": [
+        1014,
+        628,
+        1126,
+        726
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forms DB",
+      "id": "forms DB",
+      "bbox": [
+        918,
+        708,
+        958,
+        746
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        920,
+        633,
+        957,
+        669
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "send automatic notification",
+      "id": "send automatic notification",
+      "bbox": [
+        697,
+        681,
+        865,
+        745
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        618,
+        704,
+        652,
+        752
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "bbox": [
+        700,
+        265,
+        788,
+        317
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        537,
+        317,
+        578,
+        350
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "evaluate severity of claim",
+      "id": "evaluate severity of claim",
+      "bbox": [
+        486,
+        484,
+        609,
+        572
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        373,
+        510,
+        416,
+        569
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim\nreceived",
+      "id": "claim\nreceived",
+      "bbox": [
+        216,
+        348,
+        248,
+        380
+      ],
+      "class": "event"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        165,
+        293,
+        188,
+        320
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "insurance\nDB",
+      "id": "insurance\nDB",
+      "bbox": [
+        402,
+        274,
+        426,
+        298
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "updated\nforms",
+      "id": "updated\nforms",
+      "bbox": [
+        1256,
+        346,
+        1281,
+        378
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "inform",
+      "id": "inform",
+      "bbox": [
+        1445,
+        240,
+        1518,
+        277
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1344,
+        257,
+        1386,
+        294
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check for completness",
+      "id": "check for completness",
+      "bbox": [
+        1194,
+        246,
+        1294,
+        322
+      ],
+      "class": "task"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        1308,
+        858,
+        1445,
+        949
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check claimant insurer",
+      "id": "check claimant insurer",
+      "bbox": [
+        318,
+        317,
+        438,
+        381
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim (approved)",
+      "id": "claim (approved)",
+      "bbox": [
+        1170,
+        872,
+        1226,
+        956
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "bbox": [
+        721,
+        758,
+        753,
+        792
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "register claim",
+      "head": "process ended",
+      "class": "sequenceFlow",
+      "bbox": [
+        1445,
+        880,
+        1530,
+        912
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1365,
+        294,
+        1406,
+        860
+      ],
+      "label": "provide all relevant information"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "inform",
+      "class": "sequenceFlow",
+      "bbox": [
+        1365,
+        240,
+        1446,
+        272
+      ],
+      "label": null
+    },
+    {
+      "tail": "check for completness",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1294,
+        263,
+        1348,
+        295
+      ],
+      "label": null
+    },
+    {
+      "tail": "get updated forms",
+      "head": "check for completness",
+      "class": "sequenceFlow",
+      "bbox": [
+        1215,
+        322,
+        1247,
+        614
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "send automatic notification",
+      "class": "sequenceFlow",
+      "bbox": [
+        728,
+        317,
+        760,
+        682
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate severity of claim",
+      "head": "send relevant forms",
+      "class": "sequenceFlow",
+      "bbox": [
+        609,
+        529,
+        1017,
+        638
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "evaluate severity of claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        546,
+        348,
+        578,
+        486
+      ],
+      "label": "insured"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        561,
+        290,
+        701,
+        322
+      ],
+      "label": "not insured"
+    },
+    {
+      "tail": "check claimant insurer",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        438,
+        328,
+        548,
+        360
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim\nreceived",
+      "head": "check claimant insurer",
+      "class": "sequenceFlow",
+      "bbox": [
+        248,
+        342,
+        320,
+        374
+      ],
+      "label": null
+    },
+    {
+      "tail": "get updated forms",
+      "head": "updated forms",
+      "class": "dataAssociation",
+      "bbox": [
+        1265,
+        630,
+        1328,
+        662
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "send relevant forms",
+      "class": "dataAssociation",
+      "bbox": [
+        957,
+        642,
+        1016,
+        674
+      ],
+      "label": null
+    },
+    {
+      "tail": "forms DB",
+      "head": "send relevant forms",
+      "class": "dataAssociation",
+      "bbox": [
+        958,
+        700,
+        1016,
+        732
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "send automatic notification",
+      "class": "dataAssociation",
+      "bbox": [
+        654,
+        708,
+        698,
+        740
+      ],
+      "label": null
+    },
+    {
+      "tail": "send automatic notification",
+      "head": "dataObject_1",
+      "class": "dataAssociation",
+      "bbox": [
+        754,
+        746,
+        786,
+        778
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "evaluate severity of claim",
+      "class": "dataAssociation",
+      "bbox": [
+        417,
+        524,
+        488,
+        556
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim\nreceived",
+      "head": "claim",
+      "class": "dataAssociation",
+      "bbox": [
+        188,
+        304,
+        222,
+        356
+      ],
+      "label": null
+    },
+    {
+      "tail": "updated\nforms",
+      "head": "check for completness",
+      "class": "dataAssociation",
+      "bbox": [
+        1233,
+        322,
+        1265,
+        364
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim (approved)",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        1226,
+        894,
+        1309,
+        926
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim DB",
+      "class": "dataAssociation",
+      "bbox": [
+        1334,
+        949,
+        1366,
+        1021
+      ],
+      "label": null
+    },
+    {
+      "tail": "insurance\nDB",
+      "head": "check claimant insurer",
+      "class": "dataAssociation",
+      "bbox": [
+        372,
+        286,
+        404,
+        318
+      ],
+      "label": null
+    },
+    {
+      "tail": "send automatic notification",
+      "head": "claimant",
+      "class": "messageFlow",
+      "bbox": [
+        812,
+        178,
+        844,
+        682
+      ],
+      "label": null
+    },
+    {
+      "tail": "send relevant forms",
+      "head": "claimant",
+      "class": "messageFlow",
+      "bbox": [
+        1062,
+        178,
+        1100,
+        630
+      ],
+      "label": null
+    },
+    {
+      "tail": "claimant",
+      "head": "get updated forms",
+      "class": "messageFlow",
+      "bbox": [
+        1172,
+        178,
+        1204,
+        614
+      ],
+      "label": null
+    },
+    {
+      "tail": "claimant",
+      "head": "claim\nreceived",
+      "class": "messageFlow",
+      "bbox": [
+        216,
+        178,
+        248,
+        350
+      ],
+      "label": null
+    },
+    {
+      "tail": "inform",
+      "head": "claimant",
+      "class": "messageFlow",
+      "bbox": [
+        1467,
+        178,
+        1499,
+        241
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "claimant",
+      "nodes": [],
+      "bbox": [
+        98,
+        66,
+        1538,
+        178
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "insurer",
+      "nodes": [
+        "senior claims officer",
+        "claims management system",
+        "SAP system",
+        "claim officer"
+      ],
+      "bbox": [
+        25,
+        228,
+        1600,
+        1158
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "evaluate severity of claim",
+        "claim"
+      ],
+      "bbox": [
+        73,
+        436,
+        1600,
+        588
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims management system",
+      "nodes": [
+        "claim DB",
+        "process ended",
+        "register claim",
+        "claim (approved)"
+      ],
+      "bbox": [
+        73,
+        828,
+        1600,
+        1158
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "SAP system",
+      "nodes": [
+        "updated forms",
+        "get updated forms",
+        "send relevant forms",
+        "forms DB",
+        "claim",
+        "send automatic notification",
+        "claim",
+        "dataObject_1"
+      ],
+      "bbox": [
+        73,
+        588,
+        1600,
+        828
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "reject claim",
+        "exclusiveGateway_1",
+        "claim\nreceived",
+        "claim",
+        "insurance\nDB",
+        "updated\nforms",
+        "inform",
+        "exclusiveGateway_2",
+        "check for completness",
+        "check claimant insurer"
+      ],
+      "bbox": [
+        73,
+        228,
+        1600,
+        436
+      ],
+      "class": "lane"
+    }
+  ]
+}

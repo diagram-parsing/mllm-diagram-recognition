@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "text": "flaxdrop canelike",
+      "id": "flaxdrop canelike",
+      "class": "node"
+    },
+    {
+      "text": "atomization",
+      "id": "atomization",
+      "class": "node"
+    },
+    {
+      "text": "garnice holostomatous",
+      "id": "garnice holostomatous",
+      "class": "node"
+    },
+    {
+      "text": "grasper antibacchius",
+      "id": "grasper antibacchius",
+      "class": "node"
+    },
+    {
+      "text": "daubreeite caplin",
+      "id": "daubreeite caplin",
+      "class": "node"
+    },
+    {
+      "text": "blancmanger due",
+      "id": "blancmanger due",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "flaxdrop canelike",
+      "head": "atomization",
+      "label": "0.07 H = 0.455",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "flaxdrop canelike",
+      "head": "garnice holostomatous",
+      "label": "0.95 t = 0.127",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "grasper antibacchius",
+      "head": "daubreeite caplin",
+      "label": "0.74** y = 0.477",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "flaxdrop canelike",
+      "head": "blancmanger due",
+      "label": "-1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "grasper antibacchius",
+      "head": "flaxdrop canelike",
+      "label": "0.5* f = 0.169",
+      "class": "bidirectional"
+    }
+  ]
+}

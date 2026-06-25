@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "text": "unapplicable greasehorn",
+      "id": "unapplicable greasehorn",
+      "class": "circle"
+    },
+    {
+      "text": "archpresbytery clamant",
+      "id": "archpresbytery clamant",
+      "class": "hexagon"
+    },
+    {
+      "text": "nidification",
+      "id": "nidification",
+      "class": "diamond"
+    },
+    {
+      "text": "porket",
+      "id": "porket",
+      "class": "box"
+    },
+    {
+      "text": "plenist",
+      "id": "plenist",
+      "class": "parallelogram"
+    },
+    {
+      "text": "digynian",
+      "id": "digynian",
+      "class": "diamond"
+    },
+    {
+      "text": "iliofemoral lenify",
+      "id": "iliofemoral lenify",
+      "class": "document"
+    },
+    {
+      "text": "anterevolutionary ruffin",
+      "id": "anterevolutionary ruffin",
+      "class": "diamond"
+    },
+    {
+      "text": "hyperneurotic heartache toxino",
+      "id": "hyperneurotic heartache toxino",
+      "class": "box"
+    },
+    {
+      "text": "aflight psychocatharsis",
+      "id": "aflight psychocatharsis",
+      "class": "diamond"
+    },
+    {
+      "text": "fellinic cockneyship",
+      "id": "fellinic cockneyship",
+      "class": "box"
+    },
+    {
+      "text": "glost",
+      "id": "glost",
+      "class": "document"
+    },
+    {
+      "text": "tracksick",
+      "id": "tracksick",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unapplicable greasehorn",
+      "head": "archpresbytery clamant",
+      "label": null
+    },
+    {
+      "tail": "archpresbytery clamant",
+      "head": "nidification",
+      "label": null
+    },
+    {
+      "tail": "nidification",
+      "head": "porket",
+      "label": "NO"
+    },
+    {
+      "tail": "nidification",
+      "head": "plenist",
+      "label": "NO"
+    },
+    {
+      "tail": "porket",
+      "head": "digynian",
+      "label": null
+    },
+    {
+      "tail": "digynian",
+      "head": "iliofemoral lenify",
+      "label": "No"
+    },
+    {
+      "tail": "digynian",
+      "head": "anterevolutionary ruffin",
+      "label": "No"
+    },
+    {
+      "tail": "iliofemoral lenify",
+      "head": "anterevolutionary ruffin",
+      "label": null
+    },
+    {
+      "tail": "anterevolutionary ruffin",
+      "head": "hyperneurotic heartache toxino",
+      "label": "Yes"
+    },
+    {
+      "tail": "anterevolutionary ruffin",
+      "head": "aflight psychocatharsis",
+      "label": "Yes"
+    },
+    {
+      "tail": "hyperneurotic heartache toxino",
+      "head": "aflight psychocatharsis",
+      "label": null
+    },
+    {
+      "tail": "aflight psychocatharsis",
+      "head": "plenist",
+      "label": "No"
+    },
+    {
+      "tail": "aflight psychocatharsis",
+      "head": "unapplicable greasehorn",
+      "label": "No"
+    },
+    {
+      "tail": "plenist",
+      "head": "fellinic cockneyship",
+      "label": null
+    },
+    {
+      "tail": "fellinic cockneyship",
+      "head": "glost",
+      "label": null
+    },
+    {
+      "tail": "glost",
+      "head": "tracksick",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        512,
+        735,
+        574,
+        809
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        696,
+        728,
+        783,
+        848
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "recive order by Lieferando",
+      "id": "recive order by Lieferando",
+      "bbox": [
+        974,
+        445,
+        1522,
+        606
+      ],
+      "class": "task"
+    },
+    {
+      "text": "recive order by Website",
+      "id": "recive order by Website",
+      "bbox": [
+        974,
+        735,
+        1522,
+        961
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Take order by phone",
+      "id": "Take order by phone",
+      "bbox": [
+        941,
+        1025,
+        1522,
+        1283
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write order down",
+      "id": "write order down",
+      "bbox": [
+        1845,
+        993,
+        2361,
+        1251
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        2957,
+        1041,
+        3119,
+        1203
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Attach order note to pinboard",
+      "id": "Attach order note to pinboard",
+      "bbox": [
+        3251,
+        993,
+        3780,
+        1332
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        2570,
+        609,
+        2715,
+        751
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "press out order",
+      "id": "press out order",
+      "bbox": [
+        2844,
+        590,
+        3412,
+        741
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Order",
+      "id": "Order",
+      "bbox": [
+        2980,
+        335,
+        3093,
+        406
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "bbox": [
+        222,
+        716,
+        312,
+        841
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        1935,
+        445,
+        2322,
+        606
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        3386,
+        1525,
+        3480,
+        1616
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "press out order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        3000,
+        741,
+        3080,
+        1045
+      ],
+      "kps": [
+        3038.515,
+        741.888,
+        2.0,
+        3038.515,
+        1041.869,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "press out order",
+      "class": "sequenceFlow",
+      "bbox": [
+        2706,
+        632,
+        2848,
+        713
+      ],
+      "kps": [
+        2706.278,
+        670.925,
+        2.0,
+        2844.979,
+        670.925,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "recive order by Website",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1522,
+        734,
+        2655,
+        814
+      ],
+      "kps": [
+        1522.483,
+        799.949,
+        2.0,
+        2651.443,
+        745.114,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        2322,
+        525,
+        2655,
+        619
+      ],
+      "kps": [
+        2322.432,
+        525.773,
+        2.0,
+        2651.443,
+        616.09,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "recive order by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1522,
+        487,
+        1939,
+        568
+      ],
+      "kps": [
+        1522.483,
+        525.773,
+        2.0,
+        1935.36,
+        525.773,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Attach order note to pinboard",
+      "head": "event_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        3406,
+        1332,
+        3487,
+        1529
+      ],
+      "kps": [
+        3444.941,
+        1332.173,
+        2.0,
+        3444.941,
+        1525.709,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Attach order note to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        3119,
+        1084,
+        3255,
+        1164
+      ],
+      "kps": [
+        3119.155,
+        1122.509,
+        2.0,
+        3251.405,
+        1122.509,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write order down",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2361,
+        1084,
+        2961,
+        1164
+      ],
+      "kps": [
+        2361.139,
+        1122.509,
+        2.0,
+        2957.875,
+        1122.509,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Take order by phone",
+      "head": "write order down",
+      "class": "sequenceFlow",
+      "bbox": [
+        1522,
+        1084,
+        1848,
+        1164
+      ],
+      "kps": [
+        1522.483,
+        1122.509,
+        2.0,
+        1845.043,
+        1122.509,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Take order by phone",
+      "class": "sequenceFlow",
+      "bbox": [
+        741,
+        845,
+        945,
+        1200
+      ],
+      "kps": [
+        741.888,
+        845.107,
+        2.0,
+        941.875,
+        1196.698,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "recive order by Website",
+      "class": "sequenceFlow",
+      "bbox": [
+        777,
+        742,
+        977,
+        822
+      ],
+      "kps": [
+        777.37,
+        780.595,
+        2.0,
+        974.131,
+        780.595,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "recive order by Lieferando",
+      "class": "sequenceFlow",
+      "bbox": [
+        741,
+        525,
+        977,
+        736
+      ],
+      "kps": [
+        741.888,
+        732.211,
+        2.0,
+        974.131,
+        525.773,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        574,
+        729,
+        716,
+        809
+      ],
+      "kps": [
+        574.157,
+        767.693,
+        2.0,
+        712.858,
+        767.693,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "Order",
+      "class": "dataAssociation",
+      "bbox": [
+        2180,
+        316,
+        2987,
+        448
+      ],
+      "kps": [
+        2180.506,
+        445.133,
+        2.0,
+        2983.68,
+        335.462,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Order",
+      "head": "press out order",
+      "class": "dataAssociation",
+      "bbox": [
+        3003,
+        406,
+        3083,
+        594
+      ],
+      "kps": [
+        3038.515,
+        406.426,
+        2.0,
+        3044.966,
+        590.285,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "A",
+      "id": "A",
+      "class": "state"
+    },
+    {
+      "text": "B",
+      "id": "B",
+      "class": "state"
+    },
+    {
+      "text": "X",
+      "id": "X",
+      "class": "state"
+    },
+    {
+      "text": "Y",
+      "id": "Y",
+      "class": "state"
+    },
+    {
+      "text": "Z",
+      "id": "Z",
+      "class": "state"
+    },
+    {
+      "text": "c",
+      "id": "c",
+      "class": "state"
+    },
+    {
+      "text": "D",
+      "id": "D",
+      "class": "state"
+    },
+    {
+      "text": "F1",
+      "id": "F1",
+      "class": "final state"
+    },
+    {
+      "text": "F2",
+      "id": "F2",
+      "class": "final state"
+    },
+    {
+      "text": "F3",
+      "id": "F3",
+      "class": "final state"
+    }
+  ],
+  "relations": [
+    {
+      "tail": null,
+      "head": "A",
+      "label": null
+    },
+    {
+      "tail": "A",
+      "head": "B",
+      "label": "0+1"
+    },
+    {
+      "tail": "B",
+      "head": "B",
+      "label": "0+1"
+    },
+    {
+      "tail": "B",
+      "head": "X",
+      "label": "0"
+    },
+    {
+      "tail": "A",
+      "head": "X",
+      "label": "0"
+    },
+    {
+      "tail": "A",
+      "head": "D",
+      "label": "0"
+    },
+    {
+      "tail": "A",
+      "head": "F1",
+      "label": null
+    },
+    {
+      "tail": "A",
+      "head": "c",
+      "label": "1"
+    },
+    {
+      "tail": "X",
+      "head": "Y",
+      "label": "1"
+    },
+    {
+      "tail": "Y",
+      "head": "Z",
+      "label": "1"
+    },
+    {
+      "tail": "Z",
+      "head": "F2",
+      "label": null
+    },
+    {
+      "tail": "c",
+      "head": "F3",
+      "label": null
+    },
+    {
+      "tail": "c",
+      "head": "D",
+      "label": "0"
+    },
+    {
+      "tail": "D",
+      "head": "c",
+      "label": "0"
+    },
+    {
+      "tail": "D",
+      "head": "D",
+      "label": "1"
+    },
+    {
+      "tail": "c",
+      "head": "c",
+      "label": "1"
+    }
+  ]
+}

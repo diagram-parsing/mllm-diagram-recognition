@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "text": "periclasia",
+      "id": "periclasia",
+      "class": "circle",
+      "bbox": [
+        20,
+        5,
+        107,
+        92
+      ]
+    },
+    {
+      "text": "platinization incogitable",
+      "id": "platinization incogitable",
+      "class": "box",
+      "bbox": [
+        25,
+        144,
+        101,
+        192
+      ]
+    },
+    {
+      "text": "naviculoid",
+      "id": "naviculoid",
+      "class": "parallelogram",
+      "bbox": [
+        10,
+        202,
+        116,
+        276
+      ]
+    },
+    {
+      "text": "asininely",
+      "id": "asininely",
+      "class": "diamond",
+      "bbox": [
+        18,
+        321,
+        109,
+        395
+      ]
+    },
+    {
+      "text": "attercrop",
+      "id": "attercrop",
+      "class": "hexagon",
+      "bbox": [
+        16,
+        429,
+        111,
+        477
+      ]
+    },
+    {
+      "text": "sousaphone organopathy",
+      "id": "sousaphone organopathy",
+      "class": "diamond",
+      "bbox": [
+        174,
+        36,
+        327,
+        109
+      ]
+    },
+    {
+      "text": "Correa",
+      "id": "Correa",
+      "class": "diamond",
+      "bbox": [
+        5,
+        524,
+        121,
+        567
+      ]
+    },
+    {
+      "text": "unepilogued",
+      "id": "unepilogued",
+      "class": "box",
+      "bbox": [
+        217,
+        144,
+        289,
+        192
+      ]
+    },
+    {
+      "text": "maraschino",
+      "id": "maraschino",
+      "class": "document",
+      "bbox": [
+        211,
+        235,
+        296,
+        291
+      ]
+    },
+    {
+      "text": "counterapse",
+      "id": "counterapse",
+      "class": "circle",
+      "bbox": [
+        202,
+        307,
+        305,
+        409
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "periclasia",
+      "head": "platinization incogitable",
+      "label": null,
+      "bbox": [
+        59,
+        93,
+        68,
+        141
+      ]
+    },
+    {
+      "tail": "platinization incogitable",
+      "head": "naviculoid",
+      "label": null,
+      "bbox": [
+        59,
+        186,
+        68,
+        199
+      ]
+    },
+    {
+      "tail": "naviculoid",
+      "head": "asininely",
+      "label": null,
+      "bbox": [
+        59,
+        276,
+        68,
+        318
+      ]
+    },
+    {
+      "tail": "asininely",
+      "head": "attercrop",
+      "label": "no",
+      "bbox": [
+        59,
+        395,
+        68,
+        426
+      ]
+    },
+    {
+      "tail": "asininely",
+      "head": "sousaphone organopathy",
+      "label": "no",
+      "bbox": [
+        108,
+        79,
+        186,
+        359
+      ]
+    },
+    {
+      "tail": "attercrop",
+      "head": "Correa",
+      "label": null,
+      "bbox": [
+        59,
+        477,
+        68,
+        521
+      ]
+    },
+    {
+      "tail": "Correa",
+      "head": "sousaphone organopathy",
+      "label": "YES",
+      "bbox": [
+        103,
+        85,
+        200,
+        556
+      ]
+    },
+    {
+      "tail": "Correa",
+      "head": "unepilogued",
+      "label": "YES",
+      "bbox": [
+        103,
+        163,
+        214,
+        540
+      ]
+    },
+    {
+      "tail": "sousaphone organopathy",
+      "head": "unepilogued",
+      "label": "No",
+      "bbox": [
+        249,
+        110,
+        258,
+        140
+      ]
+    },
+    {
+      "tail": "sousaphone organopathy",
+      "head": "attercrop",
+      "label": "No",
+      "bbox": [
+        113,
+        79,
+        188,
+        458
+      ]
+    },
+    {
+      "tail": "unepilogued",
+      "head": "maraschino",
+      "label": null,
+      "bbox": [
+        249,
+        192,
+        258,
+        232
+      ]
+    },
+    {
+      "tail": "maraschino",
+      "head": "counterapse",
+      "label": null,
+      "bbox": [
+        249,
+        290,
+        258,
+        304
+      ]
+    }
+  ]
+}

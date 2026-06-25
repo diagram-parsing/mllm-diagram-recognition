@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "melanocrate Cyanocitta pseudax",
+      "id": "melanocrate Cyanocitta pseudax",
+      "class": "circle"
+    },
+    {
+      "text": "melasma linguacious",
+      "id": "melasma linguacious",
+      "class": "diamond"
+    },
+    {
+      "text": "trihemimeral",
+      "id": "trihemimeral",
+      "class": "document"
+    },
+    {
+      "text": "trilogical",
+      "id": "trilogical",
+      "class": "ellipse"
+    },
+    {
+      "text": "staringly complexly",
+      "id": "staringly complexly",
+      "class": "document"
+    },
+    {
+      "text": "ahoy mechanalize",
+      "id": "ahoy mechanalize",
+      "class": "diamond"
+    },
+    {
+      "text": "peritrochium",
+      "id": "peritrochium",
+      "class": "box"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "melanocrate Cyanocitta pseudax",
+      "head": "melasma linguacious",
+      "label": null
+    },
+    {
+      "tail": "melasma linguacious",
+      "head": "trihemimeral",
+      "label": "no"
+    },
+    {
+      "tail": "melasma linguacious",
+      "head": "trilogical",
+      "label": "no"
+    },
+    {
+      "tail": "trihemimeral",
+      "head": "staringly complexly",
+      "label": null
+    },
+    {
+      "tail": "staringly complexly",
+      "head": "ahoy mechanalize",
+      "label": null
+    },
+    {
+      "tail": "ahoy mechanalize",
+      "head": "peritrochium",
+      "label": "Yes"
+    },
+    {
+      "tail": "ahoy mechanalize",
+      "head": "trihemimeral",
+      "label": "Yes"
+    },
+    {
+      "tail": "peritrochium",
+      "head": "trilogical",
+      "label": null
+    }
+  ]
+}

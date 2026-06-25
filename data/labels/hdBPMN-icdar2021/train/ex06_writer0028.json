@@ -1,0 +1,173 @@
+{
+  "nodes": [
+    {
+      "text": "order received",
+      "id": "order received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "order stapled",
+      "id": "order stapled",
+      "class": "event"
+    },
+    {
+      "text": "attach order to pinboard",
+      "id": "attach order to pinboard",
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "website order",
+      "id": "website order",
+      "class": "dataObject"
+    },
+    {
+      "text": "liferando order",
+      "id": "liferando order",
+      "class": "dataObject"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "class": "dataObject"
+    },
+    {
+      "text": "phone order",
+      "id": "phone order",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "attach order to pinboard",
+      "head": "order stapled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach order to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "label": "received by phone"
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": "received by Website"
+    },
+    {
+      "tail": "confirm order",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": "received by Lieferando"
+    },
+    {
+      "tail": "order received",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "order",
+      "head": "attach order to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "phone order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "website order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "liferando order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "order received",
+      "class": "messageFlow",
+      "label": "Order"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Pizza worker",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "begin",
+      "id": "begin",
+      "bbox": [
+        4,
+        199,
+        316,
+        316
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "input p",
+      "id": "input p",
+      "bbox": [
+        435,
+        182,
+        867,
+        338
+      ],
+      "class": "data"
+    },
+    {
+      "text": "p>0",
+      "id": "p>0",
+      "bbox": [
+        1021,
+        176,
+        1238,
+        366
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "output p",
+      "id": "output p",
+      "bbox": [
+        850,
+        472,
+        1310,
+        640
+      ],
+      "class": "data"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "bbox": [
+        922,
+        685,
+        1293,
+        797
+      ],
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "begin",
+      "head": "input p",
+      "bbox": [
+        328,
+        233,
+        470,
+        280
+      ],
+      "label": null
+    },
+    {
+      "tail": "input p",
+      "head": "p>0",
+      "bbox": [
+        824,
+        233,
+        1008,
+        282
+      ],
+      "label": null
+    },
+    {
+      "tail": "p>0",
+      "head": "input p",
+      "bbox": [
+        655,
+        79,
+        1138,
+        201
+      ],
+      "label": "else"
+    },
+    {
+      "tail": "p>0",
+      "head": "output p",
+      "bbox": [
+        1066,
+        371,
+        1116,
+        475
+      ],
+      "label": "then"
+    },
+    {
+      "tail": "output p",
+      "head": "end",
+      "bbox": [
+        1044,
+        650,
+        1092,
+        697
+      ],
+      "label": null
+    }
+  ]
+}

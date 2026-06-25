@@ -1,0 +1,605 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        713,
+        406,
+        1008,
+        553
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        3139,
+        668,
+        3247,
+        776
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "bbox": [
+        1234,
+        394,
+        1604,
+        592
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_3",
+      "bbox": [
+        1905,
+        394,
+        2143,
+        571
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_4",
+      "bbox": [
+        2272,
+        388,
+        2603,
+        562
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_5",
+      "bbox": [
+        2702,
+        406,
+        2976,
+        562
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_6",
+      "bbox": [
+        2699,
+        644,
+        3055,
+        773
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "bbox": [
+        433,
+        442,
+        556,
+        556
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_2",
+      "bbox": [
+        1691,
+        424,
+        1799,
+        532
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_3",
+      "bbox": [
+        433,
+        1207,
+        526,
+        1306
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "task_7",
+      "bbox": [
+        698,
+        1164,
+        1011,
+        1339
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_8",
+      "bbox": [
+        1116,
+        1149,
+        1529,
+        1330
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_9",
+      "bbox": [
+        1664,
+        1155,
+        1938,
+        1324
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        2034,
+        1173,
+        2158,
+        1324
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "subProcess_1",
+      "bbox": [
+        2287,
+        1005,
+        2522,
+        1146
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "task_10",
+      "bbox": [
+        2206,
+        1408,
+        2408,
+        1511
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        2474,
+        1342,
+        2543,
+        1429
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "task_11",
+      "bbox": [
+        2621,
+        1002,
+        2871,
+        1134
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        3013,
+        1020,
+        3106,
+        1107
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_4",
+      "bbox": [
+        466,
+        1935,
+        544,
+        2004
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "task_12",
+      "bbox": [
+        945,
+        1878,
+        1237,
+        2052
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_13",
+      "bbox": [
+        1980,
+        1869,
+        2254,
+        2034
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_3",
+      "bbox": [
+        2724,
+        1902,
+        2814,
+        1992
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_5",
+      "bbox": [
+        1432,
+        1896,
+        1550,
+        2016
+      ],
+      "class": "timerEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "task_6",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        3055,
+        680,
+        3142,
+        752
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_5",
+      "head": "task_6",
+      "class": "sequenceFlow",
+      "bbox": [
+        2763,
+        562,
+        2835,
+        647
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_4",
+      "head": "task_5",
+      "class": "sequenceFlow",
+      "bbox": [
+        2603,
+        440,
+        2705,
+        513
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_3",
+      "head": "task_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        2143,
+        446,
+        2275,
+        519
+      ],
+      "label": null
+    },
+    {
+      "tail": "timerEvent_2",
+      "head": "task_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1799,
+        443,
+        1908,
+        516
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "timerEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1604,
+        451,
+        1694,
+        523
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1008,
+        446,
+        1237,
+        519
+      ],
+      "label": null
+    },
+    {
+      "tail": "timerEvent_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        556,
+        462,
+        716,
+        534
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_11",
+      "head": "event_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2871,
+        1036,
+        3016,
+        1109
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "task_11",
+      "class": "sequenceFlow",
+      "bbox": [
+        2543,
+        1134,
+        2681,
+        1390
+      ],
+      "label": null
+    },
+    {
+      "tail": "subProcess_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2477,
+        1137,
+        2549,
+        1351
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_10",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2408,
+        1404,
+        2522,
+        1476
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_10",
+      "class": "sequenceFlow",
+      "bbox": [
+        2097,
+        1321,
+        2209,
+        1471
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "subProcess_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2097,
+        1071,
+        2290,
+        1179
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_8",
+      "head": "task_9",
+      "class": "sequenceFlow",
+      "bbox": [
+        1529,
+        1207,
+        1667,
+        1279
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_7",
+      "head": "task_8",
+      "class": "sequenceFlow",
+      "bbox": [
+        1011,
+        1222,
+        1119,
+        1294
+      ],
+      "label": null
+    },
+    {
+      "tail": "timerEvent_3",
+      "head": "task_7",
+      "class": "sequenceFlow",
+      "bbox": [
+        526,
+        1223,
+        701,
+        1295
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_9",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1938,
+        1210,
+        2037,
+        1282
+      ],
+      "label": null
+    },
+    {
+      "tail": "timerEvent_5",
+      "head": "task_13",
+      "class": "sequenceFlow",
+      "bbox": [
+        1550,
+        1923,
+        1983,
+        1995
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_13",
+      "head": "event_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        2254,
+        1920,
+        2727,
+        1992
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_12",
+      "head": "timerEvent_5",
+      "class": "sequenceFlow",
+      "bbox": [
+        1237,
+        1930,
+        1435,
+        2003
+      ],
+      "label": null
+    },
+    {
+      "tail": "timerEvent_4",
+      "head": "task_12",
+      "class": "sequenceFlow",
+      "bbox": [
+        544,
+        1936,
+        948,
+        2009
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_8",
+      "head": "task_1",
+      "class": "messageFlow",
+      "bbox": [
+        899,
+        553,
+        1327,
+        1152
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_3",
+      "head": "task_9",
+      "class": "messageFlow",
+      "bbox": [
+        1842,
+        571,
+        2019,
+        1158
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_11",
+      "head": "task_4",
+      "class": "messageFlow",
+      "bbox": [
+        2510,
+        562,
+        2675,
+        1005
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "secretary",
+      "nodes": [],
+      "bbox": [
+        171,
+        219,
+        3311,
+        857
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "teacher",
+      "nodes": [],
+      "bbox": [
+        219,
+        972,
+        3314,
+        1544
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "students",
+      "nodes": [],
+      "bbox": [
+        231,
+        1661,
+        3323,
+        2242
+      ],
+      "class": "pool"
+    }
+  ]
+}

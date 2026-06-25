@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "text": "semipeace",
+      "id": "semipeace",
+      "class": "node"
+    },
+    {
+      "text": "disilicic quinquelocular antig",
+      "id": "disilicic quinquelocular antig",
+      "class": "node"
+    },
+    {
+      "text": "patrimonial synedrion periduct",
+      "id": "patrimonial synedrion periduct",
+      "class": "node"
+    },
+    {
+      "text": "relicted nonirradiated",
+      "id": "relicted nonirradiated",
+      "class": "node"
+    },
+    {
+      "text": "theatrophone",
+      "id": "theatrophone",
+      "class": "node"
+    },
+    {
+      "text": "agilawood speering",
+      "id": "agilawood speering",
+      "class": "node"
+    },
+    {
+      "text": "onychophyma galanga cholesteri",
+      "id": "onychophyma galanga cholesteri",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "semipeace",
+      "head": "disilicic quinquelocular antig",
+      "label": "0.75",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "semipeace",
+      "head": "patrimonial synedrion periduct",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "semipeace",
+      "head": "relicted nonirradiated",
+      "label": "0.66** H = 0.735",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "theatrophone",
+      "head": "agilawood speering",
+      "label": "0.22 f = 0.668",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "semipeace",
+      "head": "theatrophone",
+      "label": "0.95** a = 0.439",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "onychophyma galanga cholesteri",
+      "head": "semipeace",
+      "label": "-1",
+      "class": "unidirectional"
+    }
+  ]
+}

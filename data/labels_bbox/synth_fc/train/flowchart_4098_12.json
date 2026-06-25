@@ -1,0 +1,314 @@
+{
+  "nodes": [
+    {
+      "text": "kreis",
+      "id": "kreis",
+      "class": "oval",
+      "bbox": [
+        30,
+        11,
+        102,
+        59
+      ]
+    },
+    {
+      "text": "bassine",
+      "id": "bassine",
+      "class": "diamond",
+      "bbox": [
+        5,
+        120,
+        126,
+        168
+      ]
+    },
+    {
+      "text": "gonfaloniership lecanoroid",
+      "id": "gonfaloniership lecanoroid",
+      "class": "box",
+      "bbox": [
+        23,
+        201,
+        109,
+        249
+      ]
+    },
+    {
+      "text": "hypernutrition",
+      "id": "hypernutrition",
+      "class": "diamond",
+      "bbox": [
+        437,
+        26,
+        562,
+        99
+      ]
+    },
+    {
+      "text": "intranslatable",
+      "id": "intranslatable",
+      "class": "parallelogram",
+      "bbox": [
+        6,
+        324,
+        125,
+        392
+      ]
+    },
+    {
+      "text": "pythonical Staphylinus",
+      "id": "pythonical Staphylinus",
+      "class": "hexagon",
+      "bbox": [
+        221,
+        5,
+        344,
+        65
+      ]
+    },
+    {
+      "text": "scythestone",
+      "id": "scythestone",
+      "class": "hexagon",
+      "bbox": [
+        242,
+        141,
+        324,
+        201
+      ]
+    },
+    {
+      "text": "monospermy microcosmology",
+      "id": "monospermy microcosmology",
+      "class": "diamond",
+      "bbox": [
+        189,
+        216,
+        376,
+        289
+      ]
+    },
+    {
+      "text": "archiepiscopacy",
+      "id": "archiepiscopacy",
+      "class": "diamond",
+      "bbox": [
+        191,
+        310,
+        374,
+        358
+      ]
+    },
+    {
+      "text": "anthropometry consigner unsupp",
+      "id": "anthropometry consigner unsupp",
+      "class": "document",
+      "bbox": [
+        450,
+        110,
+        549,
+        178
+      ]
+    },
+    {
+      "text": "undualize",
+      "id": "undualize",
+      "class": "ellipse",
+      "bbox": [
+        455,
+        337,
+        544,
+        385
+      ]
+    },
+    {
+      "text": "gamasid Ichneumonidae",
+      "id": "gamasid Ichneumonidae",
+      "class": "diamond",
+      "bbox": [
+        422,
+        216,
+        572,
+        289
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "kreis",
+      "head": "bassine",
+      "label": null,
+      "bbox": [
+        61,
+        60,
+        71,
+        118
+      ]
+    },
+    {
+      "tail": "bassine",
+      "head": "gonfaloniership lecanoroid",
+      "label": "Yes",
+      "bbox": [
+        61,
+        168,
+        71,
+        199
+      ]
+    },
+    {
+      "tail": "bassine",
+      "head": "hypernutrition",
+      "label": "Yes",
+      "bbox": [
+        95,
+        68,
+        449,
+        131
+      ]
+    },
+    {
+      "tail": "gonfaloniership lecanoroid",
+      "head": "intranslatable",
+      "label": null,
+      "bbox": [
+        61,
+        249,
+        71,
+        322
+      ]
+    },
+    {
+      "tail": "intranslatable",
+      "head": "pythonical Staphylinus",
+      "label": null,
+      "bbox": [
+        117,
+        47,
+        236,
+        324
+      ]
+    },
+    {
+      "tail": "pythonical Staphylinus",
+      "head": "scythestone",
+      "label": null,
+      "bbox": [
+        278,
+        66,
+        287,
+        139
+      ]
+    },
+    {
+      "tail": "scythestone",
+      "head": "monospermy microcosmology",
+      "label": null,
+      "bbox": [
+        278,
+        200,
+        287,
+        214
+      ]
+    },
+    {
+      "tail": "monospermy microcosmology",
+      "head": "archiepiscopacy",
+      "label": "yes",
+      "bbox": [
+        278,
+        290,
+        287,
+        308
+      ]
+    },
+    {
+      "tail": "monospermy microcosmology",
+      "head": "kreis",
+      "label": "yes",
+      "bbox": [
+        104,
+        31,
+        205,
+        245
+      ]
+    },
+    {
+      "tail": "archiepiscopacy",
+      "head": "hypernutrition",
+      "label": "no",
+      "bbox": [
+        355,
+        73,
+        460,
+        328
+      ]
+    },
+    {
+      "tail": "archiepiscopacy",
+      "head": "scythestone",
+      "label": "no",
+      "bbox": [
+        313,
+        185,
+        388,
+        319
+      ]
+    },
+    {
+      "tail": "hypernutrition",
+      "head": "anthropometry consigner unsupp",
+      "label": "yes",
+      "bbox": [
+        495,
+        95,
+        504,
+        108
+      ]
+    },
+    {
+      "tail": "hypernutrition",
+      "head": "undualize",
+      "label": "yes",
+      "bbox": [
+        411,
+        88,
+        480,
+        353
+      ]
+    },
+    {
+      "tail": "anthropometry consigner unsupp",
+      "head": "gamasid Ichneumonidae",
+      "label": null,
+      "bbox": [
+        495,
+        177,
+        504,
+        214
+      ]
+    },
+    {
+      "tail": "gamasid Ichneumonidae",
+      "head": "undualize",
+      "label": "No",
+      "bbox": [
+        495,
+        290,
+        504,
+        335
+      ]
+    },
+    {
+      "tail": "gamasid Ichneumonidae",
+      "head": "gonfaloniership lecanoroid",
+      "label": "No",
+      "bbox": [
+        111,
+        202,
+        430,
+        248
+      ]
+    }
+  ]
+}

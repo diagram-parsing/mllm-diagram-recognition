@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "anemogram retemper",
+      "id": "anemogram retemper",
+      "class": "oval"
+    },
+    {
+      "text": "sternomancy hydroxylamine cupp",
+      "id": "sternomancy hydroxylamine cupp",
+      "class": "document"
+    },
+    {
+      "text": "demitoilet",
+      "id": "demitoilet",
+      "class": "diamond"
+    },
+    {
+      "text": "torous",
+      "id": "torous",
+      "class": "box"
+    },
+    {
+      "text": "gateless demurrant",
+      "id": "gateless demurrant",
+      "class": "document"
+    },
+    {
+      "text": "otherwhence",
+      "id": "otherwhence",
+      "class": "diamond"
+    },
+    {
+      "text": "alderman tooter",
+      "id": "alderman tooter",
+      "class": "box"
+    },
+    {
+      "text": "nonprovided",
+      "id": "nonprovided",
+      "class": "box"
+    },
+    {
+      "text": "precommunion",
+      "id": "precommunion",
+      "class": "hexagon"
+    },
+    {
+      "text": "acrogenic",
+      "id": "acrogenic",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "anemogram retemper",
+      "head": "sternomancy hydroxylamine cupp",
+      "label": null
+    },
+    {
+      "tail": "sternomancy hydroxylamine cupp",
+      "head": "demitoilet",
+      "label": null
+    },
+    {
+      "tail": "demitoilet",
+      "head": "torous",
+      "label": "No"
+    },
+    {
+      "tail": "demitoilet",
+      "head": "gateless demurrant",
+      "label": "No"
+    },
+    {
+      "tail": "torous",
+      "head": "otherwhence",
+      "label": null
+    },
+    {
+      "tail": "otherwhence",
+      "head": "alderman tooter",
+      "label": "yes"
+    },
+    {
+      "tail": "otherwhence",
+      "head": "anemogram retemper",
+      "label": "yes"
+    },
+    {
+      "tail": "alderman tooter",
+      "head": "nonprovided",
+      "label": null
+    },
+    {
+      "tail": "nonprovided",
+      "head": "gateless demurrant",
+      "label": null
+    },
+    {
+      "tail": "gateless demurrant",
+      "head": "precommunion",
+      "label": null
+    },
+    {
+      "tail": "precommunion",
+      "head": "acrogenic",
+      "label": null
+    }
+  ]
+}

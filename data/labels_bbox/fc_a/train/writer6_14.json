@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "text": "Begin",
+      "id": "Begin",
+      "bbox": [
+        35,
+        4,
+        247,
+        96
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "read a,b,c",
+      "id": "read a,b,c",
+      "bbox": [
+        4,
+        153,
+        286,
+        264
+      ],
+      "class": "data"
+    },
+    {
+      "text": "delta=b^2-4ac",
+      "id": "delta=b^2-4ac",
+      "bbox": [
+        19,
+        317,
+        251,
+        425
+      ],
+      "class": "process"
+    },
+    {
+      "text": "delta<0",
+      "id": "delta<0",
+      "bbox": [
+        49,
+        508,
+        253,
+        751
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "delta=0",
+      "id": "delta=0",
+      "bbox": [
+        77,
+        881,
+        243,
+        1097
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "Output (-b+sqrt(delta))/2a",
+      "id": "Output (-b+sqrt(delta))/2a",
+      "bbox": [
+        24,
+        1188,
+        393,
+        1328
+      ],
+      "class": "data"
+    },
+    {
+      "text": "Output (-b-sqrt(delta))/2a",
+      "id": "Output (-b-sqrt(delta))/2a",
+      "bbox": [
+        433,
+        1179,
+        798,
+        1330
+      ],
+      "class": "data"
+    },
+    {
+      "text": "Output -b/(2a)",
+      "id": "Output -b/(2a)",
+      "bbox": [
+        380,
+        927,
+        722,
+        1038
+      ],
+      "class": "data"
+    },
+    {
+      "text": "End",
+      "id": "End",
+      "bbox": [
+        776,
+        919,
+        976,
+        1032
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "nothing",
+      "id": "nothing",
+      "bbox": [
+        423,
+        564,
+        772,
+        674
+      ],
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Begin",
+      "head": "read a,b,c",
+      "bbox": [
+        119,
+        93,
+        157,
+        167
+      ],
+      "label": null
+    },
+    {
+      "tail": "read a,b,c",
+      "head": "delta=b^2-4ac",
+      "bbox": [
+        100,
+        246,
+        142,
+        323
+      ],
+      "label": null
+    },
+    {
+      "tail": "delta=b^2-4ac",
+      "head": "delta<0",
+      "bbox": [
+        114,
+        415,
+        156,
+        518
+      ],
+      "label": null
+    },
+    {
+      "tail": "delta<0",
+      "head": "delta=0",
+      "bbox": [
+        118,
+        738,
+        159,
+        889
+      ],
+      "label": "else"
+    },
+    {
+      "tail": "delta=0",
+      "head": "Output (-b+sqrt(delta))/2a",
+      "bbox": [
+        158,
+        1091,
+        200,
+        1201
+      ],
+      "label": "else"
+    },
+    {
+      "tail": "Output (-b+sqrt(delta))/2a",
+      "head": "Output (-b-sqrt(delta))/2a",
+      "bbox": [
+        351,
+        1240,
+        466,
+        1286
+      ],
+      "label": null
+    },
+    {
+      "tail": "delta=0",
+      "head": "Output -b/(2a)",
+      "bbox": [
+        234,
+        973,
+        400,
+        1022
+      ],
+      "label": "then"
+    },
+    {
+      "tail": "Output -b/(2a)",
+      "head": "End",
+      "bbox": [
+        681,
+        966,
+        779,
+        1023
+      ],
+      "label": null
+    },
+    {
+      "tail": "Output (-b-sqrt(delta))/2a",
+      "head": "End",
+      "bbox": [
+        763,
+        1024,
+        915,
+        1240
+      ],
+      "label": null
+    },
+    {
+      "tail": "delta<0",
+      "head": "nothing",
+      "bbox": [
+        241,
+        605,
+        444,
+        657
+      ],
+      "label": "then"
+    },
+    {
+      "tail": "nothing",
+      "head": "End",
+      "bbox": [
+        735,
+        612,
+        900,
+        931
+      ],
+      "label": null
+    }
+  ]
+}

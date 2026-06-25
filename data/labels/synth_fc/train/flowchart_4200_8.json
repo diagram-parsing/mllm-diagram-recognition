@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "struck",
+      "id": "struck",
+      "class": "circle"
+    },
+    {
+      "text": "fulminating chemiatric",
+      "id": "fulminating chemiatric",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Diaspinae",
+      "id": "Diaspinae",
+      "class": "document"
+    },
+    {
+      "text": "redintegrator otherwiseness",
+      "id": "redintegrator otherwiseness",
+      "class": "diamond"
+    },
+    {
+      "text": "cobaltocyanic",
+      "id": "cobaltocyanic",
+      "class": "document"
+    },
+    {
+      "text": "unseeingly",
+      "id": "unseeingly",
+      "class": "hexagon"
+    },
+    {
+      "text": "islandish Eunectes hyperphysic",
+      "id": "islandish Eunectes hyperphysic",
+      "class": "diamond"
+    },
+    {
+      "text": "bailiffry",
+      "id": "bailiffry",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "struck",
+      "head": "fulminating chemiatric",
+      "label": null
+    },
+    {
+      "tail": "fulminating chemiatric",
+      "head": "Diaspinae",
+      "label": null
+    },
+    {
+      "tail": "Diaspinae",
+      "head": "redintegrator otherwiseness",
+      "label": null
+    },
+    {
+      "tail": "redintegrator otherwiseness",
+      "head": "cobaltocyanic",
+      "label": "yes"
+    },
+    {
+      "tail": "redintegrator otherwiseness",
+      "head": "Diaspinae",
+      "label": "yes"
+    },
+    {
+      "tail": "cobaltocyanic",
+      "head": "unseeingly",
+      "label": null
+    },
+    {
+      "tail": "unseeingly",
+      "head": "islandish Eunectes hyperphysic",
+      "label": null
+    },
+    {
+      "tail": "islandish Eunectes hyperphysic",
+      "head": "bailiffry",
+      "label": "Yes"
+    },
+    {
+      "tail": "islandish Eunectes hyperphysic",
+      "head": "unseeingly",
+      "label": "Yes"
+    }
+  ]
+}

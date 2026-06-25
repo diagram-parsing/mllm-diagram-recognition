@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "fellowless",
+      "id": "fellowless",
+      "class": "ellipse"
+    },
+    {
+      "text": "nonrevenge",
+      "id": "nonrevenge",
+      "class": "hexagon"
+    },
+    {
+      "text": "periblastula",
+      "id": "periblastula",
+      "class": "document"
+    },
+    {
+      "text": "verificative",
+      "id": "verificative",
+      "class": "diamond"
+    },
+    {
+      "text": "way injudiciously",
+      "id": "way injudiciously",
+      "class": "box"
+    },
+    {
+      "text": "smoothcoat",
+      "id": "smoothcoat",
+      "class": "hexagon"
+    },
+    {
+      "text": "scatophagid",
+      "id": "scatophagid",
+      "class": "hexagon"
+    },
+    {
+      "text": "overheatedly gyromagnetic",
+      "id": "overheatedly gyromagnetic",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fellowless",
+      "head": "nonrevenge",
+      "label": null
+    },
+    {
+      "tail": "nonrevenge",
+      "head": "periblastula",
+      "label": null
+    },
+    {
+      "tail": "periblastula",
+      "head": "verificative",
+      "label": null
+    },
+    {
+      "tail": "verificative",
+      "head": "way injudiciously",
+      "label": "no"
+    },
+    {
+      "tail": "verificative",
+      "head": "fellowless",
+      "label": "no"
+    },
+    {
+      "tail": "way injudiciously",
+      "head": "smoothcoat",
+      "label": null
+    },
+    {
+      "tail": "smoothcoat",
+      "head": "scatophagid",
+      "label": null
+    },
+    {
+      "tail": "scatophagid",
+      "head": "overheatedly gyromagnetic",
+      "label": null
+    }
+  ]
+}

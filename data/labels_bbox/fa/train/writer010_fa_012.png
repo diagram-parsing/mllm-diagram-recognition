@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "text": "I",
+      "id": "I",
+      "class": "state",
+      "bbox": [
+        402,
+        417,
+        570,
+        612
+      ]
+    },
+    {
+      "text": "III",
+      "id": "III",
+      "class": "state",
+      "bbox": [
+        613,
+        741,
+        830,
+        894
+      ]
+    },
+    {
+      "text": "II",
+      "id": "II",
+      "class": "state",
+      "bbox": [
+        962,
+        733,
+        1121,
+        912
+      ]
+    },
+    {
+      "text": "IV",
+      "id": "IV",
+      "class": "final state",
+      "bbox": [
+        160,
+        120,
+        365,
+        350
+      ]
+    },
+    {
+      "text": "V",
+      "id": "V",
+      "class": "final state",
+      "bbox": [
+        962,
+        260,
+        1163,
+        557
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": null,
+      "head": "IV",
+      "bbox": [
+        5,
+        195,
+        163,
+        265
+      ],
+      "label": null
+    },
+    {
+      "tail": "IV",
+      "head": "V",
+      "bbox": [
+        378,
+        117,
+        1029,
+        346
+      ],
+      "label": "b,c"
+    },
+    {
+      "tail": "V",
+      "head": "V",
+      "bbox": [
+        1072,
+        159,
+        1262,
+        342
+      ],
+      "label": "a,b,c"
+    },
+    {
+      "tail": "I",
+      "head": "V",
+      "bbox": [
+        562,
+        429,
+        975,
+        498
+      ],
+      "label": "a,c"
+    },
+    {
+      "tail": "IV",
+      "head": "I",
+      "bbox": [
+        321,
+        325,
+        438,
+        475
+      ],
+      "label": "a"
+    },
+    {
+      "tail": "III",
+      "head": "IV",
+      "bbox": [
+        232,
+        346,
+        662,
+        882
+      ],
+      "label": "c"
+    },
+    {
+      "tail": "III",
+      "head": "I",
+      "bbox": [
+        492,
+        592,
+        616,
+        765
+      ],
+      "label": "a"
+    },
+    {
+      "tail": "I",
+      "head": "III",
+      "bbox": [
+        555,
+        566,
+        751,
+        770
+      ],
+      "label": "b"
+    },
+    {
+      "tail": "II",
+      "head": "II",
+      "bbox": [
+        888,
+        607,
+        1045,
+        768
+      ],
+      "label": "b"
+    },
+    {
+      "tail": "III",
+      "head": "II",
+      "bbox": [
+        820,
+        768,
+        966,
+        850
+      ],
+      "label": "b"
+    },
+    {
+      "tail": "II",
+      "head": "V",
+      "bbox": [
+        1052,
+        517,
+        1140,
+        750
+      ],
+      "label": "a,c"
+    }
+  ]
+}

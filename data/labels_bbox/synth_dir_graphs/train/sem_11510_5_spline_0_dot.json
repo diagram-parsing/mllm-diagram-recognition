@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "text": "Micraster azimene",
+      "id": "Micraster azimene",
+      "class": "node",
+      "bbox": [
+        164,
+        313,
+        271,
+        373
+      ]
+    },
+    {
+      "text": "aniseikonic",
+      "id": "aniseikonic",
+      "class": "node",
+      "bbox": [
+        5,
+        146,
+        112,
+        220
+      ]
+    },
+    {
+      "text": "prolocution envermeil",
+      "id": "prolocution envermeil",
+      "class": "node",
+      "bbox": [
+        136,
+        146,
+        299,
+        220
+      ]
+    },
+    {
+      "text": "dimethylamine",
+      "id": "dimethylamine",
+      "class": "node",
+      "bbox": [
+        322,
+        153,
+        419,
+        213
+      ]
+    },
+    {
+      "text": "drift",
+      "id": "drift",
+      "class": "node",
+      "bbox": [
+        335,
+        5,
+        407,
+        53
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Micraster azimene",
+      "head": "aniseikonic",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        89,
+        215,
+        191,
+        316
+      ]
+    },
+    {
+      "tail": "Micraster azimene",
+      "head": "prolocution envermeil",
+      "label": "0.54 t = 0.513",
+      "class": "unidirectional",
+      "bbox": [
+        211,
+        221,
+        223,
+        313
+      ]
+    },
+    {
+      "tail": "dimethylamine",
+      "head": "drift",
+      "label": "0.57*** y = 0.935",
+      "class": "unidirectional",
+      "bbox": [
+        365,
+        54,
+        377,
+        153
+      ]
+    },
+    {
+      "tail": "Micraster azimene",
+      "head": "dimethylamine",
+      "label": "0.58*** t = 0.991",
+      "class": "bidirectional",
+      "bbox": [
+        256,
+        211,
+        348,
+        308
+      ]
+    }
+  ]
+}

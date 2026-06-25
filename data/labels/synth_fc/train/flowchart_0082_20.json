@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "text": "protoparent",
+      "id": "protoparent",
+      "class": "ellipse"
+    },
+    {
+      "text": "dihydrocupreine",
+      "id": "dihydrocupreine",
+      "class": "hexagon"
+    },
+    {
+      "text": "porket",
+      "id": "porket",
+      "class": "parallelogram"
+    },
+    {
+      "text": "subcontinual sporophydium",
+      "id": "subcontinual sporophydium",
+      "class": "diamond"
+    },
+    {
+      "text": "comfortable",
+      "id": "comfortable",
+      "class": "hexagon"
+    },
+    {
+      "text": "pepo multilocular",
+      "id": "pepo multilocular",
+      "class": "parallelogram"
+    },
+    {
+      "text": "gastrojejunal worky daubreeite",
+      "id": "gastrojejunal worky daubreeite",
+      "class": "diamond"
+    },
+    {
+      "text": "tavolatite",
+      "id": "tavolatite",
+      "class": "diamond"
+    },
+    {
+      "text": "recipiend",
+      "id": "recipiend",
+      "class": "document"
+    },
+    {
+      "text": "Chiapanecan",
+      "id": "Chiapanecan",
+      "class": "diamond"
+    },
+    {
+      "text": "usuriously",
+      "id": "usuriously",
+      "class": "hexagon"
+    },
+    {
+      "text": "idiophanism abdication sagacia",
+      "id": "idiophanism abdication sagacia",
+      "class": "parallelogram"
+    },
+    {
+      "text": "atoner lactate",
+      "id": "atoner lactate",
+      "class": "diamond"
+    },
+    {
+      "text": "deadline",
+      "id": "deadline",
+      "class": "document"
+    },
+    {
+      "text": "tabard preprimer",
+      "id": "tabard preprimer",
+      "class": "hexagon"
+    },
+    {
+      "text": "Correa",
+      "id": "Correa",
+      "class": "box"
+    },
+    {
+      "text": "ackey",
+      "id": "ackey",
+      "class": "diamond"
+    },
+    {
+      "text": "overemphatically",
+      "id": "overemphatically",
+      "class": "document"
+    },
+    {
+      "text": "dextroversion",
+      "id": "dextroversion",
+      "class": "diamond"
+    },
+    {
+      "text": "Litopterna rubrisher",
+      "id": "Litopterna rubrisher",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "protoparent",
+      "head": "dihydrocupreine",
+      "label": null
+    },
+    {
+      "tail": "dihydrocupreine",
+      "head": "porket",
+      "label": null
+    },
+    {
+      "tail": "porket",
+      "head": "subcontinual sporophydium",
+      "label": null
+    },
+    {
+      "tail": "subcontinual sporophydium",
+      "head": "comfortable",
+      "label": "yes"
+    },
+    {
+      "tail": "subcontinual sporophydium",
+      "head": "protoparent",
+      "label": "yes"
+    },
+    {
+      "tail": "comfortable",
+      "head": "pepo multilocular",
+      "label": null
+    },
+    {
+      "tail": "pepo multilocular",
+      "head": "gastrojejunal worky daubreeite",
+      "label": null
+    },
+    {
+      "tail": "gastrojejunal worky daubreeite",
+      "head": "tavolatite",
+      "label": "YES"
+    },
+    {
+      "tail": "gastrojejunal worky daubreeite",
+      "head": "porket",
+      "label": "YES"
+    },
+    {
+      "tail": "tavolatite",
+      "head": "recipiend",
+      "label": "NO"
+    },
+    {
+      "tail": "tavolatite",
+      "head": "Chiapanecan",
+      "label": "NO"
+    },
+    {
+      "tail": "recipiend",
+      "head": "usuriously",
+      "label": null
+    },
+    {
+      "tail": "usuriously",
+      "head": "idiophanism abdication sagacia",
+      "label": null
+    },
+    {
+      "tail": "idiophanism abdication sagacia",
+      "head": "atoner lactate",
+      "label": null
+    },
+    {
+      "tail": "atoner lactate",
+      "head": "deadline",
+      "label": "no"
+    },
+    {
+      "tail": "atoner lactate",
+      "head": "tabard preprimer",
+      "label": "no"
+    },
+    {
+      "tail": "deadline",
+      "head": "Chiapanecan",
+      "label": null
+    },
+    {
+      "tail": "Chiapanecan",
+      "head": "Correa",
+      "label": "YES"
+    },
+    {
+      "tail": "Chiapanecan",
+      "head": "ackey",
+      "label": "YES"
+    },
+    {
+      "tail": "Correa",
+      "head": "tabard preprimer",
+      "label": null
+    },
+    {
+      "tail": "tabard preprimer",
+      "head": "overemphatically",
+      "label": null
+    },
+    {
+      "tail": "overemphatically",
+      "head": "dextroversion",
+      "label": null
+    },
+    {
+      "tail": "dextroversion",
+      "head": "ackey",
+      "label": "YES"
+    },
+    {
+      "tail": "dextroversion",
+      "head": "protoparent",
+      "label": "YES"
+    },
+    {
+      "tail": "ackey",
+      "head": "Litopterna rubrisher",
+      "label": "No"
+    },
+    {
+      "tail": "ackey",
+      "head": "recipiend",
+      "label": "No"
+    }
+  ]
+}

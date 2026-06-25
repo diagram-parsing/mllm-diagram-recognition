@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "text": "gorbal",
+      "id": "gorbal",
+      "class": "node",
+      "bbox": [
+        27,
+        170,
+        126,
+        218
+      ]
+    },
+    {
+      "text": "Batekes",
+      "id": "Batekes",
+      "class": "node",
+      "bbox": [
+        234,
+        229,
+        324,
+        271
+      ]
+    },
+    {
+      "text": "browden",
+      "id": "browden",
+      "class": "node",
+      "bbox": [
+        216,
+        157,
+        342,
+        205
+      ]
+    },
+    {
+      "text": "declarant invertible swelchie",
+      "id": "declarant invertible swelchie",
+      "class": "node",
+      "bbox": [
+        426,
+        119,
+        574,
+        170
+      ]
+    },
+    {
+      "text": "queenwood",
+      "id": "queenwood",
+      "class": "node",
+      "bbox": [
+        441,
+        194,
+        564,
+        242
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "gorbal",
+      "head": "Batekes",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        120,
+        206,
+        232,
+        241
+      ]
+    },
+    {
+      "tail": "browden",
+      "head": "declarant invertible swelchie",
+      "label": "-0.0546",
+      "class": "unidirectional",
+      "bbox": [
+        338,
+        153,
+        424,
+        171
+      ]
+    },
+    {
+      "tail": "browden",
+      "head": "queenwood",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        337,
+        190,
+        440,
+        211
+      ]
+    },
+    {
+      "tail": "gorbal",
+      "head": "browden",
+      "label": "0.01*** y = 0.454",
+      "class": "bidirectional",
+      "bbox": [
+        147,
+        179,
+        215,
+        193
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "parallelepipedic Erythraean",
+      "id": "parallelepipedic Erythraean",
+      "class": "oval"
+    },
+    {
+      "text": "untangible",
+      "id": "untangible",
+      "class": "hexagon"
+    },
+    {
+      "text": "handreader",
+      "id": "handreader",
+      "class": "box"
+    },
+    {
+      "text": "philosophy",
+      "id": "philosophy",
+      "class": "hexagon"
+    },
+    {
+      "text": "temperately inviscate forelay",
+      "id": "temperately inviscate forelay",
+      "class": "box"
+    },
+    {
+      "text": "tristylous toxophilous protasi",
+      "id": "tristylous toxophilous protasi",
+      "class": "diamond"
+    },
+    {
+      "text": "rancidify",
+      "id": "rancidify",
+      "class": "box"
+    },
+    {
+      "text": "plex",
+      "id": "plex",
+      "class": "document"
+    },
+    {
+      "text": "wounding",
+      "id": "wounding",
+      "class": "box"
+    },
+    {
+      "text": "thermomultiplier paralipsis",
+      "id": "thermomultiplier paralipsis",
+      "class": "box"
+    },
+    {
+      "text": "adermin snakebird",
+      "id": "adermin snakebird",
+      "class": "document"
+    },
+    {
+      "text": "mechanist",
+      "id": "mechanist",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelepipedic Erythraean",
+      "head": "untangible",
+      "label": null
+    },
+    {
+      "tail": "untangible",
+      "head": "handreader",
+      "label": null
+    },
+    {
+      "tail": "handreader",
+      "head": "philosophy",
+      "label": null
+    },
+    {
+      "tail": "philosophy",
+      "head": "temperately inviscate forelay",
+      "label": null
+    },
+    {
+      "tail": "temperately inviscate forelay",
+      "head": "tristylous toxophilous protasi",
+      "label": null
+    },
+    {
+      "tail": "tristylous toxophilous protasi",
+      "head": "rancidify",
+      "label": "Yes"
+    },
+    {
+      "tail": "tristylous toxophilous protasi",
+      "head": "temperately inviscate forelay",
+      "label": "Yes"
+    },
+    {
+      "tail": "rancidify",
+      "head": "plex",
+      "label": null
+    },
+    {
+      "tail": "plex",
+      "head": "wounding",
+      "label": null
+    },
+    {
+      "tail": "wounding",
+      "head": "thermomultiplier paralipsis",
+      "label": null
+    },
+    {
+      "tail": "thermomultiplier paralipsis",
+      "head": "adermin snakebird",
+      "label": null
+    },
+    {
+      "tail": "adermin snakebird",
+      "head": "mechanist",
+      "label": null
+    }
+  ]
+}

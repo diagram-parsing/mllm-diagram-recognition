@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "becombed squantum",
+      "id": "becombed squantum",
+      "class": "ellipse"
+    },
+    {
+      "text": "lingulated",
+      "id": "lingulated",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unscarified",
+      "id": "unscarified",
+      "class": "diamond"
+    },
+    {
+      "text": "patronly uncaptious",
+      "id": "patronly uncaptious",
+      "class": "document"
+    },
+    {
+      "text": "floorless",
+      "id": "floorless",
+      "class": "diamond"
+    },
+    {
+      "text": "cystidium",
+      "id": "cystidium",
+      "class": "document"
+    },
+    {
+      "text": "bistipuled intermeddlesomeness",
+      "id": "bistipuled intermeddlesomeness",
+      "class": "hexagon"
+    },
+    {
+      "text": "caudices",
+      "id": "caudices",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "becombed squantum",
+      "head": "lingulated",
+      "label": null
+    },
+    {
+      "tail": "lingulated",
+      "head": "unscarified",
+      "label": null
+    },
+    {
+      "tail": "unscarified",
+      "head": "patronly uncaptious",
+      "label": "No"
+    },
+    {
+      "tail": "unscarified",
+      "head": "floorless",
+      "label": "No"
+    },
+    {
+      "tail": "patronly uncaptious",
+      "head": "floorless",
+      "label": null
+    },
+    {
+      "tail": "floorless",
+      "head": "cystidium",
+      "label": "YES"
+    },
+    {
+      "tail": "floorless",
+      "head": "bistipuled intermeddlesomeness",
+      "label": "YES"
+    },
+    {
+      "tail": "cystidium",
+      "head": "bistipuled intermeddlesomeness",
+      "label": null
+    },
+    {
+      "tail": "bistipuled intermeddlesomeness",
+      "head": "caudices",
+      "label": null
+    }
+  ]
+}

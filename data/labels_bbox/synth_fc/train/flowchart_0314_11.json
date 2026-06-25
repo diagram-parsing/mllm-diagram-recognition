@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "text": "imam reword",
+      "id": "imam reword",
+      "class": "circle",
+      "bbox": [
+        36,
+        29,
+        110,
+        103
+      ]
+    },
+    {
+      "text": "pandanaceous",
+      "id": "pandanaceous",
+      "class": "hexagon",
+      "bbox": [
+        5,
+        136,
+        140,
+        184
+      ]
+    },
+    {
+      "text": "ecuelling",
+      "id": "ecuelling",
+      "class": "diamond",
+      "bbox": [
+        12,
+        231,
+        133,
+        279
+      ]
+    },
+    {
+      "text": "soterial",
+      "id": "soterial",
+      "class": "document",
+      "bbox": [
+        32,
+        320,
+        113,
+        374
+      ]
+    },
+    {
+      "text": "unplanished",
+      "id": "unplanished",
+      "class": "circle",
+      "bbox": [
+        415,
+        195,
+        487,
+        268
+      ]
+    },
+    {
+      "text": "toxicodermatitis luteinize",
+      "id": "toxicodermatitis luteinize",
+      "class": "hexagon",
+      "bbox": [
+        190,
+        36,
+        333,
+        96
+      ]
+    },
+    {
+      "text": "waggishness",
+      "id": "waggishness",
+      "class": "parallelogram",
+      "bbox": [
+        183,
+        136,
+        340,
+        184
+      ]
+    },
+    {
+      "text": "doctor",
+      "id": "doctor",
+      "class": "box",
+      "bbox": [
+        226,
+        231,
+        298,
+        279
+      ]
+    },
+    {
+      "text": "hypocrater uninfringeable Trac",
+      "id": "hypocrater uninfringeable Trac",
+      "class": "hexagon",
+      "bbox": [
+        184,
+        296,
+        340,
+        356
+      ]
+    },
+    {
+      "text": "petaloid",
+      "id": "petaloid",
+      "class": "diamond",
+      "bbox": [
+        405,
+        5,
+        497,
+        79
+      ]
+    },
+    {
+      "text": "bloodworthy",
+      "id": "bloodworthy",
+      "class": "diamond",
+      "bbox": [
+        374,
+        136,
+        523,
+        184
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "imam reword",
+      "head": "pandanaceous",
+      "label": null,
+      "bbox": [
+        56,
+        101,
+        65,
+        134
+      ]
+    },
+    {
+      "tail": "pandanaceous",
+      "head": "ecuelling",
+      "label": null,
+      "bbox": [
+        88,
+        185,
+        97,
+        237
+      ]
+    },
+    {
+      "tail": "ecuelling",
+      "head": "soterial",
+      "label": "No",
+      "bbox": [
+        68,
+        279,
+        77,
+        319
+      ]
+    },
+    {
+      "tail": "ecuelling",
+      "head": "unplanished",
+      "label": "No",
+      "bbox": [
+        52,
+        209,
+        417,
+        239
+      ]
+    },
+    {
+      "tail": "soterial",
+      "head": "toxicodermatitis luteinize",
+      "label": null,
+      "bbox": [
+        113,
+        62,
+        190,
+        339
+      ]
+    },
+    {
+      "tail": "toxicodermatitis luteinize",
+      "head": "waggishness",
+      "label": null,
+      "bbox": [
+        257,
+        96,
+        266,
+        135
+      ]
+    },
+    {
+      "tail": "waggishness",
+      "head": "doctor",
+      "label": null,
+      "bbox": [
+        257,
+        185,
+        266,
+        229
+      ]
+    },
+    {
+      "tail": "doctor",
+      "head": "hypocrater uninfringeable Trac",
+      "label": null,
+      "bbox": [
+        257,
+        279,
+        266,
+        294
+      ]
+    },
+    {
+      "tail": "hypocrater uninfringeable Trac",
+      "head": "petaloid",
+      "label": null,
+      "bbox": [
+        328,
+        46,
+        414,
+        316
+      ]
+    },
+    {
+      "tail": "petaloid",
+      "head": "bloodworthy",
+      "label": "no",
+      "bbox": [
+        446,
+        79,
+        456,
+        134
+      ]
+    },
+    {
+      "tail": "petaloid",
+      "head": "hypocrater uninfringeable Trac",
+      "label": "no",
+      "bbox": [
+        328,
+        66,
+        434,
+        341
+      ]
+    },
+    {
+      "tail": "bloodworthy",
+      "head": "unplanished",
+      "label": "YES",
+      "bbox": [
+        446,
+        180,
+        456,
+        193
+      ]
+    },
+    {
+      "tail": "bloodworthy",
+      "head": "imam reword",
+      "label": "YES",
+      "bbox": [
+        80,
+        102,
+        389,
+        155
+      ]
+    }
+  ]
+}

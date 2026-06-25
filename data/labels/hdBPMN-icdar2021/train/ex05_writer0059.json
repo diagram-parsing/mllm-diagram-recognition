@@ -1,0 +1,389 @@
+{
+  "nodes": [
+    {
+      "text": "check documents upon completness",
+      "id": "check documents upon completness",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "Reject claim",
+      "id": "Reject claim",
+      "class": "task"
+    },
+    {
+      "text": "inform customer",
+      "id": "inform customer",
+      "class": "task"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "class": "event"
+    },
+    {
+      "text": "check insurance",
+      "id": "check insurance",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "perform an assessment",
+      "id": "perform an assessment",
+      "class": "task"
+    },
+    {
+      "text": "Reject claim",
+      "id": "Reject claim",
+      "class": "task"
+    },
+    {
+      "text": "send letter to customer",
+      "id": "send letter to customer",
+      "class": "task"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "class": "event"
+    },
+    {
+      "text": "call a garage",
+      "id": "call a garage",
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "class": "task"
+    },
+    {
+      "text": "claim [checked]",
+      "id": "claim [checked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "DB",
+      "id": "DB",
+      "class": "dataStore"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [checked]",
+      "id": "claim [checked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "insurance [checked]",
+      "id": "insurance [checked]",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claim [rejected]",
+      "id": "claim [rejected]",
+      "class": "dataObject"
+    },
+    {
+      "text": "letter",
+      "id": "letter",
+      "class": "dataObject"
+    },
+    {
+      "text": "DB",
+      "id": "DB",
+      "class": "dataStore"
+    },
+    {
+      "text": "claim submitted",
+      "id": "claim submitted",
+      "class": "event"
+    },
+    {
+      "text": "authorise the\nrepairs",
+      "id": "authorise the\nrepairs",
+      "class": "task"
+    },
+    {
+      "text": "repair\nauthorized",
+      "id": "repair\nauthorized",
+      "class": "event"
+    },
+    {
+      "text": "phone\ncall\nreceived",
+      "id": "phone\ncall\nreceived",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "perform an assessment",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "send letter to customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "call a garage",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "call a garage",
+      "class": "sequenceFlow",
+      "label": "positive"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Reject claim",
+      "class": "sequenceFlow",
+      "label": "not insured"
+    },
+    {
+      "tail": "send letter to customer",
+      "head": "claim rejected",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Reject claim",
+      "head": "send letter to customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "Reject claim",
+      "class": "sequenceFlow",
+      "label": "not positive"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "perform an assessment",
+      "class": "sequenceFlow",
+      "label": "insured"
+    },
+    {
+      "tail": "check insurance",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "check insurance",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "inform customer",
+      "head": "claim rejected",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Reject claim",
+      "head": "inform customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Reject claim",
+      "class": "sequenceFlow",
+      "label": "document incomplete"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": "documents complete"
+    },
+    {
+      "tail": "check documents upon completness",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim submitted",
+      "head": "check documents upon completness",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "authorise the\nrepairs",
+      "head": "repair\nauthorized",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "phone\ncall\nreceived",
+      "head": "authorise the\nrepairs",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "check documents upon completness",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "DB",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "Reject claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "DB",
+      "head": "check insurance",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "check insurance",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check insurance",
+      "head": "insurance [checked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Reject claim",
+      "head": "claim [rejected]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "send letter to customer",
+      "head": "letter",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "claim submitted",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "inform customer",
+      "head": "Customer",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "call a garage",
+      "head": "phone\ncall\nreceived",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Car insurer",
+      "nodes": [
+        "Handling dep.",
+        "notification dep."
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Handling dep.",
+      "nodes": [
+        "check insurance",
+        "exclusiveGateway_2",
+        "perform an assessment",
+        "Reject claim",
+        "send letter to customer",
+        "claim rejected",
+        "call a garage",
+        "schedule payment",
+        "DB",
+        "insurance [checked]",
+        "exclusiveGateway_3",
+        "claim [rejected]",
+        "letter"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification dep.",
+      "nodes": [
+        "check documents upon completness",
+        "exclusiveGateway_1",
+        "register claim",
+        "Reject claim",
+        "inform customer",
+        "claim rejected",
+        "claim [checked]",
+        "claim",
+        "claim",
+        "claim [checked]",
+        "DB",
+        "claim submitted"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Garage",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

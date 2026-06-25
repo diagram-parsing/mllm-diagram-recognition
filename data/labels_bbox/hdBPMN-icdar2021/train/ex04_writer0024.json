@@ -1,0 +1,547 @@
+{
+  "nodes": [
+    {
+      "text": "request received",
+      "id": "request received",
+      "bbox": [
+        341,
+        293,
+        382,
+        328
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "retrieve file",
+      "id": "retrieve file",
+      "bbox": [
+        445,
+        293,
+        538,
+        355
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        569,
+        306,
+        592,
+        330
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        769,
+        320,
+        792,
+        341
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        990,
+        366,
+        1017,
+        392
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        819,
+        320,
+        841,
+        344
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check if acceptable",
+      "id": "check if acceptable",
+      "bbox": [
+        639,
+        247,
+        747,
+        305
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check if compliant",
+      "id": "check if compliant",
+      "bbox": [
+        638,
+        330,
+        747,
+        392
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check for payment",
+      "id": "check for payment",
+      "bbox": [
+        864,
+        309,
+        964,
+        366
+      ],
+      "class": "task"
+    },
+    {
+      "text": "create fee notice",
+      "id": "create fee notice",
+      "bbox": [
+        1042,
+        281,
+        1143,
+        340
+      ],
+      "class": "task"
+    },
+    {
+      "text": "promises DB",
+      "id": "promises DB",
+      "bbox": [
+        434,
+        576,
+        484,
+        615
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "allocate hearing date",
+      "id": "allocate hearing date",
+      "bbox": [
+        844,
+        402,
+        954,
+        470
+      ],
+      "class": "task"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "bbox": [
+        749,
+        425,
+        792,
+        462
+      ],
+      "class": "event"
+    },
+    {
+      "text": "request",
+      "id": "request",
+      "bbox": [
+        354,
+        406,
+        375,
+        433
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "payment accepted",
+      "id": "payment accepted",
+      "bbox": [
+        958,
+        267,
+        972,
+        285
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "payment receives",
+      "id": "payment receives",
+      "bbox": [
+        877,
+        256,
+        905,
+        284
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "payment\nreceipt",
+      "id": "payment\nreceipt",
+      "bbox": [
+        657,
+        186,
+        678,
+        210
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "bbox": [
+        1002,
+        193,
+        1027,
+        221
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "request",
+      "id": "request",
+      "bbox": [
+        605,
+        304,
+        623,
+        319
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "request received",
+      "head": "retrieve file",
+      "class": "sequenceFlow",
+      "bbox": [
+        382,
+        300,
+        446,
+        325
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve file",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        538,
+        307,
+        570,
+        332
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if acceptable",
+      "class": "sequenceFlow",
+      "bbox": [
+        581,
+        270,
+        640,
+        307
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if acceptable",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        747,
+        276,
+        780,
+        322
+      ],
+      "label": "yes"
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if compliant",
+      "class": "sequenceFlow",
+      "bbox": [
+        579,
+        329,
+        639,
+        362
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if compliant",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        747,
+        340,
+        780,
+        372
+      ],
+      "label": "yes"
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        790,
+        321,
+        822,
+        346
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "check for payment",
+      "class": "sequenceFlow",
+      "bbox": [
+        840,
+        325,
+        864,
+        349
+      ],
+      "label": null
+    },
+    {
+      "tail": "check for payment",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        964,
+        357,
+        995,
+        382
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create fee notice",
+      "class": "sequenceFlow",
+      "bbox": [
+        1008,
+        320,
+        1043,
+        371
+      ],
+      "label": "not paid"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "allocate hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        954,
+        386,
+        999,
+        427
+      ],
+      "label": "paid"
+    },
+    {
+      "tail": "allocate hearing date",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        792,
+        432,
+        845,
+        457
+      ],
+      "label": null
+    },
+    {
+      "tail": "payment receives",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        833,
+        270,
+        878,
+        324
+      ],
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "retrieve file",
+      "class": "dataAssociation",
+      "bbox": [
+        375,
+        333,
+        446,
+        409
+      ],
+      "label": null
+    },
+    {
+      "tail": "promises DB",
+      "head": "retrieve file",
+      "class": "dataAssociation",
+      "bbox": [
+        447,
+        355,
+        472,
+        577
+      ],
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "check if acceptable",
+      "class": "dataAssociation",
+      "bbox": [
+        617,
+        283,
+        642,
+        308
+      ],
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "check if compliant",
+      "class": "dataAssociation",
+      "bbox": [
+        623,
+        309,
+        657,
+        334
+      ],
+      "label": null
+    },
+    {
+      "tail": "payment accepted",
+      "head": "check for payment",
+      "class": "dataAssociation",
+      "bbox": [
+        946,
+        285,
+        971,
+        310
+      ],
+      "label": null
+    },
+    {
+      "tail": "payment\nreceipt",
+      "head": "check for payment",
+      "class": "dataAssociation",
+      "bbox": [
+        678,
+        199,
+        871,
+        310
+      ],
+      "label": null
+    },
+    {
+      "tail": "Owner",
+      "head": "request received",
+      "class": "messageFlow",
+      "bbox": [
+        354,
+        139,
+        378,
+        291
+      ],
+      "label": null
+    },
+    {
+      "tail": "Owner",
+      "head": "payment receives",
+      "class": "messageFlow",
+      "bbox": [
+        879,
+        139,
+        904,
+        257
+      ],
+      "label": null
+    },
+    {
+      "tail": "create fee notice",
+      "head": "Owner",
+      "class": "messageFlow",
+      "bbox": [
+        1000,
+        139,
+        1043,
+        294
+      ],
+      "label": "fee notice"
+    }
+  ],
+  "groups": [
+    {
+      "name": "tribunal",
+      "nodes": [
+        "cashier",
+        "Beta Basis"
+      ],
+      "bbox": [
+        251,
+        252,
+        1160,
+        688
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "cashier",
+      "nodes": [
+        "request received",
+        "retrieve file",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "exclusiveGateway_1",
+        "exclusiveGateway_2",
+        "check if acceptable",
+        "check if compliant",
+        "check for payment",
+        "create fee notice",
+        "allocate hearing date",
+        "process completed",
+        "request",
+        "payment accepted",
+        "payment receives",
+        "request"
+      ],
+      "bbox": [
+        275,
+        252,
+        1160,
+        557
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Beta Basis",
+      "nodes": [
+        "promises DB"
+      ],
+      "bbox": [
+        275,
+        557,
+        1160,
+        688
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Owner",
+      "nodes": [],
+      "bbox": [
+        252,
+        99,
+        1065,
+        139
+      ],
+      "class": "pool"
+    }
+  ]
+}

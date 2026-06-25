@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "text": "textlet",
+      "id": "textlet",
+      "class": "circle",
+      "bbox": [
+        54,
+        5,
+        130,
+        81
+      ]
+    },
+    {
+      "text": "complimentary",
+      "id": "complimentary",
+      "class": "diamond",
+      "bbox": [
+        5,
+        108,
+        178,
+        156
+      ]
+    },
+    {
+      "text": "finnip",
+      "id": "finnip",
+      "class": "document",
+      "bbox": [
+        35,
+        167,
+        148,
+        231
+      ]
+    },
+    {
+      "text": "pseudocollegiate overlier",
+      "id": "pseudocollegiate overlier",
+      "class": "diamond",
+      "bbox": [
+        186,
+        273,
+        353,
+        346
+      ]
+    },
+    {
+      "text": "latration vasodilator merceriz",
+      "id": "latration vasodilator merceriz",
+      "class": "document",
+      "bbox": [
+        35,
+        256,
+        148,
+        320
+      ]
+    },
+    {
+      "text": "Vepsish knosp feudally",
+      "id": "Vepsish knosp feudally",
+      "class": "diamond",
+      "bbox": [
+        12,
+        362,
+        171,
+        435
+      ]
+    },
+    {
+      "text": "suberinization",
+      "id": "suberinization",
+      "class": "hexagon",
+      "bbox": [
+        221,
+        102,
+        318,
+        162
+      ]
+    },
+    {
+      "text": "hypodermically mycophagist",
+      "id": "hypodermically mycophagist",
+      "class": "diamond",
+      "bbox": [
+        180,
+        184,
+        354,
+        258
+      ]
+    },
+    {
+      "text": "wiglike",
+      "id": "wiglike",
+      "class": "box",
+      "bbox": [
+        234,
+        375,
+        306,
+        423
+      ]
+    },
+    {
+      "text": "totalitarianism",
+      "id": "totalitarianism",
+      "class": "oval",
+      "bbox": [
+        210,
+        464,
+        329,
+        506
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "textlet",
+      "head": "complimentary",
+      "label": null,
+      "bbox": [
+        87,
+        81,
+        96,
+        106
+      ]
+    },
+    {
+      "tail": "complimentary",
+      "head": "finnip",
+      "label": "no",
+      "bbox": [
+        87,
+        152,
+        96,
+        166
+      ]
+    },
+    {
+      "tail": "complimentary",
+      "head": "pseudocollegiate overlier",
+      "label": "no",
+      "bbox": [
+        164,
+        137,
+        213,
+        302
+      ]
+    },
+    {
+      "tail": "finnip",
+      "head": "latration vasodilator merceriz",
+      "label": null,
+      "bbox": [
+        87,
+        230,
+        96,
+        255
+      ]
+    },
+    {
+      "tail": "latration vasodilator merceriz",
+      "head": "Vepsish knosp feudally",
+      "label": null,
+      "bbox": [
+        87,
+        319,
+        96,
+        360
+      ]
+    },
+    {
+      "tail": "Vepsish knosp feudally",
+      "head": "suberinization",
+      "label": "NO",
+      "bbox": [
+        156,
+        164,
+        250,
+        391
+      ]
+    },
+    {
+      "tail": "Vepsish knosp feudally",
+      "head": "pseudocollegiate overlier",
+      "label": "NO",
+      "bbox": [
+        108,
+        317,
+        203,
+        369
+      ]
+    },
+    {
+      "tail": "suberinization",
+      "head": "hypodermically mycophagist",
+      "label": null,
+      "bbox": [
+        265,
+        163,
+        274,
+        182
+      ]
+    },
+    {
+      "tail": "hypodermically mycophagist",
+      "head": "pseudocollegiate overlier",
+      "label": "YES",
+      "bbox": [
+        237,
+        247,
+        246,
+        284
+      ]
+    },
+    {
+      "tail": "hypodermically mycophagist",
+      "head": "suberinization",
+      "label": "YES",
+      "bbox": [
+        289,
+        163,
+        298,
+        194
+      ]
+    },
+    {
+      "tail": "pseudocollegiate overlier",
+      "head": "wiglike",
+      "label": "Yes",
+      "bbox": [
+        265,
+        347,
+        274,
+        373
+      ]
+    },
+    {
+      "tail": "pseudocollegiate overlier",
+      "head": "hypodermically mycophagist",
+      "label": "Yes",
+      "bbox": [
+        293,
+        248,
+        302,
+        285
+      ]
+    },
+    {
+      "tail": "wiglike",
+      "head": "totalitarianism",
+      "label": null,
+      "bbox": [
+        265,
+        423,
+        274,
+        462
+      ]
+    }
+  ]
+}

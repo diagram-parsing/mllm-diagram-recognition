@@ -1,0 +1,309 @@
+{
+  "nodes": [
+    {
+      "text": "insurance claim recived",
+      "id": "insurance claim recived",
+      "bbox": [
+        957,
+        1095,
+        1354,
+        1396
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Insurance claim",
+      "id": "Insurance claim",
+      "bbox": [
+        550,
+        1565,
+        1053,
+        2071
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "register insurance claim",
+      "id": "register insurance claim",
+      "bbox": [
+        1495,
+        1649,
+        2049,
+        1985
+      ],
+      "class": "task"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "bbox": [
+        2449,
+        1626,
+        2881,
+        1902
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "bbox": [
+        3464,
+        1626,
+        4140,
+        1953
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "bbox": [
+        2113,
+        2523,
+        2987,
+        2795
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1809,
+        2552,
+        2010,
+        2801
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        3035,
+        1610,
+        3285,
+        1905
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "bbox": [
+        3656,
+        2254,
+        4271,
+        2821
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "register insurance claim",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        2049,
+        1721,
+        2452,
+        1810
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2881,
+        1717,
+        3042,
+        1807
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        3285,
+        1714,
+        3467,
+        1804
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        2475,
+        1953,
+        3823,
+        2526
+      ],
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2010,
+        2636,
+        2116,
+        2726
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1911,
+        1905,
+        3163,
+        2558
+      ],
+      "label": "marked \"Not OK\""
+    },
+    {
+      "tail": "insurance claim recived",
+      "head": "register insurance claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1191,
+        1440,
+        1687,
+        1652
+      ],
+      "label": null
+    },
+    {
+      "tail": "insurance claim recived",
+      "head": "Insurance claim",
+      "class": "dataAssociation",
+      "bbox": [
+        701,
+        1261,
+        960,
+        1569
+      ],
+      "label": null
+    },
+    {
+      "tail": "Insurance claim",
+      "head": "register insurance claim",
+      "class": "dataAssociation",
+      "bbox": [
+        1053,
+        1759,
+        1498,
+        1849
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        3962,
+        1953,
+        4052,
+        2254
+      ],
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        2987,
+        2576,
+        3660,
+        2665
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "insurance claim recived",
+      "class": "messageFlow",
+      "bbox": [
+        1128,
+        496,
+        1218,
+        1050
+      ],
+      "label": "Insurance claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "bbox": [
+        59,
+        1028,
+        4483,
+        3478
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "insurance claim recived",
+        "Insurance claim",
+        "register insurance claim",
+        "examine claim",
+        "write settlement recommendation",
+        "exclusiveGateway_2"
+      ],
+      "bbox": [
+        239,
+        1028,
+        4483,
+        2163
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check recommendation",
+        "exclusiveGateway_1",
+        "settlement recommendation"
+      ],
+      "bbox": [
+        239,
+        2163,
+        4483,
+        3478
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        418,
+        262,
+        3419,
+        496
+      ],
+      "class": "pool"
+    }
+  ]
+}

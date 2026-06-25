@@ -1,0 +1,184 @@
+{
+  "nodes": [
+    {
+      "text": "Report created",
+      "id": "Report created",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "Received expertise",
+      "id": "Received expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "File results",
+      "id": "File results",
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": "Started case",
+      "id": "Started case",
+      "class": "event"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "task"
+    },
+    {
+      "text": "Sent cheque",
+      "id": "Sent cheque",
+      "class": "messageEvent"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "class": "task"
+    },
+    {
+      "text": "Received expertise",
+      "id": "Received expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Ask to review",
+      "id": "Ask to review",
+      "class": "task"
+    },
+    {
+      "text": "Requested to role doctor (?)",
+      "id": "Requested to role doctor (?)",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "create report",
+      "head": "Report created",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "File results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Received expertise",
+      "head": "File results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "Received expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Started case",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "Sent cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Requested to role doctor (?)",
+      "head": "Ask to review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask to review",
+      "head": "Received expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Received expertise",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask to review",
+      "head": "External Expert",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "External Expert",
+      "head": "Received expertise",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Sent cheque",
+      "head": "External Expert",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "Received expertise",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "Patient",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Patient",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "QA specialist",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "External Expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

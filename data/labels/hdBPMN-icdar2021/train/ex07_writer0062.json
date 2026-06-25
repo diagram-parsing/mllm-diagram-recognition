@@ -1,0 +1,207 @@
+{
+  "nodes": [
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "class": "event"
+    },
+    {
+      "text": "file results of interviews as well as expertise",
+      "id": "file results of interviews as well as expertise",
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "task"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "forward expertise to QA specialist",
+      "id": "forward expertise to QA specialist",
+      "class": "task"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "class": "task"
+    },
+    {
+      "text": "information received",
+      "id": "information received",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "pay expenses of expert by filling cheque",
+      "id": "pay expenses of expert by filling cheque",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "ask external expert to review work",
+      "id": "ask external expert to review work",
+      "class": "task"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "certain amount of time",
+      "id": "certain amount of time",
+      "class": "timerEvent"
+    },
+    {
+      "text": "case closed",
+      "id": "case closed",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "new case started",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results of interviews as well as expertise",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "file results of interviews as well as expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask external expert to review work",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send cheque",
+      "head": "case closed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "pay expenses of expert by filling cheque",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise to QA specialist",
+      "head": "pay expenses of expert by filling cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "forward expertise to QA specialist",
+      "class": "sequenceFlow",
+      "label": "expertise received"
+    },
+    {
+      "tail": "information received",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "certain amount of time",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "certain amount of time",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review work",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "information received",
+      "head": "ask external expert to review work",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review work",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": "review request"
+    },
+    {
+      "tail": "external expert",
+      "head": "expertise received",
+      "class": "messageFlow",
+      "label": "expertise"
+    },
+    {
+      "tail": "send cheque",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": "cheque"
+    },
+    {
+      "tail": "forward expertise to QA specialist",
+      "head": "file results of interviews as well as expertise",
+      "class": "messageFlow",
+      "label": "expertise"
+    },
+    {
+      "tail": "interview patients",
+      "head": "information received",
+      "class": "messageFlow",
+      "label": "information about new case"
+    }
+  ],
+  "groups": [
+    {
+      "name": "QA specialist",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "managing director of hospital",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

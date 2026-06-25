@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "text": "Castilla disedify",
+      "id": "Castilla disedify",
+      "class": "ellipse"
+    },
+    {
+      "text": "memorialize",
+      "id": "memorialize",
+      "class": "diamond"
+    },
+    {
+      "text": "intracerebellar overcard unrev",
+      "id": "intracerebellar overcard unrev",
+      "class": "box"
+    },
+    {
+      "text": "succulently alismoid",
+      "id": "succulently alismoid",
+      "class": "box"
+    },
+    {
+      "text": "auriculariae",
+      "id": "auriculariae",
+      "class": "document"
+    },
+    {
+      "text": "untenantableness",
+      "id": "untenantableness",
+      "class": "diamond"
+    },
+    {
+      "text": "hydromyoma",
+      "id": "hydromyoma",
+      "class": "document"
+    },
+    {
+      "text": "ribonucleic",
+      "id": "ribonucleic",
+      "class": "diamond"
+    },
+    {
+      "text": "uncurrent",
+      "id": "uncurrent",
+      "class": "diamond"
+    },
+    {
+      "text": "Athericera riceland",
+      "id": "Athericera riceland",
+      "class": "box"
+    },
+    {
+      "text": "scudder",
+      "id": "scudder",
+      "class": "hexagon"
+    },
+    {
+      "text": "pretardiness germicidal",
+      "id": "pretardiness germicidal",
+      "class": "hexagon"
+    },
+    {
+      "text": "unintermitted chidingness",
+      "id": "unintermitted chidingness",
+      "class": "document"
+    },
+    {
+      "text": "dasnt",
+      "id": "dasnt",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Castilla disedify",
+      "head": "memorialize",
+      "label": null
+    },
+    {
+      "tail": "memorialize",
+      "head": "intracerebellar overcard unrev",
+      "label": "YES"
+    },
+    {
+      "tail": "memorialize",
+      "head": "succulently alismoid",
+      "label": "YES"
+    },
+    {
+      "tail": "intracerebellar overcard unrev",
+      "head": "succulently alismoid",
+      "label": null
+    },
+    {
+      "tail": "succulently alismoid",
+      "head": "auriculariae",
+      "label": null
+    },
+    {
+      "tail": "auriculariae",
+      "head": "untenantableness",
+      "label": null
+    },
+    {
+      "tail": "untenantableness",
+      "head": "hydromyoma",
+      "label": "NO"
+    },
+    {
+      "tail": "untenantableness",
+      "head": "Castilla disedify",
+      "label": "NO"
+    },
+    {
+      "tail": "hydromyoma",
+      "head": "ribonucleic",
+      "label": null
+    },
+    {
+      "tail": "ribonucleic",
+      "head": "uncurrent",
+      "label": "NO"
+    },
+    {
+      "tail": "ribonucleic",
+      "head": "Athericera riceland",
+      "label": "NO"
+    },
+    {
+      "tail": "uncurrent",
+      "head": "scudder",
+      "label": "no"
+    },
+    {
+      "tail": "uncurrent",
+      "head": "auriculariae",
+      "label": "no"
+    },
+    {
+      "tail": "scudder",
+      "head": "pretardiness germicidal",
+      "label": null
+    },
+    {
+      "tail": "pretardiness germicidal",
+      "head": "Athericera riceland",
+      "label": null
+    },
+    {
+      "tail": "Athericera riceland",
+      "head": "unintermitted chidingness",
+      "label": null
+    },
+    {
+      "tail": "unintermitted chidingness",
+      "head": "dasnt",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "ganglionitis",
+      "id": "ganglionitis",
+      "class": "node",
+      "bbox": [
+        104,
+        27,
+        208,
+        75
+      ]
+    },
+    {
+      "text": "micromazia",
+      "id": "micromazia",
+      "class": "node",
+      "bbox": [
+        27,
+        159,
+        104,
+        210
+      ]
+    },
+    {
+      "text": "blastospheric",
+      "id": "blastospheric",
+      "class": "node",
+      "bbox": [
+        128,
+        159,
+        208,
+        210
+      ]
+    },
+    {
+      "text": "carpal",
+      "id": "carpal",
+      "class": "node",
+      "bbox": [
+        240,
+        161,
+        331,
+        209
+      ]
+    },
+    {
+      "text": "foretoken lithodomous",
+      "id": "foretoken lithodomous",
+      "class": "node",
+      "bbox": [
+        140,
+        295,
+        260,
+        340
+      ]
+    },
+    {
+      "text": "proromance semipapist twitcher",
+      "id": "proromance semipapist twitcher",
+      "class": "node",
+      "bbox": [
+        284,
+        295,
+        452,
+        340
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "ganglionitis",
+      "head": "micromazia",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        82,
+        75,
+        140,
+        159
+      ]
+    },
+    {
+      "tail": "ganglionitis",
+      "head": "blastospheric",
+      "label": "-1",
+      "class": "unidirectional",
+      "bbox": [
+        158,
+        75,
+        171,
+        159
+      ]
+    },
+    {
+      "tail": "carpal",
+      "head": "foretoken lithodomous",
+      "label": "0.56 y = 0.951",
+      "class": "unidirectional",
+      "bbox": [
+        216,
+        208,
+        271,
+        294
+      ]
+    },
+    {
+      "tail": "carpal",
+      "head": "proromance semipapist twitcher",
+      "label": "0.06 x = 0.396",
+      "class": "unidirectional",
+      "bbox": [
+        299,
+        208,
+        355,
+        294
+      ]
+    },
+    {
+      "tail": "ganglionitis",
+      "head": "carpal",
+      "label": "0.66** y = 0.849",
+      "class": "bidirectional",
+      "bbox": [
+        185,
+        82,
+        265,
+        163
+      ]
+    }
+  ]
+}

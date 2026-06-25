@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "zip phocenic hexaped",
+      "id": "zip phocenic hexaped",
+      "class": "node",
+      "bbox": [
+        231,
+        51,
+        335,
+        130
+      ]
+    },
+    {
+      "text": "modalistic",
+      "id": "modalistic",
+      "class": "node",
+      "bbox": [
+        452,
+        5,
+        534,
+        56
+      ]
+    },
+    {
+      "text": "workbag",
+      "id": "workbag",
+      "class": "node",
+      "bbox": [
+        448,
+        80,
+        537,
+        128
+      ]
+    },
+    {
+      "text": "reptiliform",
+      "id": "reptiliform",
+      "class": "node",
+      "bbox": [
+        240,
+        164,
+        326,
+        228
+      ]
+    },
+    {
+      "text": "superfinish",
+      "id": "superfinish",
+      "class": "node",
+      "bbox": [
+        439,
+        181,
+        547,
+        229
+      ]
+    },
+    {
+      "text": "stiletto eisteddfodic",
+      "id": "stiletto eisteddfodic",
+      "class": "node",
+      "bbox": [
+        27,
+        82,
+        128,
+        131
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "zip phocenic hexaped",
+      "head": "modalistic",
+      "label": "-0.4599",
+      "class": "unidirectional",
+      "bbox": [
+        329,
+        38,
+        448,
+        72
+      ]
+    },
+    {
+      "tail": "zip phocenic hexaped",
+      "head": "workbag",
+      "label": "0.93*** t = 0.838",
+      "class": "unidirectional",
+      "bbox": [
+        334,
+        98,
+        444,
+        109
+      ]
+    },
+    {
+      "tail": "reptiliform",
+      "head": "superfinish",
+      "label": "-0.97 a = 0.929",
+      "class": "unidirectional",
+      "bbox": [
+        327,
+        196,
+        434,
+        208
+      ]
+    },
+    {
+      "tail": "stiletto eisteddfodic",
+      "head": "zip phocenic hexaped",
+      "label": "0.231",
+      "class": "bidirectional",
+      "bbox": [
+        148,
+        90,
+        227,
+        102
+      ]
+    },
+    {
+      "tail": "stiletto eisteddfodic",
+      "head": "reptiliform",
+      "label": "0.97 h = 0.523",
+      "class": "bidirectional",
+      "bbox": [
+        128,
+        136,
+        241,
+        181
+      ]
+    }
+  ]
+}

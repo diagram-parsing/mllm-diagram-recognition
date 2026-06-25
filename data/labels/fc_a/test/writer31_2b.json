@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "connection_1",
+      "bbox": [
+        4,
+        42,
+        67,
+        52
+      ],
+      "class": "connection"
+    },
+    {
+      "text": "Read n",
+      "id": "Read n",
+      "bbox": [
+        118,
+        25,
+        295,
+        87
+      ],
+      "class": "data"
+    },
+    {
+      "text": "n=n*n",
+      "id": "n=n*n",
+      "bbox": [
+        470,
+        25,
+        324,
+        78
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Print n",
+      "id": "Print n",
+      "bbox": [
+        868,
+        5,
+        298,
+        93
+      ],
+      "class": "data"
+    },
+    {
+      "text": null,
+      "id": "connection_2",
+      "bbox": [
+        1244,
+        18,
+        86,
+        70
+      ],
+      "class": "connection"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "connection_1",
+      "head": "Read n",
+      "bbox": [
+        72,
+        57,
+        82,
+        31
+      ],
+      "kps": [
+        74.0,
+        68.0,
+        2.0,
+        147.0,
+        75.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Read n",
+      "head": "n=n*n",
+      "bbox": [
+        370,
+        63,
+        104,
+        26
+      ],
+      "kps": [
+        372.0,
+        75.0,
+        2.0,
+        466.0,
+        79.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "n=n*n",
+      "head": "Print n",
+      "bbox": [
+        798,
+        60,
+        83,
+        24
+      ],
+      "kps": [
+        800.0,
+        72.0,
+        2.0,
+        875.0,
+        69.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Print n",
+      "head": "connection_2",
+      "bbox": [
+        1129,
+        45,
+        107,
+        23
+      ],
+      "kps": [
+        1131.0,
+        57.0,
+        2.0,
+        1228.0,
+        60.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

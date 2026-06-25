@@ -1,0 +1,381 @@
+{
+  "nodes": [
+    {
+      "text": "Start new case",
+      "id": "Start new case",
+      "bbox": [
+        363,
+        1584,
+        493,
+        1704
+      ],
+      "class": "event"
+    },
+    {
+      "text": "case completed",
+      "id": "case completed",
+      "bbox": [
+        2424,
+        1817,
+        2602,
+        1970
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        2387,
+        1433,
+        2679,
+        1668
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1247,
+        1522,
+        1350,
+        1633
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "files result",
+      "id": "files result",
+      "bbox": [
+        1927,
+        1410,
+        2209,
+        1668
+      ],
+      "class": "task"
+    },
+    {
+      "text": "ask for review",
+      "id": "ask for review",
+      "bbox": [
+        493,
+        681,
+        799,
+        987
+      ],
+      "class": "task"
+    },
+    {
+      "text": "pays expenses",
+      "id": "pays expenses",
+      "bbox": [
+        1912,
+        704,
+        2210,
+        925
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "bbox": [
+        1532,
+        1458,
+        1714,
+        1664
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        681,
+        1458,
+        1088,
+        1730
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "bbox": [
+        1016,
+        735,
+        1175,
+        910
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "bbox": [
+        2463,
+        728,
+        2655,
+        911
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "bbox": [
+        1534,
+        745,
+        1741,
+        904
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "forward expertise",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1592,
+        927,
+        1660,
+        1472
+      ],
+      "label": null
+    },
+    {
+      "tail": "pays expenses",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        2210,
+        789,
+        2466,
+        857
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "pays expenses",
+      "class": "sequenceFlow",
+      "bbox": [
+        1741,
+        791,
+        1914,
+        859
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1175,
+        791,
+        1536,
+        859
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask for review",
+      "class": "sequenceFlow",
+      "bbox": [
+        611,
+        987,
+        1295,
+        1530
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask for review",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        799,
+        801,
+        1018,
+        869
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "case completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        2500,
+        1668,
+        2569,
+        1809
+      ],
+      "label": null
+    },
+    {
+      "tail": "files result",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        2210,
+        1517,
+        2389,
+        1585
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "files result",
+      "class": "sequenceFlow",
+      "bbox": [
+        1712,
+        1551,
+        1929,
+        1619
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1346,
+        1540,
+        1534,
+        1608
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1088,
+        1540,
+        1253,
+        1608
+      ],
+      "label": null
+    },
+    {
+      "tail": "Start new case",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        493,
+        1609,
+        683,
+        1677
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask for review",
+      "head": "Expert",
+      "class": "messageFlow",
+      "bbox": [
+        613,
+        352,
+        681,
+        683
+      ],
+      "label": "review request"
+    },
+    {
+      "tail": "send cheque",
+      "head": "Expert",
+      "class": "messageFlow",
+      "bbox": [
+        2526,
+        352,
+        2594,
+        725
+      ],
+      "label": "cheque"
+    },
+    {
+      "tail": "Expert",
+      "head": "receive expertise",
+      "class": "messageFlow",
+      "bbox": [
+        1061,
+        351,
+        1129,
+        745
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "QA - Specialist",
+        "Director"
+      ],
+      "bbox": [
+        47,
+        517,
+        3008,
+        2044
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA - Specialist",
+      "nodes": [
+        "Start new case",
+        "case completed",
+        "create report",
+        "parallelGateway_1",
+        "files result",
+        "receive expertise",
+        "interview patients"
+      ],
+      "bbox": [
+        117,
+        1280,
+        3008,
+        2044
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Director",
+      "nodes": [
+        "ask for review",
+        "pays expenses",
+        "receive expertise",
+        "send cheque",
+        "forward expertise"
+      ],
+      "bbox": [
+        117,
+        517,
+        3008,
+        1280
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "bbox": [
+        47,
+        211,
+        3008,
+        352
+      ],
+      "class": "pool"
+    }
+  ]
+}

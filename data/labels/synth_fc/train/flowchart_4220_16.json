@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "text": "roleo",
+      "id": "roleo",
+      "class": "circle"
+    },
+    {
+      "text": "phospho",
+      "id": "phospho",
+      "class": "diamond"
+    },
+    {
+      "text": "estrone",
+      "id": "estrone",
+      "class": "parallelogram"
+    },
+    {
+      "text": "generalcy intersociety",
+      "id": "generalcy intersociety",
+      "class": "parallelogram"
+    },
+    {
+      "text": "quinova",
+      "id": "quinova",
+      "class": "diamond"
+    },
+    {
+      "text": "semitendinosus",
+      "id": "semitendinosus",
+      "class": "parallelogram"
+    },
+    {
+      "text": "chilicothe",
+      "id": "chilicothe",
+      "class": "box"
+    },
+    {
+      "text": "deseret",
+      "id": "deseret",
+      "class": "parallelogram"
+    },
+    {
+      "text": "generant",
+      "id": "generant",
+      "class": "box"
+    },
+    {
+      "text": "overmild",
+      "id": "overmild",
+      "class": "box"
+    },
+    {
+      "text": "Hellene Brahmanize Pterygogene",
+      "id": "Hellene Brahmanize Pterygogene",
+      "class": "document"
+    },
+    {
+      "text": "Cystopteris zygozoospore",
+      "id": "Cystopteris zygozoospore",
+      "class": "diamond"
+    },
+    {
+      "text": "trigonometric pleuric",
+      "id": "trigonometric pleuric",
+      "class": "document"
+    },
+    {
+      "text": "preinjurious cardiomotility",
+      "id": "preinjurious cardiomotility",
+      "class": "hexagon"
+    },
+    {
+      "text": "ganglionitis",
+      "id": "ganglionitis",
+      "class": "hexagon"
+    },
+    {
+      "text": "acanthine",
+      "id": "acanthine",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "roleo",
+      "head": "phospho",
+      "label": null
+    },
+    {
+      "tail": "phospho",
+      "head": "estrone",
+      "label": "Yes"
+    },
+    {
+      "tail": "phospho",
+      "head": "generalcy intersociety",
+      "label": "Yes"
+    },
+    {
+      "tail": "estrone",
+      "head": "quinova",
+      "label": null
+    },
+    {
+      "tail": "quinova",
+      "head": "generalcy intersociety",
+      "label": "YES"
+    },
+    {
+      "tail": "quinova",
+      "head": "semitendinosus",
+      "label": "YES"
+    },
+    {
+      "tail": "generalcy intersociety",
+      "head": "chilicothe",
+      "label": null
+    },
+    {
+      "tail": "chilicothe",
+      "head": "deseret",
+      "label": null
+    },
+    {
+      "tail": "deseret",
+      "head": "generant",
+      "label": null
+    },
+    {
+      "tail": "generant",
+      "head": "overmild",
+      "label": null
+    },
+    {
+      "tail": "overmild",
+      "head": "Hellene Brahmanize Pterygogene",
+      "label": null
+    },
+    {
+      "tail": "Hellene Brahmanize Pterygogene",
+      "head": "Cystopteris zygozoospore",
+      "label": null
+    },
+    {
+      "tail": "Cystopteris zygozoospore",
+      "head": "trigonometric pleuric",
+      "label": "NO"
+    },
+    {
+      "tail": "Cystopteris zygozoospore",
+      "head": "roleo",
+      "label": "NO"
+    },
+    {
+      "tail": "trigonometric pleuric",
+      "head": "preinjurious cardiomotility",
+      "label": null
+    },
+    {
+      "tail": "preinjurious cardiomotility",
+      "head": "ganglionitis",
+      "label": null
+    },
+    {
+      "tail": "ganglionitis",
+      "head": "semitendinosus",
+      "label": null
+    },
+    {
+      "tail": "semitendinosus",
+      "head": "acanthine",
+      "label": null
+    }
+  ]
+}

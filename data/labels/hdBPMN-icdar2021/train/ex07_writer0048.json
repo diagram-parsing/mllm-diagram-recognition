@@ -1,0 +1,242 @@
+{
+  "nodes": [
+    {
+      "text": "Start new case on certain doctor",
+      "id": "Start new case on certain doctor",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file both results",
+      "id": "file both results",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "filling cheque for the expenses",
+      "id": "filling cheque for the expenses",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "ask another external expert to review work of the doctor",
+      "id": "ask another external expert to review work of the doctor",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "forward expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": "reponding not in time"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": "reponding in time"
+    },
+    {
+      "tail": "ask another external expert to review work of the doctor",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask another external expert to review work of the doctor",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "filling cheque for the expenses",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "filling cheque for the expenses",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file both results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "file both results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Start new case on certain doctor",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Patient",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "label": "opinion"
+    },
+    {
+      "tail": "ask another external expert to review work of the doctor",
+      "head": "external Experts",
+      "class": "messageFlow",
+      "label": "request"
+    },
+    {
+      "tail": "external Experts",
+      "head": "forward expertise",
+      "class": "messageFlow",
+      "label": "expertise"
+    },
+    {
+      "tail": "filling cheque for the expenses",
+      "head": "external Experts",
+      "class": "messageFlow",
+      "label": "cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "quality assurer",
+      "nodes": [
+        "hospital",
+        "quality assurance department"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "hospital",
+      "nodes": [
+        "forward expertise",
+        "filling cheque for the expenses",
+        "exclusiveGateway_1",
+        "ask another external expert to review work of the doctor",
+        "exclusiveGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance department",
+      "nodes": [
+        "Start new case on certain doctor",
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "file both results",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "event_1",
+        "interview patients"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "external Experts",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

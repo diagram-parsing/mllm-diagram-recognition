@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "Clerus",
+      "id": "Clerus",
+      "class": "ellipse"
+    },
+    {
+      "text": "Priscilla imperialistically",
+      "id": "Priscilla imperialistically",
+      "class": "document"
+    },
+    {
+      "text": "diagrammatician",
+      "id": "diagrammatician",
+      "class": "hexagon"
+    },
+    {
+      "text": "scoffingly",
+      "id": "scoffingly",
+      "class": "diamond"
+    },
+    {
+      "text": "homilize plutonic",
+      "id": "homilize plutonic",
+      "class": "box"
+    },
+    {
+      "text": "japer scolices Canuck",
+      "id": "japer scolices Canuck",
+      "class": "document"
+    },
+    {
+      "text": "depencil Dorothy",
+      "id": "depencil Dorothy",
+      "class": "diamond"
+    },
+    {
+      "text": "ossification",
+      "id": "ossification",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Clerus",
+      "head": "Priscilla imperialistically",
+      "label": null
+    },
+    {
+      "tail": "Priscilla imperialistically",
+      "head": "diagrammatician",
+      "label": null
+    },
+    {
+      "tail": "diagrammatician",
+      "head": "scoffingly",
+      "label": null
+    },
+    {
+      "tail": "scoffingly",
+      "head": "homilize plutonic",
+      "label": "YES"
+    },
+    {
+      "tail": "scoffingly",
+      "head": "Clerus",
+      "label": "YES"
+    },
+    {
+      "tail": "homilize plutonic",
+      "head": "japer scolices Canuck",
+      "label": null
+    },
+    {
+      "tail": "japer scolices Canuck",
+      "head": "depencil Dorothy",
+      "label": null
+    },
+    {
+      "tail": "depencil Dorothy",
+      "head": "ossification",
+      "label": "NO"
+    },
+    {
+      "tail": "depencil Dorothy",
+      "head": "Clerus",
+      "label": "NO"
+    }
+  ]
+}

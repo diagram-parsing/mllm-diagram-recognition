@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "text": "ceremoniously",
+      "id": "ceremoniously",
+      "class": "ellipse"
+    },
+    {
+      "text": "splenoma",
+      "id": "splenoma",
+      "class": "box"
+    },
+    {
+      "text": "stuffender",
+      "id": "stuffender",
+      "class": "hexagon"
+    },
+    {
+      "text": "hornblendophyre",
+      "id": "hornblendophyre",
+      "class": "parallelogram"
+    },
+    {
+      "text": "trigonometric pleuric",
+      "id": "trigonometric pleuric",
+      "class": "diamond"
+    },
+    {
+      "text": "wincingly",
+      "id": "wincingly",
+      "class": "hexagon"
+    },
+    {
+      "text": "adamsite",
+      "id": "adamsite",
+      "class": "diamond"
+    },
+    {
+      "text": "prefortunately",
+      "id": "prefortunately",
+      "class": "box"
+    },
+    {
+      "text": "pneumonophthisis streetway",
+      "id": "pneumonophthisis streetway",
+      "class": "diamond"
+    },
+    {
+      "text": "remicate honeymoonlight",
+      "id": "remicate honeymoonlight",
+      "class": "parallelogram"
+    },
+    {
+      "text": "prunella",
+      "id": "prunella",
+      "class": "diamond"
+    },
+    {
+      "text": "interrhyme slumberless prepond",
+      "id": "interrhyme slumberless prepond",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "ceremoniously",
+      "head": "splenoma",
+      "label": null
+    },
+    {
+      "tail": "splenoma",
+      "head": "stuffender",
+      "label": null
+    },
+    {
+      "tail": "stuffender",
+      "head": "hornblendophyre",
+      "label": null
+    },
+    {
+      "tail": "hornblendophyre",
+      "head": "trigonometric pleuric",
+      "label": null
+    },
+    {
+      "tail": "trigonometric pleuric",
+      "head": "wincingly",
+      "label": "No"
+    },
+    {
+      "tail": "trigonometric pleuric",
+      "head": "adamsite",
+      "label": "No"
+    },
+    {
+      "tail": "wincingly",
+      "head": "prefortunately",
+      "label": null
+    },
+    {
+      "tail": "prefortunately",
+      "head": "pneumonophthisis streetway",
+      "label": null
+    },
+    {
+      "tail": "pneumonophthisis streetway",
+      "head": "remicate honeymoonlight",
+      "label": "YES"
+    },
+    {
+      "tail": "pneumonophthisis streetway",
+      "head": "splenoma",
+      "label": "YES"
+    },
+    {
+      "tail": "remicate honeymoonlight",
+      "head": "prunella",
+      "label": null
+    },
+    {
+      "tail": "prunella",
+      "head": "adamsite",
+      "label": "YES"
+    },
+    {
+      "tail": "prunella",
+      "head": "wincingly",
+      "label": "YES"
+    },
+    {
+      "tail": "adamsite",
+      "head": "interrhyme slumberless prepond",
+      "label": "NO"
+    },
+    {
+      "tail": "adamsite",
+      "head": "pneumonophthisis streetway",
+      "label": "NO"
+    }
+  ]
+}

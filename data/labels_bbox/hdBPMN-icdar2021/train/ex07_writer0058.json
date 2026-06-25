@@ -1,0 +1,488 @@
+{
+  "nodes": [
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "bbox": [
+        379,
+        677,
+        455,
+        758
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1733,
+        613,
+        1987,
+        750
+      ],
+      "class": "task"
+    },
+    {
+      "text": "case processed",
+      "id": "case processed",
+      "bbox": [
+        2247,
+        664,
+        2321,
+        735
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        478,
+        659,
+        544,
+        773
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1440,
+        651,
+        1544,
+        761
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        692,
+        1425,
+        783,
+        1532
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "ask expert",
+      "id": "ask expert",
+      "bbox": [
+        974,
+        1415,
+        1122,
+        1550
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "expert sends expertise",
+      "id": "expert sends expertise",
+      "bbox": [
+        1738,
+        1275,
+        1885,
+        1397
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "expert doesn\u00c2\u00b4t repond in time",
+      "id": "expert doesn\u00c2\u00b4t repond in time",
+      "bbox": [
+        1695,
+        1608,
+        1855,
+        1745
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "forward results",
+      "id": "forward results",
+      "bbox": [
+        2115,
+        1300,
+        2435,
+        1430
+      ],
+      "class": "task"
+    },
+    {
+      "text": "sending check to expert",
+      "id": "sending check to expert",
+      "bbox": [
+        2781,
+        1275,
+        2929,
+        1448
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "case procesed",
+      "id": "case procesed",
+      "bbox": [
+        3087,
+        1348,
+        3156,
+        1407
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        1369,
+        1427,
+        1516,
+        1572
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        2540,
+        1300,
+        2657,
+        1422
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "patient interview workflow",
+      "id": "patient interview workflow",
+      "bbox": [
+        638,
+        587,
+        995,
+        829
+      ],
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "expert doesn\u00c2\u00b4t repond in time",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        740,
+        1529,
+        2142,
+        1939
+      ],
+      "label": null
+    },
+    {
+      "tail": "sending check to expert",
+      "head": "case procesed",
+      "class": "sequenceFlow",
+      "bbox": [
+        2929,
+        1341,
+        3092,
+        1409
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "sending check to expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        2654,
+        1329,
+        2784,
+        1398
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1494,
+        758,
+        2605,
+        1307
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward results",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        2435,
+        1330,
+        2544,
+        1399
+      ],
+      "label": null
+    },
+    {
+      "tail": "expert sends expertise",
+      "head": "forward results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1885,
+        1302,
+        2117,
+        1371
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "expert doesn\u00c2\u00b4t repond in time",
+      "class": "sequenceFlow",
+      "bbox": [
+        1427,
+        1565,
+        1699,
+        1697
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "expert sends expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1440,
+        1351,
+        1743,
+        1432
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask expert",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1122,
+        1454,
+        1381,
+        1523
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        783,
+        1445,
+        977,
+        1514
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "case processed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1987,
+        666,
+        2249,
+        735
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1537,
+        669,
+        1735,
+        737
+      ],
+      "label": null
+    },
+    {
+      "tail": "patient interview workflow",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        995,
+        681,
+        1450,
+        750
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "patient interview workflow",
+      "class": "sequenceFlow",
+      "bbox": [
+        544,
+        681,
+        641,
+        750
+      ],
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        433,
+        681,
+        502,
+        750
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        511,
+        773,
+        694,
+        1488
+      ],
+      "label": null
+    },
+    {
+      "tail": "patients",
+      "head": "patient interview workflow",
+      "class": "messageFlow",
+      "bbox": [
+        809,
+        216,
+        877,
+        590
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask expert",
+      "head": "pool_1",
+      "class": "messageFlow",
+      "bbox": [
+        1015,
+        1557,
+        1084,
+        2147
+      ],
+      "label": null
+    },
+    {
+      "tail": "pool_1",
+      "head": "expert sends expertise",
+      "class": "messageFlow",
+      "bbox": [
+        1626,
+        1382,
+        1758,
+        2147
+      ],
+      "label": null
+    },
+    {
+      "tail": "sending check to expert",
+      "head": "pool_1",
+      "class": "messageFlow",
+      "bbox": [
+        2728,
+        1422,
+        2817,
+        2147
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director of the hospital",
+        "QA specialist of the quality assurance departement"
+      ],
+      "bbox": [
+        78,
+        409,
+        3311,
+        2038
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director of the hospital",
+      "nodes": [
+        "exclusiveGateway_1",
+        "ask expert",
+        "expert sends expertise",
+        "expert doesn\u00c2\u00b4t repond in time",
+        "forward results",
+        "sending check to expert",
+        "case procesed",
+        "eventBasedGateway_1",
+        "parallelGateway_3"
+      ],
+      "bbox": [
+        155,
+        1096,
+        3311,
+        2038
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist of the quality assurance departement",
+      "nodes": [
+        "new case started",
+        "create report",
+        "case processed",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "patient interview workflow"
+      ],
+      "bbox": [
+        155,
+        409,
+        3311,
+        1096
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "patients",
+      "nodes": [],
+      "bbox": [
+        282,
+        78,
+        1593,
+        216
+      ],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "bbox": [
+        358,
+        2145,
+        2748,
+        2267
+      ],
+      "class": "pool"
+    }
+  ]
+}

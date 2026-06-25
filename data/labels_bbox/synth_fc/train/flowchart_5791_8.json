@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "text": "unmasking epiblastema",
+      "id": "unmasking epiblastema",
+      "class": "circle",
+      "bbox": [
+        48,
+        5,
+        156,
+        113
+      ]
+    },
+    {
+      "text": "sejant",
+      "id": "sejant",
+      "class": "diamond",
+      "bbox": [
+        50,
+        133,
+        153,
+        181
+      ]
+    },
+    {
+      "text": "bionomic caffeinic",
+      "id": "bionomic caffeinic",
+      "class": "box",
+      "bbox": [
+        66,
+        192,
+        138,
+        240
+      ]
+    },
+    {
+      "text": "sackdoudle",
+      "id": "sackdoudle",
+      "class": "parallelogram",
+      "bbox": [
+        186,
+        211,
+        325,
+        259
+      ]
+    },
+    {
+      "text": "channel Clarinda",
+      "id": "channel Clarinda",
+      "class": "diamond",
+      "bbox": [
+        43,
+        257,
+        160,
+        331
+      ]
+    },
+    {
+      "text": "palaeoclimatology microclimate",
+      "id": "palaeoclimatology microclimate",
+      "class": "diamond",
+      "bbox": [
+        5,
+        375,
+        198,
+        443
+      ]
+    },
+    {
+      "text": "ornithomantic",
+      "id": "ornithomantic",
+      "class": "parallelogram",
+      "bbox": [
+        201,
+        101,
+        315,
+        174
+      ]
+    },
+    {
+      "text": "bronchohemorrhagia",
+      "id": "bronchohemorrhagia",
+      "class": "oval",
+      "bbox": [
+        207,
+        307,
+        309,
+        359
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unmasking epiblastema",
+      "head": "sejant",
+      "label": null,
+      "bbox": [
+        97,
+        114,
+        106,
+        130
+      ]
+    },
+    {
+      "tail": "sejant",
+      "head": "bionomic caffeinic",
+      "label": "yes",
+      "bbox": [
+        97,
+        175,
+        106,
+        188
+      ]
+    },
+    {
+      "tail": "sejant",
+      "head": "sackdoudle",
+      "label": "yes",
+      "bbox": [
+        145,
+        161,
+        203,
+        231
+      ]
+    },
+    {
+      "tail": "bionomic caffeinic",
+      "head": "channel Clarinda",
+      "label": null,
+      "bbox": [
+        97,
+        240,
+        106,
+        254
+      ]
+    },
+    {
+      "tail": "channel Clarinda",
+      "head": "palaeoclimatology microclimate",
+      "label": "YES",
+      "bbox": [
+        97,
+        331,
+        106,
+        371
+      ]
+    },
+    {
+      "tail": "channel Clarinda",
+      "head": "ornithomantic",
+      "label": "YES",
+      "bbox": [
+        145,
+        150,
+        204,
+        284
+      ]
+    },
+    {
+      "tail": "palaeoclimatology microclimate",
+      "head": "ornithomantic",
+      "label": "yes",
+      "bbox": [
+        179,
+        159,
+        201,
+        404
+      ]
+    },
+    {
+      "tail": "palaeoclimatology microclimate",
+      "head": "sejant",
+      "label": "yes",
+      "bbox": [
+        129,
+        139,
+        166,
+        399
+      ]
+    },
+    {
+      "tail": "ornithomantic",
+      "head": "sackdoudle",
+      "label": null,
+      "bbox": [
+        253,
+        175,
+        263,
+        208
+      ]
+    },
+    {
+      "tail": "sackdoudle",
+      "head": "bronchohemorrhagia",
+      "label": null,
+      "bbox": [
+        253,
+        260,
+        263,
+        304
+      ]
+    }
+  ]
+}

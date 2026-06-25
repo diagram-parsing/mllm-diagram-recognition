@@ -1,0 +1,380 @@
+{
+  "nodes": [
+    {
+      "text": "roleo",
+      "id": "roleo",
+      "class": "circle",
+      "bbox": [
+        39,
+        19,
+        107,
+        87
+      ]
+    },
+    {
+      "text": "phospho",
+      "id": "phospho",
+      "class": "diamond",
+      "bbox": [
+        5,
+        124,
+        141,
+        172
+      ]
+    },
+    {
+      "text": "estrone",
+      "id": "estrone",
+      "class": "parallelogram",
+      "bbox": [
+        11,
+        219,
+        135,
+        267
+      ]
+    },
+    {
+      "text": "generalcy intersociety",
+      "id": "generalcy intersociety",
+      "class": "parallelogram",
+      "bbox": [
+        184,
+        112,
+        342,
+        185
+      ]
+    },
+    {
+      "text": "quinova",
+      "id": "quinova",
+      "class": "diamond",
+      "bbox": [
+        8,
+        314,
+        138,
+        362
+      ]
+    },
+    {
+      "text": "semitendinosus",
+      "id": "semitendinosus",
+      "class": "parallelogram",
+      "bbox": [
+        552,
+        505,
+        730,
+        553
+      ]
+    },
+    {
+      "text": "chilicothe",
+      "id": "chilicothe",
+      "class": "box",
+      "bbox": [
+        227,
+        196,
+        299,
+        244
+      ]
+    },
+    {
+      "text": "deseret",
+      "id": "deseret",
+      "class": "parallelogram",
+      "bbox": [
+        202,
+        314,
+        324,
+        362
+      ]
+    },
+    {
+      "text": "generant",
+      "id": "generant",
+      "class": "box",
+      "bbox": [
+        227,
+        410,
+        299,
+        458
+      ]
+    },
+    {
+      "text": "overmild",
+      "id": "overmild",
+      "class": "box",
+      "bbox": [
+        418,
+        5,
+        490,
+        53
+      ]
+    },
+    {
+      "text": "Hellene Brahmanize Pterygogene",
+      "id": "Hellene Brahmanize Pterygogene",
+      "class": "document",
+      "bbox": [
+        401,
+        122,
+        506,
+        174
+      ]
+    },
+    {
+      "text": "Cystopteris zygozoospore",
+      "id": "Cystopteris zygozoospore",
+      "class": "diamond",
+      "bbox": [
+        374,
+        207,
+        533,
+        280
+      ]
+    },
+    {
+      "text": "trigonometric pleuric",
+      "id": "trigonometric pleuric",
+      "class": "document",
+      "bbox": [
+        406,
+        336,
+        501,
+        388
+      ]
+    },
+    {
+      "text": "preinjurious cardiomotility",
+      "id": "preinjurious cardiomotility",
+      "class": "hexagon",
+      "bbox": [
+        577,
+        309,
+        711,
+        368
+      ]
+    },
+    {
+      "text": "ganglionitis",
+      "id": "ganglionitis",
+      "class": "hexagon",
+      "bbox": [
+        599,
+        404,
+        688,
+        464
+      ]
+    },
+    {
+      "text": "acanthine",
+      "id": "acanthine",
+      "class": "circle",
+      "bbox": [
+        610,
+        613,
+        678,
+        676
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "roleo",
+      "head": "phospho",
+      "label": null,
+      "bbox": [
+        67,
+        87,
+        79,
+        124
+      ]
+    },
+    {
+      "tail": "phospho",
+      "head": "estrone",
+      "label": "Yes",
+      "bbox": [
+        67,
+        172,
+        79,
+        219
+      ]
+    },
+    {
+      "tail": "phospho",
+      "head": "generalcy intersociety",
+      "label": "Yes",
+      "bbox": [
+        140,
+        142,
+        201,
+        154
+      ]
+    },
+    {
+      "tail": "estrone",
+      "head": "quinova",
+      "label": null,
+      "bbox": [
+        67,
+        267,
+        79,
+        315
+      ]
+    },
+    {
+      "tail": "quinova",
+      "head": "generalcy intersociety",
+      "label": "YES",
+      "bbox": [
+        136,
+        185,
+        199,
+        339
+      ]
+    },
+    {
+      "tail": "quinova",
+      "head": "semitendinosus",
+      "label": "YES",
+      "bbox": [
+        73,
+        362,
+        570,
+        536
+      ]
+    },
+    {
+      "tail": "generalcy intersociety",
+      "head": "chilicothe",
+      "label": null,
+      "bbox": [
+        257,
+        182,
+        269,
+        196
+      ]
+    },
+    {
+      "tail": "chilicothe",
+      "head": "deseret",
+      "label": null,
+      "bbox": [
+        257,
+        243,
+        269,
+        315
+      ]
+    },
+    {
+      "tail": "deseret",
+      "head": "generant",
+      "label": null,
+      "bbox": [
+        257,
+        362,
+        269,
+        410
+      ]
+    },
+    {
+      "tail": "generant",
+      "head": "overmild",
+      "label": null,
+      "bbox": [
+        299,
+        30,
+        418,
+        434
+      ]
+    },
+    {
+      "tail": "overmild",
+      "head": "Hellene Brahmanize Pterygogene",
+      "label": null,
+      "bbox": [
+        448,
+        53,
+        460,
+        122
+      ]
+    },
+    {
+      "tail": "Hellene Brahmanize Pterygogene",
+      "head": "Cystopteris zygozoospore",
+      "label": null,
+      "bbox": [
+        448,
+        174,
+        460,
+        207
+      ]
+    },
+    {
+      "tail": "Cystopteris zygozoospore",
+      "head": "trigonometric pleuric",
+      "label": "NO",
+      "bbox": [
+        448,
+        280,
+        460,
+        336
+      ]
+    },
+    {
+      "tail": "Cystopteris zygozoospore",
+      "head": "roleo",
+      "label": "NO",
+      "bbox": [
+        102,
+        65,
+        388,
+        237
+      ]
+    },
+    {
+      "tail": "trigonometric pleuric",
+      "head": "preinjurious cardiomotility",
+      "label": null,
+      "bbox": [
+        501,
+        346,
+        592,
+        358
+      ]
+    },
+    {
+      "tail": "preinjurious cardiomotility",
+      "head": "ganglionitis",
+      "label": null,
+      "bbox": [
+        638,
+        368,
+        650,
+        404
+      ]
+    },
+    {
+      "tail": "ganglionitis",
+      "head": "semitendinosus",
+      "label": null,
+      "bbox": [
+        638,
+        463,
+        650,
+        505
+      ]
+    },
+    {
+      "tail": "semitendinosus",
+      "head": "acanthine",
+      "label": null,
+      "bbox": [
+        638,
+        552,
+        650,
+        614
+      ]
+    }
+  ]
+}

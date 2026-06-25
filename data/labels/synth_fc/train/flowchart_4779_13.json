@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "text": "Dioscurian",
+      "id": "Dioscurian",
+      "class": "ellipse"
+    },
+    {
+      "text": "doughman",
+      "id": "doughman",
+      "class": "box"
+    },
+    {
+      "text": "Hildebrandian syphilographer",
+      "id": "Hildebrandian syphilographer",
+      "class": "box"
+    },
+    {
+      "text": "appulse",
+      "id": "appulse",
+      "class": "box"
+    },
+    {
+      "text": "rotated",
+      "id": "rotated",
+      "class": "box"
+    },
+    {
+      "text": "spellbind",
+      "id": "spellbind",
+      "class": "diamond"
+    },
+    {
+      "text": "phyllocarid",
+      "id": "phyllocarid",
+      "class": "box"
+    },
+    {
+      "text": "subvesicular",
+      "id": "subvesicular",
+      "class": "diamond"
+    },
+    {
+      "text": "haydenite",
+      "id": "haydenite",
+      "class": "diamond"
+    },
+    {
+      "text": "electroosmosis knifeproof",
+      "id": "electroosmosis knifeproof",
+      "class": "parallelogram"
+    },
+    {
+      "text": "trajet",
+      "id": "trajet",
+      "class": "parallelogram"
+    },
+    {
+      "text": "nonidealist Kalekah queest",
+      "id": "nonidealist Kalekah queest",
+      "class": "document"
+    },
+    {
+      "text": "forlornity",
+      "id": "forlornity",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Dioscurian",
+      "head": "doughman",
+      "label": null
+    },
+    {
+      "tail": "doughman",
+      "head": "Hildebrandian syphilographer",
+      "label": null
+    },
+    {
+      "tail": "Hildebrandian syphilographer",
+      "head": "appulse",
+      "label": null
+    },
+    {
+      "tail": "appulse",
+      "head": "rotated",
+      "label": null
+    },
+    {
+      "tail": "rotated",
+      "head": "spellbind",
+      "label": null
+    },
+    {
+      "tail": "spellbind",
+      "head": "phyllocarid",
+      "label": "No"
+    },
+    {
+      "tail": "spellbind",
+      "head": "rotated",
+      "label": "No"
+    },
+    {
+      "tail": "phyllocarid",
+      "head": "subvesicular",
+      "label": null
+    },
+    {
+      "tail": "subvesicular",
+      "head": "haydenite",
+      "label": "yes"
+    },
+    {
+      "tail": "subvesicular",
+      "head": "doughman",
+      "label": "yes"
+    },
+    {
+      "tail": "haydenite",
+      "head": "electroosmosis knifeproof",
+      "label": "YES"
+    },
+    {
+      "tail": "haydenite",
+      "head": "subvesicular",
+      "label": "YES"
+    },
+    {
+      "tail": "electroosmosis knifeproof",
+      "head": "trajet",
+      "label": null
+    },
+    {
+      "tail": "trajet",
+      "head": "nonidealist Kalekah queest",
+      "label": null
+    },
+    {
+      "tail": "nonidealist Kalekah queest",
+      "head": "forlornity",
+      "label": null
+    }
+  ]
+}

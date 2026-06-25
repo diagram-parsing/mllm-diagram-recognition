@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "prohibitive",
+      "id": "prohibitive",
+      "class": "circle"
+    },
+    {
+      "text": "deseret",
+      "id": "deseret",
+      "class": "diamond"
+    },
+    {
+      "text": "periclasia",
+      "id": "periclasia",
+      "class": "diamond"
+    },
+    {
+      "text": "pseudoviaduct thereon",
+      "id": "pseudoviaduct thereon",
+      "class": "document"
+    },
+    {
+      "text": "circumvolve paratactic histopa",
+      "id": "circumvolve paratactic histopa",
+      "class": "document"
+    },
+    {
+      "text": "windsorite pharmacognosist",
+      "id": "windsorite pharmacognosist",
+      "class": "document"
+    },
+    {
+      "text": "broadloom micrologist",
+      "id": "broadloom micrologist",
+      "class": "parallelogram"
+    },
+    {
+      "text": "imperence acupunctuate cupramm",
+      "id": "imperence acupunctuate cupramm",
+      "class": "box"
+    },
+    {
+      "text": "daemon",
+      "id": "daemon",
+      "class": "box"
+    },
+    {
+      "text": "Alectorides keraunoscopy",
+      "id": "Alectorides keraunoscopy",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "prohibitive",
+      "head": "deseret",
+      "label": null
+    },
+    {
+      "tail": "deseret",
+      "head": "periclasia",
+      "label": "Yes"
+    },
+    {
+      "tail": "deseret",
+      "head": "pseudoviaduct thereon",
+      "label": "Yes"
+    },
+    {
+      "tail": "periclasia",
+      "head": "pseudoviaduct thereon",
+      "label": "no"
+    },
+    {
+      "tail": "periclasia",
+      "head": "circumvolve paratactic histopa",
+      "label": "no"
+    },
+    {
+      "tail": "pseudoviaduct thereon",
+      "head": "windsorite pharmacognosist",
+      "label": null
+    },
+    {
+      "tail": "windsorite pharmacognosist",
+      "head": "broadloom micrologist",
+      "label": null
+    },
+    {
+      "tail": "broadloom micrologist",
+      "head": "imperence acupunctuate cupramm",
+      "label": null
+    },
+    {
+      "tail": "imperence acupunctuate cupramm",
+      "head": "daemon",
+      "label": null
+    },
+    {
+      "tail": "daemon",
+      "head": "circumvolve paratactic histopa",
+      "label": null
+    },
+    {
+      "tail": "circumvolve paratactic histopa",
+      "head": "Alectorides keraunoscopy",
+      "label": null
+    }
+  ]
+}

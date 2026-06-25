@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "textlet",
+      "id": "textlet",
+      "class": "circle"
+    },
+    {
+      "text": "complimentary",
+      "id": "complimentary",
+      "class": "diamond"
+    },
+    {
+      "text": "finnip",
+      "id": "finnip",
+      "class": "document"
+    },
+    {
+      "text": "pseudocollegiate overlier",
+      "id": "pseudocollegiate overlier",
+      "class": "diamond"
+    },
+    {
+      "text": "latration vasodilator merceriz",
+      "id": "latration vasodilator merceriz",
+      "class": "document"
+    },
+    {
+      "text": "Vepsish knosp feudally",
+      "id": "Vepsish knosp feudally",
+      "class": "diamond"
+    },
+    {
+      "text": "suberinization",
+      "id": "suberinization",
+      "class": "hexagon"
+    },
+    {
+      "text": "hypodermically mycophagist",
+      "id": "hypodermically mycophagist",
+      "class": "diamond"
+    },
+    {
+      "text": "wiglike",
+      "id": "wiglike",
+      "class": "box"
+    },
+    {
+      "text": "totalitarianism",
+      "id": "totalitarianism",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "textlet",
+      "head": "complimentary",
+      "label": null
+    },
+    {
+      "tail": "complimentary",
+      "head": "finnip",
+      "label": "no"
+    },
+    {
+      "tail": "complimentary",
+      "head": "pseudocollegiate overlier",
+      "label": "no"
+    },
+    {
+      "tail": "finnip",
+      "head": "latration vasodilator merceriz",
+      "label": null
+    },
+    {
+      "tail": "latration vasodilator merceriz",
+      "head": "Vepsish knosp feudally",
+      "label": null
+    },
+    {
+      "tail": "Vepsish knosp feudally",
+      "head": "suberinization",
+      "label": "NO"
+    },
+    {
+      "tail": "Vepsish knosp feudally",
+      "head": "pseudocollegiate overlier",
+      "label": "NO"
+    },
+    {
+      "tail": "suberinization",
+      "head": "hypodermically mycophagist",
+      "label": null
+    },
+    {
+      "tail": "hypodermically mycophagist",
+      "head": "pseudocollegiate overlier",
+      "label": "YES"
+    },
+    {
+      "tail": "hypodermically mycophagist",
+      "head": "suberinization",
+      "label": "YES"
+    },
+    {
+      "tail": "pseudocollegiate overlier",
+      "head": "wiglike",
+      "label": "Yes"
+    },
+    {
+      "tail": "pseudocollegiate overlier",
+      "head": "hypodermically mycophagist",
+      "label": "Yes"
+    },
+    {
+      "tail": "wiglike",
+      "head": "totalitarianism",
+      "label": null
+    }
+  ]
+}

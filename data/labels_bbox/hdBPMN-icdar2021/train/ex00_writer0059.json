@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "text": "application received",
+      "id": "application received",
+      "bbox": [
+        414,
+        1815,
+        483,
+        1926
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate the application",
+      "id": "evaluate the application",
+      "bbox": [
+        915,
+        1662,
+        1434,
+        1971
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1680,
+        1722,
+        1791,
+        1836
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "reject application",
+      "id": "reject application",
+      "bbox": [
+        1527,
+        981,
+        1968,
+        1182
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        2331,
+        633,
+        2415,
+        705
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create new bank acc.",
+      "id": "create new bank acc.",
+      "bbox": [
+        1467,
+        2406,
+        2031,
+        2781
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack to customer",
+      "id": "send welcome pack to customer",
+      "bbox": [
+        466,
+        2360,
+        1066,
+        2913
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        412,
+        3247,
+        870,
+        3780
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send PIN to customer",
+      "id": "send PIN to customer",
+      "bbox": [
+        1200,
+        3360,
+        1728,
+        3843
+      ],
+      "class": "task"
+    },
+    {
+      "text": "new bank account created",
+      "id": "new bank account created",
+      "bbox": [
+        2126,
+        3472,
+        2227,
+        3588
+      ],
+      "class": "event"
+    },
+    {
+      "text": "send email notice",
+      "id": "send email notice",
+      "bbox": [
+        2223,
+        954,
+        2526,
+        1245
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send PIN to customer",
+      "head": "new bank account created",
+      "class": "sequenceFlow",
+      "bbox": [
+        1728,
+        3545,
+        2133,
+        3625
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "send PIN to customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        870,
+        3576,
+        1203,
+        3656
+      ],
+      "label": null
+    },
+    {
+      "tail": "send welcome pack to customer",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        685,
+        2913,
+        765,
+        3251
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new bank acc.",
+      "head": "send welcome pack to customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1065,
+        2556,
+        1470,
+        2636
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate the application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1434,
+        1761,
+        1683,
+        1841
+      ],
+      "label": null
+    },
+    {
+      "tail": "application received",
+      "head": "evaluate the application",
+      "class": "sequenceFlow",
+      "bbox": [
+        476,
+        1808,
+        918,
+        1888
+      ],
+      "label": null
+    },
+    {
+      "tail": "send email notice",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2328,
+        711,
+        2408,
+        957
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject application",
+      "head": "send email notice",
+      "class": "sequenceFlow",
+      "bbox": [
+        1968,
+        1062,
+        2226,
+        1142
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject application",
+      "class": "sequenceFlow",
+      "bbox": [
+        1713,
+        1185,
+        1793,
+        1725
+      ],
+      "label": "requirements are not met"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create new bank acc.",
+      "class": "sequenceFlow",
+      "bbox": [
+        1680,
+        1836,
+        1760,
+        2409
+      ],
+      "label": "requirements are met"
+    }
+  ],
+  "groups": []
+}

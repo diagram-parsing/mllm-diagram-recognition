@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "text": "trawler",
+      "id": "trawler",
+      "class": "ellipse"
+    },
+    {
+      "text": "droughtiness evilproof gloryin",
+      "id": "droughtiness evilproof gloryin",
+      "class": "box"
+    },
+    {
+      "text": "dentiparous",
+      "id": "dentiparous",
+      "class": "parallelogram"
+    },
+    {
+      "text": "anorectic aversive",
+      "id": "anorectic aversive",
+      "class": "diamond"
+    },
+    {
+      "text": "placidly",
+      "id": "placidly",
+      "class": "document"
+    },
+    {
+      "text": "sheely",
+      "id": "sheely",
+      "class": "hexagon"
+    },
+    {
+      "text": "refreshener",
+      "id": "refreshener",
+      "class": "diamond"
+    },
+    {
+      "text": "sematic quintuplet",
+      "id": "sematic quintuplet",
+      "class": "parallelogram"
+    },
+    {
+      "text": "preachment",
+      "id": "preachment",
+      "class": "box"
+    },
+    {
+      "text": "authentically tintinnabulist",
+      "id": "authentically tintinnabulist",
+      "class": "diamond"
+    },
+    {
+      "text": "teer rea populationist",
+      "id": "teer rea populationist",
+      "class": "diamond"
+    },
+    {
+      "text": "daisybush",
+      "id": "daisybush",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "trawler",
+      "head": "droughtiness evilproof gloryin",
+      "label": null
+    },
+    {
+      "tail": "droughtiness evilproof gloryin",
+      "head": "dentiparous",
+      "label": null
+    },
+    {
+      "tail": "dentiparous",
+      "head": "anorectic aversive",
+      "label": null
+    },
+    {
+      "tail": "anorectic aversive",
+      "head": "placidly",
+      "label": "YES"
+    },
+    {
+      "tail": "anorectic aversive",
+      "head": "sheely",
+      "label": "YES"
+    },
+    {
+      "tail": "placidly",
+      "head": "refreshener",
+      "label": null
+    },
+    {
+      "tail": "refreshener",
+      "head": "sematic quintuplet",
+      "label": "YES"
+    },
+    {
+      "tail": "refreshener",
+      "head": "dentiparous",
+      "label": "YES"
+    },
+    {
+      "tail": "sematic quintuplet",
+      "head": "preachment",
+      "label": null
+    },
+    {
+      "tail": "preachment",
+      "head": "authentically tintinnabulist",
+      "label": null
+    },
+    {
+      "tail": "authentically tintinnabulist",
+      "head": "teer rea populationist",
+      "label": "No"
+    },
+    {
+      "tail": "authentically tintinnabulist",
+      "head": "refreshener",
+      "label": "No"
+    },
+    {
+      "tail": "teer rea populationist",
+      "head": "sheely",
+      "label": "YES"
+    },
+    {
+      "tail": "teer rea populationist",
+      "head": "refreshener",
+      "label": "YES"
+    },
+    {
+      "tail": "sheely",
+      "head": "daisybush",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "scrod",
+      "id": "scrod",
+      "class": "ellipse"
+    },
+    {
+      "text": "reedling",
+      "id": "reedling",
+      "class": "hexagon"
+    },
+    {
+      "text": "tonsured",
+      "id": "tonsured",
+      "class": "diamond"
+    },
+    {
+      "text": "disheart",
+      "id": "disheart",
+      "class": "box"
+    },
+    {
+      "text": "irrubrical nitrochloroform",
+      "id": "irrubrical nitrochloroform",
+      "class": "document"
+    },
+    {
+      "text": "anticomet constrain barbarous",
+      "id": "anticomet constrain barbarous",
+      "class": "hexagon"
+    },
+    {
+      "text": "decayless",
+      "id": "decayless",
+      "class": "parallelogram"
+    },
+    {
+      "text": "plasmophagy evilproof",
+      "id": "plasmophagy evilproof",
+      "class": "box"
+    },
+    {
+      "text": "chemicophysiological",
+      "id": "chemicophysiological",
+      "class": "diamond"
+    },
+    {
+      "text": "undeclinableness sailsman",
+      "id": "undeclinableness sailsman",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "scrod",
+      "head": "reedling",
+      "label": null
+    },
+    {
+      "tail": "reedling",
+      "head": "tonsured",
+      "label": null
+    },
+    {
+      "tail": "tonsured",
+      "head": "disheart",
+      "label": "YES"
+    },
+    {
+      "tail": "tonsured",
+      "head": "irrubrical nitrochloroform",
+      "label": "YES"
+    },
+    {
+      "tail": "disheart",
+      "head": "anticomet constrain barbarous",
+      "label": null
+    },
+    {
+      "tail": "anticomet constrain barbarous",
+      "head": "decayless",
+      "label": null
+    },
+    {
+      "tail": "decayless",
+      "head": "plasmophagy evilproof",
+      "label": null
+    },
+    {
+      "tail": "plasmophagy evilproof",
+      "head": "irrubrical nitrochloroform",
+      "label": null
+    },
+    {
+      "tail": "irrubrical nitrochloroform",
+      "head": "chemicophysiological",
+      "label": null
+    },
+    {
+      "tail": "chemicophysiological",
+      "head": "undeclinableness sailsman",
+      "label": "Yes"
+    },
+    {
+      "tail": "chemicophysiological",
+      "head": "plasmophagy evilproof",
+      "label": "Yes"
+    }
+  ]
+}

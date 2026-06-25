@@ -1,0 +1,179 @@
+{
+  "nodes": [
+    {
+      "text": "Miltonic dearticulation riveth",
+      "id": "Miltonic dearticulation riveth",
+      "class": "node",
+      "bbox": [
+        194,
+        329,
+        326,
+        378
+      ]
+    },
+    {
+      "text": "pyrometer",
+      "id": "pyrometer",
+      "class": "node",
+      "bbox": [
+        26,
+        460,
+        160,
+        508
+      ]
+    },
+    {
+      "text": "wauble sprayproof",
+      "id": "wauble sprayproof",
+      "class": "node",
+      "bbox": [
+        185,
+        448,
+        335,
+        520
+      ]
+    },
+    {
+      "text": "Scripturism",
+      "id": "Scripturism",
+      "class": "node",
+      "bbox": [
+        359,
+        448,
+        463,
+        520
+      ]
+    },
+    {
+      "text": "coracovertebral",
+      "id": "coracovertebral",
+      "class": "node",
+      "bbox": [
+        339,
+        29,
+        445,
+        87
+      ]
+    },
+    {
+      "text": "peritendineum",
+      "id": "peritendineum",
+      "class": "node",
+      "bbox": [
+        210,
+        180,
+        310,
+        238
+      ]
+    },
+    {
+      "text": "subvesicular",
+      "id": "subvesicular",
+      "class": "node",
+      "bbox": [
+        194,
+        27,
+        310,
+        90
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Miltonic dearticulation riveth",
+      "head": "pyrometer",
+      "label": "0.73",
+      "class": "unidirectional",
+      "bbox": [
+        121,
+        376,
+        232,
+        462
+      ]
+    },
+    {
+      "tail": "Miltonic dearticulation riveth",
+      "head": "wauble sprayproof",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        253,
+        378,
+        267,
+        447
+      ]
+    },
+    {
+      "tail": "Miltonic dearticulation riveth",
+      "head": "Scripturism",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        286,
+        376,
+        379,
+        456
+      ]
+    },
+    {
+      "tail": "coracovertebral",
+      "head": "Miltonic dearticulation riveth",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        285,
+        87,
+        387,
+        330
+      ]
+    },
+    {
+      "tail": "peritendineum",
+      "head": "Miltonic dearticulation riveth",
+      "label": "-0.58*** f = 0.1",
+      "class": "bidirectional",
+      "bbox": [
+        253,
+        260,
+        267,
+        327
+      ]
+    },
+    {
+      "tail": "coracovertebral",
+      "head": "peritendineum",
+      "label": "0.52* h = 0.34",
+      "class": "bidirectional",
+      "bbox": [
+        278,
+        96,
+        348,
+        182
+      ]
+    },
+    {
+      "tail": "subvesicular",
+      "head": "Miltonic dearticulation riveth",
+      "label": "0.97* f = 0.966",
+      "class": "unidirectional",
+      "bbox": [
+        146,
+        87,
+        236,
+        330
+      ]
+    },
+    {
+      "tail": "subvesicular",
+      "head": "peritendineum",
+      "label": "0.05* f = 0.55",
+      "class": "bidirectional",
+      "bbox": [
+        243,
+        111,
+        257,
+        179
+      ]
+    }
+  ]
+}

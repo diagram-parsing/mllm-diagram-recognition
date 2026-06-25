@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "text": "trichomoniasis",
+      "id": "trichomoniasis",
+      "class": "oval",
+      "bbox": [
+        37,
+        5,
+        157,
+        53
+      ]
+    },
+    {
+      "text": "lucumia",
+      "id": "lucumia",
+      "class": "parallelogram",
+      "bbox": [
+        30,
+        64,
+        163,
+        112
+      ]
+    },
+    {
+      "text": "filtrability aminobenzoic",
+      "id": "filtrability aminobenzoic",
+      "class": "diamond",
+      "bbox": [
+        13,
+        198,
+        180,
+        271
+      ]
+    },
+    {
+      "text": "macrobian Alphean opposable",
+      "id": "macrobian Alphean opposable",
+      "class": "diamond",
+      "bbox": [
+        5,
+        315,
+        188,
+        389
+      ]
+    },
+    {
+      "text": "prolamin ichthyologically",
+      "id": "prolamin ichthyologically",
+      "class": "hexagon",
+      "bbox": [
+        264,
+        87,
+        399,
+        147
+      ]
+    },
+    {
+      "text": "constableship Apolista Jacamar",
+      "id": "constableship Apolista Jacamar",
+      "class": "box",
+      "bbox": [
+        284,
+        211,
+        379,
+        259
+      ]
+    },
+    {
+      "text": "agalite",
+      "id": "agalite",
+      "class": "diamond",
+      "bbox": [
+        275,
+        328,
+        387,
+        376
+      ]
+    },
+    {
+      "text": "periocular antiphonically Mole",
+      "id": "periocular antiphonically Mole",
+      "class": "hexagon",
+      "bbox": [
+        257,
+        439,
+        406,
+        494
+      ]
+    },
+    {
+      "text": "microbium",
+      "id": "microbium",
+      "class": "hexagon",
+      "bbox": [
+        511,
+        211,
+        616,
+        259
+      ]
+    },
+    {
+      "text": "unqualifiedly",
+      "id": "unqualifiedly",
+      "class": "ellipse",
+      "bbox": [
+        526,
+        297,
+        606,
+        349
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "trichomoniasis",
+      "head": "lucumia",
+      "label": null,
+      "bbox": [
+        91,
+        50,
+        103,
+        63
+      ]
+    },
+    {
+      "tail": "lucumia",
+      "head": "filtrability aminobenzoic",
+      "label": null,
+      "bbox": [
+        91,
+        112,
+        103,
+        198
+      ]
+    },
+    {
+      "tail": "filtrability aminobenzoic",
+      "head": "macrobian Alphean opposable",
+      "label": "yes",
+      "bbox": [
+        91,
+        272,
+        103,
+        315
+      ]
+    },
+    {
+      "tail": "filtrability aminobenzoic",
+      "head": "trichomoniasis",
+      "label": "yes",
+      "bbox": [
+        157,
+        24,
+        172,
+        230
+      ]
+    },
+    {
+      "tail": "macrobian Alphean opposable",
+      "head": "prolamin ichthyologically",
+      "label": "No",
+      "bbox": [
+        111,
+        123,
+        276,
+        321
+      ]
+    },
+    {
+      "tail": "macrobian Alphean opposable",
+      "head": "constableship Apolista Jacamar",
+      "label": "No",
+      "bbox": [
+        121,
+        259,
+        321,
+        325
+      ]
+    },
+    {
+      "tail": "prolamin ichthyologically",
+      "head": "constableship Apolista Jacamar",
+      "label": null,
+      "bbox": [
+        325,
+        148,
+        337,
+        210
+      ]
+    },
+    {
+      "tail": "constableship Apolista Jacamar",
+      "head": "agalite",
+      "label": null,
+      "bbox": [
+        341,
+        259,
+        353,
+        334
+      ]
+    },
+    {
+      "tail": "agalite",
+      "head": "periocular antiphonically Mole",
+      "label": "NO",
+      "bbox": [
+        325,
+        376,
+        337,
+        439
+      ]
+    },
+    {
+      "tail": "agalite",
+      "head": "microbium",
+      "label": "NO",
+      "bbox": [
+        359,
+        242,
+        525,
+        339
+      ]
+    },
+    {
+      "tail": "periocular antiphonically Mole",
+      "head": "microbium",
+      "label": null,
+      "bbox": [
+        393,
+        229,
+        511,
+        459
+      ]
+    },
+    {
+      "tail": "microbium",
+      "head": "unqualifiedly",
+      "label": null,
+      "bbox": [
+        560,
+        259,
+        572,
+        296
+      ]
+    }
+  ]
+}

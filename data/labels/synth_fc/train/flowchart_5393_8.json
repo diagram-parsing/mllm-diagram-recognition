@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "heterosomous",
+      "id": "heterosomous",
+      "class": "circle"
+    },
+    {
+      "text": "illusively prescriber beknit",
+      "id": "illusively prescriber beknit",
+      "class": "hexagon"
+    },
+    {
+      "text": "infidelic",
+      "id": "infidelic",
+      "class": "box"
+    },
+    {
+      "text": "overgeniality microcardius",
+      "id": "overgeniality microcardius",
+      "class": "document"
+    },
+    {
+      "text": "toyfulness nugaciousness",
+      "id": "toyfulness nugaciousness",
+      "class": "diamond"
+    },
+    {
+      "text": "trichomycosis scareproof Batus",
+      "id": "trichomycosis scareproof Batus",
+      "class": "diamond"
+    },
+    {
+      "text": "scribing feverroot",
+      "id": "scribing feverroot",
+      "class": "oval"
+    },
+    {
+      "text": "Monogenea",
+      "id": "Monogenea",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "heterosomous",
+      "head": "illusively prescriber beknit",
+      "label": null
+    },
+    {
+      "tail": "illusively prescriber beknit",
+      "head": "infidelic",
+      "label": null
+    },
+    {
+      "tail": "infidelic",
+      "head": "overgeniality microcardius",
+      "label": null
+    },
+    {
+      "tail": "overgeniality microcardius",
+      "head": "toyfulness nugaciousness",
+      "label": null
+    },
+    {
+      "tail": "toyfulness nugaciousness",
+      "head": "trichomycosis scareproof Batus",
+      "label": "yes"
+    },
+    {
+      "tail": "toyfulness nugaciousness",
+      "head": "scribing feverroot",
+      "label": "yes"
+    },
+    {
+      "tail": "trichomycosis scareproof Batus",
+      "head": "Monogenea",
+      "label": "NO"
+    },
+    {
+      "tail": "trichomycosis scareproof Batus",
+      "head": "scribing feverroot",
+      "label": "NO"
+    },
+    {
+      "tail": "Monogenea",
+      "head": "scribing feverroot",
+      "label": "No"
+    },
+    {
+      "tail": "Monogenea",
+      "head": "heterosomous",
+      "label": "No"
+    }
+  ]
+}

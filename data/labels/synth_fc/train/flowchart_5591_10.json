@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "sheely",
+      "id": "sheely",
+      "class": "ellipse"
+    },
+    {
+      "text": "benzothiazole",
+      "id": "benzothiazole",
+      "class": "diamond"
+    },
+    {
+      "text": "Aptian",
+      "id": "Aptian",
+      "class": "document"
+    },
+    {
+      "text": "salvager tickeater Price",
+      "id": "salvager tickeater Price",
+      "class": "hexagon"
+    },
+    {
+      "text": "cimicoid",
+      "id": "cimicoid",
+      "class": "hexagon"
+    },
+    {
+      "text": "horntip",
+      "id": "horntip",
+      "class": "diamond"
+    },
+    {
+      "text": "birdbanding",
+      "id": "birdbanding",
+      "class": "diamond"
+    },
+    {
+      "text": "discriminating",
+      "id": "discriminating",
+      "class": "box"
+    },
+    {
+      "text": "humboldtite piously timocratic",
+      "id": "humboldtite piously timocratic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "causticly",
+      "id": "causticly",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "sheely",
+      "head": "benzothiazole",
+      "label": null
+    },
+    {
+      "tail": "benzothiazole",
+      "head": "Aptian",
+      "label": "No"
+    },
+    {
+      "tail": "benzothiazole",
+      "head": "salvager tickeater Price",
+      "label": "No"
+    },
+    {
+      "tail": "Aptian",
+      "head": "cimicoid",
+      "label": null
+    },
+    {
+      "tail": "cimicoid",
+      "head": "salvager tickeater Price",
+      "label": null
+    },
+    {
+      "tail": "salvager tickeater Price",
+      "head": "horntip",
+      "label": null
+    },
+    {
+      "tail": "horntip",
+      "head": "birdbanding",
+      "label": "YES"
+    },
+    {
+      "tail": "horntip",
+      "head": "discriminating",
+      "label": "YES"
+    },
+    {
+      "tail": "birdbanding",
+      "head": "humboldtite piously timocratic",
+      "label": "YES"
+    },
+    {
+      "tail": "birdbanding",
+      "head": "horntip",
+      "label": "YES"
+    },
+    {
+      "tail": "humboldtite piously timocratic",
+      "head": "discriminating",
+      "label": null
+    },
+    {
+      "tail": "discriminating",
+      "head": "causticly",
+      "label": null
+    }
+  ]
+}

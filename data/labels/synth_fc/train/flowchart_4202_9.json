@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "endoplastron",
+      "id": "endoplastron",
+      "class": "oval"
+    },
+    {
+      "text": "sewerman theraphosid athrogeni",
+      "id": "sewerman theraphosid athrogeni",
+      "class": "hexagon"
+    },
+    {
+      "text": "photogenic",
+      "id": "photogenic",
+      "class": "diamond"
+    },
+    {
+      "text": "beermaking physicalness",
+      "id": "beermaking physicalness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "chessylite philobrutish chopfa",
+      "id": "chessylite philobrutish chopfa",
+      "class": "document"
+    },
+    {
+      "text": "sufferably",
+      "id": "sufferably",
+      "class": "document"
+    },
+    {
+      "text": "terma",
+      "id": "terma",
+      "class": "box"
+    },
+    {
+      "text": "saltern",
+      "id": "saltern",
+      "class": "document"
+    },
+    {
+      "text": "spouseless gruine",
+      "id": "spouseless gruine",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "endoplastron",
+      "head": "sewerman theraphosid athrogeni",
+      "label": null
+    },
+    {
+      "tail": "sewerman theraphosid athrogeni",
+      "head": "photogenic",
+      "label": null
+    },
+    {
+      "tail": "photogenic",
+      "head": "beermaking physicalness",
+      "label": "Yes"
+    },
+    {
+      "tail": "photogenic",
+      "head": "chessylite philobrutish chopfa",
+      "label": "Yes"
+    },
+    {
+      "tail": "beermaking physicalness",
+      "head": "sufferably",
+      "label": null
+    },
+    {
+      "tail": "sufferably",
+      "head": "chessylite philobrutish chopfa",
+      "label": null
+    },
+    {
+      "tail": "chessylite philobrutish chopfa",
+      "head": "terma",
+      "label": null
+    },
+    {
+      "tail": "terma",
+      "head": "saltern",
+      "label": null
+    },
+    {
+      "tail": "saltern",
+      "head": "spouseless gruine",
+      "label": null
+    }
+  ]
+}

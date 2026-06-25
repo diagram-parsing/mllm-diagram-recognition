@@ -1,0 +1,231 @@
+{
+  "nodes": [
+    {
+      "text": "order process started",
+      "id": "order process started",
+      "class": "event"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "class": "task"
+    },
+    {
+      "text": "order process completed",
+      "id": "order process completed",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order confirmation",
+      "id": "order confirmation",
+      "class": "dataObject"
+    },
+    {
+      "text": "order management system",
+      "id": "order management system",
+      "class": "dataStore"
+    },
+    {
+      "text": "order on paper",
+      "id": "order on paper",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "class": "messageEvent"
+    },
+    {
+      "text": "attach order to pinboard",
+      "id": "attach order to pinboard",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "messageEvent_2",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "attach order to pinboard",
+      "head": "order process completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "attach order to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "order process started",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "order confirmation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "order on paper",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "order management system",
+      "head": "print out order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "order on paper",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "order on paper",
+      "head": "attach order to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "order management system",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "order management system",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "messageEvent_2",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "messageEvent_3",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Restaurant",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

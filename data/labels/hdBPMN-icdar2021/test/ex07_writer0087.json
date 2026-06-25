@@ -1,0 +1,777 @@
+{
+  "nodes": [
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "bbox": [
+        209.223,
+        370.267,
+        72.243,
+        54.192
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1801.676,
+        337.152,
+        213.729,
+        75.256
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "bbox": [
+        1154.462,
+        668.291,
+        150.512,
+        90.307
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1062.648,
+        373.28,
+        63.218,
+        63.218
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Expertise received",
+      "id": "Expertise received",
+      "bbox": [
+        1187.577,
+        367.254,
+        72.243,
+        54.192
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1402.813,
+        356.722,
+        75.256,
+        75.256
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "File results",
+      "id": "File results",
+      "bbox": [
+        1548.805,
+        334.152,
+        168.576,
+        73.749
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Ask external expert to review",
+      "id": "Ask external expert to review",
+      "bbox": [
+        477.132,
+        620.125,
+        255.883,
+        138.474
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        800.752,
+        675.823,
+        75.256,
+        75.256
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "bbox": [
+        991.898,
+        675.823,
+        64.724,
+        79.775
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        511.754,
+        350.697,
+        170.082,
+        121.916
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "Expertise",
+      "id": "Expertise",
+      "bbox": [
+        1277.884,
+        538.843,
+        52.686,
+        61.711
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        364.255,
+        355.216,
+        75.256,
+        67.737
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "report created",
+      "id": "report created",
+      "bbox": [
+        2086.155,
+        338.658,
+        54.192,
+        54.192
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Director done",
+      "id": "Director done",
+      "bbox": [
+        2260.757,
+        690.875,
+        27.089,
+        42.141
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Pay expert",
+      "id": "Pay expert",
+      "bbox": [
+        1511.184,
+        611.099,
+        686.355,
+        260.389
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "Expertise forwadded",
+      "id": "Expertise forwadded",
+      "bbox": [
+        1551.818,
+        681.836,
+        54.192,
+        72.243
+      ],
+      "class": "event"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "bbox": [
+        1685.786,
+        648.721,
+        158.044,
+        105.358
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send check to expert",
+      "id": "send check to expert",
+      "bbox": [
+        1878.438,
+        654.746,
+        176.108,
+        96.333
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Expert paid",
+      "id": "Expert paid",
+      "bbox": [
+        2087.662,
+        686.355,
+        54.192,
+        54.192
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "Ask external expert to review",
+      "class": "sequenceFlow",
+      "bbox": [
+        605.247,
+        750.559,
+        234.633,
+        47.993
+      ],
+      "kps": [
+        838.547,
+        750.559,
+        2.0,
+        605.247,
+        758.558,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Pay expert",
+      "head": "Director done",
+      "class": "sequenceFlow",
+      "bbox": [
+        2197.539,
+        690.781,
+        64.551,
+        46.66
+      ],
+      "kps": [
+        2197.539,
+        713.445,
+        2.0,
+        2260.757,
+        713.445,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "Pay expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1440.434,
+        431.978,
+        72.083,
+        281.293
+      ],
+      "kps": [
+        1440.434,
+        431.978,
+        2.0,
+        1511.184,
+        711.938,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1097.257,
+        433.485,
+        133.794,
+        236.14
+      ],
+      "kps": [
+        1229.718,
+        668.291,
+        2.0,
+        1097.257,
+        433.485,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1056.622,
+        692.288,
+        99.172,
+        46.66
+      ],
+      "kps": [
+        1056.622,
+        716.458,
+        2.0,
+        1154.462,
+        713.445,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "bbox": [
+        876.008,
+        690.781,
+        117.223,
+        46.66
+      ],
+      "kps": [
+        876.008,
+        713.445,
+        2.0,
+        991.898,
+        713.445,
+        2.0
+      ],
+      "label": "in time"
+    },
+    {
+      "tail": "Ask external expert to review",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        733.015,
+        690.028,
+        70.563,
+        46.66
+      ],
+      "kps": [
+        733.015,
+        710.432,
+        2.0,
+        802.245,
+        714.951,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "report created",
+      "class": "sequenceFlow",
+      "bbox": [
+        2015.405,
+        359.642,
+        78.096,
+        46.66
+      ],
+      "kps": [
+        2015.405,
+        382.305,
+        2.0,
+        2092.168,
+        382.305,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "File results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1717.395,
+        350.617,
+        85.614,
+        46.66
+      ],
+      "kps": [
+        1717.395,
+        373.28,
+        2.0,
+        1801.676,
+        373.28,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "File results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1478.069,
+        371.694,
+        72.07,
+        46.66
+      ],
+      "kps": [
+        1478.069,
+        394.357,
+        2.0,
+        1548.805,
+        394.357,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Expertise received",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1259.82,
+        371.694,
+        144.326,
+        46.66
+      ],
+      "kps": [
+        1259.82,
+        394.357,
+        2.0,
+        1402.813,
+        394.357,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Expertise received",
+      "class": "sequenceFlow",
+      "bbox": [
+        1115.321,
+        371.694,
+        73.589,
+        46.66
+      ],
+      "kps": [
+        1115.321,
+        394.357,
+        2.0,
+        1187.577,
+        394.357,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        681.836,
+        374.693,
+        389.664,
+        46.66
+      ],
+      "kps": [
+        681.836,
+        397.357,
+        2.0,
+        1070.167,
+        397.357,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        438.004,
+        367.174,
+        75.083,
+        46.66
+      ],
+      "kps": [
+        438.004,
+        389.838,
+        2.0,
+        511.754,
+        389.838,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        281.466,
+        372.44,
+        88.627,
+        46.66
+      ],
+      "kps": [
+        281.466,
+        397.357,
+        2.0,
+        368.761,
+        392.851,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "Ask external expert to review",
+      "class": "sequenceFlow",
+      "bbox": [
+        405.275,
+        418.607,
+        193.306,
+        202.638
+      ],
+      "kps": [
+        405.275,
+        418.607,
+        2.0,
+        597.248,
+        619.911,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send check to expert",
+      "head": "Expert paid",
+      "class": "sequenceFlow",
+      "bbox": [
+        2048.374,
+        686.569,
+        46.66,
+        46.66
+      ],
+      "kps": [
+        2054.373,
+        706.566,
+        2.0,
+        2087.702,
+        711.898,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "send check to expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1839.071,
+        669.238,
+        46.66,
+        46.66
+      ],
+      "kps": [
+        1845.07,
+        691.901,
+        2.0,
+        1878.398,
+        691.901,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Expertise forwadded",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        1606.437,
+        689.901,
+        81.322,
+        46.66
+      ],
+      "kps": [
+        1606.437,
+        717.231,
+        2.0,
+        1686.426,
+        707.899,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Expertise",
+      "head": "forward expertise",
+      "class": "dataAssociation",
+      "bbox": [
+        1237.91,
+        574.971,
+        46.66,
+        94.653
+      ],
+      "kps": [
+        1277.884,
+        574.971,
+        2.0,
+        1243.262,
+        668.291,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Expertise received",
+      "head": "Expertise",
+      "class": "dataAssociation",
+      "bbox": [
+        1199.615,
+        428.965,
+        100.666,
+        111.211
+      ],
+      "kps": [
+        1214.666,
+        428.965,
+        2.0,
+        1298.948,
+        538.843,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Ask external expert to review",
+      "head": "External expert",
+      "class": "messageFlow",
+      "bbox": [
+        514.673,
+        758.598,
+        46.66,
+        317.421
+      ],
+      "kps": [
+        537.337,
+        758.598,
+        2.0,
+        537.337,
+        1074.686,
+        2.0
+      ],
+      "label": "Expertise request"
+    },
+    {
+      "tail": "send check to expert",
+      "head": "External expert",
+      "class": "messageFlow",
+      "bbox": [
+        1896.422,
+        751.079,
+        46.66,
+        324.94
+      ],
+      "kps": [
+        1919.086,
+        751.079,
+        2.0,
+        1919.086,
+        1074.686,
+        2.0
+      ],
+      "label": "check"
+    },
+    {
+      "tail": "External expert",
+      "head": "expertise received",
+      "class": "messageFlow",
+      "bbox": [
+        972.248,
+        736.028,
+        46.66,
+        339.991
+      ],
+      "kps": [
+        990.392,
+        1074.686,
+        2.0,
+        999.431,
+        736.028,
+        2.0
+      ],
+      "label": "Expertise"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "Managing director",
+        "QA departement"
+      ],
+      "bbox": [
+        25.583,
+        298.024,
+        2302.898,
+        611.099
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing director",
+      "nodes": [
+        "forward expertise",
+        "Ask external expert to review",
+        "eventBasedGateway_1",
+        "expertise received",
+        "Expertise",
+        "Director done",
+        "Pay expert",
+        "Expertise forwadded",
+        "fill cheque",
+        "send check to expert",
+        "Expert paid"
+      ],
+      "bbox": [
+        70.737,
+        517.779,
+        2257.744,
+        391.344
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA departement",
+      "nodes": [
+        "new case started",
+        "create report",
+        "parallelGateway_1",
+        "Expertise received",
+        "parallelGateway_2",
+        "File results",
+        "interview patients",
+        "parallelGateway_3",
+        "report created"
+      ],
+      "bbox": [
+        70.737,
+        298.024,
+        2257.744,
+        219.755
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "External expert",
+      "nodes": [],
+      "bbox": [
+        70.737,
+        1074.686,
+        2197.539,
+        270.935
+      ],
+      "class": "pool"
+    }
+  ]
+}

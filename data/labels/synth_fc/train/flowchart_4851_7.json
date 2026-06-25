@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "clotter",
+      "id": "clotter",
+      "class": "oval"
+    },
+    {
+      "text": "beennut",
+      "id": "beennut",
+      "class": "document"
+    },
+    {
+      "text": "succous",
+      "id": "succous",
+      "class": "diamond"
+    },
+    {
+      "text": "macrogamy",
+      "id": "macrogamy",
+      "class": "hexagon"
+    },
+    {
+      "text": "deviser floral",
+      "id": "deviser floral",
+      "class": "circle"
+    },
+    {
+      "text": "prebake",
+      "id": "prebake",
+      "class": "box"
+    },
+    {
+      "text": "counselorship emulsionize",
+      "id": "counselorship emulsionize",
+      "class": "box"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "clotter",
+      "head": "beennut",
+      "label": null
+    },
+    {
+      "tail": "beennut",
+      "head": "succous",
+      "label": null
+    },
+    {
+      "tail": "succous",
+      "head": "macrogamy",
+      "label": "No"
+    },
+    {
+      "tail": "succous",
+      "head": "deviser floral",
+      "label": "No"
+    },
+    {
+      "tail": "macrogamy",
+      "head": "prebake",
+      "label": null
+    },
+    {
+      "tail": "prebake",
+      "head": "counselorship emulsionize",
+      "label": null
+    },
+    {
+      "tail": "counselorship emulsionize",
+      "head": "deviser floral",
+      "label": null
+    }
+  ]
+}

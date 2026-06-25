@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "text": "tortrices",
+      "id": "tortrices",
+      "class": "circle",
+      "bbox": [
+        31,
+        5,
+        108,
+        83
+      ]
+    },
+    {
+      "text": "curver",
+      "id": "curver",
+      "class": "parallelogram",
+      "bbox": [
+        12,
+        98,
+        127,
+        146
+      ]
+    },
+    {
+      "text": "sabanut violmaker",
+      "id": "sabanut violmaker",
+      "class": "diamond",
+      "bbox": [
+        5,
+        164,
+        134,
+        237
+      ]
+    },
+    {
+      "text": "isograft",
+      "id": "isograft",
+      "class": "box",
+      "bbox": [
+        34,
+        255,
+        106,
+        303
+      ]
+    },
+    {
+      "text": "rachialgia",
+      "id": "rachialgia",
+      "class": "box",
+      "bbox": [
+        32,
+        333,
+        107,
+        381
+      ]
+    },
+    {
+      "text": "nonharmonic",
+      "id": "nonharmonic",
+      "class": "box",
+      "bbox": [
+        34,
+        392,
+        106,
+        434
+      ]
+    },
+    {
+      "text": "reallege",
+      "id": "reallege",
+      "class": "document",
+      "bbox": [
+        167,
+        15,
+        279,
+        73
+      ]
+    },
+    {
+      "text": "unpriggish",
+      "id": "unpriggish",
+      "class": "oval",
+      "bbox": [
+        190,
+        116,
+        262,
+        168
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tortrices",
+      "head": "curver",
+      "label": null,
+      "bbox": [
+        65,
+        80,
+        74,
+        93
+      ]
+    },
+    {
+      "tail": "curver",
+      "head": "sabanut violmaker",
+      "label": null,
+      "bbox": [
+        65,
+        145,
+        74,
+        159
+      ]
+    },
+    {
+      "tail": "sabanut violmaker",
+      "head": "isograft",
+      "label": "Yes",
+      "bbox": [
+        65,
+        236,
+        74,
+        250
+      ]
+    },
+    {
+      "tail": "sabanut violmaker",
+      "head": "rachialgia",
+      "label": "Yes",
+      "bbox": [
+        112,
+        209,
+        126,
+        362
+      ]
+    },
+    {
+      "tail": "isograft",
+      "head": "rachialgia",
+      "label": null,
+      "bbox": [
+        65,
+        304,
+        74,
+        328
+      ]
+    },
+    {
+      "tail": "rachialgia",
+      "head": "nonharmonic",
+      "label": null,
+      "bbox": [
+        65,
+        373,
+        74,
+        386
+      ]
+    },
+    {
+      "tail": "nonharmonic",
+      "head": "reallege",
+      "label": null,
+      "bbox": [
+        107,
+        77,
+        183,
+        416
+      ]
+    },
+    {
+      "tail": "reallege",
+      "head": "unpriggish",
+      "label": null,
+      "bbox": [
+        221,
+        72,
+        231,
+        111
+      ]
+    }
+  ]
+}

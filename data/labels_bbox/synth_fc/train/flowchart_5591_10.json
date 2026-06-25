@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "text": "sheely",
+      "id": "sheely",
+      "class": "ellipse",
+      "bbox": [
+        49,
+        5,
+        127,
+        53
+      ]
+    },
+    {
+      "text": "benzothiazole",
+      "id": "benzothiazole",
+      "class": "diamond",
+      "bbox": [
+        5,
+        102,
+        170,
+        150
+      ]
+    },
+    {
+      "text": "Aptian",
+      "id": "Aptian",
+      "class": "document",
+      "bbox": [
+        35,
+        215,
+        140,
+        279
+      ]
+    },
+    {
+      "text": "salvager tickeater Price",
+      "id": "salvager tickeater Price",
+      "class": "hexagon",
+      "bbox": [
+        24,
+        362,
+        152,
+        422
+      ]
+    },
+    {
+      "text": "cimicoid",
+      "id": "cimicoid",
+      "class": "hexagon",
+      "bbox": [
+        49,
+        290,
+        126,
+        350
+      ]
+    },
+    {
+      "text": "horntip",
+      "id": "horntip",
+      "class": "diamond",
+      "bbox": [
+        222,
+        5,
+        341,
+        53
+      ]
+    },
+    {
+      "text": "birdbanding",
+      "id": "birdbanding",
+      "class": "diamond",
+      "bbox": [
+        231,
+        89,
+        332,
+        163
+      ]
+    },
+    {
+      "text": "discriminating",
+      "id": "discriminating",
+      "class": "box",
+      "bbox": [
+        245,
+        296,
+        317,
+        344
+      ]
+    },
+    {
+      "text": "humboldtite piously timocratic",
+      "id": "humboldtite piously timocratic",
+      "class": "parallelogram",
+      "bbox": [
+        183,
+        186,
+        374,
+        260
+      ]
+    },
+    {
+      "text": "causticly",
+      "id": "causticly",
+      "class": "ellipse",
+      "bbox": [
+        245,
+        391,
+        317,
+        437
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "sheely",
+      "head": "benzothiazole",
+      "label": null,
+      "bbox": [
+        82,
+        54,
+        94,
+        102
+      ]
+    },
+    {
+      "tail": "benzothiazole",
+      "head": "Aptian",
+      "label": "No",
+      "bbox": [
+        82,
+        151,
+        94,
+        215
+      ]
+    },
+    {
+      "tail": "benzothiazole",
+      "head": "salvager tickeater Price",
+      "label": "No",
+      "bbox": [
+        140,
+        134,
+        152,
+        387
+      ]
+    },
+    {
+      "tail": "Aptian",
+      "head": "cimicoid",
+      "label": null,
+      "bbox": [
+        82,
+        276,
+        94,
+        289
+      ]
+    },
+    {
+      "tail": "cimicoid",
+      "head": "salvager tickeater Price",
+      "label": null,
+      "bbox": [
+        82,
+        349,
+        94,
+        362
+      ]
+    },
+    {
+      "tail": "salvager tickeater Price",
+      "head": "horntip",
+      "label": null,
+      "bbox": [
+        136,
+        17,
+        237,
+        377
+      ]
+    },
+    {
+      "tail": "horntip",
+      "head": "birdbanding",
+      "label": "YES",
+      "bbox": [
+        292,
+        47,
+        304,
+        101
+      ]
+    },
+    {
+      "tail": "horntip",
+      "head": "discriminating",
+      "label": "YES",
+      "bbox": [
+        179,
+        39,
+        245,
+        326
+      ]
+    },
+    {
+      "tail": "birdbanding",
+      "head": "humboldtite piously timocratic",
+      "label": "YES",
+      "bbox": [
+        275,
+        163,
+        287,
+        186
+      ]
+    },
+    {
+      "tail": "birdbanding",
+      "head": "horntip",
+      "label": "YES",
+      "bbox": [
+        258,
+        47,
+        270,
+        101
+      ]
+    },
+    {
+      "tail": "humboldtite piously timocratic",
+      "head": "discriminating",
+      "label": null,
+      "bbox": [
+        275,
+        260,
+        287,
+        295
+      ]
+    },
+    {
+      "tail": "discriminating",
+      "head": "causticly",
+      "label": null,
+      "bbox": [
+        275,
+        344,
+        287,
+        390
+      ]
+    }
+  ]
+}

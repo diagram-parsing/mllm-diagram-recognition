@@ -1,0 +1,549 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        698,
+        792,
+        796,
+        894
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        750,
+        1902,
+        842,
+        1992
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        888,
+        554,
+        1132,
+        744
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Register claim",
+      "id": "Register claim",
+      "bbox": [
+        888,
+        888,
+        1130,
+        1080
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Customer Contract Date",
+      "id": "Customer Contract Date",
+      "bbox": [
+        746,
+        2266,
+        884,
+        2378
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "claim with documents arrived",
+      "id": "claim with documents arrived",
+      "bbox": [
+        416,
+        808,
+        506,
+        888
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "documents",
+      "id": "documents",
+      "bbox": [
+        656,
+        414,
+        800,
+        558
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1232,
+        610,
+        1310,
+        700
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claims Management system",
+      "id": "claims Management system",
+      "bbox": [
+        1078,
+        1166,
+        1224,
+        1278
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1226,
+        792,
+        1320,
+        892
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Check the insurance",
+      "id": "Check the insurance",
+      "bbox": [
+        368,
+        1804,
+        602,
+        2042
+      ],
+      "class": "task"
+    },
+    {
+      "text": "phone number",
+      "id": "phone number",
+      "bbox": [
+        750,
+        1518,
+        890,
+        1658
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "phone a garage to authorize the repairs",
+      "id": "phone a garage to authorize the repairs",
+      "bbox": [
+        938,
+        1660,
+        1178,
+        1854
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Pean payment",
+      "id": "Pean payment",
+      "bbox": [
+        1270,
+        1654,
+        1510,
+        1848
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send letter to customer",
+      "id": "send letter to customer",
+      "bbox": [
+        1558,
+        1940,
+        1746,
+        2034
+      ],
+      "class": "task"
+    },
+    {
+      "text": "process completion",
+      "id": "process completion",
+      "bbox": [
+        1806,
+        1958,
+        1862,
+        2034
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Wise claim back",
+      "id": "Wise claim back",
+      "bbox": [
+        938,
+        2040,
+        1226,
+        2232
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1364,
+        1942,
+        1456,
+        2030
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Wise claim back",
+      "class": "sequenceFlow",
+      "bbox": [
+        1128,
+        506,
+        1914,
+        2330
+      ],
+      "label": "documents incomplet"
+    },
+    {
+      "tail": "Wise claim back",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1226,
+        2024,
+        1418,
+        2138
+      ],
+      "label": null
+    },
+    {
+      "tail": "send letter to customer",
+      "head": "process completion",
+      "class": "sequenceFlow",
+      "bbox": [
+        1746,
+        1960,
+        1810,
+        2017
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "send letter to customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1454,
+        1960,
+        1560,
+        2017
+      ],
+      "label": null
+    },
+    {
+      "tail": "Pean payment",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1416,
+        1752,
+        1600,
+        1950
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone a garage to authorize the repairs",
+      "head": "Pean payment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1178,
+        1722,
+        1272,
+        1779
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "phone a garage to authorize the repairs",
+      "class": "sequenceFlow",
+      "bbox": [
+        796,
+        1750,
+        940,
+        1904
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Wise claim back",
+      "class": "sequenceFlow",
+      "bbox": [
+        796,
+        1992,
+        940,
+        2138
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "Check the insurance",
+      "class": "sequenceFlow",
+      "bbox": [
+        454,
+        842,
+        1424,
+        1806
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1244,
+        698,
+        1301,
+        796
+      ],
+      "label": "documents complete"
+    },
+    {
+      "tail": "task_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1132,
+        626,
+        1234,
+        683
+      ],
+      "label": null
+    },
+    {
+      "tail": "Register claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1130,
+        890,
+        1276,
+        986
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        748,
+        892,
+        890,
+        986
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        748,
+        654,
+        890,
+        796
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim with documents arrived",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        506,
+        816,
+        702,
+        873
+      ],
+      "label": null
+    },
+    {
+      "tail": "Check the insurance",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        602,
+        1918,
+        754,
+        1975
+      ],
+      "label": null
+    },
+    {
+      "tail": "documents",
+      "head": "task_1",
+      "class": "dataAssociation",
+      "bbox": [
+        802,
+        501,
+        940,
+        558
+      ],
+      "label": null
+    },
+    {
+      "tail": "Register claim",
+      "head": "claims Management system",
+      "class": "dataAssociation",
+      "bbox": [
+        1071,
+        1080,
+        1128,
+        1168
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer Contract Date",
+      "head": "Wise claim back",
+      "class": "dataAssociation",
+      "bbox": [
+        816,
+        2232,
+        1020,
+        2304
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone number",
+      "head": "phone a garage to authorize the repairs",
+      "class": "dataAssociation",
+      "bbox": [
+        890,
+        1588,
+        1030,
+        1662
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim with documents arrived",
+      "class": "messageFlow",
+      "bbox": [
+        438,
+        132,
+        495,
+        806
+      ],
+      "label": "with relevant documents"
+    },
+    {
+      "tail": "Pean payment",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        1374,
+        132,
+        1564,
+        1656
+      ],
+      "label": "Bill"
+    },
+    {
+      "tail": "Wise claim back",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        798,
+        132,
+        1228,
+        2042
+      ],
+      "label": "application arrived"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Motor claim handling process",
+      "nodes": [
+        "Notification department",
+        "Handling department"
+      ],
+      "bbox": [
+        224,
+        372,
+        1940,
+        2664
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Notification department",
+      "nodes": [
+        "parallelGateway_1",
+        "task_1",
+        "Register claim",
+        "claim with documents arrived",
+        "documents",
+        "exclusiveGateway_2",
+        "claims Management system",
+        "parallelGateway_2"
+      ],
+      "bbox": [
+        284,
+        372,
+        1940,
+        1370
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Handling department",
+      "nodes": [
+        "exclusiveGateway_1",
+        "Customer Contract Date",
+        "Check the insurance",
+        "phone number",
+        "phone a garage to authorize the repairs",
+        "Pean payment",
+        "send letter to customer",
+        "process completion",
+        "Wise claim back",
+        "exclusiveGateway_3"
+      ],
+      "bbox": [
+        284,
+        1370,
+        1940,
+        2664
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        222,
+        44,
+        1644,
+        133
+      ],
+      "class": "pool"
+    }
+  ]
+}

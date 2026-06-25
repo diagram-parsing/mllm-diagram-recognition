@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "text": "heliconist",
+      "id": "heliconist",
+      "class": "oval"
+    },
+    {
+      "text": "gallous",
+      "id": "gallous",
+      "class": "diamond"
+    },
+    {
+      "text": "protanopia",
+      "id": "protanopia",
+      "class": "box"
+    },
+    {
+      "text": "granza",
+      "id": "granza",
+      "class": "hexagon"
+    },
+    {
+      "text": "evoke",
+      "id": "evoke",
+      "class": "box"
+    },
+    {
+      "text": "inculcator",
+      "id": "inculcator",
+      "class": "box"
+    },
+    {
+      "text": "symptom biscotin",
+      "id": "symptom biscotin",
+      "class": "document"
+    },
+    {
+      "text": "utter nonmilitant",
+      "id": "utter nonmilitant",
+      "class": "diamond"
+    },
+    {
+      "text": "symphony",
+      "id": "symphony",
+      "class": "diamond"
+    },
+    {
+      "text": "Agao",
+      "id": "Agao",
+      "class": "parallelogram"
+    },
+    {
+      "text": "limaille",
+      "id": "limaille",
+      "class": "diamond"
+    },
+    {
+      "text": "endemism",
+      "id": "endemism",
+      "class": "parallelogram"
+    },
+    {
+      "text": "petroglyphy",
+      "id": "petroglyphy",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "heliconist",
+      "head": "gallous",
+      "label": null
+    },
+    {
+      "tail": "gallous",
+      "head": "protanopia",
+      "label": "yes"
+    },
+    {
+      "tail": "gallous",
+      "head": "heliconist",
+      "label": "yes"
+    },
+    {
+      "tail": "protanopia",
+      "head": "granza",
+      "label": null
+    },
+    {
+      "tail": "granza",
+      "head": "evoke",
+      "label": null
+    },
+    {
+      "tail": "evoke",
+      "head": "inculcator",
+      "label": null
+    },
+    {
+      "tail": "inculcator",
+      "head": "symptom biscotin",
+      "label": null
+    },
+    {
+      "tail": "symptom biscotin",
+      "head": "utter nonmilitant",
+      "label": null
+    },
+    {
+      "tail": "utter nonmilitant",
+      "head": "symphony",
+      "label": "yes"
+    },
+    {
+      "tail": "utter nonmilitant",
+      "head": "protanopia",
+      "label": "yes"
+    },
+    {
+      "tail": "symphony",
+      "head": "Agao",
+      "label": "Yes"
+    },
+    {
+      "tail": "symphony",
+      "head": "granza",
+      "label": "Yes"
+    },
+    {
+      "tail": "Agao",
+      "head": "limaille",
+      "label": null
+    },
+    {
+      "tail": "limaille",
+      "head": "endemism",
+      "label": "Yes"
+    },
+    {
+      "tail": "limaille",
+      "head": "utter nonmilitant",
+      "label": "Yes"
+    },
+    {
+      "tail": "endemism",
+      "head": "petroglyphy",
+      "label": null
+    }
+  ]
+}

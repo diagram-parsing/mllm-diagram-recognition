@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "text": "housewright",
+      "id": "housewright",
+      "class": "circle",
+      "bbox": [
+        54,
+        5,
+        128,
+        79
+      ]
+    },
+    {
+      "text": "springboard",
+      "id": "springboard",
+      "class": "hexagon",
+      "bbox": [
+        32,
+        125,
+        150,
+        173
+      ]
+    },
+    {
+      "text": "Phalaecean",
+      "id": "Phalaecean",
+      "class": "box",
+      "bbox": [
+        50,
+        339,
+        132,
+        387
+      ]
+    },
+    {
+      "text": "subjoin arrogate",
+      "id": "subjoin arrogate",
+      "class": "diamond",
+      "bbox": [
+        33,
+        398,
+        148,
+        471
+      ]
+    },
+    {
+      "text": "decus apodia",
+      "id": "decus apodia",
+      "class": "hexagon",
+      "bbox": [
+        50,
+        619,
+        131,
+        679
+      ]
+    },
+    {
+      "text": "protestatory unaffectioned",
+      "id": "protestatory unaffectioned",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        719,
+        176,
+        787
+      ]
+    },
+    {
+      "text": "chitin",
+      "id": "chitin",
+      "class": "parallelogram",
+      "bbox": [
+        324,
+        161,
+        424,
+        209
+      ]
+    },
+    {
+      "text": "Thecamoebae geodiatropism unst",
+      "id": "Thecamoebae geodiatropism unst",
+      "class": "document",
+      "bbox": [
+        323,
+        304,
+        424,
+        352
+      ]
+    },
+    {
+      "text": "analysable",
+      "id": "analysable",
+      "class": "document",
+      "bbox": [
+        336,
+        411,
+        416,
+        459
+      ]
+    },
+    {
+      "text": "tetradecane",
+      "id": "tetradecane",
+      "class": "diamond",
+      "bbox": [
+        325,
+        541,
+        424,
+        614
+      ]
+    },
+    {
+      "text": "salvational",
+      "id": "salvational",
+      "class": "circle",
+      "bbox": [
+        328,
+        672,
+        424,
+        768
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "housewright",
+      "head": "springboard",
+      "label": null,
+      "bbox": [
+        86,
+        80,
+        95,
+        124
+      ]
+    },
+    {
+      "tail": "springboard",
+      "head": "Phalaecean",
+      "label": null,
+      "bbox": [
+        86,
+        174,
+        95,
+        338
+      ]
+    },
+    {
+      "tail": "Phalaecean",
+      "head": "subjoin arrogate",
+      "label": null,
+      "bbox": [
+        86,
+        383,
+        95,
+        396
+      ]
+    },
+    {
+      "tail": "subjoin arrogate",
+      "head": "decus apodia",
+      "label": "NO",
+      "bbox": [
+        86,
+        472,
+        95,
+        617
+      ]
+    },
+    {
+      "tail": "subjoin arrogate",
+      "head": "housewright",
+      "label": "NO",
+      "bbox": [
+        102,
+        38,
+        156,
+        404
+      ]
+    },
+    {
+      "tail": "decus apodia",
+      "head": "protestatory unaffectioned",
+      "label": null,
+      "bbox": [
+        86,
+        679,
+        95,
+        717
+      ]
+    },
+    {
+      "tail": "protestatory unaffectioned",
+      "head": "chitin",
+      "label": null,
+      "bbox": [
+        163,
+        188,
+        329,
+        719
+      ]
+    },
+    {
+      "tail": "chitin",
+      "head": "Thecamoebae geodiatropism unst",
+      "label": null,
+      "bbox": [
+        371,
+        209,
+        381,
+        303
+      ]
+    },
+    {
+      "tail": "Thecamoebae geodiatropism unst",
+      "head": "analysable",
+      "label": null,
+      "bbox": [
+        371,
+        351,
+        381,
+        410
+      ]
+    },
+    {
+      "tail": "analysable",
+      "head": "tetradecane",
+      "label": null,
+      "bbox": [
+        371,
+        458,
+        381,
+        539
+      ]
+    },
+    {
+      "tail": "tetradecane",
+      "head": "salvational",
+      "label": "Yes",
+      "bbox": [
+        371,
+        615,
+        381,
+        670
+      ]
+    },
+    {
+      "tail": "tetradecane",
+      "head": "protestatory unaffectioned",
+      "label": "Yes",
+      "bbox": [
+        165,
+        578,
+        324,
+        717
+      ]
+    }
+  ]
+}

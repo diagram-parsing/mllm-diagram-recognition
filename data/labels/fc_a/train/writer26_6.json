@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "start",
+      "id": "start",
+      "class": "terminator"
+    },
+    {
+      "text": "Input n",
+      "id": "Input n",
+      "class": "data"
+    },
+    {
+      "text": "sum=0 i=1",
+      "id": "sum=0 i=1",
+      "class": "process"
+    },
+    {
+      "text": "sum=sum+i",
+      "id": "sum=sum+i",
+      "class": "process"
+    },
+    {
+      "text": "i==n?",
+      "id": "i==n?",
+      "class": "decision"
+    },
+    {
+      "text": "i=i+1",
+      "id": "i=i+1",
+      "class": "process"
+    },
+    {
+      "text": "output n",
+      "id": "output n",
+      "class": "data"
+    },
+    {
+      "text": "End",
+      "id": "End",
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "start",
+      "head": "Input n",
+      "label": null
+    },
+    {
+      "tail": "Input n",
+      "head": "sum=0 i=1",
+      "label": null
+    },
+    {
+      "tail": "sum=0 i=1",
+      "head": "sum=sum+i",
+      "label": null
+    },
+    {
+      "tail": "sum=sum+i",
+      "head": "i==n?",
+      "label": null
+    },
+    {
+      "tail": "i==n?",
+      "head": "output n",
+      "label": "Yes"
+    },
+    {
+      "tail": "i==n?",
+      "head": "i=i+1",
+      "label": "No"
+    },
+    {
+      "tail": "i=i+1",
+      "head": "sum=sum+i",
+      "label": null
+    },
+    {
+      "tail": "output n",
+      "head": "End",
+      "label": null
+    }
+  ]
+}

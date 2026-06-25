@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "Theriodontia",
+      "id": "Theriodontia",
+      "class": "ellipse"
+    },
+    {
+      "text": "pneumonopexy",
+      "id": "pneumonopexy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "reserveless prearm",
+      "id": "reserveless prearm",
+      "class": "diamond"
+    },
+    {
+      "text": "xenagogue infirmarian",
+      "id": "xenagogue infirmarian",
+      "class": "parallelogram"
+    },
+    {
+      "text": "scaffoldage",
+      "id": "scaffoldage",
+      "class": "ellipse"
+    },
+    {
+      "text": "Potamogalidae",
+      "id": "Potamogalidae",
+      "class": "document"
+    },
+    {
+      "text": "oxypicric",
+      "id": "oxypicric",
+      "class": "document"
+    },
+    {
+      "text": "sannup battish endoss",
+      "id": "sannup battish endoss",
+      "class": "diamond"
+    },
+    {
+      "text": "scoleciform",
+      "id": "scoleciform",
+      "class": "hexagon"
+    },
+    {
+      "text": "pyrometer",
+      "id": "pyrometer",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Theriodontia",
+      "head": "pneumonopexy",
+      "label": null
+    },
+    {
+      "tail": "pneumonopexy",
+      "head": "reserveless prearm",
+      "label": null
+    },
+    {
+      "tail": "reserveless prearm",
+      "head": "xenagogue infirmarian",
+      "label": "no"
+    },
+    {
+      "tail": "reserveless prearm",
+      "head": "scaffoldage",
+      "label": "no"
+    },
+    {
+      "tail": "xenagogue infirmarian",
+      "head": "Potamogalidae",
+      "label": null
+    },
+    {
+      "tail": "Potamogalidae",
+      "head": "oxypicric",
+      "label": null
+    },
+    {
+      "tail": "oxypicric",
+      "head": "sannup battish endoss",
+      "label": null
+    },
+    {
+      "tail": "sannup battish endoss",
+      "head": "scoleciform",
+      "label": "NO"
+    },
+    {
+      "tail": "sannup battish endoss",
+      "head": "reserveless prearm",
+      "label": "NO"
+    },
+    {
+      "tail": "scoleciform",
+      "head": "pyrometer",
+      "label": null
+    },
+    {
+      "tail": "pyrometer",
+      "head": "scaffoldage",
+      "label": null
+    }
+  ]
+}

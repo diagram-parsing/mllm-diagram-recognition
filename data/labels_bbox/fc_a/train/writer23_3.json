@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "bbox": [
+        286,
+        4,
+        603,
+        139
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input A,B",
+      "id": "Input A,B",
+      "bbox": [
+        197,
+        322,
+        675,
+        496
+      ],
+      "class": "data"
+    },
+    {
+      "text": "A>=B",
+      "id": "A>=B",
+      "bbox": [
+        179,
+        670,
+        467,
+        1019
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "Output B",
+      "id": "Output B",
+      "bbox": [
+        613,
+        1061,
+        1094,
+        1227
+      ],
+      "class": "data"
+    },
+    {
+      "text": "Output A",
+      "id": "Output A",
+      "bbox": [
+        4,
+        1165,
+        458,
+        1330
+      ],
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "Input A,B",
+      "bbox": [
+        404,
+        128,
+        450,
+        328
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input A,B",
+      "head": "A>=B",
+      "bbox": [
+        344,
+        491,
+        394,
+        690
+      ],
+      "label": null
+    },
+    {
+      "tail": "A>=B",
+      "head": "Output B",
+      "bbox": [
+        462,
+        834,
+        880,
+        1055
+      ],
+      "label": "No"
+    },
+    {
+      "tail": "A>=B",
+      "head": "Output A",
+      "bbox": [
+        224,
+        1008,
+        268,
+        1163
+      ],
+      "label": "Yes"
+    }
+  ]
+}

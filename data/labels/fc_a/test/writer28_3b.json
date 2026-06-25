@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "text": "Begin",
+      "id": "Begin",
+      "bbox": [
+        4,
+        50,
+        222,
+        93
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input X,Y",
+      "id": "Input X,Y",
+      "bbox": [
+        264,
+        49,
+        408,
+        110
+      ],
+      "class": "data"
+    },
+    {
+      "text": "X>=Y",
+      "id": "X>=Y",
+      "bbox": [
+        716,
+        38,
+        220,
+        171
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "display X",
+      "id": "display X",
+      "bbox": [
+        892,
+        193,
+        383,
+        112
+      ],
+      "class": "data"
+    },
+    {
+      "text": "display Y",
+      "id": "display Y",
+      "bbox": [
+        935,
+        4,
+        394,
+        91
+      ],
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Begin",
+      "head": "Input X,Y",
+      "bbox": [
+        219,
+        81,
+        100,
+        34
+      ],
+      "kps": [
+        221.0,
+        99.0,
+        2.0,
+        316.0,
+        98.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input X,Y",
+      "head": "X>=Y",
+      "bbox": [
+        604,
+        87,
+        124,
+        42
+      ],
+      "kps": [
+        605.0,
+        109.0,
+        2.0,
+        725.0,
+        111.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display X",
+      "bbox": [
+        829,
+        203,
+        114,
+        63
+      ],
+      "kps": [
+        834.0,
+        204.0,
+        2.0,
+        936.0,
+        253.0,
+        2.0
+      ],
+      "label": "1"
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display Y",
+      "bbox": [
+        926,
+        85,
+        171,
+        51
+      ],
+      "kps": [
+        927.0,
+        132.0,
+        2.0,
+        1078.0,
+        86.0,
+        2.0
+      ],
+      "label": "0"
+    }
+  ]
+}

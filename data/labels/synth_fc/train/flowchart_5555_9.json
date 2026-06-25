@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "unabsurd",
+      "id": "unabsurd",
+      "class": "oval"
+    },
+    {
+      "text": "rotational",
+      "id": "rotational",
+      "class": "diamond"
+    },
+    {
+      "text": "rachialgia",
+      "id": "rachialgia",
+      "class": "box"
+    },
+    {
+      "text": "polythene relatable",
+      "id": "polythene relatable",
+      "class": "diamond"
+    },
+    {
+      "text": "felling isospondylous",
+      "id": "felling isospondylous",
+      "class": "diamond"
+    },
+    {
+      "text": "tarantular boronatrocalcite",
+      "id": "tarantular boronatrocalcite",
+      "class": "diamond"
+    },
+    {
+      "text": "approach",
+      "id": "approach",
+      "class": "document"
+    },
+    {
+      "text": "latensification",
+      "id": "latensification",
+      "class": "diamond"
+    },
+    {
+      "text": "baseness Canton",
+      "id": "baseness Canton",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unabsurd",
+      "head": "rotational",
+      "label": null
+    },
+    {
+      "tail": "rotational",
+      "head": "rachialgia",
+      "label": "No"
+    },
+    {
+      "tail": "rotational",
+      "head": "unabsurd",
+      "label": "No"
+    },
+    {
+      "tail": "rachialgia",
+      "head": "polythene relatable",
+      "label": null
+    },
+    {
+      "tail": "polythene relatable",
+      "head": "felling isospondylous",
+      "label": "no"
+    },
+    {
+      "tail": "polythene relatable",
+      "head": "rachialgia",
+      "label": "no"
+    },
+    {
+      "tail": "felling isospondylous",
+      "head": "tarantular boronatrocalcite",
+      "label": "yes"
+    },
+    {
+      "tail": "felling isospondylous",
+      "head": "rotational",
+      "label": "yes"
+    },
+    {
+      "tail": "tarantular boronatrocalcite",
+      "head": "approach",
+      "label": "NO"
+    },
+    {
+      "tail": "tarantular boronatrocalcite",
+      "head": "rotational",
+      "label": "NO"
+    },
+    {
+      "tail": "approach",
+      "head": "latensification",
+      "label": null
+    },
+    {
+      "tail": "latensification",
+      "head": "baseness Canton",
+      "label": "yes"
+    },
+    {
+      "tail": "latensification",
+      "head": "polythene relatable",
+      "label": "yes"
+    }
+  ]
+}

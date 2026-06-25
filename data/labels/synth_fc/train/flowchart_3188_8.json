@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "vincibleness",
+      "id": "vincibleness",
+      "class": "ellipse"
+    },
+    {
+      "text": "intellectualist",
+      "id": "intellectualist",
+      "class": "diamond"
+    },
+    {
+      "text": "nuchal",
+      "id": "nuchal",
+      "class": "parallelogram"
+    },
+    {
+      "text": "inseminate programmatically",
+      "id": "inseminate programmatically",
+      "class": "box"
+    },
+    {
+      "text": "frizzle mudcap",
+      "id": "frizzle mudcap",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hurter insessor",
+      "id": "hurter insessor",
+      "class": "diamond"
+    },
+    {
+      "text": "hornyhanded anastatic unkennin",
+      "id": "hornyhanded anastatic unkennin",
+      "class": "diamond"
+    },
+    {
+      "text": "ember",
+      "id": "ember",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "vincibleness",
+      "head": "intellectualist",
+      "label": null
+    },
+    {
+      "tail": "intellectualist",
+      "head": "nuchal",
+      "label": "YES"
+    },
+    {
+      "tail": "intellectualist",
+      "head": "inseminate programmatically",
+      "label": "YES"
+    },
+    {
+      "tail": "nuchal",
+      "head": "frizzle mudcap",
+      "label": null
+    },
+    {
+      "tail": "frizzle mudcap",
+      "head": "hurter insessor",
+      "label": null
+    },
+    {
+      "tail": "hurter insessor",
+      "head": "hornyhanded anastatic unkennin",
+      "label": "No"
+    },
+    {
+      "tail": "hurter insessor",
+      "head": "frizzle mudcap",
+      "label": "No"
+    },
+    {
+      "tail": "hornyhanded anastatic unkennin",
+      "head": "inseminate programmatically",
+      "label": "YES"
+    },
+    {
+      "tail": "hornyhanded anastatic unkennin",
+      "head": "vincibleness",
+      "label": "YES"
+    },
+    {
+      "tail": "inseminate programmatically",
+      "head": "ember",
+      "label": null
+    }
+  ]
+}

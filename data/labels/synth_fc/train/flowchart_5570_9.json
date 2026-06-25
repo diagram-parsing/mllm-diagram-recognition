@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "Kuan",
+      "id": "Kuan",
+      "class": "circle"
+    },
+    {
+      "text": "garnetz propatriotic",
+      "id": "garnetz propatriotic",
+      "class": "diamond"
+    },
+    {
+      "text": "overintellectual eyestrain",
+      "id": "overintellectual eyestrain",
+      "class": "hexagon"
+    },
+    {
+      "text": "Ollie tympanitis quadrans",
+      "id": "Ollie tympanitis quadrans",
+      "class": "diamond"
+    },
+    {
+      "text": "photostat impot",
+      "id": "photostat impot",
+      "class": "hexagon"
+    },
+    {
+      "text": "precomparison affronting ulula",
+      "id": "precomparison affronting ulula",
+      "class": "parallelogram"
+    },
+    {
+      "text": "lob",
+      "id": "lob",
+      "class": "document"
+    },
+    {
+      "text": "extramusical",
+      "id": "extramusical",
+      "class": "document"
+    },
+    {
+      "text": "trombone",
+      "id": "trombone",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Kuan",
+      "head": "garnetz propatriotic",
+      "label": null
+    },
+    {
+      "tail": "garnetz propatriotic",
+      "head": "overintellectual eyestrain",
+      "label": "yes"
+    },
+    {
+      "tail": "garnetz propatriotic",
+      "head": "Ollie tympanitis quadrans",
+      "label": "yes"
+    },
+    {
+      "tail": "overintellectual eyestrain",
+      "head": "Ollie tympanitis quadrans",
+      "label": null
+    },
+    {
+      "tail": "Ollie tympanitis quadrans",
+      "head": "photostat impot",
+      "label": "YES"
+    },
+    {
+      "tail": "Ollie tympanitis quadrans",
+      "head": "precomparison affronting ulula",
+      "label": "YES"
+    },
+    {
+      "tail": "photostat impot",
+      "head": "lob",
+      "label": null
+    },
+    {
+      "tail": "lob",
+      "head": "precomparison affronting ulula",
+      "label": null
+    },
+    {
+      "tail": "precomparison affronting ulula",
+      "head": "extramusical",
+      "label": null
+    },
+    {
+      "tail": "extramusical",
+      "head": "trombone",
+      "label": null
+    }
+  ]
+}

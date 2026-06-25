@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "nitration",
+      "id": "nitration",
+      "class": "oval"
+    },
+    {
+      "text": "bepart conceive",
+      "id": "bepart conceive",
+      "class": "hexagon"
+    },
+    {
+      "text": "conjobble propolize",
+      "id": "conjobble propolize",
+      "class": "diamond"
+    },
+    {
+      "text": "lecythus nonfenestrated hydrop",
+      "id": "lecythus nonfenestrated hydrop",
+      "class": "box"
+    },
+    {
+      "text": "hieratic plowwoman",
+      "id": "hieratic plowwoman",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Veronese anodyne",
+      "id": "Veronese anodyne",
+      "class": "diamond"
+    },
+    {
+      "text": "foundery",
+      "id": "foundery",
+      "class": "document"
+    },
+    {
+      "text": "cagit killwort",
+      "id": "cagit killwort",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "nitration",
+      "head": "bepart conceive",
+      "label": null
+    },
+    {
+      "tail": "bepart conceive",
+      "head": "conjobble propolize",
+      "label": null
+    },
+    {
+      "tail": "conjobble propolize",
+      "head": "lecythus nonfenestrated hydrop",
+      "label": "No"
+    },
+    {
+      "tail": "conjobble propolize",
+      "head": "hieratic plowwoman",
+      "label": "No"
+    },
+    {
+      "tail": "lecythus nonfenestrated hydrop",
+      "head": "Veronese anodyne",
+      "label": null
+    },
+    {
+      "tail": "Veronese anodyne",
+      "head": "hieratic plowwoman",
+      "label": "no"
+    },
+    {
+      "tail": "Veronese anodyne",
+      "head": "bepart conceive",
+      "label": "no"
+    },
+    {
+      "tail": "hieratic plowwoman",
+      "head": "foundery",
+      "label": null
+    },
+    {
+      "tail": "foundery",
+      "head": "cagit killwort",
+      "label": null
+    }
+  ]
+}

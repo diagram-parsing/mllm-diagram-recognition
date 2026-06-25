@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "tristate",
+      "id": "tristate",
+      "class": "node",
+      "bbox": [
+        53,
+        329,
+        126,
+        392
+      ]
+    },
+    {
+      "text": "cocozelle",
+      "id": "cocozelle",
+      "class": "node",
+      "bbox": [
+        5,
+        190,
+        131,
+        238
+      ]
+    },
+    {
+      "text": "schoolgirlishness lithoprint",
+      "id": "schoolgirlishness lithoprint",
+      "class": "node",
+      "bbox": [
+        174,
+        189,
+        303,
+        238
+      ]
+    },
+    {
+      "text": "sudaminal whuff trochometer",
+      "id": "sudaminal whuff trochometer",
+      "class": "node",
+      "bbox": [
+        152,
+        27,
+        368,
+        98
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tristate",
+      "head": "cocozelle",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        69,
+        238,
+        85,
+        328
+      ]
+    },
+    {
+      "tail": "schoolgirlishness lithoprint",
+      "head": "sudaminal whuff trochometer",
+      "label": "0.36 t = 0.288",
+      "class": "unidirectional",
+      "bbox": [
+        242,
+        98,
+        257,
+        189
+      ]
+    },
+    {
+      "tail": "tristate",
+      "head": "schoolgirlishness lithoprint",
+      "label": "0.15*** H = 0.877",
+      "class": "bidirectional",
+      "bbox": [
+        118,
+        237,
+        216,
+        331
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "text": "q0",
+      "id": "q0",
+      "class": "state",
+      "bbox": [
+        215,
+        242,
+        351,
+        364
+      ]
+    },
+    {
+      "text": null,
+      "id": "state_1",
+      "bbox": [
+        548,
+        557,
+        753,
+        754
+      ],
+      "class": "state"
+    },
+    {
+      "text": "q2",
+      "id": "q2",
+      "class": "final state",
+      "bbox": [
+        1043,
+        199,
+        1226,
+        379
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "q2",
+      "head": "q2",
+      "bbox": [
+        1071,
+        108,
+        1276,
+        218
+      ],
+      "label": "b"
+    },
+    {
+      "tail": "state_1",
+      "head": "q2",
+      "bbox": [
+        742,
+        401,
+        1207,
+        692
+      ],
+      "label": "a,b"
+    },
+    {
+      "tail": "q2",
+      "head": "state_1",
+      "bbox": [
+        748,
+        337,
+        1052,
+        602
+      ],
+      "label": "a"
+    },
+    {
+      "tail": "q0",
+      "head": "state_1",
+      "bbox": [
+        323,
+        328,
+        581,
+        601
+      ],
+      "label": "b"
+    },
+    {
+      "tail": "q0",
+      "head": "q0",
+      "bbox": [
+        217,
+        152,
+        389,
+        267
+      ],
+      "label": "a"
+    },
+    {
+      "tail": null,
+      "head": "q0",
+      "bbox": [
+        7,
+        298,
+        200,
+        360
+      ],
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": [
+    {
+      "text": "retrieves file and checks if request is acceptable",
+      "id": "retrieves file and checks if request is acceptable",
+      "class": "task"
+    },
+    {
+      "text": "check fees",
+      "id": "check fees",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "send fees notice",
+      "id": "send fees notice",
+      "class": "task"
+    },
+    {
+      "text": "allocate hearing date",
+      "id": "allocate hearing date",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "reassessing document",
+      "id": "reassessing document",
+      "class": "task"
+    },
+    {
+      "text": "request received",
+      "id": "request received",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "request received",
+      "head": "retrieves file and checks if request is acceptable",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieves file and checks if request is acceptable",
+      "head": "check fees",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check fees",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "send fees notice",
+      "class": "sequenceFlow",
+      "label": "not paid"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "allocate hearing date",
+      "class": "sequenceFlow",
+      "label": "paid"
+    },
+    {
+      "tail": "allocate hearing date",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "reassessing document",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "reassessing document",
+      "head": "allocate hearing date",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "pool_1",
+      "head": "request received",
+      "class": "messageFlow",
+      "label": "request for compensation"
+    },
+    {
+      "tail": "send fees notice",
+      "head": "pool_1",
+      "class": "messageFlow",
+      "label": "fees notice"
+    },
+    {
+      "tail": "pool_1",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "label": "fees"
+    }
+  ],
+  "groups": [
+    {
+      "name": "tribunal",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "tenant",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "fisticuffery",
+      "id": "fisticuffery",
+      "class": "oval",
+      "bbox": [
+        17,
+        20,
+        89,
+        72
+      ]
+    },
+    {
+      "text": "sedative glonoine",
+      "id": "sedative glonoine",
+      "class": "hexagon",
+      "bbox": [
+        6,
+        121,
+        99,
+        181
+      ]
+    },
+    {
+      "text": "sody",
+      "id": "sody",
+      "class": "hexagon",
+      "bbox": [
+        15,
+        211,
+        90,
+        259
+      ]
+    },
+    {
+      "text": "prequote",
+      "id": "prequote",
+      "class": "diamond",
+      "bbox": [
+        5,
+        282,
+        100,
+        355
+      ]
+    },
+    {
+      "text": "ingravidation",
+      "id": "ingravidation",
+      "class": "diamond",
+      "bbox": [
+        141,
+        22,
+        297,
+        70
+      ]
+    },
+    {
+      "text": "sulphureosaline gunite",
+      "id": "sulphureosaline gunite",
+      "class": "parallelogram",
+      "bbox": [
+        139,
+        114,
+        297,
+        187
+      ]
+    },
+    {
+      "text": "iliofemoral lenify",
+      "id": "iliofemoral lenify",
+      "class": "diamond",
+      "bbox": [
+        151,
+        198,
+        290,
+        271
+      ]
+    },
+    {
+      "text": "unroped rebuoy",
+      "id": "unroped rebuoy",
+      "class": "box",
+      "bbox": [
+        185,
+        295,
+        257,
+        343
+      ]
+    },
+    {
+      "text": "bergalith Baramika",
+      "id": "bergalith Baramika",
+      "class": "oval",
+      "bbox": [
+        176,
+        377,
+        265,
+        423
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fisticuffery",
+      "head": "sedative glonoine",
+      "label": null,
+      "bbox": [
+        48,
+        72,
+        57,
+        119
+      ]
+    },
+    {
+      "tail": "sedative glonoine",
+      "head": "sody",
+      "label": null,
+      "bbox": [
+        35,
+        181,
+        45,
+        209
+      ]
+    },
+    {
+      "tail": "sody",
+      "head": "prequote",
+      "label": null,
+      "bbox": [
+        48,
+        259,
+        57,
+        280
+      ]
+    },
+    {
+      "tail": "prequote",
+      "head": "ingravidation",
+      "label": "No",
+      "bbox": [
+        65,
+        49,
+        165,
+        291
+      ]
+    },
+    {
+      "tail": "prequote",
+      "head": "sedative glonoine",
+      "label": "No",
+      "bbox": [
+        60,
+        147,
+        114,
+        287
+      ]
+    },
+    {
+      "tail": "ingravidation",
+      "head": "sulphureosaline gunite",
+      "label": "No",
+      "bbox": [
+        216,
+        70,
+        225,
+        112
+      ]
+    },
+    {
+      "tail": "ingravidation",
+      "head": "fisticuffery",
+      "label": "No",
+      "bbox": [
+        89,
+        33,
+        164,
+        43
+      ]
+    },
+    {
+      "tail": "sulphureosaline gunite",
+      "head": "iliofemoral lenify",
+      "label": null,
+      "bbox": [
+        216,
+        183,
+        225,
+        196
+      ]
+    },
+    {
+      "tail": "iliofemoral lenify",
+      "head": "unroped rebuoy",
+      "label": "yes",
+      "bbox": [
+        216,
+        272,
+        225,
+        293
+      ]
+    },
+    {
+      "tail": "iliofemoral lenify",
+      "head": "sedative glonoine",
+      "label": "yes",
+      "bbox": [
+        61,
+        182,
+        207,
+        205
+      ]
+    },
+    {
+      "tail": "unroped rebuoy",
+      "head": "bergalith Baramika",
+      "label": null,
+      "bbox": [
+        216,
+        343,
+        225,
+        375
+      ]
+    }
+  ]
+}

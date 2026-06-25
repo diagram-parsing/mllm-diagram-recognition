@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "text": "Diphylleia",
+      "id": "Diphylleia",
+      "class": "circle"
+    },
+    {
+      "text": "felonry uncomplaisant",
+      "id": "felonry uncomplaisant",
+      "class": "hexagon"
+    },
+    {
+      "text": "resistible",
+      "id": "resistible",
+      "class": "document"
+    },
+    {
+      "text": "splenonephric unpilloried spoo",
+      "id": "splenonephric unpilloried spoo",
+      "class": "diamond"
+    },
+    {
+      "text": "ungull whimsic",
+      "id": "ungull whimsic",
+      "class": "diamond"
+    },
+    {
+      "text": "tinctumutation tormodont",
+      "id": "tinctumutation tormodont",
+      "class": "diamond"
+    },
+    {
+      "text": "loiter macroclimate",
+      "id": "loiter macroclimate",
+      "class": "parallelogram"
+    },
+    {
+      "text": "zymogenesis",
+      "id": "zymogenesis",
+      "class": "box"
+    },
+    {
+      "text": "prothoracic stenographer",
+      "id": "prothoracic stenographer",
+      "class": "diamond"
+    },
+    {
+      "text": "gamene Sphaeropsidaceae",
+      "id": "gamene Sphaeropsidaceae",
+      "class": "box"
+    },
+    {
+      "text": "postvide",
+      "id": "postvide",
+      "class": "diamond"
+    },
+    {
+      "text": "gurniad inapproachability matt",
+      "id": "gurniad inapproachability matt",
+      "class": "box"
+    },
+    {
+      "text": "Opilonea quondam unorn",
+      "id": "Opilonea quondam unorn",
+      "class": "parallelogram"
+    },
+    {
+      "text": "proteidean",
+      "id": "proteidean",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Diphylleia",
+      "head": "felonry uncomplaisant",
+      "label": null
+    },
+    {
+      "tail": "felonry uncomplaisant",
+      "head": "resistible",
+      "label": null
+    },
+    {
+      "tail": "resistible",
+      "head": "splenonephric unpilloried spoo",
+      "label": null
+    },
+    {
+      "tail": "splenonephric unpilloried spoo",
+      "head": "ungull whimsic",
+      "label": "No"
+    },
+    {
+      "tail": "splenonephric unpilloried spoo",
+      "head": "felonry uncomplaisant",
+      "label": "No"
+    },
+    {
+      "tail": "ungull whimsic",
+      "head": "tinctumutation tormodont",
+      "label": "yes"
+    },
+    {
+      "tail": "ungull whimsic",
+      "head": "loiter macroclimate",
+      "label": "yes"
+    },
+    {
+      "tail": "tinctumutation tormodont",
+      "head": "zymogenesis",
+      "label": "Yes"
+    },
+    {
+      "tail": "tinctumutation tormodont",
+      "head": "resistible",
+      "label": "Yes"
+    },
+    {
+      "tail": "zymogenesis",
+      "head": "prothoracic stenographer",
+      "label": null
+    },
+    {
+      "tail": "prothoracic stenographer",
+      "head": "loiter macroclimate",
+      "label": "NO"
+    },
+    {
+      "tail": "prothoracic stenographer",
+      "head": "felonry uncomplaisant",
+      "label": "NO"
+    },
+    {
+      "tail": "loiter macroclimate",
+      "head": "gamene Sphaeropsidaceae",
+      "label": null
+    },
+    {
+      "tail": "gamene Sphaeropsidaceae",
+      "head": "postvide",
+      "label": null
+    },
+    {
+      "tail": "postvide",
+      "head": "gurniad inapproachability matt",
+      "label": "YES"
+    },
+    {
+      "tail": "postvide",
+      "head": "prothoracic stenographer",
+      "label": "YES"
+    },
+    {
+      "tail": "gurniad inapproachability matt",
+      "head": "Opilonea quondam unorn",
+      "label": null
+    },
+    {
+      "tail": "Opilonea quondam unorn",
+      "head": "proteidean",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "guariba Tanoan",
+      "id": "guariba Tanoan",
+      "class": "circle",
+      "bbox": [
+        54,
+        5,
+        130,
+        81
+      ]
+    },
+    {
+      "text": "Hypopitys quercitrin",
+      "id": "Hypopitys quercitrin",
+      "class": "document",
+      "bbox": [
+        49,
+        117,
+        134,
+        165
+      ]
+    },
+    {
+      "text": "discoverability",
+      "id": "discoverability",
+      "class": "diamond",
+      "bbox": [
+        5,
+        239,
+        178,
+        287
+      ]
+    },
+    {
+      "text": "kidling",
+      "id": "kidling",
+      "class": "parallelogram",
+      "bbox": [
+        31,
+        312,
+        153,
+        360
+      ]
+    },
+    {
+      "text": "nebulizer",
+      "id": "nebulizer",
+      "class": "ellipse",
+      "bbox": [
+        251,
+        115,
+        323,
+        167
+      ]
+    },
+    {
+      "text": "cloudage thumblike",
+      "id": "cloudage thumblike",
+      "class": "document",
+      "bbox": [
+        49,
+        459,
+        134,
+        507
+      ]
+    },
+    {
+      "text": "harangue",
+      "id": "harangue",
+      "class": "box",
+      "bbox": [
+        56,
+        532,
+        128,
+        575
+      ]
+    },
+    {
+      "text": "whirtle volumescope",
+      "id": "whirtle volumescope",
+      "class": "diamond",
+      "bbox": [
+        211,
+        31,
+        358,
+        104
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "guariba Tanoan",
+      "head": "Hypopitys quercitrin",
+      "label": null,
+      "bbox": [
+        87,
+        81,
+        96,
+        115
+      ]
+    },
+    {
+      "tail": "Hypopitys quercitrin",
+      "head": "discoverability",
+      "label": null,
+      "bbox": [
+        87,
+        164,
+        96,
+        237
+      ]
+    },
+    {
+      "tail": "discoverability",
+      "head": "kidling",
+      "label": "YES",
+      "bbox": [
+        87,
+        287,
+        96,
+        310
+      ]
+    },
+    {
+      "tail": "discoverability",
+      "head": "nebulizer",
+      "label": "YES",
+      "bbox": [
+        156,
+        137,
+        249,
+        256
+      ]
+    },
+    {
+      "tail": "kidling",
+      "head": "cloudage thumblike",
+      "label": null,
+      "bbox": [
+        87,
+        360,
+        96,
+        458
+      ]
+    },
+    {
+      "tail": "cloudage thumblike",
+      "head": "harangue",
+      "label": null,
+      "bbox": [
+        87,
+        507,
+        96,
+        530
+      ]
+    },
+    {
+      "tail": "harangue",
+      "head": "whirtle volumescope",
+      "label": null,
+      "bbox": [
+        128,
+        79,
+        236,
+        556
+      ]
+    },
+    {
+      "tail": "whirtle volumescope",
+      "head": "nebulizer",
+      "label": "no",
+      "bbox": [
+        283,
+        100,
+        292,
+        113
+      ]
+    },
+    {
+      "tail": "whirtle volumescope",
+      "head": "guariba Tanoan",
+      "label": "no",
+      "bbox": [
+        129,
+        51,
+        234,
+        61
+      ]
+    }
+  ]
+}

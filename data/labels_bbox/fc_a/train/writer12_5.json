@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "bbox": [
+        197,
+        60,
+        414,
+        151
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "more examples?",
+      "id": "more examples?",
+      "bbox": [
+        224,
+        212,
+        567,
+        376
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "update weights",
+      "id": "update weights",
+      "bbox": [
+        296,
+        432,
+        616,
+        544
+      ],
+      "class": "process"
+    },
+    {
+      "text": "next example",
+      "id": "next example",
+      "bbox": [
+        4,
+        349,
+        303,
+        444
+      ],
+      "class": "process"
+    },
+    {
+      "text": "error<best_error",
+      "id": "error<best_error",
+      "bbox": [
+        704,
+        169,
+        941,
+        387
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "i++",
+      "id": "i++",
+      "bbox": [
+        702,
+        514,
+        884,
+        623
+      ],
+      "class": "process"
+    },
+    {
+      "text": "i<100?",
+      "id": "i<100?",
+      "bbox": [
+        696,
+        683,
+        916,
+        835
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "Stop",
+      "id": "Stop",
+      "bbox": [
+        696,
+        913,
+        929,
+        1009
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "best_error=error",
+      "id": "best_error=error",
+      "bbox": [
+        1024,
+        216,
+        1247,
+        344
+      ],
+      "class": "process"
+    },
+    {
+      "text": "save weights",
+      "id": "save weights",
+      "bbox": [
+        1023,
+        444,
+        1236,
+        580
+      ],
+      "class": "process"
+    },
+    {
+      "text": "back to first example",
+      "id": "back to first example",
+      "bbox": [
+        696,
+        4,
+        1009,
+        154
+      ],
+      "class": "process"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "more examples?",
+      "bbox": [
+        297,
+        141,
+        325,
+        233
+      ],
+      "label": null
+    },
+    {
+      "tail": "more examples?",
+      "head": "update weights",
+      "bbox": [
+        375,
+        373,
+        401,
+        448
+      ],
+      "label": "yes"
+    },
+    {
+      "tail": "update weights",
+      "head": "next example",
+      "bbox": [
+        161,
+        442,
+        301,
+        513
+      ],
+      "label": null
+    },
+    {
+      "tail": "next example",
+      "head": "more examples?",
+      "bbox": [
+        113,
+        165,
+        305,
+        357
+      ],
+      "label": null
+    },
+    {
+      "tail": "more examples?",
+      "head": "error<best_error",
+      "bbox": [
+        562,
+        265,
+        702,
+        291
+      ],
+      "label": "no"
+    },
+    {
+      "tail": "error<best_error",
+      "head": "i++",
+      "bbox": [
+        797,
+        380,
+        826,
+        517
+      ],
+      "label": "No"
+    },
+    {
+      "tail": "i++",
+      "head": "i<100?",
+      "bbox": [
+        771,
+        612,
+        800,
+        700
+      ],
+      "label": null
+    },
+    {
+      "tail": "i<100?",
+      "head": "Stop",
+      "bbox": [
+        801,
+        829,
+        825,
+        914
+      ],
+      "label": "No"
+    },
+    {
+      "tail": "error<best_error",
+      "head": "best_error=error",
+      "bbox": [
+        925,
+        277,
+        1014,
+        299
+      ],
+      "label": "Yes"
+    },
+    {
+      "tail": "best_error=error",
+      "head": "save weights",
+      "bbox": [
+        1106,
+        349,
+        1134,
+        437
+      ],
+      "label": null
+    },
+    {
+      "tail": "save weights",
+      "head": "i++",
+      "bbox": [
+        827,
+        575,
+        1101,
+        647
+      ],
+      "label": null
+    },
+    {
+      "tail": "i<100?",
+      "head": "back to first example",
+      "bbox": [
+        909,
+        58,
+        1330,
+        768
+      ],
+      "label": "Yes"
+    },
+    {
+      "tail": "back to first example",
+      "head": "more examples?",
+      "bbox": [
+        313,
+        81,
+        694,
+        199
+      ],
+      "label": null
+    }
+  ]
+}

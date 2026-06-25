@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "weiring",
+      "id": "weiring",
+      "class": "ellipse"
+    },
+    {
+      "text": "Aesopic Photostat kymation",
+      "id": "Aesopic Photostat kymation",
+      "class": "diamond"
+    },
+    {
+      "text": "forbidder",
+      "id": "forbidder",
+      "class": "document"
+    },
+    {
+      "text": "makhzan weiselbergite",
+      "id": "makhzan weiselbergite",
+      "class": "diamond"
+    },
+    {
+      "text": "postmesenteric",
+      "id": "postmesenteric",
+      "class": "diamond"
+    },
+    {
+      "text": "hussyness",
+      "id": "hussyness",
+      "class": "document"
+    },
+    {
+      "text": "equanimousness periatrial",
+      "id": "equanimousness periatrial",
+      "class": "diamond"
+    },
+    {
+      "text": "span",
+      "id": "span",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "weiring",
+      "head": "Aesopic Photostat kymation",
+      "label": null
+    },
+    {
+      "tail": "Aesopic Photostat kymation",
+      "head": "forbidder",
+      "label": "YES"
+    },
+    {
+      "tail": "Aesopic Photostat kymation",
+      "head": "makhzan weiselbergite",
+      "label": "YES"
+    },
+    {
+      "tail": "forbidder",
+      "head": "postmesenteric",
+      "label": null
+    },
+    {
+      "tail": "postmesenteric",
+      "head": "hussyness",
+      "label": "Yes"
+    },
+    {
+      "tail": "postmesenteric",
+      "head": "makhzan weiselbergite",
+      "label": "Yes"
+    },
+    {
+      "tail": "hussyness",
+      "head": "equanimousness periatrial",
+      "label": null
+    },
+    {
+      "tail": "equanimousness periatrial",
+      "head": "makhzan weiselbergite",
+      "label": "YES"
+    },
+    {
+      "tail": "equanimousness periatrial",
+      "head": "span",
+      "label": "YES"
+    },
+    {
+      "tail": "makhzan weiselbergite",
+      "head": "span",
+      "label": "no"
+    },
+    {
+      "tail": "makhzan weiselbergite",
+      "head": "weiring",
+      "label": "no"
+    }
+  ]
+}

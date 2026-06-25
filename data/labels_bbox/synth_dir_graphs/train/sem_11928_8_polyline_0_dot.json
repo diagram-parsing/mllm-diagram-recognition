@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "text": "Trullan ampyx cynipoid",
+      "id": "Trullan ampyx cynipoid",
+      "class": "node",
+      "bbox": [
+        329,
+        414,
+        446,
+        463
+      ]
+    },
+    {
+      "text": "chinaphthol psychoepilepsy",
+      "id": "chinaphthol psychoepilepsy",
+      "class": "node",
+      "bbox": [
+        318,
+        267,
+        457,
+        317
+      ]
+    },
+    {
+      "text": "taillessness Planosarcina vacc",
+      "id": "taillessness Planosarcina vacc",
+      "class": "node",
+      "bbox": [
+        481,
+        267,
+        627,
+        317
+      ]
+    },
+    {
+      "text": "assimilator  Adrammelech",
+      "id": "assimilator  Adrammelech",
+      "class": "node",
+      "bbox": [
+        166,
+        267,
+        294,
+        317
+      ]
+    },
+    {
+      "text": "phenacaine paludicole phoenico",
+      "id": "phenacaine paludicole phoenico",
+      "class": "node",
+      "bbox": [
+        5,
+        119,
+        170,
+        170
+      ]
+    },
+    {
+      "text": "terebella",
+      "id": "terebella",
+      "class": "node",
+      "bbox": [
+        194,
+        119,
+        266,
+        170
+      ]
+    },
+    {
+      "text": "undoing",
+      "id": "undoing",
+      "class": "node",
+      "bbox": [
+        290,
+        121,
+        375,
+        169
+      ]
+    },
+    {
+      "text": "palaeogeographic",
+      "id": "palaeogeographic",
+      "class": "node",
+      "bbox": [
+        160,
+        415,
+        305,
+        463
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Trullan ampyx cynipoid",
+      "head": "chinaphthol psychoepilepsy",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        382,
+        318,
+        394,
+        413
+      ]
+    },
+    {
+      "tail": "Trullan ampyx cynipoid",
+      "head": "taillessness Planosarcina vacc",
+      "label": "0.3195",
+      "class": "unidirectional",
+      "bbox": [
+        412,
+        318,
+        528,
+        416
+      ]
+    },
+    {
+      "tail": "assimilator  Adrammelech",
+      "head": "phenacaine paludicole phoenico",
+      "label": "0.61*** x = 0.9",
+      "class": "unidirectional",
+      "bbox": [
+        108,
+        170,
+        203,
+        269
+      ]
+    },
+    {
+      "tail": "assimilator  Adrammelech",
+      "head": "terebella",
+      "label": "-0.4*** f = 0.129",
+      "class": "unidirectional",
+      "bbox": [
+        224,
+        171,
+        236,
+        267
+      ]
+    },
+    {
+      "tail": "assimilator  Adrammelech",
+      "head": "undoing",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        260,
+        169,
+        326,
+        270
+      ]
+    },
+    {
+      "tail": "Trullan ampyx cynipoid",
+      "head": "assimilator  Adrammelech",
+      "label": null,
+      "class": "bidirectional",
+      "bbox": [
+        262,
+        314,
+        359,
+        405
+      ]
+    },
+    {
+      "tail": "palaeogeographic",
+      "head": "assimilator  Adrammelech",
+      "label": "0.33 y = 0.049",
+      "class": "bidirectional",
+      "bbox": [
+        225,
+        317,
+        237,
+        401
+      ]
+    }
+  ]
+}

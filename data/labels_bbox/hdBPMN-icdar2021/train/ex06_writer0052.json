@@ -1,0 +1,238 @@
+{
+  "nodes": [
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        919,
+        123,
+        1156,
+        251
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "bbox": [
+        825,
+        703,
+        1165,
+        846
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print out order note",
+      "id": "print out order note",
+      "bbox": [
+        1271,
+        430,
+        1450,
+        558
+      ],
+      "class": "task"
+    },
+    {
+      "text": "order pinned",
+      "id": "order pinned",
+      "bbox": [
+        1881,
+        663,
+        1990,
+        755
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        366,
+        481,
+        466,
+        581
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        641,
+        442,
+        758,
+        598
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1305,
+        670,
+        1406,
+        815
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order printed",
+      "id": "order printed",
+      "bbox": [
+        1580,
+        251,
+        1667,
+        347
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "pin to board",
+      "id": "pin to board",
+      "bbox": [
+        1526,
+        641,
+        1755,
+        781
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pin to board",
+      "head": "order pinned",
+      "class": "sequenceFlow",
+      "bbox": [
+        1755,
+        690,
+        1882,
+        735
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "pin to board",
+      "class": "sequenceFlow",
+      "bbox": [
+        1406,
+        721,
+        1527,
+        766
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1165,
+        741,
+        1321,
+        786
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "bbox": [
+        688,
+        582,
+        826,
+        828
+      ],
+      "label": "order by phone"
+    },
+    {
+      "tail": "confirm order",
+      "head": "print out order note",
+      "class": "sequenceFlow",
+      "bbox": [
+        1156,
+        187,
+        1336,
+        432
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "print out order note",
+      "class": "sequenceFlow",
+      "bbox": [
+        757,
+        497,
+        1272,
+        542
+      ],
+      "label": "order by web"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        695,
+        213,
+        921,
+        451
+      ],
+      "label": "order by Lieferando"
+    },
+    {
+      "tail": "event_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        465,
+        509,
+        652,
+        554
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order note",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1338,
+        558,
+        1383,
+        678
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order note",
+      "head": "order printed",
+      "class": "dataAssociation",
+      "bbox": [
+        1406,
+        290,
+        1578,
+        428
+      ],
+      "label": null
+    },
+    {
+      "tail": "order printed",
+      "head": "pin to board",
+      "class": "dataAssociation",
+      "bbox": [
+        1624,
+        315,
+        1771,
+        643
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

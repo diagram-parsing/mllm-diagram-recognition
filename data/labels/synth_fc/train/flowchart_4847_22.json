@@ -1,0 +1,256 @@
+{
+  "nodes": [
+    {
+      "text": "zygosphere",
+      "id": "zygosphere",
+      "class": "ellipse"
+    },
+    {
+      "text": "torous",
+      "id": "torous",
+      "class": "diamond"
+    },
+    {
+      "text": "splendent",
+      "id": "splendent",
+      "class": "parallelogram"
+    },
+    {
+      "text": "lyretail",
+      "id": "lyretail",
+      "class": "diamond"
+    },
+    {
+      "text": "synclinal",
+      "id": "synclinal",
+      "class": "hexagon"
+    },
+    {
+      "text": "sadism saccharoscope",
+      "id": "sadism saccharoscope",
+      "class": "diamond"
+    },
+    {
+      "text": "oak Plataleinae cambiform",
+      "id": "oak Plataleinae cambiform",
+      "class": "diamond"
+    },
+    {
+      "text": "Scotchwoman preconcurrence",
+      "id": "Scotchwoman preconcurrence",
+      "class": "document"
+    },
+    {
+      "text": "androidal",
+      "id": "androidal",
+      "class": "hexagon"
+    },
+    {
+      "text": "Decemberly impotency diaphther",
+      "id": "Decemberly impotency diaphther",
+      "class": "hexagon"
+    },
+    {
+      "text": "uneating boxbush",
+      "id": "uneating boxbush",
+      "class": "diamond"
+    },
+    {
+      "text": "Saurauiaceae",
+      "id": "Saurauiaceae",
+      "class": "document"
+    },
+    {
+      "text": "sodiosalicylate",
+      "id": "sodiosalicylate",
+      "class": "hexagon"
+    },
+    {
+      "text": "sesquisquare",
+      "id": "sesquisquare",
+      "class": "diamond"
+    },
+    {
+      "text": "epexegetic",
+      "id": "epexegetic",
+      "class": "hexagon"
+    },
+    {
+      "text": "hyperuresis",
+      "id": "hyperuresis",
+      "class": "document"
+    },
+    {
+      "text": "impregnable desensitizer pedan",
+      "id": "impregnable desensitizer pedan",
+      "class": "diamond"
+    },
+    {
+      "text": "dacryoadenalgia schizophasia",
+      "id": "dacryoadenalgia schizophasia",
+      "class": "document"
+    },
+    {
+      "text": "metranemia",
+      "id": "metranemia",
+      "class": "parallelogram"
+    },
+    {
+      "text": "repository irresistibleness",
+      "id": "repository irresistibleness",
+      "class": "document"
+    },
+    {
+      "text": "reinstatement moisty",
+      "id": "reinstatement moisty",
+      "class": "box"
+    },
+    {
+      "text": "anastrophe mealies",
+      "id": "anastrophe mealies",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "zygosphere",
+      "head": "torous",
+      "label": null
+    },
+    {
+      "tail": "torous",
+      "head": "splendent",
+      "label": "no"
+    },
+    {
+      "tail": "torous",
+      "head": "lyretail",
+      "label": "no"
+    },
+    {
+      "tail": "splendent",
+      "head": "synclinal",
+      "label": null
+    },
+    {
+      "tail": "synclinal",
+      "head": "sadism saccharoscope",
+      "label": null
+    },
+    {
+      "tail": "sadism saccharoscope",
+      "head": "lyretail",
+      "label": "yes"
+    },
+    {
+      "tail": "sadism saccharoscope",
+      "head": "oak Plataleinae cambiform",
+      "label": "yes"
+    },
+    {
+      "tail": "lyretail",
+      "head": "Scotchwoman preconcurrence",
+      "label": "NO"
+    },
+    {
+      "tail": "lyretail",
+      "head": "androidal",
+      "label": "NO"
+    },
+    {
+      "tail": "Scotchwoman preconcurrence",
+      "head": "Decemberly impotency diaphther",
+      "label": null
+    },
+    {
+      "tail": "Decemberly impotency diaphther",
+      "head": "uneating boxbush",
+      "label": null
+    },
+    {
+      "tail": "uneating boxbush",
+      "head": "Saurauiaceae",
+      "label": "NO"
+    },
+    {
+      "tail": "uneating boxbush",
+      "head": "sodiosalicylate",
+      "label": "NO"
+    },
+    {
+      "tail": "Saurauiaceae",
+      "head": "sesquisquare",
+      "label": null
+    },
+    {
+      "tail": "sesquisquare",
+      "head": "epexegetic",
+      "label": "no"
+    },
+    {
+      "tail": "sesquisquare",
+      "head": "hyperuresis",
+      "label": "no"
+    },
+    {
+      "tail": "epexegetic",
+      "head": "impregnable desensitizer pedan",
+      "label": null
+    },
+    {
+      "tail": "impregnable desensitizer pedan",
+      "head": "dacryoadenalgia schizophasia",
+      "label": "Yes"
+    },
+    {
+      "tail": "impregnable desensitizer pedan",
+      "head": "epexegetic",
+      "label": "Yes"
+    },
+    {
+      "tail": "dacryoadenalgia schizophasia",
+      "head": "metranemia",
+      "label": null
+    },
+    {
+      "tail": "metranemia",
+      "head": "androidal",
+      "label": null
+    },
+    {
+      "tail": "androidal",
+      "head": "sodiosalicylate",
+      "label": null
+    },
+    {
+      "tail": "sodiosalicylate",
+      "head": "repository irresistibleness",
+      "label": null
+    },
+    {
+      "tail": "repository irresistibleness",
+      "head": "hyperuresis",
+      "label": null
+    },
+    {
+      "tail": "hyperuresis",
+      "head": "reinstatement moisty",
+      "label": null
+    },
+    {
+      "tail": "reinstatement moisty",
+      "head": "oak Plataleinae cambiform",
+      "label": null
+    },
+    {
+      "tail": "oak Plataleinae cambiform",
+      "head": "anastrophe mealies",
+      "label": "Yes"
+    },
+    {
+      "tail": "oak Plataleinae cambiform",
+      "head": "reinstatement moisty",
+      "label": "Yes"
+    }
+  ]
+}

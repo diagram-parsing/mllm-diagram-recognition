@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "Colosseum",
+      "id": "Colosseum",
+      "class": "ellipse"
+    },
+    {
+      "text": "epirrhema",
+      "id": "epirrhema",
+      "class": "diamond"
+    },
+    {
+      "text": "Agriotes scarproof",
+      "id": "Agriotes scarproof",
+      "class": "diamond"
+    },
+    {
+      "text": "tannogelatin",
+      "id": "tannogelatin",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Dolicholus",
+      "id": "Dolicholus",
+      "class": "box"
+    },
+    {
+      "text": "stoled",
+      "id": "stoled",
+      "class": "parallelogram"
+    },
+    {
+      "text": "chicane",
+      "id": "chicane",
+      "class": "document"
+    },
+    {
+      "text": "Timonian",
+      "id": "Timonian",
+      "class": "box"
+    },
+    {
+      "text": "ichthyographer Bellacoola",
+      "id": "ichthyographer Bellacoola",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Colosseum",
+      "head": "epirrhema",
+      "label": null
+    },
+    {
+      "tail": "epirrhema",
+      "head": "Agriotes scarproof",
+      "label": "yes"
+    },
+    {
+      "tail": "epirrhema",
+      "head": "tannogelatin",
+      "label": "yes"
+    },
+    {
+      "tail": "Agriotes scarproof",
+      "head": "Dolicholus",
+      "label": "no"
+    },
+    {
+      "tail": "Agriotes scarproof",
+      "head": "stoled",
+      "label": "no"
+    },
+    {
+      "tail": "Dolicholus",
+      "head": "chicane",
+      "label": null
+    },
+    {
+      "tail": "chicane",
+      "head": "tannogelatin",
+      "label": null
+    },
+    {
+      "tail": "tannogelatin",
+      "head": "stoled",
+      "label": null
+    },
+    {
+      "tail": "stoled",
+      "head": "Timonian",
+      "label": null
+    },
+    {
+      "tail": "Timonian",
+      "head": "ichthyographer Bellacoola",
+      "label": null
+    }
+  ]
+}

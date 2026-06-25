@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "text": "geogenetic",
+      "id": "geogenetic",
+      "class": "node",
+      "bbox": [
+        27,
+        89,
+        133,
+        157
+      ]
+    },
+    {
+      "text": "platypus Callistephus",
+      "id": "platypus Callistephus",
+      "class": "node",
+      "bbox": [
+        260,
+        273,
+        377,
+        325
+      ]
+    },
+    {
+      "text": "ardor amice",
+      "id": "ardor amice",
+      "class": "node",
+      "bbox": [
+        283,
+        350,
+        355,
+        403
+      ]
+    },
+    {
+      "text": "mnemonist",
+      "id": "mnemonist",
+      "class": "node",
+      "bbox": [
+        27,
+        182,
+        132,
+        251
+      ]
+    },
+    {
+      "text": "Klanswoman loaded",
+      "id": "Klanswoman loaded",
+      "class": "node",
+      "bbox": [
+        256,
+        433,
+        381,
+        480
+      ]
+    },
+    {
+      "text": "multilobed",
+      "id": "multilobed",
+      "class": "node",
+      "bbox": [
+        273,
+        137,
+        364,
+        205
+      ]
+    },
+    {
+      "text": "charmfully  egocentric",
+      "id": "charmfully  egocentric",
+      "class": "node",
+      "bbox": [
+        505,
+        145,
+        609,
+        197
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "geogenetic",
+      "head": "platypus Callistephus",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        112,
+        151,
+        262,
+        271
+      ]
+    },
+    {
+      "tail": "geogenetic",
+      "head": "ardor amice",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        112,
+        151,
+        280,
+        356
+      ]
+    },
+    {
+      "tail": "mnemonist",
+      "head": "Klanswoman loaded",
+      "label": "0.09* x = 0.114",
+      "class": "unidirectional",
+      "bbox": [
+        92,
+        250,
+        252,
+        464
+      ]
+    },
+    {
+      "tail": "multilobed",
+      "head": "charmfully  egocentric",
+      "label": "-0.91*** x = 0.914",
+      "class": "unidirectional",
+      "bbox": [
+        364,
+        165,
+        501,
+        177
+      ]
+    },
+    {
+      "tail": "mnemonist",
+      "head": "multilobed",
+      "label": "-0.63*** s = 0.711",
+      "class": "unidirectional",
+      "bbox": [
+        133,
+        190,
+        276,
+        214
+      ]
+    },
+    {
+      "tail": "geogenetic",
+      "head": "multilobed",
+      "label": "-1",
+      "class": "unidirectional",
+      "bbox": [
+        131,
+        133,
+        271,
+        165
+      ]
+    }
+  ]
+}

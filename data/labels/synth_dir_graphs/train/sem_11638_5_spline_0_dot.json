@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "text": "Pythian",
+      "id": "Pythian",
+      "class": "node"
+    },
+    {
+      "text": "usaron",
+      "id": "usaron",
+      "class": "node"
+    },
+    {
+      "text": "pacifical earthgall",
+      "id": "pacifical earthgall",
+      "class": "node"
+    },
+    {
+      "text": "legion comeling",
+      "id": "legion comeling",
+      "class": "node"
+    },
+    {
+      "text": "interpleural",
+      "id": "interpleural",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Pythian",
+      "head": "usaron",
+      "label": "0.979",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "pacifical earthgall",
+      "head": "legion comeling",
+      "label": "-1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "pacifical earthgall",
+      "head": "interpleural",
+      "label": "-0.68** t = 0.17",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Pythian",
+      "head": "pacifical earthgall",
+      "label": "-0.39 y = 0.422",
+      "class": "bidirectional"
+    }
+  ]
+}

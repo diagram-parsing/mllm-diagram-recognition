@@ -1,0 +1,314 @@
+{
+  "nodes": [
+    {
+      "text": "oligopepsia Aushar",
+      "id": "oligopepsia Aushar",
+      "class": "circle",
+      "bbox": [
+        12,
+        5,
+        110,
+        103
+      ]
+    },
+    {
+      "text": "eggfruit",
+      "id": "eggfruit",
+      "class": "diamond",
+      "bbox": [
+        14,
+        114,
+        109,
+        187
+      ]
+    },
+    {
+      "text": "squamopetrosal Severian",
+      "id": "squamopetrosal Severian",
+      "class": "box",
+      "bbox": [
+        20,
+        204,
+        103,
+        252
+      ]
+    },
+    {
+      "text": "stringent",
+      "id": "stringent",
+      "class": "parallelogram",
+      "bbox": [
+        15,
+        268,
+        107,
+        342
+      ]
+    },
+    {
+      "text": "saltern",
+      "id": "saltern",
+      "class": "diamond",
+      "bbox": [
+        5,
+        358,
+        117,
+        406
+      ]
+    },
+    {
+      "text": "wherein",
+      "id": "wherein",
+      "class": "diamond",
+      "bbox": [
+        151,
+        127,
+        281,
+        175
+      ]
+    },
+    {
+      "text": "chartographist",
+      "id": "chartographist",
+      "class": "ellipse",
+      "bbox": [
+        327,
+        144,
+        412,
+        196
+      ]
+    },
+    {
+      "text": "cora",
+      "id": "cora",
+      "class": "diamond",
+      "bbox": [
+        172,
+        204,
+        259,
+        252
+      ]
+    },
+    {
+      "text": "godsonship",
+      "id": "godsonship",
+      "class": "diamond",
+      "bbox": [
+        163,
+        268,
+        268,
+        342
+      ]
+    },
+    {
+      "text": "Maiacca",
+      "id": "Maiacca",
+      "class": "parallelogram",
+      "bbox": [
+        146,
+        358,
+        285,
+        406
+      ]
+    },
+    {
+      "text": "unwrapping Waco",
+      "id": "unwrapping Waco",
+      "class": "document",
+      "bbox": [
+        157,
+        426,
+        274,
+        487
+      ]
+    },
+    {
+      "text": "fester",
+      "id": "fester",
+      "class": "document",
+      "bbox": [
+        311,
+        40,
+        423,
+        107
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "oligopepsia Aushar",
+      "head": "eggfruit",
+      "label": null,
+      "bbox": [
+        55,
+        100,
+        67,
+        114
+      ]
+    },
+    {
+      "tail": "eggfruit",
+      "head": "squamopetrosal Severian",
+      "label": "no",
+      "bbox": [
+        55,
+        188,
+        67,
+        203
+      ]
+    },
+    {
+      "tail": "eggfruit",
+      "head": "stringent",
+      "label": "no",
+      "bbox": [
+        66,
+        184,
+        123,
+        324
+      ]
+    },
+    {
+      "tail": "squamopetrosal Severian",
+      "head": "stringent",
+      "label": null,
+      "bbox": [
+        55,
+        252,
+        67,
+        268
+      ]
+    },
+    {
+      "tail": "stringent",
+      "head": "saltern",
+      "label": null,
+      "bbox": [
+        55,
+        342,
+        67,
+        358
+      ]
+    },
+    {
+      "tail": "saltern",
+      "head": "wherein",
+      "label": "no",
+      "bbox": [
+        103,
+        145,
+        150,
+        375
+      ]
+    },
+    {
+      "tail": "saltern",
+      "head": "chartographist",
+      "label": "no",
+      "bbox": [
+        98,
+        173,
+        329,
+        391
+      ]
+    },
+    {
+      "tail": "wherein",
+      "head": "cora",
+      "label": "YES",
+      "bbox": [
+        210,
+        175,
+        222,
+        203
+      ]
+    },
+    {
+      "tail": "wherein",
+      "head": "godsonship",
+      "label": "YES",
+      "bbox": [
+        268,
+        153,
+        281,
+        312
+      ]
+    },
+    {
+      "tail": "cora",
+      "head": "godsonship",
+      "label": "No",
+      "bbox": [
+        210,
+        252,
+        222,
+        268
+      ]
+    },
+    {
+      "tail": "cora",
+      "head": "squamopetrosal Severian",
+      "label": "No",
+      "bbox": [
+        103,
+        222,
+        172,
+        234
+      ]
+    },
+    {
+      "tail": "godsonship",
+      "head": "Maiacca",
+      "label": "YES",
+      "bbox": [
+        210,
+        342,
+        222,
+        358
+      ]
+    },
+    {
+      "tail": "godsonship",
+      "head": "oligopepsia Aushar",
+      "label": "YES",
+      "bbox": [
+        108,
+        66,
+        178,
+        294
+      ]
+    },
+    {
+      "tail": "Maiacca",
+      "head": "unwrapping Waco",
+      "label": null,
+      "bbox": [
+        210,
+        406,
+        222,
+        426
+      ]
+    },
+    {
+      "tail": "unwrapping Waco",
+      "head": "fester",
+      "label": null,
+      "bbox": [
+        274,
+        107,
+        325,
+        460
+      ]
+    },
+    {
+      "tail": "fester",
+      "head": "chartographist",
+      "label": null,
+      "bbox": [
+        364,
+        107,
+        376,
+        143
+      ]
+    }
+  ]
+}

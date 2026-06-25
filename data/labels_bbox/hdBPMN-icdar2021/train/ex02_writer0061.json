@@ -1,0 +1,368 @@
+{
+  "nodes": [
+    {
+      "text": "write a settlement recommendation",
+      "id": "write a settlement recommendation",
+      "bbox": [
+        588,
+        326,
+        829,
+        443
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim request",
+      "id": "claim request",
+      "bbox": [
+        261,
+        512,
+        296,
+        561
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "check by a senior claims officer",
+      "id": "check by a senior claims officer",
+      "bbox": [
+        826,
+        659,
+        1076,
+        794
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1097,
+        676,
+        1176,
+        760
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "process ended",
+      "id": "process ended",
+      "bbox": [
+        1543,
+        623,
+        1578,
+        678
+      ],
+      "class": "event"
+    },
+    {
+      "text": "process proceeds",
+      "id": "process proceeds",
+      "bbox": [
+        1239,
+        825,
+        1408,
+        902
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send back to the claim officer",
+      "id": "send back to the claim officer",
+      "bbox": [
+        1231,
+        611,
+        1443,
+        696
+      ],
+      "class": "task"
+    },
+    {
+      "text": "process\nproceed",
+      "id": "process\nproceed",
+      "bbox": [
+        1239,
+        1017,
+        1289,
+        1078
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "bbox": [
+        902,
+        249,
+        937,
+        290
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        160,
+        343,
+        223,
+        407
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "register and examine",
+      "id": "register and examine",
+      "bbox": [
+        315,
+        328,
+        528,
+        408
+      ],
+      "class": "task"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "bbox": [
+        1487,
+        848,
+        1522,
+        893
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        177,
+        279,
+        216,
+        316
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "register and examine",
+      "class": "sequenceFlow",
+      "bbox": [
+        223,
+        361,
+        316,
+        396
+      ],
+      "label": null
+    },
+    {
+      "tail": "register and examine",
+      "head": "write a settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        528,
+        368,
+        590,
+        404
+      ],
+      "label": null
+    },
+    {
+      "tail": "write a settlement recommendation",
+      "head": "check by a senior claims officer",
+      "class": "sequenceFlow",
+      "bbox": [
+        705,
+        443,
+        828,
+        700
+      ],
+      "label": null
+    },
+    {
+      "tail": "check by a senior claims officer",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1073,
+        709,
+        1108,
+        744
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "send back to the claim officer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1133,
+        631,
+        1232,
+        681
+      ],
+      "label": "Not ok"
+    },
+    {
+      "tail": "send back to the claim officer",
+      "head": "process ended",
+      "class": "sequenceFlow",
+      "bbox": [
+        1443,
+        641,
+        1547,
+        677
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "process proceeds",
+      "class": "sequenceFlow",
+      "bbox": [
+        1133,
+        756,
+        1240,
+        864
+      ],
+      "label": "OK"
+    },
+    {
+      "tail": "process proceeds",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1408,
+        853,
+        1488,
+        888
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "claim request",
+      "class": "dataAssociation",
+      "bbox": [
+        179,
+        405,
+        261,
+        552
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim request",
+      "head": "register and examine",
+      "class": "dataAssociation",
+      "bbox": [
+        295,
+        408,
+        404,
+        538
+      ],
+      "label": null
+    },
+    {
+      "tail": "write a settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        828,
+        274,
+        903,
+        337
+      ],
+      "label": null
+    },
+    {
+      "tail": "process proceeds",
+      "head": "process\nproceed",
+      "class": "dataAssociation",
+      "bbox": [
+        1265,
+        902,
+        1306,
+        1018
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        188,
+        181,
+        223,
+        345
+      ],
+      "label": "insure claim request"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claim officer",
+        "senior claim officer"
+      ],
+      "bbox": [
+        23,
+        230,
+        1697,
+        984
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "write a settlement recommendation",
+        "claim request",
+        "settlement recommendation",
+        "claim received",
+        "register and examine",
+        "messageEvent_1"
+      ],
+      "bbox": [
+        81,
+        230,
+        1696,
+        610
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claim officer",
+      "nodes": [
+        "check by a senior claims officer",
+        "exclusiveGateway_1",
+        "process ended",
+        "process proceeds",
+        "send back to the claim officer",
+        "process completed"
+      ],
+      "bbox": [
+        81,
+        610,
+        1696,
+        984
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        160,
+        108,
+        1661,
+        181
+      ],
+      "class": "pool"
+    }
+  ]
+}

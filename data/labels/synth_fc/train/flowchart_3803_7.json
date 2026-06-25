@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "intracerebellar overcard unrev",
+      "id": "intracerebellar overcard unrev",
+      "class": "circle"
+    },
+    {
+      "text": "milksopism",
+      "id": "milksopism",
+      "class": "hexagon"
+    },
+    {
+      "text": "workshop",
+      "id": "workshop",
+      "class": "diamond"
+    },
+    {
+      "text": "forepeak",
+      "id": "forepeak",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Silicoidea lamziekte dodecarch",
+      "id": "Silicoidea lamziekte dodecarch",
+      "class": "diamond"
+    },
+    {
+      "text": "marabotin uneliminated Yale",
+      "id": "marabotin uneliminated Yale",
+      "class": "parallelogram"
+    },
+    {
+      "text": "paleoatavism corybulbin incide",
+      "id": "paleoatavism corybulbin incide",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "intracerebellar overcard unrev",
+      "head": "milksopism",
+      "label": null
+    },
+    {
+      "tail": "milksopism",
+      "head": "workshop",
+      "label": null
+    },
+    {
+      "tail": "workshop",
+      "head": "forepeak",
+      "label": "No"
+    },
+    {
+      "tail": "workshop",
+      "head": "Silicoidea lamziekte dodecarch",
+      "label": "No"
+    },
+    {
+      "tail": "forepeak",
+      "head": "Silicoidea lamziekte dodecarch",
+      "label": null
+    },
+    {
+      "tail": "Silicoidea lamziekte dodecarch",
+      "head": "marabotin uneliminated Yale",
+      "label": "yes"
+    },
+    {
+      "tail": "Silicoidea lamziekte dodecarch",
+      "head": "milksopism",
+      "label": "yes"
+    },
+    {
+      "tail": "marabotin uneliminated Yale",
+      "head": "paleoatavism corybulbin incide",
+      "label": null
+    }
+  ]
+}

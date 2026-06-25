@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "Rotal",
+      "id": "Rotal",
+      "class": "oval"
+    },
+    {
+      "text": "actinoneuritis chromocollograp",
+      "id": "actinoneuritis chromocollograp",
+      "class": "box"
+    },
+    {
+      "text": "April",
+      "id": "April",
+      "class": "parallelogram"
+    },
+    {
+      "text": "paster",
+      "id": "paster",
+      "class": "document"
+    },
+    {
+      "text": "doomsday",
+      "id": "doomsday",
+      "class": "diamond"
+    },
+    {
+      "text": "Herbert",
+      "id": "Herbert",
+      "class": "parallelogram"
+    },
+    {
+      "text": "overintense organologic",
+      "id": "overintense organologic",
+      "class": "diamond"
+    },
+    {
+      "text": "photonegative",
+      "id": "photonegative",
+      "class": "parallelogram"
+    },
+    {
+      "text": "notencephalus",
+      "id": "notencephalus",
+      "class": "diamond"
+    },
+    {
+      "text": "crapulent",
+      "id": "crapulent",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Rotal",
+      "head": "actinoneuritis chromocollograp",
+      "label": null
+    },
+    {
+      "tail": "actinoneuritis chromocollograp",
+      "head": "April",
+      "label": null
+    },
+    {
+      "tail": "April",
+      "head": "paster",
+      "label": null
+    },
+    {
+      "tail": "paster",
+      "head": "doomsday",
+      "label": null
+    },
+    {
+      "tail": "doomsday",
+      "head": "Herbert",
+      "label": "YES"
+    },
+    {
+      "tail": "doomsday",
+      "head": "paster",
+      "label": "YES"
+    },
+    {
+      "tail": "Herbert",
+      "head": "overintense organologic",
+      "label": null
+    },
+    {
+      "tail": "overintense organologic",
+      "head": "photonegative",
+      "label": "yes"
+    },
+    {
+      "tail": "overintense organologic",
+      "head": "paster",
+      "label": "yes"
+    },
+    {
+      "tail": "photonegative",
+      "head": "notencephalus",
+      "label": null
+    },
+    {
+      "tail": "notencephalus",
+      "head": "crapulent",
+      "label": "yes"
+    },
+    {
+      "tail": "notencephalus",
+      "head": "Rotal",
+      "label": "yes"
+    }
+  ]
+}

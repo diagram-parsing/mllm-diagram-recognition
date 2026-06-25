@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "text": "semipeace",
+      "id": "semipeace",
+      "class": "node",
+      "bbox": [
+        390,
+        495,
+        511,
+        543
+      ]
+    },
+    {
+      "text": "disilicic quinquelocular antig",
+      "id": "disilicic quinquelocular antig",
+      "class": "node",
+      "bbox": [
+        26,
+        316,
+        222,
+        388
+      ]
+    },
+    {
+      "text": "patrimonial synedrion periduct",
+      "id": "patrimonial synedrion periduct",
+      "class": "node",
+      "bbox": [
+        246,
+        316,
+        464,
+        388
+      ]
+    },
+    {
+      "text": "relicted nonirradiated",
+      "id": "relicted nonirradiated",
+      "class": "node",
+      "bbox": [
+        488,
+        316,
+        651,
+        388
+      ]
+    },
+    {
+      "text": "theatrophone",
+      "id": "theatrophone",
+      "class": "node",
+      "bbox": [
+        674,
+        328,
+        790,
+        376
+      ]
+    },
+    {
+      "text": "agilawood speering",
+      "id": "agilawood speering",
+      "class": "node",
+      "bbox": [
+        660,
+        138,
+        804,
+        210
+      ]
+    },
+    {
+      "text": "onychophyma galanga cholesteri",
+      "id": "onychophyma galanga cholesteri",
+      "class": "node",
+      "bbox": [
+        395,
+        621,
+        506,
+        664
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "semipeace",
+      "head": "disilicic quinquelocular antig",
+      "label": "0.75",
+      "class": "unidirectional",
+      "bbox": [
+        177,
+        379,
+        410,
+        500
+      ]
+    },
+    {
+      "tail": "semipeace",
+      "head": "patrimonial synedrion periduct",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        372,
+        388,
+        438,
+        495
+      ]
+    },
+    {
+      "tail": "semipeace",
+      "head": "relicted nonirradiated",
+      "label": "0.66** H = 0.735",
+      "class": "unidirectional",
+      "bbox": [
+        467,
+        387,
+        546,
+        495
+      ]
+    },
+    {
+      "tail": "theatrophone",
+      "head": "agilawood speering",
+      "label": "0.22 f = 0.668",
+      "class": "unidirectional",
+      "bbox": [
+        723,
+        210,
+        741,
+        328
+      ]
+    },
+    {
+      "tail": "semipeace",
+      "head": "theatrophone",
+      "label": "0.95** a = 0.439",
+      "class": "bidirectional",
+      "bbox": [
+        509,
+        376,
+        710,
+        501
+      ]
+    },
+    {
+      "tail": "onychophyma galanga cholesteri",
+      "head": "semipeace",
+      "label": "-1",
+      "class": "unidirectional",
+      "bbox": [
+        442,
+        543,
+        460,
+        622
+      ]
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "nodes": [
+    {
+      "text": "request received",
+      "id": "request received",
+      "bbox": [
+        861,
+        744,
+        931,
+        814
+      ],
+      "class": "event"
+    },
+    {
+      "text": "retrieve file",
+      "id": "retrieve file",
+      "bbox": [
+        1149,
+        701,
+        1461,
+        857
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1597,
+        687,
+        1704,
+        789
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "check compliance with premises",
+      "id": "check compliance with premises",
+      "bbox": [
+        1753,
+        545,
+        2318,
+        701
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2386,
+        629,
+        2501,
+        744
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "check acceptance for filing",
+      "id": "check acceptance for filing",
+      "bbox": [
+        1734,
+        798,
+        2299,
+        993
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        2162,
+        1188,
+        2289,
+        1315
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "allocate hearing date",
+      "id": "allocate hearing date",
+      "bbox": [
+        1500,
+        1227,
+        1831,
+        1480
+      ],
+      "class": "task"
+    },
+    {
+      "text": "process complete",
+      "id": "process complete",
+      "bbox": [
+        1282,
+        1321,
+        1348,
+        1383
+      ],
+      "class": "event"
+    },
+    {
+      "text": "produce fees notice",
+      "id": "produce fees notice",
+      "bbox": [
+        2669,
+        1227,
+        3000,
+        1432
+      ],
+      "class": "task"
+    },
+    {
+      "text": "file for promises",
+      "id": "file for promises",
+      "bbox": [
+        1075,
+        535,
+        1145,
+        633
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "request",
+      "id": "request",
+      "bbox": [
+        1582,
+        964,
+        1689,
+        1046
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "fees notice",
+      "id": "fees notice",
+      "bbox": [
+        2799,
+        976,
+        2891,
+        1079
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "fees paid",
+      "id": "fees paid",
+      "bbox": [
+        1523,
+        452,
+        1593,
+        506
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fees paid",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1549,
+        514,
+        1610,
+        742
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "produce fees notice",
+      "class": "sequenceFlow",
+      "bbox": [
+        2238,
+        1301,
+        2671,
+        1385
+      ],
+      "label": "fees not paid"
+    },
+    {
+      "tail": "allocate hearing date",
+      "head": "process complete",
+      "class": "sequenceFlow",
+      "bbox": [
+        1348,
+        1324,
+        1502,
+        1385
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "allocate hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        1831,
+        1253,
+        2172,
+        1314
+      ],
+      "label": "fees paid"
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2279,
+        701,
+        2554,
+        1264
+      ],
+      "label": null
+    },
+    {
+      "tail": "check acceptance for filing",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2299,
+        736,
+        2437,
+        872
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check acceptance for filing",
+      "class": "sequenceFlow",
+      "bbox": [
+        1656,
+        785,
+        1736,
+        878
+      ],
+      "label": null
+    },
+    {
+      "tail": "check compliance with premises",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2318,
+        583,
+        2433,
+        643
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check compliance with premises",
+      "class": "sequenceFlow",
+      "bbox": [
+        1656,
+        604,
+        1755,
+        693
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve file",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1461,
+        711,
+        1601,
+        771
+      ],
+      "label": null
+    },
+    {
+      "tail": "request received",
+      "head": "retrieve file",
+      "class": "sequenceFlow",
+      "bbox": [
+        931,
+        750,
+        1151,
+        810
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve file",
+      "head": "file for promises",
+      "class": "dataAssociation",
+      "bbox": [
+        1107,
+        633,
+        1168,
+        707
+      ],
+      "label": null
+    },
+    {
+      "tail": "file for promises",
+      "head": "check compliance with premises",
+      "class": "dataAssociation",
+      "bbox": [
+        1145,
+        523,
+        1773,
+        583
+      ],
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "check acceptance for filing",
+      "class": "dataAssociation",
+      "bbox": [
+        1689,
+        983,
+        1794,
+        1044
+      ],
+      "label": null
+    },
+    {
+      "tail": "produce fees notice",
+      "head": "fees notice",
+      "class": "dataAssociation",
+      "bbox": [
+        2759,
+        1032,
+        2820,
+        1229
+      ],
+      "label": null
+    },
+    {
+      "tail": "produce fees notice",
+      "head": "owner",
+      "class": "messageFlow",
+      "bbox": [
+        2659,
+        350,
+        2719,
+        1229
+      ],
+      "label": "fees notice"
+    },
+    {
+      "tail": "owner",
+      "head": "fees paid",
+      "class": "messageFlow",
+      "bbox": [
+        1529,
+        350,
+        1589,
+        446
+      ],
+      "label": null
+    },
+    {
+      "tail": "owner",
+      "head": "request received",
+      "class": "messageFlow",
+      "bbox": [
+        867,
+        350,
+        927,
+        746
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "tribunal",
+      "nodes": [],
+      "bbox": [
+        642,
+        409,
+        3020,
+        1578
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "owner",
+      "nodes": [],
+      "bbox": [
+        779,
+        233,
+        3020,
+        350
+      ],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "text": "communicant",
+      "id": "communicant",
+      "class": "oval",
+      "bbox": [
+        92,
+        5,
+        176,
+        57
+      ]
+    },
+    {
+      "text": "consorter",
+      "id": "consorter",
+      "class": "parallelogram",
+      "bbox": [
+        72,
+        126,
+        196,
+        174
+      ]
+    },
+    {
+      "text": "rumtytoo",
+      "id": "rumtytoo",
+      "class": "diamond",
+      "bbox": [
+        75,
+        221,
+        194,
+        269
+      ]
+    },
+    {
+      "text": "disasinate nautilite",
+      "id": "disasinate nautilite",
+      "class": "diamond",
+      "bbox": [
+        71,
+        328,
+        198,
+        401
+      ]
+    },
+    {
+      "text": "historize",
+      "id": "historize",
+      "class": "diamond",
+      "bbox": [
+        267,
+        221,
+        382,
+        269
+      ]
+    },
+    {
+      "text": "intuitional",
+      "id": "intuitional",
+      "class": "diamond",
+      "bbox": [
+        68,
+        412,
+        201,
+        460
+      ]
+    },
+    {
+      "text": "unsucceedable superrighteous",
+      "id": "unsucceedable superrighteous",
+      "class": "oval",
+      "bbox": [
+        259,
+        338,
+        385,
+        390
+      ]
+    },
+    {
+      "text": "archconfraternity",
+      "id": "archconfraternity",
+      "class": "diamond",
+      "bbox": [
+        68,
+        494,
+        201,
+        562
+      ]
+    },
+    {
+      "text": "neediness",
+      "id": "neediness",
+      "class": "box",
+      "bbox": [
+        287,
+        55,
+        362,
+        103
+      ]
+    },
+    {
+      "text": "snecket",
+      "id": "snecket",
+      "class": "hexagon",
+      "bbox": [
+        274,
+        126,
+        375,
+        174
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "communicant",
+      "head": "consorter",
+      "label": null,
+      "bbox": [
+        130,
+        58,
+        139,
+        125
+      ]
+    },
+    {
+      "tail": "consorter",
+      "head": "rumtytoo",
+      "label": null,
+      "bbox": [
+        130,
+        175,
+        139,
+        220
+      ]
+    },
+    {
+      "tail": "rumtytoo",
+      "head": "disasinate nautilite",
+      "label": "no",
+      "bbox": [
+        130,
+        270,
+        139,
+        326
+      ]
+    },
+    {
+      "tail": "rumtytoo",
+      "head": "historize",
+      "label": "no",
+      "bbox": [
+        178,
+        233,
+        282,
+        243
+      ]
+    },
+    {
+      "tail": "disasinate nautilite",
+      "head": "intuitional",
+      "label": "YES",
+      "bbox": [
+        130,
+        396,
+        139,
+        410
+      ]
+    },
+    {
+      "tail": "disasinate nautilite",
+      "head": "unsucceedable superrighteous",
+      "label": "YES",
+      "bbox": [
+        198,
+        360,
+        257,
+        369
+      ]
+    },
+    {
+      "tail": "intuitional",
+      "head": "archconfraternity",
+      "label": "no",
+      "bbox": [
+        130,
+        460,
+        139,
+        492
+      ]
+    },
+    {
+      "tail": "intuitional",
+      "head": "communicant",
+      "label": "no",
+      "bbox": [
+        44,
+        27,
+        91,
+        437
+      ]
+    },
+    {
+      "tail": "archconfraternity",
+      "head": "neediness",
+      "label": "yes",
+      "bbox": [
+        181,
+        76,
+        286,
+        519
+      ]
+    },
+    {
+      "tail": "archconfraternity",
+      "head": "unsucceedable superrighteous",
+      "label": "yes",
+      "bbox": [
+        179,
+        392,
+        329,
+        543
+      ]
+    },
+    {
+      "tail": "neediness",
+      "head": "snecket",
+      "label": null,
+      "bbox": [
+        320,
+        103,
+        329,
+        124
+      ]
+    },
+    {
+      "tail": "snecket",
+      "head": "historize",
+      "label": null,
+      "bbox": [
+        320,
+        175,
+        329,
+        220
+      ]
+    },
+    {
+      "tail": "historize",
+      "head": "unsucceedable superrighteous",
+      "label": "YES",
+      "bbox": [
+        320,
+        270,
+        329,
+        337
+      ]
+    },
+    {
+      "tail": "historize",
+      "head": "rumtytoo",
+      "label": "YES",
+      "bbox": [
+        175,
+        249,
+        287,
+        259
+      ]
+    }
+  ]
+}

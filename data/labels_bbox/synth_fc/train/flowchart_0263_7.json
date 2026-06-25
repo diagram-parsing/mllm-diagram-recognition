@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "text": "geebung",
+      "id": "geebung",
+      "class": "circle",
+      "bbox": [
+        85,
+        5,
+        181,
+        101
+      ]
+    },
+    {
+      "text": "placemanship",
+      "id": "placemanship",
+      "class": "diamond",
+      "bbox": [
+        74,
+        173,
+        193,
+        246
+      ]
+    },
+    {
+      "text": "Ribes",
+      "id": "Ribes",
+      "class": "diamond",
+      "bbox": [
+        82,
+        280,
+        185,
+        328
+      ]
+    },
+    {
+      "text": "Anemia unagitatedness",
+      "id": "Anemia unagitatedness",
+      "class": "oval",
+      "bbox": [
+        327,
+        278,
+        440,
+        330
+      ]
+    },
+    {
+      "text": "refreshener",
+      "id": "refreshener",
+      "class": "diamond",
+      "bbox": [
+        66,
+        436,
+        200,
+        479
+      ]
+    },
+    {
+      "text": "examinatory",
+      "id": "examinatory",
+      "class": "document",
+      "bbox": [
+        336,
+        215,
+        431,
+        267
+      ]
+    },
+    {
+      "text": "inauthenticity",
+      "id": "inauthenticity",
+      "class": "hexagon",
+      "bbox": [
+        316,
+        61,
+        445,
+        109
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "geebung",
+      "head": "placemanship",
+      "label": null,
+      "bbox": [
+        129,
+        101,
+        138,
+        171
+      ]
+    },
+    {
+      "tail": "placemanship",
+      "head": "Ribes",
+      "label": "YES",
+      "bbox": [
+        111,
+        236,
+        121,
+        286
+      ]
+    },
+    {
+      "tail": "placemanship",
+      "head": "Anemia unagitatedness",
+      "label": "YES",
+      "bbox": [
+        160,
+        231,
+        336,
+        292
+      ]
+    },
+    {
+      "tail": "Ribes",
+      "head": "refreshener",
+      "label": "yes",
+      "bbox": [
+        129,
+        328,
+        138,
+        435
+      ]
+    },
+    {
+      "tail": "Ribes",
+      "head": "examinatory",
+      "label": "yes",
+      "bbox": [
+        150,
+        253,
+        335,
+        287
+      ]
+    },
+    {
+      "tail": "refreshener",
+      "head": "inauthenticity",
+      "label": "NO",
+      "bbox": [
+        202,
+        90,
+        326,
+        460
+      ]
+    },
+    {
+      "tail": "refreshener",
+      "head": "geebung",
+      "label": "NO",
+      "bbox": [
+        42,
+        49,
+        84,
+        460
+      ]
+    },
+    {
+      "tail": "inauthenticity",
+      "head": "examinatory",
+      "label": null,
+      "bbox": [
+        379,
+        109,
+        388,
+        214
+      ]
+    },
+    {
+      "tail": "examinatory",
+      "head": "Anemia unagitatedness",
+      "label": null,
+      "bbox": [
+        379,
+        262,
+        388,
+        276
+      ]
+    }
+  ]
+}

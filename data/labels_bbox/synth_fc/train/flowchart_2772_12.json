@@ -1,0 +1,281 @@
+{
+  "nodes": [
+    {
+      "text": "unrefined",
+      "id": "unrefined",
+      "class": "ellipse",
+      "bbox": [
+        35,
+        43,
+        107,
+        95
+      ]
+    },
+    {
+      "text": "Corey",
+      "id": "Corey",
+      "class": "box",
+      "bbox": [
+        35,
+        178,
+        107,
+        226
+      ]
+    },
+    {
+      "text": "nonfortification",
+      "id": "nonfortification",
+      "class": "box",
+      "bbox": [
+        17,
+        311,
+        125,
+        359
+      ]
+    },
+    {
+      "text": "opisthenar",
+      "id": "opisthenar",
+      "class": "diamond",
+      "bbox": [
+        5,
+        444,
+        136,
+        492
+      ]
+    },
+    {
+      "text": "centrolinead humdudgeon",
+      "id": "centrolinead humdudgeon",
+      "class": "parallelogram",
+      "bbox": [
+        252,
+        32,
+        423,
+        105
+      ]
+    },
+    {
+      "text": "uprender",
+      "id": "uprender",
+      "class": "parallelogram",
+      "bbox": [
+        555,
+        132,
+        653,
+        205
+      ]
+    },
+    {
+      "text": "sulphurate",
+      "id": "sulphurate",
+      "class": "diamond",
+      "bbox": [
+        287,
+        132,
+        388,
+        205
+      ]
+    },
+    {
+      "text": "teratism",
+      "id": "teratism",
+      "class": "box",
+      "bbox": [
+        301,
+        344,
+        373,
+        392
+      ]
+    },
+    {
+      "text": "musketoon lysigenous Enchelyce",
+      "id": "musketoon lysigenous Enchelyce",
+      "class": "hexagon",
+      "bbox": [
+        259,
+        438,
+        416,
+        495
+      ]
+    },
+    {
+      "text": "persecutive",
+      "id": "persecutive",
+      "class": "hexagon",
+      "bbox": [
+        562,
+        5,
+        646,
+        65
+      ]
+    },
+    {
+      "text": "interorbital",
+      "id": "interorbital",
+      "class": "parallelogram",
+      "bbox": [
+        533,
+        311,
+        670,
+        359
+      ]
+    },
+    {
+      "text": "hypermetaplasia",
+      "id": "hypermetaplasia",
+      "class": "circle",
+      "bbox": [
+        539,
+        370,
+        669,
+        495
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unrefined",
+      "head": "Corey",
+      "label": null,
+      "bbox": [
+        65,
+        95,
+        77,
+        177
+      ]
+    },
+    {
+      "tail": "Corey",
+      "head": "nonfortification",
+      "label": null,
+      "bbox": [
+        65,
+        226,
+        77,
+        311
+      ]
+    },
+    {
+      "tail": "nonfortification",
+      "head": "opisthenar",
+      "label": null,
+      "bbox": [
+        65,
+        360,
+        77,
+        444
+      ]
+    },
+    {
+      "tail": "opisthenar",
+      "head": "centrolinead humdudgeon",
+      "label": "NO",
+      "bbox": [
+        129,
+        94,
+        254,
+        465
+      ]
+    },
+    {
+      "tail": "opisthenar",
+      "head": "uprender",
+      "label": "NO",
+      "bbox": [
+        132,
+        206,
+        594,
+        467
+      ]
+    },
+    {
+      "tail": "centrolinead humdudgeon",
+      "head": "sulphurate",
+      "label": null,
+      "bbox": [
+        331,
+        106,
+        343,
+        132
+      ]
+    },
+    {
+      "tail": "sulphurate",
+      "head": "teratism",
+      "label": "no",
+      "bbox": [
+        331,
+        206,
+        343,
+        344
+      ]
+    },
+    {
+      "tail": "sulphurate",
+      "head": "Corey",
+      "label": "no",
+      "bbox": [
+        108,
+        186,
+        319,
+        198
+      ]
+    },
+    {
+      "tail": "teratism",
+      "head": "musketoon lysigenous Enchelyce",
+      "label": null,
+      "bbox": [
+        331,
+        393,
+        343,
+        438
+      ]
+    },
+    {
+      "tail": "musketoon lysigenous Enchelyce",
+      "head": "persecutive",
+      "label": null,
+      "bbox": [
+        415,
+        44,
+        571,
+        470
+      ]
+    },
+    {
+      "tail": "persecutive",
+      "head": "uprender",
+      "label": null,
+      "bbox": [
+        598,
+        66,
+        610,
+        131
+      ]
+    },
+    {
+      "tail": "uprender",
+      "head": "interorbital",
+      "label": null,
+      "bbox": [
+        614,
+        206,
+        626,
+        311
+      ]
+    },
+    {
+      "tail": "interorbital",
+      "head": "hypermetaplasia",
+      "label": null,
+      "bbox": [
+        598,
+        356,
+        610,
+        369
+      ]
+    }
+  ]
+}

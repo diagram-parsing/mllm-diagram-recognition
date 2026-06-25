@@ -1,0 +1,266 @@
+{
+  "nodes": [
+    {
+      "text": "new case regarding doctor",
+      "id": "new case regarding doctor",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": "fill in cheque",
+      "id": "fill in cheque",
+      "class": "task"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "class": "messageEvent"
+    },
+    {
+      "text": "file interview and expertise",
+      "id": "file interview and expertise",
+      "class": "task"
+    },
+    {
+      "text": "process done",
+      "id": "process done",
+      "class": "event"
+    },
+    {
+      "text": "send expertise",
+      "id": "send expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "ask external expert to review",
+      "id": "ask external expert to review",
+      "class": "task"
+    },
+    {
+      "text": "Ask for review",
+      "id": "Ask for review",
+      "class": "messageEvent"
+    },
+    {
+      "text": "write expertise",
+      "id": "write expertise",
+      "class": "task"
+    },
+    {
+      "text": "receive cheque",
+      "id": "receive cheque",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "nit in time",
+      "id": "nit in time",
+      "class": "timerEvent"
+    },
+    {
+      "text": "Payment done",
+      "id": "Payment done",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fill in cheque",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send expertise",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "send expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "fill in cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file interview and expertise",
+      "head": "process done",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file interview and expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask external expert to review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new case regarding doctor",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "write expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "nit in time",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive cheque",
+      "head": "Payment done",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask for review",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "Patients",
+      "class": "messageFlow",
+      "label": "request interview"
+    },
+    {
+      "tail": "Patients",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "label": "interview"
+    },
+    {
+      "tail": "ask external expert to review",
+      "head": "Ask for review",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "send cheque",
+      "head": "receive cheque",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "write expertise",
+      "head": "receive expertise",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "nit in time",
+      "head": "ask external expert to review",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Managing Direcotr",
+        "QA departement"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing Direcotr",
+      "nodes": [
+        "receive expertise",
+        "fill in cheque",
+        "send cheque",
+        "send expertise",
+        "ask external expert to review"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA departement",
+      "nodes": [
+        "new case regarding doctor",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "receive expertise",
+        "interview patients",
+        "file interview and expertise",
+        "process done"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patients",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "External expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "nodes": [
+    {
+      "text": "online application received",
+      "id": "online application received",
+      "bbox": [
+        294,
+        329,
+        350,
+        403
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "bbox": [
+        673,
+        283,
+        978,
+        445
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1118,
+        294,
+        1227,
+        403
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify customer by email",
+      "id": "notify customer by email",
+      "bbox": [
+        1949,
+        38,
+        2331,
+        276
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application rejected",
+      "id": "application rejected",
+      "bbox": [
+        2510,
+        122,
+        2583,
+        210
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create new bank account",
+      "id": "create new bank account",
+      "bbox": [
+        1928,
+        371,
+        2338,
+        543
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack",
+      "id": "send welcome pack",
+      "bbox": [
+        2689,
+        385,
+        2987,
+        634
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        2675,
+        694,
+        2973,
+        827
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send PIN number",
+      "id": "send PIN number",
+      "bbox": [
+        2703,
+        865,
+        2966,
+        1037
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        3078,
+        445,
+        3183,
+        550
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2492,
+        434,
+        2597,
+        543
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "reject application",
+      "id": "reject application",
+      "bbox": [
+        1430,
+        56,
+        1745,
+        248
+      ],
+      "class": "task"
+    },
+    {
+      "text": "aprove application",
+      "id": "aprove application",
+      "bbox": [
+        1388,
+        371,
+        1753,
+        546
+      ],
+      "class": "task"
+    },
+    {
+      "text": "bank account created",
+      "id": "bank account created",
+      "bbox": [
+        3299,
+        466,
+        3400,
+        536
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        978,
+        326,
+        1128,
+        396
+      ],
+      "label": null
+    },
+    {
+      "tail": "online application received",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "bbox": [
+        347,
+        338,
+        676,
+        408
+      ],
+      "label": null
+    },
+    {
+      "tail": "send PIN number",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2966,
+        539,
+        3144,
+        957
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send PIN number",
+      "class": "sequenceFlow",
+      "bbox": [
+        2545,
+        543,
+        2706,
+        936
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2973,
+        539,
+        3144,
+        764
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        2545,
+        543,
+        2678,
+        760
+      ],
+      "label": null
+    },
+    {
+      "tail": "send welcome pack",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2987,
+        464,
+        3081,
+        534
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send welcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        2576,
+        478,
+        2692,
+        548
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new bank account",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2338,
+        461,
+        2499,
+        531
+      ],
+      "label": null
+    },
+    {
+      "tail": "aprove application",
+      "head": "create new bank account",
+      "class": "sequenceFlow",
+      "bbox": [
+        1753,
+        425,
+        1931,
+        496
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customer by email",
+      "head": "application rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        2331,
+        131,
+        2513,
+        201
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject application",
+      "head": "notify customer by email",
+      "class": "sequenceFlow",
+      "bbox": [
+        1745,
+        122,
+        1952,
+        192
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject application",
+      "class": "sequenceFlow",
+      "bbox": [
+        1178,
+        154,
+        1433,
+        305
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "aprove application",
+      "class": "sequenceFlow",
+      "bbox": [
+        1178,
+        396,
+        1391,
+        466
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "bank account created",
+      "class": "sequenceFlow",
+      "bbox": [
+        3183,
+        466,
+        3302,
+        536
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

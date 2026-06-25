@@ -1,0 +1,331 @@
+{
+  "nodes": [
+    {
+      "text": "start",
+      "id": "start",
+      "class": "event"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "task"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "class": "event"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "task"
+    },
+    {
+      "text": "start new case regarding doctor x",
+      "id": "start new case regarding doctor x",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "file results and expertise",
+      "id": "file results and expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "pay expenses of expert by filling check",
+      "id": "pay expenses of expert by filling check",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "ask external expert to review doctors work",
+      "id": "ask external expert to review doctors work",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "class": "messageEvent"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "integrate in new workflow",
+      "id": "integrate in new workflow",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_4",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_4",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "start",
+      "head": "start new case regarding doctor x",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "start new case regarding doctor x",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "integrate in new workflow",
+      "class": "sequenceFlow",
+      "label": "interview workflow established"
+    },
+    {
+      "tail": "integrate in new workflow",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": "not estabished"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "file results and expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results and expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "end",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "pay expenses of expert by filling check",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "ask external expert to review doctors work",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review doctors work",
+      "head": "exclusiveGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_4",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": "not responding"
+    },
+    {
+      "tail": "exclusiveGateway_4",
+      "head": "messageEvent_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "pay expenses of expert by filling check",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review doctors work",
+      "head": "pool_2",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "pool_1",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "pool_2",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "pool_2",
+      "head": "messageEvent_4",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "quality assurance department",
+        "managing director"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "quality assurance department",
+      "nodes": [
+        "start",
+        "interview patients",
+        "start new case regarding doctor x",
+        "parallelGateway_1",
+        "exclusiveGateway_1",
+        "exclusiveGateway_2",
+        "file results and expertise",
+        "parallelGateway_2",
+        "create report",
+        "integrate in new workflow",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "end",
+        "forward expertise",
+        "parallelGateway_3",
+        "pay expenses of expert by filling check",
+        "messageEvent_1",
+        "exclusiveGateway_3",
+        "ask external expert to review doctors work",
+        "exclusiveGateway_4",
+        "messageEvent_3",
+        "messageEvent_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

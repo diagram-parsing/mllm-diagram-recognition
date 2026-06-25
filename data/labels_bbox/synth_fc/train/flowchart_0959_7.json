@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "grandeur",
+      "id": "grandeur",
+      "class": "oval",
+      "bbox": [
+        30,
+        5,
+        112,
+        53
+      ]
+    },
+    {
+      "text": "rayage",
+      "id": "rayage",
+      "class": "diamond",
+      "bbox": [
+        14,
+        105,
+        128,
+        153
+      ]
+    },
+    {
+      "text": "threadbarity kinemometer",
+      "id": "threadbarity kinemometer",
+      "class": "document",
+      "bbox": [
+        30,
+        226,
+        111,
+        282
+      ]
+    },
+    {
+      "text": "expunge",
+      "id": "expunge",
+      "class": "box",
+      "bbox": [
+        33,
+        305,
+        108,
+        353
+      ]
+    },
+    {
+      "text": "unalone",
+      "id": "unalone",
+      "class": "document",
+      "bbox": [
+        32,
+        401,
+        109,
+        457
+      ]
+    },
+    {
+      "text": "forsake",
+      "id": "forsake",
+      "class": "diamond",
+      "bbox": [
+        10,
+        505,
+        131,
+        553
+      ]
+    },
+    {
+      "text": "disyllable annuloid cardioresp",
+      "id": "disyllable annuloid cardioresp",
+      "class": "circle",
+      "bbox": [
+        5,
+        564,
+        136,
+        689
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "grandeur",
+      "head": "rayage",
+      "label": null,
+      "bbox": [
+        66,
+        54,
+        75,
+        103
+      ]
+    },
+    {
+      "tail": "rayage",
+      "head": "threadbarity kinemometer",
+      "label": "no",
+      "bbox": [
+        66,
+        154,
+        75,
+        225
+      ]
+    },
+    {
+      "tail": "rayage",
+      "head": "expunge",
+      "label": "no",
+      "bbox": [
+        110,
+        132,
+        123,
+        327
+      ]
+    },
+    {
+      "tail": "threadbarity kinemometer",
+      "head": "expunge",
+      "label": null,
+      "bbox": [
+        66,
+        282,
+        75,
+        304
+      ]
+    },
+    {
+      "tail": "expunge",
+      "head": "unalone",
+      "label": null,
+      "bbox": [
+        66,
+        353,
+        75,
+        400
+      ]
+    },
+    {
+      "tail": "unalone",
+      "head": "forsake",
+      "label": null,
+      "bbox": [
+        66,
+        457,
+        75,
+        504
+      ]
+    },
+    {
+      "tail": "forsake",
+      "head": "disyllable annuloid cardioresp",
+      "label": "YES",
+      "bbox": [
+        66,
+        549,
+        75,
+        562
+      ]
+    },
+    {
+      "tail": "forsake",
+      "head": "expunge",
+      "label": "YES",
+      "bbox": [
+        110,
+        334,
+        123,
+        523
+      ]
+    }
+  ]
+}

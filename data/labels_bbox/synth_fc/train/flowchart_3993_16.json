@@ -1,0 +1,413 @@
+{
+  "nodes": [
+    {
+      "text": "squad",
+      "id": "squad",
+      "class": "circle",
+      "bbox": [
+        29,
+        5,
+        103,
+        80
+      ]
+    },
+    {
+      "text": "ponticulus",
+      "id": "ponticulus",
+      "class": "hexagon",
+      "bbox": [
+        25,
+        227,
+        106,
+        286
+      ]
+    },
+    {
+      "text": "nonlegal",
+      "id": "nonlegal",
+      "class": "document",
+      "bbox": [
+        22,
+        334,
+        109,
+        393
+      ]
+    },
+    {
+      "text": "demitoilet",
+      "id": "demitoilet",
+      "class": "hexagon",
+      "bbox": [
+        13,
+        482,
+        119,
+        530
+      ]
+    },
+    {
+      "text": "molligrant",
+      "id": "molligrant",
+      "class": "box",
+      "bbox": [
+        27,
+        661,
+        105,
+        709
+      ]
+    },
+    {
+      "text": "unrefreshingly",
+      "id": "unrefreshingly",
+      "class": "diamond",
+      "bbox": [
+        5,
+        755,
+        126,
+        828
+      ]
+    },
+    {
+      "text": "tagilite",
+      "id": "tagilite",
+      "class": "diamond",
+      "bbox": [
+        307,
+        77,
+        395,
+        150
+      ]
+    },
+    {
+      "text": "Egyptology",
+      "id": "Egyptology",
+      "class": "box",
+      "bbox": [
+        315,
+        161,
+        387,
+        209
+      ]
+    },
+    {
+      "text": "worriter havers",
+      "id": "worriter havers",
+      "class": "diamond",
+      "bbox": [
+        294,
+        327,
+        408,
+        400
+      ]
+    },
+    {
+      "text": "unannexedness",
+      "id": "unannexedness",
+      "class": "diamond",
+      "bbox": [
+        293,
+        469,
+        409,
+        543
+      ]
+    },
+    {
+      "text": "antilithic",
+      "id": "antilithic",
+      "class": "parallelogram",
+      "bbox": [
+        289,
+        625,
+        413,
+        673
+      ]
+    },
+    {
+      "text": "Euglandina",
+      "id": "Euglandina",
+      "class": "circle",
+      "bbox": [
+        586,
+        742,
+        686,
+        836
+      ]
+    },
+    {
+      "text": "foeship bosselation",
+      "id": "foeship bosselation",
+      "class": "diamond",
+      "bbox": [
+        283,
+        719,
+        419,
+        793
+      ]
+    },
+    {
+      "text": "sensualize",
+      "id": "sensualize",
+      "class": "diamond",
+      "bbox": [
+        585,
+        327,
+        688,
+        400
+      ]
+    },
+    {
+      "text": "delegant obliquangular",
+      "id": "delegant obliquangular",
+      "class": "document",
+      "bbox": [
+        593,
+        477,
+        680,
+        535
+      ]
+    },
+    {
+      "text": "apii",
+      "id": "apii",
+      "class": "box",
+      "bbox": [
+        600,
+        625,
+        672,
+        673
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "squad",
+      "head": "ponticulus",
+      "label": null,
+      "bbox": [
+        61,
+        80,
+        70,
+        224
+      ]
+    },
+    {
+      "tail": "ponticulus",
+      "head": "nonlegal",
+      "label": null,
+      "bbox": [
+        61,
+        287,
+        70,
+        332
+      ]
+    },
+    {
+      "tail": "nonlegal",
+      "head": "demitoilet",
+      "label": null,
+      "bbox": [
+        61,
+        393,
+        70,
+        479
+      ]
+    },
+    {
+      "tail": "demitoilet",
+      "head": "molligrant",
+      "label": null,
+      "bbox": [
+        61,
+        531,
+        70,
+        658
+      ]
+    },
+    {
+      "tail": "molligrant",
+      "head": "unrefreshingly",
+      "label": null,
+      "bbox": [
+        61,
+        709,
+        70,
+        752
+      ]
+    },
+    {
+      "tail": "unrefreshingly",
+      "head": "tagilite",
+      "label": "NO",
+      "bbox": [
+        89,
+        123,
+        320,
+        768
+      ]
+    },
+    {
+      "tail": "unrefreshingly",
+      "head": "Egyptology",
+      "label": "NO",
+      "bbox": [
+        108,
+        181,
+        312,
+        780
+      ]
+    },
+    {
+      "tail": "tagilite",
+      "head": "Egyptology",
+      "label": "YES",
+      "bbox": [
+        346,
+        145,
+        356,
+        158
+      ]
+    },
+    {
+      "tail": "tagilite",
+      "head": "molligrant",
+      "label": "YES",
+      "bbox": [
+        108,
+        104,
+        318,
+        671
+      ]
+    },
+    {
+      "tail": "Egyptology",
+      "head": "worriter havers",
+      "label": null,
+      "bbox": [
+        346,
+        210,
+        356,
+        324
+      ]
+    },
+    {
+      "tail": "worriter havers",
+      "head": "unannexedness",
+      "label": "No",
+      "bbox": [
+        346,
+        401,
+        356,
+        466
+      ]
+    },
+    {
+      "tail": "worriter havers",
+      "head": "ponticulus",
+      "label": "No",
+      "bbox": [
+        109,
+        253,
+        300,
+        359
+      ]
+    },
+    {
+      "tail": "unannexedness",
+      "head": "antilithic",
+      "label": "yes",
+      "bbox": [
+        346,
+        543,
+        356,
+        622
+      ]
+    },
+    {
+      "tail": "unannexedness",
+      "head": "Euglandina",
+      "label": "yes",
+      "bbox": [
+        396,
+        497,
+        589,
+        773
+      ]
+    },
+    {
+      "tail": "antilithic",
+      "head": "foeship bosselation",
+      "label": null,
+      "bbox": [
+        346,
+        673,
+        356,
+        716
+      ]
+    },
+    {
+      "tail": "foeship bosselation",
+      "head": "sensualize",
+      "label": "no",
+      "bbox": [
+        366,
+        359,
+        582,
+        727
+      ]
+    },
+    {
+      "tail": "foeship bosselation",
+      "head": "delegant obliquangular",
+      "label": "no",
+      "bbox": [
+        381,
+        511,
+        591,
+        735
+      ]
+    },
+    {
+      "tail": "sensualize",
+      "head": "delegant obliquangular",
+      "label": "yes",
+      "bbox": [
+        632,
+        401,
+        641,
+        474
+      ]
+    },
+    {
+      "tail": "sensualize",
+      "head": "apii",
+      "label": "yes",
+      "bbox": [
+        675,
+        364,
+        712,
+        654
+      ]
+    },
+    {
+      "tail": "delegant obliquangular",
+      "head": "apii",
+      "label": null,
+      "bbox": [
+        632,
+        535,
+        641,
+        622
+      ]
+    },
+    {
+      "tail": "apii",
+      "head": "Euglandina",
+      "label": null,
+      "bbox": [
+        632,
+        673,
+        641,
+        738
+      ]
+    }
+  ]
+}

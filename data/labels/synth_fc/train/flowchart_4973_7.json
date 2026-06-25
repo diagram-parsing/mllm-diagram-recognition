@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "resignful",
+      "id": "resignful",
+      "class": "ellipse"
+    },
+    {
+      "text": "as",
+      "id": "as",
+      "class": "hexagon"
+    },
+    {
+      "text": "tintometry racing joviality",
+      "id": "tintometry racing joviality",
+      "class": "diamond"
+    },
+    {
+      "text": "tiltmaking calculable",
+      "id": "tiltmaking calculable",
+      "class": "parallelogram"
+    },
+    {
+      "text": "plurify autopolar",
+      "id": "plurify autopolar",
+      "class": "diamond"
+    },
+    {
+      "text": "cruster",
+      "id": "cruster",
+      "class": "box"
+    },
+    {
+      "text": "determent",
+      "id": "determent",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "resignful",
+      "head": "as",
+      "label": null
+    },
+    {
+      "tail": "as",
+      "head": "tintometry racing joviality",
+      "label": null
+    },
+    {
+      "tail": "tintometry racing joviality",
+      "head": "tiltmaking calculable",
+      "label": "YES"
+    },
+    {
+      "tail": "tintometry racing joviality",
+      "head": "resignful",
+      "label": "YES"
+    },
+    {
+      "tail": "tiltmaking calculable",
+      "head": "plurify autopolar",
+      "label": null
+    },
+    {
+      "tail": "plurify autopolar",
+      "head": "cruster",
+      "label": "no"
+    },
+    {
+      "tail": "plurify autopolar",
+      "head": "tiltmaking calculable",
+      "label": "no"
+    },
+    {
+      "tail": "cruster",
+      "head": "determent",
+      "label": null
+    }
+  ]
+}

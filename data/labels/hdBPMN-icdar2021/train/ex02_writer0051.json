@@ -1,0 +1,267 @@
+{
+  "nodes": [
+    {
+      "text": "examine",
+      "id": "examine",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "incorrect recommendation",
+      "id": "incorrect recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "check claim",
+      "id": "check claim",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "mark recommendation ok",
+      "id": "mark recommendation ok",
+      "class": "task"
+    },
+    {
+      "text": "end process",
+      "id": "end process",
+      "class": "event"
+    },
+    {
+      "text": "writes settlement recommendation",
+      "id": "writes settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "mark recommendation \"not ok\"",
+      "id": "mark recommendation \"not ok\"",
+      "class": "task"
+    },
+    {
+      "text": "correct recommendation",
+      "id": "correct recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "written recommendation",
+      "id": "written recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "checked",
+      "id": "checked",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "mark recommendation \"not ok\"",
+      "head": "writes settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "mark recommendation ok",
+      "head": "end process",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark recommendation \"not ok\"",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark recommendation ok",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check claim",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "writes settlement recommendation",
+      "head": "check claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "writes settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "examine",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "dataObject_1",
+      "head": "examine",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataObject_1",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "written recommendation",
+      "head": "check claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check claim",
+      "head": "checked",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "checked",
+      "head": "mark recommendation ok",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark recommendation ok",
+      "head": "correct recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "incorrect recommendation",
+      "head": "writes settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "writes settlement recommendation",
+      "head": "written recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "checked",
+      "head": "mark recommendation \"not ok\"",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark recommendation \"not ok\"",
+      "head": "incorrect recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "label": "claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "insurer",
+      "nodes": [
+        "senior claims officer",
+        "claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check claim",
+        "exclusiveGateway_1",
+        "mark recommendation ok",
+        "end process",
+        "mark recommendation \"not ok\"",
+        "checked"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "examine",
+        "dataObject_1",
+        "parallelGateway_1",
+        "register claim",
+        "parallelGateway_2",
+        "incorrect recommendation",
+        "writes settlement recommendation",
+        "correct recommendation",
+        "written recommendation",
+        "claim received"
+      ],
+      "class": "lane"
+    }
+  ]
+}

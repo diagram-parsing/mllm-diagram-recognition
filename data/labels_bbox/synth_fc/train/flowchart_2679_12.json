@@ -1,0 +1,281 @@
+{
+  "nodes": [
+    {
+      "text": "scientific",
+      "id": "scientific",
+      "class": "circle",
+      "bbox": [
+        65,
+        5,
+        136,
+        77
+      ]
+    },
+    {
+      "text": "priestlike overmatch",
+      "id": "priestlike overmatch",
+      "class": "hexagon",
+      "bbox": [
+        47,
+        123,
+        155,
+        183
+      ]
+    },
+    {
+      "text": "mediate disenclose respectfull",
+      "id": "mediate disenclose respectfull",
+      "class": "diamond",
+      "bbox": [
+        5,
+        256,
+        196,
+        330
+      ]
+    },
+    {
+      "text": "truantness",
+      "id": "truantness",
+      "class": "parallelogram",
+      "bbox": [
+        48,
+        340,
+        153,
+        414
+      ]
+    },
+    {
+      "text": "untenantableness",
+      "id": "untenantableness",
+      "class": "parallelogram",
+      "bbox": [
+        34,
+        452,
+        167,
+        520
+      ]
+    },
+    {
+      "text": "swordsmanship",
+      "id": "swordsmanship",
+      "class": "document",
+      "bbox": [
+        272,
+        17,
+        377,
+        65
+      ]
+    },
+    {
+      "text": "sphacelism",
+      "id": "sphacelism",
+      "class": "box",
+      "bbox": [
+        289,
+        101,
+        361,
+        149
+      ]
+    },
+    {
+      "text": "unsnare",
+      "id": "unsnare",
+      "class": "document",
+      "bbox": [
+        289,
+        241,
+        361,
+        289
+      ]
+    },
+    {
+      "text": "irregulated",
+      "id": "irregulated",
+      "class": "document",
+      "bbox": [
+        289,
+        353,
+        361,
+        401
+      ]
+    },
+    {
+      "text": "clacket",
+      "id": "clacket",
+      "class": "box",
+      "bbox": [
+        289,
+        437,
+        361,
+        485
+      ]
+    },
+    {
+      "text": "innermore leveret uninterested",
+      "id": "innermore leveret uninterested",
+      "class": "diamond",
+      "bbox": [
+        452,
+        228,
+        640,
+        302
+      ]
+    },
+    {
+      "text": "frostproof",
+      "id": "frostproof",
+      "class": "oval",
+      "bbox": [
+        505,
+        353,
+        593,
+        401
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "scientific",
+      "head": "priestlike overmatch",
+      "label": null,
+      "bbox": [
+        95,
+        77,
+        107,
+        123
+      ]
+    },
+    {
+      "tail": "priestlike overmatch",
+      "head": "mediate disenclose respectfull",
+      "label": null,
+      "bbox": [
+        77,
+        183,
+        89,
+        263
+      ]
+    },
+    {
+      "tail": "mediate disenclose respectfull",
+      "head": "truantness",
+      "label": "NO",
+      "bbox": [
+        95,
+        327,
+        107,
+        340
+      ]
+    },
+    {
+      "tail": "mediate disenclose respectfull",
+      "head": "priestlike overmatch",
+      "label": "NO",
+      "bbox": [
+        113,
+        183,
+        125,
+        263
+      ]
+    },
+    {
+      "tail": "truantness",
+      "head": "untenantableness",
+      "label": null,
+      "bbox": [
+        95,
+        414,
+        107,
+        452
+      ]
+    },
+    {
+      "tail": "untenantableness",
+      "head": "swordsmanship",
+      "label": null,
+      "bbox": [
+        162,
+        65,
+        286,
+        470
+      ]
+    },
+    {
+      "tail": "swordsmanship",
+      "head": "sphacelism",
+      "label": null,
+      "bbox": [
+        319,
+        65,
+        331,
+        101
+      ]
+    },
+    {
+      "tail": "sphacelism",
+      "head": "unsnare",
+      "label": null,
+      "bbox": [
+        319,
+        149,
+        331,
+        241
+      ]
+    },
+    {
+      "tail": "unsnare",
+      "head": "irregulated",
+      "label": null,
+      "bbox": [
+        319,
+        289,
+        331,
+        353
+      ]
+    },
+    {
+      "tail": "irregulated",
+      "head": "clacket",
+      "label": null,
+      "bbox": [
+        319,
+        401,
+        331,
+        437
+      ]
+    },
+    {
+      "tail": "clacket",
+      "head": "innermore leveret uninterested",
+      "label": null,
+      "bbox": [
+        361,
+        276,
+        485,
+        462
+      ]
+    },
+    {
+      "tail": "innermore leveret uninterested",
+      "head": "frostproof",
+      "label": "Yes",
+      "bbox": [
+        543,
+        302,
+        555,
+        353
+      ]
+    },
+    {
+      "tail": "innermore leveret uninterested",
+      "head": "swordsmanship",
+      "label": "Yes",
+      "bbox": [
+        363,
+        65,
+        529,
+        235
+      ]
+    }
+  ]
+}

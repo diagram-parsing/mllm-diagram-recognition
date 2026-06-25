@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "ume",
+      "id": "ume",
+      "class": "circle",
+      "bbox": [
+        26,
+        20,
+        87,
+        81
+      ]
+    },
+    {
+      "text": "outwit",
+      "id": "outwit",
+      "class": "document",
+      "bbox": [
+        6,
+        111,
+        107,
+        160
+      ]
+    },
+    {
+      "text": "carcinolysin silvanity",
+      "id": "carcinolysin silvanity",
+      "class": "document",
+      "bbox": [
+        6,
+        195,
+        107,
+        245
+      ]
+    },
+    {
+      "text": "agoniatite",
+      "id": "agoniatite",
+      "class": "diamond",
+      "bbox": [
+        5,
+        268,
+        108,
+        336
+      ]
+    },
+    {
+      "text": "penumbra",
+      "id": "penumbra",
+      "class": "box",
+      "bbox": [
+        189,
+        5,
+        264,
+        53
+      ]
+    },
+    {
+      "text": "desmoma unhold",
+      "id": "desmoma unhold",
+      "class": "oval",
+      "bbox": [
+        183,
+        173,
+        270,
+        225
+      ]
+    },
+    {
+      "text": "laparomyomectomy",
+      "id": "laparomyomectomy",
+      "class": "diamond",
+      "bbox": [
+        118,
+        111,
+        329,
+        159
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "ume",
+      "head": "outwit",
+      "label": null,
+      "bbox": [
+        52,
+        82,
+        61,
+        110
+      ]
+    },
+    {
+      "tail": "outwit",
+      "head": "carcinolysin silvanity",
+      "label": null,
+      "bbox": [
+        52,
+        160,
+        61,
+        195
+      ]
+    },
+    {
+      "tail": "carcinolysin silvanity",
+      "head": "agoniatite",
+      "label": null,
+      "bbox": [
+        52,
+        245,
+        61,
+        266
+      ]
+    },
+    {
+      "tail": "agoniatite",
+      "head": "penumbra",
+      "label": "yes",
+      "bbox": [
+        82,
+        33,
+        187,
+        324
+      ]
+    },
+    {
+      "tail": "agoniatite",
+      "head": "desmoma unhold",
+      "label": "yes",
+      "bbox": [
+        108,
+        227,
+        231,
+        306
+      ]
+    },
+    {
+      "tail": "penumbra",
+      "head": "laparomyomectomy",
+      "label": null,
+      "bbox": [
+        222,
+        54,
+        231,
+        110
+      ]
+    },
+    {
+      "tail": "laparomyomectomy",
+      "head": "desmoma unhold",
+      "label": "NO",
+      "bbox": [
+        222,
+        158,
+        231,
+        171
+      ]
+    },
+    {
+      "tail": "laparomyomectomy",
+      "head": "agoniatite",
+      "label": "NO",
+      "bbox": [
+        85,
+        143,
+        150,
+        292
+      ]
+    }
+  ]
+}

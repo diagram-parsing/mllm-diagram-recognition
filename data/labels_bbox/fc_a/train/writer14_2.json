@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "connection_1",
+      "bbox": [
+        317,
+        4,
+        407,
+        92
+      ],
+      "class": "connection"
+    },
+    {
+      "text": "Input x",
+      "id": "Input x",
+      "bbox": [
+        116,
+        253,
+        514,
+        373
+      ],
+      "class": "data"
+    },
+    {
+      "text": "x=x*x",
+      "id": "x=x*x",
+      "bbox": [
+        98,
+        522,
+        469,
+        697
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Output x",
+      "id": "Output x",
+      "bbox": [
+        4,
+        892,
+        468,
+        1048
+      ],
+      "class": "data"
+    },
+    {
+      "text": null,
+      "id": "connection_2",
+      "bbox": [
+        170,
+        1251,
+        270,
+        1330
+      ],
+      "class": "connection"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "connection_1",
+      "head": "Input x",
+      "bbox": [
+        321,
+        79,
+        370,
+        261
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input x",
+      "head": "x=x*x",
+      "bbox": [
+        281,
+        367,
+        332,
+        517
+      ],
+      "label": null
+    },
+    {
+      "tail": "x=x*x",
+      "head": "Output x",
+      "bbox": [
+        244,
+        698,
+        303,
+        895
+      ],
+      "label": null
+    },
+    {
+      "tail": "Output x",
+      "head": "connection_2",
+      "bbox": [
+        213,
+        1040,
+        267,
+        1254
+      ],
+      "label": null
+    }
+  ]
+}

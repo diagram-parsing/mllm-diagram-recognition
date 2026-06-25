@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "connection_1",
+      "class": "connection"
+    },
+    {
+      "text": "Input x",
+      "id": "Input x",
+      "class": "data"
+    },
+    {
+      "text": "x=x*x",
+      "id": "x=x*x",
+      "class": "process"
+    },
+    {
+      "text": "Output x",
+      "id": "Output x",
+      "class": "data"
+    },
+    {
+      "text": null,
+      "id": "connection_2",
+      "class": "connection"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "connection_1",
+      "head": "Input x",
+      "label": null
+    },
+    {
+      "tail": "Input x",
+      "head": "x=x*x",
+      "label": null
+    },
+    {
+      "tail": "x=x*x",
+      "head": "Output x",
+      "label": null
+    },
+    {
+      "tail": "Output x",
+      "head": "connection_2",
+      "label": null
+    }
+  ],
+  "groups": []
+}

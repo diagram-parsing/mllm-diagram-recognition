@@ -1,0 +1,256 @@
+{
+  "nodes": [
+    {
+      "text": "Doctor rating workflow started",
+      "id": "Doctor rating workflow started",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "task"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Prepare interview questions",
+      "id": "Prepare interview questions",
+      "class": "task"
+    },
+    {
+      "text": "Integrated in established workflow",
+      "id": "Integrated in established workflow",
+      "class": "task"
+    },
+    {
+      "text": "File results",
+      "id": "File results",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Doctor rating worklow finished",
+      "id": "Doctor rating worklow finished",
+      "class": "event"
+    },
+    {
+      "text": "Ask external expert",
+      "id": "Ask external expert",
+      "class": "task"
+    },
+    {
+      "text": "Forward to QA specialist",
+      "id": "Forward to QA specialist",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Send cheque",
+      "id": "Send cheque",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Receive expertise",
+      "id": "Receive expertise",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Send cheque",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "Send cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Forward to QA specialist",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Receive expertise",
+      "head": "Forward to QA specialist",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask external expert",
+      "head": "Receive expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Ask external expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "Doctor rating worklow finished",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "File results",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Integrated in established workflow",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Prepare interview questions",
+      "head": "Integrated in established workflow",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Prepare interview questions",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Doctor rating workflow started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "File results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask external expert",
+      "head": "External experts",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Send cheque",
+      "head": "External experts",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "External experts",
+      "head": "Receive expertise",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Managing Director",
+        "QA specialist",
+        "interview workflow staff"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing Director",
+      "nodes": [
+        "fill cheque",
+        "Ask external expert",
+        "Forward to QA specialist",
+        "Send cheque",
+        "Receive expertise"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "Doctor rating workflow started",
+        "create report",
+        "parallelGateway_1",
+        "Prepare interview questions",
+        "File results",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "Doctor rating worklow finished",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "interview workflow staff",
+      "nodes": [
+        "interview patients",
+        "Integrated in established workflow"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "External experts",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "nodes": [
+    {
+      "text": "dasnt",
+      "id": "dasnt",
+      "class": "circle",
+      "bbox": [
+        60,
+        5,
+        129,
+        74
+      ]
+    },
+    {
+      "text": "blackwood",
+      "id": "blackwood",
+      "class": "hexagon",
+      "bbox": [
+        38,
+        184,
+        151,
+        232
+      ]
+    },
+    {
+      "text": "pentrit",
+      "id": "pentrit",
+      "class": "box",
+      "bbox": [
+        59,
+        394,
+        131,
+        442
+      ]
+    },
+    {
+      "text": "deoxidator",
+      "id": "deoxidator",
+      "class": "hexagon",
+      "bbox": [
+        53,
+        514,
+        137,
+        574
+      ]
+    },
+    {
+      "text": "receiver promorphologically",
+      "id": "receiver promorphologically",
+      "class": "diamond",
+      "bbox": [
+        5,
+        717,
+        184,
+        791
+      ]
+    },
+    {
+      "text": "geranial influenza scolder",
+      "id": "geranial influenza scolder",
+      "class": "diamond",
+      "bbox": [
+        13,
+        801,
+        176,
+        875
+      ]
+    },
+    {
+      "text": "karbi",
+      "id": "karbi",
+      "class": "hexagon",
+      "bbox": [
+        392,
+        184,
+        470,
+        232
+      ]
+    },
+    {
+      "text": "cyclene",
+      "id": "cyclene",
+      "class": "parallelogram",
+      "bbox": [
+        366,
+        688,
+        490,
+        736
+      ]
+    },
+    {
+      "text": "occipitothalamic",
+      "id": "occipitothalamic",
+      "class": "diamond",
+      "bbox": [
+        368,
+        381,
+        490,
+        455
+      ]
+    },
+    {
+      "text": "Monocystidea tartish cappy",
+      "id": "Monocystidea tartish cappy",
+      "class": "document",
+      "bbox": [
+        386,
+        520,
+        476,
+        568
+      ]
+    },
+    {
+      "text": "intranslatable",
+      "id": "intranslatable",
+      "class": "box",
+      "bbox": [
+        395,
+        856,
+        467,
+        904
+      ]
+    },
+    {
+      "text": "prunella",
+      "id": "prunella",
+      "class": "oval",
+      "bbox": [
+        391,
+        1024,
+        470,
+        1067
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "dasnt",
+      "head": "blackwood",
+      "label": null,
+      "bbox": [
+        89,
+        75,
+        101,
+        184
+      ]
+    },
+    {
+      "tail": "blackwood",
+      "head": "pentrit",
+      "label": null,
+      "bbox": [
+        89,
+        232,
+        101,
+        394
+      ]
+    },
+    {
+      "tail": "pentrit",
+      "head": "deoxidator",
+      "label": null,
+      "bbox": [
+        89,
+        442,
+        101,
+        513
+      ]
+    },
+    {
+      "tail": "deoxidator",
+      "head": "receiver promorphologically",
+      "label": null,
+      "bbox": [
+        89,
+        574,
+        101,
+        717
+      ]
+    },
+    {
+      "tail": "receiver promorphologically",
+      "head": "geranial influenza scolder",
+      "label": "no",
+      "bbox": [
+        89,
+        787,
+        101,
+        801
+      ]
+    },
+    {
+      "tail": "receiver promorphologically",
+      "head": "blackwood",
+      "label": "no",
+      "bbox": [
+        40,
+        215,
+        52,
+        737
+      ]
+    },
+    {
+      "tail": "geranial influenza scolder",
+      "head": "karbi",
+      "label": "yes",
+      "bbox": [
+        137,
+        202,
+        391,
+        820
+      ]
+    },
+    {
+      "tail": "geranial influenza scolder",
+      "head": "cyclene",
+      "label": "yes",
+      "bbox": [
+        176,
+        736,
+        385,
+        839
+      ]
+    },
+    {
+      "tail": "karbi",
+      "head": "occipitothalamic",
+      "label": null,
+      "bbox": [
+        425,
+        232,
+        437,
+        381
+      ]
+    },
+    {
+      "tail": "occipitothalamic",
+      "head": "Monocystidea tartish cappy",
+      "label": "No",
+      "bbox": [
+        425,
+        455,
+        437,
+        520
+      ]
+    },
+    {
+      "tail": "occipitothalamic",
+      "head": "receiver promorphologically",
+      "label": "No",
+      "bbox": [
+        161,
+        449,
+        421,
+        747
+      ]
+    },
+    {
+      "tail": "Monocystidea tartish cappy",
+      "head": "cyclene",
+      "label": null,
+      "bbox": [
+        425,
+        568,
+        437,
+        688
+      ]
+    },
+    {
+      "tail": "cyclene",
+      "head": "intranslatable",
+      "label": null,
+      "bbox": [
+        425,
+        736,
+        437,
+        856
+      ]
+    },
+    {
+      "tail": "intranslatable",
+      "head": "prunella",
+      "label": null,
+      "bbox": [
+        425,
+        904,
+        437,
+        1024
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "saeculum",
+      "id": "saeculum",
+      "class": "circle"
+    },
+    {
+      "text": "hoodlumism",
+      "id": "hoodlumism",
+      "class": "hexagon"
+    },
+    {
+      "text": "tristigmatose",
+      "id": "tristigmatose",
+      "class": "hexagon"
+    },
+    {
+      "text": "Erysimum oversprung",
+      "id": "Erysimum oversprung",
+      "class": "parallelogram"
+    },
+    {
+      "text": "stockwork melissylic",
+      "id": "stockwork melissylic",
+      "class": "diamond"
+    },
+    {
+      "text": "botonee trigone polyesthesia",
+      "id": "botonee trigone polyesthesia",
+      "class": "hexagon"
+    },
+    {
+      "text": "Geikia",
+      "id": "Geikia",
+      "class": "box"
+    },
+    {
+      "text": "unsprung",
+      "id": "unsprung",
+      "class": "parallelogram"
+    },
+    {
+      "text": "guze",
+      "id": "guze",
+      "class": "document"
+    },
+    {
+      "text": "axonometric backen superego",
+      "id": "axonometric backen superego",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "saeculum",
+      "head": "hoodlumism",
+      "label": null
+    },
+    {
+      "tail": "hoodlumism",
+      "head": "tristigmatose",
+      "label": null
+    },
+    {
+      "tail": "tristigmatose",
+      "head": "Erysimum oversprung",
+      "label": null
+    },
+    {
+      "tail": "Erysimum oversprung",
+      "head": "stockwork melissylic",
+      "label": null
+    },
+    {
+      "tail": "stockwork melissylic",
+      "head": "botonee trigone polyesthesia",
+      "label": "no"
+    },
+    {
+      "tail": "stockwork melissylic",
+      "head": "Geikia",
+      "label": "no"
+    },
+    {
+      "tail": "botonee trigone polyesthesia",
+      "head": "unsprung",
+      "label": null
+    },
+    {
+      "tail": "unsprung",
+      "head": "Geikia",
+      "label": null
+    },
+    {
+      "tail": "Geikia",
+      "head": "guze",
+      "label": null
+    },
+    {
+      "tail": "guze",
+      "head": "axonometric backen superego",
+      "label": null
+    }
+  ]
+}

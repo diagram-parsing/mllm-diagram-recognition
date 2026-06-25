@@ -1,0 +1,246 @@
+{
+  "nodes": [
+    {
+      "text": "Begin",
+      "id": "Begin",
+      "bbox": [
+        656,
+        4,
+        210,
+        62
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input n",
+      "id": "Input n",
+      "bbox": [
+        610,
+        134,
+        306,
+        83
+      ],
+      "class": "data"
+    },
+    {
+      "text": "k=1 sum=0",
+      "id": "k=1 sum=0",
+      "bbox": [
+        617,
+        270,
+        266,
+        92
+      ],
+      "class": "process"
+    },
+    {
+      "text": "sum=sum+k",
+      "id": "sum=sum+k",
+      "bbox": [
+        620,
+        413,
+        259,
+        82
+      ],
+      "class": "process"
+    },
+    {
+      "text": "k==n?",
+      "id": "k==n?",
+      "bbox": [
+        630,
+        556,
+        204,
+        87
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "k=k+1",
+      "id": "k=k+1",
+      "bbox": [
+        1154,
+        407,
+        175,
+        86
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Finish",
+      "id": "Finish",
+      "bbox": [
+        4,
+        277,
+        210,
+        73
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "disp sum",
+      "id": "disp sum",
+      "bbox": [
+        10,
+        523,
+        241,
+        90
+      ],
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Begin",
+      "head": "Input n",
+      "bbox": [
+        735,
+        71,
+        28,
+        68
+      ],
+      "kps": [
+        751.0,
+        73.0,
+        2.0,
+        751.0,
+        137.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input n",
+      "head": "k=1 sum=0",
+      "bbox": [
+        726,
+        216,
+        22,
+        62
+      ],
+      "kps": [
+        745.0,
+        218.0,
+        2.0,
+        737.0,
+        276.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "k=1 sum=0",
+      "head": "sum=sum+k",
+      "bbox": [
+        710,
+        358,
+        22,
+        59
+      ],
+      "kps": [
+        724.0,
+        360.0,
+        2.0,
+        723.0,
+        415.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "sum=sum+k",
+      "head": "k==n?",
+      "bbox": [
+        710,
+        490,
+        22,
+        67
+      ],
+      "kps": [
+        722.0,
+        492.0,
+        2.0,
+        721.0,
+        555.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "k==n?",
+      "head": "k=k+1",
+      "bbox": [
+        824,
+        475,
+        461,
+        142
+      ],
+      "kps": [
+        828.0,
+        616.0,
+        2.0,
+        1264.0,
+        477.0,
+        2.0
+      ],
+      "label": "0"
+    },
+    {
+      "tail": "k=k+1",
+      "head": "sum=sum+k",
+      "bbox": [
+        865,
+        438,
+        295,
+        30
+      ],
+      "kps": [
+        1158.0,
+        442.0,
+        2.0,
+        875.0,
+        452.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "k==n?",
+      "head": "disp sum",
+      "bbox": [
+        212,
+        573,
+        444,
+        47
+      ],
+      "kps": [
+        653.0,
+        616.0,
+        2.0,
+        213.0,
+        584.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "disp sum",
+      "head": "Finish",
+      "bbox": [
+        112,
+        352,
+        26,
+        172
+      ],
+      "kps": [
+        119.0,
+        522.0,
+        2.0,
+        122.0,
+        353.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

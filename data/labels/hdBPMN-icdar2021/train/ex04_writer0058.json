@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "set hearing date",
+      "id": "set hearing date",
+      "class": "task"
+    },
+    {
+      "text": "compensation request fullfieled",
+      "id": "compensation request fullfieled",
+      "class": "event"
+    },
+    {
+      "text": "get owner fee payment",
+      "id": "get owner fee payment",
+      "class": "task"
+    },
+    {
+      "text": "produce fee notice",
+      "id": "produce fee notice",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check the request for filling",
+      "id": "check the request for filling",
+      "class": "task"
+    },
+    {
+      "text": "check the request for compliant",
+      "id": "check the request for compliant",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "fee notice",
+      "id": "fee notice",
+      "class": "dataObject"
+    },
+    {
+      "text": "file for particular premises",
+      "id": "file for particular premises",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "request for compensation arrived",
+      "id": "request for compensation arrived",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "set hearing date",
+      "head": "compensation request fullfieled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "set hearing date",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check the request for compliant",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check the request for filling",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "check the request for filling",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "produce fee notice",
+      "head": "get owner fee payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "produce fee notice",
+      "class": "sequenceFlow",
+      "label": "owner droht parol fees"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": "owner paid fees"
+    },
+    {
+      "tail": "request for compensation arrived",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "check the request for compliant",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "get owner fee payment",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "produce fee notice",
+      "head": "fee notice",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "file for particular premises",
+      "head": "check the request for filling",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "file for particular premises",
+      "head": "check the request for compliant",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Owner",
+      "head": "request for compensation arrived",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "produce fee notice",
+      "head": "Owner",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "tribunal",
+      "nodes": [
+        "cashier of the tribunal"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "cashier of the tribunal",
+      "nodes": [
+        "set hearing date",
+        "compensation request fullfieled",
+        "get owner fee payment",
+        "produce fee notice",
+        "exclusiveGateway_1",
+        "check the request for filling",
+        "check the request for compliant",
+        "parallelGateway_1",
+        "file for particular premises",
+        "parallelGateway_2",
+        "request for compensation arrived"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Owner",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

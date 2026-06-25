@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "fisticuffery",
+      "id": "fisticuffery",
+      "class": "oval"
+    },
+    {
+      "text": "sedative glonoine",
+      "id": "sedative glonoine",
+      "class": "hexagon"
+    },
+    {
+      "text": "sody",
+      "id": "sody",
+      "class": "hexagon"
+    },
+    {
+      "text": "prequote",
+      "id": "prequote",
+      "class": "diamond"
+    },
+    {
+      "text": "ingravidation",
+      "id": "ingravidation",
+      "class": "diamond"
+    },
+    {
+      "text": "sulphureosaline gunite",
+      "id": "sulphureosaline gunite",
+      "class": "parallelogram"
+    },
+    {
+      "text": "iliofemoral lenify",
+      "id": "iliofemoral lenify",
+      "class": "diamond"
+    },
+    {
+      "text": "unroped rebuoy",
+      "id": "unroped rebuoy",
+      "class": "box"
+    },
+    {
+      "text": "bergalith Baramika",
+      "id": "bergalith Baramika",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fisticuffery",
+      "head": "sedative glonoine",
+      "label": null
+    },
+    {
+      "tail": "sedative glonoine",
+      "head": "sody",
+      "label": null
+    },
+    {
+      "tail": "sody",
+      "head": "prequote",
+      "label": null
+    },
+    {
+      "tail": "prequote",
+      "head": "ingravidation",
+      "label": "No"
+    },
+    {
+      "tail": "prequote",
+      "head": "sedative glonoine",
+      "label": "No"
+    },
+    {
+      "tail": "ingravidation",
+      "head": "sulphureosaline gunite",
+      "label": "No"
+    },
+    {
+      "tail": "ingravidation",
+      "head": "fisticuffery",
+      "label": "No"
+    },
+    {
+      "tail": "sulphureosaline gunite",
+      "head": "iliofemoral lenify",
+      "label": null
+    },
+    {
+      "tail": "iliofemoral lenify",
+      "head": "unroped rebuoy",
+      "label": "yes"
+    },
+    {
+      "tail": "iliofemoral lenify",
+      "head": "sedative glonoine",
+      "label": "yes"
+    },
+    {
+      "tail": "unroped rebuoy",
+      "head": "bergalith Baramika",
+      "label": null
+    }
+  ]
+}

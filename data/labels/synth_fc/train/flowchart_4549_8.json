@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "neuropodium",
+      "id": "neuropodium",
+      "class": "ellipse"
+    },
+    {
+      "text": "cobbed mosker tartishly",
+      "id": "cobbed mosker tartishly",
+      "class": "parallelogram"
+    },
+    {
+      "text": "leefang ankylotome jolly",
+      "id": "leefang ankylotome jolly",
+      "class": "parallelogram"
+    },
+    {
+      "text": "mediolateral ort",
+      "id": "mediolateral ort",
+      "class": "document"
+    },
+    {
+      "text": "haughtness",
+      "id": "haughtness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "purpurine rumless kentrolite",
+      "id": "purpurine rumless kentrolite",
+      "class": "diamond"
+    },
+    {
+      "text": "antiamylase",
+      "id": "antiamylase",
+      "class": "diamond"
+    },
+    {
+      "text": "prequote",
+      "id": "prequote",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "neuropodium",
+      "head": "cobbed mosker tartishly",
+      "label": null
+    },
+    {
+      "tail": "cobbed mosker tartishly",
+      "head": "leefang ankylotome jolly",
+      "label": null
+    },
+    {
+      "tail": "leefang ankylotome jolly",
+      "head": "mediolateral ort",
+      "label": null
+    },
+    {
+      "tail": "mediolateral ort",
+      "head": "haughtness",
+      "label": null
+    },
+    {
+      "tail": "haughtness",
+      "head": "purpurine rumless kentrolite",
+      "label": null
+    },
+    {
+      "tail": "purpurine rumless kentrolite",
+      "head": "antiamylase",
+      "label": "yes"
+    },
+    {
+      "tail": "purpurine rumless kentrolite",
+      "head": "mediolateral ort",
+      "label": "yes"
+    },
+    {
+      "tail": "antiamylase",
+      "head": "prequote",
+      "label": "no"
+    },
+    {
+      "tail": "antiamylase",
+      "head": "purpurine rumless kentrolite",
+      "label": "no"
+    }
+  ]
+}

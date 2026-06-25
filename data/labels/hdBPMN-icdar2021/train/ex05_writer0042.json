@@ -1,0 +1,392 @@
+{
+  "nodes": [
+    {
+      "text": "check documents",
+      "id": "check documents",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Reject claim",
+      "id": "Reject claim",
+      "class": "task"
+    },
+    {
+      "text": "Register claim",
+      "id": "Register claim",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "Reject claim",
+      "id": "Reject claim",
+      "class": "task"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "class": "event"
+    },
+    {
+      "text": "inform customer",
+      "id": "inform customer",
+      "class": "task"
+    },
+    {
+      "text": "Phone garage",
+      "id": "Phone garage",
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "class": "task"
+    },
+    {
+      "text": "claim processed",
+      "id": "claim processed",
+      "class": "event"
+    },
+    {
+      "text": "system",
+      "id": "system",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "class": "event"
+    },
+    {
+      "text": "claim package",
+      "id": "claim package",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim package [checked]",
+      "id": "claim package [checked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "check insurance",
+      "id": "check insurance",
+      "class": "task"
+    },
+    {
+      "text": "Reject claim",
+      "id": "Reject claim",
+      "class": "task"
+    },
+    {
+      "text": "claim package [checked]",
+      "id": "claim package [checked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "class": "task"
+    },
+    {
+      "text": "claim package [registered]",
+      "id": "claim package [registered]",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "check insurance",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check documents",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Reject claim",
+      "head": "claim rejected",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "claim processed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Phone garage",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "Phone garage",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "inform customer",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "inform customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Reject claim",
+      "head": "claim rejected",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "Reject claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Reject claim",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Reject claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Register claim",
+      "head": "check insurance",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Register claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Reject claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "check documents",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim package",
+      "head": "check documents",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check documents",
+      "head": "claim package [checked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim package [checked]",
+      "head": "Register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Register claim",
+      "head": "claim package [registered]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Register claim",
+      "head": "system",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim package [registered]",
+      "head": "check insurance",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check insurance",
+      "head": "claim package [checked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim package [checked]",
+      "head": "perform assessment",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Phone garage",
+      "head": "Garage",
+      "class": "messageFlow",
+      "label": "Authorize repairs"
+    },
+    {
+      "tail": "Reject claim",
+      "head": "Customer",
+      "class": "messageFlow",
+      "label": "claim rejection"
+    },
+    {
+      "tail": "Reject claim",
+      "head": "Customer",
+      "class": "messageFlow",
+      "label": "claim rejection"
+    },
+    {
+      "tail": "inform customer",
+      "head": "Customer",
+      "class": "messageFlow",
+      "label": "claim confirmed"
+    },
+    {
+      "tail": "Customer",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Reject claim",
+      "head": "Customer",
+      "class": "messageFlow",
+      "label": "claim\nrejection"
+    }
+  ],
+  "groups": [
+    {
+      "name": "car insurer",
+      "nodes": [
+        "Handling department",
+        "notification department"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Handling department",
+      "nodes": [
+        "exclusiveGateway_2",
+        "exclusiveGateway_3",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "event_1",
+        "Reject claim",
+        "claim rejected",
+        "inform customer",
+        "Phone garage",
+        "schedule payment",
+        "claim processed",
+        "check insurance",
+        "Reject claim",
+        "claim package [checked]",
+        "perform assessment"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "check documents",
+        "exclusiveGateway_1",
+        "Reject claim",
+        "Register claim",
+        "system",
+        "messageEvent_1",
+        "claim rejected",
+        "claim package",
+        "claim package [checked]",
+        "claim package [registered]"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Garage",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

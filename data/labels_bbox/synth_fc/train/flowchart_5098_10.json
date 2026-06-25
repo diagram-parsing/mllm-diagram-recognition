@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "thimbleweed",
+      "id": "thimbleweed",
+      "class": "oval",
+      "bbox": [
+        18,
+        5,
+        127,
+        53
+      ]
+    },
+    {
+      "text": "microbion",
+      "id": "microbion",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        98,
+        140,
+        146
+      ]
+    },
+    {
+      "text": "propleuron",
+      "id": "propleuron",
+      "class": "box",
+      "bbox": [
+        32,
+        190,
+        113,
+        238
+      ]
+    },
+    {
+      "text": "semicartilaginous",
+      "id": "semicartilaginous",
+      "class": "document",
+      "bbox": [
+        11,
+        250,
+        134,
+        316
+      ]
+    },
+    {
+      "text": "shore",
+      "id": "shore",
+      "class": "hexagon",
+      "bbox": [
+        32,
+        351,
+        113,
+        399
+      ]
+    },
+    {
+      "text": "batakan",
+      "id": "batakan",
+      "class": "box",
+      "bbox": [
+        221,
+        74,
+        293,
+        122
+      ]
+    },
+    {
+      "text": "medullary",
+      "id": "medullary",
+      "class": "document",
+      "bbox": [
+        195,
+        181,
+        313,
+        246
+      ]
+    },
+    {
+      "text": "overplausible girny",
+      "id": "overplausible girny",
+      "class": "document",
+      "bbox": [
+        195,
+        273,
+        313,
+        339
+      ]
+    },
+    {
+      "text": "dap",
+      "id": "dap",
+      "class": "diamond",
+      "bbox": [
+        217,
+        374,
+        297,
+        422
+      ]
+    },
+    {
+      "text": "excitableness unfrankness",
+      "id": "excitableness unfrankness",
+      "class": "circle",
+      "bbox": [
+        199,
+        433,
+        313,
+        542
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "thimbleweed",
+      "head": "microbion",
+      "label": null,
+      "bbox": [
+        66,
+        53,
+        78,
+        98
+      ]
+    },
+    {
+      "tail": "microbion",
+      "head": "propleuron",
+      "label": null,
+      "bbox": [
+        66,
+        145,
+        78,
+        190
+      ]
+    },
+    {
+      "tail": "propleuron",
+      "head": "semicartilaginous",
+      "label": null,
+      "bbox": [
+        66,
+        237,
+        78,
+        251
+      ]
+    },
+    {
+      "tail": "semicartilaginous",
+      "head": "shore",
+      "label": null,
+      "bbox": [
+        66,
+        315,
+        78,
+        351
+      ]
+    },
+    {
+      "tail": "shore",
+      "head": "batakan",
+      "label": null,
+      "bbox": [
+        103,
+        104,
+        221,
+        364
+      ]
+    },
+    {
+      "tail": "batakan",
+      "head": "medullary",
+      "label": null,
+      "bbox": [
+        251,
+        122,
+        263,
+        181
+      ]
+    },
+    {
+      "tail": "medullary",
+      "head": "overplausible girny",
+      "label": null,
+      "bbox": [
+        251,
+        246,
+        263,
+        274
+      ]
+    },
+    {
+      "tail": "overplausible girny",
+      "head": "dap",
+      "label": null,
+      "bbox": [
+        251,
+        338,
+        263,
+        374
+      ]
+    },
+    {
+      "tail": "dap",
+      "head": "excitableness unfrankness",
+      "label": "YES",
+      "bbox": [
+        251,
+        420,
+        263,
+        433
+      ]
+    },
+    {
+      "tail": "dap",
+      "head": "thimbleweed",
+      "label": "YES",
+      "bbox": [
+        127,
+        24,
+        234,
+        388
+      ]
+    }
+  ]
+}

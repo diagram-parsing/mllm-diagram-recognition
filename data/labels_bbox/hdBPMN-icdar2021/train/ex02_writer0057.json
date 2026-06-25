@@ -1,0 +1,345 @@
+{
+  "nodes": [
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        147,
+        187,
+        225,
+        245
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "bbox": [
+        455,
+        173,
+        593,
+        253
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "bbox": [
+        649,
+        139,
+        915,
+        236
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "bbox": [
+        262,
+        387,
+        470,
+        502
+      ],
+      "class": "task"
+    },
+    {
+      "text": "recommendation",
+      "id": "recommendation",
+      "bbox": [
+        603,
+        247,
+        643,
+        302
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "[marked] recommendation",
+      "id": "[marked] recommendation",
+      "bbox": [
+        977,
+        238,
+        1026,
+        311
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim DB",
+      "id": "claim DB",
+      "bbox": [
+        413,
+        116,
+        457,
+        147
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "mark as \"Not OK\"",
+      "id": "mark as \"Not OK\"",
+      "bbox": [
+        673,
+        345,
+        904,
+        421
+      ],
+      "class": "task"
+    },
+    {
+      "text": "proceed handling process",
+      "id": "proceed handling process",
+      "bbox": [
+        666,
+        471,
+        940,
+        574
+      ],
+      "class": "task"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        279,
+        172,
+        400,
+        268
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        553,
+        427,
+        610,
+        480
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        225,
+        207,
+        281,
+        232
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        400,
+        198,
+        456,
+        224
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        593,
+        191,
+        650,
+        216
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        368,
+        236,
+        726,
+        388
+      ],
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        470,
+        440,
+        556,
+        466
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark as \"Not OK\"",
+      "class": "sequenceFlow",
+      "bbox": [
+        583,
+        393,
+        674,
+        431
+      ],
+      "label": "Not OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "proceed handling process",
+      "class": "sequenceFlow",
+      "bbox": [
+        581,
+        480,
+        667,
+        542
+      ],
+      "label": "OK"
+    },
+    {
+      "tail": "mark as \"Not OK\"",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        855,
+        236,
+        880,
+        346
+      ],
+      "label": null
+    },
+    {
+      "tail": "[marked] recommendation",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        918,
+        175,
+        1001,
+        239
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        643,
+        237,
+        685,
+        278
+      ],
+      "label": null
+    },
+    {
+      "tail": "recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        443,
+        302,
+        617,
+        388
+      ],
+      "label": null
+    },
+    {
+      "tail": "mark as \"Not OK\"",
+      "head": "[marked] recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        907,
+        311,
+        999,
+        371
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        178,
+        82,
+        203,
+        179
+      ],
+      "label": "claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "bbox": [
+        56,
+        112,
+        1242,
+        623
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "claim received",
+        "examine claim",
+        "write settlement recommendation",
+        "recommendation",
+        "[marked] recommendation",
+        "claim DB",
+        "register claim"
+      ],
+      "bbox": [
+        93,
+        112,
+        1242,
+        333
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check recommendation",
+        "mark as \"Not OK\"",
+        "proceed handling process",
+        "exclusiveGateway_1"
+      ],
+      "bbox": [
+        93,
+        333,
+        1242,
+        623
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        116,
+        15,
+        1028,
+        82
+      ],
+      "class": "pool"
+    }
+  ]
+}

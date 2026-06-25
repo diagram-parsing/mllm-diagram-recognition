@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "placemanship",
+      "id": "placemanship",
+      "class": "circle"
+    },
+    {
+      "text": "helodes",
+      "id": "helodes",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unbitten",
+      "id": "unbitten",
+      "class": "diamond"
+    },
+    {
+      "text": "zooid seminecessary",
+      "id": "zooid seminecessary",
+      "class": "box"
+    },
+    {
+      "text": "Pastinaca dictyopteran",
+      "id": "Pastinaca dictyopteran",
+      "class": "diamond"
+    },
+    {
+      "text": "overprotect Daunii",
+      "id": "overprotect Daunii",
+      "class": "document"
+    },
+    {
+      "text": "chromatolytic wrothsome",
+      "id": "chromatolytic wrothsome",
+      "class": "oval"
+    },
+    {
+      "text": "suspension futilitarian",
+      "id": "suspension futilitarian",
+      "class": "box"
+    },
+    {
+      "text": "appetibility",
+      "id": "appetibility",
+      "class": "box"
+    },
+    {
+      "text": "alienism",
+      "id": "alienism",
+      "class": "box"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "placemanship",
+      "head": "helodes",
+      "label": null
+    },
+    {
+      "tail": "helodes",
+      "head": "unbitten",
+      "label": null
+    },
+    {
+      "tail": "unbitten",
+      "head": "zooid seminecessary",
+      "label": "Yes"
+    },
+    {
+      "tail": "unbitten",
+      "head": "helodes",
+      "label": "Yes"
+    },
+    {
+      "tail": "zooid seminecessary",
+      "head": "Pastinaca dictyopteran",
+      "label": null
+    },
+    {
+      "tail": "Pastinaca dictyopteran",
+      "head": "overprotect Daunii",
+      "label": "No"
+    },
+    {
+      "tail": "Pastinaca dictyopteran",
+      "head": "chromatolytic wrothsome",
+      "label": "No"
+    },
+    {
+      "tail": "overprotect Daunii",
+      "head": "suspension futilitarian",
+      "label": null
+    },
+    {
+      "tail": "suspension futilitarian",
+      "head": "appetibility",
+      "label": null
+    },
+    {
+      "tail": "appetibility",
+      "head": "alienism",
+      "label": null
+    },
+    {
+      "tail": "alienism",
+      "head": "chromatolytic wrothsome",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "bbox": [
+        339,
+        4,
+        657,
+        122
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input a,b",
+      "id": "Input a,b",
+      "bbox": [
+        230,
+        193,
+        693,
+        334
+      ],
+      "class": "data"
+    },
+    {
+      "text": "r=a%b",
+      "id": "r=a%b",
+      "bbox": [
+        297,
+        446,
+        616,
+        571
+      ],
+      "class": "process"
+    },
+    {
+      "text": "r=0?",
+      "id": "r=0?",
+      "bbox": [
+        339,
+        661,
+        589,
+        868
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "a=b b=r",
+      "id": "a=b b=r",
+      "bbox": [
+        4,
+        666,
+        257,
+        852
+      ],
+      "class": "process"
+    },
+    {
+      "text": "output b",
+      "id": "output b",
+      "bbox": [
+        259,
+        969,
+        663,
+        1099
+      ],
+      "class": "data"
+    },
+    {
+      "text": "End",
+      "id": "End",
+      "bbox": [
+        330,
+        1212,
+        587,
+        1330
+      ],
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "Input a,b",
+      "bbox": [
+        457,
+        106,
+        515,
+        202
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input a,b",
+      "head": "r=a%b",
+      "bbox": [
+        438,
+        324,
+        481,
+        457
+      ],
+      "label": null
+    },
+    {
+      "tail": "r=a%b",
+      "head": "r=0?",
+      "bbox": [
+        426,
+        562,
+        479,
+        680
+      ],
+      "label": null
+    },
+    {
+      "tail": "r=0?",
+      "head": "a=b b=r",
+      "bbox": [
+        259,
+        741,
+        341,
+        789
+      ],
+      "label": "NO"
+    },
+    {
+      "tail": "a=b b=r",
+      "head": "r=a%b",
+      "bbox": [
+        128,
+        488,
+        306,
+        674
+      ],
+      "label": null
+    },
+    {
+      "tail": "r=0?",
+      "head": "output b",
+      "bbox": [
+        445,
+        857,
+        488,
+        963
+      ],
+      "label": "YES"
+    },
+    {
+      "tail": "output b",
+      "head": "End",
+      "bbox": [
+        441,
+        1086,
+        470,
+        1218
+      ],
+      "label": null
+    }
+  ]
+}

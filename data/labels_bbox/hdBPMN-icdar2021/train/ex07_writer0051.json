@@ -1,0 +1,548 @@
+{
+  "nodes": [
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        2861,
+        598,
+        3121,
+        754
+      ],
+      "class": "task"
+    },
+    {
+      "text": "filling check",
+      "id": "filling check",
+      "bbox": [
+        3069,
+        1456,
+        3306,
+        1638
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        3519,
+        928,
+        3602,
+        1048
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "retrieve interiew",
+      "id": "retrieve interiew",
+      "bbox": [
+        603,
+        822,
+        698,
+        905
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "file result",
+      "id": "file result",
+      "bbox": [
+        1690,
+        728,
+        1950,
+        936
+      ],
+      "class": "task"
+    },
+    {
+      "text": "patient interview",
+      "id": "patient interview",
+      "bbox": [
+        793,
+        1009,
+        874,
+        1115
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "ask external expert to review doctors work",
+      "id": "ask external expert to review doctors work",
+      "bbox": [
+        468,
+        1248,
+        1066,
+        1513
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "workflow",
+      "id": "workflow",
+      "bbox": [
+        905,
+        608,
+        996,
+        699
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "expertise",
+      "id": "expertise",
+      "bbox": [
+        1188,
+        998,
+        1261,
+        1102
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "subProcess_1",
+      "bbox": [
+        1459,
+        1225,
+        3040,
+        1612
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "ask expert",
+      "id": "ask expert",
+      "bbox": [
+        1506,
+        1357,
+        1563,
+        1425
+      ],
+      "class": "event"
+    },
+    {
+      "text": "give free aption (Vorschlag)",
+      "id": "give free aption (Vorschlag)",
+      "bbox": [
+        1755,
+        1282,
+        2068,
+        1490
+      ],
+      "class": "task"
+    },
+    {
+      "text": "wait a time for esponse",
+      "id": "wait a time for esponse",
+      "bbox": [
+        2148,
+        1326,
+        2273,
+        1441
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "review response",
+      "id": "review response",
+      "bbox": [
+        2458,
+        1279,
+        2718,
+        1487
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive response",
+      "id": "receive response",
+      "bbox": [
+        2825,
+        1337,
+        2918,
+        1430
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2484,
+        795,
+        2588,
+        881
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "interview finish and approved",
+      "id": "interview finish and approved",
+      "bbox": [
+        3732,
+        933,
+        3849,
+        1035
+      ],
+      "class": "event"
+    },
+    {
+      "text": "pay response",
+      "id": "pay response",
+      "bbox": [
+        3420,
+        1508,
+        3545,
+        1602
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "filling check",
+      "class": "sequenceFlow",
+      "bbox": [
+        2528,
+        876,
+        3110,
+        1459
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        2523,
+        702,
+        2863,
+        808
+      ],
+      "label": null
+    },
+    {
+      "tail": "file result",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1950,
+        793,
+        2494,
+        873
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review doctors work",
+      "head": "file result",
+      "class": "sequenceFlow",
+      "bbox": [
+        1048,
+        907,
+        1693,
+        1253
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve interiew",
+      "head": "ask external expert to review doctors work",
+      "class": "sequenceFlow",
+      "bbox": [
+        610,
+        910,
+        691,
+        1251
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        3121,
+        681,
+        3566,
+        933
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview finish and approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        3602,
+        945,
+        3735,
+        1026
+      ],
+      "label": null
+    },
+    {
+      "tail": "pay response",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        3541,
+        1045,
+        3622,
+        1557
+      ],
+      "label": null
+    },
+    {
+      "tail": "filling check",
+      "head": "pay response",
+      "class": "sequenceFlow",
+      "bbox": [
+        3306,
+        1519,
+        3423,
+        1599
+      ],
+      "label": null
+    },
+    {
+      "tail": "review response",
+      "head": "receive response",
+      "class": "sequenceFlow",
+      "bbox": [
+        2718,
+        1346,
+        2827,
+        1426
+      ],
+      "label": null
+    },
+    {
+      "tail": "wait a time for esponse",
+      "head": "review response",
+      "class": "sequenceFlow",
+      "bbox": [
+        2273,
+        1347,
+        2460,
+        1427
+      ],
+      "label": null
+    },
+    {
+      "tail": "give free aption (Vorschlag)",
+      "head": "wait a time for esponse",
+      "class": "sequenceFlow",
+      "bbox": [
+        2068,
+        1343,
+        2150,
+        1424
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask expert",
+      "head": "give free aption (Vorschlag)",
+      "class": "sequenceFlow",
+      "bbox": [
+        1563,
+        1348,
+        1758,
+        1429
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve interiew",
+      "head": "workflow",
+      "class": "dataAssociation",
+      "bbox": [
+        686,
+        675,
+        907,
+        836
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve interiew",
+      "head": "patient interview",
+      "class": "dataAssociation",
+      "bbox": [
+        684,
+        896,
+        794,
+        1013
+      ],
+      "label": null
+    },
+    {
+      "tail": "patient interview",
+      "head": "file result",
+      "class": "dataAssociation",
+      "bbox": [
+        874,
+        842,
+        1693,
+        1032
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "file result",
+      "class": "dataAssociation",
+      "bbox": [
+        1261,
+        876,
+        1693,
+        1040
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "ask external expert to review doctors work",
+      "class": "dataAssociation",
+      "bbox": [
+        954,
+        1076,
+        1191,
+        1250
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review doctors work",
+      "head": "expert",
+      "class": "messageFlow",
+      "bbox": [
+        559,
+        1513,
+        639,
+        2135
+      ],
+      "label": "ask for rating doctos work"
+    },
+    {
+      "tail": "expert",
+      "head": "ask external expert to review doctors work",
+      "class": "messageFlow",
+      "bbox": [
+        871,
+        1513,
+        951,
+        2135
+      ],
+      "label": "response of expert"
+    },
+    {
+      "tail": "pay response",
+      "head": "expert",
+      "class": "messageFlow",
+      "bbox": [
+        3480,
+        1618,
+        3561,
+        2135
+      ],
+      "label": "check"
+    },
+    {
+      "tail": "Patient",
+      "head": "retrieve interiew",
+      "class": "messageFlow",
+      "bbox": [
+        610,
+        329,
+        691,
+        820
+      ],
+      "label": "interview"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "quality assurance specialist"
+      ],
+      "bbox": [
+        156,
+        543,
+        3953,
+        1870
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "filling check",
+        "ask external expert to review doctors work",
+        "subProcess_1",
+        "ask expert",
+        "give free aption (Vorschlag)",
+        "wait a time for esponse",
+        "review response",
+        "receive response",
+        "pay response"
+      ],
+      "bbox": [
+        234,
+        1206,
+        3953,
+        1870
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance specialist",
+      "nodes": [
+        "create report",
+        "parallelGateway_1",
+        "retrieve interiew",
+        "file result",
+        "patient interview",
+        "workflow",
+        "expertise",
+        "parallelGateway_2",
+        "interview finish and approved"
+      ],
+      "bbox": [
+        234,
+        543,
+        3953,
+        1206
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "bbox": [
+        345,
+        208,
+        3901,
+        330
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "expert",
+      "nodes": [],
+      "bbox": [
+        234,
+        2133,
+        4005,
+        2289
+      ],
+      "class": "pool"
+    }
+  ]
+}

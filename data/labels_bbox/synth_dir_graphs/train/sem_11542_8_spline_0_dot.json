@@ -1,0 +1,238 @@
+{
+  "nodes": [
+    {
+      "text": "feature",
+      "id": "feature",
+      "class": "node",
+      "bbox": [
+        750,
+        130,
+        851,
+        178
+      ]
+    },
+    {
+      "text": "Rattus",
+      "id": "Rattus",
+      "class": "node",
+      "bbox": [
+        1037,
+        130,
+        1133,
+        178
+      ]
+    },
+    {
+      "text": "sobriquet",
+      "id": "sobriquet",
+      "class": "node",
+      "bbox": [
+        765,
+        262,
+        837,
+        310
+      ]
+    },
+    {
+      "text": "moralless walloping",
+      "id": "moralless walloping",
+      "class": "node",
+      "bbox": [
+        1015,
+        226,
+        1155,
+        298
+      ]
+    },
+    {
+      "text": "hyperneurotic heartache toxino",
+      "id": "hyperneurotic heartache toxino",
+      "class": "node",
+      "bbox": [
+        975,
+        322,
+        1190,
+        388
+      ]
+    },
+    {
+      "text": "halogenate irrelevancy populic",
+      "id": "halogenate irrelevancy populic",
+      "class": "node",
+      "bbox": [
+        27,
+        192,
+        169,
+        241
+      ]
+    },
+    {
+      "text": "purrone mitra",
+      "id": "purrone mitra",
+      "class": "node",
+      "bbox": [
+        293,
+        143,
+        370,
+        191
+      ]
+    },
+    {
+      "text": "puppysnatch",
+      "id": "puppysnatch",
+      "class": "node",
+      "bbox": [
+        493,
+        134,
+        631,
+        182
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "feature",
+      "head": "Rattus",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        851,
+        151,
+        1037,
+        157
+      ]
+    },
+    {
+      "tail": "sobriquet",
+      "head": "moralless walloping",
+      "label": "-0.817",
+      "class": "unidirectional",
+      "bbox": [
+        837,
+        265,
+        1015,
+        283
+      ]
+    },
+    {
+      "tail": "sobriquet",
+      "head": "hyperneurotic heartache toxino",
+      "label": "0.32*** s = 0.476",
+      "class": "unidirectional",
+      "bbox": [
+        829,
+        311,
+        974,
+        361
+      ]
+    },
+    {
+      "tail": "halogenate irrelevancy populic",
+      "head": "purrone mitra",
+      "label": "0.95 a = 0.851",
+      "class": "unidirectional",
+      "bbox": [
+        159,
+        174,
+        293,
+        204
+      ]
+    },
+    {
+      "tail": "purrone mitra",
+      "head": "feature",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        349,
+        76,
+        766,
+        143
+      ]
+    },
+    {
+      "tail": "purrone mitra",
+      "head": "sobriquet",
+      "label": "0.959",
+      "class": "unidirectional",
+      "bbox": [
+        370,
+        184,
+        764,
+        284
+      ]
+    },
+    {
+      "tail": "puppysnatch",
+      "head": "feature",
+      "label": "0.07",
+      "class": "unidirectional",
+      "bbox": [
+        631,
+        152,
+        750,
+        158
+      ]
+    },
+    {
+      "tail": "puppysnatch",
+      "head": "sobriquet",
+      "label": "0.76 t = 0.349",
+      "class": "unidirectional",
+      "bbox": [
+        596,
+        179,
+        764,
+        270
+      ]
+    },
+    {
+      "tail": "halogenate irrelevancy populic",
+      "head": "sobriquet",
+      "label": "-0.69** x = 0.815",
+      "class": "unidirectional",
+      "bbox": [
+        148,
+        235,
+        764,
+        304
+      ]
+    },
+    {
+      "tail": "halogenate irrelevancy populic",
+      "head": "puppysnatch",
+      "label": "1",
+      "class": "bidirectional",
+      "bbox": [
+        165,
+        179,
+        524,
+        250
+      ]
+    },
+    {
+      "tail": "purrone mitra",
+      "head": "puppysnatch",
+      "label": "0.33 x = 0.608",
+      "class": "unidirectional",
+      "bbox": [
+        370,
+        158,
+        493,
+        166
+      ]
+    },
+    {
+      "tail": "halogenate irrelevancy populic",
+      "head": "feature",
+      "label": "-0.88** t = 0.164",
+      "class": "unidirectional",
+      "bbox": [
+        116,
+        40,
+        775,
+        193
+      ]
+    }
+  ]
+}

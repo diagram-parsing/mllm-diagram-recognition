@@ -1,0 +1,51 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "class": "terminator"
+    },
+    {
+      "text": "Input A,B",
+      "id": "Input A,B",
+      "class": "data"
+    },
+    {
+      "text": "A>=B",
+      "id": "A>=B",
+      "class": "decision"
+    },
+    {
+      "text": "Output A",
+      "id": "Output A",
+      "class": "data"
+    },
+    {
+      "text": "Output B",
+      "id": "Output B",
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "Input A,B",
+      "label": null
+    },
+    {
+      "tail": "Input A,B",
+      "head": "A>=B",
+      "label": null
+    },
+    {
+      "tail": "A>=B",
+      "head": "Output A",
+      "label": "Yes"
+    },
+    {
+      "tail": "A>=B",
+      "head": "Output B",
+      "label": "No"
+    }
+  ]
+}

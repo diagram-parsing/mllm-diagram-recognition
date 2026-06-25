@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "text": "pretraining",
+      "id": "pretraining",
+      "class": "oval"
+    },
+    {
+      "text": "myophan",
+      "id": "myophan",
+      "class": "box"
+    },
+    {
+      "text": "sunglass woodland",
+      "id": "sunglass woodland",
+      "class": "diamond"
+    },
+    {
+      "text": "privacy juiceless",
+      "id": "privacy juiceless",
+      "class": "parallelogram"
+    },
+    {
+      "text": "saute psychologically",
+      "id": "saute psychologically",
+      "class": "diamond"
+    },
+    {
+      "text": "battered bretelle",
+      "id": "battered bretelle",
+      "class": "document"
+    },
+    {
+      "text": "chrysobull",
+      "id": "chrysobull",
+      "class": "parallelogram"
+    },
+    {
+      "text": "androgyny phantasist cytoblast",
+      "id": "androgyny phantasist cytoblast",
+      "class": "document"
+    },
+    {
+      "text": "spiriferous",
+      "id": "spiriferous",
+      "class": "parallelogram"
+    },
+    {
+      "text": "kameelthorn supermanism",
+      "id": "kameelthorn supermanism",
+      "class": "document"
+    },
+    {
+      "text": "Serridentinus",
+      "id": "Serridentinus",
+      "class": "box"
+    },
+    {
+      "text": "kanephoros untentaculate Dipne",
+      "id": "kanephoros untentaculate Dipne",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pretraining",
+      "head": "myophan",
+      "label": null
+    },
+    {
+      "tail": "myophan",
+      "head": "sunglass woodland",
+      "label": null
+    },
+    {
+      "tail": "sunglass woodland",
+      "head": "privacy juiceless",
+      "label": "YES"
+    },
+    {
+      "tail": "sunglass woodland",
+      "head": "saute psychologically",
+      "label": "YES"
+    },
+    {
+      "tail": "privacy juiceless",
+      "head": "battered bretelle",
+      "label": null
+    },
+    {
+      "tail": "battered bretelle",
+      "head": "chrysobull",
+      "label": null
+    },
+    {
+      "tail": "chrysobull",
+      "head": "androgyny phantasist cytoblast",
+      "label": null
+    },
+    {
+      "tail": "androgyny phantasist cytoblast",
+      "head": "saute psychologically",
+      "label": null
+    },
+    {
+      "tail": "saute psychologically",
+      "head": "spiriferous",
+      "label": "no"
+    },
+    {
+      "tail": "saute psychologically",
+      "head": "battered bretelle",
+      "label": "no"
+    },
+    {
+      "tail": "spiriferous",
+      "head": "kameelthorn supermanism",
+      "label": null
+    },
+    {
+      "tail": "kameelthorn supermanism",
+      "head": "Serridentinus",
+      "label": null
+    },
+    {
+      "tail": "Serridentinus",
+      "head": "kanephoros untentaculate Dipne",
+      "label": null
+    }
+  ]
+}

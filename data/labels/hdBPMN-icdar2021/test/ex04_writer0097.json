@@ -1,0 +1,674 @@
+{
+  "nodes": [
+    {
+      "text": "check if acceptable for filing",
+      "id": "check if acceptable for filing",
+      "bbox": [
+        1450.145,
+        984.405,
+        603.345,
+        391.645
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check if compliant with the description",
+      "id": "check if compliant with the description",
+      "bbox": [
+        1476.608,
+        1566.58,
+        545.127,
+        492.202
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check if owner paid the fees",
+      "id": "check if owner paid the fees",
+      "bbox": [
+        2485.358,
+        1164.35,
+        719.78,
+        334.486
+      ],
+      "class": "task"
+    },
+    {
+      "text": "produce a fee notice",
+      "id": "produce a fee notice",
+      "bbox": [
+        3679.346,
+        1113.542,
+        381.06,
+        342.954
+      ],
+      "class": "task"
+    },
+    {
+      "text": "allocate a hearing date",
+      "id": "allocate a hearing date",
+      "bbox": [
+        3149.038,
+        1746.525,
+        656.27,
+        370.475
+      ],
+      "class": "task"
+    },
+    {
+      "text": "complete process",
+      "id": "complete process",
+      "bbox": [
+        2294.828,
+        1812.152,
+        652.036,
+        440.336
+      ],
+      "class": "task"
+    },
+    {
+      "text": "fee [paid]",
+      "id": "fee [paid]",
+      "bbox": [
+        3840.238,
+        1490.368,
+        152.424,
+        127.02
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        3336.392,
+        1155.882,
+        169.36,
+        258.274
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "request for com. [checked]",
+      "id": "request for com. [checked]",
+      "bbox": [
+        2249.312,
+        2461.012,
+        158.775,
+        211.7
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "request for com.",
+      "id": "request for com.",
+      "bbox": [
+        1243.738,
+        2164.632,
+        158.775,
+        211.7
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1210.924,
+        1350.646,
+        194.764,
+        245.572
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2159.34,
+        1296.662,
+        158.775,
+        158.775
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "request for com.\n[checked]",
+      "id": "request for com.\n[checked]",
+      "bbox": [
+        2180.51,
+        228.636,
+        241.338,
+        258.274
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "fee\n[not paid]",
+      "id": "fee\n[not paid]",
+      "bbox": [
+        3764.026,
+        355.656,
+        215.934,
+        173.594
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "request approved",
+      "id": "request approved",
+      "bbox": [
+        3291.935,
+        2333.992,
+        206.408,
+        222.285
+      ],
+      "class": "event"
+    },
+    {
+      "text": "quest for com. received",
+      "id": "quest for com. received",
+      "bbox": [
+        635.1,
+        1329.476,
+        249.806,
+        249.806
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "complete process",
+      "head": "request approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        2680.122,
+        2252.488,
+        618.164,
+        297.439
+      ],
+      "kps": [
+        2680.122,
+        2252.488,
+        2.0,
+        3294.052,
+        2455.72,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "allocate a hearing date",
+      "head": "complete process",
+      "class": "sequenceFlow",
+      "bbox": [
+        2946.864,
+        1992.097,
+        207.466,
+        84.68
+      ],
+      "kps": [
+        3150.096,
+        2032.32,
+        2.0,
+        2946.864,
+        2032.32,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "allocate a hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        3393.551,
+        1405.688,
+        84.68,
+        347.188
+      ],
+      "kps": [
+        3425.306,
+        1405.688,
+        2.0,
+        3442.242,
+        1748.642,
+        2.0
+      ],
+      "label": "paid"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "produce a fee notice",
+      "class": "sequenceFlow",
+      "bbox": [
+        3501.518,
+        1251.147,
+        182.062,
+        84.68
+      ],
+      "kps": [
+        3501.518,
+        1291.37,
+        2.0,
+        3679.346,
+        1291.37,
+        2.0
+      ],
+      "label": "not paid"
+    },
+    {
+      "tail": "check if owner paid the fees",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        3205.138,
+        1268.083,
+        152.424,
+        84.68
+      ],
+      "kps": [
+        3205.138,
+        1308.306,
+        2.0,
+        3353.328,
+        1308.306,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "check if owner paid the fees",
+      "class": "sequenceFlow",
+      "bbox": [
+        2320.232,
+        1329.476,
+        169.36,
+        84.68
+      ],
+      "kps": [
+        2320.232,
+        1376.05,
+        2.0,
+        2485.358,
+        1363.348,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if acceptable for filing",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2053.49,
+        1111.425,
+        189.471,
+        189.472
+      ],
+      "kps": [
+        2053.49,
+        1111.425,
+        2.0,
+        2238.728,
+        1296.662,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if compliant with the description",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2021.735,
+        1455.438,
+        221.226,
+        295.322
+      ],
+      "kps": [
+        2021.735,
+        1746.525,
+        2.0,
+        2238.728,
+        1455.438,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if compliant with the description",
+      "class": "sequenceFlow",
+      "bbox": [
+        1308.306,
+        1596.218,
+        173.594,
+        173.594
+      ],
+      "kps": [
+        1308.306,
+        1596.218,
+        2.0,
+        1477.666,
+        1765.578,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if acceptable for filing",
+      "class": "sequenceFlow",
+      "bbox": [
+        1257.498,
+        1138.946,
+        198.998,
+        237.104
+      ],
+      "kps": [
+        1291.37,
+        1371.816,
+        2.0,
+        1452.262,
+        1155.882,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "quest for com. received",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        884.906,
+        1416.273,
+        342.954,
+        84.68
+      ],
+      "kps": [
+        884.906,
+        1456.496,
+        2.0,
+        1223.626,
+        1456.496,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "request for com.",
+      "head": "check if acceptable for filing",
+      "class": "dataAssociation",
+      "bbox": [
+        1329.476,
+        1380.284,
+        203.232,
+        787.524
+      ],
+      "kps": [
+        1329.476,
+        2163.574,
+        2.0,
+        1528.474,
+        1380.284,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if acceptable for filing",
+      "head": "request for com.\n[checked]",
+      "class": "dataAssociation",
+      "bbox": [
+        1943.406,
+        418.107,
+        232.87,
+        568.415
+      ],
+      "kps": [
+        1943.406,
+        982.288,
+        2.0,
+        2172.042,
+        419.166,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "request for com.",
+      "head": "check if compliant with the description",
+      "class": "dataAssociation",
+      "bbox": [
+        1405.688,
+        2057.724,
+        203.232,
+        215.934
+      ],
+      "kps": [
+        1405.688,
+        2269.424,
+        2.0,
+        1604.686,
+        2057.724,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if compliant with the description",
+      "head": "request for com.\n[checked]",
+      "class": "dataAssociation",
+      "bbox": [
+        2002.682,
+        427.634,
+        182.062,
+        1151.648
+      ],
+      "kps": [
+        2002.682,
+        1575.048,
+        2.0,
+        2180.51,
+        427.634,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "request for com.\n[checked]",
+      "head": "check if owner paid the fees",
+      "class": "dataAssociation",
+      "bbox": [
+        2421.848,
+        349.305,
+        403.289,
+        819.279
+      ],
+      "kps": [
+        2421.848,
+        351.422,
+        2.0,
+        2620.846,
+        1164.35,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "produce a fee notice",
+      "head": "fee\n[not paid]",
+      "class": "dataAssociation",
+      "bbox": [
+        3795.781,
+        529.25,
+        84.68,
+        588.526
+      ],
+      "kps": [
+        3814.834,
+        1113.542,
+        2.0,
+        3857.174,
+        529.25,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "request for com. [checked]",
+      "head": "allocate a hearing date",
+      "class": "dataAssociation",
+      "bbox": [
+        2409.146,
+        2125.468,
+        817.162,
+        419.166
+      ],
+      "kps": [
+        2409.146,
+        2540.4,
+        2.0,
+        3222.074,
+        2125.468,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "fee [paid]",
+      "head": "allocate a hearing date",
+      "class": "dataAssociation",
+      "bbox": [
+        3670.878,
+        1562.346,
+        173.594,
+        190.53
+      ],
+      "kps": [
+        3840.238,
+        1562.346,
+        2.0,
+        3670.878,
+        1748.642,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "owner",
+      "head": "quest for com. received",
+      "class": "messageFlow",
+      "bbox": [
+        781.173,
+        762.12,
+        84.68,
+        588.526
+      ],
+      "kps": [
+        821.396,
+        762.12,
+        2.0,
+        821.396,
+        1346.412,
+        2.0
+      ],
+      "label": "request for compensation"
+    },
+    {
+      "tail": "owner",
+      "head": "check if owner paid the fees",
+      "class": "messageFlow",
+      "bbox": [
+        3023.076,
+        762.12,
+        681.674,
+        406.464
+      ],
+      "kps": [
+        3700.516,
+        762.12,
+        2.0,
+        3023.076,
+        1164.35,
+        2.0
+      ],
+      "label": "fees"
+    },
+    {
+      "tail": "produce a fee notice",
+      "head": "owner",
+      "class": "messageFlow",
+      "bbox": [
+        3416.838,
+        762.12,
+        270.976,
+        381.06
+      ],
+      "kps": [
+        3683.58,
+        1138.946,
+        2.0,
+        3416.838,
+        762.12,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "owner",
+      "nodes": [],
+      "bbox": [
+        211.7,
+        575.824,
+        3891.046,
+        186.296
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "tribunal",
+      "nodes": [
+        "Cashier of the tribunal"
+      ],
+      "bbox": [
+        105.85,
+        914.544,
+        4047.704,
+        2244.02
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Cashier of the tribunal",
+      "nodes": [
+        "check if acceptable for filing",
+        "check if compliant with the description",
+        "check if owner paid the fees",
+        "produce a fee notice",
+        "allocate a hearing date",
+        "complete process",
+        "fee [paid]",
+        "exclusiveGateway_1",
+        "request for com. [checked]",
+        "request for com.",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "request approved",
+        "quest for com. received"
+      ],
+      "bbox": [
+        232.87,
+        914.544,
+        3920.684,
+        2244.02
+      ],
+      "class": "lane"
+    }
+  ]
+}

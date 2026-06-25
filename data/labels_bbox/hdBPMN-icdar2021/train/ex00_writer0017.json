@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "text": "app. received",
+      "id": "app. received",
+      "bbox": [
+        87,
+        242,
+        135,
+        293
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "bbox": [
+        232,
+        228,
+        402,
+        313
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        462,
+        244,
+        510,
+        324
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify via mail",
+      "id": "notify via mail",
+      "bbox": [
+        591,
+        154,
+        754,
+        223
+      ],
+      "class": "task"
+    },
+    {
+      "text": "app rejected",
+      "id": "app rejected",
+      "bbox": [
+        806,
+        163,
+        857,
+        211
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create new acc",
+      "id": "create new acc",
+      "bbox": [
+        407,
+        393,
+        599,
+        476
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome",
+      "id": "send welcome",
+      "bbox": [
+        602,
+        531,
+        795,
+        613
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        591,
+        622,
+        820,
+        683
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send PIN number",
+      "id": "send PIN number",
+      "bbox": [
+        608,
+        713,
+        851,
+        781
+      ],
+      "class": "task"
+    },
+    {
+      "text": "approved",
+      "id": "approved",
+      "bbox": [
+        1027,
+        426,
+        1085,
+        479
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        904,
+        435,
+        938,
+        490
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        445,
+        532,
+        495,
+        610
+      ],
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify via mail",
+      "class": "sequenceFlow",
+      "bbox": [
+        487,
+        196,
+        592,
+        247
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        938,
+        452,
+        1031,
+        475
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send PIN number",
+      "class": "sequenceFlow",
+      "bbox": [
+        470,
+        610,
+        609,
+        742
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        470,
+        610,
+        592,
+        651
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send welcome",
+      "class": "sequenceFlow",
+      "bbox": [
+        495,
+        559,
+        603,
+        583
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new acc",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        465,
+        476,
+        488,
+        542
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify via mail",
+      "head": "app rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        754,
+        176,
+        807,
+        200
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        402,
+        273,
+        463,
+        297
+      ],
+      "label": null
+    },
+    {
+      "tail": "app. received",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "bbox": [
+        135,
+        254,
+        234,
+        278
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create new acc",
+      "class": "sequenceFlow",
+      "bbox": [
+        466,
+        310,
+        490,
+        394
+      ],
+      "label": "approved"
+    }
+  ],
+  "groups": []
+}

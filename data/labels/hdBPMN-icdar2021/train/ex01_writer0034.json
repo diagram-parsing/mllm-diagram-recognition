@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "text": "receive credit request",
+      "id": "receive credit request",
+      "class": "event"
+    },
+    {
+      "text": "assess risk",
+      "id": "assess risk",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "carry out advanced risk assessment",
+      "id": "carry out advanced risk assessment",
+      "class": "task"
+    },
+    {
+      "text": "credit approved",
+      "id": "credit approved",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "informcustomer",
+      "id": "informcustomer",
+      "class": "task"
+    },
+    {
+      "text": "organize disbursement",
+      "id": "organize disbursement",
+      "class": "task"
+    },
+    {
+      "text": "give credit",
+      "id": "give credit",
+      "class": "event"
+    },
+    {
+      "text": "inform customer",
+      "id": "inform customer",
+      "class": "task"
+    },
+    {
+      "text": "credit declined",
+      "id": "credit declined",
+      "class": "task"
+    },
+    {
+      "text": "don\u00c3\u0082\u00c2\u00b4t give credit",
+      "id": "don\u00c3\u0082\u00c2\u00b4t give credit",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_1",
+      "head": "inform customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "carry out advanced risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "assess risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "credit declined",
+      "head": "informcustomer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive credit request",
+      "head": "assess risk",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "informcustomer",
+      "head": "don\u00c3\u0082\u00c2\u00b4t give credit",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "credit declined",
+      "class": "sequenceFlow",
+      "label": "still too much risk"
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "give credit",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "inform customer",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "organize disbursement",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "organize disbursement",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "credit approved",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "credit approved",
+      "class": "sequenceFlow",
+      "label": "approve risk"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out advanced risk assessment",
+      "class": "sequenceFlow",
+      "label": "risk above threshold"
+    }
+  ],
+  "groups": []
+}

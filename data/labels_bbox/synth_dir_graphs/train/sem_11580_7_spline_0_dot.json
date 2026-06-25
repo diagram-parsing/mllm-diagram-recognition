@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "text": "caudices",
+      "id": "caudices",
+      "class": "node",
+      "bbox": [
+        230,
+        485,
+        351,
+        533
+      ]
+    },
+    {
+      "text": "hyperotretan",
+      "id": "hyperotretan",
+      "class": "node",
+      "bbox": [
+        376,
+        343,
+        458,
+        394
+      ]
+    },
+    {
+      "text": "unconducted psychometrist",
+      "id": "unconducted psychometrist",
+      "class": "node",
+      "bbox": [
+        221,
+        344,
+        352,
+        393
+      ]
+    },
+    {
+      "text": "Huron repack",
+      "id": "Huron repack",
+      "class": "node",
+      "bbox": [
+        373,
+        196,
+        448,
+        246
+      ]
+    },
+    {
+      "text": "communicant",
+      "id": "communicant",
+      "class": "node",
+      "bbox": [
+        104,
+        189,
+        221,
+        253
+      ]
+    },
+    {
+      "text": "unretrenched",
+      "id": "unretrenched",
+      "class": "node",
+      "bbox": [
+        5,
+        345,
+        80,
+        393
+      ]
+    },
+    {
+      "text": "unrest",
+      "id": "unrest",
+      "class": "node",
+      "bbox": [
+        104,
+        345,
+        197,
+        393
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "caudices",
+      "head": "hyperotretan",
+      "label": "0.2363",
+      "class": "unidirectional",
+      "bbox": [
+        318,
+        396,
+        402,
+        487
+      ]
+    },
+    {
+      "tail": "unconducted psychometrist",
+      "head": "Huron repack",
+      "label": "-0.11 H = 0.215",
+      "class": "unidirectional",
+      "bbox": [
+        306,
+        249,
+        389,
+        345
+      ]
+    },
+    {
+      "tail": "unconducted psychometrist",
+      "head": "communicant",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        193,
+        251,
+        270,
+        344
+      ]
+    },
+    {
+      "tail": "caudices",
+      "head": "unconducted psychometrist",
+      "label": "-0.85* x = 0.803",
+      "class": "bidirectional",
+      "bbox": [
+        283,
+        397,
+        292,
+        467
+      ]
+    },
+    {
+      "tail": "unretrenched",
+      "head": "communicant",
+      "label": "0.96* f = 0.71",
+      "class": "unidirectional",
+      "bbox": [
+        56,
+        251,
+        129,
+        344
+      ]
+    },
+    {
+      "tail": "unrest",
+      "head": "communicant",
+      "label": "-0.42 s = 0.708",
+      "class": "bidirectional",
+      "bbox": [
+        154,
+        257,
+        163,
+        327
+      ]
+    }
+  ]
+}

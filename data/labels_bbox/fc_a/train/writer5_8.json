@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "bbox": [
+        321,
+        4,
+        693,
+        134
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input a,b",
+      "id": "Input a,b",
+      "bbox": [
+        270,
+        197,
+        819,
+        350
+      ],
+      "class": "data"
+    },
+    {
+      "text": "r=a%b",
+      "id": "r=a%b",
+      "bbox": [
+        309,
+        405,
+        719,
+        565
+      ],
+      "class": "process"
+    },
+    {
+      "text": "r=0?",
+      "id": "r=0?",
+      "bbox": [
+        395,
+        629,
+        661,
+        893
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "output b",
+      "id": "output b",
+      "bbox": [
+        324,
+        975,
+        737,
+        1149
+      ],
+      "class": "data"
+    },
+    {
+      "text": "End",
+      "id": "End",
+      "bbox": [
+        379,
+        1213,
+        653,
+        1330
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "a=b b=r",
+      "id": "a=b b=r",
+      "bbox": [
+        4,
+        635,
+        210,
+        804
+      ],
+      "class": "process"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "Input a,b",
+      "bbox": [
+        509,
+        127,
+        559,
+        216
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input a,b",
+      "head": "r=a%b",
+      "bbox": [
+        497,
+        342,
+        545,
+        420
+      ],
+      "label": null
+    },
+    {
+      "tail": "r=a%b",
+      "head": "r=0?",
+      "bbox": [
+        524,
+        564,
+        572,
+        639
+      ],
+      "label": null
+    },
+    {
+      "tail": "r=0?",
+      "head": "output b",
+      "bbox": [
+        513,
+        886,
+        573,
+        978
+      ],
+      "label": "yes"
+    },
+    {
+      "tail": "output b",
+      "head": "End",
+      "bbox": [
+        499,
+        1141,
+        546,
+        1234
+      ],
+      "label": null
+    },
+    {
+      "tail": "r=0?",
+      "head": "a=b b=r",
+      "bbox": [
+        211,
+        718,
+        372,
+        765
+      ],
+      "label": "No"
+    },
+    {
+      "tail": "a=b b=r",
+      "head": "r=a%b",
+      "bbox": [
+        106,
+        497,
+        309,
+        649
+      ],
+      "label": null
+    }
+  ]
+}

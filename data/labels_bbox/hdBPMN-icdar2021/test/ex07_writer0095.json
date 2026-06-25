@@ -1,0 +1,540 @@
+{
+  "nodes": [
+    {
+      "text": "Doctor rating required",
+      "id": "Doctor rating required",
+      "bbox": [
+        496,
+        162,
+        617,
+        286
+      ],
+      "class": "event"
+    },
+    {
+      "text": "fill a cheque to the expert",
+      "id": "fill a cheque to the expert",
+      "bbox": [
+        1511,
+        834,
+        1959,
+        1009
+      ],
+      "class": "task"
+    },
+    {
+      "text": "create a report",
+      "id": "create a report",
+      "bbox": [
+        2076,
+        270,
+        2348,
+        404
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        721,
+        172,
+        811,
+        305
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1465,
+        239,
+        1541,
+        347
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "File results",
+      "id": "File results",
+      "bbox": [
+        1608,
+        231,
+        1885,
+        402
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1957,
+        285,
+        2026,
+        394
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "bbox": [
+        2071,
+        474,
+        2133,
+        568
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Doctor reviewd",
+      "id": "Doctor reviewd",
+      "bbox": [
+        2187,
+        484,
+        2249,
+        540
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Ask experts for expertise regarding the doctor",
+      "id": "Ask experts for expertise regarding the doctor",
+      "bbox": [
+        545,
+        815,
+        986,
+        1113
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "interviewing patients",
+      "id": "interviewing patients",
+      "bbox": [
+        966,
+        192,
+        1394,
+        348
+      ],
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "create a report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        2079,
+        404,
+        2128,
+        478
+      ],
+      "kps": [
+        2103.261,
+        404.215,
+        2.0,
+        2103.261,
+        476.337,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "Doctor reviewd",
+      "class": "sequenceFlow",
+      "bbox": [
+        2131,
+        498,
+        2190,
+        546
+      ],
+      "kps": [
+        2131.774,
+        523.299,
+        2.0,
+        2188.8,
+        519.945,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill a cheque to the expert",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1959,
+        566,
+        2104,
+        893
+      ],
+      "kps": [
+        1959.018,
+        892.292,
+        2.0,
+        2103.261,
+        566.908,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "fill a cheque to the expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1647,
+        384,
+        1999,
+        836
+      ],
+      "kps": [
+        1997.594,
+        384.088,
+        2.0,
+        1648.728,
+        835.266,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "create a report",
+      "class": "sequenceFlow",
+      "bbox": [
+        2026,
+        316,
+        2078,
+        364
+      ],
+      "kps": [
+        2026.108,
+        342.157,
+        2.0,
+        2076.425,
+        337.126,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "File results",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1885,
+        305,
+        1965,
+        353
+      ],
+      "kps": [
+        1885.219,
+        328.739,
+        2.0,
+        1964.05,
+        328.739,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "File results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1539,
+        278,
+        1610,
+        327
+      ],
+      "kps": [
+        1539.708,
+        295.194,
+        2.0,
+        1608.474,
+        308.612,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interviewing patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1395,
+        271,
+        1469,
+        320
+      ],
+      "kps": [
+        1395.465,
+        295.194,
+        2.0,
+        1467.586,
+        295.194,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Ask experts for expertise regarding the doctor",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        986,
+        345,
+        1506,
+        952
+      ],
+      "kps": [
+        986.218,
+        950.996,
+        2.0,
+        1504.486,
+        345.512,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Ask experts for expertise regarding the doctor",
+      "class": "sequenceFlow",
+      "bbox": [
+        748,
+        303,
+        797,
+        816
+      ],
+      "kps": [
+        768.177,
+        303.581,
+        2.0,
+        763.145,
+        815.139,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interviewing patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        806,
+        223,
+        969,
+        271
+      ],
+      "kps": [
+        806.753,
+        246.554,
+        2.0,
+        967.768,
+        246.554,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Doctor rating required",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        615,
+        218,
+        724,
+        266
+      ],
+      "kps": [
+        615.548,
+        241.523,
+        2.0,
+        722.891,
+        241.523,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interviewing patients",
+      "head": "Patients",
+      "class": "messageFlow",
+      "bbox": [
+        1079,
+        103,
+        1128,
+        194
+      ],
+      "kps": [
+        1103.155,
+        192.614,
+        2.0,
+        1103.155,
+        103.117,
+        2.0
+      ],
+      "label": "Ask for a review"
+    },
+    {
+      "tail": "Patients",
+      "head": "interviewing patients",
+      "class": "messageFlow",
+      "bbox": [
+        1196,
+        103,
+        1245,
+        194
+      ],
+      "kps": [
+        1219.891,
+        103.117,
+        2.0,
+        1219.891,
+        192.614,
+        2.0
+      ],
+      "label": "review"
+    },
+    {
+      "tail": "fill a cheque to the expert",
+      "head": "Experts",
+      "class": "messageFlow",
+      "bbox": [
+        1604,
+        1009,
+        1653,
+        1497
+      ],
+      "kps": [
+        1628.467,
+        1009.766,
+        2.0,
+        1628.467,
+        1496.166,
+        2.0
+      ],
+      "label": "send Payment"
+    },
+    {
+      "tail": "Ask experts for expertise regarding the doctor",
+      "head": "Experts",
+      "class": "messageFlow",
+      "bbox": [
+        595,
+        1113,
+        660,
+        1497
+      ],
+      "kps": [
+        659.156,
+        1113.688,
+        2.0,
+        595.421,
+        1496.099,
+        2.0
+      ],
+      "label": "request expertise"
+    },
+    {
+      "tail": "Experts",
+      "head": "Ask experts for expertise regarding the doctor",
+      "class": "messageFlow",
+      "bbox": [
+        788,
+        1113,
+        836,
+        1497
+      ],
+      "kps": [
+        811.785,
+        1496.099,
+        2.0,
+        811.785,
+        1113.688,
+        2.0
+      ],
+      "label": "send expertise"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Directors office",
+        "Quality Assurance Department"
+      ],
+      "bbox": [
+        149,
+        114,
+        2426,
+        1437
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Directors office",
+      "nodes": [
+        "fill a cheque to the expert",
+        "Ask experts for expertise regarding the doctor"
+      ],
+      "bbox": [
+        208,
+        766,
+        2426,
+        1437
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality Assurance Department",
+      "nodes": [
+        "Doctor rating required",
+        "create a report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "File results",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "Doctor reviewd",
+        "interviewing patients"
+      ],
+      "bbox": [
+        208,
+        114,
+        2426,
+        766
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patients",
+      "nodes": [],
+      "bbox": [
+        947,
+        1,
+        1558,
+        103
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Experts",
+      "nodes": [],
+      "bbox": [
+        266,
+        1496,
+        2140,
+        1728
+      ],
+      "class": "pool"
+    }
+  ]
+}

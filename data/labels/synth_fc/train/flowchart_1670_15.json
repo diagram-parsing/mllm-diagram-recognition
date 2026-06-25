@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "phospham",
+      "id": "phospham",
+      "class": "circle"
+    },
+    {
+      "text": "nonnarcotic",
+      "id": "nonnarcotic",
+      "class": "box"
+    },
+    {
+      "text": "capreoline",
+      "id": "capreoline",
+      "class": "box"
+    },
+    {
+      "text": "tesack stifle",
+      "id": "tesack stifle",
+      "class": "diamond"
+    },
+    {
+      "text": "foretoken lithodomous",
+      "id": "foretoken lithodomous",
+      "class": "hexagon"
+    },
+    {
+      "text": "otherwhence",
+      "id": "otherwhence",
+      "class": "ellipse"
+    },
+    {
+      "text": "osazone",
+      "id": "osazone",
+      "class": "box"
+    },
+    {
+      "text": "coeliorrhea brulyie",
+      "id": "coeliorrhea brulyie",
+      "class": "parallelogram"
+    },
+    {
+      "text": "noncollinear",
+      "id": "noncollinear",
+      "class": "box"
+    },
+    {
+      "text": "kissar",
+      "id": "kissar",
+      "class": "hexagon"
+    },
+    {
+      "text": "doorpost",
+      "id": "doorpost",
+      "class": "diamond"
+    },
+    {
+      "text": "interrex",
+      "id": "interrex",
+      "class": "box"
+    },
+    {
+      "text": "megascopic egophonic",
+      "id": "megascopic egophonic",
+      "class": "diamond"
+    },
+    {
+      "text": "repellency",
+      "id": "repellency",
+      "class": "diamond"
+    },
+    {
+      "text": "paroeciousness",
+      "id": "paroeciousness",
+      "class": "box"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "phospham",
+      "head": "nonnarcotic",
+      "label": null
+    },
+    {
+      "tail": "nonnarcotic",
+      "head": "capreoline",
+      "label": null
+    },
+    {
+      "tail": "capreoline",
+      "head": "tesack stifle",
+      "label": null
+    },
+    {
+      "tail": "tesack stifle",
+      "head": "foretoken lithodomous",
+      "label": "No"
+    },
+    {
+      "tail": "tesack stifle",
+      "head": "otherwhence",
+      "label": "No"
+    },
+    {
+      "tail": "foretoken lithodomous",
+      "head": "osazone",
+      "label": null
+    },
+    {
+      "tail": "osazone",
+      "head": "coeliorrhea brulyie",
+      "label": null
+    },
+    {
+      "tail": "coeliorrhea brulyie",
+      "head": "noncollinear",
+      "label": null
+    },
+    {
+      "tail": "noncollinear",
+      "head": "kissar",
+      "label": null
+    },
+    {
+      "tail": "kissar",
+      "head": "doorpost",
+      "label": null
+    },
+    {
+      "tail": "doorpost",
+      "head": "interrex",
+      "label": "YES"
+    },
+    {
+      "tail": "doorpost",
+      "head": "megascopic egophonic",
+      "label": "YES"
+    },
+    {
+      "tail": "interrex",
+      "head": "megascopic egophonic",
+      "label": null
+    },
+    {
+      "tail": "megascopic egophonic",
+      "head": "repellency",
+      "label": "yes"
+    },
+    {
+      "tail": "megascopic egophonic",
+      "head": "paroeciousness",
+      "label": "yes"
+    },
+    {
+      "tail": "repellency",
+      "head": "paroeciousness",
+      "label": "yes"
+    },
+    {
+      "tail": "repellency",
+      "head": "noncollinear",
+      "label": "yes"
+    },
+    {
+      "tail": "paroeciousness",
+      "head": "otherwhence",
+      "label": null
+    }
+  ]
+}

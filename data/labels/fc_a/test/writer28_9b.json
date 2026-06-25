@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "connection_1",
+      "bbox": [
+        1060,
+        4,
+        124,
+        111
+      ],
+      "class": "connection"
+    },
+    {
+      "text": "X>Y",
+      "id": "X>Y",
+      "bbox": [
+        864,
+        261,
+        414,
+        302
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "T=Y",
+      "id": "T=Y",
+      "bbox": [
+        12,
+        296,
+        432,
+        229
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Y=X X=T",
+      "id": "Y=X X=T",
+      "bbox": [
+        4,
+        802,
+        423,
+        278
+      ],
+      "class": "process"
+    },
+    {
+      "text": null,
+      "id": "connection_2",
+      "bbox": [
+        1014,
+        1119,
+        114,
+        144
+      ],
+      "class": "connection"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "connection_1",
+      "head": "X>Y",
+      "bbox": [
+        1053,
+        102,
+        62,
+        175
+      ],
+      "kps": [
+        1101.0,
+        110.0,
+        2.0,
+        1083.0,
+        275.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "X>Y",
+      "head": "connection_2",
+      "bbox": [
+        1041,
+        553,
+        68,
+        570
+      ],
+      "kps": [
+        1067.0,
+        555.0,
+        2.0,
+        1089.0,
+        1115.0,
+        2.0
+      ],
+      "label": "else"
+    },
+    {
+      "tail": "X>Y",
+      "head": "T=Y",
+      "bbox": [
+        411,
+        375,
+        460,
+        69
+      ],
+      "kps": [
+        868.0,
+        410.0,
+        2.0,
+        421.0,
+        412.0,
+        2.0
+      ],
+      "label": "then"
+    },
+    {
+      "tail": "T=Y",
+      "head": "Y=X X=T",
+      "bbox": [
+        193,
+        496,
+        95,
+        316
+      ],
+      "kps": [
+        225.0,
+        497.0,
+        2.0,
+        245.0,
+        810.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Y=X X=T",
+      "head": "connection_2",
+      "bbox": [
+        196,
+        1072,
+        835,
+        185
+      ],
+      "kps": [
+        198.0,
+        1073.0,
+        2.0,
+        1018.0,
+        1210.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

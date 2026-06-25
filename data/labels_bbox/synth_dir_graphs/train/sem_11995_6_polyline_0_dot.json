@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "swot",
+      "id": "swot",
+      "class": "node",
+      "bbox": [
+        27,
+        227,
+        102,
+        275
+      ]
+    },
+    {
+      "text": "hilltrot",
+      "id": "hilltrot",
+      "class": "node",
+      "bbox": [
+        270,
+        147,
+        342,
+        198
+      ]
+    },
+    {
+      "text": "ume",
+      "id": "ume",
+      "class": "node",
+      "bbox": [
+        27,
+        299,
+        102,
+        347
+      ]
+    },
+    {
+      "text": "brasse incondensible",
+      "id": "brasse incondensible",
+      "class": "node",
+      "bbox": [
+        240,
+        359,
+        366,
+        410
+      ]
+    },
+    {
+      "text": "carcinolysin silvanity",
+      "id": "carcinolysin silvanity",
+      "class": "node",
+      "bbox": [
+        248,
+        449,
+        364,
+        494
+      ]
+    },
+    {
+      "text": "Pastinaca dictyopteran",
+      "id": "Pastinaca dictyopteran",
+      "class": "node",
+      "bbox": [
+        247,
+        253,
+        365,
+        303
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "swot",
+      "head": "hilltrot",
+      "label": "0.59*** H = 0.825",
+      "class": "unidirectional",
+      "bbox": [
+        95,
+        181,
+        269,
+        237
+      ]
+    },
+    {
+      "tail": "ume",
+      "head": "brasse incondensible",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        92,
+        340,
+        239,
+        380
+      ]
+    },
+    {
+      "tail": "ume",
+      "head": "carcinolysin silvanity",
+      "label": "-0.41*** h = 0.777",
+      "class": "unidirectional",
+      "bbox": [
+        78,
+        346,
+        246,
+        464
+      ]
+    },
+    {
+      "tail": "Pastinaca dictyopteran",
+      "head": "swot",
+      "label": "0.7496",
+      "class": "bidirectional",
+      "bbox": [
+        104,
+        251,
+        236,
+        267
+      ]
+    },
+    {
+      "tail": "ume",
+      "head": "Pastinaca dictyopteran",
+      "label": "0.97* t = 0.326",
+      "class": "unidirectional",
+      "bbox": [
+        102,
+        298,
+        268,
+        327
+      ]
+    }
+  ]
+}

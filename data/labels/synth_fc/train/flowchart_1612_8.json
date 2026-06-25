@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "postmeningeal",
+      "id": "postmeningeal",
+      "class": "circle"
+    },
+    {
+      "text": "pace",
+      "id": "pace",
+      "class": "diamond"
+    },
+    {
+      "text": "vibratiunculation foreland",
+      "id": "vibratiunculation foreland",
+      "class": "diamond"
+    },
+    {
+      "text": "proteidean",
+      "id": "proteidean",
+      "class": "hexagon"
+    },
+    {
+      "text": "revisitant ungentlemanlikeness",
+      "id": "revisitant ungentlemanlikeness",
+      "class": "hexagon"
+    },
+    {
+      "text": "underhold",
+      "id": "underhold",
+      "class": "diamond"
+    },
+    {
+      "text": "cower",
+      "id": "cower",
+      "class": "ellipse"
+    },
+    {
+      "text": "orthoceratoid Hanse hydropropu",
+      "id": "orthoceratoid Hanse hydropropu",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "postmeningeal",
+      "head": "pace",
+      "label": null
+    },
+    {
+      "tail": "pace",
+      "head": "vibratiunculation foreland",
+      "label": "yes"
+    },
+    {
+      "tail": "pace",
+      "head": "proteidean",
+      "label": "yes"
+    },
+    {
+      "tail": "vibratiunculation foreland",
+      "head": "revisitant ungentlemanlikeness",
+      "label": "yes"
+    },
+    {
+      "tail": "vibratiunculation foreland",
+      "head": "postmeningeal",
+      "label": "yes"
+    },
+    {
+      "tail": "revisitant ungentlemanlikeness",
+      "head": "underhold",
+      "label": null
+    },
+    {
+      "tail": "underhold",
+      "head": "proteidean",
+      "label": "Yes"
+    },
+    {
+      "tail": "underhold",
+      "head": "cower",
+      "label": "Yes"
+    },
+    {
+      "tail": "proteidean",
+      "head": "orthoceratoid Hanse hydropropu",
+      "label": null
+    },
+    {
+      "tail": "orthoceratoid Hanse hydropropu",
+      "head": "cower",
+      "label": null
+    }
+  ]
+}

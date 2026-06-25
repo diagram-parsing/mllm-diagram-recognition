@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "text": "schmelz",
+      "id": "schmelz",
+      "class": "circle"
+    },
+    {
+      "text": "talukdari",
+      "id": "talukdari",
+      "class": "hexagon"
+    },
+    {
+      "text": "ensnarement subequality",
+      "id": "ensnarement subequality",
+      "class": "document"
+    },
+    {
+      "text": "overminutely",
+      "id": "overminutely",
+      "class": "diamond"
+    },
+    {
+      "text": "stifler",
+      "id": "stifler",
+      "class": "box"
+    },
+    {
+      "text": "landgrave",
+      "id": "landgrave",
+      "class": "hexagon"
+    },
+    {
+      "text": "Tarahumar",
+      "id": "Tarahumar",
+      "class": "box"
+    },
+    {
+      "text": "cacochymia telomitic",
+      "id": "cacochymia telomitic",
+      "class": "diamond"
+    },
+    {
+      "text": "irrubrical nitrochloroform",
+      "id": "irrubrical nitrochloroform",
+      "class": "document"
+    },
+    {
+      "text": "piscivorous pallescence",
+      "id": "piscivorous pallescence",
+      "class": "diamond"
+    },
+    {
+      "text": "subspecialist",
+      "id": "subspecialist",
+      "class": "diamond"
+    },
+    {
+      "text": "pandura",
+      "id": "pandura",
+      "class": "ellipse"
+    },
+    {
+      "text": "clodlet",
+      "id": "clodlet",
+      "class": "box"
+    },
+    {
+      "text": "starty outwith technist",
+      "id": "starty outwith technist",
+      "class": "box"
+    },
+    {
+      "text": "myrialitre bronchiolar",
+      "id": "myrialitre bronchiolar",
+      "class": "document"
+    },
+    {
+      "text": "indubiously Granadine",
+      "id": "indubiously Granadine",
+      "class": "hexagon"
+    },
+    {
+      "text": "macroseism Ko knifeboard",
+      "id": "macroseism Ko knifeboard",
+      "class": "diamond"
+    },
+    {
+      "text": "Cyzicene nonobservant",
+      "id": "Cyzicene nonobservant",
+      "class": "parallelogram"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "schmelz",
+      "head": "talukdari",
+      "label": null
+    },
+    {
+      "tail": "talukdari",
+      "head": "ensnarement subequality",
+      "label": null
+    },
+    {
+      "tail": "ensnarement subequality",
+      "head": "overminutely",
+      "label": null
+    },
+    {
+      "tail": "overminutely",
+      "head": "stifler",
+      "label": "YES"
+    },
+    {
+      "tail": "overminutely",
+      "head": "schmelz",
+      "label": "YES"
+    },
+    {
+      "tail": "stifler",
+      "head": "landgrave",
+      "label": null
+    },
+    {
+      "tail": "landgrave",
+      "head": "Tarahumar",
+      "label": null
+    },
+    {
+      "tail": "Tarahumar",
+      "head": "cacochymia telomitic",
+      "label": null
+    },
+    {
+      "tail": "cacochymia telomitic",
+      "head": "irrubrical nitrochloroform",
+      "label": "NO"
+    },
+    {
+      "tail": "cacochymia telomitic",
+      "head": "schmelz",
+      "label": "NO"
+    },
+    {
+      "tail": "irrubrical nitrochloroform",
+      "head": "piscivorous pallescence",
+      "label": null
+    },
+    {
+      "tail": "piscivorous pallescence",
+      "head": "subspecialist",
+      "label": "no"
+    },
+    {
+      "tail": "piscivorous pallescence",
+      "head": "pandura",
+      "label": "no"
+    },
+    {
+      "tail": "subspecialist",
+      "head": "clodlet",
+      "label": "YES"
+    },
+    {
+      "tail": "subspecialist",
+      "head": "piscivorous pallescence",
+      "label": "YES"
+    },
+    {
+      "tail": "clodlet",
+      "head": "starty outwith technist",
+      "label": null
+    },
+    {
+      "tail": "starty outwith technist",
+      "head": "myrialitre bronchiolar",
+      "label": null
+    },
+    {
+      "tail": "myrialitre bronchiolar",
+      "head": "indubiously Granadine",
+      "label": null
+    },
+    {
+      "tail": "indubiously Granadine",
+      "head": "macroseism Ko knifeboard",
+      "label": null
+    },
+    {
+      "tail": "macroseism Ko knifeboard",
+      "head": "Cyzicene nonobservant",
+      "label": "NO"
+    },
+    {
+      "tail": "macroseism Ko knifeboard",
+      "head": "overminutely",
+      "label": "NO"
+    },
+    {
+      "tail": "Cyzicene nonobservant",
+      "head": "pandura",
+      "label": null
+    }
+  ]
+}

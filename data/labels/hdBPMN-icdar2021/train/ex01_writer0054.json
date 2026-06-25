@@ -1,0 +1,128 @@
+{
+  "nodes": [
+    {
+      "text": "received request",
+      "id": "received request",
+      "class": "event"
+    },
+    {
+      "text": "assessment of risk",
+      "id": "assessment of risk",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "advanced risk assessment",
+      "id": "advanced risk assessment",
+      "class": "task"
+    },
+    {
+      "text": "risk below threshold",
+      "id": "risk below threshold",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notification with result",
+      "id": "notification with result",
+      "class": "task"
+    },
+    {
+      "text": "disbursement organized",
+      "id": "disbursement organized",
+      "class": "task"
+    },
+    {
+      "text": "request fulfilled",
+      "id": "request fulfilled",
+      "class": "event"
+    },
+    {
+      "text": "simple risk assessment",
+      "id": "simple risk assessment",
+      "class": "task"
+    },
+    {
+      "text": "risk above threshold",
+      "id": "risk above threshold",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "assessment of risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "received request",
+      "head": "assessment of risk",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "notification with result",
+      "head": "disbursement organized",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "disbursement organized",
+      "head": "request fulfilled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "notification with result",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "advanced risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": "assessment passed"
+    },
+    {
+      "tail": "risk above threshold",
+      "head": "advanced risk assessment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "simple risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": "assassment passed"
+    },
+    {
+      "tail": "risk below threshold",
+      "head": "simple risk assessment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "risk below threshold",
+      "class": "sequenceFlow",
+      "label": "lower risk"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "risk above threshold",
+      "class": "sequenceFlow",
+      "label": "higher risk"
+    }
+  ],
+  "groups": []
+}

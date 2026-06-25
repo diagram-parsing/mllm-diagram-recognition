@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "reimage",
+      "id": "reimage",
+      "class": "oval"
+    },
+    {
+      "text": "tetter",
+      "id": "tetter",
+      "class": "parallelogram"
+    },
+    {
+      "text": "anepigraphic",
+      "id": "anepigraphic",
+      "class": "box"
+    },
+    {
+      "text": "athletics",
+      "id": "athletics",
+      "class": "diamond"
+    },
+    {
+      "text": "quarreling",
+      "id": "quarreling",
+      "class": "document"
+    },
+    {
+      "text": "labilize masticability overrea",
+      "id": "labilize masticability overrea",
+      "class": "hexagon"
+    },
+    {
+      "text": "mosquitoproof Goyana",
+      "id": "mosquitoproof Goyana",
+      "class": "document"
+    },
+    {
+      "text": "stormbound",
+      "id": "stormbound",
+      "class": "diamond"
+    },
+    {
+      "text": "creeping",
+      "id": "creeping",
+      "class": "document"
+    },
+    {
+      "text": "butadiene",
+      "id": "butadiene",
+      "class": "document"
+    },
+    {
+      "text": "pastrami",
+      "id": "pastrami",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "reimage",
+      "head": "tetter",
+      "label": null
+    },
+    {
+      "tail": "tetter",
+      "head": "anepigraphic",
+      "label": null
+    },
+    {
+      "tail": "anepigraphic",
+      "head": "athletics",
+      "label": null
+    },
+    {
+      "tail": "athletics",
+      "head": "quarreling",
+      "label": "Yes"
+    },
+    {
+      "tail": "athletics",
+      "head": "labilize masticability overrea",
+      "label": "Yes"
+    },
+    {
+      "tail": "quarreling",
+      "head": "mosquitoproof Goyana",
+      "label": null
+    },
+    {
+      "tail": "mosquitoproof Goyana",
+      "head": "labilize masticability overrea",
+      "label": null
+    },
+    {
+      "tail": "labilize masticability overrea",
+      "head": "stormbound",
+      "label": null
+    },
+    {
+      "tail": "stormbound",
+      "head": "creeping",
+      "label": "yes"
+    },
+    {
+      "tail": "stormbound",
+      "head": "butadiene",
+      "label": "yes"
+    },
+    {
+      "tail": "creeping",
+      "head": "butadiene",
+      "label": null
+    },
+    {
+      "tail": "butadiene",
+      "head": "pastrami",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "nodes": [
+    {
+      "text": "besieging",
+      "id": "besieging",
+      "class": "circle",
+      "bbox": [
+        44,
+        32,
+        132,
+        120
+      ]
+    },
+    {
+      "text": "morphiate",
+      "id": "morphiate",
+      "class": "diamond",
+      "bbox": [
+        24,
+        209,
+        151,
+        257
+      ]
+    },
+    {
+      "text": "penthouselike",
+      "id": "penthouselike",
+      "class": "diamond",
+      "bbox": [
+        5,
+        327,
+        170,
+        375
+      ]
+    },
+    {
+      "text": "worm",
+      "id": "worm",
+      "class": "document",
+      "bbox": [
+        357,
+        320,
+        448,
+        383
+      ]
+    },
+    {
+      "text": "alternance",
+      "id": "alternance",
+      "class": "box",
+      "bbox": [
+        49,
+        524,
+        126,
+        572
+      ]
+    },
+    {
+      "text": "precriticism unbuild",
+      "id": "precriticism unbuild",
+      "class": "diamond",
+      "bbox": [
+        329,
+        79,
+        476,
+        152
+      ]
+    },
+    {
+      "text": "unincisive Fehmic",
+      "id": "unincisive Fehmic",
+      "class": "hexagon",
+      "bbox": [
+        35,
+        675,
+        140,
+        735
+      ]
+    },
+    {
+      "text": "pseudocollegiate overlier",
+      "id": "pseudocollegiate overlier",
+      "class": "diamond",
+      "bbox": [
+        319,
+        236,
+        486,
+        309
+      ]
+    },
+    {
+      "text": "ungentility relocable",
+      "id": "ungentility relocable",
+      "class": "document",
+      "bbox": [
+        357,
+        477,
+        448,
+        540
+      ]
+    },
+    {
+      "text": "overmature",
+      "id": "overmature",
+      "class": "document",
+      "bbox": [
+        357,
+        713,
+        448,
+        776
+      ]
+    },
+    {
+      "text": "Soiesette",
+      "id": "Soiesette",
+      "class": "document",
+      "bbox": [
+        672,
+        5,
+        762,
+        68
+      ]
+    },
+    {
+      "text": "dissemination",
+      "id": "dissemination",
+      "class": "diamond",
+      "bbox": [
+        636,
+        209,
+        793,
+        257
+      ]
+    },
+    {
+      "text": "Chumulu",
+      "id": "Chumulu",
+      "class": "document",
+      "bbox": [
+        672,
+        359,
+        762,
+        422
+      ]
+    },
+    {
+      "text": "subastringent blusher",
+      "id": "subastringent blusher",
+      "class": "box",
+      "bbox": [
+        681,
+        524,
+        753,
+        572
+      ]
+    },
+    {
+      "text": "dubitancy",
+      "id": "dubitancy",
+      "class": "diamond",
+      "bbox": [
+        671,
+        669,
+        763,
+        742
+      ]
+    },
+    {
+      "text": "Cadet",
+      "id": "Cadet",
+      "class": "ellipse",
+      "bbox": [
+        680,
+        839,
+        754,
+        881
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "besieging",
+      "head": "morphiate",
+      "label": null,
+      "bbox": [
+        82,
+        120,
+        94,
+        209
+      ]
+    },
+    {
+      "tail": "morphiate",
+      "head": "penthouselike",
+      "label": "NO",
+      "bbox": [
+        82,
+        258,
+        94,
+        327
+      ]
+    },
+    {
+      "tail": "morphiate",
+      "head": "worm",
+      "label": "NO",
+      "bbox": [
+        118,
+        247,
+        357,
+        358
+      ]
+    },
+    {
+      "tail": "penthouselike",
+      "head": "alternance",
+      "label": "Yes",
+      "bbox": [
+        82,
+        376,
+        94,
+        524
+      ]
+    },
+    {
+      "tail": "penthouselike",
+      "head": "precriticism unbuild",
+      "label": "Yes",
+      "bbox": [
+        161,
+        122,
+        353,
+        348
+      ]
+    },
+    {
+      "tail": "alternance",
+      "head": "unincisive Fehmic",
+      "label": null,
+      "bbox": [
+        82,
+        573,
+        94,
+        675
+      ]
+    },
+    {
+      "tail": "unincisive Fehmic",
+      "head": "precriticism unbuild",
+      "label": null,
+      "bbox": [
+        131,
+        130,
+        369,
+        695
+      ]
+    },
+    {
+      "tail": "precriticism unbuild",
+      "head": "pseudocollegiate overlier",
+      "label": "No",
+      "bbox": [
+        396,
+        153,
+        408,
+        236
+      ]
+    },
+    {
+      "tail": "precriticism unbuild",
+      "head": "ungentility relocable",
+      "label": "No",
+      "bbox": [
+        244,
+        144,
+        385,
+        507
+      ]
+    },
+    {
+      "tail": "pseudocollegiate overlier",
+      "head": "worm",
+      "label": "no",
+      "bbox": [
+        396,
+        307,
+        408,
+        320
+      ]
+    },
+    {
+      "tail": "pseudocollegiate overlier",
+      "head": "overmature",
+      "label": "no",
+      "bbox": [
+        338,
+        282,
+        357,
+        731
+      ]
+    },
+    {
+      "tail": "worm",
+      "head": "ungentility relocable",
+      "label": null,
+      "bbox": [
+        396,
+        382,
+        408,
+        478
+      ]
+    },
+    {
+      "tail": "ungentility relocable",
+      "head": "overmature",
+      "label": null,
+      "bbox": [
+        396,
+        540,
+        408,
+        713
+      ]
+    },
+    {
+      "tail": "overmature",
+      "head": "Soiesette",
+      "label": null,
+      "bbox": [
+        447,
+        45,
+        672,
+        728
+      ]
+    },
+    {
+      "tail": "Soiesette",
+      "head": "dissemination",
+      "label": null,
+      "bbox": [
+        711,
+        68,
+        723,
+        209
+      ]
+    },
+    {
+      "tail": "dissemination",
+      "head": "Chumulu",
+      "label": "no",
+      "bbox": [
+        711,
+        258,
+        723,
+        360
+      ]
+    },
+    {
+      "tail": "dissemination",
+      "head": "pseudocollegiate overlier",
+      "label": "no",
+      "bbox": [
+        428,
+        241,
+        679,
+        253
+      ]
+    },
+    {
+      "tail": "Chumulu",
+      "head": "subastringent blusher",
+      "label": null,
+      "bbox": [
+        711,
+        422,
+        723,
+        524
+      ]
+    },
+    {
+      "tail": "subastringent blusher",
+      "head": "dubitancy",
+      "label": null,
+      "bbox": [
+        711,
+        573,
+        723,
+        668
+      ]
+    },
+    {
+      "tail": "dubitancy",
+      "head": "Cadet",
+      "label": "yes",
+      "bbox": [
+        711,
+        743,
+        723,
+        838
+      ]
+    },
+    {
+      "tail": "dubitancy",
+      "head": "ungentility relocable",
+      "label": "yes",
+      "bbox": [
+        448,
+        526,
+        676,
+        700
+      ]
+    }
+  ]
+}

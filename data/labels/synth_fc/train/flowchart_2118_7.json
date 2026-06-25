@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "epithalamus thoughtfulness",
+      "id": "epithalamus thoughtfulness",
+      "class": "oval"
+    },
+    {
+      "text": "Randall",
+      "id": "Randall",
+      "class": "diamond"
+    },
+    {
+      "text": "submolecule polysomy",
+      "id": "submolecule polysomy",
+      "class": "diamond"
+    },
+    {
+      "text": "dysacousia begowned kakistocra",
+      "id": "dysacousia begowned kakistocra",
+      "class": "box"
+    },
+    {
+      "text": "shackland",
+      "id": "shackland",
+      "class": "parallelogram"
+    },
+    {
+      "text": "pessimize Cathartae",
+      "id": "pessimize Cathartae",
+      "class": "box"
+    },
+    {
+      "text": "vibratiunculation foreland",
+      "id": "vibratiunculation foreland",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "epithalamus thoughtfulness",
+      "head": "Randall",
+      "label": null
+    },
+    {
+      "tail": "Randall",
+      "head": "submolecule polysomy",
+      "label": "yes"
+    },
+    {
+      "tail": "Randall",
+      "head": "dysacousia begowned kakistocra",
+      "label": "yes"
+    },
+    {
+      "tail": "submolecule polysomy",
+      "head": "shackland",
+      "label": "NO"
+    },
+    {
+      "tail": "submolecule polysomy",
+      "head": "dysacousia begowned kakistocra",
+      "label": "NO"
+    },
+    {
+      "tail": "shackland",
+      "head": "dysacousia begowned kakistocra",
+      "label": null
+    },
+    {
+      "tail": "dysacousia begowned kakistocra",
+      "head": "pessimize Cathartae",
+      "label": null
+    },
+    {
+      "tail": "pessimize Cathartae",
+      "head": "vibratiunculation foreland",
+      "label": null
+    }
+  ]
+}

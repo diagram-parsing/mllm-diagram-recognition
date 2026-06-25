@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "housewright",
+      "id": "housewright",
+      "class": "circle"
+    },
+    {
+      "text": "springboard",
+      "id": "springboard",
+      "class": "hexagon"
+    },
+    {
+      "text": "Phalaecean",
+      "id": "Phalaecean",
+      "class": "box"
+    },
+    {
+      "text": "subjoin arrogate",
+      "id": "subjoin arrogate",
+      "class": "diamond"
+    },
+    {
+      "text": "decus apodia",
+      "id": "decus apodia",
+      "class": "hexagon"
+    },
+    {
+      "text": "protestatory unaffectioned",
+      "id": "protestatory unaffectioned",
+      "class": "parallelogram"
+    },
+    {
+      "text": "chitin",
+      "id": "chitin",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Thecamoebae geodiatropism unst",
+      "id": "Thecamoebae geodiatropism unst",
+      "class": "document"
+    },
+    {
+      "text": "analysable",
+      "id": "analysable",
+      "class": "document"
+    },
+    {
+      "text": "tetradecane",
+      "id": "tetradecane",
+      "class": "diamond"
+    },
+    {
+      "text": "salvational",
+      "id": "salvational",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "housewright",
+      "head": "springboard",
+      "label": null
+    },
+    {
+      "tail": "springboard",
+      "head": "Phalaecean",
+      "label": null
+    },
+    {
+      "tail": "Phalaecean",
+      "head": "subjoin arrogate",
+      "label": null
+    },
+    {
+      "tail": "subjoin arrogate",
+      "head": "decus apodia",
+      "label": "NO"
+    },
+    {
+      "tail": "subjoin arrogate",
+      "head": "housewright",
+      "label": "NO"
+    },
+    {
+      "tail": "decus apodia",
+      "head": "protestatory unaffectioned",
+      "label": null
+    },
+    {
+      "tail": "protestatory unaffectioned",
+      "head": "chitin",
+      "label": null
+    },
+    {
+      "tail": "chitin",
+      "head": "Thecamoebae geodiatropism unst",
+      "label": null
+    },
+    {
+      "tail": "Thecamoebae geodiatropism unst",
+      "head": "analysable",
+      "label": null
+    },
+    {
+      "tail": "analysable",
+      "head": "tetradecane",
+      "label": null
+    },
+    {
+      "tail": "tetradecane",
+      "head": "salvational",
+      "label": "Yes"
+    },
+    {
+      "tail": "tetradecane",
+      "head": "protestatory unaffectioned",
+      "label": "Yes"
+    }
+  ]
+}

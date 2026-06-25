@@ -1,0 +1,576 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        303.03,
+        259.091,
+        51.515,
+        60.606
+      ],
+      "class": "event"
+    },
+    {
+      "text": "file cheque",
+      "id": "file cheque",
+      "bbox": [
+        1921.212,
+        696.97,
+        209.091,
+        75.758
+      ],
+      "class": "task"
+    },
+    {
+      "text": "ask external expert to review work of doctor underrating",
+      "id": "ask external expert to review work of doctor underrating",
+      "bbox": [
+        627.591,
+        617.242,
+        275.864,
+        237.924
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1804.545,
+        271.212,
+        57.576,
+        65.152
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1910.606,
+        333.333,
+        43.939,
+        51.515
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "receve expertise and forward to QA specialist",
+      "id": "receve expertise and forward to QA specialist",
+      "bbox": [
+        1510.606,
+        669.697,
+        306.061,
+        157.576
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send cheque to expert",
+      "id": "send cheque to expert",
+      "bbox": [
+        2179.303,
+        667.242,
+        168.97,
+        87.924
+      ],
+      "class": "task"
+    },
+    {
+      "text": "file results containg patients interviews and expertise",
+      "id": "file results containg patients interviews and expertise",
+      "bbox": [
+        1989.394,
+        224.242,
+        196.97,
+        221.212
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        436.364,
+        259.091,
+        60.606,
+        57.576
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        996.97,
+        716.667,
+        68.182,
+        63.636
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "payed of expenses of expert",
+      "id": "payed of expenses of expert",
+      "bbox": [
+        2275.758,
+        796.97,
+        62.121,
+        62.121
+      ],
+      "class": "event"
+    },
+    {
+      "text": "report created",
+      "id": "report created",
+      "bbox": [
+        2250,
+        419.697,
+        53.03,
+        57.576
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        2234.848,
+        290.909,
+        86.364,
+        86.364
+      ],
+      "class": "task"
+    },
+    {
+      "text": "patient interview workflow",
+      "id": "patient interview workflow",
+      "bbox": [
+        634.848,
+        203.03,
+        183.333,
+        171.212
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "send expertise",
+      "id": "send expertise",
+      "bbox": [
+        1110.348,
+        1186.212,
+        275.864,
+        137.924
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "create report",
+      "head": "report created",
+      "class": "sequenceFlow",
+      "bbox": [
+        2254.545,
+        375.758,
+        50,
+        50
+      ],
+      "kps": [
+        2277.273,
+        377.273,
+        2.0,
+        2280.303,
+        422.727,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results containg patients interviews and expertise",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        2186.364,
+        310.606,
+        50,
+        50
+      ],
+      "kps": [
+        2186.364,
+        334.848,
+        2.0,
+        2234.848,
+        334.848,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results containg patients interviews and expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1945.455,
+        330.303,
+        50,
+        50
+      ],
+      "kps": [
+        1950.0,
+        354.545,
+        2.0,
+        1989.394,
+        354.545,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "file cheque",
+      "head": "send cheque to expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        2130.303,
+        712.879,
+        50,
+        50
+      ],
+      "kps": [
+        2130.303,
+        737.879,
+        2.0,
+        2178.788,
+        736.364,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        1887.121,
+        383.333,
+        50,
+        356.061
+      ],
+      "kps": [
+        1931.818,
+        383.333,
+        2.0,
+        1921.212,
+        737.879,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "receve expertise and forward to QA specialist",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1801.515,
+        334.848,
+        50,
+        418.182
+      ],
+      "kps": [
+        1816.667,
+        751.515,
+        2.0,
+        1834.848,
+        334.848,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1859.091,
+        300,
+        56.061,
+        57.576
+      ],
+      "kps": [
+        1859.091,
+        300.0,
+        2.0,
+        1913.636,
+        356.061,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "patient interview workflow",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        818.182,
+        271.97,
+        987.879,
+        50
+      ],
+      "kps": [
+        818.182,
+        289.394,
+        2.0,
+        1804.545,
+        303.03,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask external expert to review work of doctor underrating",
+      "class": "sequenceFlow",
+      "bbox": [
+        816.667,
+        780.303,
+        216.667,
+        131.818
+      ],
+      "kps": [
+        1031.818,
+        780.303,
+        2.0,
+        816.667,
+        854.545,
+        2.0
+      ],
+      "label": "expert does not respond in time"
+    },
+    {
+      "tail": "ask external expert to review work of doctor underrating",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        903.03,
+        724.242,
+        95.455,
+        50
+      ],
+      "kps": [
+        903.03,
+        748.485,
+        2.0,
+        996.97,
+        748.485,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "ask external expert to review work of doctor underrating",
+      "class": "sequenceFlow",
+      "bbox": [
+        466.667,
+        316.667,
+        162.121,
+        440.015
+      ],
+      "kps": [
+        466.667,
+        316.667,
+        2.0,
+        627.273,
+        754.545,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "patient interview workflow",
+      "class": "sequenceFlow",
+      "bbox": [
+        496.97,
+        264.394,
+        139.394,
+        50
+      ],
+      "kps": [
+        496.97,
+        287.879,
+        2.0,
+        634.848,
+        289.394,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        354.545,
+        262.879,
+        86.364,
+        50
+      ],
+      "kps": [
+        354.545,
+        289.394,
+        2.0,
+        439.394,
+        284.848,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send cheque to expert",
+      "head": "payed of expenses of expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        2283.333,
+        751.515,
+        50,
+        50
+      ],
+      "kps": [
+        2312.121,
+        754.545,
+        2.0,
+        2303.03,
+        796.97,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send cheque to expert",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        2189.545,
+        755.167,
+        50,
+        311.864
+      ],
+      "kps": [
+        2213.788,
+        755.167,
+        2.0,
+        2213.788,
+        1065.515,
+        2.0
+      ],
+      "label": "send cheque"
+    },
+    {
+      "tail": "ask external expert to review work of doctor underrating",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        741.273,
+        855.167,
+        50,
+        211.864
+      ],
+      "kps": [
+        765.515,
+        855.167,
+        2.0,
+        765.515,
+        1065.515,
+        2.0
+      ],
+      "label": "ask expert"
+    },
+    {
+      "tail": "send expertise",
+      "head": "receve expertise and forward to QA specialist",
+      "class": "messageFlow",
+      "bbox": [
+        1386.364,
+        746.97,
+        125.758,
+        509.712
+      ],
+      "kps": [
+        1386.364,
+        1254.545,
+        2.0,
+        1510.606,
+        746.97,
+        2.0
+      ],
+      "label": "expertise"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "Managing Director",
+        "Quality assurance specialist"
+      ],
+      "bbox": [
+        58.621,
+        117.242,
+        2379.303,
+        844.833
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing Director",
+      "nodes": [
+        "file cheque",
+        "ask external expert to review work of doctor underrating",
+        "receve expertise and forward to QA specialist",
+        "send cheque to expert",
+        "exclusiveGateway_1",
+        "payed of expenses of expert"
+      ],
+      "bbox": [
+        110.348,
+        539.652,
+        2327.591,
+        422.409
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality assurance specialist",
+      "nodes": [
+        "event_1",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "file results containg patients interviews and expertise",
+        "parallelGateway_3",
+        "report created",
+        "create report",
+        "patient interview workflow"
+      ],
+      "bbox": [
+        110.348,
+        117.242,
+        2327.591,
+        422.409
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "bbox": [
+        75.864,
+        1065.515,
+        2379.303,
+        431.03
+      ],
+      "class": "pool"
+    }
+  ]
+}

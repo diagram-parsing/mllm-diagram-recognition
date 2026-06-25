@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "modernish Pteropodidae",
+      "id": "modernish Pteropodidae",
+      "class": "ellipse"
+    },
+    {
+      "text": "lasslorn",
+      "id": "lasslorn",
+      "class": "box"
+    },
+    {
+      "text": "pseudoscientific",
+      "id": "pseudoscientific",
+      "class": "parallelogram"
+    },
+    {
+      "text": "coumalic oenanthic",
+      "id": "coumalic oenanthic",
+      "class": "diamond"
+    },
+    {
+      "text": "attercrop",
+      "id": "attercrop",
+      "class": "document"
+    },
+    {
+      "text": "part quadrennia Dioecia",
+      "id": "part quadrennia Dioecia",
+      "class": "parallelogram"
+    },
+    {
+      "text": "perceivably",
+      "id": "perceivably",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "modernish Pteropodidae",
+      "head": "lasslorn",
+      "label": null
+    },
+    {
+      "tail": "lasslorn",
+      "head": "pseudoscientific",
+      "label": null
+    },
+    {
+      "tail": "pseudoscientific",
+      "head": "coumalic oenanthic",
+      "label": null
+    },
+    {
+      "tail": "coumalic oenanthic",
+      "head": "attercrop",
+      "label": "Yes"
+    },
+    {
+      "tail": "coumalic oenanthic",
+      "head": "part quadrennia Dioecia",
+      "label": "Yes"
+    },
+    {
+      "tail": "attercrop",
+      "head": "part quadrennia Dioecia",
+      "label": null
+    },
+    {
+      "tail": "part quadrennia Dioecia",
+      "head": "perceivably",
+      "label": null
+    }
+  ]
+}

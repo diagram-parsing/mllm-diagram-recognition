@@ -1,0 +1,493 @@
+{
+  "nodes": [
+    {
+      "text": "Claim\nreceived",
+      "id": "Claim\nreceived",
+      "bbox": [
+        797,
+        1016,
+        1097,
+        1244
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Examine\nclaim",
+      "id": "Examine\nclaim",
+      "bbox": [
+        1992,
+        1022,
+        2430,
+        1316
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write\nrecommendation",
+      "id": "write\nrecommendation",
+      "bbox": [
+        3252,
+        1021,
+        4014,
+        1379
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Check\nRecommendation",
+      "id": "Check\nRecommendation",
+      "bbox": [
+        3073,
+        1962,
+        4014,
+        2365
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        2600,
+        2041,
+        2793,
+        2266
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "mark\nas ok",
+      "id": "mark\nas ok",
+      "bbox": [
+        1886,
+        2174,
+        2381,
+        2499
+      ],
+      "class": "task"
+    },
+    {
+      "text": "proceed\nclaim handling",
+      "id": "proceed\nclaim handling",
+      "bbox": [
+        938,
+        2203,
+        1592,
+        2499
+      ],
+      "class": "task"
+    },
+    {
+      "text": "process ends",
+      "id": "process ends",
+      "bbox": [
+        627,
+        1860,
+        884,
+        2036
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Register\nclaim",
+      "id": "Register\nclaim",
+      "bbox": [
+        1304,
+        1010,
+        1727,
+        1301
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Claim\nPB",
+      "id": "Claim\nPB",
+      "bbox": [
+        1301,
+        1627,
+        1526,
+        1782
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "Mark\nas not okay",
+      "id": "Mark\nas not okay",
+      "bbox": [
+        1918,
+        1713,
+        2499,
+        2070
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send claim\nback",
+      "id": "send claim\nback",
+      "bbox": [
+        1353,
+        1820,
+        1825,
+        2044
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        2721,
+        1048,
+        2951,
+        1286
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Mark\nas not okay",
+      "head": "send claim\nback",
+      "class": "sequenceFlow",
+      "bbox": [
+        1825,
+        1888,
+        1922,
+        1969
+      ],
+      "kps": [
+        1918.063,
+        1926.732,
+        2.0,
+        1825.932,
+        1926.732,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Claim\nreceived",
+      "head": "Register\nclaim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1097,
+        1093,
+        1308,
+        1174
+      ],
+      "kps": [
+        1097.268,
+        1131.823,
+        2.0,
+        1304.634,
+        1131.823,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Register\nclaim",
+      "head": "Examine\nclaim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1727,
+        1128,
+        1997,
+        1208
+      ],
+      "kps": [
+        1727.994,
+        1166.417,
+        2.0,
+        1992.977,
+        1166.417,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Examine\nclaim",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2431,
+        1118,
+        2729,
+        1199
+      ],
+      "kps": [
+        2431.296,
+        1153.152,
+        2.0,
+        2725.632,
+        1161.216,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "write\nrecommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        2947,
+        1118,
+        3257,
+        1199
+      ],
+      "kps": [
+        2947.392,
+        1161.216,
+        2.0,
+        3253.824,
+        1153.152,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write\nrecommendation",
+      "head": "Check\nRecommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        3591,
+        1379,
+        3672,
+        1965
+      ],
+      "kps": [
+        3631.663,
+        1379.508,
+        2.0,
+        3628.8,
+        1961.286,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Check\nRecommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2784,
+        2124,
+        3076,
+        2205
+      ],
+      "kps": [
+        3072.948,
+        2162.886,
+        2.0,
+        2784.943,
+        2162.886,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Mark\nas not okay",
+      "class": "sequenceFlow",
+      "bbox": [
+        2499,
+        1846,
+        2702,
+        2048
+      ],
+      "kps": [
+        2698.577,
+        2044.788,
+        2.0,
+        2499.84,
+        1846.092,
+        2.0
+      ],
+      "label": "Not Okay"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark\nas ok",
+      "class": "sequenceFlow",
+      "bbox": [
+        2381,
+        2263,
+        2702,
+        2423
+      ],
+      "kps": [
+        2698.577,
+        2263.686,
+        2.0,
+        2381.743,
+        2419.2,
+        2.0
+      ],
+      "label": "ok"
+    },
+    {
+      "tail": "mark\nas ok",
+      "head": "proceed\nclaim handling",
+      "class": "sequenceFlow",
+      "bbox": [
+        1592,
+        2274,
+        1890,
+        2354
+      ],
+      "kps": [
+        1886.412,
+        2312.634,
+        2.0,
+        1592.64,
+        2312.634,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "proceed\nclaim handling",
+      "head": "process ends",
+      "class": "sequenceFlow",
+      "bbox": [
+        757,
+        2076,
+        942,
+        2322
+      ],
+      "kps": [
+        938.892,
+        2318.4,
+        2.0,
+        757.452,
+        2076.48,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send claim\nback",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1645,
+        1282,
+        2842,
+        1822
+      ],
+      "kps": [
+        1645.056,
+        1818.432,
+        2.0,
+        2838.528,
+        1282.176,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Register\nclaim",
+      "head": "Claim\nPB",
+      "class": "dataAssociation",
+      "bbox": [
+        1400,
+        1307,
+        1480,
+        1619
+      ],
+      "kps": [
+        1463.052,
+        1307.537,
+        2.0,
+        1414.063,
+        1615.663,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Costumer",
+      "head": "Claim\nreceived",
+      "class": "messageFlow",
+      "bbox": [
+        889,
+        573,
+        969,
+        986
+      ],
+      "kps": [
+        927.36,
+        573.108,
+        2.0,
+        927.36,
+        982.074,
+        2.0
+      ],
+      "label": "claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "Claim Officer",
+        "Senior Claim of"
+      ],
+      "bbox": [
+        88,
+        697,
+        4023,
+        2584
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Claim Officer",
+      "nodes": [
+        "Claim\nreceived",
+        "Examine\nclaim",
+        "write\nrecommendation",
+        "Register\nclaim",
+        "exclusiveGateway_2"
+      ],
+      "bbox": [
+        209,
+        697,
+        4023,
+        1612
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Senior Claim of",
+      "nodes": [
+        "Check\nRecommendation",
+        "exclusiveGateway_1",
+        "mark\nas ok",
+        "proceed\nclaim handling",
+        "process ends",
+        "Claim\nPB",
+        "Mark\nas not okay",
+        "send claim\nback"
+      ],
+      "bbox": [
+        209,
+        1612,
+        4023,
+        2584
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Costumer",
+      "nodes": [],
+      "bbox": [
+        509,
+        331,
+        3251,
+        573
+      ],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "nodes": [
+    {
+      "text": "order received",
+      "id": "order received",
+      "bbox": [
+        671,
+        662,
+        743,
+        749
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "order taken",
+      "id": "order taken",
+      "bbox": [
+        2089,
+        480,
+        2201,
+        583
+      ],
+      "class": "event"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "bbox": [
+        1522,
+        873,
+        1817,
+        994
+      ],
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        1522,
+        420,
+        1711,
+        541
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print order",
+      "id": "print order",
+      "bbox": [
+        1734,
+        616,
+        1900,
+        737
+      ],
+      "class": "task"
+    },
+    {
+      "text": "attach\u00c2\u00a0 to pinboard",
+      "id": "attach\u00c2\u00a0 to pinboard",
+      "bbox": [
+        2024,
+        692,
+        2301,
+        843
+      ],
+      "class": "task"
+    },
+    {
+      "text": "take order by phone",
+      "id": "take order by phone",
+      "bbox": [
+        1129,
+        873,
+        1424,
+        1025
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive by Website",
+      "id": "receive by Website",
+      "bbox": [
+        1137,
+        616,
+        1424,
+        749
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive by Lieferando",
+      "id": "receive by Lieferando",
+      "bbox": [
+        1121,
+        420,
+        1424,
+        541
+      ],
+      "class": "task"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "bbox": [
+        1790,
+        420,
+        1877,
+        548
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        920,
+        630,
+        1038,
+        774
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1885,
+        881,
+        2013,
+        1002
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1530,
+        642,
+        1658,
+        774
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1565,
+        541,
+        1626,
+        645
+      ],
+      "kps": [
+        1595.16,
+        541.296,
+        2.0,
+        1595.16,
+        644.112,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1424,
+        451,
+        1524,
+        511
+      ],
+      "kps": [
+        1424.304,
+        480.816,
+        2.0,
+        1522.584,
+        480.816,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive by Lieferando",
+      "class": "sequenceFlow",
+      "bbox": [
+        975,
+        480,
+        1123,
+        638
+      ],
+      "kps": [
+        975.24,
+        636.552,
+        2.0,
+        1121.904,
+        480.816,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "attach\u00c2\u00a0 to pinboard",
+      "head": "order taken",
+      "class": "sequenceFlow",
+      "bbox": [
+        2116,
+        588,
+        2176,
+        694
+      ],
+      "kps": [
+        2145.528,
+        692.496,
+        2.0,
+        2145.528,
+        588.168,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1817,
+        737,
+        1951,
+        883
+      ],
+      "kps": [
+        1817.424,
+        737.856,
+        2.0,
+        1950.48,
+        881.496,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach\u00c2\u00a0 to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        2013,
+        843,
+        2165,
+        943
+      ],
+      "kps": [
+        2013.984,
+        941.976,
+        2.0,
+        2163.672,
+        843.696,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1817,
+        904,
+        1894,
+        965
+      ],
+      "kps": [
+        1817.424,
+        934.416,
+        2.0,
+        1893.024,
+        934.416,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "take order by phone",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1424,
+        908,
+        1524,
+        969
+      ],
+      "kps": [
+        1424.304,
+        941.976,
+        2.0,
+        1522.584,
+        934.416,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "take order by phone",
+      "class": "sequenceFlow",
+      "bbox": [
+        975,
+        768,
+        1130,
+        943
+      ],
+      "kps": [
+        975.24,
+        768.096,
+        2.0,
+        1129.464,
+        941.976,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1658,
+        678,
+        1735,
+        738
+      ],
+      "kps": [
+        1658.664,
+        707.616,
+        2.0,
+        1734.264,
+        707.616,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive by Website",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1424,
+        678,
+        1531,
+        738
+      ],
+      "kps": [
+        1424.304,
+        707.616,
+        2.0,
+        1530.144,
+        707.616,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive by Website",
+      "class": "sequenceFlow",
+      "bbox": [
+        1037,
+        676,
+        1138,
+        737
+      ],
+      "kps": [
+        1037.232,
+        704.592,
+        2.0,
+        1137.024,
+        707.616,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "order received",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        743,
+        676,
+        925,
+        737
+      ],
+      "kps": [
+        743.904,
+        706.104,
+        2.0,
+        923.832,
+        706.104,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "order",
+      "class": "dataAssociation",
+      "bbox": [
+        1670,
+        541,
+        1791,
+        875
+      ],
+      "kps": [
+        1670.76,
+        873.936,
+        2.0,
+        1790.208,
+        541.296,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "order",
+      "class": "dataAssociation",
+      "bbox": [
+        1877,
+        491,
+        1939,
+        621
+      ],
+      "kps": [
+        1894.536,
+        619.92,
+        2.0,
+        1877.904,
+        498.96,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "order",
+      "head": "attach\u00c2\u00a0 to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        1877,
+        485,
+        2026,
+        752
+      ],
+      "kps": [
+        1877.904,
+        485.352,
+        2.0,
+        2024.568,
+        751.464,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "CUSTOMER",
+      "head": "order received",
+      "class": "messageFlow",
+      "bbox": [
+        675,
+        284,
+        735,
+        671
+      ],
+      "kps": [
+        704.592,
+        284.256,
+        2.0,
+        704.592,
+        669.816,
+        2.0
+      ],
+      "label": "pizza\norder"
+    }
+  ],
+  "groups": [
+    {
+      "name": "PIZZA PLACE",
+      "nodes": [],
+      "bbox": [
+        532,
+        359,
+        2346,
+        1115
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "CUSTOMER",
+      "nodes": [],
+      "bbox": [
+        517,
+        222,
+        2361,
+        284
+      ],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "text": "start",
+      "id": "start",
+      "bbox": [
+        191,
+        4,
+        351,
+        171
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "input v",
+      "id": "input v",
+      "bbox": [
+        69,
+        252,
+        489,
+        175
+      ],
+      "class": "data"
+    },
+    {
+      "text": "v>0",
+      "id": "v>0",
+      "bbox": [
+        161,
+        509,
+        304,
+        219
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "output v",
+      "id": "output v",
+      "bbox": [
+        4,
+        896,
+        528,
+        184
+      ],
+      "class": "data"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "bbox": [
+        120,
+        1176,
+        361,
+        154
+      ],
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "start",
+      "head": "input v",
+      "bbox": [
+        346,
+        166,
+        44,
+        97
+      ],
+      "kps": [
+        365.0,
+        167.0,
+        2.0,
+        364.0,
+        256.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "input v",
+      "head": "v>0",
+      "bbox": [
+        304,
+        406,
+        49,
+        116
+      ],
+      "kps": [
+        327.0,
+        407.0,
+        2.0,
+        336.0,
+        520.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "v>0",
+      "head": "output v",
+      "bbox": [
+        296,
+        727,
+        42,
+        158
+      ],
+      "kps": [
+        324.0,
+        730.0,
+        2.0,
+        313.0,
+        883.0,
+        2.0
+      ],
+      "label": "true"
+    },
+    {
+      "tail": "output v",
+      "head": "end",
+      "bbox": [
+        290,
+        1071,
+        42,
+        94
+      ],
+      "kps": [
+        304.0,
+        1072.0,
+        2.0,
+        306.0,
+        1163.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "v>0",
+      "head": "input v",
+      "bbox": [
+        446,
+        286,
+        359,
+        322
+      ],
+      "kps": [
+        448.0,
+        595.0,
+        2.0,
+        540.0,
+        321.0,
+        2.0
+      ],
+      "label": "false"
+    }
+  ]
+}

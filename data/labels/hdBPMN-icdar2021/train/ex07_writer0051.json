@@ -1,0 +1,278 @@
+{
+  "nodes": [
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "filling check",
+      "id": "filling check",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "retrieve interiew",
+      "id": "retrieve interiew",
+      "class": "messageEvent"
+    },
+    {
+      "text": "file result",
+      "id": "file result",
+      "class": "task"
+    },
+    {
+      "text": "patient interview",
+      "id": "patient interview",
+      "class": "dataObject"
+    },
+    {
+      "text": "ask external expert to review doctors work",
+      "id": "ask external expert to review doctors work",
+      "class": "subProcess"
+    },
+    {
+      "text": "workflow",
+      "id": "workflow",
+      "class": "dataStore"
+    },
+    {
+      "text": "expertise",
+      "id": "expertise",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "subProcess_1",
+      "class": "subProcess"
+    },
+    {
+      "text": "ask expert",
+      "id": "ask expert",
+      "class": "event"
+    },
+    {
+      "text": "give free aption (Vorschlag)",
+      "id": "give free aption (Vorschlag)",
+      "class": "task"
+    },
+    {
+      "text": "wait a time for esponse",
+      "id": "wait a time for esponse",
+      "class": "timerEvent"
+    },
+    {
+      "text": "review response",
+      "id": "review response",
+      "class": "task"
+    },
+    {
+      "text": "receive response",
+      "id": "receive response",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "interview finish and approved",
+      "id": "interview finish and approved",
+      "class": "event"
+    },
+    {
+      "text": "pay response",
+      "id": "pay response",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "filling check",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file result",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review doctors work",
+      "head": "file result",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieve interiew",
+      "head": "ask external expert to review doctors work",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview finish and approved",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "pay response",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "filling check",
+      "head": "pay response",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "review response",
+      "head": "receive response",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "wait a time for esponse",
+      "head": "review response",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "give free aption (Vorschlag)",
+      "head": "wait a time for esponse",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask expert",
+      "head": "give free aption (Vorschlag)",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieve interiew",
+      "head": "workflow",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "retrieve interiew",
+      "head": "patient interview",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "patient interview",
+      "head": "file result",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "file result",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "ask external expert to review doctors work",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review doctors work",
+      "head": "expert",
+      "class": "messageFlow",
+      "label": "ask for rating doctos work"
+    },
+    {
+      "tail": "expert",
+      "head": "ask external expert to review doctors work",
+      "class": "messageFlow",
+      "label": "response of expert"
+    },
+    {
+      "tail": "pay response",
+      "head": "expert",
+      "class": "messageFlow",
+      "label": "check"
+    },
+    {
+      "tail": "Patient",
+      "head": "retrieve interiew",
+      "class": "messageFlow",
+      "label": "interview"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "quality assurance specialist"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "filling check",
+        "ask external expert to review doctors work",
+        "subProcess_1",
+        "ask expert",
+        "give free aption (Vorschlag)",
+        "wait a time for esponse",
+        "review response",
+        "receive response",
+        "pay response"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance specialist",
+      "nodes": [
+        "create report",
+        "parallelGateway_1",
+        "retrieve interiew",
+        "file result",
+        "patient interview",
+        "workflow",
+        "expertise",
+        "parallelGateway_2",
+        "interview finish and approved"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

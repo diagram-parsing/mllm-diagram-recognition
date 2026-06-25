@@ -1,0 +1,359 @@
+{
+  "nodes": [
+    {
+      "text": "application for new bank account received",
+      "id": "application for new bank account received",
+      "bbox": [
+        180,
+        281,
+        223,
+        329
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "bbox": [
+        292,
+        252,
+        454,
+        333
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        508,
+        276,
+        547,
+        311
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify rejection by email",
+      "id": "notify rejection by email",
+      "bbox": [
+        597,
+        152,
+        819,
+        208
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application rejected",
+      "id": "application rejected",
+      "bbox": [
+        880,
+        162,
+        905,
+        193
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create new bank account",
+      "id": "create new bank account",
+      "bbox": [
+        591,
+        396,
+        788,
+        470
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack",
+      "id": "send welcome pack",
+      "bbox": [
+        918,
+        293,
+        1073,
+        361
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        903,
+        401,
+        1077,
+        462
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send PIN number",
+      "id": "send PIN number",
+      "bbox": [
+        907,
+        500,
+        1060,
+        567
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application approved",
+      "id": "application approved",
+      "bbox": [
+        1175,
+        410,
+        1201,
+        441
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1099,
+        413,
+        1135,
+        457
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        832,
+        412,
+        869,
+        452
+      ],
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        869,
+        416,
+        904,
+        448
+      ],
+      "kps": [
+        869.303,
+        432.394,
+        2.0,
+        903.172,
+        431.265,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        454,
+        277,
+        510,
+        310
+      ],
+      "kps": [
+        454.973,
+        293.531,
+        2.0,
+        509.163,
+        293.531,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "application for new bank account received",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "bbox": [
+        223,
+        289,
+        293,
+        321
+      ],
+      "kps": [
+        223.535,
+        304.821,
+        2.0,
+        292.402,
+        304.821,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify rejection by email",
+      "head": "application rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        819,
+        164,
+        882,
+        197
+      ],
+      "kps": [
+        819.629,
+        180.634,
+        2.0,
+        881.722,
+        180.634,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send PIN number",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1060,
+        456,
+        1117,
+        544
+      ],
+      "kps": [
+        1060.099,
+        543.032,
+        2.0,
+        1116.547,
+        456.102,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send PIN number",
+      "class": "sequenceFlow",
+      "bbox": [
+        845,
+        447,
+        908,
+        543
+      ],
+      "kps": [
+        845.595,
+        447.07,
+        2.0,
+        907.688,
+        541.903,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "application approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        1135,
+        419,
+        1180,
+        452
+      ],
+      "kps": [
+        1135.739,
+        435.781,
+        2.0,
+        1179.769,
+        435.781,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1072,
+        418,
+        1105,
+        451
+      ],
+      "kps": [
+        1077.033,
+        432.394,
+        2.0,
+        1099.612,
+        435.781,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send welcome pack",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1073,
+        327,
+        1117,
+        415
+      ],
+      "kps": [
+        1073.646,
+        327.4,
+        2.0,
+        1116.547,
+        414.33,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send welcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        845,
+        327,
+        920,
+        418
+      ],
+      "kps": [
+        845.595,
+        417.717,
+        2.0,
+        918.978,
+        327.4,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new bank account",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        788,
+        417,
+        834,
+        450
+      ],
+      "kps": [
+        788.018,
+        433.523,
+        2.0,
+        833.177,
+        433.523,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

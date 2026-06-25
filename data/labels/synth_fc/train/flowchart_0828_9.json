@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "fumigant",
+      "id": "fumigant",
+      "class": "circle"
+    },
+    {
+      "text": "minutia",
+      "id": "minutia",
+      "class": "document"
+    },
+    {
+      "text": "fancysick",
+      "id": "fancysick",
+      "class": "hexagon"
+    },
+    {
+      "text": "collin choirmaster pleuroperic",
+      "id": "collin choirmaster pleuroperic",
+      "class": "diamond"
+    },
+    {
+      "text": "probowling unaggressive",
+      "id": "probowling unaggressive",
+      "class": "diamond"
+    },
+    {
+      "text": "aminopurine",
+      "id": "aminopurine",
+      "class": "hexagon"
+    },
+    {
+      "text": "homocercy caky",
+      "id": "homocercy caky",
+      "class": "hexagon"
+    },
+    {
+      "text": "aquatically unmember dissoconc",
+      "id": "aquatically unmember dissoconc",
+      "class": "oval"
+    },
+    {
+      "text": "Frisian",
+      "id": "Frisian",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fumigant",
+      "head": "minutia",
+      "label": null
+    },
+    {
+      "tail": "minutia",
+      "head": "fancysick",
+      "label": null
+    },
+    {
+      "tail": "fancysick",
+      "head": "collin choirmaster pleuroperic",
+      "label": null
+    },
+    {
+      "tail": "collin choirmaster pleuroperic",
+      "head": "probowling unaggressive",
+      "label": "YES"
+    },
+    {
+      "tail": "collin choirmaster pleuroperic",
+      "head": "aminopurine",
+      "label": "YES"
+    },
+    {
+      "tail": "probowling unaggressive",
+      "head": "homocercy caky",
+      "label": "no"
+    },
+    {
+      "tail": "probowling unaggressive",
+      "head": "aquatically unmember dissoconc",
+      "label": "no"
+    },
+    {
+      "tail": "homocercy caky",
+      "head": "Frisian",
+      "label": null
+    },
+    {
+      "tail": "Frisian",
+      "head": "aminopurine",
+      "label": null
+    },
+    {
+      "tail": "aminopurine",
+      "head": "aquatically unmember dissoconc",
+      "label": null
+    }
+  ]
+}

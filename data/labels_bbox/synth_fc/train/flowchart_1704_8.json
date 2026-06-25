@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "weiring",
+      "id": "weiring",
+      "class": "ellipse",
+      "bbox": [
+        52,
+        14,
+        140,
+        62
+      ]
+    },
+    {
+      "text": "Aesopic Photostat kymation",
+      "id": "Aesopic Photostat kymation",
+      "class": "diamond",
+      "bbox": [
+        5,
+        107,
+        186,
+        180
+      ]
+    },
+    {
+      "text": "forbidder",
+      "id": "forbidder",
+      "class": "document",
+      "bbox": [
+        41,
+        214,
+        150,
+        285
+      ]
+    },
+    {
+      "text": "makhzan weiselbergite",
+      "id": "makhzan weiselbergite",
+      "class": "diamond",
+      "bbox": [
+        225,
+        133,
+        384,
+        207
+      ]
+    },
+    {
+      "text": "postmesenteric",
+      "id": "postmesenteric",
+      "class": "diamond",
+      "bbox": [
+        33,
+        318,
+        158,
+        392
+      ]
+    },
+    {
+      "text": "hussyness",
+      "id": "hussyness",
+      "class": "document",
+      "bbox": [
+        41,
+        426,
+        150,
+        496
+      ]
+    },
+    {
+      "text": "equanimousness periatrial",
+      "id": "equanimousness periatrial",
+      "class": "diamond",
+      "bbox": [
+        7,
+        530,
+        184,
+        598
+      ]
+    },
+    {
+      "text": "span",
+      "id": "span",
+      "class": "circle",
+      "bbox": [
+        275,
+        217,
+        339,
+        281
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "weiring",
+      "head": "Aesopic Photostat kymation",
+      "label": null,
+      "bbox": [
+        91,
+        62,
+        100,
+        105
+      ]
+    },
+    {
+      "tail": "Aesopic Photostat kymation",
+      "head": "forbidder",
+      "label": "YES",
+      "bbox": [
+        91,
+        180,
+        100,
+        213
+      ]
+    },
+    {
+      "tail": "Aesopic Photostat kymation",
+      "head": "makhzan weiselbergite",
+      "label": "YES",
+      "bbox": [
+        152,
+        153,
+        249,
+        163
+      ]
+    },
+    {
+      "tail": "forbidder",
+      "head": "postmesenteric",
+      "label": null,
+      "bbox": [
+        91,
+        284,
+        100,
+        316
+      ]
+    },
+    {
+      "tail": "postmesenteric",
+      "head": "hussyness",
+      "label": "Yes",
+      "bbox": [
+        91,
+        392,
+        100,
+        424
+      ]
+    },
+    {
+      "tail": "postmesenteric",
+      "head": "makhzan weiselbergite",
+      "label": "Yes",
+      "bbox": [
+        158,
+        183,
+        255,
+        355
+      ]
+    },
+    {
+      "tail": "hussyness",
+      "head": "equanimousness periatrial",
+      "label": null,
+      "bbox": [
+        91,
+        496,
+        100,
+        528
+      ]
+    },
+    {
+      "tail": "equanimousness periatrial",
+      "head": "makhzan weiselbergite",
+      "label": "YES",
+      "bbox": [
+        167,
+        189,
+        276,
+        559
+      ]
+    },
+    {
+      "tail": "equanimousness periatrial",
+      "head": "span",
+      "label": "YES",
+      "bbox": [
+        175,
+        245,
+        273,
+        563
+      ]
+    },
+    {
+      "tail": "makhzan weiselbergite",
+      "head": "span",
+      "label": "no",
+      "bbox": [
+        303,
+        202,
+        312,
+        216
+      ]
+    },
+    {
+      "tail": "makhzan weiselbergite",
+      "head": "weiring",
+      "label": "no",
+      "bbox": [
+        141,
+        33,
+        307,
+        133
+      ]
+    }
+  ]
+}

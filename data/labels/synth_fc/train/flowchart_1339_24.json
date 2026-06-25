@@ -1,0 +1,271 @@
+{
+  "nodes": [
+    {
+      "text": "redcoat",
+      "id": "redcoat",
+      "class": "circle"
+    },
+    {
+      "text": "heartsick timeproof",
+      "id": "heartsick timeproof",
+      "class": "diamond"
+    },
+    {
+      "text": "pistole",
+      "id": "pistole",
+      "class": "box"
+    },
+    {
+      "text": "rebob",
+      "id": "rebob",
+      "class": "diamond"
+    },
+    {
+      "text": "humboldtite piously timocratic",
+      "id": "humboldtite piously timocratic",
+      "class": "box"
+    },
+    {
+      "text": "titleboard thermantic",
+      "id": "titleboard thermantic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Mermnad eboe",
+      "id": "Mermnad eboe",
+      "class": "document"
+    },
+    {
+      "text": "holour",
+      "id": "holour",
+      "class": "box"
+    },
+    {
+      "text": "internals",
+      "id": "internals",
+      "class": "diamond"
+    },
+    {
+      "text": "plastotype",
+      "id": "plastotype",
+      "class": "box"
+    },
+    {
+      "text": "Gustavus",
+      "id": "Gustavus",
+      "class": "box"
+    },
+    {
+      "text": "veilmaker",
+      "id": "veilmaker",
+      "class": "document"
+    },
+    {
+      "text": "Ashkenazic",
+      "id": "Ashkenazic",
+      "class": "hexagon"
+    },
+    {
+      "text": "destructive",
+      "id": "destructive",
+      "class": "diamond"
+    },
+    {
+      "text": "ungaite",
+      "id": "ungaite",
+      "class": "diamond"
+    },
+    {
+      "text": "spade",
+      "id": "spade",
+      "class": "document"
+    },
+    {
+      "text": "puppethood loculate Muharram",
+      "id": "puppethood loculate Muharram",
+      "class": "parallelogram"
+    },
+    {
+      "text": "henceforwards fundal Toltecan",
+      "id": "henceforwards fundal Toltecan",
+      "class": "box"
+    },
+    {
+      "text": "streamline",
+      "id": "streamline",
+      "class": "hexagon"
+    },
+    {
+      "text": "slideman",
+      "id": "slideman",
+      "class": "diamond"
+    },
+    {
+      "text": "gossampine fodder",
+      "id": "gossampine fodder",
+      "class": "box"
+    },
+    {
+      "text": "accomplishment",
+      "id": "accomplishment",
+      "class": "parallelogram"
+    },
+    {
+      "text": "pluviometry myst",
+      "id": "pluviometry myst",
+      "class": "document"
+    },
+    {
+      "text": "prostrike methylsulfanol",
+      "id": "prostrike methylsulfanol",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "redcoat",
+      "head": "heartsick timeproof",
+      "label": null
+    },
+    {
+      "tail": "heartsick timeproof",
+      "head": "pistole",
+      "label": "no"
+    },
+    {
+      "tail": "heartsick timeproof",
+      "head": "rebob",
+      "label": "no"
+    },
+    {
+      "tail": "pistole",
+      "head": "humboldtite piously timocratic",
+      "label": null
+    },
+    {
+      "tail": "humboldtite piously timocratic",
+      "head": "titleboard thermantic",
+      "label": null
+    },
+    {
+      "tail": "titleboard thermantic",
+      "head": "Mermnad eboe",
+      "label": null
+    },
+    {
+      "tail": "Mermnad eboe",
+      "head": "holour",
+      "label": null
+    },
+    {
+      "tail": "holour",
+      "head": "internals",
+      "label": null
+    },
+    {
+      "tail": "internals",
+      "head": "plastotype",
+      "label": "yes"
+    },
+    {
+      "tail": "internals",
+      "head": "Gustavus",
+      "label": "yes"
+    },
+    {
+      "tail": "plastotype",
+      "head": "veilmaker",
+      "label": null
+    },
+    {
+      "tail": "veilmaker",
+      "head": "Ashkenazic",
+      "label": null
+    },
+    {
+      "tail": "Ashkenazic",
+      "head": "destructive",
+      "label": null
+    },
+    {
+      "tail": "destructive",
+      "head": "ungaite",
+      "label": "yes"
+    },
+    {
+      "tail": "destructive",
+      "head": "spade",
+      "label": "yes"
+    },
+    {
+      "tail": "ungaite",
+      "head": "puppethood loculate Muharram",
+      "label": "No"
+    },
+    {
+      "tail": "ungaite",
+      "head": "spade",
+      "label": "No"
+    },
+    {
+      "tail": "puppethood loculate Muharram",
+      "head": "henceforwards fundal Toltecan",
+      "label": null
+    },
+    {
+      "tail": "henceforwards fundal Toltecan",
+      "head": "streamline",
+      "label": null
+    },
+    {
+      "tail": "streamline",
+      "head": "rebob",
+      "label": null
+    },
+    {
+      "tail": "rebob",
+      "head": "slideman",
+      "label": "YES"
+    },
+    {
+      "tail": "rebob",
+      "head": "heartsick timeproof",
+      "label": "YES"
+    },
+    {
+      "tail": "slideman",
+      "head": "gossampine fodder",
+      "label": "Yes"
+    },
+    {
+      "tail": "slideman",
+      "head": "rebob",
+      "label": "Yes"
+    },
+    {
+      "tail": "gossampine fodder",
+      "head": "accomplishment",
+      "label": null
+    },
+    {
+      "tail": "accomplishment",
+      "head": "pluviometry myst",
+      "label": null
+    },
+    {
+      "tail": "pluviometry myst",
+      "head": "spade",
+      "label": null
+    },
+    {
+      "tail": "spade",
+      "head": "Gustavus",
+      "label": null
+    },
+    {
+      "tail": "Gustavus",
+      "head": "prostrike methylsulfanol",
+      "label": null
+    }
+  ]
+}

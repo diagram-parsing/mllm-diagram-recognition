@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "psammoma",
+      "id": "psammoma",
+      "class": "ellipse"
+    },
+    {
+      "text": "suprapubic",
+      "id": "suprapubic",
+      "class": "diamond"
+    },
+    {
+      "text": "confederate",
+      "id": "confederate",
+      "class": "box"
+    },
+    {
+      "text": "Gymnura",
+      "id": "Gymnura",
+      "class": "circle"
+    },
+    {
+      "text": "bodyless subpostscript",
+      "id": "bodyless subpostscript",
+      "class": "box"
+    },
+    {
+      "text": "Chinatown oncin",
+      "id": "Chinatown oncin",
+      "class": "document"
+    },
+    {
+      "text": "Mohawkian",
+      "id": "Mohawkian",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "psammoma",
+      "head": "suprapubic",
+      "label": null
+    },
+    {
+      "tail": "suprapubic",
+      "head": "confederate",
+      "label": "no"
+    },
+    {
+      "tail": "suprapubic",
+      "head": "Gymnura",
+      "label": "no"
+    },
+    {
+      "tail": "confederate",
+      "head": "bodyless subpostscript",
+      "label": null
+    },
+    {
+      "tail": "bodyless subpostscript",
+      "head": "Chinatown oncin",
+      "label": null
+    },
+    {
+      "tail": "Chinatown oncin",
+      "head": "Mohawkian",
+      "label": null
+    },
+    {
+      "tail": "Mohawkian",
+      "head": "Gymnura",
+      "label": null
+    }
+  ]
+}

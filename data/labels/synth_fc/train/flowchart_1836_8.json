@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "resplend morbidity",
+      "id": "resplend morbidity",
+      "class": "circle"
+    },
+    {
+      "text": "wheaten",
+      "id": "wheaten",
+      "class": "hexagon"
+    },
+    {
+      "text": "cohune confess feague",
+      "id": "cohune confess feague",
+      "class": "diamond"
+    },
+    {
+      "text": "interopercle",
+      "id": "interopercle",
+      "class": "hexagon"
+    },
+    {
+      "text": "umbrae",
+      "id": "umbrae",
+      "class": "hexagon"
+    },
+    {
+      "text": "submolecule polysomy",
+      "id": "submolecule polysomy",
+      "class": "box"
+    },
+    {
+      "text": "unpracticableness unaccustomed",
+      "id": "unpracticableness unaccustomed",
+      "class": "document"
+    },
+    {
+      "text": "jestbook",
+      "id": "jestbook",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "resplend morbidity",
+      "head": "wheaten",
+      "label": null
+    },
+    {
+      "tail": "wheaten",
+      "head": "cohune confess feague",
+      "label": null
+    },
+    {
+      "tail": "cohune confess feague",
+      "head": "interopercle",
+      "label": "YES"
+    },
+    {
+      "tail": "cohune confess feague",
+      "head": "umbrae",
+      "label": "YES"
+    },
+    {
+      "tail": "interopercle",
+      "head": "umbrae",
+      "label": null
+    },
+    {
+      "tail": "umbrae",
+      "head": "submolecule polysomy",
+      "label": null
+    },
+    {
+      "tail": "submolecule polysomy",
+      "head": "unpracticableness unaccustomed",
+      "label": null
+    },
+    {
+      "tail": "unpracticableness unaccustomed",
+      "head": "jestbook",
+      "label": null
+    }
+  ]
+}

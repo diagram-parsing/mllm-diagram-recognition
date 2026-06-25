@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "text": "Pythian",
+      "id": "Pythian",
+      "class": "node",
+      "bbox": [
+        27,
+        57,
+        132,
+        105
+      ]
+    },
+    {
+      "text": "usaron",
+      "id": "usaron",
+      "class": "node",
+      "bbox": [
+        247,
+        121,
+        323,
+        164
+      ]
+    },
+    {
+      "text": "pacifical earthgall",
+      "id": "pacifical earthgall",
+      "class": "node",
+      "bbox": [
+        235,
+        39,
+        335,
+        97
+      ]
+    },
+    {
+      "text": "legion comeling",
+      "id": "legion comeling",
+      "class": "node",
+      "bbox": [
+        429,
+        5,
+        518,
+        56
+      ]
+    },
+    {
+      "text": "interpleural",
+      "id": "interpleural",
+      "class": "node",
+      "bbox": [
+        438,
+        80,
+        515,
+        131
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Pythian",
+      "head": "usaron",
+      "label": "0.979",
+      "class": "unidirectional",
+      "bbox": [
+        124,
+        95,
+        244,
+        134
+      ]
+    },
+    {
+      "tail": "pacifical earthgall",
+      "head": "legion comeling",
+      "label": "-1",
+      "class": "unidirectional",
+      "bbox": [
+        332,
+        38,
+        427,
+        59
+      ]
+    },
+    {
+      "tail": "pacifical earthgall",
+      "head": "interpleural",
+      "label": "-0.68** t = 0.17",
+      "class": "unidirectional",
+      "bbox": [
+        322,
+        88,
+        434,
+        111
+      ]
+    },
+    {
+      "tail": "Pythian",
+      "head": "pacifical earthgall",
+      "label": "-0.39 y = 0.422",
+      "class": "bidirectional",
+      "bbox": [
+        146,
+        68,
+        231,
+        77
+      ]
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "nodes": [
+    {
+      "text": "process ends",
+      "id": "process ends",
+      "bbox": [
+        985,
+        538,
+        1037,
+        595
+      ],
+      "class": "event"
+    },
+    {
+      "text": "attach order note to pinboard",
+      "id": "attach order note to pinboard",
+      "bbox": [
+        737,
+        539,
+        852,
+        621
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order note",
+      "id": "write down order note",
+      "bbox": [
+        297,
+        549,
+        400,
+        629
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "bbox": [
+        581,
+        352,
+        696,
+        440
+      ],
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        287,
+        160,
+        391,
+        226
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        104,
+        363,
+        148,
+        406
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        184,
+        365,
+        223,
+        405
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "received order by Lieferando",
+      "id": "received order by Lieferando",
+      "bbox": [
+        174,
+        184,
+        241,
+        250
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Received order by website",
+      "id": "Received order by website",
+      "bbox": [
+        258,
+        359,
+        328,
+        435
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "received order by phone",
+      "id": "received order by phone",
+      "bbox": [
+        190,
+        552,
+        248,
+        620
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        446,
+        360,
+        487,
+        415
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        609,
+        551,
+        655,
+        603
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Pinboard",
+      "id": "Pinboard",
+      "bbox": [
+        900,
+        584,
+        957,
+        667
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "Order note",
+      "id": "Order note",
+      "bbox": [
+        792,
+        353,
+        848,
+        420
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "attach order note to pinboard",
+      "head": "process ends",
+      "class": "sequenceFlow",
+      "bbox": [
+        852,
+        557,
+        987,
+        586
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach order note to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        652,
+        566,
+        738,
+        595
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        399,
+        566,
+        613,
+        595
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        616,
+        440,
+        645,
+        553
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        392,
+        193,
+        469,
+        363
+      ],
+      "label": null
+    },
+    {
+      "tail": "received order by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        239,
+        191,
+        288,
+        221
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "bbox": [
+        487,
+        374,
+        582,
+        403
+      ],
+      "label": null
+    },
+    {
+      "tail": "Received order by website",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        328,
+        378,
+        448,
+        407
+      ],
+      "label": null
+    },
+    {
+      "tail": "received order by phone",
+      "head": "write down order note",
+      "class": "sequenceFlow",
+      "bbox": [
+        247,
+        576,
+        297,
+        605
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "received order by phone",
+      "class": "sequenceFlow",
+      "bbox": [
+        195,
+        403,
+        224,
+        559
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "Received order by website",
+      "class": "sequenceFlow",
+      "bbox": [
+        223,
+        372,
+        260,
+        402
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "received order by Lieferando",
+      "class": "sequenceFlow",
+      "bbox": [
+        188,
+        250,
+        217,
+        368
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        148,
+        371,
+        185,
+        400
+      ],
+      "label": null
+    },
+    {
+      "tail": "Order note",
+      "head": "attach order note to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        794,
+        420,
+        824,
+        539
+      ],
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "Pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        852,
+        611,
+        901,
+        640
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "Order note",
+      "class": "dataAssociation",
+      "bbox": [
+        399,
+        409,
+        793,
+        569
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "Order note",
+      "class": "dataAssociation",
+      "bbox": [
+        696,
+        380,
+        793,
+        410
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Pizzeria",
+      "nodes": [],
+      "bbox": [
+        46,
+        69,
+        1165,
+        685
+      ],
+      "class": "pool"
+    }
+  ]
+}

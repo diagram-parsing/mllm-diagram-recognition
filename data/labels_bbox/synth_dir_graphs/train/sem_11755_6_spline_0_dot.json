@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "kiefekil",
+      "id": "kiefekil",
+      "class": "node",
+      "bbox": [
+        237,
+        27,
+        315,
+        104
+      ]
+    },
+    {
+      "text": "hypoplasty photoperimeter subd",
+      "id": "hypoplasty photoperimeter subd",
+      "class": "node",
+      "bbox": [
+        193,
+        207,
+        359,
+        267
+      ]
+    },
+    {
+      "text": "unimprovised stenometer unfore",
+      "id": "unimprovised stenometer unfore",
+      "class": "node",
+      "bbox": [
+        383,
+        207,
+        545,
+        267
+      ]
+    },
+    {
+      "text": "analyser",
+      "id": "analyser",
+      "class": "node",
+      "bbox": [
+        30,
+        212,
+        162,
+        262
+      ]
+    },
+    {
+      "text": "satinite isohel",
+      "id": "satinite isohel",
+      "class": "node",
+      "bbox": [
+        26,
+        370,
+        107,
+        431
+      ]
+    },
+    {
+      "text": "reperception",
+      "id": "reperception",
+      "class": "node",
+      "bbox": [
+        131,
+        376,
+        258,
+        424
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "kiefekil",
+      "head": "hypoplasty photoperimeter subd",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        270,
+        105,
+        282,
+        206
+      ]
+    },
+    {
+      "tail": "kiefekil",
+      "head": "unimprovised stenometer unfore",
+      "label": "-0.01",
+      "class": "unidirectional",
+      "bbox": [
+        305,
+        92,
+        431,
+        206
+      ]
+    },
+    {
+      "tail": "analyser",
+      "head": "satinite isohel",
+      "label": "0.9*** a = 0.341",
+      "class": "unidirectional",
+      "bbox": [
+        69,
+        263,
+        92,
+        369
+      ]
+    },
+    {
+      "tail": "analyser",
+      "head": "reperception",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        130,
+        259,
+        195,
+        376
+      ]
+    },
+    {
+      "tail": "kiefekil",
+      "head": "analyser",
+      "label": "-0.69*** x = 0.665",
+      "class": "unidirectional",
+      "bbox": [
+        117,
+        90,
+        245,
+        213
+      ]
+    }
+  ]
+}

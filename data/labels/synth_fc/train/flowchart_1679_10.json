@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "dorser myomalacia",
+      "id": "dorser myomalacia",
+      "class": "circle"
+    },
+    {
+      "text": "intercilium kniaz chasmy",
+      "id": "intercilium kniaz chasmy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "amasesis",
+      "id": "amasesis",
+      "class": "box"
+    },
+    {
+      "text": "panjandrum",
+      "id": "panjandrum",
+      "class": "document"
+    },
+    {
+      "text": "coccygectomy",
+      "id": "coccygectomy",
+      "class": "diamond"
+    },
+    {
+      "text": "heterostracan undwarfed prediv",
+      "id": "heterostracan undwarfed prediv",
+      "class": "box"
+    },
+    {
+      "text": "pleochroic",
+      "id": "pleochroic",
+      "class": "diamond"
+    },
+    {
+      "text": "jackdaw antiwarlike sunsetty",
+      "id": "jackdaw antiwarlike sunsetty",
+      "class": "document"
+    },
+    {
+      "text": "ducamara exegetic",
+      "id": "ducamara exegetic",
+      "class": "diamond"
+    },
+    {
+      "text": "coupee actinodromous",
+      "id": "coupee actinodromous",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "dorser myomalacia",
+      "head": "intercilium kniaz chasmy",
+      "label": null
+    },
+    {
+      "tail": "intercilium kniaz chasmy",
+      "head": "amasesis",
+      "label": null
+    },
+    {
+      "tail": "amasesis",
+      "head": "panjandrum",
+      "label": null
+    },
+    {
+      "tail": "panjandrum",
+      "head": "coccygectomy",
+      "label": null
+    },
+    {
+      "tail": "coccygectomy",
+      "head": "heterostracan undwarfed prediv",
+      "label": "NO"
+    },
+    {
+      "tail": "coccygectomy",
+      "head": "intercilium kniaz chasmy",
+      "label": "NO"
+    },
+    {
+      "tail": "heterostracan undwarfed prediv",
+      "head": "pleochroic",
+      "label": null
+    },
+    {
+      "tail": "pleochroic",
+      "head": "jackdaw antiwarlike sunsetty",
+      "label": "Yes"
+    },
+    {
+      "tail": "pleochroic",
+      "head": "heterostracan undwarfed prediv",
+      "label": "Yes"
+    },
+    {
+      "tail": "jackdaw antiwarlike sunsetty",
+      "head": "ducamara exegetic",
+      "label": null
+    },
+    {
+      "tail": "ducamara exegetic",
+      "head": "coupee actinodromous",
+      "label": "No"
+    },
+    {
+      "tail": "ducamara exegetic",
+      "head": "panjandrum",
+      "label": "No"
+    }
+  ]
+}

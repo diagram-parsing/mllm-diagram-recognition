@@ -1,0 +1,208 @@
+{
+  "nodes": [
+    {
+      "text": "insurance claime",
+      "id": "insurance claime",
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "Oracle CRM",
+      "id": "Oracle CRM",
+      "class": "dataStore"
+    },
+    {
+      "text": "receipt of insurnace claime",
+      "id": "receipt of insurnace claime",
+      "class": "messageEvent"
+    },
+    {
+      "text": "register insurance claim",
+      "id": "register insurance claim",
+      "class": "task"
+    },
+    {
+      "text": "examine insecure claim",
+      "id": "examine insecure claim",
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "check settlement recommendation",
+      "id": "check settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "[claim exepted (this may start the follow up process e.g payout)]",
+      "id": "[claim exepted (this may start the follow up process e.g payout)]",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "insurance claim",
+      "id": "insurance claim",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "receipt of insurnace claime",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "register insurance claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "examine insecure claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register insurance claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine insecure claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check settlement recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "[claim exepted (this may start the follow up process e.g payout)]",
+      "class": "sequenceFlow",
+      "label": "OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": "Not ok"
+    },
+    {
+      "tail": "receipt of insurnace claime",
+      "head": "insurance claime",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "insurance claim",
+      "head": "register insurance claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "receipt of insurnace claime",
+      "class": "messageFlow",
+      "label": "insurance claim"
+    },
+    {
+      "tail": "Oracle CRM",
+      "head": "examine insecure claim",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurance undertakings",
+      "nodes": [
+        "insurer",
+        "claims officer",
+        "senior claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "insurer",
+      "nodes": [
+        "insurance claime",
+        "receipt of insurnace claime"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "Oracle CRM",
+        "register insurance claim",
+        "examine insecure claim",
+        "write settlement recommendation",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "insurance claim"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "settlement recommendation",
+        "check settlement recommendation",
+        "exclusiveGateway_1",
+        "[claim exepted (this may start the follow up process e.g payout)]"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

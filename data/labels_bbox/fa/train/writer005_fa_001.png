@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "text": "q0",
+      "id": "q0",
+      "class": "state",
+      "bbox": [
+        283,
+        297,
+        473,
+        477
+      ]
+    },
+    {
+      "text": null,
+      "id": "state_1",
+      "bbox": [
+        739,
+        727,
+        887,
+        870
+      ],
+      "class": "state"
+    },
+    {
+      "text": "q2",
+      "id": "q2",
+      "class": "final state",
+      "bbox": [
+        1090,
+        293,
+        1314,
+        508
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": null,
+      "head": "q0",
+      "bbox": [
+        6,
+        324,
+        288,
+        413
+      ],
+      "label": null
+    },
+    {
+      "tail": "q0",
+      "head": "q0",
+      "bbox": [
+        315,
+        185,
+        463,
+        329
+      ],
+      "label": "a"
+    },
+    {
+      "tail": "q0",
+      "head": "state_1",
+      "bbox": [
+        423,
+        467,
+        754,
+        780
+      ],
+      "label": "b"
+    },
+    {
+      "tail": "q2",
+      "head": "state_1",
+      "bbox": [
+        787,
+        431,
+        1084,
+        735
+      ],
+      "label": "a"
+    },
+    {
+      "tail": "state_1",
+      "head": "q2",
+      "bbox": [
+        883,
+        450,
+        1198,
+        787
+      ],
+      "label": "a,b"
+    },
+    {
+      "tail": "q2",
+      "head": "q2",
+      "bbox": [
+        1163,
+        158,
+        1325,
+        358
+      ],
+      "label": "b"
+    }
+  ]
+}

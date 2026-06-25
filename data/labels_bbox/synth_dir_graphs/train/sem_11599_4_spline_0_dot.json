@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "otocephaly pickeer",
+      "id": "otocephaly pickeer",
+      "class": "node",
+      "bbox": [
+        91,
+        165,
+        175,
+        213
+      ]
+    },
+    {
+      "text": "lamellirostrate uniparous",
+      "id": "lamellirostrate uniparous",
+      "class": "node",
+      "bbox": [
+        5,
+        304,
+        136,
+        355
+      ]
+    },
+    {
+      "text": "cacophony",
+      "id": "cacophony",
+      "class": "node",
+      "bbox": [
+        160,
+        304,
+        231,
+        355
+      ]
+    },
+    {
+      "text": "shiplessly",
+      "id": "shiplessly",
+      "class": "node",
+      "bbox": [
+        77,
+        27,
+        190,
+        75
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "otocephaly pickeer",
+      "head": "lamellirostrate uniparous",
+      "label": "-0.64 x = 0.118",
+      "class": "unidirectional",
+      "bbox": [
+        82,
+        214,
+        123,
+        302
+      ]
+    },
+    {
+      "tail": "otocephaly pickeer",
+      "head": "cacophony",
+      "label": "-0.62 t = 0.307",
+      "class": "unidirectional",
+      "bbox": [
+        152,
+        214,
+        191,
+        302
+      ]
+    },
+    {
+      "tail": "shiplessly",
+      "head": "otocephaly pickeer",
+      "label": "-0.42 H = 0.844",
+      "class": "unidirectional",
+      "bbox": [
+        129,
+        75,
+        138,
+        163
+      ]
+    }
+  ]
+}

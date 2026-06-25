@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "connection_1",
+      "bbox": [
+        4,
+        37,
+        49,
+        53
+      ],
+      "class": "connection"
+    },
+    {
+      "text": "Read n",
+      "id": "Read n",
+      "bbox": [
+        122,
+        4,
+        373,
+        134
+      ],
+      "class": "data"
+    },
+    {
+      "text": "n=n*n",
+      "id": "n=n*n",
+      "bbox": [
+        545,
+        13,
+        293,
+        138
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Print n",
+      "id": "Print n",
+      "bbox": [
+        912,
+        13,
+        347,
+        138
+      ],
+      "class": "data"
+    },
+    {
+      "text": null,
+      "id": "connection_2",
+      "bbox": [
+        1271,
+        58,
+        59,
+        76
+      ],
+      "class": "connection"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "connection_1",
+      "head": "Read n",
+      "bbox": [
+        55,
+        40,
+        128,
+        37
+      ],
+      "kps": [
+        57.0,
+        59.0,
+        2.0,
+        174.0,
+        58.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Read n",
+      "head": "n=n*n",
+      "bbox": [
+        434,
+        62,
+        121,
+        26
+      ],
+      "kps": [
+        436.0,
+        77.0,
+        2.0,
+        552.0,
+        75.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "n=n*n",
+      "head": "Print n",
+      "bbox": [
+        808,
+        70,
+        151,
+        31
+      ],
+      "kps": [
+        811.0,
+        88.0,
+        2.0,
+        951.0,
+        83.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Print n",
+      "head": "connection_2",
+      "bbox": [
+        1193,
+        81,
+        80,
+        31
+      ],
+      "kps": [
+        1198.0,
+        93.0,
+        2.0,
+        1265.0,
+        95.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

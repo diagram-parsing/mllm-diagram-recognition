@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "text": "dorser myomalacia",
+      "id": "dorser myomalacia",
+      "class": "circle",
+      "bbox": [
+        36,
+        5,
+        139,
+        109
+      ]
+    },
+    {
+      "text": "intercilium kniaz chasmy",
+      "id": "intercilium kniaz chasmy",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        127,
+        170,
+        200
+      ]
+    },
+    {
+      "text": "amasesis",
+      "id": "amasesis",
+      "class": "box",
+      "bbox": [
+        52,
+        246,
+        124,
+        294
+      ]
+    },
+    {
+      "text": "panjandrum",
+      "id": "panjandrum",
+      "class": "document",
+      "bbox": [
+        44,
+        350,
+        131,
+        402
+      ]
+    },
+    {
+      "text": "coccygectomy",
+      "id": "coccygectomy",
+      "class": "diamond",
+      "bbox": [
+        29,
+        446,
+        146,
+        519
+      ]
+    },
+    {
+      "text": "heterostracan undwarfed prediv",
+      "id": "heterostracan undwarfed prediv",
+      "class": "box",
+      "bbox": [
+        253,
+        113,
+        347,
+        161
+      ]
+    },
+    {
+      "text": "pleochroic",
+      "id": "pleochroic",
+      "class": "diamond",
+      "bbox": [
+        249,
+        233,
+        351,
+        306
+      ]
+    },
+    {
+      "text": "jackdaw antiwarlike sunsetty",
+      "id": "jackdaw antiwarlike sunsetty",
+      "class": "document",
+      "bbox": [
+        252,
+        350,
+        348,
+        402
+      ]
+    },
+    {
+      "text": "ducamara exegetic",
+      "id": "ducamara exegetic",
+      "class": "diamond",
+      "bbox": [
+        237,
+        446,
+        358,
+        519
+      ]
+    },
+    {
+      "text": "coupee actinodromous",
+      "id": "coupee actinodromous",
+      "class": "circle",
+      "bbox": [
+        241,
+        530,
+        358,
+        642
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "dorser myomalacia",
+      "head": "intercilium kniaz chasmy",
+      "label": null,
+      "bbox": [
+        83,
+        110,
+        92,
+        125
+      ]
+    },
+    {
+      "tail": "intercilium kniaz chasmy",
+      "head": "amasesis",
+      "label": null,
+      "bbox": [
+        83,
+        201,
+        92,
+        244
+      ]
+    },
+    {
+      "tail": "amasesis",
+      "head": "panjandrum",
+      "label": null,
+      "bbox": [
+        83,
+        294,
+        92,
+        349
+      ]
+    },
+    {
+      "tail": "panjandrum",
+      "head": "coccygectomy",
+      "label": null,
+      "bbox": [
+        83,
+        402,
+        92,
+        444
+      ]
+    },
+    {
+      "tail": "coccygectomy",
+      "head": "heterostracan undwarfed prediv",
+      "label": "NO",
+      "bbox": [
+        145,
+        140,
+        252,
+        483
+      ]
+    },
+    {
+      "tail": "coccygectomy",
+      "head": "intercilium kniaz chasmy",
+      "label": "NO",
+      "bbox": [
+        134,
+        198,
+        143,
+        477
+      ]
+    },
+    {
+      "tail": "heterostracan undwarfed prediv",
+      "head": "pleochroic",
+      "label": null,
+      "bbox": [
+        311,
+        161,
+        321,
+        242
+      ]
+    },
+    {
+      "tail": "pleochroic",
+      "head": "jackdaw antiwarlike sunsetty",
+      "label": "Yes",
+      "bbox": [
+        295,
+        307,
+        305,
+        349
+      ]
+    },
+    {
+      "tail": "pleochroic",
+      "head": "heterostracan undwarfed prediv",
+      "label": "Yes",
+      "bbox": [
+        280,
+        163,
+        289,
+        243
+      ]
+    },
+    {
+      "tail": "jackdaw antiwarlike sunsetty",
+      "head": "ducamara exegetic",
+      "label": null,
+      "bbox": [
+        295,
+        402,
+        305,
+        444
+      ]
+    },
+    {
+      "tail": "ducamara exegetic",
+      "head": "coupee actinodromous",
+      "label": "No",
+      "bbox": [
+        295,
+        514,
+        305,
+        528
+      ]
+    },
+    {
+      "tail": "ducamara exegetic",
+      "head": "panjandrum",
+      "label": "No",
+      "bbox": [
+        132,
+        372,
+        243,
+        478
+      ]
+    }
+  ]
+}

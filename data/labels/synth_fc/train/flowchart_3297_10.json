@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "periclasia",
+      "id": "periclasia",
+      "class": "circle"
+    },
+    {
+      "text": "platinization incogitable",
+      "id": "platinization incogitable",
+      "class": "box"
+    },
+    {
+      "text": "naviculoid",
+      "id": "naviculoid",
+      "class": "parallelogram"
+    },
+    {
+      "text": "asininely",
+      "id": "asininely",
+      "class": "diamond"
+    },
+    {
+      "text": "attercrop",
+      "id": "attercrop",
+      "class": "hexagon"
+    },
+    {
+      "text": "sousaphone organopathy",
+      "id": "sousaphone organopathy",
+      "class": "diamond"
+    },
+    {
+      "text": "Correa",
+      "id": "Correa",
+      "class": "diamond"
+    },
+    {
+      "text": "unepilogued",
+      "id": "unepilogued",
+      "class": "box"
+    },
+    {
+      "text": "maraschino",
+      "id": "maraschino",
+      "class": "document"
+    },
+    {
+      "text": "counterapse",
+      "id": "counterapse",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "periclasia",
+      "head": "platinization incogitable",
+      "label": null
+    },
+    {
+      "tail": "platinization incogitable",
+      "head": "naviculoid",
+      "label": null
+    },
+    {
+      "tail": "naviculoid",
+      "head": "asininely",
+      "label": null
+    },
+    {
+      "tail": "asininely",
+      "head": "attercrop",
+      "label": "no"
+    },
+    {
+      "tail": "asininely",
+      "head": "sousaphone organopathy",
+      "label": "no"
+    },
+    {
+      "tail": "attercrop",
+      "head": "Correa",
+      "label": null
+    },
+    {
+      "tail": "Correa",
+      "head": "sousaphone organopathy",
+      "label": "YES"
+    },
+    {
+      "tail": "Correa",
+      "head": "unepilogued",
+      "label": "YES"
+    },
+    {
+      "tail": "sousaphone organopathy",
+      "head": "unepilogued",
+      "label": "No"
+    },
+    {
+      "tail": "sousaphone organopathy",
+      "head": "attercrop",
+      "label": "No"
+    },
+    {
+      "tail": "unepilogued",
+      "head": "maraschino",
+      "label": null
+    },
+    {
+      "tail": "maraschino",
+      "head": "counterapse",
+      "label": null
+    }
+  ]
+}

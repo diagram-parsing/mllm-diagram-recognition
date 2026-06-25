@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "text": "atavus seaward",
+      "id": "atavus seaward",
+      "class": "ellipse"
+    },
+    {
+      "text": "parasitoid",
+      "id": "parasitoid",
+      "class": "hexagon"
+    },
+    {
+      "text": "antiparliamental",
+      "id": "antiparliamental",
+      "class": "diamond"
+    },
+    {
+      "text": "screenman",
+      "id": "screenman",
+      "class": "box"
+    },
+    {
+      "text": "homoanisic ked",
+      "id": "homoanisic ked",
+      "class": "diamond"
+    },
+    {
+      "text": "Tionontates omnivoracity",
+      "id": "Tionontates omnivoracity",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Chayota Martha cathin",
+      "id": "Chayota Martha cathin",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Tepehuane gangliocyte",
+      "id": "Tepehuane gangliocyte",
+      "class": "document"
+    },
+    {
+      "text": "Perugian",
+      "id": "Perugian",
+      "class": "hexagon"
+    },
+    {
+      "text": "isokurtic",
+      "id": "isokurtic",
+      "class": "hexagon"
+    },
+    {
+      "text": "chromocollotype",
+      "id": "chromocollotype",
+      "class": "hexagon"
+    },
+    {
+      "text": "unannexedness",
+      "id": "unannexedness",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "atavus seaward",
+      "head": "parasitoid",
+      "label": null
+    },
+    {
+      "tail": "parasitoid",
+      "head": "antiparliamental",
+      "label": null
+    },
+    {
+      "tail": "antiparliamental",
+      "head": "screenman",
+      "label": "YES"
+    },
+    {
+      "tail": "antiparliamental",
+      "head": "atavus seaward",
+      "label": "YES"
+    },
+    {
+      "tail": "screenman",
+      "head": "homoanisic ked",
+      "label": null
+    },
+    {
+      "tail": "homoanisic ked",
+      "head": "Tionontates omnivoracity",
+      "label": "Yes"
+    },
+    {
+      "tail": "homoanisic ked",
+      "head": "parasitoid",
+      "label": "Yes"
+    },
+    {
+      "tail": "Tionontates omnivoracity",
+      "head": "Chayota Martha cathin",
+      "label": null
+    },
+    {
+      "tail": "Chayota Martha cathin",
+      "head": "Tepehuane gangliocyte",
+      "label": null
+    },
+    {
+      "tail": "Tepehuane gangliocyte",
+      "head": "Perugian",
+      "label": null
+    },
+    {
+      "tail": "Perugian",
+      "head": "isokurtic",
+      "label": null
+    },
+    {
+      "tail": "isokurtic",
+      "head": "chromocollotype",
+      "label": null
+    },
+    {
+      "tail": "chromocollotype",
+      "head": "unannexedness",
+      "label": null
+    }
+  ]
+}

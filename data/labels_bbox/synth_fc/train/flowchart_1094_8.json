@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "nonguttural",
+      "id": "nonguttural",
+      "class": "oval",
+      "bbox": [
+        21,
+        5,
+        96,
+        57
+      ]
+    },
+    {
+      "text": "tophaceous",
+      "id": "tophaceous",
+      "class": "box",
+      "bbox": [
+        17,
+        137,
+        100,
+        185
+      ]
+    },
+    {
+      "text": "picrotoxinin",
+      "id": "picrotoxinin",
+      "class": "diamond",
+      "bbox": [
+        5,
+        221,
+        112,
+        294
+      ]
+    },
+    {
+      "text": "nonfluid",
+      "id": "nonfluid",
+      "class": "document",
+      "bbox": [
+        15,
+        390,
+        102,
+        449
+      ]
+    },
+    {
+      "text": "channel Clarinda",
+      "id": "channel Clarinda",
+      "class": "document",
+      "bbox": [
+        274,
+        131,
+        361,
+        190
+      ]
+    },
+    {
+      "text": "as",
+      "id": "as",
+      "class": "document",
+      "bbox": [
+        15,
+        552,
+        102,
+        605
+      ]
+    },
+    {
+      "text": "scatologia polychromatize woma",
+      "id": "scatologia polychromatize woma",
+      "class": "diamond",
+      "bbox": [
+        219,
+        253,
+        411,
+        327
+      ]
+    },
+    {
+      "text": "Pantotheria sip",
+      "id": "Pantotheria sip",
+      "class": "circle",
+      "bbox": [
+        268,
+        337,
+        367,
+        437
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "nonguttural",
+      "head": "tophaceous",
+      "label": null,
+      "bbox": [
+        54,
+        57,
+        63,
+        135
+      ]
+    },
+    {
+      "tail": "tophaceous",
+      "head": "picrotoxinin",
+      "label": null,
+      "bbox": [
+        54,
+        185,
+        63,
+        219
+      ]
+    },
+    {
+      "tail": "picrotoxinin",
+      "head": "nonfluid",
+      "label": "no",
+      "bbox": [
+        54,
+        295,
+        63,
+        389
+      ]
+    },
+    {
+      "tail": "picrotoxinin",
+      "head": "channel Clarinda",
+      "label": "no",
+      "bbox": [
+        106,
+        149,
+        273,
+        253
+      ]
+    },
+    {
+      "tail": "nonfluid",
+      "head": "as",
+      "label": null,
+      "bbox": [
+        54,
+        449,
+        63,
+        551
+      ]
+    },
+    {
+      "tail": "as",
+      "head": "channel Clarinda",
+      "label": null,
+      "bbox": [
+        102,
+        165,
+        273,
+        583
+      ]
+    },
+    {
+      "tail": "channel Clarinda",
+      "head": "scatologia polychromatize woma",
+      "label": null,
+      "bbox": [
+        298,
+        189,
+        308,
+        257
+      ]
+    },
+    {
+      "tail": "scatologia polychromatize woma",
+      "head": "Pantotheria sip",
+      "label": "yes",
+      "bbox": [
+        313,
+        322,
+        322,
+        336
+      ]
+    },
+    {
+      "tail": "scatologia polychromatize woma",
+      "head": "channel Clarinda",
+      "label": "yes",
+      "bbox": [
+        327,
+        191,
+        337,
+        259
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "text": "girl",
+      "id": "girl",
+      "class": "oval"
+    },
+    {
+      "text": "Sonneratia disproportional",
+      "id": "Sonneratia disproportional",
+      "class": "hexagon"
+    },
+    {
+      "text": "vary",
+      "id": "vary",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Panayano",
+      "id": "Panayano",
+      "class": "hexagon"
+    },
+    {
+      "text": "ruffiano",
+      "id": "ruffiano",
+      "class": "parallelogram"
+    },
+    {
+      "text": "satinite isohel",
+      "id": "satinite isohel",
+      "class": "hexagon"
+    },
+    {
+      "text": "Mitella",
+      "id": "Mitella",
+      "class": "diamond"
+    },
+    {
+      "text": "Butler dumbfounder",
+      "id": "Butler dumbfounder",
+      "class": "hexagon"
+    },
+    {
+      "text": "semipellucidity",
+      "id": "semipellucidity",
+      "class": "parallelogram"
+    },
+    {
+      "text": "mucose",
+      "id": "mucose",
+      "class": "diamond"
+    },
+    {
+      "text": "broadloom micrologist",
+      "id": "broadloom micrologist",
+      "class": "diamond"
+    },
+    {
+      "text": "nondeferential",
+      "id": "nondeferential",
+      "class": "document"
+    },
+    {
+      "text": "postdigestive",
+      "id": "postdigestive",
+      "class": "document"
+    },
+    {
+      "text": "nonincrusting allowably perito",
+      "id": "nonincrusting allowably perito",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "girl",
+      "head": "Sonneratia disproportional",
+      "label": null
+    },
+    {
+      "tail": "Sonneratia disproportional",
+      "head": "vary",
+      "label": null
+    },
+    {
+      "tail": "vary",
+      "head": "Panayano",
+      "label": null
+    },
+    {
+      "tail": "Panayano",
+      "head": "ruffiano",
+      "label": null
+    },
+    {
+      "tail": "ruffiano",
+      "head": "satinite isohel",
+      "label": null
+    },
+    {
+      "tail": "satinite isohel",
+      "head": "Mitella",
+      "label": null
+    },
+    {
+      "tail": "Mitella",
+      "head": "Butler dumbfounder",
+      "label": "YES"
+    },
+    {
+      "tail": "Mitella",
+      "head": "semipellucidity",
+      "label": "YES"
+    },
+    {
+      "tail": "Butler dumbfounder",
+      "head": "mucose",
+      "label": null
+    },
+    {
+      "tail": "mucose",
+      "head": "broadloom micrologist",
+      "label": "yes"
+    },
+    {
+      "tail": "mucose",
+      "head": "nondeferential",
+      "label": "yes"
+    },
+    {
+      "tail": "broadloom micrologist",
+      "head": "semipellucidity",
+      "label": "NO"
+    },
+    {
+      "tail": "broadloom micrologist",
+      "head": "postdigestive",
+      "label": "NO"
+    },
+    {
+      "tail": "semipellucidity",
+      "head": "postdigestive",
+      "label": null
+    },
+    {
+      "tail": "postdigestive",
+      "head": "nondeferential",
+      "label": null
+    },
+    {
+      "tail": "nondeferential",
+      "head": "nonincrusting allowably perito",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "nodes": [
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        2125,
+        1062,
+        2338,
+        1240
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        849,
+        1280,
+        942,
+        1402
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1384,
+        1084,
+        1483,
+        1224
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "File the Results",
+      "id": "File the Results",
+      "bbox": [
+        1700,
+        1063,
+        1984,
+        1206
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Write \"ask\" for expertise",
+      "id": "Write \"ask\" for expertise",
+      "bbox": [
+        637,
+        2090,
+        1062,
+        2373
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Send ask for Epertise",
+      "id": "Send ask for Epertise",
+      "bbox": [
+        715,
+        2480,
+        885,
+        2650
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "received expertise",
+      "id": "received expertise",
+      "bbox": [
+        1467,
+        2470,
+        1587,
+        2579
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Send expertise",
+      "id": "Send expertise",
+      "bbox": [
+        1636,
+        2281,
+        1745,
+        2367
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "QA process finished",
+      "id": "QA process finished",
+      "bbox": [
+        2144,
+        1400,
+        2234,
+        1488
+      ],
+      "class": "event"
+    },
+    {
+      "text": "send the queue",
+      "id": "send the queue",
+      "bbox": [
+        2114,
+        2407,
+        2243,
+        2536
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "interviewing patients",
+      "id": "interviewing patients",
+      "bbox": [
+        851,
+        1027,
+        1116,
+        1204
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "Doctor rating started",
+      "id": "Doctor rating started",
+      "bbox": [
+        680,
+        1300,
+        737,
+        1354
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Received Expertise",
+      "id": "Received Expertise",
+      "bbox": [
+        1402,
+        1300,
+        1529,
+        1427
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "filling the cheque",
+      "id": "filling the cheque",
+      "bbox": [
+        2030,
+        2124,
+        2278,
+        2336
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Received Expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1401,
+        1221,
+        1471,
+        1312
+      ],
+      "label": null
+    },
+    {
+      "tail": "filling the cheque",
+      "head": "send the queue",
+      "class": "sequenceFlow",
+      "bbox": [
+        2132,
+        2335,
+        2202,
+        2410
+      ],
+      "label": null
+    },
+    {
+      "tail": "Send expertise",
+      "head": "Received Expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1429,
+        1415,
+        1702,
+        2272
+      ],
+      "label": "Expertise"
+    },
+    {
+      "tail": "received expertise",
+      "head": "Send expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1524,
+        2317,
+        1639,
+        2468
+      ],
+      "label": null
+    },
+    {
+      "tail": "Write \"ask\" for expertise",
+      "head": "Send ask for Epertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        773,
+        2374,
+        843,
+        2482
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Write \"ask\" for expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        839,
+        1400,
+        909,
+        2092
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "filling the cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        1474,
+        1167,
+        2069,
+        2126
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "QA process finished",
+      "class": "sequenceFlow",
+      "bbox": [
+        2159,
+        1240,
+        2229,
+        1402
+      ],
+      "label": null
+    },
+    {
+      "tail": "File the Results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1984,
+        1117,
+        2126,
+        1188
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "File the Results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1481,
+        1118,
+        1702,
+        1188
+      ],
+      "label": null
+    },
+    {
+      "tail": "interviewing patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1116,
+        1118,
+        1388,
+        1188
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interviewing patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        861,
+        1203,
+        931,
+        1285
+      ],
+      "label": null
+    },
+    {
+      "tail": "Doctor rating started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        734,
+        1300,
+        856,
+        1370
+      ],
+      "label": null
+    },
+    {
+      "tail": "Send ask for Epertise",
+      "head": "Expert",
+      "class": "messageFlow",
+      "bbox": [
+        725,
+        2640,
+        795,
+        3219
+      ],
+      "label": "\"ask\" for\nExpertise"
+    },
+    {
+      "tail": "Expert",
+      "head": "received expertise",
+      "class": "messageFlow",
+      "bbox": [
+        933,
+        2583,
+        1526,
+        3248
+      ],
+      "label": null
+    },
+    {
+      "tail": "send the queue",
+      "head": "Expert",
+      "class": "messageFlow",
+      "bbox": [
+        933,
+        2536,
+        2173,
+        3320
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Managing director",
+        "Quality Assurance"
+      ],
+      "bbox": [
+        106,
+        953,
+        2409,
+        3117
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing director",
+      "nodes": [
+        "Write \"ask\" for expertise",
+        "Send ask for Epertise",
+        "received expertise",
+        "Send expertise",
+        "send the queue",
+        "filling the cheque"
+      ],
+      "bbox": [
+        212,
+        1877,
+        2409,
+        3117
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality Assurance",
+      "nodes": [
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "File the Results",
+        "QA process finished",
+        "interviewing patients",
+        "Doctor rating started",
+        "Received Expertise"
+      ],
+      "bbox": [
+        212,
+        953,
+        2409,
+        1877
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "bbox": [
+        595,
+        3217,
+        933,
+        3352
+      ],
+      "class": "pool"
+    }
+  ]
+}

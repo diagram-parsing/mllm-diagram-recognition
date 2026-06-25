@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "tangling",
+      "id": "tangling",
+      "class": "circle"
+    },
+    {
+      "text": "tarrying",
+      "id": "tarrying",
+      "class": "box"
+    },
+    {
+      "text": "Gregor subfacies",
+      "id": "Gregor subfacies",
+      "class": "hexagon"
+    },
+    {
+      "text": "vade rift",
+      "id": "vade rift",
+      "class": "diamond"
+    },
+    {
+      "text": "Clerus",
+      "id": "Clerus",
+      "class": "diamond"
+    },
+    {
+      "text": "chemicovital",
+      "id": "chemicovital",
+      "class": "parallelogram"
+    },
+    {
+      "text": "counterchange",
+      "id": "counterchange",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tangling",
+      "head": "tarrying",
+      "label": null
+    },
+    {
+      "tail": "tarrying",
+      "head": "Gregor subfacies",
+      "label": null
+    },
+    {
+      "tail": "Gregor subfacies",
+      "head": "vade rift",
+      "label": null
+    },
+    {
+      "tail": "vade rift",
+      "head": "Clerus",
+      "label": "NO"
+    },
+    {
+      "tail": "vade rift",
+      "head": "tarrying",
+      "label": "NO"
+    },
+    {
+      "tail": "Clerus",
+      "head": "chemicovital",
+      "label": "no"
+    },
+    {
+      "tail": "Clerus",
+      "head": "vade rift",
+      "label": "no"
+    },
+    {
+      "tail": "chemicovital",
+      "head": "counterchange",
+      "label": null
+    }
+  ]
+}

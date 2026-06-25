@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "text": "receive online application",
+      "id": "receive online application",
+      "bbox": [
+        207,
+        400,
+        234,
+        433
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "bbox": [
+        343,
+        363,
+        535,
+        481
+      ],
+      "class": "task"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "bbox": [
+        642,
+        253,
+        794,
+        332
+      ],
+      "class": "task"
+    },
+    {
+      "text": "opening bank account rejected",
+      "id": "opening bank account rejected",
+      "bbox": [
+        1170,
+        247,
+        1211,
+        296
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create new bank account",
+      "id": "create new bank account",
+      "bbox": [
+        662,
+        469,
+        857,
+        597
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack",
+      "id": "send welcome pack",
+      "bbox": [
+        911,
+        481,
+        1135,
+        603
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        1177,
+        480,
+        1353,
+        601
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send PIN number",
+      "id": "send PIN number",
+      "bbox": [
+        1406,
+        487,
+        1553,
+        597
+      ],
+      "class": "task"
+    },
+    {
+      "text": "bank account opened",
+      "id": "bank account opened",
+      "bbox": [
+        1447,
+        635,
+        1494,
+        672
+      ],
+      "class": "event"
+    },
+    {
+      "text": "send rejection email",
+      "id": "send rejection email",
+      "bbox": [
+        857,
+        211,
+        1114,
+        332
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        561,
+        395,
+        608,
+        451
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        532,
+        406,
+        565,
+        439
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive online application",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "bbox": [
+        234,
+        401,
+        344,
+        434
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new bank account",
+      "head": "send welcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        857,
+        509,
+        912,
+        542
+      ],
+      "label": null
+    },
+    {
+      "tail": "send welcome pack",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        1135,
+        524,
+        1178,
+        557
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "send PIN number",
+      "class": "sequenceFlow",
+      "bbox": [
+        1353,
+        541,
+        1408,
+        574
+      ],
+      "label": null
+    },
+    {
+      "tail": "send PIN number",
+      "head": "bank account opened",
+      "class": "sequenceFlow",
+      "bbox": [
+        1456,
+        597,
+        1489,
+        632
+      ],
+      "label": null
+    },
+    {
+      "tail": "send rejection email",
+      "head": "opening bank account rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        1114,
+        263,
+        1174,
+        296
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customer",
+      "head": "send rejection email",
+      "class": "sequenceFlow",
+      "bbox": [
+        794,
+        273,
+        859,
+        306
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        579,
+        304,
+        643,
+        403
+      ],
+      "label": "reject"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create new bank account",
+      "class": "sequenceFlow",
+      "bbox": [
+        579,
+        444,
+        664,
+        506
+      ],
+      "label": "approve"
+    }
+  ],
+  "groups": []
+}

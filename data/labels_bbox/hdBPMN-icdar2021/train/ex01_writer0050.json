@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "asses risk",
+      "id": "asses risk",
+      "bbox": [
+        513,
+        1168,
+        801,
+        1406
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        918,
+        1219,
+        1045,
+        1342
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "organize disbursement",
+      "id": "organize disbursement",
+      "bbox": [
+        1932,
+        851,
+        2410,
+        1089
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1742,
+        1213,
+        1875,
+        1349
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2641,
+        1203,
+        2758,
+        1336
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "new credit requested",
+      "id": "new credit requested",
+      "bbox": [
+        152,
+        1225,
+        266,
+        1339
+      ],
+      "class": "event"
+    },
+    {
+      "text": "asses simple risk",
+      "id": "asses simple risk",
+      "bbox": [
+        1092,
+        798,
+        1396,
+        1035
+      ],
+      "class": "task"
+    },
+    {
+      "text": "asses advanced risk",
+      "id": "asses advanced risk",
+      "bbox": [
+        1105,
+        1564,
+        1453,
+        1821
+      ],
+      "class": "task"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "bbox": [
+        1935,
+        1561,
+        2299,
+        1802
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "new credit requested",
+      "head": "asses risk",
+      "class": "sequenceFlow",
+      "bbox": [
+        266,
+        1252,
+        516,
+        1322
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customer",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2299,
+        1263,
+        2651,
+        1675
+      ],
+      "label": null
+    },
+    {
+      "tail": "organize disbursement",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2410,
+        972,
+        2651,
+        1266
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1814,
+        1342,
+        1938,
+        1675
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "organize disbursement",
+      "class": "sequenceFlow",
+      "bbox": [
+        1814,
+        915,
+        1935,
+        1222
+      ],
+      "label": null
+    },
+    {
+      "tail": "asses advanced risk",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1453,
+        1282,
+        1745,
+        1697
+      ],
+      "label": null
+    },
+    {
+      "tail": "asses simple risk",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1396,
+        915,
+        1745,
+        1285
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "asses simple risk",
+      "class": "sequenceFlow",
+      "bbox": [
+        991,
+        861,
+        1095,
+        1232
+      ],
+      "label": "risk under threshold"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "asses advanced risk",
+      "class": "sequenceFlow",
+      "bbox": [
+        991,
+        1333,
+        1108,
+        1703
+      ],
+      "label": "risk above threshold"
+    },
+    {
+      "tail": "asses risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        801,
+        1252,
+        924,
+        1322
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

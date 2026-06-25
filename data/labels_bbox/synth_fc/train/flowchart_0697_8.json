@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "text": "overlength",
+      "id": "overlength",
+      "class": "ellipse",
+      "bbox": [
+        64,
+        5,
+        136,
+        57
+      ]
+    },
+    {
+      "text": "madrigal Saltigradae irresolut",
+      "id": "madrigal Saltigradae irresolut",
+      "class": "diamond",
+      "bbox": [
+        5,
+        68,
+        194,
+        141
+      ]
+    },
+    {
+      "text": "thyrsus",
+      "id": "thyrsus",
+      "class": "diamond",
+      "bbox": [
+        40,
+        264,
+        159,
+        312
+      ]
+    },
+    {
+      "text": "menologium",
+      "id": "menologium",
+      "class": "hexagon",
+      "bbox": [
+        55,
+        404,
+        144,
+        464
+      ]
+    },
+    {
+      "text": "microsporiasis",
+      "id": "microsporiasis",
+      "class": "diamond",
+      "bbox": [
+        330,
+        105,
+        450,
+        178
+      ]
+    },
+    {
+      "text": "fluoborate",
+      "id": "fluoborate",
+      "class": "document",
+      "bbox": [
+        342,
+        256,
+        443,
+        319
+      ]
+    },
+    {
+      "text": "gamene Sphaeropsidaceae",
+      "id": "gamene Sphaeropsidaceae",
+      "class": "document",
+      "bbox": [
+        342,
+        403,
+        443,
+        466
+      ]
+    },
+    {
+      "text": "Litopterna rubrisher",
+      "id": "Litopterna rubrisher",
+      "class": "circle",
+      "bbox": [
+        346,
+        534,
+        440,
+        622
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "overlength",
+      "head": "madrigal Saltigradae irresolut",
+      "label": null,
+      "bbox": [
+        95,
+        53,
+        104,
+        66
+      ]
+    },
+    {
+      "tail": "madrigal Saltigradae irresolut",
+      "head": "thyrsus",
+      "label": "yes",
+      "bbox": [
+        95,
+        142,
+        104,
+        262
+      ]
+    },
+    {
+      "tail": "madrigal Saltigradae irresolut",
+      "head": "menologium",
+      "label": "yes",
+      "bbox": [
+        135,
+        112,
+        177,
+        424
+      ]
+    },
+    {
+      "tail": "thyrsus",
+      "head": "menologium",
+      "label": "Yes",
+      "bbox": [
+        95,
+        312,
+        104,
+        403
+      ]
+    },
+    {
+      "tail": "thyrsus",
+      "head": "microsporiasis",
+      "label": "Yes",
+      "bbox": [
+        157,
+        145,
+        338,
+        289
+      ]
+    },
+    {
+      "tail": "menologium",
+      "head": "microsporiasis",
+      "label": null,
+      "bbox": [
+        145,
+        147,
+        341,
+        434
+      ]
+    },
+    {
+      "tail": "microsporiasis",
+      "head": "fluoborate",
+      "label": "YES",
+      "bbox": [
+        388,
+        179,
+        397,
+        256
+      ]
+    },
+    {
+      "tail": "microsporiasis",
+      "head": "menologium",
+      "label": "YES",
+      "bbox": [
+        134,
+        147,
+        339,
+        455
+      ]
+    },
+    {
+      "tail": "fluoborate",
+      "head": "gamene Sphaeropsidaceae",
+      "label": null,
+      "bbox": [
+        388,
+        319,
+        397,
+        402
+      ]
+    },
+    {
+      "tail": "gamene Sphaeropsidaceae",
+      "head": "Litopterna rubrisher",
+      "label": null,
+      "bbox": [
+        388,
+        465,
+        397,
+        532
+      ]
+    }
+  ]
+}

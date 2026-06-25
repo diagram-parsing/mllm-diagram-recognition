@@ -1,0 +1,284 @@
+{
+  "nodes": [
+    {
+      "text": "claim submitted",
+      "id": "claim submitted",
+      "class": "messageEvent"
+    },
+    {
+      "text": "check completness",
+      "id": "check completness",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "contact garage",
+      "id": "contact garage",
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_4",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "send letter about outcome",
+      "id": "send letter about outcome",
+      "class": "task"
+    },
+    {
+      "text": "positive",
+      "id": "positive",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "letter send",
+      "id": "letter send",
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim register",
+      "id": "claim register",
+      "class": "dataStore"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "letter",
+      "id": "letter",
+      "class": "dataObject"
+    },
+    {
+      "text": "letter send",
+      "id": "letter send",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": "negative"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "positive",
+      "head": "letter send",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send letter about outcome",
+      "head": "positive",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_4",
+      "head": "send letter about outcome",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "exclusiveGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "contact garage",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "contact garage",
+      "class": "sequenceFlow",
+      "label": "positive"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": "complete"
+    },
+    {
+      "tail": "check completness",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim submitted",
+      "head": "check completness",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "positive",
+      "head": "letter send",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "check completness",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim register",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "perform assessment",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "send letter about outcome",
+      "head": "letter",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "contact garage",
+      "head": "Garage",
+      "class": "messageFlow",
+      "label": "phone garage"
+    },
+    {
+      "tail": "Customer",
+      "head": "claim submitted",
+      "class": "messageFlow",
+      "label": "Claim"
+    },
+    {
+      "tail": "letter send",
+      "head": "Customer",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "letter send",
+      "head": "Customer",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Car insurer",
+      "nodes": [
+        "handling department",
+        "notification department"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling department",
+      "nodes": [
+        "perform assessment",
+        "exclusiveGateway_2",
+        "contact garage",
+        "schedule payment",
+        "exclusiveGateway_3",
+        "exclusiveGateway_4",
+        "send letter about outcome",
+        "positive",
+        "letter send",
+        "letter",
+        "letter send"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "claim submitted",
+        "check completness",
+        "exclusiveGateway_1",
+        "register claim",
+        "claim register",
+        "claim"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Garage",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

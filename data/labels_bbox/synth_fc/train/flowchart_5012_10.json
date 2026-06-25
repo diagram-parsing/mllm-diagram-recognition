@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "text": "honestly",
+      "id": "honestly",
+      "class": "circle",
+      "bbox": [
+        23,
+        5,
+        104,
+        86
+      ]
+    },
+    {
+      "text": "ooecium",
+      "id": "ooecium",
+      "class": "box",
+      "bbox": [
+        26,
+        97,
+        101,
+        145
+      ]
+    },
+    {
+      "text": "furunculous",
+      "id": "furunculous",
+      "class": "box",
+      "bbox": [
+        20,
+        222,
+        106,
+        270
+      ]
+    },
+    {
+      "text": "default",
+      "id": "default",
+      "class": "diamond",
+      "bbox": [
+        5,
+        322,
+        121,
+        370
+      ]
+    },
+    {
+      "text": "postcornu",
+      "id": "postcornu",
+      "class": "parallelogram",
+      "bbox": [
+        198,
+        122,
+        329,
+        170
+      ]
+    },
+    {
+      "text": "actification duskiness",
+      "id": "actification duskiness",
+      "class": "parallelogram",
+      "bbox": [
+        389,
+        209,
+        533,
+        283
+      ]
+    },
+    {
+      "text": "unstabled",
+      "id": "unstabled",
+      "class": "document",
+      "bbox": [
+        225,
+        222,
+        301,
+        270
+      ]
+    },
+    {
+      "text": "Papiamento",
+      "id": "Papiamento",
+      "class": "parallelogram",
+      "bbox": [
+        209,
+        284,
+        318,
+        358
+      ]
+    },
+    {
+      "text": "perturb",
+      "id": "perturb",
+      "class": "diamond",
+      "bbox": [
+        204,
+        422,
+        323,
+        465
+      ]
+    },
+    {
+      "text": "beshell",
+      "id": "beshell",
+      "class": "ellipse",
+      "bbox": [
+        422,
+        322,
+        505,
+        370
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "honestly",
+      "head": "ooecium",
+      "label": null,
+      "bbox": [
+        59,
+        82,
+        68,
+        95
+      ]
+    },
+    {
+      "tail": "ooecium",
+      "head": "furunculous",
+      "label": null,
+      "bbox": [
+        59,
+        145,
+        68,
+        220
+      ]
+    },
+    {
+      "tail": "furunculous",
+      "head": "default",
+      "label": null,
+      "bbox": [
+        59,
+        270,
+        68,
+        320
+      ]
+    },
+    {
+      "tail": "default",
+      "head": "postcornu",
+      "label": "YES",
+      "bbox": [
+        111,
+        154,
+        203,
+        342
+      ]
+    },
+    {
+      "tail": "default",
+      "head": "actification duskiness",
+      "label": "YES",
+      "bbox": [
+        116,
+        272,
+        389,
+        344
+      ]
+    },
+    {
+      "tail": "postcornu",
+      "head": "unstabled",
+      "label": null,
+      "bbox": [
+        259,
+        170,
+        268,
+        221
+      ]
+    },
+    {
+      "tail": "unstabled",
+      "head": "Papiamento",
+      "label": null,
+      "bbox": [
+        259,
+        270,
+        268,
+        283
+      ]
+    },
+    {
+      "tail": "Papiamento",
+      "head": "perturb",
+      "label": null,
+      "bbox": [
+        259,
+        358,
+        268,
+        420
+      ]
+    },
+    {
+      "tail": "perturb",
+      "head": "actification duskiness",
+      "label": "NO",
+      "bbox": [
+        325,
+        285,
+        410,
+        446
+      ]
+    },
+    {
+      "tail": "perturb",
+      "head": "furunculous",
+      "label": "NO",
+      "bbox": [
+        108,
+        242,
+        202,
+        446
+      ]
+    },
+    {
+      "tail": "actification duskiness",
+      "head": "beshell",
+      "label": null,
+      "bbox": [
+        459,
+        283,
+        468,
+        321
+      ]
+    }
+  ]
+}

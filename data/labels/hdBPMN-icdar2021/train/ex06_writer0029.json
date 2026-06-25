@@ -1,0 +1,163 @@
+{
+  "nodes": [
+    {
+      "text": "Received order by Lieferando",
+      "id": "Received order by Lieferando",
+      "class": "messageEvent"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "write down order note",
+      "id": "write down order note",
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "class": "task"
+    },
+    {
+      "text": "attach order note to pinboard",
+      "id": "attach order note to pinboard",
+      "class": "task"
+    },
+    {
+      "text": "Attached order note to pinboard",
+      "id": "Attached order note to pinboard",
+      "class": "event"
+    },
+    {
+      "text": "Received order by Website",
+      "id": "Received order by Website",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Received phone call about order",
+      "id": "Received phone call about order",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Pinboard",
+      "id": "Pinboard",
+      "class": "dataStore"
+    },
+    {
+      "text": "Order (online)",
+      "id": "Order (online)",
+      "class": "dataObject"
+    },
+    {
+      "text": "Order note",
+      "id": "Order note",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "attach order note to pinboard",
+      "head": "Attached order note to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Received order by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Received order by Website",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "attach order note to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Received phone call about order",
+      "head": "write down order note",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Received order by Lieferando",
+      "head": "Order (online)",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order (online)",
+      "head": "confirm order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "Order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order (online)",
+      "head": "print out order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "Order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order note",
+      "head": "attach order note to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "Pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Received order by Website",
+      "head": "Order (online)",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": []
+}

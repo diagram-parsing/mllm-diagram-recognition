@@ -1,0 +1,368 @@
+{
+  "nodes": [
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "bbox": [
+        551.603,
+        1136.8,
+        196,
+        98
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        836.92,
+        1144.64,
+        54.88,
+        76.44
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "create account for customer",
+      "id": "create account for customer",
+      "bbox": [
+        1055.597,
+        1313.2,
+        196,
+        84.006
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send a welcome pack",
+      "id": "send a welcome pack",
+      "bbox": [
+        1417.08,
+        1321.04,
+        194.04,
+        103.88
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        1377.606,
+        1579.192,
+        196,
+        69.992
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1656.2,
+        1332.8,
+        52.92,
+        47.04
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "online application received",
+      "id": "online application received",
+      "bbox": [
+        297.92,
+        1142.68,
+        49,
+        60.76
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "notify customer via E-Mail",
+      "id": "notify customer via E-Mail",
+      "bbox": [
+        1070.16,
+        968.24,
+        76.44,
+        90.16
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1334.76,
+        1315.16,
+        54.88,
+        58.8
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "send PIN-Number",
+      "id": "send PIN-Number",
+      "bbox": [
+        1405.32,
+        1450.4,
+        178.36,
+        94.08
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application sucessfully commpleted",
+      "id": "application sucessfully commpleted",
+      "bbox": [
+        1762.04,
+        1326.92,
+        41.16,
+        50.96
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_1",
+      "head": "application sucessfully commpleted",
+      "class": "sequenceFlow",
+      "bbox": [
+        1707.16,
+        1341.62,
+        62.72,
+        39.2
+      ],
+      "kps": [
+        1707.16,
+        1354.36,
+        2.0,
+        1767.92,
+        1366.12,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        746.76,
+        1169.14,
+        96.04,
+        39.2
+      ],
+      "kps": [
+        746.76,
+        1187.76,
+        2.0,
+        840.84,
+        1187.76,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify customer via E-Mail",
+      "class": "sequenceFlow",
+      "bbox": [
+        874.16,
+        1019.2,
+        197.96,
+        141.12
+      ],
+      "kps": [
+        874.16,
+        1158.36,
+        2.0,
+        1070.16,
+        1019.2,
+        2.0
+      ],
+      "label": "application rejected"
+    },
+    {
+      "tail": "send PIN-Number",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1583.68,
+        1379.84,
+        99.96,
+        113.68
+      ],
+      "kps": [
+        1583.68,
+        1491.56,
+        2.0,
+        1681.68,
+        1379.84,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send a welcome pack",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1611.12,
+        1344.56,
+        49,
+        39.2
+      ],
+      "kps": [
+        1611.12,
+        1372.0,
+        2.0,
+        1658.16,
+        1354.36,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send PIN-Number",
+      "class": "sequenceFlow",
+      "bbox": [
+        1362.2,
+        1373.96,
+        45.08,
+        125.44
+      ],
+      "kps": [
+        1362.2,
+        1373.96,
+        2.0,
+        1405.32,
+        1497.44,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1573.88,
+        1373.96,
+        103.88,
+        248.92
+      ],
+      "kps": [
+        1573.88,
+        1620.92,
+        2.0,
+        1675.8,
+        1373.96,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create account for customer",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1252.44,
+        1332.8,
+        88.2,
+        39.2
+      ],
+      "kps": [
+        1252.44,
+        1354.36,
+        2.0,
+        1338.68,
+        1348.48,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create account for customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        864.36,
+        1221.08,
+        194.04,
+        156.8
+      ],
+      "kps": [
+        864.36,
+        1221.08,
+        2.0,
+        1056.44,
+        1362.2,
+        2.0
+      ],
+      "label": "application approved"
+    },
+    {
+      "tail": "online application received",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "bbox": [
+        346.92,
+        1155.42,
+        205.8,
+        39.2
+      ],
+      "kps": [
+        346.92,
+        1174.04,
+        2.0,
+        550.76,
+        1174.04,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        1351.42,
+        1373.96,
+        39.2,
+        254.8
+      ],
+      "kps": [
+        1362.2,
+        1373.96,
+        2.0,
+        1377.88,
+        1626.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send a welcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        1384.74,
+        1331.82,
+        39.2,
+        39.2
+      ],
+      "kps": [
+        1389.64,
+        1344.56,
+        2.0,
+        1417.08,
+        1356.32,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

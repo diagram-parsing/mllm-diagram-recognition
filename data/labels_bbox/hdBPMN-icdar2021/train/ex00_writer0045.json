@@ -1,0 +1,272 @@
+{
+  "nodes": [
+    {
+      "text": "online application for opening a bank account received",
+      "id": "online application for opening a bank account received",
+      "bbox": [
+        350,
+        290,
+        412,
+        338
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "bbox": [
+        581,
+        275,
+        714,
+        338
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        786,
+        283,
+        832,
+        332
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify customer by email",
+      "id": "notify customer by email",
+      "bbox": [
+        963,
+        338,
+        1144,
+        414
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack",
+      "id": "send welcome pack",
+      "bbox": [
+        1023,
+        101,
+        1240,
+        154
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        1044,
+        214,
+        1251,
+        252
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send PIN number",
+      "id": "send PIN number",
+      "bbox": [
+        1055,
+        274,
+        1285,
+        316
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application approved",
+      "id": "application approved",
+      "bbox": [
+        1413,
+        197,
+        1461,
+        247
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1323,
+        190,
+        1369,
+        248
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        941,
+        207,
+        985,
+        264
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "application rejected",
+      "id": "application rejected",
+      "bbox": [
+        1239,
+        344,
+        1296,
+        400
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "online application for opening a bank account received",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "bbox": [
+        412,
+        298,
+        583,
+        331
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        714,
+        298,
+        793,
+        331
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customer by email",
+      "head": "application rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        1144,
+        365,
+        1242,
+        398
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "application approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        1365,
+        208,
+        1415,
+        242
+      ],
+      "label": null
+    },
+    {
+      "tail": "send PIN number",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1285,
+        247,
+        1348,
+        291
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1251,
+        218,
+        1336,
+        251
+      ],
+      "label": null
+    },
+    {
+      "tail": "send welcome pack",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1240,
+        127,
+        1348,
+        193
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send PIN number",
+      "class": "sequenceFlow",
+      "bbox": [
+        963,
+        263,
+        1056,
+        302
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        983,
+        218,
+        1046,
+        251
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send welcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        963,
+        141,
+        1025,
+        210
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        808,
+        234,
+        943,
+        286
+      ],
+      "label": "application approved"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify customer by email",
+      "class": "sequenceFlow",
+      "bbox": [
+        808,
+        331,
+        965,
+        379
+      ],
+      "label": "application rejected"
+    }
+  ],
+  "groups": []
+}

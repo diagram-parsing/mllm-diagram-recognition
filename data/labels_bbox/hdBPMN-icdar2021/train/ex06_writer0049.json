@@ -1,0 +1,308 @@
+{
+  "nodes": [
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        1211,
+        399,
+        1489,
+        514
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "bbox": [
+        960,
+        939,
+        1233,
+        1044
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print order",
+      "id": "print order",
+      "bbox": [
+        1381,
+        760,
+        1587,
+        882
+      ],
+      "class": "task"
+    },
+    {
+      "text": "attach note to pinboard",
+      "id": "attach note to pinboard",
+      "bbox": [
+        1931,
+        874,
+        2267,
+        1000
+      ],
+      "class": "task"
+    },
+    {
+      "text": "order recived completed",
+      "id": "order recived completed",
+      "bbox": [
+        2421,
+        880,
+        2524,
+        978
+      ],
+      "class": "event"
+    },
+    {
+      "text": "recieve Order",
+      "id": "recieve Order",
+      "bbox": [
+        383,
+        654,
+        460,
+        730
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        855,
+        614,
+        941,
+        742
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1211,
+        594,
+        1324,
+        735
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Order",
+      "id": "Order",
+      "bbox": [
+        1733,
+        233,
+        1866,
+        376
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "note",
+      "id": "note",
+      "bbox": [
+        1909,
+        639,
+        2012,
+        767
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1695,
+        894,
+        1773,
+        990
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1233,
+        968,
+        1736,
+        1024
+      ],
+      "label": null
+    },
+    {
+      "tail": "attach note to pinboard",
+      "head": "order recived completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        2267,
+        912,
+        2424,
+        968
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "attach note to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        1764,
+        908,
+        1933,
+        964
+      ],
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1587,
+        841,
+        1736,
+        897
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1249,
+        728,
+        1383,
+        860
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1319,
+        474,
+        1747,
+        716
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        902,
+        465,
+        1213,
+        622
+      ],
+      "label": "Lieferando"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "bbox": [
+        862,
+        739,
+        961,
+        1025
+      ],
+      "label": "phone"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        939,
+        653,
+        1224,
+        708
+      ],
+      "label": "Website"
+    },
+    {
+      "tail": "recieve Order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        457,
+        663,
+        857,
+        719
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "Order",
+      "class": "dataAssociation",
+      "bbox": [
+        1489,
+        320,
+        1734,
+        416
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "note",
+      "class": "dataAssociation",
+      "bbox": [
+        1233,
+        744,
+        1911,
+        980
+      ],
+      "label": null
+    },
+    {
+      "tail": "Order",
+      "head": "print order",
+      "class": "dataAssociation",
+      "bbox": [
+        1559,
+        362,
+        1734,
+        762
+      ],
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "note",
+      "class": "dataAssociation",
+      "bbox": [
+        1587,
+        685,
+        1911,
+        811
+      ],
+      "label": null
+    },
+    {
+      "tail": "note",
+      "head": "attach note to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        2002,
+        766,
+        2058,
+        875
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

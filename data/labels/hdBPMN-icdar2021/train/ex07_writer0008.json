@@ -1,0 +1,261 @@
+{
+  "nodes": [
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "class": "event"
+    },
+    {
+      "text": "case ended",
+      "id": "case ended",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "pay expenses",
+      "id": "pay expenses",
+      "class": "task"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "class": "messageEvent"
+    },
+    {
+      "text": "ask external expert for review",
+      "id": "ask external expert for review",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "received expertise in time",
+      "id": "received expertise in time",
+      "class": "messageEvent"
+    },
+    {
+      "text": "forward expertise to QA",
+      "id": "forward expertise to QA",
+      "class": "task"
+    },
+    {
+      "text": "received no response in time",
+      "id": "received no response in time",
+      "class": "timerEvent"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_3",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "received expertise in time",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise to QA",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "received expertise in time",
+      "head": "forward expertise to QA",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "received no response in time",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "received no response in time",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external expert for review",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask external expert for review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send cheque",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "pay expenses",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "pay expenses",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "case ended",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "External Expert",
+      "head": "received expertise in time",
+      "class": "messageFlow",
+      "label": "expertise"
+    },
+    {
+      "tail": "send cheque",
+      "head": "External Expert",
+      "class": "messageFlow",
+      "label": "cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Managing director",
+        "Qa - departement"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing director",
+      "nodes": [
+        "parallelGateway_3",
+        "pay expenses",
+        "send cheque",
+        "ask external expert for review",
+        "eventBasedGateway_1",
+        "received expertise in time",
+        "forward expertise to QA",
+        "received no response in time",
+        "exclusiveGateway_1"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Qa - departement",
+      "nodes": [
+        "new case started",
+        "case ended",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "file results",
+        "interview patients",
+        "create report",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "External Expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

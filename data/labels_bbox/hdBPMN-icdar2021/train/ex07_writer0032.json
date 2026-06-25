@@ -1,0 +1,502 @@
+{
+  "nodes": [
+    {
+      "text": "Doctor rating workflow started",
+      "id": "Doctor rating workflow started",
+      "bbox": [
+        305,
+        513,
+        390,
+        601
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1666,
+        504,
+        1797,
+        602
+      ],
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        1109,
+        162,
+        1322,
+        309
+      ],
+      "class": "task"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "bbox": [
+        1519,
+        865,
+        1650,
+        980
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        512,
+        513,
+        585,
+        595
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Prepare interview questions",
+      "id": "Prepare interview questions",
+      "bbox": [
+        668,
+        493,
+        984,
+        608
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Integrated in established workflow",
+      "id": "Integrated in established workflow",
+      "bbox": [
+        667,
+        170,
+        913,
+        309
+      ],
+      "class": "task"
+    },
+    {
+      "text": "File results",
+      "id": "File results",
+      "bbox": [
+        1303,
+        513,
+        1469,
+        588
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1544,
+        530,
+        1615,
+        590
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1855,
+        537,
+        1905,
+        585
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Doctor rating worklow finished",
+      "id": "Doctor rating worklow finished",
+      "bbox": [
+        1980,
+        530,
+        2039,
+        600
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Ask external expert",
+      "id": "Ask external expert",
+      "bbox": [
+        455,
+        833,
+        716,
+        1029
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Forward to QA specialist",
+      "id": "Forward to QA specialist",
+      "bbox": [
+        1172,
+        857,
+        1371,
+        988
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "bbox": [
+        1168,
+        526,
+        1245,
+        602
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Send cheque",
+      "id": "Send cheque",
+      "bbox": [
+        1818,
+        878,
+        1943,
+        970
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Receive expertise",
+      "id": "Receive expertise",
+      "bbox": [
+        933,
+        865,
+        1056,
+        994
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Send cheque",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1861,
+        585,
+        1903,
+        863
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "Send cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        1649,
+        902,
+        1820,
+        945
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        1559,
+        590,
+        1602,
+        866
+      ],
+      "label": null
+    },
+    {
+      "tail": "Forward to QA specialist",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1188,
+        601,
+        1230,
+        859
+      ],
+      "label": null
+    },
+    {
+      "tail": "Receive expertise",
+      "head": "Forward to QA specialist",
+      "class": "sequenceFlow",
+      "bbox": [
+        1056,
+        908,
+        1173,
+        951
+      ],
+      "label": null
+    },
+    {
+      "tail": "Ask external expert",
+      "head": "Receive expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        717,
+        911,
+        934,
+        954
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Ask external expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        528,
+        595,
+        571,
+        834
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "Doctor rating worklow finished",
+      "class": "sequenceFlow",
+      "bbox": [
+        1903,
+        544,
+        1981,
+        586
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1797,
+        532,
+        1865,
+        575
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1615,
+        539,
+        1668,
+        582
+      ],
+      "label": null
+    },
+    {
+      "tail": "File results",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1469,
+        532,
+        1554,
+        575
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1183,
+        309,
+        1226,
+        530
+      ],
+      "label": null
+    },
+    {
+      "tail": "Integrated in established workflow",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        913,
+        217,
+        1111,
+        260
+      ],
+      "label": null
+    },
+    {
+      "tail": "Prepare interview questions",
+      "head": "Integrated in established workflow",
+      "class": "sequenceFlow",
+      "bbox": [
+        788,
+        309,
+        830,
+        495
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Prepare interview questions",
+      "class": "sequenceFlow",
+      "bbox": [
+        584,
+        532,
+        669,
+        575
+      ],
+      "label": null
+    },
+    {
+      "tail": "Doctor rating workflow started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        390,
+        531,
+        517,
+        573
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "File results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1245,
+        542,
+        1305,
+        585
+      ],
+      "label": null
+    },
+    {
+      "tail": "Ask external expert",
+      "head": "External experts",
+      "class": "messageFlow",
+      "bbox": [
+        549,
+        1029,
+        591,
+        1194
+      ],
+      "label": null
+    },
+    {
+      "tail": "Send cheque",
+      "head": "External experts",
+      "class": "messageFlow",
+      "bbox": [
+        1850,
+        985,
+        1893,
+        1194
+      ],
+      "label": null
+    },
+    {
+      "tail": "External experts",
+      "head": "Receive expertise",
+      "class": "messageFlow",
+      "bbox": [
+        979,
+        991,
+        1022,
+        1194
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Managing Director",
+        "QA specialist",
+        "interview workflow staff"
+      ],
+      "bbox": [
+        78,
+        63,
+        2091,
+        1127
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing Director",
+      "nodes": [
+        "fill cheque",
+        "Ask external expert",
+        "Forward to QA specialist",
+        "Send cheque",
+        "Receive expertise"
+      ],
+      "bbox": [
+        127,
+        751,
+        2091,
+        1127
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "Doctor rating workflow started",
+        "create report",
+        "parallelGateway_1",
+        "Prepare interview questions",
+        "File results",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "Doctor rating worklow finished",
+        "parallelGateway_4"
+      ],
+      "bbox": [
+        127,
+        391,
+        2091,
+        751
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "interview workflow staff",
+      "nodes": [
+        "interview patients",
+        "Integrated in established workflow"
+      ],
+      "bbox": [
+        127,
+        63,
+        2091,
+        391
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "External experts",
+      "nodes": [],
+      "bbox": [
+        94,
+        1193,
+        2091,
+        1455
+      ],
+      "class": "pool"
+    }
+  ]
+}

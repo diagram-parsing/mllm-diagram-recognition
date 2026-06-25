@@ -1,0 +1,316 @@
+{
+  "nodes": [
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "class": "event"
+    },
+    {
+      "text": "forwarding expertise",
+      "id": "forwarding expertise",
+      "class": "task"
+    },
+    {
+      "text": "interviewing patients",
+      "id": "interviewing patients",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "filling both results",
+      "id": "filling both results",
+      "class": "task"
+    },
+    {
+      "text": "asking an external expert to review",
+      "id": "asking an external expert to review",
+      "class": "task"
+    },
+    {
+      "text": "receiving expertise",
+      "id": "receiving expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "receiving expertise",
+      "id": "receiving expertise",
+      "class": "task"
+    },
+    {
+      "text": "expertise",
+      "id": "expertise",
+      "class": "dataObject"
+    },
+    {
+      "text": "report",
+      "id": "report",
+      "class": "dataObject"
+    },
+    {
+      "text": "results",
+      "id": "results",
+      "class": "dataObject"
+    },
+    {
+      "text": "creating report",
+      "id": "creating report",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "rating process finished",
+      "id": "rating process finished",
+      "class": "event"
+    },
+    {
+      "text": "paying the expenses of the expert",
+      "id": "paying the expenses of the expert",
+      "class": "task"
+    },
+    {
+      "text": "receiving expertise",
+      "id": "receiving expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "sending expertise",
+      "id": "sending expertise",
+      "class": "task"
+    },
+    {
+      "text": "payment",
+      "id": "payment",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "receiving expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forwarding expertise",
+      "head": "receiving expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "forwarding expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "paying the expenses of the expert",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "paying the expenses of the expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receiving expertise",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "asking an external expert to review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "rating process finished",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "creating report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "filling both results",
+      "head": "creating report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "filling both results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interviewing patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interviewing patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "sending expertise",
+      "class": "sequenceFlow",
+      "label": "responding in time"
+    },
+    {
+      "tail": "receiving expertise",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "filling both results",
+      "head": "results",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "receiving expertise",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "receiving expertise",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "results",
+      "head": "creating report",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "creating report",
+      "head": "report",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "paying the expenses of the expert",
+      "head": "payment",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "sending expertise",
+      "head": "expertise",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Patient",
+      "head": "interviewing patients",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "sending expertise",
+      "head": "receiving expertise",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "asking an external expert to review",
+      "head": "receiving expertise",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "managing director",
+        "quality assurance departement"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "forwarding expertise",
+        "asking an external expert to review",
+        "receiving expertise",
+        "parallelGateway_3",
+        "expertise",
+        "results",
+        "parallelGateway_4",
+        "rating process finished",
+        "paying the expenses of the expert"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance departement",
+      "nodes": [
+        "new case started",
+        "interviewing patients",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "filling both results",
+        "receiving expertise",
+        "report",
+        "creating report"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "External Experts",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

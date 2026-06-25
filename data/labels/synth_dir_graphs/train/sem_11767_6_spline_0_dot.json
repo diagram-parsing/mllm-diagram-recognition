@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "text": "cliffless",
+      "id": "cliffless",
+      "class": "node"
+    },
+    {
+      "text": "agentival crosstail",
+      "id": "agentival crosstail",
+      "class": "node"
+    },
+    {
+      "text": "lamentational",
+      "id": "lamentational",
+      "class": "node"
+    },
+    {
+      "text": "industrochemical figury",
+      "id": "industrochemical figury",
+      "class": "node"
+    },
+    {
+      "text": "priorate",
+      "id": "priorate",
+      "class": "node"
+    },
+    {
+      "text": "archeocyte",
+      "id": "archeocyte",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "cliffless",
+      "head": "agentival crosstail",
+      "label": "0.12 h = 0.646",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "cliffless",
+      "head": "lamentational",
+      "label": "0.223",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "industrochemical figury",
+      "head": "priorate",
+      "label": "0.5284",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "industrochemical figury",
+      "head": "archeocyte",
+      "label": "0.97 f = 0.857",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "cliffless",
+      "head": "industrochemical figury",
+      "label": "0.13",
+      "class": "bidirectional"
+    }
+  ]
+}

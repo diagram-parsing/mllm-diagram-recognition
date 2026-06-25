@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "spondylexarthrosis",
+      "id": "spondylexarthrosis",
+      "class": "oval",
+      "bbox": [
+        5,
+        18,
+        152,
+        66
+      ]
+    },
+    {
+      "text": "sheyle",
+      "id": "sheyle",
+      "class": "diamond",
+      "bbox": [
+        24,
+        105,
+        134,
+        153
+      ]
+    },
+    {
+      "text": "parrothood",
+      "id": "parrothood",
+      "class": "diamond",
+      "bbox": [
+        11,
+        192,
+        147,
+        240
+      ]
+    },
+    {
+      "text": "gunreach malpresentation",
+      "id": "gunreach malpresentation",
+      "class": "parallelogram",
+      "bbox": [
+        163,
+        5,
+        337,
+        79
+      ]
+    },
+    {
+      "text": "frim gaberdine",
+      "id": "frim gaberdine",
+      "class": "document",
+      "bbox": [
+        34,
+        271,
+        124,
+        334
+      ]
+    },
+    {
+      "text": "Clostridium unconditionately",
+      "id": "Clostridium unconditionately",
+      "class": "circle",
+      "bbox": [
+        188,
+        173,
+        317,
+        302
+      ]
+    },
+    {
+      "text": "stormbound",
+      "id": "stormbound",
+      "class": "document",
+      "bbox": [
+        34,
+        358,
+        124,
+        416
+      ]
+    },
+    {
+      "text": "tachyiatry albuminate",
+      "id": "tachyiatry albuminate",
+      "class": "document",
+      "bbox": [
+        207,
+        98,
+        298,
+        160
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "spondylexarthrosis",
+      "head": "sheyle",
+      "label": null,
+      "bbox": [
+        73,
+        67,
+        85,
+        104
+      ]
+    },
+    {
+      "tail": "sheyle",
+      "head": "parrothood",
+      "label": "Yes",
+      "bbox": [
+        73,
+        154,
+        85,
+        191
+      ]
+    },
+    {
+      "tail": "sheyle",
+      "head": "gunreach malpresentation",
+      "label": "Yes",
+      "bbox": [
+        132,
+        42,
+        177,
+        130
+      ]
+    },
+    {
+      "tail": "parrothood",
+      "head": "frim gaberdine",
+      "label": "NO",
+      "bbox": [
+        73,
+        240,
+        85,
+        271
+      ]
+    },
+    {
+      "tail": "parrothood",
+      "head": "Clostridium unconditionately",
+      "label": "NO",
+      "bbox": [
+        146,
+        211,
+        191,
+        223
+      ]
+    },
+    {
+      "tail": "frim gaberdine",
+      "head": "stormbound",
+      "label": null,
+      "bbox": [
+        73,
+        334,
+        85,
+        359
+      ]
+    },
+    {
+      "tail": "stormbound",
+      "head": "gunreach malpresentation",
+      "label": null,
+      "bbox": [
+        124,
+        79,
+        186,
+        390
+      ]
+    },
+    {
+      "tail": "gunreach malpresentation",
+      "head": "tachyiatry albuminate",
+      "label": null,
+      "bbox": [
+        247,
+        79,
+        259,
+        98
+      ]
+    },
+    {
+      "tail": "tachyiatry albuminate",
+      "head": "Clostridium unconditionately",
+      "label": null,
+      "bbox": [
+        247,
+        159,
+        259,
+        172
+      ]
+    }
+  ]
+}

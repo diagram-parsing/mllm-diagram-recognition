@@ -1,0 +1,292 @@
+{
+  "nodes": [
+    {
+      "text": "noticeability endosteum",
+      "id": "noticeability endosteum",
+      "class": "circle",
+      "bbox": [
+        20,
+        5,
+        130,
+        115
+      ]
+    },
+    {
+      "text": "orthitic",
+      "id": "orthitic",
+      "class": "document",
+      "bbox": [
+        29,
+        125,
+        121,
+        173
+      ]
+    },
+    {
+      "text": "polyphobic",
+      "id": "polyphobic",
+      "class": "box",
+      "bbox": [
+        39,
+        274,
+        111,
+        322
+      ]
+    },
+    {
+      "text": "deplumate miaower",
+      "id": "deplumate miaower",
+      "class": "diamond",
+      "bbox": [
+        10,
+        411,
+        140,
+        484
+      ]
+    },
+    {
+      "text": "siccimeter",
+      "id": "siccimeter",
+      "class": "diamond",
+      "bbox": [
+        27,
+        500,
+        123,
+        573
+      ]
+    },
+    {
+      "text": "goety",
+      "id": "goety",
+      "class": "diamond",
+      "bbox": [
+        263,
+        155,
+        364,
+        203
+      ]
+    },
+    {
+      "text": "splenoma",
+      "id": "splenoma",
+      "class": "diamond",
+      "bbox": [
+        268,
+        351,
+        359,
+        424
+      ]
+    },
+    {
+      "text": "answerably",
+      "id": "answerably",
+      "class": "box",
+      "bbox": [
+        272,
+        274,
+        355,
+        322
+      ]
+    },
+    {
+      "text": "blistery",
+      "id": "blistery",
+      "class": "document",
+      "bbox": [
+        267,
+        483,
+        359,
+        531
+      ]
+    },
+    {
+      "text": "morainic epipodium",
+      "id": "morainic epipodium",
+      "class": "diamond",
+      "bbox": [
+        248,
+        619,
+        373,
+        692
+      ]
+    },
+    {
+      "text": "dikage umbrally surrenderer",
+      "id": "dikage umbrally surrenderer",
+      "class": "ellipse",
+      "bbox": [
+        250,
+        749,
+        373,
+        795
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "noticeability endosteum",
+      "head": "orthitic",
+      "label": null,
+      "bbox": [
+        70,
+        109,
+        80,
+        123
+      ]
+    },
+    {
+      "tail": "orthitic",
+      "head": "polyphobic",
+      "label": null,
+      "bbox": [
+        70,
+        173,
+        80,
+        271
+      ]
+    },
+    {
+      "tail": "polyphobic",
+      "head": "deplumate miaower",
+      "label": null,
+      "bbox": [
+        70,
+        323,
+        80,
+        408
+      ]
+    },
+    {
+      "tail": "deplumate miaower",
+      "head": "siccimeter",
+      "label": "no",
+      "bbox": [
+        70,
+        484,
+        80,
+        497
+      ]
+    },
+    {
+      "tail": "deplumate miaower",
+      "head": "orthitic",
+      "label": "no",
+      "bbox": [
+        29,
+        176,
+        39,
+        433
+      ]
+    },
+    {
+      "tail": "siccimeter",
+      "head": "goety",
+      "label": "Yes",
+      "bbox": [
+        91,
+        179,
+        268,
+        511
+      ]
+    },
+    {
+      "tail": "siccimeter",
+      "head": "splenoma",
+      "label": "Yes",
+      "bbox": [
+        103,
+        413,
+        302,
+        521
+      ]
+    },
+    {
+      "tail": "goety",
+      "head": "answerably",
+      "label": "NO",
+      "bbox": [
+        309,
+        204,
+        318,
+        271
+      ]
+    },
+    {
+      "tail": "goety",
+      "head": "splenoma",
+      "label": "NO",
+      "bbox": [
+        258,
+        194,
+        293,
+        385
+      ]
+    },
+    {
+      "tail": "answerably",
+      "head": "splenoma",
+      "label": null,
+      "bbox": [
+        323,
+        323,
+        332,
+        359
+      ]
+    },
+    {
+      "tail": "splenoma",
+      "head": "blistery",
+      "label": "YES",
+      "bbox": [
+        309,
+        425,
+        318,
+        480
+      ]
+    },
+    {
+      "tail": "splenoma",
+      "head": "answerably",
+      "label": "YES",
+      "bbox": [
+        295,
+        325,
+        304,
+        362
+      ]
+    },
+    {
+      "tail": "blistery",
+      "head": "morainic epipodium",
+      "label": null,
+      "bbox": [
+        309,
+        531,
+        318,
+        616
+      ]
+    },
+    {
+      "tail": "morainic epipodium",
+      "head": "dikage umbrally surrenderer",
+      "label": "NO",
+      "bbox": [
+        309,
+        693,
+        318,
+        746
+      ]
+    },
+    {
+      "tail": "morainic epipodium",
+      "head": "orthitic",
+      "label": "NO",
+      "bbox": [
+        123,
+        160,
+        253,
+        653
+      ]
+    }
+  ]
+}

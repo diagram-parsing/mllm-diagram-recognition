@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "telpherway reparative rakehell",
+      "id": "telpherway reparative rakehell",
+      "class": "oval"
+    },
+    {
+      "text": "doorcase",
+      "id": "doorcase",
+      "class": "diamond"
+    },
+    {
+      "text": "tellurite improlificical crust",
+      "id": "tellurite improlificical crust",
+      "class": "diamond"
+    },
+    {
+      "text": "unarrival dummyism",
+      "id": "unarrival dummyism",
+      "class": "hexagon"
+    },
+    {
+      "text": "sacerdotal grouser",
+      "id": "sacerdotal grouser",
+      "class": "hexagon"
+    },
+    {
+      "text": "rideau",
+      "id": "rideau",
+      "class": "diamond"
+    },
+    {
+      "text": "cantaloupe freshwoman",
+      "id": "cantaloupe freshwoman",
+      "class": "diamond"
+    },
+    {
+      "text": "cupcake",
+      "id": "cupcake",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "telpherway reparative rakehell",
+      "head": "doorcase",
+      "label": null
+    },
+    {
+      "tail": "doorcase",
+      "head": "tellurite improlificical crust",
+      "label": "NO"
+    },
+    {
+      "tail": "doorcase",
+      "head": "telpherway reparative rakehell",
+      "label": "NO"
+    },
+    {
+      "tail": "tellurite improlificical crust",
+      "head": "unarrival dummyism",
+      "label": "no"
+    },
+    {
+      "tail": "tellurite improlificical crust",
+      "head": "sacerdotal grouser",
+      "label": "no"
+    },
+    {
+      "tail": "unarrival dummyism",
+      "head": "rideau",
+      "label": null
+    },
+    {
+      "tail": "rideau",
+      "head": "cantaloupe freshwoman",
+      "label": "yes"
+    },
+    {
+      "tail": "rideau",
+      "head": "sacerdotal grouser",
+      "label": "yes"
+    },
+    {
+      "tail": "cantaloupe freshwoman",
+      "head": "sacerdotal grouser",
+      "label": "yes"
+    },
+    {
+      "tail": "cantaloupe freshwoman",
+      "head": "doorcase",
+      "label": "yes"
+    },
+    {
+      "tail": "sacerdotal grouser",
+      "head": "cupcake",
+      "label": null
+    }
+  ]
+}

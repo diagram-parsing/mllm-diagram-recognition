@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "tongsman",
+      "id": "tongsman",
+      "class": "circle"
+    },
+    {
+      "text": "tsamba",
+      "id": "tsamba",
+      "class": "document"
+    },
+    {
+      "text": "brickly mortifier",
+      "id": "brickly mortifier",
+      "class": "diamond"
+    },
+    {
+      "text": "alkalous rockborn",
+      "id": "alkalous rockborn",
+      "class": "hexagon"
+    },
+    {
+      "text": "empleomania scarehead unopined",
+      "id": "empleomania scarehead unopined",
+      "class": "diamond"
+    },
+    {
+      "text": "nyctalopia",
+      "id": "nyctalopia",
+      "class": "hexagon"
+    },
+    {
+      "text": "Lissotriches",
+      "id": "Lissotriches",
+      "class": "diamond"
+    },
+    {
+      "text": "marmose mouthless irrigably",
+      "id": "marmose mouthless irrigably",
+      "class": "diamond"
+    },
+    {
+      "text": "trichomycosis scareproof Batus",
+      "id": "trichomycosis scareproof Batus",
+      "class": "parallelogram"
+    },
+    {
+      "text": "makhzan weiselbergite",
+      "id": "makhzan weiselbergite",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tongsman",
+      "head": "tsamba",
+      "label": null
+    },
+    {
+      "tail": "tsamba",
+      "head": "brickly mortifier",
+      "label": null
+    },
+    {
+      "tail": "brickly mortifier",
+      "head": "alkalous rockborn",
+      "label": "NO"
+    },
+    {
+      "tail": "brickly mortifier",
+      "head": "empleomania scarehead unopined",
+      "label": "NO"
+    },
+    {
+      "tail": "alkalous rockborn",
+      "head": "nyctalopia",
+      "label": null
+    },
+    {
+      "tail": "nyctalopia",
+      "head": "Lissotriches",
+      "label": null
+    },
+    {
+      "tail": "Lissotriches",
+      "head": "empleomania scarehead unopined",
+      "label": "NO"
+    },
+    {
+      "tail": "Lissotriches",
+      "head": "nyctalopia",
+      "label": "NO"
+    },
+    {
+      "tail": "empleomania scarehead unopined",
+      "head": "marmose mouthless irrigably",
+      "label": "YES"
+    },
+    {
+      "tail": "empleomania scarehead unopined",
+      "head": "tongsman",
+      "label": "YES"
+    },
+    {
+      "tail": "marmose mouthless irrigably",
+      "head": "trichomycosis scareproof Batus",
+      "label": "Yes"
+    },
+    {
+      "tail": "marmose mouthless irrigably",
+      "head": "tsamba",
+      "label": "Yes"
+    },
+    {
+      "tail": "trichomycosis scareproof Batus",
+      "head": "makhzan weiselbergite",
+      "label": null
+    }
+  ]
+}

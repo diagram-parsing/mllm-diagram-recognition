@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "text": "check documents",
+      "id": "check documents",
+      "class": "task"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "check claim",
+      "id": "check claim",
+      "class": "task"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Reject claim",
+      "id": "Reject claim",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "Arrange Repair",
+      "id": "Arrange Repair",
+      "class": "task"
+    },
+    {
+      "text": "Schedule Appointment",
+      "id": "Schedule Appointment",
+      "class": "task"
+    },
+    {
+      "text": "claim submitted",
+      "id": "claim submitted",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Notify customer",
+      "id": "Notify customer",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Arrange Repair",
+      "head": "Schedule Appointment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Arrange Repair",
+      "class": "sequenceFlow",
+      "label": "+"
+    },
+    {
+      "tail": "Notify customer",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Reject claim",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Reject claim",
+      "class": "sequenceFlow",
+      "label": "-"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check claim",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "check claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check documents",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim submitted",
+      "head": "check documents",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Schedule Appointment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Notify customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Arrange Repair",
+      "head": "garage",
+      "class": "messageFlow",
+      "label": "Damages"
+    },
+    {
+      "tail": "Schedule Appointment",
+      "head": "garage",
+      "class": "messageFlow",
+      "label": "Payment"
+    },
+    {
+      "tail": "Notify customer",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim submitted",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "car insurer",
+      "nodes": [
+        "Handling Depart",
+        "Notifiaction Depa"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Handling Depart",
+      "nodes": [
+        "check claim",
+        "perform assessment",
+        "exclusiveGateway_1",
+        "Reject claim",
+        "exclusiveGateway_2",
+        "event_1",
+        "Arrange Repair",
+        "Schedule Appointment",
+        "Notify customer"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Notifiaction Depa",
+      "nodes": [
+        "check documents",
+        "register claim",
+        "claim submitted"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "garage",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

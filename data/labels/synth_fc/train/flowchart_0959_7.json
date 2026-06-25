@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "grandeur",
+      "id": "grandeur",
+      "class": "oval"
+    },
+    {
+      "text": "rayage",
+      "id": "rayage",
+      "class": "diamond"
+    },
+    {
+      "text": "threadbarity kinemometer",
+      "id": "threadbarity kinemometer",
+      "class": "document"
+    },
+    {
+      "text": "expunge",
+      "id": "expunge",
+      "class": "box"
+    },
+    {
+      "text": "unalone",
+      "id": "unalone",
+      "class": "document"
+    },
+    {
+      "text": "forsake",
+      "id": "forsake",
+      "class": "diamond"
+    },
+    {
+      "text": "disyllable annuloid cardioresp",
+      "id": "disyllable annuloid cardioresp",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "grandeur",
+      "head": "rayage",
+      "label": null
+    },
+    {
+      "tail": "rayage",
+      "head": "threadbarity kinemometer",
+      "label": "no"
+    },
+    {
+      "tail": "rayage",
+      "head": "expunge",
+      "label": "no"
+    },
+    {
+      "tail": "threadbarity kinemometer",
+      "head": "expunge",
+      "label": null
+    },
+    {
+      "tail": "expunge",
+      "head": "unalone",
+      "label": null
+    },
+    {
+      "tail": "unalone",
+      "head": "forsake",
+      "label": null
+    },
+    {
+      "tail": "forsake",
+      "head": "disyllable annuloid cardioresp",
+      "label": "YES"
+    },
+    {
+      "tail": "forsake",
+      "head": "expunge",
+      "label": "YES"
+    }
+  ]
+}

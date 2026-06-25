@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "text": "Xanthorrhiza",
+      "id": "Xanthorrhiza",
+      "class": "oval"
+    },
+    {
+      "text": "slightingly",
+      "id": "slightingly",
+      "class": "diamond"
+    },
+    {
+      "text": "sobralite pyxidate",
+      "id": "sobralite pyxidate",
+      "class": "hexagon"
+    },
+    {
+      "text": "harengiform parapleuritis cogn",
+      "id": "harengiform parapleuritis cogn",
+      "class": "diamond"
+    },
+    {
+      "text": "smorgasbord triakisoctahedral",
+      "id": "smorgasbord triakisoctahedral",
+      "class": "diamond"
+    },
+    {
+      "text": "uplandish Elaeocarpus",
+      "id": "uplandish Elaeocarpus",
+      "class": "circle"
+    },
+    {
+      "text": "behymn camused",
+      "id": "behymn camused",
+      "class": "diamond"
+    },
+    {
+      "text": "turbo",
+      "id": "turbo",
+      "class": "parallelogram"
+    },
+    {
+      "text": "episternal",
+      "id": "episternal",
+      "class": "box"
+    },
+    {
+      "text": "picryl preacceptance",
+      "id": "picryl preacceptance",
+      "class": "diamond"
+    },
+    {
+      "text": "muggins",
+      "id": "muggins",
+      "class": "diamond"
+    },
+    {
+      "text": "stagger",
+      "id": "stagger",
+      "class": "parallelogram"
+    },
+    {
+      "text": "roar",
+      "id": "roar",
+      "class": "diamond"
+    },
+    {
+      "text": "Donn macracanthrorhynchiasis",
+      "id": "Donn macracanthrorhynchiasis",
+      "class": "hexagon"
+    },
+    {
+      "text": "pulmoniferous",
+      "id": "pulmoniferous",
+      "class": "parallelogram"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Xanthorrhiza",
+      "head": "slightingly",
+      "label": null
+    },
+    {
+      "tail": "slightingly",
+      "head": "sobralite pyxidate",
+      "label": "No"
+    },
+    {
+      "tail": "slightingly",
+      "head": "harengiform parapleuritis cogn",
+      "label": "No"
+    },
+    {
+      "tail": "sobralite pyxidate",
+      "head": "smorgasbord triakisoctahedral",
+      "label": null
+    },
+    {
+      "tail": "smorgasbord triakisoctahedral",
+      "head": "harengiform parapleuritis cogn",
+      "label": "yes"
+    },
+    {
+      "tail": "smorgasbord triakisoctahedral",
+      "head": "uplandish Elaeocarpus",
+      "label": "yes"
+    },
+    {
+      "tail": "harengiform parapleuritis cogn",
+      "head": "behymn camused",
+      "label": "No"
+    },
+    {
+      "tail": "harengiform parapleuritis cogn",
+      "head": "uplandish Elaeocarpus",
+      "label": "No"
+    },
+    {
+      "tail": "behymn camused",
+      "head": "turbo",
+      "label": "Yes"
+    },
+    {
+      "tail": "behymn camused",
+      "head": "episternal",
+      "label": "Yes"
+    },
+    {
+      "tail": "turbo",
+      "head": "picryl preacceptance",
+      "label": null
+    },
+    {
+      "tail": "picryl preacceptance",
+      "head": "muggins",
+      "label": "NO"
+    },
+    {
+      "tail": "picryl preacceptance",
+      "head": "stagger",
+      "label": "NO"
+    },
+    {
+      "tail": "muggins",
+      "head": "roar",
+      "label": "yes"
+    },
+    {
+      "tail": "muggins",
+      "head": "picryl preacceptance",
+      "label": "yes"
+    },
+    {
+      "tail": "roar",
+      "head": "Donn macracanthrorhynchiasis",
+      "label": "No"
+    },
+    {
+      "tail": "roar",
+      "head": "stagger",
+      "label": "No"
+    },
+    {
+      "tail": "Donn macracanthrorhynchiasis",
+      "head": "stagger",
+      "label": null
+    },
+    {
+      "tail": "stagger",
+      "head": "pulmoniferous",
+      "label": null
+    },
+    {
+      "tail": "pulmoniferous",
+      "head": "episternal",
+      "label": null
+    },
+    {
+      "tail": "episternal",
+      "head": "uplandish Elaeocarpus",
+      "label": null
+    }
+  ]
+}

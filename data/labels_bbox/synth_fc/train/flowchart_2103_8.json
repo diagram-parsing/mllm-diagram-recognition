@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "unmake",
+      "id": "unmake",
+      "class": "circle",
+      "bbox": [
+        55,
+        5,
+        146,
+        96
+      ]
+    },
+    {
+      "text": "vainful",
+      "id": "vainful",
+      "class": "document",
+      "bbox": [
+        65,
+        122,
+        137,
+        170
+      ]
+    },
+    {
+      "text": "cathograph unfeigningness",
+      "id": "cathograph unfeigningness",
+      "class": "document",
+      "bbox": [
+        59,
+        217,
+        143,
+        265
+      ]
+    },
+    {
+      "text": "monobutyrin",
+      "id": "monobutyrin",
+      "class": "diamond",
+      "bbox": [
+        45,
+        276,
+        157,
+        349
+      ]
+    },
+    {
+      "text": "antilift gonorrheic",
+      "id": "antilift gonorrheic",
+      "class": "parallelogram",
+      "bbox": [
+        221,
+        14,
+        356,
+        87
+      ]
+    },
+    {
+      "text": "gnarliness",
+      "id": "gnarliness",
+      "class": "diamond",
+      "bbox": [
+        227,
+        122,
+        355,
+        170
+      ]
+    },
+    {
+      "text": "atavi",
+      "id": "atavi",
+      "class": "box",
+      "bbox": [
+        255,
+        217,
+        327,
+        265
+      ]
+    },
+    {
+      "text": "brandisite",
+      "id": "brandisite",
+      "class": "oval",
+      "bbox": [
+        254,
+        310,
+        328,
+        357
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unmake",
+      "head": "vainful",
+      "label": null,
+      "bbox": [
+        96,
+        97,
+        106,
+        121
+      ]
+    },
+    {
+      "tail": "vainful",
+      "head": "cathograph unfeigningness",
+      "label": null,
+      "bbox": [
+        96,
+        169,
+        106,
+        216
+      ]
+    },
+    {
+      "tail": "cathograph unfeigningness",
+      "head": "monobutyrin",
+      "label": null,
+      "bbox": [
+        96,
+        261,
+        106,
+        274
+      ]
+    },
+    {
+      "tail": "monobutyrin",
+      "head": "antilift gonorrheic",
+      "label": "YES",
+      "bbox": [
+        152,
+        47,
+        233,
+        308
+      ]
+    },
+    {
+      "tail": "monobutyrin",
+      "head": "vainful",
+      "label": "YES",
+      "bbox": [
+        50,
+        141,
+        64,
+        308
+      ]
+    },
+    {
+      "tail": "antilift gonorrheic",
+      "head": "gnarliness",
+      "label": null,
+      "bbox": [
+        286,
+        88,
+        296,
+        120
+      ]
+    },
+    {
+      "tail": "gnarliness",
+      "head": "atavi",
+      "label": "no",
+      "bbox": [
+        286,
+        170,
+        296,
+        216
+      ]
+    },
+    {
+      "tail": "gnarliness",
+      "head": "cathograph unfeigningness",
+      "label": "no",
+      "bbox": [
+        144,
+        152,
+        241,
+        247
+      ]
+    },
+    {
+      "tail": "atavi",
+      "head": "brandisite",
+      "label": null,
+      "bbox": [
+        286,
+        265,
+        296,
+        308
+      ]
+    }
+  ]
+}

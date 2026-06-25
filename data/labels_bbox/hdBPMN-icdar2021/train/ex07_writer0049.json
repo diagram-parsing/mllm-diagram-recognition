@@ -1,0 +1,440 @@
+{
+  "nodes": [
+    {
+      "text": "start doctor rating",
+      "id": "start doctor rating",
+      "bbox": [
+        450,
+        1005,
+        546,
+        1075
+      ],
+      "class": "event"
+    },
+    {
+      "text": "creates report",
+      "id": "creates report",
+      "bbox": [
+        2707,
+        875,
+        2896,
+        1001
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        697,
+        935,
+        788,
+        1073
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1759,
+        984,
+        1866,
+        1088
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "files result",
+      "id": "files result",
+      "bbox": [
+        2012,
+        933,
+        2193,
+        1066
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        2559,
+        865,
+        2633,
+        1011
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "bbox": [
+        3060,
+        1056,
+        3147,
+        1162
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "ask Expert to review",
+      "id": "ask Expert to review",
+      "bbox": [
+        870,
+        1431,
+        1306,
+        1576
+      ],
+      "class": "task"
+    },
+    {
+      "text": "recieves Expertise",
+      "id": "recieves Expertise",
+      "bbox": [
+        1886,
+        1407,
+        2128,
+        1552
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forward to QA",
+      "id": "forward to QA",
+      "bbox": [
+        2297,
+        1383,
+        2539,
+        1528
+      ],
+      "class": "task"
+    },
+    {
+      "text": "fills out check",
+      "id": "fills out check",
+      "bbox": [
+        2671,
+        1396,
+        2903,
+        1528
+      ],
+      "class": "task"
+    },
+    {
+      "text": "completed rating",
+      "id": "completed rating",
+      "bbox": [
+        3194,
+        1062,
+        3262,
+        1130
+      ],
+      "class": "event"
+    },
+    {
+      "text": "send check",
+      "id": "send check",
+      "bbox": [
+        3009,
+        1404,
+        3103,
+        1523
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "patient interview",
+      "id": "patient interview",
+      "bbox": [
+        928,
+        899,
+        1175,
+        1045
+      ],
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send check",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        3089,
+        1151,
+        3159,
+        1468
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "fills out check",
+      "class": "sequenceFlow",
+      "bbox": [
+        2597,
+        1009,
+        2673,
+        1464
+      ],
+      "label": null
+    },
+    {
+      "tail": "recieves Expertise",
+      "head": "forward to QA",
+      "class": "sequenceFlow",
+      "bbox": [
+        2128,
+        1446,
+        2299,
+        1516
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask Expert to review",
+      "head": "recieves Expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1306,
+        1470,
+        1888,
+        1540
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask Expert to review",
+      "class": "sequenceFlow",
+      "bbox": [
+        750,
+        1062,
+        873,
+        1530
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "completed rating",
+      "class": "sequenceFlow",
+      "bbox": [
+        3137,
+        1073,
+        3207,
+        1143
+      ],
+      "label": null
+    },
+    {
+      "tail": "creates report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        2896,
+        939,
+        3098,
+        1066
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "creates report",
+      "class": "sequenceFlow",
+      "bbox": [
+        2633,
+        905,
+        2709,
+        975
+      ],
+      "label": null
+    },
+    {
+      "tail": "files result",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        2193,
+        937,
+        2578,
+        1007
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "files result",
+      "class": "sequenceFlow",
+      "bbox": [
+        1851,
+        988,
+        2014,
+        1058
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "patient interview",
+      "class": "sequenceFlow",
+      "bbox": [
+        784,
+        975,
+        930,
+        1045
+      ],
+      "label": null
+    },
+    {
+      "tail": "start doctor rating",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        546,
+        991,
+        705,
+        1061
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask Expert to review",
+      "head": "Expert",
+      "class": "messageFlow",
+      "bbox": [
+        1247,
+        1576,
+        1317,
+        1845
+      ],
+      "label": "review"
+    },
+    {
+      "tail": "Expert",
+      "head": "recieves Expertise",
+      "class": "messageFlow",
+      "bbox": [
+        1973,
+        1552,
+        2043,
+        1845
+      ],
+      "label": "expert opinion"
+    },
+    {
+      "tail": "Expert",
+      "head": "send check",
+      "class": "messageFlow",
+      "bbox": [
+        3062,
+        1487,
+        3132,
+        1844
+      ],
+      "label": null
+    },
+    {
+      "tail": "patient interview",
+      "head": "Patient",
+      "class": "messageFlow",
+      "bbox": [
+        933,
+        724,
+        1003,
+        901
+      ],
+      "label": "request"
+    },
+    {
+      "tail": "Patient",
+      "head": "patient interview",
+      "class": "messageFlow",
+      "bbox": [
+        1077,
+        724,
+        1147,
+        901
+      ],
+      "label": "statement"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Director",
+        "Quality Ins. Dept"
+      ],
+      "bbox": [
+        217,
+        827,
+        3386,
+        1722
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Director",
+      "nodes": [
+        "ask Expert to review",
+        "recieves Expertise",
+        "forward to QA",
+        "fills out check",
+        "send check"
+      ],
+      "bbox": [
+        290,
+        1262,
+        3386,
+        1722
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality Ins. Dept",
+      "nodes": [
+        "start doctor rating",
+        "creates report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "files result",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "completed rating",
+        "patient interview"
+      ],
+      "bbox": [
+        290,
+        827,
+        3386,
+        1262
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "bbox": [
+        216,
+        537,
+        3358,
+        724
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "bbox": [
+        241,
+        1842,
+        3386,
+        2084
+      ],
+      "class": "pool"
+    }
+  ]
+}

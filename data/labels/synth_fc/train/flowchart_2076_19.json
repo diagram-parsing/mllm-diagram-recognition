@@ -1,0 +1,221 @@
+{
+  "nodes": [
+    {
+      "text": "withershins",
+      "id": "withershins",
+      "class": "circle"
+    },
+    {
+      "text": "rokee",
+      "id": "rokee",
+      "class": "hexagon"
+    },
+    {
+      "text": "Deiphobus laconicum",
+      "id": "Deiphobus laconicum",
+      "class": "parallelogram"
+    },
+    {
+      "text": "entoretina reintegrate",
+      "id": "entoretina reintegrate",
+      "class": "diamond"
+    },
+    {
+      "text": "resiniferous dockhouse",
+      "id": "resiniferous dockhouse",
+      "class": "document"
+    },
+    {
+      "text": "unclerklike",
+      "id": "unclerklike",
+      "class": "diamond"
+    },
+    {
+      "text": "syndrome nepheloid",
+      "id": "syndrome nepheloid",
+      "class": "hexagon"
+    },
+    {
+      "text": "bemingle",
+      "id": "bemingle",
+      "class": "hexagon"
+    },
+    {
+      "text": "propionate",
+      "id": "propionate",
+      "class": "diamond"
+    },
+    {
+      "text": "angustiseptate domesticality",
+      "id": "angustiseptate domesticality",
+      "class": "document"
+    },
+    {
+      "text": "monologize paronomasiastic",
+      "id": "monologize paronomasiastic",
+      "class": "document"
+    },
+    {
+      "text": "indeliberation scripulum decep",
+      "id": "indeliberation scripulum decep",
+      "class": "document"
+    },
+    {
+      "text": "synapticulum noometry",
+      "id": "synapticulum noometry",
+      "class": "diamond"
+    },
+    {
+      "text": "convince",
+      "id": "convince",
+      "class": "diamond"
+    },
+    {
+      "text": "oologize",
+      "id": "oologize",
+      "class": "parallelogram"
+    },
+    {
+      "text": "bespeaker",
+      "id": "bespeaker",
+      "class": "box"
+    },
+    {
+      "text": "autointellectual",
+      "id": "autointellectual",
+      "class": "diamond"
+    },
+    {
+      "text": "tuboligamentous",
+      "id": "tuboligamentous",
+      "class": "parallelogram"
+    },
+    {
+      "text": "inconnected",
+      "id": "inconnected",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "withershins",
+      "head": "rokee",
+      "label": null
+    },
+    {
+      "tail": "rokee",
+      "head": "Deiphobus laconicum",
+      "label": null
+    },
+    {
+      "tail": "Deiphobus laconicum",
+      "head": "entoretina reintegrate",
+      "label": null
+    },
+    {
+      "tail": "entoretina reintegrate",
+      "head": "resiniferous dockhouse",
+      "label": "no"
+    },
+    {
+      "tail": "entoretina reintegrate",
+      "head": "unclerklike",
+      "label": "no"
+    },
+    {
+      "tail": "resiniferous dockhouse",
+      "head": "syndrome nepheloid",
+      "label": null
+    },
+    {
+      "tail": "syndrome nepheloid",
+      "head": "bemingle",
+      "label": null
+    },
+    {
+      "tail": "bemingle",
+      "head": "propionate",
+      "label": null
+    },
+    {
+      "tail": "propionate",
+      "head": "angustiseptate domesticality",
+      "label": "No"
+    },
+    {
+      "tail": "propionate",
+      "head": "syndrome nepheloid",
+      "label": "No"
+    },
+    {
+      "tail": "angustiseptate domesticality",
+      "head": "monologize paronomasiastic",
+      "label": null
+    },
+    {
+      "tail": "monologize paronomasiastic",
+      "head": "indeliberation scripulum decep",
+      "label": null
+    },
+    {
+      "tail": "indeliberation scripulum decep",
+      "head": "synapticulum noometry",
+      "label": null
+    },
+    {
+      "tail": "synapticulum noometry",
+      "head": "convince",
+      "label": "no"
+    },
+    {
+      "tail": "synapticulum noometry",
+      "head": "resiniferous dockhouse",
+      "label": "no"
+    },
+    {
+      "tail": "convince",
+      "head": "unclerklike",
+      "label": "yes"
+    },
+    {
+      "tail": "convince",
+      "head": "syndrome nepheloid",
+      "label": "yes"
+    },
+    {
+      "tail": "unclerklike",
+      "head": "oologize",
+      "label": "No"
+    },
+    {
+      "tail": "unclerklike",
+      "head": "entoretina reintegrate",
+      "label": "No"
+    },
+    {
+      "tail": "oologize",
+      "head": "bespeaker",
+      "label": null
+    },
+    {
+      "tail": "bespeaker",
+      "head": "autointellectual",
+      "label": null
+    },
+    {
+      "tail": "autointellectual",
+      "head": "tuboligamentous",
+      "label": "Yes"
+    },
+    {
+      "tail": "autointellectual",
+      "head": "synapticulum noometry",
+      "label": "Yes"
+    },
+    {
+      "tail": "tuboligamentous",
+      "head": "inconnected",
+      "label": null
+    }
+  ]
+}

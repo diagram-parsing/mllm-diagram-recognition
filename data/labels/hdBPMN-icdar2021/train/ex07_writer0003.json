@@ -1,0 +1,255 @@
+{
+  "nodes": [
+    {
+      "text": "Doctor rating started",
+      "id": "Doctor rating started",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "Rating ended",
+      "id": "Rating ended",
+      "class": "event"
+    },
+    {
+      "text": "fill a cheque",
+      "id": "fill a cheque",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "ask an external expert for a review",
+      "id": "ask an external expert for a review",
+      "class": "task"
+    },
+    {
+      "text": "forward review to QA specialist",
+      "id": "forward review to QA specialist",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "queque sent",
+      "id": "queque sent",
+      "class": "messageEvent"
+    },
+    {
+      "text": "patient interview process",
+      "id": "patient interview process",
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "expert did not respond in time",
+      "id": "expert did not respond in time",
+      "class": "timerEvent"
+    },
+    {
+      "text": "review received",
+      "id": "review received",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "queque sent",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill a cheque",
+      "head": "queque sent",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "fill a cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "Rating ended",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "patient interview process",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward review to QA specialist",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "review received",
+      "head": "forward review to QA specialist",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "review received",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "expert did not respond in time",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "expert did not respond in time",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask an external expert for a review",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask an external expert for a review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "patient interview process",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Doctor rating started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Experts",
+      "head": "review received",
+      "class": "messageFlow",
+      "label": "send review"
+    },
+    {
+      "tail": "Experts",
+      "head": "queque sent",
+      "class": "messageFlow",
+      "label": "send cheque"
+    },
+    {
+      "tail": "ask an external expert for a review",
+      "head": "Experts",
+      "class": "messageFlow",
+      "label": "ask an external expert for review"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "QA specialist"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "fill a cheque",
+        "ask an external expert for a review",
+        "forward review to QA specialist",
+        "queque sent",
+        "eventBasedGateway_1",
+        "exclusiveGateway_1",
+        "expert did not respond in time",
+        "review received"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "Doctor rating started",
+        "create report",
+        "Rating ended",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "file results",
+        "parallelGateway_3",
+        "patient interview process"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Experts",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

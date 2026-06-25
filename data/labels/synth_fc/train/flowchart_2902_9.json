@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "tricosanone",
+      "id": "tricosanone",
+      "class": "circle"
+    },
+    {
+      "text": "wheedlesome",
+      "id": "wheedlesome",
+      "class": "parallelogram"
+    },
+    {
+      "text": "imitatee",
+      "id": "imitatee",
+      "class": "box"
+    },
+    {
+      "text": "syndicalistic",
+      "id": "syndicalistic",
+      "class": "diamond"
+    },
+    {
+      "text": "compulsively",
+      "id": "compulsively",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Allionia quenchable",
+      "id": "Allionia quenchable",
+      "class": "parallelogram"
+    },
+    {
+      "text": "verriculated",
+      "id": "verriculated",
+      "class": "hexagon"
+    },
+    {
+      "text": "nonsaponifiable",
+      "id": "nonsaponifiable",
+      "class": "document"
+    },
+    {
+      "text": "borsch perihelium",
+      "id": "borsch perihelium",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tricosanone",
+      "head": "wheedlesome",
+      "label": null
+    },
+    {
+      "tail": "wheedlesome",
+      "head": "imitatee",
+      "label": null
+    },
+    {
+      "tail": "imitatee",
+      "head": "syndicalistic",
+      "label": null
+    },
+    {
+      "tail": "syndicalistic",
+      "head": "compulsively",
+      "label": "no"
+    },
+    {
+      "tail": "syndicalistic",
+      "head": "Allionia quenchable",
+      "label": "no"
+    },
+    {
+      "tail": "compulsively",
+      "head": "verriculated",
+      "label": null
+    },
+    {
+      "tail": "verriculated",
+      "head": "Allionia quenchable",
+      "label": null
+    },
+    {
+      "tail": "Allionia quenchable",
+      "head": "nonsaponifiable",
+      "label": null
+    },
+    {
+      "tail": "nonsaponifiable",
+      "head": "borsch perihelium",
+      "label": null
+    }
+  ]
+}

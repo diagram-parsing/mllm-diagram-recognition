@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "sensatory aphasic pseudometame",
+      "id": "sensatory aphasic pseudometame",
+      "class": "circle"
+    },
+    {
+      "text": "bag racemize",
+      "id": "bag racemize",
+      "class": "diamond"
+    },
+    {
+      "text": "veinous R",
+      "id": "veinous R",
+      "class": "box"
+    },
+    {
+      "text": "lamellar",
+      "id": "lamellar",
+      "class": "diamond"
+    },
+    {
+      "text": "metenteron subintroduce blepha",
+      "id": "metenteron subintroduce blepha",
+      "class": "parallelogram"
+    },
+    {
+      "text": "angioplany individuator",
+      "id": "angioplany individuator",
+      "class": "box"
+    },
+    {
+      "text": "triparted pseudoblepsia determ",
+      "id": "triparted pseudoblepsia determ",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "sensatory aphasic pseudometame",
+      "head": "bag racemize",
+      "label": null
+    },
+    {
+      "tail": "bag racemize",
+      "head": "veinous R",
+      "label": "NO"
+    },
+    {
+      "tail": "bag racemize",
+      "head": "sensatory aphasic pseudometame",
+      "label": "NO"
+    },
+    {
+      "tail": "veinous R",
+      "head": "lamellar",
+      "label": null
+    },
+    {
+      "tail": "lamellar",
+      "head": "metenteron subintroduce blepha",
+      "label": "YES"
+    },
+    {
+      "tail": "lamellar",
+      "head": "bag racemize",
+      "label": "YES"
+    },
+    {
+      "tail": "metenteron subintroduce blepha",
+      "head": "angioplany individuator",
+      "label": null
+    },
+    {
+      "tail": "angioplany individuator",
+      "head": "triparted pseudoblepsia determ",
+      "label": null
+    }
+  ]
+}

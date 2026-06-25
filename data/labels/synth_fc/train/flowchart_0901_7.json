@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "surculi",
+      "id": "surculi",
+      "class": "oval"
+    },
+    {
+      "text": "permutatory",
+      "id": "permutatory",
+      "class": "diamond"
+    },
+    {
+      "text": "nitration",
+      "id": "nitration",
+      "class": "diamond"
+    },
+    {
+      "text": "mammonization",
+      "id": "mammonization",
+      "class": "ellipse"
+    },
+    {
+      "text": "adtevac fatbird libidinously",
+      "id": "adtevac fatbird libidinously",
+      "class": "parallelogram"
+    },
+    {
+      "text": "forbiddable urological",
+      "id": "forbiddable urological",
+      "class": "document"
+    },
+    {
+      "text": "modiolar apothece reluctivity",
+      "id": "modiolar apothece reluctivity",
+      "class": "parallelogram"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "surculi",
+      "head": "permutatory",
+      "label": null
+    },
+    {
+      "tail": "permutatory",
+      "head": "nitration",
+      "label": "No"
+    },
+    {
+      "tail": "permutatory",
+      "head": "mammonization",
+      "label": "No"
+    },
+    {
+      "tail": "nitration",
+      "head": "adtevac fatbird libidinously",
+      "label": "yes"
+    },
+    {
+      "tail": "nitration",
+      "head": "forbiddable urological",
+      "label": "yes"
+    },
+    {
+      "tail": "adtevac fatbird libidinously",
+      "head": "modiolar apothece reluctivity",
+      "label": null
+    },
+    {
+      "tail": "modiolar apothece reluctivity",
+      "head": "forbiddable urological",
+      "label": null
+    },
+    {
+      "tail": "forbiddable urological",
+      "head": "mammonization",
+      "label": null
+    }
+  ]
+}

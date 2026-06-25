@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "text": "retromaxillary pindling",
+      "id": "retromaxillary pindling",
+      "class": "oval"
+    },
+    {
+      "text": "undemonstrative bornyl",
+      "id": "undemonstrative bornyl",
+      "class": "diamond"
+    },
+    {
+      "text": "reamendment outturned superada",
+      "id": "reamendment outturned superada",
+      "class": "diamond"
+    },
+    {
+      "text": "longway",
+      "id": "longway",
+      "class": "diamond"
+    },
+    {
+      "text": "opisthorchiasis aerographical",
+      "id": "opisthorchiasis aerographical",
+      "class": "box"
+    },
+    {
+      "text": "dejerate prill",
+      "id": "dejerate prill",
+      "class": "document"
+    },
+    {
+      "text": "Tarsipes redefeat",
+      "id": "Tarsipes redefeat",
+      "class": "hexagon"
+    },
+    {
+      "text": "cuproammonium",
+      "id": "cuproammonium",
+      "class": "diamond"
+    },
+    {
+      "text": "phytozoan",
+      "id": "phytozoan",
+      "class": "document"
+    },
+    {
+      "text": "chemicovital",
+      "id": "chemicovital",
+      "class": "parallelogram"
+    },
+    {
+      "text": "goggan",
+      "id": "goggan",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "retromaxillary pindling",
+      "head": "undemonstrative bornyl",
+      "label": null
+    },
+    {
+      "tail": "undemonstrative bornyl",
+      "head": "reamendment outturned superada",
+      "label": "YES"
+    },
+    {
+      "tail": "undemonstrative bornyl",
+      "head": "longway",
+      "label": "YES"
+    },
+    {
+      "tail": "reamendment outturned superada",
+      "head": "opisthorchiasis aerographical",
+      "label": "No"
+    },
+    {
+      "tail": "reamendment outturned superada",
+      "head": "longway",
+      "label": "No"
+    },
+    {
+      "tail": "opisthorchiasis aerographical",
+      "head": "longway",
+      "label": null
+    },
+    {
+      "tail": "longway",
+      "head": "dejerate prill",
+      "label": "Yes"
+    },
+    {
+      "tail": "longway",
+      "head": "Tarsipes redefeat",
+      "label": "Yes"
+    },
+    {
+      "tail": "dejerate prill",
+      "head": "cuproammonium",
+      "label": null
+    },
+    {
+      "tail": "cuproammonium",
+      "head": "Tarsipes redefeat",
+      "label": "YES"
+    },
+    {
+      "tail": "cuproammonium",
+      "head": "phytozoan",
+      "label": "YES"
+    },
+    {
+      "tail": "Tarsipes redefeat",
+      "head": "chemicovital",
+      "label": null
+    },
+    {
+      "tail": "chemicovital",
+      "head": "phytozoan",
+      "label": null
+    },
+    {
+      "tail": "phytozoan",
+      "head": "goggan",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "amniotic",
+      "id": "amniotic",
+      "class": "circle"
+    },
+    {
+      "text": "raser unurgent",
+      "id": "raser unurgent",
+      "class": "box"
+    },
+    {
+      "text": "antimoniate",
+      "id": "antimoniate",
+      "class": "document"
+    },
+    {
+      "text": "schemata",
+      "id": "schemata",
+      "class": "diamond"
+    },
+    {
+      "text": "trey Siphunculata Comitium",
+      "id": "trey Siphunculata Comitium",
+      "class": "diamond"
+    },
+    {
+      "text": "macrosepalous leptoprosopy",
+      "id": "macrosepalous leptoprosopy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "uninfringed Gothlander heterad",
+      "id": "uninfringed Gothlander heterad",
+      "class": "diamond"
+    },
+    {
+      "text": "speckly",
+      "id": "speckly",
+      "class": "oval"
+    },
+    {
+      "text": "myocardiogram",
+      "id": "myocardiogram",
+      "class": "hexagon"
+    },
+    {
+      "text": "Novanglian",
+      "id": "Novanglian",
+      "class": "hexagon"
+    },
+    {
+      "text": "regrate",
+      "id": "regrate",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "amniotic",
+      "head": "raser unurgent",
+      "label": null
+    },
+    {
+      "tail": "raser unurgent",
+      "head": "antimoniate",
+      "label": null
+    },
+    {
+      "tail": "antimoniate",
+      "head": "schemata",
+      "label": null
+    },
+    {
+      "tail": "schemata",
+      "head": "trey Siphunculata Comitium",
+      "label": "yes"
+    },
+    {
+      "tail": "schemata",
+      "head": "macrosepalous leptoprosopy",
+      "label": "yes"
+    },
+    {
+      "tail": "trey Siphunculata Comitium",
+      "head": "uninfringed Gothlander heterad",
+      "label": "YES"
+    },
+    {
+      "tail": "trey Siphunculata Comitium",
+      "head": "speckly",
+      "label": "YES"
+    },
+    {
+      "tail": "uninfringed Gothlander heterad",
+      "head": "macrosepalous leptoprosopy",
+      "label": "NO"
+    },
+    {
+      "tail": "uninfringed Gothlander heterad",
+      "head": "myocardiogram",
+      "label": "NO"
+    },
+    {
+      "tail": "macrosepalous leptoprosopy",
+      "head": "myocardiogram",
+      "label": null
+    },
+    {
+      "tail": "myocardiogram",
+      "head": "Novanglian",
+      "label": null
+    },
+    {
+      "tail": "Novanglian",
+      "head": "regrate",
+      "label": null
+    },
+    {
+      "tail": "regrate",
+      "head": "speckly",
+      "label": null
+    }
+  ]
+}

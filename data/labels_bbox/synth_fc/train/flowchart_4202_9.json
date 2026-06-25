@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "text": "endoplastron",
+      "id": "endoplastron",
+      "class": "oval",
+      "bbox": [
+        50,
+        47,
+        129,
+        99
+      ]
+    },
+    {
+      "text": "sewerman theraphosid athrogeni",
+      "id": "sewerman theraphosid athrogeni",
+      "class": "hexagon",
+      "bbox": [
+        6,
+        221,
+        173,
+        281
+      ]
+    },
+    {
+      "text": "photogenic",
+      "id": "photogenic",
+      "class": "diamond",
+      "bbox": [
+        20,
+        370,
+        159,
+        418
+      ]
+    },
+    {
+      "text": "beermaking physicalness",
+      "id": "beermaking physicalness",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        429,
+        174,
+        502
+      ]
+    },
+    {
+      "text": "chessylite philobrutish chopfa",
+      "id": "chessylite philobrutish chopfa",
+      "class": "document",
+      "bbox": [
+        316,
+        5,
+        429,
+        69
+      ]
+    },
+    {
+      "text": "sufferably",
+      "id": "sufferably",
+      "class": "document",
+      "bbox": [
+        30,
+        612,
+        149,
+        670
+      ]
+    },
+    {
+      "text": "terma",
+      "id": "terma",
+      "class": "box",
+      "bbox": [
+        339,
+        192,
+        411,
+        240
+      ]
+    },
+    {
+      "text": "saltern",
+      "id": "saltern",
+      "class": "document",
+      "bbox": [
+        316,
+        326,
+        429,
+        390
+      ]
+    },
+    {
+      "text": "spouseless gruine",
+      "id": "spouseless gruine",
+      "class": "oval",
+      "bbox": [
+        329,
+        475,
+        421,
+        527
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "endoplastron",
+      "head": "sewerman theraphosid athrogeni",
+      "label": null,
+      "bbox": [
+        85,
+        99,
+        94,
+        222
+      ]
+    },
+    {
+      "tail": "sewerman theraphosid athrogeni",
+      "head": "photogenic",
+      "label": null,
+      "bbox": [
+        85,
+        281,
+        94,
+        370
+      ]
+    },
+    {
+      "tail": "photogenic",
+      "head": "beermaking physicalness",
+      "label": "Yes",
+      "bbox": [
+        85,
+        416,
+        94,
+        429
+      ]
+    },
+    {
+      "tail": "photogenic",
+      "head": "chessylite philobrutish chopfa",
+      "label": "Yes",
+      "bbox": [
+        122,
+        51,
+        316,
+        381
+      ]
+    },
+    {
+      "tail": "beermaking physicalness",
+      "head": "sufferably",
+      "label": null,
+      "bbox": [
+        85,
+        502,
+        94,
+        612
+      ]
+    },
+    {
+      "tail": "sufferably",
+      "head": "chessylite philobrutish chopfa",
+      "label": null,
+      "bbox": [
+        149,
+        58,
+        316,
+        645
+      ]
+    },
+    {
+      "tail": "chessylite philobrutish chopfa",
+      "head": "terma",
+      "label": null,
+      "bbox": [
+        370,
+        69,
+        380,
+        192
+      ]
+    },
+    {
+      "tail": "terma",
+      "head": "saltern",
+      "label": null,
+      "bbox": [
+        370,
+        239,
+        380,
+        327
+      ]
+    },
+    {
+      "tail": "saltern",
+      "head": "spouseless gruine",
+      "label": null,
+      "bbox": [
+        370,
+        390,
+        380,
+        475
+      ]
+    }
+  ]
+}

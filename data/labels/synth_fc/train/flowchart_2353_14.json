@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "text": "uncircumcised",
+      "id": "uncircumcised",
+      "class": "oval"
+    },
+    {
+      "text": "assumpsit",
+      "id": "assumpsit",
+      "class": "box"
+    },
+    {
+      "text": "Cooperia",
+      "id": "Cooperia",
+      "class": "hexagon"
+    },
+    {
+      "text": "polymicroscope endochorion",
+      "id": "polymicroscope endochorion",
+      "class": "parallelogram"
+    },
+    {
+      "text": "demimondaine",
+      "id": "demimondaine",
+      "class": "diamond"
+    },
+    {
+      "text": "dehematize",
+      "id": "dehematize",
+      "class": "box"
+    },
+    {
+      "text": "sabanut violmaker",
+      "id": "sabanut violmaker",
+      "class": "document"
+    },
+    {
+      "text": "racelike",
+      "id": "racelike",
+      "class": "box"
+    },
+    {
+      "text": "spasmodism",
+      "id": "spasmodism",
+      "class": "box"
+    },
+    {
+      "text": "presalvation humiliation alien",
+      "id": "presalvation humiliation alien",
+      "class": "diamond"
+    },
+    {
+      "text": "daemon",
+      "id": "daemon",
+      "class": "box"
+    },
+    {
+      "text": "lamellirostrate uniparous",
+      "id": "lamellirostrate uniparous",
+      "class": "hexagon"
+    },
+    {
+      "text": "brodder jaspoid",
+      "id": "brodder jaspoid",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Abbasside byerlite unstoned",
+      "id": "Abbasside byerlite unstoned",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "uncircumcised",
+      "head": "assumpsit",
+      "label": null
+    },
+    {
+      "tail": "assumpsit",
+      "head": "Cooperia",
+      "label": null
+    },
+    {
+      "tail": "Cooperia",
+      "head": "polymicroscope endochorion",
+      "label": null
+    },
+    {
+      "tail": "polymicroscope endochorion",
+      "head": "demimondaine",
+      "label": null
+    },
+    {
+      "tail": "demimondaine",
+      "head": "dehematize",
+      "label": "YES"
+    },
+    {
+      "tail": "demimondaine",
+      "head": "sabanut violmaker",
+      "label": "YES"
+    },
+    {
+      "tail": "dehematize",
+      "head": "sabanut violmaker",
+      "label": null
+    },
+    {
+      "tail": "sabanut violmaker",
+      "head": "racelike",
+      "label": null
+    },
+    {
+      "tail": "racelike",
+      "head": "spasmodism",
+      "label": null
+    },
+    {
+      "tail": "spasmodism",
+      "head": "presalvation humiliation alien",
+      "label": null
+    },
+    {
+      "tail": "presalvation humiliation alien",
+      "head": "daemon",
+      "label": "No"
+    },
+    {
+      "tail": "presalvation humiliation alien",
+      "head": "lamellirostrate uniparous",
+      "label": "No"
+    },
+    {
+      "tail": "daemon",
+      "head": "brodder jaspoid",
+      "label": null
+    },
+    {
+      "tail": "brodder jaspoid",
+      "head": "lamellirostrate uniparous",
+      "label": null
+    },
+    {
+      "tail": "lamellirostrate uniparous",
+      "head": "Abbasside byerlite unstoned",
+      "label": null
+    }
+  ]
+}

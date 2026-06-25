@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "disincarcerate linked amblyaph",
+      "id": "disincarcerate linked amblyaph",
+      "class": "oval"
+    },
+    {
+      "text": "Klingsor exsufflicate chlor",
+      "id": "Klingsor exsufflicate chlor",
+      "class": "parallelogram"
+    },
+    {
+      "text": "juggernaut",
+      "id": "juggernaut",
+      "class": "diamond"
+    },
+    {
+      "text": "corporeity tutelary",
+      "id": "corporeity tutelary",
+      "class": "diamond"
+    },
+    {
+      "text": "thegnland",
+      "id": "thegnland",
+      "class": "hexagon"
+    },
+    {
+      "text": "extrabranchial",
+      "id": "extrabranchial",
+      "class": "diamond"
+    },
+    {
+      "text": "overmastering",
+      "id": "overmastering",
+      "class": "box"
+    },
+    {
+      "text": "unvamped",
+      "id": "unvamped",
+      "class": "document"
+    },
+    {
+      "text": "sensist",
+      "id": "sensist",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "disincarcerate linked amblyaph",
+      "head": "Klingsor exsufflicate chlor",
+      "label": null
+    },
+    {
+      "tail": "Klingsor exsufflicate chlor",
+      "head": "juggernaut",
+      "label": null
+    },
+    {
+      "tail": "juggernaut",
+      "head": "corporeity tutelary",
+      "label": "YES"
+    },
+    {
+      "tail": "juggernaut",
+      "head": "thegnland",
+      "label": "YES"
+    },
+    {
+      "tail": "corporeity tutelary",
+      "head": "extrabranchial",
+      "label": "Yes"
+    },
+    {
+      "tail": "corporeity tutelary",
+      "head": "overmastering",
+      "label": "Yes"
+    },
+    {
+      "tail": "extrabranchial",
+      "head": "thegnland",
+      "label": "No"
+    },
+    {
+      "tail": "extrabranchial",
+      "head": "Klingsor exsufflicate chlor",
+      "label": "No"
+    },
+    {
+      "tail": "thegnland",
+      "head": "overmastering",
+      "label": null
+    },
+    {
+      "tail": "overmastering",
+      "head": "unvamped",
+      "label": null
+    },
+    {
+      "tail": "unvamped",
+      "head": "sensist",
+      "label": null
+    }
+  ]
+}

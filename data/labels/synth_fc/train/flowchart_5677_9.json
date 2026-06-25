@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "memorialization ackey",
+      "id": "memorialization ackey",
+      "class": "ellipse"
+    },
+    {
+      "text": "thyrse",
+      "id": "thyrse",
+      "class": "box"
+    },
+    {
+      "text": "hectostere",
+      "id": "hectostere",
+      "class": "diamond"
+    },
+    {
+      "text": "stuss",
+      "id": "stuss",
+      "class": "document"
+    },
+    {
+      "text": "nuchal",
+      "id": "nuchal",
+      "class": "box"
+    },
+    {
+      "text": "barysilite tibey",
+      "id": "barysilite tibey",
+      "class": "hexagon"
+    },
+    {
+      "text": "headbander alchymy electroopti",
+      "id": "headbander alchymy electroopti",
+      "class": "diamond"
+    },
+    {
+      "text": "gaited",
+      "id": "gaited",
+      "class": "box"
+    },
+    {
+      "text": "leucogenic",
+      "id": "leucogenic",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "memorialization ackey",
+      "head": "thyrse",
+      "label": null
+    },
+    {
+      "tail": "thyrse",
+      "head": "hectostere",
+      "label": null
+    },
+    {
+      "tail": "hectostere",
+      "head": "stuss",
+      "label": "No"
+    },
+    {
+      "tail": "hectostere",
+      "head": "nuchal",
+      "label": "No"
+    },
+    {
+      "tail": "stuss",
+      "head": "barysilite tibey",
+      "label": null
+    },
+    {
+      "tail": "barysilite tibey",
+      "head": "headbander alchymy electroopti",
+      "label": null
+    },
+    {
+      "tail": "headbander alchymy electroopti",
+      "head": "nuchal",
+      "label": "Yes"
+    },
+    {
+      "tail": "headbander alchymy electroopti",
+      "head": "thyrse",
+      "label": "Yes"
+    },
+    {
+      "tail": "nuchal",
+      "head": "gaited",
+      "label": null
+    },
+    {
+      "tail": "gaited",
+      "head": "leucogenic",
+      "label": null
+    }
+  ]
+}

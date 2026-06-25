@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "text": "Begin",
+      "id": "Begin",
+      "bbox": [
+        4,
+        133,
+        222,
+        74
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input X,Y",
+      "id": "Input X,Y",
+      "bbox": [
+        314,
+        112,
+        308,
+        111
+      ],
+      "class": "data"
+    },
+    {
+      "text": "X>=Y",
+      "id": "X>=Y",
+      "bbox": [
+        757,
+        102,
+        180,
+        142
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "display Y",
+      "id": "display Y",
+      "bbox": [
+        1071,
+        4,
+        251,
+        93
+      ],
+      "class": "data"
+    },
+    {
+      "text": "display X",
+      "id": "display X",
+      "bbox": [
+        1061,
+        243,
+        269,
+        100
+      ],
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Begin",
+      "head": "Input X,Y",
+      "bbox": [
+        224,
+        163,
+        107,
+        27
+      ],
+      "kps": [
+        225.0,
+        175.0,
+        2.0,
+        324.0,
+        174.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input X,Y",
+      "head": "X>=Y",
+      "bbox": [
+        599,
+        154,
+        156,
+        32
+      ],
+      "kps": [
+        601.0,
+        170.0,
+        2.0,
+        747.0,
+        165.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display Y",
+      "bbox": [
+        929,
+        82,
+        260,
+        80
+      ],
+      "kps": [
+        931.0,
+        157.0,
+        2.0,
+        1176.0,
+        83.0,
+        2.0
+      ],
+      "label": "0"
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display X",
+      "bbox": [
+        857,
+        236,
+        236,
+        63
+      ],
+      "kps": [
+        862.0,
+        238.0,
+        2.0,
+        1086.0,
+        285.0,
+        2.0
+      ],
+      "label": "1"
+    }
+  ],
+  "groups": []
+}

@@ -1,0 +1,477 @@
+{
+  "nodes": [
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "bbox": [
+        1758,
+        932,
+        2043,
+        1108
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        803,
+        1829,
+        919,
+        1955
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1448,
+        1575,
+        1569,
+        1675
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "bbox": [
+        1537,
+        1804,
+        1864,
+        2005
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1852,
+        1580,
+        1968,
+        1701
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        1134,
+        750,
+        1350,
+        945
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "one month",
+      "id": "one month",
+      "bbox": [
+        1189,
+        1058,
+        1335,
+        1229
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "bbox": [
+        1443,
+        756,
+        1612,
+        927
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "bbox": [
+        2172,
+        927,
+        2343,
+        1078
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "bbox": [
+        2212,
+        1575,
+        2320,
+        1675
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "doctor rating workflow completed",
+      "id": "doctor rating workflow completed",
+      "bbox": [
+        2520,
+        1683,
+        2651,
+        1814
+      ],
+      "class": "event"
+    },
+    {
+      "text": "start",
+      "id": "start",
+      "bbox": [
+        612,
+        1842,
+        733,
+        1963
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1940,
+        1771,
+        2242,
+        1985
+      ],
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        1033,
+        1764,
+        1436,
+        2016
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "send work of doctor",
+      "id": "send work of doctor",
+      "bbox": [
+        758,
+        947,
+        955,
+        1118
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_4",
+      "head": "doctor rating workflow completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        2320,
+        1625,
+        2572,
+        1688
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        2238,
+        1673,
+        2299,
+        1854
+      ],
+      "label": null
+    },
+    {
+      "tail": "send cheque",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        2228,
+        1088,
+        2289,
+        1584
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        2043,
+        973,
+        2174,
+        1034
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1482,
+        924,
+        1543,
+        1579
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "bbox": [
+        1345,
+        818,
+        1446,
+        879
+      ],
+      "label": null
+    },
+    {
+      "tail": "one month",
+      "head": "send work of doctor",
+      "class": "sequenceFlow",
+      "bbox": [
+        950,
+        1060,
+        1191,
+        1146
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "one month",
+      "class": "sequenceFlow",
+      "bbox": [
+        1205,
+        937,
+        1266,
+        1078
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "send work of doctor",
+      "class": "sequenceFlow",
+      "bbox": [
+        827,
+        1131,
+        888,
+        1836
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        1886,
+        1108,
+        1946,
+        1587
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1959,
+        1637,
+        2019,
+        1773
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1736,
+        1653,
+        1866,
+        1806
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1562,
+        1632,
+        1665,
+        1806
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1249,
+        1625,
+        1451,
+        1766
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        907,
+        1868,
+        1035,
+        1928
+      ],
+      "label": null
+    },
+    {
+      "tail": "start",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        733,
+        1874,
+        818,
+        1935
+      ],
+      "label": null
+    },
+    {
+      "tail": "send work of doctor",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        947,
+        856,
+        1146,
+        997
+      ],
+      "label": null
+    },
+    {
+      "tail": "send work of doctor",
+      "head": "Experts",
+      "class": "messageFlow",
+      "bbox": [
+        844,
+        478,
+        904,
+        937
+      ],
+      "label": "doctors work"
+    },
+    {
+      "tail": "Experts",
+      "head": "expertise received",
+      "class": "messageFlow",
+      "bbox": [
+        1500,
+        478,
+        1560,
+        760
+      ],
+      "label": "expertise"
+    },
+    {
+      "tail": "send cheque",
+      "head": "Experts",
+      "class": "messageFlow",
+      "bbox": [
+        2211,
+        478,
+        2271,
+        919
+      ],
+      "label": "cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "QA Departement",
+        "Board"
+      ],
+      "bbox": [
+        302,
+        715,
+        2797,
+        2293
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA Departement",
+      "nodes": [
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "file results",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "doctor rating workflow completed",
+        "start",
+        "create report",
+        "interview patients"
+      ],
+      "bbox": [
+        378,
+        1494,
+        2797,
+        2293
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Board",
+      "nodes": [
+        "fill cheque",
+        "eventBasedGateway_1",
+        "one month",
+        "expertise received",
+        "send cheque",
+        "send work of doctor"
+      ],
+      "bbox": [
+        378,
+        715,
+        2797,
+        1494
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Experts",
+      "nodes": [],
+      "bbox": [
+        327,
+        302,
+        2746,
+        478
+      ],
+      "class": "pool"
+    }
+  ]
+}

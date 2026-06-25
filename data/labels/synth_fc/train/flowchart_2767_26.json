@@ -1,0 +1,311 @@
+{
+  "nodes": [
+    {
+      "text": "nondichotomous",
+      "id": "nondichotomous",
+      "class": "circle"
+    },
+    {
+      "text": "manometer",
+      "id": "manometer",
+      "class": "box"
+    },
+    {
+      "text": "catechetical",
+      "id": "catechetical",
+      "class": "box"
+    },
+    {
+      "text": "cetane",
+      "id": "cetane",
+      "class": "diamond"
+    },
+    {
+      "text": "carbonometer cresylite",
+      "id": "carbonometer cresylite",
+      "class": "diamond"
+    },
+    {
+      "text": "pergameneous mal sufferance",
+      "id": "pergameneous mal sufferance",
+      "class": "hexagon"
+    },
+    {
+      "text": "octadecahydrate",
+      "id": "octadecahydrate",
+      "class": "diamond"
+    },
+    {
+      "text": "whoremonger unobsessed",
+      "id": "whoremonger unobsessed",
+      "class": "parallelogram"
+    },
+    {
+      "text": "pegall dingus",
+      "id": "pegall dingus",
+      "class": "diamond"
+    },
+    {
+      "text": "tesseratomic nabobship harpago",
+      "id": "tesseratomic nabobship harpago",
+      "class": "hexagon"
+    },
+    {
+      "text": "conjoint chalcograph okra",
+      "id": "conjoint chalcograph okra",
+      "class": "diamond"
+    },
+    {
+      "text": "Carapus avenous periureteritis",
+      "id": "Carapus avenous periureteritis",
+      "class": "hexagon"
+    },
+    {
+      "text": "overmeddle",
+      "id": "overmeddle",
+      "class": "hexagon"
+    },
+    {
+      "text": "schoolmasterhood",
+      "id": "schoolmasterhood",
+      "class": "parallelogram"
+    },
+    {
+      "text": "encephalin subway unflawed",
+      "id": "encephalin subway unflawed",
+      "class": "box"
+    },
+    {
+      "text": "humdrummishness ecophobia",
+      "id": "humdrummishness ecophobia",
+      "class": "parallelogram"
+    },
+    {
+      "text": "dendriform",
+      "id": "dendriform",
+      "class": "diamond"
+    },
+    {
+      "text": "enterocystoma",
+      "id": "enterocystoma",
+      "class": "document"
+    },
+    {
+      "text": "reilluminate sans",
+      "id": "reilluminate sans",
+      "class": "hexagon"
+    },
+    {
+      "text": "statutorily",
+      "id": "statutorily",
+      "class": "diamond"
+    },
+    {
+      "text": "Goniatitidae Makah",
+      "id": "Goniatitidae Makah",
+      "class": "diamond"
+    },
+    {
+      "text": "apomorphia",
+      "id": "apomorphia",
+      "class": "ellipse"
+    },
+    {
+      "text": "weightchaser insult Setaria",
+      "id": "weightchaser insult Setaria",
+      "class": "diamond"
+    },
+    {
+      "text": "ingravidation",
+      "id": "ingravidation",
+      "class": "diamond"
+    },
+    {
+      "text": "hopvine operae",
+      "id": "hopvine operae",
+      "class": "box"
+    },
+    {
+      "text": "Anglify prankle",
+      "id": "Anglify prankle",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "nondichotomous",
+      "head": "manometer",
+      "label": null
+    },
+    {
+      "tail": "manometer",
+      "head": "catechetical",
+      "label": null
+    },
+    {
+      "tail": "catechetical",
+      "head": "cetane",
+      "label": null
+    },
+    {
+      "tail": "cetane",
+      "head": "carbonometer cresylite",
+      "label": "no"
+    },
+    {
+      "tail": "cetane",
+      "head": "pergameneous mal sufferance",
+      "label": "no"
+    },
+    {
+      "tail": "carbonometer cresylite",
+      "head": "octadecahydrate",
+      "label": "Yes"
+    },
+    {
+      "tail": "carbonometer cresylite",
+      "head": "manometer",
+      "label": "Yes"
+    },
+    {
+      "tail": "octadecahydrate",
+      "head": "whoremonger unobsessed",
+      "label": "YES"
+    },
+    {
+      "tail": "octadecahydrate",
+      "head": "pegall dingus",
+      "label": "YES"
+    },
+    {
+      "tail": "whoremonger unobsessed",
+      "head": "pergameneous mal sufferance",
+      "label": null
+    },
+    {
+      "tail": "pergameneous mal sufferance",
+      "head": "tesseratomic nabobship harpago",
+      "label": null
+    },
+    {
+      "tail": "tesseratomic nabobship harpago",
+      "head": "conjoint chalcograph okra",
+      "label": null
+    },
+    {
+      "tail": "conjoint chalcograph okra",
+      "head": "Carapus avenous periureteritis",
+      "label": "YES"
+    },
+    {
+      "tail": "conjoint chalcograph okra",
+      "head": "overmeddle",
+      "label": "YES"
+    },
+    {
+      "tail": "Carapus avenous periureteritis",
+      "head": "schoolmasterhood",
+      "label": null
+    },
+    {
+      "tail": "schoolmasterhood",
+      "head": "encephalin subway unflawed",
+      "label": null
+    },
+    {
+      "tail": "encephalin subway unflawed",
+      "head": "humdrummishness ecophobia",
+      "label": null
+    },
+    {
+      "tail": "humdrummishness ecophobia",
+      "head": "dendriform",
+      "label": null
+    },
+    {
+      "tail": "dendriform",
+      "head": "enterocystoma",
+      "label": "no"
+    },
+    {
+      "tail": "dendriform",
+      "head": "humdrummishness ecophobia",
+      "label": "no"
+    },
+    {
+      "tail": "enterocystoma",
+      "head": "reilluminate sans",
+      "label": null
+    },
+    {
+      "tail": "reilluminate sans",
+      "head": "pegall dingus",
+      "label": null
+    },
+    {
+      "tail": "pegall dingus",
+      "head": "statutorily",
+      "label": "yes"
+    },
+    {
+      "tail": "pegall dingus",
+      "head": "Goniatitidae Makah",
+      "label": "yes"
+    },
+    {
+      "tail": "statutorily",
+      "head": "overmeddle",
+      "label": "yes"
+    },
+    {
+      "tail": "statutorily",
+      "head": "apomorphia",
+      "label": "yes"
+    },
+    {
+      "tail": "overmeddle",
+      "head": "weightchaser insult Setaria",
+      "label": null
+    },
+    {
+      "tail": "weightchaser insult Setaria",
+      "head": "Goniatitidae Makah",
+      "label": "NO"
+    },
+    {
+      "tail": "weightchaser insult Setaria",
+      "head": "ingravidation",
+      "label": "NO"
+    },
+    {
+      "tail": "Goniatitidae Makah",
+      "head": "hopvine operae",
+      "label": "no"
+    },
+    {
+      "tail": "Goniatitidae Makah",
+      "head": "statutorily",
+      "label": "no"
+    },
+    {
+      "tail": "hopvine operae",
+      "head": "ingravidation",
+      "label": null
+    },
+    {
+      "tail": "ingravidation",
+      "head": "Anglify prankle",
+      "label": "no"
+    },
+    {
+      "tail": "ingravidation",
+      "head": "apomorphia",
+      "label": "no"
+    },
+    {
+      "tail": "Anglify prankle",
+      "head": "apomorphia",
+      "label": null
+    }
+  ]
+}

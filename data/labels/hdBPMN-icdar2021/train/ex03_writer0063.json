@@ -1,0 +1,375 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "task_1",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_3",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_4",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_5",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_6",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_7",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "event_3",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_2",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_3",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_4",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataStore_1",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "dataStore_2",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "dataStore_3",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "dataStore_4",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "dataStore_5",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "task_8",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_4",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "task_2",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "task_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "task_8",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "task_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "event_4",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "event_2",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_6",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "task_7",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_5",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "task_5",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "dataObject_4",
+      "head": "task_1",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "dataObject_2",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataObject_3",
+      "head": "task_2",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "dataObject_1",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataStore_4",
+      "head": "task_3",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataObject_2",
+      "head": "task_3",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataStore_2",
+      "head": "task_4",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataObject_1",
+      "head": "task_4",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataStore_3",
+      "head": "task_5",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataStore_1",
+      "head": "task_6",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataStore_2",
+      "head": "task_7",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataObject_1",
+      "head": "task_7",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataObject_2",
+      "head": "task_8",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "dataStore_5",
+      "head": "task_8",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "task_6",
+      "head": "claimant",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "task_4",
+      "head": "claimant",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "task_7",
+      "head": "claimant",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "claimant",
+      "head": "event_1",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "claimant",
+      "head": "event_4",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "task_8",
+      "head": "claimant",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "claimant",
+      "head": "event_2",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "lane_1",
+        "lane_2"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [
+        "task_2",
+        "task_4",
+        "task_7",
+        "exclusiveGateway_2",
+        "dataObject_1",
+        "dataObject_3",
+        "dataStore_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": null,
+      "nodes": [
+        "task_1",
+        "task_3",
+        "task_5",
+        "task_6",
+        "exclusiveGateway_1",
+        "exclusiveGateway_3",
+        "event_1",
+        "event_2",
+        "event_3",
+        "dataObject_2",
+        "dataObject_4",
+        "dataStore_1",
+        "dataStore_3",
+        "dataStore_4",
+        "dataStore_5",
+        "task_8",
+        "event_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claimant",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

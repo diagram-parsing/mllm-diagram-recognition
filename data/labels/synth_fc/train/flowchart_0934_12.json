@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "text": "chaplain Polyodon",
+      "id": "chaplain Polyodon",
+      "class": "oval"
+    },
+    {
+      "text": "bield",
+      "id": "bield",
+      "class": "parallelogram"
+    },
+    {
+      "text": "pentastome belatticed",
+      "id": "pentastome belatticed",
+      "class": "box"
+    },
+    {
+      "text": "multilateral amusee interbreat",
+      "id": "multilateral amusee interbreat",
+      "class": "diamond"
+    },
+    {
+      "text": "reattract understory",
+      "id": "reattract understory",
+      "class": "parallelogram"
+    },
+    {
+      "text": "stonesmitch adephagous kittenh",
+      "id": "stonesmitch adephagous kittenh",
+      "class": "diamond"
+    },
+    {
+      "text": "tikitiki acholic",
+      "id": "tikitiki acholic",
+      "class": "box"
+    },
+    {
+      "text": "teethily niccolic exprobration",
+      "id": "teethily niccolic exprobration",
+      "class": "oval"
+    },
+    {
+      "text": "turn",
+      "id": "turn",
+      "class": "diamond"
+    },
+    {
+      "text": "draggletail logometrically",
+      "id": "draggletail logometrically",
+      "class": "box"
+    },
+    {
+      "text": "overgood",
+      "id": "overgood",
+      "class": "hexagon"
+    },
+    {
+      "text": "mountebank stationery",
+      "id": "mountebank stationery",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "chaplain Polyodon",
+      "head": "bield",
+      "label": null
+    },
+    {
+      "tail": "bield",
+      "head": "pentastome belatticed",
+      "label": null
+    },
+    {
+      "tail": "pentastome belatticed",
+      "head": "multilateral amusee interbreat",
+      "label": null
+    },
+    {
+      "tail": "multilateral amusee interbreat",
+      "head": "reattract understory",
+      "label": "No"
+    },
+    {
+      "tail": "multilateral amusee interbreat",
+      "head": "pentastome belatticed",
+      "label": "No"
+    },
+    {
+      "tail": "reattract understory",
+      "head": "stonesmitch adephagous kittenh",
+      "label": null
+    },
+    {
+      "tail": "stonesmitch adephagous kittenh",
+      "head": "tikitiki acholic",
+      "label": "YES"
+    },
+    {
+      "tail": "stonesmitch adephagous kittenh",
+      "head": "teethily niccolic exprobration",
+      "label": "YES"
+    },
+    {
+      "tail": "tikitiki acholic",
+      "head": "turn",
+      "label": null
+    },
+    {
+      "tail": "turn",
+      "head": "draggletail logometrically",
+      "label": "yes"
+    },
+    {
+      "tail": "turn",
+      "head": "overgood",
+      "label": "yes"
+    },
+    {
+      "tail": "draggletail logometrically",
+      "head": "mountebank stationery",
+      "label": null
+    },
+    {
+      "tail": "mountebank stationery",
+      "head": "overgood",
+      "label": "no"
+    },
+    {
+      "tail": "mountebank stationery",
+      "head": "turn",
+      "label": "no"
+    },
+    {
+      "tail": "overgood",
+      "head": "teethily niccolic exprobration",
+      "label": null
+    }
+  ]
+}

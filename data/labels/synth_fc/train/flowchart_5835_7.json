@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "organistrum secundiparous cons",
+      "id": "organistrum secundiparous cons",
+      "class": "oval"
+    },
+    {
+      "text": "votively pneumonorrhaphy sar",
+      "id": "votively pneumonorrhaphy sar",
+      "class": "document"
+    },
+    {
+      "text": "uncouthly",
+      "id": "uncouthly",
+      "class": "diamond"
+    },
+    {
+      "text": "extramorainic",
+      "id": "extramorainic",
+      "class": "box"
+    },
+    {
+      "text": "desire",
+      "id": "desire",
+      "class": "parallelogram"
+    },
+    {
+      "text": "cerealism",
+      "id": "cerealism",
+      "class": "box"
+    },
+    {
+      "text": "tarbogan",
+      "id": "tarbogan",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "organistrum secundiparous cons",
+      "head": "votively pneumonorrhaphy sar",
+      "label": null
+    },
+    {
+      "tail": "votively pneumonorrhaphy sar",
+      "head": "uncouthly",
+      "label": null
+    },
+    {
+      "tail": "uncouthly",
+      "head": "extramorainic",
+      "label": "YES"
+    },
+    {
+      "tail": "uncouthly",
+      "head": "organistrum secundiparous cons",
+      "label": "YES"
+    },
+    {
+      "tail": "extramorainic",
+      "head": "desire",
+      "label": null
+    },
+    {
+      "tail": "desire",
+      "head": "cerealism",
+      "label": null
+    },
+    {
+      "tail": "cerealism",
+      "head": "tarbogan",
+      "label": null
+    }
+  ]
+}

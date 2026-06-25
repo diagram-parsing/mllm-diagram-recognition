@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "text": "Selenipedium floodwood",
+      "id": "Selenipedium floodwood",
+      "class": "ellipse"
+    },
+    {
+      "text": "frequent",
+      "id": "frequent",
+      "class": "diamond"
+    },
+    {
+      "text": "scappler",
+      "id": "scappler",
+      "class": "box"
+    },
+    {
+      "text": "dermoreaction lipsanotheca",
+      "id": "dermoreaction lipsanotheca",
+      "class": "diamond"
+    },
+    {
+      "text": "throttler",
+      "id": "throttler",
+      "class": "parallelogram"
+    },
+    {
+      "text": "poppylike",
+      "id": "poppylike",
+      "class": "box"
+    },
+    {
+      "text": "interchangeably upscuddle care",
+      "id": "interchangeably upscuddle care",
+      "class": "diamond"
+    },
+    {
+      "text": "trimorph",
+      "id": "trimorph",
+      "class": "diamond"
+    },
+    {
+      "text": "percomorph",
+      "id": "percomorph",
+      "class": "diamond"
+    },
+    {
+      "text": "cementitious",
+      "id": "cementitious",
+      "class": "diamond"
+    },
+    {
+      "text": "Phalaecean",
+      "id": "Phalaecean",
+      "class": "diamond"
+    },
+    {
+      "text": "Clallam",
+      "id": "Clallam",
+      "class": "diamond"
+    },
+    {
+      "text": "octofid",
+      "id": "octofid",
+      "class": "diamond"
+    },
+    {
+      "text": "neoteny",
+      "id": "neoteny",
+      "class": "diamond"
+    },
+    {
+      "text": "actuary",
+      "id": "actuary",
+      "class": "diamond"
+    },
+    {
+      "text": "mockful telltale Tuba",
+      "id": "mockful telltale Tuba",
+      "class": "circle"
+    },
+    {
+      "text": "symphyogenetic sweatshop",
+      "id": "symphyogenetic sweatshop",
+      "class": "parallelogram"
+    },
+    {
+      "text": "phytoserological",
+      "id": "phytoserological",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Selenipedium floodwood",
+      "head": "frequent",
+      "label": null
+    },
+    {
+      "tail": "frequent",
+      "head": "scappler",
+      "label": "no"
+    },
+    {
+      "tail": "frequent",
+      "head": "Selenipedium floodwood",
+      "label": "no"
+    },
+    {
+      "tail": "scappler",
+      "head": "dermoreaction lipsanotheca",
+      "label": null
+    },
+    {
+      "tail": "dermoreaction lipsanotheca",
+      "head": "throttler",
+      "label": "YES"
+    },
+    {
+      "tail": "dermoreaction lipsanotheca",
+      "head": "poppylike",
+      "label": "YES"
+    },
+    {
+      "tail": "throttler",
+      "head": "interchangeably upscuddle care",
+      "label": null
+    },
+    {
+      "tail": "interchangeably upscuddle care",
+      "head": "trimorph",
+      "label": "YES"
+    },
+    {
+      "tail": "interchangeably upscuddle care",
+      "head": "throttler",
+      "label": "YES"
+    },
+    {
+      "tail": "trimorph",
+      "head": "percomorph",
+      "label": "No"
+    },
+    {
+      "tail": "trimorph",
+      "head": "cementitious",
+      "label": "No"
+    },
+    {
+      "tail": "percomorph",
+      "head": "Phalaecean",
+      "label": "yes"
+    },
+    {
+      "tail": "percomorph",
+      "head": "Clallam",
+      "label": "yes"
+    },
+    {
+      "tail": "Phalaecean",
+      "head": "octofid",
+      "label": "Yes"
+    },
+    {
+      "tail": "Phalaecean",
+      "head": "cementitious",
+      "label": "Yes"
+    },
+    {
+      "tail": "octofid",
+      "head": "neoteny",
+      "label": "No"
+    },
+    {
+      "tail": "octofid",
+      "head": "actuary",
+      "label": "No"
+    },
+    {
+      "tail": "neoteny",
+      "head": "actuary",
+      "label": "NO"
+    },
+    {
+      "tail": "neoteny",
+      "head": "mockful telltale Tuba",
+      "label": "NO"
+    },
+    {
+      "tail": "actuary",
+      "head": "symphyogenetic sweatshop",
+      "label": "No"
+    },
+    {
+      "tail": "actuary",
+      "head": "trimorph",
+      "label": "No"
+    },
+    {
+      "tail": "symphyogenetic sweatshop",
+      "head": "poppylike",
+      "label": null
+    },
+    {
+      "tail": "poppylike",
+      "head": "phytoserological",
+      "label": null
+    },
+    {
+      "tail": "phytoserological",
+      "head": "cementitious",
+      "label": null
+    },
+    {
+      "tail": "cementitious",
+      "head": "Clallam",
+      "label": "Yes"
+    },
+    {
+      "tail": "cementitious",
+      "head": "trimorph",
+      "label": "Yes"
+    },
+    {
+      "tail": "Clallam",
+      "head": "mockful telltale Tuba",
+      "label": "NO"
+    },
+    {
+      "tail": "Clallam",
+      "head": "dermoreaction lipsanotheca",
+      "label": "NO"
+    }
+  ]
+}

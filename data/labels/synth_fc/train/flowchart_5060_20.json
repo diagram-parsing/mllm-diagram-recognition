@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "underway",
+      "id": "underway",
+      "class": "ellipse"
+    },
+    {
+      "text": "distributor",
+      "id": "distributor",
+      "class": "box"
+    },
+    {
+      "text": "scythestone",
+      "id": "scythestone",
+      "class": "parallelogram"
+    },
+    {
+      "text": "frustrately",
+      "id": "frustrately",
+      "class": "parallelogram"
+    },
+    {
+      "text": "uneclipsed",
+      "id": "uneclipsed",
+      "class": "hexagon"
+    },
+    {
+      "text": "hematorrhachis qualtagh",
+      "id": "hematorrhachis qualtagh",
+      "class": "parallelogram"
+    },
+    {
+      "text": "nonprohibition insolation undi",
+      "id": "nonprohibition insolation undi",
+      "class": "hexagon"
+    },
+    {
+      "text": "disvisage splendaciousness",
+      "id": "disvisage splendaciousness",
+      "class": "diamond"
+    },
+    {
+      "text": "commeddle alienize",
+      "id": "commeddle alienize",
+      "class": "hexagon"
+    },
+    {
+      "text": "precriticism unbuild",
+      "id": "precriticism unbuild",
+      "class": "diamond"
+    },
+    {
+      "text": "quarreling",
+      "id": "quarreling",
+      "class": "hexagon"
+    },
+    {
+      "text": "pudding roosterless playday",
+      "id": "pudding roosterless playday",
+      "class": "diamond"
+    },
+    {
+      "text": "vermetid",
+      "id": "vermetid",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Calyptratae",
+      "id": "Calyptratae",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Uranian",
+      "id": "Uranian",
+      "class": "diamond"
+    },
+    {
+      "text": "tinegrass",
+      "id": "tinegrass",
+      "class": "document"
+    },
+    {
+      "text": "dihydrocupreine",
+      "id": "dihydrocupreine",
+      "class": "hexagon"
+    },
+    {
+      "text": "colpoptosis",
+      "id": "colpoptosis",
+      "class": "document"
+    },
+    {
+      "text": "unjam",
+      "id": "unjam",
+      "class": "diamond"
+    },
+    {
+      "text": "chromatosis",
+      "id": "chromatosis",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "underway",
+      "head": "distributor",
+      "label": null
+    },
+    {
+      "tail": "distributor",
+      "head": "scythestone",
+      "label": null
+    },
+    {
+      "tail": "scythestone",
+      "head": "frustrately",
+      "label": null
+    },
+    {
+      "tail": "frustrately",
+      "head": "uneclipsed",
+      "label": null
+    },
+    {
+      "tail": "uneclipsed",
+      "head": "hematorrhachis qualtagh",
+      "label": null
+    },
+    {
+      "tail": "hematorrhachis qualtagh",
+      "head": "nonprohibition insolation undi",
+      "label": null
+    },
+    {
+      "tail": "nonprohibition insolation undi",
+      "head": "disvisage splendaciousness",
+      "label": null
+    },
+    {
+      "tail": "disvisage splendaciousness",
+      "head": "commeddle alienize",
+      "label": "YES"
+    },
+    {
+      "tail": "disvisage splendaciousness",
+      "head": "nonprohibition insolation undi",
+      "label": "YES"
+    },
+    {
+      "tail": "commeddle alienize",
+      "head": "precriticism unbuild",
+      "label": null
+    },
+    {
+      "tail": "precriticism unbuild",
+      "head": "quarreling",
+      "label": "Yes"
+    },
+    {
+      "tail": "precriticism unbuild",
+      "head": "underway",
+      "label": "Yes"
+    },
+    {
+      "tail": "quarreling",
+      "head": "pudding roosterless playday",
+      "label": null
+    },
+    {
+      "tail": "pudding roosterless playday",
+      "head": "vermetid",
+      "label": "YES"
+    },
+    {
+      "tail": "pudding roosterless playday",
+      "head": "quarreling",
+      "label": "YES"
+    },
+    {
+      "tail": "vermetid",
+      "head": "Calyptratae",
+      "label": null
+    },
+    {
+      "tail": "Calyptratae",
+      "head": "Uranian",
+      "label": null
+    },
+    {
+      "tail": "Uranian",
+      "head": "tinegrass",
+      "label": "YES"
+    },
+    {
+      "tail": "Uranian",
+      "head": "frustrately",
+      "label": "YES"
+    },
+    {
+      "tail": "tinegrass",
+      "head": "dihydrocupreine",
+      "label": null
+    },
+    {
+      "tail": "dihydrocupreine",
+      "head": "colpoptosis",
+      "label": null
+    },
+    {
+      "tail": "colpoptosis",
+      "head": "unjam",
+      "label": null
+    },
+    {
+      "tail": "unjam",
+      "head": "chromatosis",
+      "label": "No"
+    },
+    {
+      "tail": "unjam",
+      "head": "uneclipsed",
+      "label": "No"
+    }
+  ]
+}

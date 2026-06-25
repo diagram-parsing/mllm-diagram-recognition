@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "marginality",
+      "id": "marginality",
+      "class": "oval"
+    },
+    {
+      "text": "thiophosgene",
+      "id": "thiophosgene",
+      "class": "diamond"
+    },
+    {
+      "text": "rimiform",
+      "id": "rimiform",
+      "class": "box"
+    },
+    {
+      "text": "safeblowing",
+      "id": "safeblowing",
+      "class": "box"
+    },
+    {
+      "text": "minutia",
+      "id": "minutia",
+      "class": "diamond"
+    },
+    {
+      "text": "vext",
+      "id": "vext",
+      "class": "diamond"
+    },
+    {
+      "text": "micranthropos",
+      "id": "micranthropos",
+      "class": "box"
+    },
+    {
+      "text": "disproportionably",
+      "id": "disproportionably",
+      "class": "oval"
+    },
+    {
+      "text": "anastrophe mealies",
+      "id": "anastrophe mealies",
+      "class": "box"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "marginality",
+      "head": "thiophosgene",
+      "label": null
+    },
+    {
+      "tail": "thiophosgene",
+      "head": "rimiform",
+      "label": "NO"
+    },
+    {
+      "tail": "thiophosgene",
+      "head": "safeblowing",
+      "label": "NO"
+    },
+    {
+      "tail": "rimiform",
+      "head": "safeblowing",
+      "label": null
+    },
+    {
+      "tail": "safeblowing",
+      "head": "minutia",
+      "label": null
+    },
+    {
+      "tail": "minutia",
+      "head": "vext",
+      "label": "No"
+    },
+    {
+      "tail": "minutia",
+      "head": "micranthropos",
+      "label": "No"
+    },
+    {
+      "tail": "vext",
+      "head": "micranthropos",
+      "label": "no"
+    },
+    {
+      "tail": "vext",
+      "head": "disproportionably",
+      "label": "no"
+    },
+    {
+      "tail": "micranthropos",
+      "head": "anastrophe mealies",
+      "label": null
+    },
+    {
+      "tail": "anastrophe mealies",
+      "head": "disproportionably",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "nodes": [
+    {
+      "text": "Begin",
+      "id": "Begin",
+      "bbox": [
+        304,
+        4,
+        279,
+        142
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input n",
+      "id": "Input n",
+      "bbox": [
+        287,
+        207,
+        321,
+        108
+      ],
+      "class": "data"
+    },
+    {
+      "text": "k=1 sum=0",
+      "id": "k=1 sum=0",
+      "bbox": [
+        253,
+        385,
+        331,
+        159
+      ],
+      "class": "process"
+    },
+    {
+      "text": "sum=sum+k",
+      "id": "sum=sum+k",
+      "bbox": [
+        248,
+        624,
+        399,
+        102
+      ],
+      "class": "process"
+    },
+    {
+      "text": "k==n",
+      "id": "k==n",
+      "bbox": [
+        280,
+        807,
+        281,
+        204
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "k=k+1",
+      "id": "k=k+1",
+      "bbox": [
+        627,
+        847,
+        217,
+        118
+      ],
+      "class": "process"
+    },
+    {
+      "text": "disp sum",
+      "id": "disp sum",
+      "bbox": [
+        5,
+        981,
+        317,
+        106
+      ],
+      "class": "data"
+    },
+    {
+      "text": "Finish",
+      "id": "Finish",
+      "bbox": [
+        14,
+        1163,
+        284,
+        167
+      ],
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Begin",
+      "head": "Input n",
+      "bbox": [
+        424,
+        144,
+        40,
+        69
+      ],
+      "kps": [
+        444.0,
+        145.0,
+        2.0,
+        444.0,
+        207.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input n",
+      "head": "k=1 sum=0",
+      "bbox": [
+        400,
+        306,
+        44,
+        84
+      ],
+      "kps": [
+        426.0,
+        308.0,
+        2.0,
+        418.0,
+        388.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "k=1 sum=0",
+      "head": "sum=sum+k",
+      "bbox": [
+        398,
+        533,
+        55,
+        98
+      ],
+      "kps": [
+        423.0,
+        535.0,
+        2.0,
+        422.0,
+        619.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "sum=sum+k",
+      "head": "k==n",
+      "bbox": [
+        396,
+        719,
+        52,
+        94
+      ],
+      "kps": [
+        419.0,
+        720.0,
+        2.0,
+        421.0,
+        800.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "k==n",
+      "head": "k=k+1",
+      "bbox": [
+        558,
+        903,
+        73,
+        9
+      ],
+      "kps": [
+        560.0,
+        907.0,
+        2.0,
+        629.0,
+        910.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "k=k+1",
+      "head": "sum=sum+k",
+      "bbox": [
+        436,
+        556,
+        323,
+        281
+      ],
+      "kps": [
+        735.0,
+        835.0,
+        2.0,
+        467.0,
+        587.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "k==n",
+      "head": "disp sum",
+      "bbox": [
+        163,
+        901,
+        125,
+        99
+      ],
+      "kps": [
+        286.0,
+        905.0,
+        2.0,
+        174.0,
+        987.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "disp sum",
+      "head": "Finish",
+      "bbox": [
+        151,
+        1083,
+        45,
+        87
+      ],
+      "kps": [
+        165.0,
+        1084.0,
+        2.0,
+        172.0,
+        1165.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

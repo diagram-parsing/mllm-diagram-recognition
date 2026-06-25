@@ -1,0 +1,145 @@
+{
+  "nodes": [
+    {
+      "text": "receive online application to open a bank account",
+      "id": "receive online application to open a bank account",
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify customer by email",
+      "id": "notify customer by email",
+      "class": "task"
+    },
+    {
+      "text": "process ends",
+      "id": "process ends",
+      "class": "event"
+    },
+    {
+      "text": "create new bank account",
+      "id": "create new bank account",
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack to customer",
+      "id": "send welcome pack to customer",
+      "class": "task"
+    },
+    {
+      "text": "send bank card to customer",
+      "id": "send bank card to customer",
+      "class": "task"
+    },
+    {
+      "text": "send PIN number to customer",
+      "id": "send PIN number to customer",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "bank account opened",
+      "id": "bank account opened",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "notify customer by email",
+      "head": "process ends",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "bank account opened",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send bank card to customer",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send bank card to customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send PIN number to customer",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send PIN number to customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send welcome pack to customer",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send welcome pack to customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create new bank account",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive online application to open a bank account",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify customer by email",
+      "class": "sequenceFlow",
+      "label": "application rejected"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create new bank account",
+      "class": "sequenceFlow",
+      "label": "application approved"
+    }
+  ],
+  "groups": []
+}

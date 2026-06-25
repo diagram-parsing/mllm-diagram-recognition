@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "text": "amasesis",
+      "id": "amasesis",
+      "class": "node"
+    },
+    {
+      "text": "subjectdom",
+      "id": "subjectdom",
+      "class": "node"
+    },
+    {
+      "text": "anemotropic axweed",
+      "id": "anemotropic axweed",
+      "class": "node"
+    },
+    {
+      "text": "hydrome laconicum postmastoid",
+      "id": "hydrome laconicum postmastoid",
+      "class": "node"
+    },
+    {
+      "text": "chiromantic scolog",
+      "id": "chiromantic scolog",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "amasesis",
+      "head": "subjectdom",
+      "label": "-0.72* H = 0.992",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "amasesis",
+      "head": "anemotropic axweed",
+      "label": "-1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "hydrome laconicum postmastoid",
+      "head": "chiromantic scolog",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "amasesis",
+      "head": "hydrome laconicum postmastoid",
+      "label": "0.61*** x = 0.661",
+      "class": "bidirectional"
+    }
+  ]
+}

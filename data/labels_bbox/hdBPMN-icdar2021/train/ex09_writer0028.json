@@ -1,0 +1,404 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        724,
+        1045,
+        827,
+        1149
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        1008,
+        985,
+        1542,
+        1163
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        1669,
+        1028,
+        1772,
+        1132
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        505,
+        1724,
+        609,
+        1827
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        781,
+        1715,
+        899,
+        1821
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_4",
+      "bbox": [
+        1060,
+        1626,
+        1146,
+        1706
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_5",
+      "bbox": [
+        1048,
+        1818,
+        1172,
+        1916
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        1247,
+        1643,
+        1304,
+        1698
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_6",
+      "bbox": [
+        574,
+        2137,
+        675,
+        2221
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "bbox": [
+        1186,
+        2109,
+        1476,
+        2264
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        2040,
+        2137,
+        2132,
+        2212
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_7",
+      "bbox": [
+        1660,
+        2126,
+        1772,
+        2238
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "bbox": [
+        939,
+        2117,
+        1043,
+        2221
+      ],
+      "class": "timerEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "task_1",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1542,
+        1044,
+        1672,
+        1113
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        827,
+        1064,
+        1011,
+        1133
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1146,
+        1636,
+        1249,
+        1705
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_5",
+      "class": "sequenceFlow",
+      "bbox": [
+        841,
+        1817,
+        1051,
+        1886
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        841,
+        1655,
+        1063,
+        1724
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        609,
+        1741,
+        790,
+        1810
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "messageEvent_7",
+      "class": "sequenceFlow",
+      "bbox": [
+        1476,
+        2146,
+        1663,
+        2215
+      ],
+      "label": null
+    },
+    {
+      "tail": "timerEvent_1",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1043,
+        2137,
+        1189,
+        2206
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_6",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        672,
+        2136,
+        942,
+        2205
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_7",
+      "head": "event_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1772,
+        2150,
+        2042,
+        2219
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "pool_3",
+      "class": "messageFlow",
+      "bbox": [
+        1688,
+        471,
+        1757,
+        1031
+      ],
+      "label": null
+    },
+    {
+      "tail": "pool_3",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        748,
+        471,
+        817,
+        1048
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_5",
+      "head": "messageEvent_6",
+      "class": "messageFlow",
+      "bbox": [
+        672,
+        1913,
+        1071,
+        2140
+      ],
+      "label": null
+    },
+    {
+      "tail": "pool_3",
+      "head": "messageEvent_3",
+      "class": "messageFlow",
+      "bbox": [
+        568,
+        471,
+        2186,
+        1729
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "pool_3",
+      "class": "messageFlow",
+      "bbox": [
+        1123,
+        471,
+        2597,
+        1632
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_7",
+      "head": "pool_3",
+      "class": "messageFlow",
+      "bbox": [
+        1738,
+        471,
+        2824,
+        2134
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Promotionaprogramm",
+      "nodes": [
+        "Mitarbeiter"
+      ],
+      "bbox": [
+        201,
+        698,
+        3114,
+        1499
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Mitarbeiter",
+      "nodes": [
+        "messageEvent_1",
+        "task_1",
+        "messageEvent_2"
+      ],
+      "bbox": [
+        287,
+        698,
+        3114,
+        1499
+      ],
+      "class": "lane"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "bbox": [
+        264,
+        1606,
+        2991,
+        1936
+      ],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "bbox": [
+        324,
+        2051,
+        3175,
+        2336
+      ],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "bbox": [
+        186,
+        356,
+        3152,
+        471
+      ],
+      "class": "pool"
+    }
+  ]
+}

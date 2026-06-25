@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "text": "pseudovolcano",
+      "id": "pseudovolcano",
+      "class": "circle",
+      "bbox": [
+        9,
+        5,
+        133,
+        129
+      ]
+    },
+    {
+      "text": "divellent slabber",
+      "id": "divellent slabber",
+      "class": "parallelogram",
+      "bbox": [
+        10,
+        173,
+        131,
+        246
+      ]
+    },
+    {
+      "text": "hyperdicrotism",
+      "id": "hyperdicrotism",
+      "class": "box",
+      "bbox": [
+        19,
+        257,
+        123,
+        305
+      ]
+    },
+    {
+      "text": "wiglike",
+      "id": "wiglike",
+      "class": "document",
+      "bbox": [
+        25,
+        352,
+        117,
+        400
+      ]
+    },
+    {
+      "text": "leatherleaf",
+      "id": "leatherleaf",
+      "class": "diamond",
+      "bbox": [
+        5,
+        447,
+        136,
+        490
+      ]
+    },
+    {
+      "text": "tritolo bidentate",
+      "id": "tritolo bidentate",
+      "class": "diamond",
+      "bbox": [
+        201,
+        30,
+        321,
+        104
+      ]
+    },
+    {
+      "text": "flirty",
+      "id": "flirty",
+      "class": "diamond",
+      "bbox": [
+        215,
+        162,
+        307,
+        210
+      ]
+    },
+    {
+      "text": "rebrutalize ponderously parado",
+      "id": "rebrutalize ponderously parado",
+      "class": "oval",
+      "bbox": [
+        195,
+        255,
+        322,
+        307
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pseudovolcano",
+      "head": "divellent slabber",
+      "label": null,
+      "bbox": [
+        65,
+        128,
+        77,
+        173
+      ]
+    },
+    {
+      "tail": "divellent slabber",
+      "head": "hyperdicrotism",
+      "label": null,
+      "bbox": [
+        65,
+        244,
+        77,
+        257
+      ]
+    },
+    {
+      "tail": "hyperdicrotism",
+      "head": "wiglike",
+      "label": null,
+      "bbox": [
+        65,
+        305,
+        77,
+        352
+      ]
+    },
+    {
+      "tail": "wiglike",
+      "head": "leatherleaf",
+      "label": null,
+      "bbox": [
+        65,
+        400,
+        77,
+        447
+      ]
+    },
+    {
+      "tail": "leatherleaf",
+      "head": "tritolo bidentate",
+      "label": "NO",
+      "bbox": [
+        114,
+        61,
+        201,
+        479
+      ]
+    },
+    {
+      "tail": "leatherleaf",
+      "head": "pseudovolcano",
+      "label": "NO",
+      "bbox": [
+        107,
+        111,
+        151,
+        463
+      ]
+    },
+    {
+      "tail": "tritolo bidentate",
+      "head": "flirty",
+      "label": "YES",
+      "bbox": [
+        255,
+        103,
+        267,
+        162
+      ]
+    },
+    {
+      "tail": "tritolo bidentate",
+      "head": "rebrutalize ponderously parado",
+      "label": "YES",
+      "bbox": [
+        202,
+        71,
+        214,
+        266
+      ]
+    },
+    {
+      "tail": "flirty",
+      "head": "rebrutalize ponderously parado",
+      "label": "No",
+      "bbox": [
+        255,
+        209,
+        267,
+        255
+      ]
+    },
+    {
+      "tail": "flirty",
+      "head": "hyperdicrotism",
+      "label": "No",
+      "bbox": [
+        122,
+        193,
+        228,
+        288
+      ]
+    }
+  ]
+}

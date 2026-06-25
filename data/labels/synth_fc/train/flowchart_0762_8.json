@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "quina",
+      "id": "quina",
+      "class": "oval"
+    },
+    {
+      "text": "tarentala amphorous Rauraci",
+      "id": "tarentala amphorous Rauraci",
+      "class": "diamond"
+    },
+    {
+      "text": "unasleep masterhood pararek",
+      "id": "unasleep masterhood pararek",
+      "class": "hexagon"
+    },
+    {
+      "text": "auricomous affixal skullcap",
+      "id": "auricomous affixal skullcap",
+      "class": "document"
+    },
+    {
+      "text": "dullish",
+      "id": "dullish",
+      "class": "document"
+    },
+    {
+      "text": "necessarian minareted aerocyst",
+      "id": "necessarian minareted aerocyst",
+      "class": "document"
+    },
+    {
+      "text": "overstately kvint backspin",
+      "id": "overstately kvint backspin",
+      "class": "diamond"
+    },
+    {
+      "text": "eelware Achango",
+      "id": "eelware Achango",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "quina",
+      "head": "tarentala amphorous Rauraci",
+      "label": null
+    },
+    {
+      "tail": "tarentala amphorous Rauraci",
+      "head": "unasleep masterhood pararek",
+      "label": "YES"
+    },
+    {
+      "tail": "tarentala amphorous Rauraci",
+      "head": "quina",
+      "label": "YES"
+    },
+    {
+      "tail": "unasleep masterhood pararek",
+      "head": "auricomous affixal skullcap",
+      "label": null
+    },
+    {
+      "tail": "auricomous affixal skullcap",
+      "head": "dullish",
+      "label": null
+    },
+    {
+      "tail": "dullish",
+      "head": "necessarian minareted aerocyst",
+      "label": null
+    },
+    {
+      "tail": "necessarian minareted aerocyst",
+      "head": "overstately kvint backspin",
+      "label": null
+    },
+    {
+      "tail": "overstately kvint backspin",
+      "head": "eelware Achango",
+      "label": "Yes"
+    },
+    {
+      "tail": "overstately kvint backspin",
+      "head": "necessarian minareted aerocyst",
+      "label": "Yes"
+    }
+  ]
+}

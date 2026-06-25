@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "text": "saccharinely",
+      "id": "saccharinely",
+      "class": "ellipse"
+    },
+    {
+      "text": "archpractice",
+      "id": "archpractice",
+      "class": "hexagon"
+    },
+    {
+      "text": "houselessness",
+      "id": "houselessness",
+      "class": "document"
+    },
+    {
+      "text": "exonerative",
+      "id": "exonerative",
+      "class": "box"
+    },
+    {
+      "text": "perceivably",
+      "id": "perceivably",
+      "class": "document"
+    },
+    {
+      "text": "strainslip",
+      "id": "strainslip",
+      "class": "diamond"
+    },
+    {
+      "text": "turriferous baw",
+      "id": "turriferous baw",
+      "class": "document"
+    },
+    {
+      "text": "Leonist",
+      "id": "Leonist",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Melospiza Puinavian",
+      "id": "Melospiza Puinavian",
+      "class": "diamond"
+    },
+    {
+      "text": "diamagnetism inhalator apronle",
+      "id": "diamagnetism inhalator apronle",
+      "class": "document"
+    },
+    {
+      "text": "cytoproct screechbird subtotem",
+      "id": "cytoproct screechbird subtotem",
+      "class": "box"
+    },
+    {
+      "text": "waukit platinic",
+      "id": "waukit platinic",
+      "class": "diamond"
+    },
+    {
+      "text": "dilutely outlength",
+      "id": "dilutely outlength",
+      "class": "parallelogram"
+    },
+    {
+      "text": "chronocyclegraph cinchonizatio",
+      "id": "chronocyclegraph cinchonizatio",
+      "class": "hexagon"
+    },
+    {
+      "text": "fornent tewsome thread",
+      "id": "fornent tewsome thread",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "saccharinely",
+      "head": "archpractice",
+      "label": null
+    },
+    {
+      "tail": "archpractice",
+      "head": "houselessness",
+      "label": null
+    },
+    {
+      "tail": "houselessness",
+      "head": "exonerative",
+      "label": null
+    },
+    {
+      "tail": "exonerative",
+      "head": "perceivably",
+      "label": null
+    },
+    {
+      "tail": "perceivably",
+      "head": "strainslip",
+      "label": null
+    },
+    {
+      "tail": "strainslip",
+      "head": "turriferous baw",
+      "label": "NO"
+    },
+    {
+      "tail": "strainslip",
+      "head": "Leonist",
+      "label": "NO"
+    },
+    {
+      "tail": "turriferous baw",
+      "head": "Melospiza Puinavian",
+      "label": null
+    },
+    {
+      "tail": "Melospiza Puinavian",
+      "head": "diamagnetism inhalator apronle",
+      "label": "Yes"
+    },
+    {
+      "tail": "Melospiza Puinavian",
+      "head": "turriferous baw",
+      "label": "Yes"
+    },
+    {
+      "tail": "diamagnetism inhalator apronle",
+      "head": "cytoproct screechbird subtotem",
+      "label": null
+    },
+    {
+      "tail": "cytoproct screechbird subtotem",
+      "head": "waukit platinic",
+      "label": null
+    },
+    {
+      "tail": "waukit platinic",
+      "head": "dilutely outlength",
+      "label": "yes"
+    },
+    {
+      "tail": "waukit platinic",
+      "head": "Leonist",
+      "label": "yes"
+    },
+    {
+      "tail": "dilutely outlength",
+      "head": "chronocyclegraph cinchonizatio",
+      "label": null
+    },
+    {
+      "tail": "chronocyclegraph cinchonizatio",
+      "head": "Leonist",
+      "label": null
+    },
+    {
+      "tail": "Leonist",
+      "head": "fornent tewsome thread",
+      "label": null
+    }
+  ]
+}

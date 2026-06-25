@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "insurance claim request",
+      "id": "insurance claim request",
+      "class": "messageEvent"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Oracle CRM",
+      "id": "Oracle CRM",
+      "class": "dataStore"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "register insurance claim",
+      "id": "register insurance claim",
+      "class": "task"
+    },
+    {
+      "text": "insurance claim",
+      "id": "insurance claim",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": "marked not ok \" \""
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register insurance claim",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "insurance claim request",
+      "head": "register insurance claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Oracle CRM",
+      "head": "examine claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "insurance claim request",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "insurance claim request",
+      "head": "insurance claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "insurance claim",
+      "head": "register insurance claim",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurance undertakings",
+      "nodes": [
+        "senior claims officer",
+        "claims officer",
+        "insurer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check recommendation",
+        "exclusiveGateway_1",
+        "settlement recommendation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "examine claim",
+        "write settlement recommendation",
+        "register insurance claim",
+        "insurance claim",
+        "exclusiveGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "insurer",
+      "nodes": [
+        "insurance claim request"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "text": "1,2,3",
+      "id": "1,2,3",
+      "class": "final state"
+    },
+    {
+      "text": "1,3",
+      "id": "1,3",
+      "class": "state"
+    },
+    {
+      "text": "1,4",
+      "id": "1,4",
+      "class": "state"
+    },
+    {
+      "text": "1",
+      "id": "1",
+      "class": "state"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "1",
+      "head": "1,3",
+      "label": "a"
+    },
+    {
+      "tail": "1,3",
+      "head": "1,2,3",
+      "label": "a"
+    },
+    {
+      "tail": "1,3",
+      "head": "1,4",
+      "label": "b"
+    },
+    {
+      "tail": "1,4",
+      "head": "1,3",
+      "label": "a"
+    },
+    {
+      "tail": "1",
+      "head": "1,4",
+      "label": "b"
+    },
+    {
+      "tail": "1,4",
+      "head": "1,2,3",
+      "label": "b"
+    },
+    {
+      "tail": "1,2,3",
+      "head": "1,2,3",
+      "label": "a,b"
+    }
+  ]
+}

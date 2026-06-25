@@ -1,0 +1,550 @@
+{
+  "nodes": [
+    {
+      "text": "case started",
+      "id": "case started",
+      "bbox": [
+        238,
+        310,
+        291,
+        357
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        340,
+        303,
+        372,
+        363
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        785,
+        203,
+        825,
+        252
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "create review/ report",
+      "id": "create review/ report",
+      "bbox": [
+        887,
+        150,
+        1053,
+        228
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1127,
+        152,
+        1185,
+        230
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "asks external",
+      "id": "asks external",
+      "bbox": [
+        368,
+        634,
+        542,
+        690
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        817,
+        687,
+        935,
+        730
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "bbox": [
+        1219,
+        586,
+        1340,
+        652
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_3",
+      "bbox": [
+        1383,
+        591,
+        1470,
+        633
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        1041,
+        620,
+        1107,
+        654
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        999,
+        538,
+        1047,
+        581
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "task_4",
+      "bbox": [
+        787,
+        286,
+        898,
+        326
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "bbox": [
+        759,
+        665,
+        792,
+        698
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "external paid",
+      "id": "external paid",
+      "bbox": [
+        1480,
+        643,
+        1534,
+        694
+      ],
+      "class": "event"
+    },
+    {
+      "text": "report completed",
+      "id": "report completed",
+      "bbox": [
+        1401,
+        164,
+        1462,
+        201
+      ],
+      "class": "event"
+    },
+    {
+      "text": "QA receive",
+      "id": "QA receive",
+      "bbox": [
+        800,
+        366,
+        846,
+        401
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Interview patients",
+      "id": "Interview patients",
+      "bbox": [
+        445,
+        227,
+        611,
+        282
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "Rewrite report",
+      "id": "Rewrite report",
+      "bbox": [
+        1243,
+        153,
+        1353,
+        217
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        606,
+        638,
+        648,
+        698
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        670,
+        633,
+        717,
+        698
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        878,
+        605,
+        936,
+        638
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_4",
+      "bbox": [
+        1357,
+        771,
+        1410,
+        808
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "task_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        621,
+        698,
+        945,
+        763
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_4",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        802,
+        248,
+        834,
+        287
+      ],
+      "label": null
+    },
+    {
+      "tail": "QA receive",
+      "head": "task_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        800,
+        326,
+        832,
+        363
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "QA receive",
+      "class": "sequenceFlow",
+      "bbox": [
+        835,
+        403,
+        1004,
+        548
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_3",
+      "head": "external paid",
+      "class": "sequenceFlow",
+      "bbox": [
+        1469,
+        612,
+        1501,
+        644
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "task_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1340,
+        600,
+        1384,
+        632
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1154,
+        228,
+        1220,
+        636
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        694,
+        678,
+        762,
+        710
+      ],
+      "label": "not in time"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        644,
+        653,
+        676,
+        685
+      ],
+      "label": null
+    },
+    {
+      "tail": "asks external",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        542,
+        652,
+        608,
+        684
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "asks external",
+      "class": "sequenceFlow",
+      "bbox": [
+        346,
+        359,
+        378,
+        669
+      ],
+      "label": null
+    },
+    {
+      "tail": "Rewrite report",
+      "head": "report completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1353,
+        169,
+        1402,
+        201
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "Rewrite report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1179,
+        167,
+        1244,
+        199
+      ],
+      "label": null
+    },
+    {
+      "tail": "Interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        611,
+        227,
+        789,
+        259
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        355,
+        254,
+        446,
+        307
+      ],
+      "label": null
+    },
+    {
+      "tail": "case started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        291,
+        315,
+        343,
+        347
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "create review/ report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1053,
+        169,
+        1133,
+        201
+      ],
+      "label": null
+    },
+    {
+      "tail": "asks external",
+      "head": "External experts",
+      "class": "messageFlow",
+      "bbox": [
+        312,
+        690,
+        384,
+        905
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing doctor",
+        "Patients",
+        "QA specialist"
+      ],
+      "bbox": [
+        37,
+        115,
+        1561,
+        856
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing doctor",
+      "nodes": [
+        "asks external",
+        "task_1",
+        "task_2",
+        "task_3",
+        "messageEvent_1",
+        "timerEvent_1",
+        "external paid",
+        "exclusiveGateway_1",
+        "eventBasedGateway_1",
+        "messageEvent_3",
+        "messageEvent_4"
+      ],
+      "bbox": [
+        70,
+        593,
+        1561,
+        856
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patients",
+      "nodes": [
+        "messageEvent_2"
+      ],
+      "bbox": [
+        70,
+        492,
+        1561,
+        593
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "case started",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "create review/ report",
+        "parallelGateway_3",
+        "task_4",
+        "report completed",
+        "QA receive",
+        "Interview patients",
+        "Rewrite report"
+      ],
+      "bbox": [
+        70,
+        115,
+        1561,
+        492
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "External experts",
+      "nodes": [],
+      "bbox": [
+        47,
+        904,
+        1424,
+        965
+      ],
+      "class": "pool"
+    }
+  ]
+}

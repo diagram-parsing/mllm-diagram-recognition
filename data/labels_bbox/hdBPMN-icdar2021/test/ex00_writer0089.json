@@ -1,0 +1,368 @@
+{
+  "nodes": [
+    {
+      "text": "online application",
+      "id": "online application",
+      "bbox": [
+        227,
+        816,
+        270,
+        857
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate",
+      "id": "evaluate",
+      "bbox": [
+        442,
+        758,
+        680,
+        896
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send notification mail",
+      "id": "send notification mail",
+      "bbox": [
+        972,
+        541,
+        1350,
+        671
+      ],
+      "class": "task"
+    },
+    {
+      "text": "create new bank account",
+      "id": "create new bank account",
+      "bbox": [
+        950,
+        941,
+        1251,
+        1060
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack",
+      "id": "send welcome pack",
+      "bbox": [
+        1489,
+        757,
+        1816,
+        896
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        1516,
+        963,
+        1771,
+        1071
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send PIN number",
+      "id": "send PIN number",
+      "bbox": [
+        1511,
+        1157,
+        1771,
+        1287
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1344,
+        962,
+        1432,
+        1077
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        814,
+        759,
+        896,
+        886
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "application rejected",
+      "id": "application rejected",
+      "bbox": [
+        1475,
+        570,
+        1514,
+        619
+      ],
+      "class": "event"
+    },
+    {
+      "text": "application approved",
+      "id": "application approved",
+      "bbox": [
+        1885,
+        984,
+        1943,
+        1048
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "online application",
+      "head": "evaluate",
+      "class": "sequenceFlow",
+      "bbox": [
+        270,
+        805,
+        445,
+        862
+      ],
+      "kps": [
+        270.864,
+        833.112,
+        2.0,
+        443.232,
+        833.112,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        681,
+        799,
+        818,
+        856
+      ],
+      "kps": [
+        681.264,
+        826.956,
+        2.0,
+        816.696,
+        826.956,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send notification mail",
+      "head": "application rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        1350,
+        569,
+        1477,
+        626
+      ],
+      "kps": [
+        1350.216,
+        597.132,
+        2.0,
+        1475.388,
+        597.132,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new bank account",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1251,
+        981,
+        1354,
+        1039
+      ],
+      "kps": [
+        1251.72,
+        1009.584,
+        2.0,
+        1352.268,
+        1009.584,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send PIN number",
+      "head": "application approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        1770,
+        1044,
+        1912,
+        1225
+      ],
+      "kps": [
+        1770.876,
+        1222.992,
+        2.0,
+        1910.412,
+        1044.468,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "send PIN number",
+      "class": "sequenceFlow",
+      "bbox": [
+        1362,
+        1044,
+        1514,
+        1225
+      ],
+      "kps": [
+        1362.528,
+        1044.468,
+        2.0,
+        1512.324,
+        1222.992,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "application approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        1770,
+        992,
+        1887,
+        1049
+      ],
+      "kps": [
+        1770.876,
+        1019.844,
+        2.0,
+        1885.788,
+        1019.844,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        1430,
+        989,
+        1518,
+        1047
+      ],
+      "kps": [
+        1430.244,
+        1017.792,
+        2.0,
+        1516.428,
+        1017.792,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send welcome pack",
+      "head": "application approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        1816,
+        812,
+        1935,
+        991
+      ],
+      "kps": [
+        1816.02,
+        822.852,
+        2.0,
+        1910.412,
+        989.064,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "send welcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        1393,
+        833,
+        1491,
+        970
+      ],
+      "kps": [
+        1393.308,
+        968.544,
+        2.0,
+        1489.752,
+        833.112,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send notification mail",
+      "class": "sequenceFlow",
+      "bbox": [
+        853,
+        638,
+        974,
+        765
+      ],
+      "kps": [
+        853.632,
+        763.344,
+        2.0,
+        972.648,
+        638.172,
+        2.0
+      ],
+      "label": "reject"
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create new bank account",
+      "class": "sequenceFlow",
+      "bbox": [
+        853,
+        882,
+        952,
+        1003
+      ],
+      "kps": [
+        853.632,
+        882.36,
+        2.0,
+        950.076,
+        1001.376,
+        2.0
+      ],
+      "label": "approved"
+    }
+  ],
+  "groups": []
+}

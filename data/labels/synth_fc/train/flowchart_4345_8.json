@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "trichomoniasis",
+      "id": "trichomoniasis",
+      "class": "circle"
+    },
+    {
+      "text": "Berkeleyite",
+      "id": "Berkeleyite",
+      "class": "box"
+    },
+    {
+      "text": "overmasteringly",
+      "id": "overmasteringly",
+      "class": "diamond"
+    },
+    {
+      "text": "parakilya",
+      "id": "parakilya",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hedgesmith unsubservient",
+      "id": "hedgesmith unsubservient",
+      "class": "diamond"
+    },
+    {
+      "text": "beldamship",
+      "id": "beldamship",
+      "class": "diamond"
+    },
+    {
+      "text": "isokurtic",
+      "id": "isokurtic",
+      "class": "box"
+    },
+    {
+      "text": "keto",
+      "id": "keto",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "trichomoniasis",
+      "head": "Berkeleyite",
+      "label": null
+    },
+    {
+      "tail": "Berkeleyite",
+      "head": "overmasteringly",
+      "label": null
+    },
+    {
+      "tail": "overmasteringly",
+      "head": "parakilya",
+      "label": "yes"
+    },
+    {
+      "tail": "overmasteringly",
+      "head": "trichomoniasis",
+      "label": "yes"
+    },
+    {
+      "tail": "parakilya",
+      "head": "hedgesmith unsubservient",
+      "label": null
+    },
+    {
+      "tail": "hedgesmith unsubservient",
+      "head": "beldamship",
+      "label": "NO"
+    },
+    {
+      "tail": "hedgesmith unsubservient",
+      "head": "isokurtic",
+      "label": "NO"
+    },
+    {
+      "tail": "beldamship",
+      "head": "isokurtic",
+      "label": "Yes"
+    },
+    {
+      "tail": "beldamship",
+      "head": "parakilya",
+      "label": "Yes"
+    },
+    {
+      "tail": "isokurtic",
+      "head": "keto",
+      "label": null
+    }
+  ]
+}

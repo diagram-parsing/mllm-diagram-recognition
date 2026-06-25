@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "Proconnesian",
+      "id": "Proconnesian",
+      "class": "ellipse"
+    },
+    {
+      "text": "aimara bayardly",
+      "id": "aimara bayardly",
+      "class": "document"
+    },
+    {
+      "text": "gosling forestair",
+      "id": "gosling forestair",
+      "class": "parallelogram"
+    },
+    {
+      "text": "attendancy",
+      "id": "attendancy",
+      "class": "diamond"
+    },
+    {
+      "text": "rearrival unfeudalize hurgila",
+      "id": "rearrival unfeudalize hurgila",
+      "class": "box"
+    },
+    {
+      "text": "whirtle volumescope",
+      "id": "whirtle volumescope",
+      "class": "ellipse"
+    },
+    {
+      "text": "Patarin Porkopolis",
+      "id": "Patarin Porkopolis",
+      "class": "document"
+    },
+    {
+      "text": "dodger curve preferment",
+      "id": "dodger curve preferment",
+      "class": "hexagon"
+    },
+    {
+      "text": "bistipuled intermeddlesomeness",
+      "id": "bistipuled intermeddlesomeness",
+      "class": "diamond"
+    },
+    {
+      "text": "stuccowork",
+      "id": "stuccowork",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Proconnesian",
+      "head": "aimara bayardly",
+      "label": null
+    },
+    {
+      "tail": "aimara bayardly",
+      "head": "gosling forestair",
+      "label": null
+    },
+    {
+      "tail": "gosling forestair",
+      "head": "attendancy",
+      "label": null
+    },
+    {
+      "tail": "attendancy",
+      "head": "rearrival unfeudalize hurgila",
+      "label": "YES"
+    },
+    {
+      "tail": "attendancy",
+      "head": "whirtle volumescope",
+      "label": "YES"
+    },
+    {
+      "tail": "rearrival unfeudalize hurgila",
+      "head": "Patarin Porkopolis",
+      "label": null
+    },
+    {
+      "tail": "Patarin Porkopolis",
+      "head": "dodger curve preferment",
+      "label": null
+    },
+    {
+      "tail": "dodger curve preferment",
+      "head": "bistipuled intermeddlesomeness",
+      "label": null
+    },
+    {
+      "tail": "bistipuled intermeddlesomeness",
+      "head": "stuccowork",
+      "label": "YES"
+    },
+    {
+      "tail": "bistipuled intermeddlesomeness",
+      "head": "Proconnesian",
+      "label": "YES"
+    },
+    {
+      "tail": "stuccowork",
+      "head": "whirtle volumescope",
+      "label": null
+    }
+  ]
+}

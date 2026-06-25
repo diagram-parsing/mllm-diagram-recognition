@@ -1,0 +1,173 @@
+{
+  "nodes": [
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "write note",
+      "id": "write note",
+      "class": "task"
+    },
+    {
+      "text": "print order",
+      "id": "print order",
+      "class": "task"
+    },
+    {
+      "text": "attach to pinboard",
+      "id": "attach to pinboard",
+      "class": "task"
+    },
+    {
+      "text": "Lieferando received",
+      "id": "Lieferando received",
+      "class": "event"
+    },
+    {
+      "text": "Websitte received",
+      "id": "Websitte received",
+      "class": "event"
+    },
+    {
+      "text": "Phone received",
+      "id": "Phone received",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "class": "dataObject"
+    },
+    {
+      "text": "order [confirmed]",
+      "id": "order [confirmed]",
+      "class": "dataObject"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "class": "dataObject"
+    },
+    {
+      "text": "order note",
+      "id": "order note",
+      "class": "dataObject"
+    },
+    {
+      "text": "order processed",
+      "id": "order processed",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "print order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "attach to pinboard",
+      "head": "order processed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write note",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Phone received",
+      "head": "write note",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Lieferando received",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Websitte received",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "order",
+      "head": "confirm order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "order [confirmed]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "order",
+      "head": "write note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write note",
+      "head": "order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "order [confirmed]",
+      "head": "print order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "order note",
+      "head": "attach to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": []
+}

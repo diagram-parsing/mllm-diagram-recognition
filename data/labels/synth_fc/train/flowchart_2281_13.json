@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "text": "fustigate Inigo",
+      "id": "fustigate Inigo",
+      "class": "oval"
+    },
+    {
+      "text": "jassoid Dendrogaean",
+      "id": "jassoid Dendrogaean",
+      "class": "hexagon"
+    },
+    {
+      "text": "tulwar",
+      "id": "tulwar",
+      "class": "diamond"
+    },
+    {
+      "text": "ahungry",
+      "id": "ahungry",
+      "class": "hexagon"
+    },
+    {
+      "text": "grinning",
+      "id": "grinning",
+      "class": "diamond"
+    },
+    {
+      "text": "unslate",
+      "id": "unslate",
+      "class": "box"
+    },
+    {
+      "text": "transdialect virtuosi",
+      "id": "transdialect virtuosi",
+      "class": "diamond"
+    },
+    {
+      "text": "suppliancy bemad",
+      "id": "suppliancy bemad",
+      "class": "document"
+    },
+    {
+      "text": "tophus refraction Shekinah",
+      "id": "tophus refraction Shekinah",
+      "class": "diamond"
+    },
+    {
+      "text": "spearcast horoscopical climax",
+      "id": "spearcast horoscopical climax",
+      "class": "diamond"
+    },
+    {
+      "text": "preanimism outproduce",
+      "id": "preanimism outproduce",
+      "class": "ellipse"
+    },
+    {
+      "text": "gypseous sidesman",
+      "id": "gypseous sidesman",
+      "class": "box"
+    },
+    {
+      "text": "prelease autoneurotoxin",
+      "id": "prelease autoneurotoxin",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fustigate Inigo",
+      "head": "jassoid Dendrogaean",
+      "label": null
+    },
+    {
+      "tail": "jassoid Dendrogaean",
+      "head": "tulwar",
+      "label": null
+    },
+    {
+      "tail": "tulwar",
+      "head": "ahungry",
+      "label": "yes"
+    },
+    {
+      "tail": "tulwar",
+      "head": "grinning",
+      "label": "yes"
+    },
+    {
+      "tail": "ahungry",
+      "head": "unslate",
+      "label": null
+    },
+    {
+      "tail": "unslate",
+      "head": "transdialect virtuosi",
+      "label": null
+    },
+    {
+      "tail": "transdialect virtuosi",
+      "head": "suppliancy bemad",
+      "label": "YES"
+    },
+    {
+      "tail": "transdialect virtuosi",
+      "head": "tulwar",
+      "label": "YES"
+    },
+    {
+      "tail": "suppliancy bemad",
+      "head": "tophus refraction Shekinah",
+      "label": null
+    },
+    {
+      "tail": "tophus refraction Shekinah",
+      "head": "spearcast horoscopical climax",
+      "label": "yes"
+    },
+    {
+      "tail": "tophus refraction Shekinah",
+      "head": "preanimism outproduce",
+      "label": "yes"
+    },
+    {
+      "tail": "spearcast horoscopical climax",
+      "head": "grinning",
+      "label": "NO"
+    },
+    {
+      "tail": "spearcast horoscopical climax",
+      "head": "transdialect virtuosi",
+      "label": "NO"
+    },
+    {
+      "tail": "grinning",
+      "head": "gypseous sidesman",
+      "label": "yes"
+    },
+    {
+      "tail": "grinning",
+      "head": "prelease autoneurotoxin",
+      "label": "yes"
+    },
+    {
+      "tail": "gypseous sidesman",
+      "head": "prelease autoneurotoxin",
+      "label": null
+    },
+    {
+      "tail": "prelease autoneurotoxin",
+      "head": "preanimism outproduce",
+      "label": null
+    }
+  ]
+}

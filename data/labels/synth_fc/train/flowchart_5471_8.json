@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "chromicize hyoepiglottic",
+      "id": "chromicize hyoepiglottic",
+      "class": "oval"
+    },
+    {
+      "text": "intercilium kniaz chasmy",
+      "id": "intercilium kniaz chasmy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "rokee",
+      "id": "rokee",
+      "class": "box"
+    },
+    {
+      "text": "hapalote",
+      "id": "hapalote",
+      "class": "diamond"
+    },
+    {
+      "text": "dendriform",
+      "id": "dendriform",
+      "class": "document"
+    },
+    {
+      "text": "typhoidlike bonze",
+      "id": "typhoidlike bonze",
+      "class": "diamond"
+    },
+    {
+      "text": "forthfigured",
+      "id": "forthfigured",
+      "class": "document"
+    },
+    {
+      "text": "paramorphine",
+      "id": "paramorphine",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "chromicize hyoepiglottic",
+      "head": "intercilium kniaz chasmy",
+      "label": null
+    },
+    {
+      "tail": "intercilium kniaz chasmy",
+      "head": "rokee",
+      "label": null
+    },
+    {
+      "tail": "rokee",
+      "head": "hapalote",
+      "label": null
+    },
+    {
+      "tail": "hapalote",
+      "head": "dendriform",
+      "label": "Yes"
+    },
+    {
+      "tail": "hapalote",
+      "head": "chromicize hyoepiglottic",
+      "label": "Yes"
+    },
+    {
+      "tail": "dendriform",
+      "head": "typhoidlike bonze",
+      "label": null
+    },
+    {
+      "tail": "typhoidlike bonze",
+      "head": "forthfigured",
+      "label": "Yes"
+    },
+    {
+      "tail": "typhoidlike bonze",
+      "head": "hapalote",
+      "label": "Yes"
+    },
+    {
+      "tail": "forthfigured",
+      "head": "paramorphine",
+      "label": null
+    }
+  ]
+}

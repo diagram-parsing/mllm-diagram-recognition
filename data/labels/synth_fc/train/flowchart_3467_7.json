@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "cutleriaceous",
+      "id": "cutleriaceous",
+      "class": "ellipse"
+    },
+    {
+      "text": "abdicable",
+      "id": "abdicable",
+      "class": "hexagon"
+    },
+    {
+      "text": "vireo",
+      "id": "vireo",
+      "class": "diamond"
+    },
+    {
+      "text": "unauthorizable",
+      "id": "unauthorizable",
+      "class": "diamond"
+    },
+    {
+      "text": "episternal",
+      "id": "episternal",
+      "class": "diamond"
+    },
+    {
+      "text": "waterish",
+      "id": "waterish",
+      "class": "box"
+    },
+    {
+      "text": "sabanut violmaker",
+      "id": "sabanut violmaker",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "cutleriaceous",
+      "head": "abdicable",
+      "label": null
+    },
+    {
+      "tail": "abdicable",
+      "head": "vireo",
+      "label": null
+    },
+    {
+      "tail": "vireo",
+      "head": "unauthorizable",
+      "label": "no"
+    },
+    {
+      "tail": "vireo",
+      "head": "episternal",
+      "label": "no"
+    },
+    {
+      "tail": "unauthorizable",
+      "head": "waterish",
+      "label": "No"
+    },
+    {
+      "tail": "unauthorizable",
+      "head": "sabanut violmaker",
+      "label": "No"
+    },
+    {
+      "tail": "waterish",
+      "head": "episternal",
+      "label": null
+    },
+    {
+      "tail": "episternal",
+      "head": "sabanut violmaker",
+      "label": "no"
+    },
+    {
+      "tail": "episternal",
+      "head": "cutleriaceous",
+      "label": "no"
+    }
+  ]
+}

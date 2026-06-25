@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "mentimutation",
+      "id": "mentimutation",
+      "class": "oval"
+    },
+    {
+      "text": "assume",
+      "id": "assume",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unsightliness",
+      "id": "unsightliness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hypobulia",
+      "id": "hypobulia",
+      "class": "hexagon"
+    },
+    {
+      "text": "showyard plastrum unplagued",
+      "id": "showyard plastrum unplagued",
+      "class": "parallelogram"
+    },
+    {
+      "text": "reedbuck wifie miseducation",
+      "id": "reedbuck wifie miseducation",
+      "class": "diamond"
+    },
+    {
+      "text": "beechy pennatulacean",
+      "id": "beechy pennatulacean",
+      "class": "diamond"
+    },
+    {
+      "text": "unenterprised",
+      "id": "unenterprised",
+      "class": "document"
+    },
+    {
+      "text": "certainty anthropoid unhoarded",
+      "id": "certainty anthropoid unhoarded",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "mentimutation",
+      "head": "assume",
+      "label": null
+    },
+    {
+      "tail": "assume",
+      "head": "unsightliness",
+      "label": null
+    },
+    {
+      "tail": "unsightliness",
+      "head": "hypobulia",
+      "label": null
+    },
+    {
+      "tail": "hypobulia",
+      "head": "showyard plastrum unplagued",
+      "label": null
+    },
+    {
+      "tail": "showyard plastrum unplagued",
+      "head": "reedbuck wifie miseducation",
+      "label": null
+    },
+    {
+      "tail": "reedbuck wifie miseducation",
+      "head": "beechy pennatulacean",
+      "label": "no"
+    },
+    {
+      "tail": "reedbuck wifie miseducation",
+      "head": "unenterprised",
+      "label": "no"
+    },
+    {
+      "tail": "beechy pennatulacean",
+      "head": "unenterprised",
+      "label": "YES"
+    },
+    {
+      "tail": "beechy pennatulacean",
+      "head": "certainty anthropoid unhoarded",
+      "label": "YES"
+    },
+    {
+      "tail": "unenterprised",
+      "head": "certainty anthropoid unhoarded",
+      "label": null
+    }
+  ]
+}

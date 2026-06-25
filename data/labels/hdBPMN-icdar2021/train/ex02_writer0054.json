@@ -1,0 +1,163 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "registration and\nexamination",
+      "id": "registration and\nexamination",
+      "class": "task"
+    },
+    {
+      "text": "customer\nclaim received",
+      "id": "customer\nclaim received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "write\nrecommendation",
+      "id": "write\nrecommendation",
+      "class": "task"
+    },
+    {
+      "text": "check\nrecommendation",
+      "id": "check\nrecommendation",
+      "class": "task"
+    },
+    {
+      "text": "mark with\n\"OK\"",
+      "id": "mark with\n\"OK\"",
+      "class": "task"
+    },
+    {
+      "text": "mark with\n\"Not OK\"",
+      "id": "mark with\n\"Not OK\"",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "recommendation",
+      "id": "recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "recommendation\n[marked]",
+      "id": "recommendation\n[marked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "recommendation\n[checked]",
+      "id": "recommendation\n[checked]",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "customer\nclaim received",
+      "head": "registration and\nexamination",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "registration and\nexamination",
+      "head": "write\nrecommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write\nrecommendation",
+      "head": "check\nrecommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check\nrecommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark with\n\"OK\"",
+      "class": "sequenceFlow",
+      "label": "claim ok"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark with\n\"Not OK\"",
+      "class": "sequenceFlow",
+      "label": "claim not ok"
+    },
+    {
+      "tail": "mark with\n\"Not OK\"",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check\nrecommendation",
+      "head": "recommendation\n[checked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "recommendation\n[checked]",
+      "head": "mark with\n\"Not OK\"",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "recommendation\n[checked]",
+      "head": "mark with\n\"OK\"",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write\nrecommendation",
+      "head": "recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check\nrecommendation",
+      "head": "recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark with\n\"OK\"",
+      "head": "recommendation\n[marked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark with\n\"Not OK\"",
+      "head": "recommendation\n[marked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "customer\nclaim received",
+      "class": "messageFlow",
+      "label": "claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurance",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "seasonality postvertebral",
+      "id": "seasonality postvertebral",
+      "class": "ellipse",
+      "bbox": [
+        5,
+        5,
+        116,
+        57
+      ]
+    },
+    {
+      "text": "Turneresque proxenos",
+      "id": "Turneresque proxenos",
+      "class": "box",
+      "bbox": [
+        24,
+        109,
+        98,
+        157
+      ]
+    },
+    {
+      "text": "canoodler",
+      "id": "canoodler",
+      "class": "diamond",
+      "bbox": [
+        12,
+        225,
+        109,
+        298
+      ]
+    },
+    {
+      "text": "ropiness",
+      "id": "ropiness",
+      "class": "document",
+      "bbox": [
+        17,
+        309,
+        104,
+        367
+      ]
+    },
+    {
+      "text": "doughman",
+      "id": "doughman",
+      "class": "circle",
+      "bbox": [
+        218,
+        317,
+        312,
+        405
+      ]
+    },
+    {
+      "text": "pyopneumoperitonitis",
+      "id": "pyopneumoperitonitis",
+      "class": "diamond",
+      "bbox": [
+        146,
+        7,
+        379,
+        55
+      ]
+    },
+    {
+      "text": "zoanthodemic",
+      "id": "zoanthodemic",
+      "class": "parallelogram",
+      "bbox": [
+        180,
+        109,
+        350,
+        157
+      ]
+    },
+    {
+      "text": "keet habitacule",
+      "id": "keet habitacule",
+      "class": "parallelogram",
+      "bbox": [
+        197,
+        199,
+        333,
+        272
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "seasonality postvertebral",
+      "head": "Turneresque proxenos",
+      "label": null,
+      "bbox": [
+        56,
+        57,
+        65,
+        110
+      ]
+    },
+    {
+      "tail": "Turneresque proxenos",
+      "head": "canoodler",
+      "label": null,
+      "bbox": [
+        56,
+        157,
+        65,
+        225
+      ]
+    },
+    {
+      "tail": "canoodler",
+      "head": "ropiness",
+      "label": "No",
+      "bbox": [
+        56,
+        296,
+        65,
+        309
+      ]
+    },
+    {
+      "tail": "canoodler",
+      "head": "doughman",
+      "label": "No",
+      "bbox": [
+        76,
+        286,
+        254,
+        320
+      ]
+    },
+    {
+      "tail": "ropiness",
+      "head": "pyopneumoperitonitis",
+      "label": null,
+      "bbox": [
+        104,
+        36,
+        173,
+        342
+      ]
+    },
+    {
+      "tail": "pyopneumoperitonitis",
+      "head": "zoanthodemic",
+      "label": "YES",
+      "bbox": [
+        261,
+        55,
+        270,
+        110
+      ]
+    },
+    {
+      "tail": "pyopneumoperitonitis",
+      "head": "Turneresque proxenos",
+      "label": "YES",
+      "bbox": [
+        98,
+        33,
+        157,
+        139
+      ]
+    },
+    {
+      "tail": "zoanthodemic",
+      "head": "keet habitacule",
+      "label": null,
+      "bbox": [
+        261,
+        157,
+        270,
+        199
+      ]
+    },
+    {
+      "tail": "keet habitacule",
+      "head": "doughman",
+      "label": null,
+      "bbox": [
+        276,
+        272,
+        286,
+        320
+      ]
+    }
+  ]
+}

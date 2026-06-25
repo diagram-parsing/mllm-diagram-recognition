@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "unincisive Fehmic",
+      "id": "unincisive Fehmic",
+      "class": "circle"
+    },
+    {
+      "text": "kissar",
+      "id": "kissar",
+      "class": "hexagon"
+    },
+    {
+      "text": "hypermyriorama healthsomely",
+      "id": "hypermyriorama healthsomely",
+      "class": "box"
+    },
+    {
+      "text": "effluvia",
+      "id": "effluvia",
+      "class": "diamond"
+    },
+    {
+      "text": "noninformative",
+      "id": "noninformative",
+      "class": "box"
+    },
+    {
+      "text": "chamma",
+      "id": "chamma",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unpropitious",
+      "id": "unpropitious",
+      "class": "document"
+    },
+    {
+      "text": "neediness",
+      "id": "neediness",
+      "class": "diamond"
+    },
+    {
+      "text": "defiantly",
+      "id": "defiantly",
+      "class": "diamond"
+    },
+    {
+      "text": "frostproof",
+      "id": "frostproof",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unincisive Fehmic",
+      "head": "kissar",
+      "label": null
+    },
+    {
+      "tail": "kissar",
+      "head": "hypermyriorama healthsomely",
+      "label": null
+    },
+    {
+      "tail": "hypermyriorama healthsomely",
+      "head": "effluvia",
+      "label": null
+    },
+    {
+      "tail": "effluvia",
+      "head": "noninformative",
+      "label": "yes"
+    },
+    {
+      "tail": "effluvia",
+      "head": "chamma",
+      "label": "yes"
+    },
+    {
+      "tail": "noninformative",
+      "head": "unpropitious",
+      "label": null
+    },
+    {
+      "tail": "unpropitious",
+      "head": "chamma",
+      "label": null
+    },
+    {
+      "tail": "chamma",
+      "head": "neediness",
+      "label": null
+    },
+    {
+      "tail": "neediness",
+      "head": "defiantly",
+      "label": "No"
+    },
+    {
+      "tail": "neediness",
+      "head": "noninformative",
+      "label": "No"
+    },
+    {
+      "tail": "defiantly",
+      "head": "frostproof",
+      "label": "Yes"
+    },
+    {
+      "tail": "defiantly",
+      "head": "hypermyriorama healthsomely",
+      "label": "Yes"
+    }
+  ]
+}

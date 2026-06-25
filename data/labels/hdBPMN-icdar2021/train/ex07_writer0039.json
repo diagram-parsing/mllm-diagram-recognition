@@ -1,0 +1,272 @@
+{
+  "nodes": [
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "review request sent",
+      "id": "review request sent",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "review received",
+      "id": "review received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Forward review",
+      "id": "Forward review",
+      "class": "task"
+    },
+    {
+      "text": "send check",
+      "id": "send check",
+      "class": "task"
+    },
+    {
+      "text": "File everything",
+      "id": "File everything",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "class": "timerEvent"
+    },
+    {
+      "text": "rating finished",
+      "id": "rating finished",
+      "class": "event"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": "rating started",
+      "id": "rating started",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_4",
+      "head": "rating finished",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "review received",
+      "head": "Forward review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "timerEvent_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "File everything",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "File everything",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send check",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "send check",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Forward review",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "review received",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "review request sent",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "review request sent",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "rating started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Patient",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "label": "answer"
+    },
+    {
+      "tail": "interview patients",
+      "head": "Patient",
+      "class": "messageFlow",
+      "label": "Interview question"
+    },
+    {
+      "tail": "review request sent",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": "review request"
+    },
+    {
+      "tail": "external expert",
+      "head": "review received",
+      "class": "messageFlow",
+      "label": "review"
+    },
+    {
+      "tail": "send check",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": "check"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "director",
+        "QA specialist"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "director",
+      "nodes": [
+        "exclusiveGateway_1",
+        "review request sent",
+        "eventBasedGateway_1",
+        "review received",
+        "Forward review",
+        "send check",
+        "timerEvent_1"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "File everything",
+        "rating finished",
+        "interview patients",
+        "rating started"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

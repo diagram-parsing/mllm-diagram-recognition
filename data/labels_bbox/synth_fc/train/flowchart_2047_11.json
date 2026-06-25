@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "text": "redcoat",
+      "id": "redcoat",
+      "class": "circle",
+      "bbox": [
+        114,
+        5,
+        200,
+        91
+      ]
+    },
+    {
+      "text": "kreis",
+      "id": "kreis",
+      "class": "box",
+      "bbox": [
+        121,
+        171,
+        193,
+        219
+      ]
+    },
+    {
+      "text": "tetracoralline",
+      "id": "tetracoralline",
+      "class": "parallelogram",
+      "bbox": [
+        76,
+        259,
+        238,
+        307
+      ]
+    },
+    {
+      "text": "hypostypsis",
+      "id": "hypostypsis",
+      "class": "diamond",
+      "bbox": [
+        85,
+        376,
+        229,
+        424
+      ]
+    },
+    {
+      "text": "Filicineae",
+      "id": "Filicineae",
+      "class": "document",
+      "bbox": [
+        356,
+        53,
+        428,
+        101
+      ]
+    },
+    {
+      "text": "pashalik resatisfaction",
+      "id": "pashalik resatisfaction",
+      "class": "document",
+      "bbox": [
+        354,
+        112,
+        429,
+        160
+      ]
+    },
+    {
+      "text": "specking groovy",
+      "id": "specking groovy",
+      "class": "box",
+      "bbox": [
+        356,
+        259,
+        428,
+        307
+      ]
+    },
+    {
+      "text": "haptenic",
+      "id": "haptenic",
+      "class": "parallelogram",
+      "bbox": [
+        344,
+        364,
+        440,
+        437
+      ]
+    },
+    {
+      "text": "metronomical",
+      "id": "metronomical",
+      "class": "parallelogram",
+      "bbox": [
+        543,
+        259,
+        708,
+        307
+      ]
+    },
+    {
+      "text": "adder apotropous pollinizer",
+      "id": "adder apotropous pollinizer",
+      "class": "diamond",
+      "bbox": [
+        539,
+        364,
+        708,
+        437
+      ]
+    },
+    {
+      "text": "filiety",
+      "id": "filiety",
+      "class": "ellipse",
+      "bbox": [
+        590,
+        494,
+        663,
+        536
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "redcoat",
+      "head": "kreis",
+      "label": null,
+      "bbox": [
+        152,
+        91,
+        162,
+        169
+      ]
+    },
+    {
+      "tail": "kreis",
+      "head": "tetracoralline",
+      "label": null,
+      "bbox": [
+        152,
+        219,
+        162,
+        257
+      ]
+    },
+    {
+      "tail": "tetracoralline",
+      "head": "hypostypsis",
+      "label": null,
+      "bbox": [
+        152,
+        307,
+        162,
+        374
+      ]
+    },
+    {
+      "tail": "hypostypsis",
+      "head": "Filicineae",
+      "label": "Yes",
+      "bbox": [
+        231,
+        93,
+        354,
+        400
+      ]
+    },
+    {
+      "tail": "hypostypsis",
+      "head": "redcoat",
+      "label": "Yes",
+      "bbox": [
+        52,
+        44,
+        112,
+        400
+      ]
+    },
+    {
+      "tail": "Filicineae",
+      "head": "pashalik resatisfaction",
+      "label": null,
+      "bbox": [
+        387,
+        98,
+        396,
+        111
+      ]
+    },
+    {
+      "tail": "pashalik resatisfaction",
+      "head": "specking groovy",
+      "label": null,
+      "bbox": [
+        387,
+        160,
+        396,
+        257
+      ]
+    },
+    {
+      "tail": "specking groovy",
+      "head": "haptenic",
+      "label": null,
+      "bbox": [
+        387,
+        307,
+        396,
+        362
+      ]
+    },
+    {
+      "tail": "haptenic",
+      "head": "metronomical",
+      "label": null,
+      "bbox": [
+        435,
+        278,
+        558,
+        363
+      ]
+    },
+    {
+      "tail": "metronomical",
+      "head": "adder apotropous pollinizer",
+      "label": null,
+      "bbox": [
+        622,
+        307,
+        631,
+        362
+      ]
+    },
+    {
+      "tail": "adder apotropous pollinizer",
+      "head": "filiety",
+      "label": "NO",
+      "bbox": [
+        622,
+        437,
+        631,
+        492
+      ]
+    },
+    {
+      "tail": "adder apotropous pollinizer",
+      "head": "pashalik resatisfaction",
+      "label": "NO",
+      "bbox": [
+        430,
+        132,
+        538,
+        400
+      ]
+    }
+  ]
+}

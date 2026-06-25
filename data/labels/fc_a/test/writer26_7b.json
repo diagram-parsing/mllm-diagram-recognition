@@ -1,0 +1,314 @@
+{
+  "nodes": [
+    {
+      "text": "begin",
+      "id": "begin",
+      "bbox": [
+        447,
+        4,
+        180,
+        72
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "i=0 changed=false",
+      "id": "i=0 changed=false",
+      "bbox": [
+        431,
+        129,
+        249,
+        122
+      ],
+      "class": "process"
+    },
+    {
+      "text": "i<=length(T)-2",
+      "id": "i<=length(T)-2",
+      "bbox": [
+        417,
+        350,
+        353,
+        166
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "changed?",
+      "id": "changed?",
+      "bbox": [
+        124,
+        504,
+        267,
+        144
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "Stop",
+      "id": "Stop",
+      "bbox": [
+        197,
+        728,
+        169,
+        86
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "T[i]>T[i+1]",
+      "id": "T[i]>T[i+1]",
+      "bbox": [
+        893,
+        352,
+        321,
+        153
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "i=i+1",
+      "id": "i=i+1",
+      "bbox": [
+        939,
+        215,
+        197,
+        71
+      ],
+      "class": "process"
+    },
+    {
+      "text": "swap(T[i],T[i+1])",
+      "id": "swap(T[i],T[i+1])",
+      "bbox": [
+        879,
+        636,
+        357,
+        96
+      ],
+      "class": "process"
+    },
+    {
+      "text": "changed=true",
+      "id": "changed=true",
+      "bbox": [
+        906,
+        804,
+        280,
+        87
+      ],
+      "class": "process"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "begin",
+      "head": "i=0 changed=false",
+      "bbox": [
+        531,
+        70,
+        36,
+        68
+      ],
+      "kps": [
+        548.0,
+        71.0,
+        2.0,
+        552.0,
+        136.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "i=0 changed=false",
+      "head": "i<=length(T)-2",
+      "bbox": [
+        524,
+        244,
+        29,
+        115
+      ],
+      "kps": [
+        548.0,
+        246.0,
+        2.0,
+        544.0,
+        357.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "i<=length(T)-2",
+      "head": "changed?",
+      "bbox": [
+        235,
+        418,
+        193,
+        94
+      ],
+      "kps": [
+        425.0,
+        419.0,
+        2.0,
+        254.0,
+        510.0,
+        2.0
+      ],
+      "label": "No"
+    },
+    {
+      "tail": "changed?",
+      "head": "i=0 changed=false",
+      "bbox": [
+        4,
+        167,
+        433,
+        417
+      ],
+      "kps": [
+        134.0,
+        575.0,
+        2.0,
+        434.0,
+        190.0,
+        2.0
+      ],
+      "label": "True"
+    },
+    {
+      "tail": "changed?",
+      "head": "Stop",
+      "bbox": [
+        249,
+        641,
+        39,
+        88
+      ],
+      "kps": [
+        276.0,
+        643.0,
+        2.0,
+        267.0,
+        719.0,
+        2.0
+      ],
+      "label": "false"
+    },
+    {
+      "tail": "i<=length(T)-2",
+      "head": "T[i]>T[i+1]",
+      "bbox": [
+        763,
+        413,
+        140,
+        26
+      ],
+      "kps": [
+        765.0,
+        424.0,
+        2.0,
+        900.0,
+        432.0,
+        2.0
+      ],
+      "label": "yes"
+    },
+    {
+      "tail": "T[i]>T[i+1]",
+      "head": "i=i+1",
+      "bbox": [
+        1137,
+        245,
+        140,
+        192
+      ],
+      "kps": [
+        1208.0,
+        431.0,
+        2.0,
+        1143.0,
+        262.0,
+        2.0
+      ],
+      "label": "0"
+    },
+    {
+      "tail": "i=i+1",
+      "head": "i<=length(T)-2",
+      "bbox": [
+        555,
+        259,
+        391,
+        40
+      ],
+      "kps": [
+        942.0,
+        260.0,
+        2.0,
+        556.0,
+        285.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "T[i]>T[i+1]",
+      "head": "swap(T[i],T[i+1])",
+      "bbox": [
+        1049,
+        500,
+        38,
+        144
+      ],
+      "kps": [
+        1076.0,
+        501.0,
+        2.0,
+        1070.0,
+        642.0,
+        2.0
+      ],
+      "label": "1"
+    },
+    {
+      "tail": "swap(T[i],T[i+1])",
+      "head": "changed=true",
+      "bbox": [
+        1024,
+        724,
+        38,
+        84
+      ],
+      "kps": [
+        1050.0,
+        725.0,
+        2.0,
+        1048.0,
+        802.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "changed=true",
+      "head": "i=0 changed=false",
+      "bbox": [
+        681,
+        150,
+        649,
+        713
+      ],
+      "kps": [
+        1181.0,
+        856.0,
+        2.0,
+        687.0,
+        168.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

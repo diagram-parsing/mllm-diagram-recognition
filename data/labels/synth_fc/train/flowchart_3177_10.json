@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "mugwumpism",
+      "id": "mugwumpism",
+      "class": "ellipse"
+    },
+    {
+      "text": "hercynite",
+      "id": "hercynite",
+      "class": "box"
+    },
+    {
+      "text": "discredit Peelite",
+      "id": "discredit Peelite",
+      "class": "parallelogram"
+    },
+    {
+      "text": "refreshen",
+      "id": "refreshen",
+      "class": "parallelogram"
+    },
+    {
+      "text": "cardiograph",
+      "id": "cardiograph",
+      "class": "diamond"
+    },
+    {
+      "text": "kangarooer",
+      "id": "kangarooer",
+      "class": "diamond"
+    },
+    {
+      "text": "hierarchal",
+      "id": "hierarchal",
+      "class": "diamond"
+    },
+    {
+      "text": "suprapubic",
+      "id": "suprapubic",
+      "class": "box"
+    },
+    {
+      "text": "semihonor",
+      "id": "semihonor",
+      "class": "circle"
+    },
+    {
+      "text": "glaked Flamandization",
+      "id": "glaked Flamandization",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "mugwumpism",
+      "head": "hercynite",
+      "label": null
+    },
+    {
+      "tail": "hercynite",
+      "head": "discredit Peelite",
+      "label": null
+    },
+    {
+      "tail": "discredit Peelite",
+      "head": "refreshen",
+      "label": null
+    },
+    {
+      "tail": "refreshen",
+      "head": "cardiograph",
+      "label": null
+    },
+    {
+      "tail": "cardiograph",
+      "head": "kangarooer",
+      "label": "no"
+    },
+    {
+      "tail": "cardiograph",
+      "head": "mugwumpism",
+      "label": "no"
+    },
+    {
+      "tail": "kangarooer",
+      "head": "hierarchal",
+      "label": "yes"
+    },
+    {
+      "tail": "kangarooer",
+      "head": "hercynite",
+      "label": "yes"
+    },
+    {
+      "tail": "hierarchal",
+      "head": "suprapubic",
+      "label": "YES"
+    },
+    {
+      "tail": "hierarchal",
+      "head": "semihonor",
+      "label": "YES"
+    },
+    {
+      "tail": "suprapubic",
+      "head": "glaked Flamandization",
+      "label": null
+    },
+    {
+      "tail": "glaked Flamandization",
+      "head": "semihonor",
+      "label": null
+    }
+  ]
+}

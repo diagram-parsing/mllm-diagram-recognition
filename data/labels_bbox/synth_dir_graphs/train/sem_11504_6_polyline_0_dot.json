@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "encephalosclerosis rotulad",
+      "id": "encephalosclerosis rotulad",
+      "class": "node",
+      "bbox": [
+        27,
+        177,
+        161,
+        226
+      ]
+    },
+    {
+      "text": "searlesite shisn tricksome",
+      "id": "searlesite shisn tricksome",
+      "class": "node",
+      "bbox": [
+        238,
+        175,
+        371,
+        225
+      ]
+    },
+    {
+      "text": "photomicrographer",
+      "id": "photomicrographer",
+      "class": "node",
+      "bbox": [
+        448,
+        257,
+        600,
+        305
+      ]
+    },
+    {
+      "text": "achira inoculation",
+      "id": "achira inoculation",
+      "class": "node",
+      "bbox": [
+        677,
+        219,
+        779,
+        269
+      ]
+    },
+    {
+      "text": "prowarden terebral",
+      "id": "prowarden terebral",
+      "class": "node",
+      "bbox": [
+        677,
+        293,
+        779,
+        339
+      ]
+    },
+    {
+      "text": "patient edgrew simiousness",
+      "id": "patient edgrew simiousness",
+      "class": "node",
+      "bbox": [
+        240,
+        257,
+        369,
+        306
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "encephalosclerosis rotulad",
+      "head": "searlesite shisn tricksome",
+      "label": "0.641",
+      "class": "unidirectional",
+      "bbox": [
+        162,
+        193,
+        238,
+        208
+      ]
+    },
+    {
+      "tail": "photomicrographer",
+      "head": "achira inoculation",
+      "label": "0.232",
+      "class": "unidirectional",
+      "bbox": [
+        591,
+        249,
+        676,
+        269
+      ]
+    },
+    {
+      "tail": "photomicrographer",
+      "head": "prowarden terebral",
+      "label": "0.313",
+      "class": "unidirectional",
+      "bbox": [
+        591,
+        293,
+        677,
+        314
+      ]
+    },
+    {
+      "tail": "patient edgrew simiousness",
+      "head": "photomicrographer",
+      "label": "0.196",
+      "class": "bidirectional",
+      "bbox": [
+        386,
+        274,
+        448,
+        289
+      ]
+    },
+    {
+      "tail": "encephalosclerosis rotulad",
+      "head": "patient edgrew simiousness",
+      "label": null,
+      "class": "bidirectional",
+      "bbox": [
+        157,
+        225,
+        258,
+        265
+      ]
+    }
+  ]
+}

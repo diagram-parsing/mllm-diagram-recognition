@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "text": "polyaxon",
+      "id": "polyaxon",
+      "class": "circle"
+    },
+    {
+      "text": "demitoilet",
+      "id": "demitoilet",
+      "class": "parallelogram"
+    },
+    {
+      "text": "forgiver",
+      "id": "forgiver",
+      "class": "diamond"
+    },
+    {
+      "text": "stereophotography",
+      "id": "stereophotography",
+      "class": "hexagon"
+    },
+    {
+      "text": "ontocyclic Festino",
+      "id": "ontocyclic Festino",
+      "class": "box"
+    },
+    {
+      "text": "dyakisdodecahedron",
+      "id": "dyakisdodecahedron",
+      "class": "diamond"
+    },
+    {
+      "text": "ajog",
+      "id": "ajog",
+      "class": "box"
+    },
+    {
+      "text": "disconanthous",
+      "id": "disconanthous",
+      "class": "document"
+    },
+    {
+      "text": "depotentiation epiphytic",
+      "id": "depotentiation epiphytic",
+      "class": "box"
+    },
+    {
+      "text": "birle girouette",
+      "id": "birle girouette",
+      "class": "diamond"
+    },
+    {
+      "text": "yawy humorist",
+      "id": "yawy humorist",
+      "class": "parallelogram"
+    },
+    {
+      "text": "arete deutomala childridden",
+      "id": "arete deutomala childridden",
+      "class": "hexagon"
+    },
+    {
+      "text": "hyoidan",
+      "id": "hyoidan",
+      "class": "document"
+    },
+    {
+      "text": "brasse incondensible",
+      "id": "brasse incondensible",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "polyaxon",
+      "head": "demitoilet",
+      "label": null
+    },
+    {
+      "tail": "demitoilet",
+      "head": "forgiver",
+      "label": null
+    },
+    {
+      "tail": "forgiver",
+      "head": "stereophotography",
+      "label": "Yes"
+    },
+    {
+      "tail": "forgiver",
+      "head": "ontocyclic Festino",
+      "label": "Yes"
+    },
+    {
+      "tail": "stereophotography",
+      "head": "dyakisdodecahedron",
+      "label": null
+    },
+    {
+      "tail": "dyakisdodecahedron",
+      "head": "ontocyclic Festino",
+      "label": "NO"
+    },
+    {
+      "tail": "dyakisdodecahedron",
+      "head": "ajog",
+      "label": "NO"
+    },
+    {
+      "tail": "ontocyclic Festino",
+      "head": "disconanthous",
+      "label": null
+    },
+    {
+      "tail": "disconanthous",
+      "head": "depotentiation epiphytic",
+      "label": null
+    },
+    {
+      "tail": "depotentiation epiphytic",
+      "head": "birle girouette",
+      "label": null
+    },
+    {
+      "tail": "birle girouette",
+      "head": "yawy humorist",
+      "label": "yes"
+    },
+    {
+      "tail": "birle girouette",
+      "head": "stereophotography",
+      "label": "yes"
+    },
+    {
+      "tail": "yawy humorist",
+      "head": "arete deutomala childridden",
+      "label": null
+    },
+    {
+      "tail": "arete deutomala childridden",
+      "head": "hyoidan",
+      "label": null
+    },
+    {
+      "tail": "hyoidan",
+      "head": "ajog",
+      "label": null
+    },
+    {
+      "tail": "ajog",
+      "head": "brasse incondensible",
+      "label": null
+    }
+  ]
+}

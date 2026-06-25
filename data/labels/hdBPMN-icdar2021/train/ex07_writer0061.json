@@ -1,0 +1,242 @@
+{
+  "nodes": [
+    {
+      "text": "patients interviewed",
+      "id": "patients interviewed",
+      "class": "messageEvent"
+    },
+    {
+      "text": "create the report",
+      "id": "create the report",
+      "class": "task"
+    },
+    {
+      "text": "integrate in the new workflow",
+      "id": "integrate in the new workflow",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "par the flees",
+      "id": "par the flees",
+      "class": "task"
+    },
+    {
+      "text": "file the results",
+      "id": "file the results",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_4",
+      "class": "messageEvent"
+    },
+    {
+      "text": "sended the cheque",
+      "id": "sended the cheque",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": "response not approved"
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "sended the cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "par the flees",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create the report",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file the results",
+      "head": "create the report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "file the results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "par the flees",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "messageEvent_3",
+      "class": "sequenceFlow",
+      "label": "response approved"
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "integrate in the new workflow",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "patients interviewed",
+      "head": "integrate in the new workflow",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "patients",
+      "head": "patients interviewed",
+      "class": "messageFlow",
+      "label": "Interviwe"
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "external experts",
+      "class": "messageFlow",
+      "label": "review"
+    },
+    {
+      "tail": "external experts",
+      "head": "messageEvent_4",
+      "class": "messageFlow",
+      "label": "ask for review the work"
+    },
+    {
+      "tail": "external experts",
+      "head": "messageEvent_2",
+      "class": "messageFlow",
+      "label": "ask for response"
+    },
+    {
+      "tail": "sended the cheque",
+      "head": "external experts",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "quality assurance"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "messageEvent_1",
+        "exclusiveGateway_1",
+        "messageEvent_2",
+        "exclusiveGateway_2",
+        "messageEvent_3",
+        "par the flees",
+        "messageEvent_4",
+        "sended the cheque"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance",
+      "nodes": [
+        "patients interviewed",
+        "create the report",
+        "integrate in the new workflow",
+        "parallelGateway_1",
+        "file the results",
+        "parallelGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "external experts",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "patients",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

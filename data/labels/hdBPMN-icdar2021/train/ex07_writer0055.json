@@ -1,0 +1,302 @@
+{
+  "nodes": [
+    {
+      "text": "case received",
+      "id": "case received",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "file results containing interviews",
+      "id": "file results containing interviews",
+      "class": "task"
+    },
+    {
+      "text": "file results containing expertise",
+      "id": "file results containing expertise",
+      "class": "task"
+    },
+    {
+      "text": "ask for review",
+      "id": "ask for review",
+      "class": "task"
+    },
+    {
+      "text": "set time frame to expert review",
+      "id": "set time frame to expert review",
+      "class": "task"
+    },
+    {
+      "text": "forward results to QA",
+      "id": "forward results to QA",
+      "class": "task"
+    },
+    {
+      "text": "send to expert",
+      "id": "send to expert",
+      "class": "task"
+    },
+    {
+      "text": "pay experts by filing check",
+      "id": "pay experts by filing check",
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": "receive review results",
+      "id": "receive review results",
+      "class": "task"
+    },
+    {
+      "text": "doctor rated",
+      "id": "doctor rated",
+      "class": "event"
+    },
+    {
+      "text": "ask another expert",
+      "id": "ask another expert",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_4",
+      "head": "doctor rated",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive review results",
+      "head": "file results containing expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send to expert",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "pay experts by filing check",
+      "head": "send to expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "pay experts by filing check",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward results to QA",
+      "head": "receive review results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "forward results to QA",
+      "class": "sequenceFlow",
+      "label": "receive it on time"
+    },
+    {
+      "tail": "ask another expert",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "set time frame to expert review",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "set time frame to expert review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask for review",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask for review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results containing expertise",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results containing expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results containing interviews",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results containing interviews",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "case received",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "ask another expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask for review",
+      "head": "expert (s)",
+      "class": "messageFlow",
+      "label": "a review request"
+    },
+    {
+      "tail": "send to expert",
+      "head": "expert (s)",
+      "class": "messageFlow",
+      "label": "check"
+    },
+    {
+      "tail": "expert (s)",
+      "head": "forward results to QA",
+      "class": "messageFlow",
+      "label": "review"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "management",
+        "quality assurance departement"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "management",
+      "nodes": [
+        "exclusiveGateway_1",
+        "ask for review",
+        "set time frame to expert review",
+        "forward results to QA",
+        "send to expert",
+        "pay experts by filing check",
+        "ask another expert",
+        "exclusiveGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance departement",
+      "nodes": [
+        "case received",
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "file results containing interviews",
+        "file results containing expertise",
+        "interview patients",
+        "receive review results",
+        "doctor rated"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "doctor",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "expert (s)",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

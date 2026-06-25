@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "muckle",
+      "id": "muckle",
+      "class": "circle"
+    },
+    {
+      "text": "reallege",
+      "id": "reallege",
+      "class": "diamond"
+    },
+    {
+      "text": "elaterite Pianokoto",
+      "id": "elaterite Pianokoto",
+      "class": "diamond"
+    },
+    {
+      "text": "Poephagus",
+      "id": "Poephagus",
+      "class": "document"
+    },
+    {
+      "text": "tritemorion Carapa",
+      "id": "tritemorion Carapa",
+      "class": "diamond"
+    },
+    {
+      "text": "immensely Istvaeones linguistr",
+      "id": "immensely Istvaeones linguistr",
+      "class": "parallelogram"
+    },
+    {
+      "text": "uncrushed underbound",
+      "id": "uncrushed underbound",
+      "class": "diamond"
+    },
+    {
+      "text": "hyperdicrotous imperfectly",
+      "id": "hyperdicrotous imperfectly",
+      "class": "diamond"
+    },
+    {
+      "text": "semisuspension Francophobe",
+      "id": "semisuspension Francophobe",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unscreenably",
+      "id": "unscreenably",
+      "class": "hexagon"
+    },
+    {
+      "text": "papillon tridecyl dyscratic",
+      "id": "papillon tridecyl dyscratic",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "muckle",
+      "head": "reallege",
+      "label": null
+    },
+    {
+      "tail": "reallege",
+      "head": "elaterite Pianokoto",
+      "label": "Yes"
+    },
+    {
+      "tail": "reallege",
+      "head": "Poephagus",
+      "label": "Yes"
+    },
+    {
+      "tail": "elaterite Pianokoto",
+      "head": "tritemorion Carapa",
+      "label": "YES"
+    },
+    {
+      "tail": "elaterite Pianokoto",
+      "head": "reallege",
+      "label": "YES"
+    },
+    {
+      "tail": "tritemorion Carapa",
+      "head": "immensely Istvaeones linguistr",
+      "label": "Yes"
+    },
+    {
+      "tail": "tritemorion Carapa",
+      "head": "reallege",
+      "label": "Yes"
+    },
+    {
+      "tail": "immensely Istvaeones linguistr",
+      "head": "uncrushed underbound",
+      "label": null
+    },
+    {
+      "tail": "uncrushed underbound",
+      "head": "hyperdicrotous imperfectly",
+      "label": "Yes"
+    },
+    {
+      "tail": "uncrushed underbound",
+      "head": "muckle",
+      "label": "Yes"
+    },
+    {
+      "tail": "hyperdicrotous imperfectly",
+      "head": "semisuspension Francophobe",
+      "label": "YES"
+    },
+    {
+      "tail": "hyperdicrotous imperfectly",
+      "head": "tritemorion Carapa",
+      "label": "YES"
+    },
+    {
+      "tail": "semisuspension Francophobe",
+      "head": "Poephagus",
+      "label": null
+    },
+    {
+      "tail": "Poephagus",
+      "head": "unscreenably",
+      "label": null
+    },
+    {
+      "tail": "unscreenably",
+      "head": "papillon tridecyl dyscratic",
+      "label": null
+    }
+  ]
+}

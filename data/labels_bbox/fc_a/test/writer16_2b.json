@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "connection_1",
+      "bbox": [
+        4,
+        16,
+        53,
+        80
+      ],
+      "class": "connection"
+    },
+    {
+      "text": "Read n",
+      "id": "Read n",
+      "bbox": [
+        114,
+        4,
+        434,
+        120
+      ],
+      "class": "data"
+    },
+    {
+      "text": "n=n*n",
+      "id": "n=n*n",
+      "bbox": [
+        513,
+        8,
+        791,
+        138
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Print n",
+      "id": "Print n",
+      "bbox": [
+        828,
+        16,
+        1171,
+        139
+      ],
+      "class": "data"
+    },
+    {
+      "text": null,
+      "id": "connection_2",
+      "bbox": [
+        1258,
+        53,
+        1330,
+        125
+      ],
+      "class": "connection"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "connection_1",
+      "head": "Read n",
+      "bbox": [
+        39,
+        27,
+        153,
+        66
+      ],
+      "kps": [
+        41.0,
+        46.0,
+        2.0,
+        145.0,
+        46.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Read n",
+      "head": "n=n*n",
+      "bbox": [
+        411,
+        45,
+        492,
+        84
+      ],
+      "kps": [
+        413.0,
+        61.0,
+        2.0,
+        484.0,
+        65.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "n=n*n",
+      "head": "Print n",
+      "bbox": [
+        786,
+        58,
+        860,
+        88
+      ],
+      "kps": [
+        788.0,
+        74.0,
+        2.0,
+        854.0,
+        74.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Print n",
+      "head": "connection_2",
+      "bbox": [
+        1114,
+        73,
+        1230,
+        104
+      ],
+      "kps": [
+        1116.0,
+        89.0,
+        2.0,
+        1222.0,
+        92.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

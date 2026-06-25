@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "prequote",
+      "id": "prequote",
+      "class": "oval",
+      "bbox": [
+        49,
+        16,
+        121,
+        68
+      ]
+    },
+    {
+      "text": "superadmiration Iliadize hydri",
+      "id": "superadmiration Iliadize hydri",
+      "class": "hexagon",
+      "bbox": [
+        5,
+        124,
+        164,
+        184
+      ]
+    },
+    {
+      "text": "penny Lord unjaunty",
+      "id": "penny Lord unjaunty",
+      "class": "parallelogram",
+      "bbox": [
+        25,
+        216,
+        144,
+        316
+      ]
+    },
+    {
+      "text": "copiously podobranchiate",
+      "id": "copiously podobranchiate",
+      "class": "hexagon",
+      "bbox": [
+        18,
+        348,
+        151,
+        403
+      ]
+    },
+    {
+      "text": "gastroenterocolostomy",
+      "id": "gastroenterocolostomy",
+      "class": "diamond",
+      "bbox": [
+        235,
+        5,
+        382,
+        79
+      ]
+    },
+    {
+      "text": "smoothification reboil vanilli",
+      "id": "smoothification reboil vanilli",
+      "class": "diamond",
+      "bbox": [
+        214,
+        89,
+        398,
+        163
+      ]
+    },
+    {
+      "text": "counterdifficulty",
+      "id": "counterdifficulty",
+      "class": "box",
+      "bbox": [
+        273,
+        242,
+        345,
+        290
+      ]
+    },
+    {
+      "text": "chlorazide",
+      "id": "chlorazide",
+      "class": "oval",
+      "bbox": [
+        273,
+        352,
+        345,
+        403
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "prequote",
+      "head": "superadmiration Iliadize hydri",
+      "label": null,
+      "bbox": [
+        79,
+        69,
+        91,
+        124
+      ]
+    },
+    {
+      "tail": "superadmiration Iliadize hydri",
+      "head": "penny Lord unjaunty",
+      "label": null,
+      "bbox": [
+        79,
+        184,
+        91,
+        216
+      ]
+    },
+    {
+      "tail": "penny Lord unjaunty",
+      "head": "copiously podobranchiate",
+      "label": null,
+      "bbox": [
+        79,
+        316,
+        91,
+        348
+      ]
+    },
+    {
+      "tail": "copiously podobranchiate",
+      "head": "gastroenterocolostomy",
+      "label": null,
+      "bbox": [
+        151,
+        66,
+        294,
+        379
+      ]
+    },
+    {
+      "tail": "gastroenterocolostomy",
+      "head": "smoothification reboil vanilli",
+      "label": "yes",
+      "bbox": [
+        303,
+        76,
+        315,
+        89
+      ]
+    },
+    {
+      "tail": "gastroenterocolostomy",
+      "head": "counterdifficulty",
+      "label": "yes",
+      "bbox": [
+        198,
+        76,
+        302,
+        273
+      ]
+    },
+    {
+      "tail": "smoothification reboil vanilli",
+      "head": "counterdifficulty",
+      "label": "YES",
+      "bbox": [
+        303,
+        163,
+        315,
+        242
+      ]
+    },
+    {
+      "tail": "smoothification reboil vanilli",
+      "head": "prequote",
+      "label": "YES",
+      "bbox": [
+        121,
+        37,
+        225,
+        122
+      ]
+    },
+    {
+      "tail": "counterdifficulty",
+      "head": "chlorazide",
+      "label": null,
+      "bbox": [
+        303,
+        290,
+        315,
+        352
+      ]
+    }
+  ]
+}

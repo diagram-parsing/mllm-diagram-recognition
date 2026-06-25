@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "Platyrhina spor planospiral",
+      "id": "Platyrhina spor planospiral",
+      "class": "circle"
+    },
+    {
+      "text": "journalish",
+      "id": "journalish",
+      "class": "hexagon"
+    },
+    {
+      "text": "zoonosis",
+      "id": "zoonosis",
+      "class": "parallelogram"
+    },
+    {
+      "text": "disagreeably hocus",
+      "id": "disagreeably hocus",
+      "class": "diamond"
+    },
+    {
+      "text": "hesthogenous radiocarbon",
+      "id": "hesthogenous radiocarbon",
+      "class": "diamond"
+    },
+    {
+      "text": "forbidder",
+      "id": "forbidder",
+      "class": "parallelogram"
+    },
+    {
+      "text": "sewing gingham",
+      "id": "sewing gingham",
+      "class": "circle"
+    },
+    {
+      "text": "dispersonification disconcerti",
+      "id": "dispersonification disconcerti",
+      "class": "hexagon"
+    },
+    {
+      "text": "physostomous",
+      "id": "physostomous",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Platyrhina spor planospiral",
+      "head": "journalish",
+      "label": null
+    },
+    {
+      "tail": "journalish",
+      "head": "zoonosis",
+      "label": null
+    },
+    {
+      "tail": "zoonosis",
+      "head": "disagreeably hocus",
+      "label": null
+    },
+    {
+      "tail": "disagreeably hocus",
+      "head": "hesthogenous radiocarbon",
+      "label": "Yes"
+    },
+    {
+      "tail": "disagreeably hocus",
+      "head": "journalish",
+      "label": "Yes"
+    },
+    {
+      "tail": "hesthogenous radiocarbon",
+      "head": "forbidder",
+      "label": "No"
+    },
+    {
+      "tail": "hesthogenous radiocarbon",
+      "head": "sewing gingham",
+      "label": "No"
+    },
+    {
+      "tail": "forbidder",
+      "head": "dispersonification disconcerti",
+      "label": null
+    },
+    {
+      "tail": "dispersonification disconcerti",
+      "head": "physostomous",
+      "label": null
+    },
+    {
+      "tail": "physostomous",
+      "head": "sewing gingham",
+      "label": "YES"
+    },
+    {
+      "tail": "physostomous",
+      "head": "zoonosis",
+      "label": "YES"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "text": "threnodist frabjous chromazuri",
+      "id": "threnodist frabjous chromazuri",
+      "class": "node",
+      "bbox": [
+        65,
+        415,
+        202,
+        464
+      ]
+    },
+    {
+      "text": "overintellectual eyestrain",
+      "id": "overintellectual eyestrain",
+      "class": "node",
+      "bbox": [
+        27,
+        259,
+        208,
+        331
+      ]
+    },
+    {
+      "text": "peasantism",
+      "id": "peasantism",
+      "class": "node",
+      "bbox": [
+        231,
+        271,
+        358,
+        319
+      ]
+    },
+    {
+      "text": "polylinguist Agnoetae",
+      "id": "polylinguist Agnoetae",
+      "class": "node",
+      "bbox": [
+        212,
+        103,
+        378,
+        174
+      ]
+    },
+    {
+      "text": "cyton",
+      "id": "cyton",
+      "class": "node",
+      "bbox": [
+        402,
+        114,
+        480,
+        162
+      ]
+    },
+    {
+      "text": "invigilance",
+      "id": "invigilance",
+      "class": "node",
+      "bbox": [
+        68,
+        114,
+        188,
+        162
+      ]
+    },
+    {
+      "text": "pleurum",
+      "id": "pleurum",
+      "class": "node",
+      "bbox": [
+        71,
+        5,
+        185,
+        53
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "threnodist frabjous chromazuri",
+      "head": "overintellectual eyestrain",
+      "label": "0.05** a = 0.332",
+      "class": "unidirectional",
+      "bbox": [
+        117,
+        335,
+        131,
+        415
+      ]
+    },
+    {
+      "tail": "peasantism",
+      "head": "polylinguist Agnoetae",
+      "label": "0.651",
+      "class": "unidirectional",
+      "bbox": [
+        289,
+        179,
+        301,
+        271
+      ]
+    },
+    {
+      "tail": "peasantism",
+      "head": "cyton",
+      "label": "0.21",
+      "class": "unidirectional",
+      "bbox": [
+        315,
+        163,
+        422,
+        272
+      ]
+    },
+    {
+      "tail": "invigilance",
+      "head": "pleurum",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        122,
+        58,
+        134,
+        114
+      ]
+    },
+    {
+      "tail": "peasantism",
+      "head": "invigilance",
+      "label": "0.77 H = 0.422",
+      "class": "unidirectional",
+      "bbox": [
+        154,
+        164,
+        271,
+        272
+      ]
+    },
+    {
+      "tail": "threnodist frabjous chromazuri",
+      "head": "peasantism",
+      "label": "0.871",
+      "class": "unidirectional",
+      "bbox": [
+        158,
+        320,
+        268,
+        417
+      ]
+    }
+  ]
+}

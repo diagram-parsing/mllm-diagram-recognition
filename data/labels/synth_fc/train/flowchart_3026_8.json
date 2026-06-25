@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "guariba Tanoan",
+      "id": "guariba Tanoan",
+      "class": "circle"
+    },
+    {
+      "text": "Hypopitys quercitrin",
+      "id": "Hypopitys quercitrin",
+      "class": "document"
+    },
+    {
+      "text": "discoverability",
+      "id": "discoverability",
+      "class": "diamond"
+    },
+    {
+      "text": "kidling",
+      "id": "kidling",
+      "class": "parallelogram"
+    },
+    {
+      "text": "nebulizer",
+      "id": "nebulizer",
+      "class": "ellipse"
+    },
+    {
+      "text": "cloudage thumblike",
+      "id": "cloudage thumblike",
+      "class": "document"
+    },
+    {
+      "text": "harangue",
+      "id": "harangue",
+      "class": "box"
+    },
+    {
+      "text": "whirtle volumescope",
+      "id": "whirtle volumescope",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "guariba Tanoan",
+      "head": "Hypopitys quercitrin",
+      "label": null
+    },
+    {
+      "tail": "Hypopitys quercitrin",
+      "head": "discoverability",
+      "label": null
+    },
+    {
+      "tail": "discoverability",
+      "head": "kidling",
+      "label": "YES"
+    },
+    {
+      "tail": "discoverability",
+      "head": "nebulizer",
+      "label": "YES"
+    },
+    {
+      "tail": "kidling",
+      "head": "cloudage thumblike",
+      "label": null
+    },
+    {
+      "tail": "cloudage thumblike",
+      "head": "harangue",
+      "label": null
+    },
+    {
+      "tail": "harangue",
+      "head": "whirtle volumescope",
+      "label": null
+    },
+    {
+      "tail": "whirtle volumescope",
+      "head": "nebulizer",
+      "label": "no"
+    },
+    {
+      "tail": "whirtle volumescope",
+      "head": "guariba Tanoan",
+      "label": "no"
+    }
+  ]
+}

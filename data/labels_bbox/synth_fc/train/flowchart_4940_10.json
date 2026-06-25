@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "text": "prohibitive",
+      "id": "prohibitive",
+      "class": "circle",
+      "bbox": [
+        80,
+        5,
+        177,
+        103
+      ]
+    },
+    {
+      "text": "deseret",
+      "id": "deseret",
+      "class": "diamond",
+      "bbox": [
+        70,
+        185,
+        187,
+        233
+      ]
+    },
+    {
+      "text": "periclasia",
+      "id": "periclasia",
+      "class": "diamond",
+      "bbox": [
+        67,
+        339,
+        190,
+        387
+      ]
+    },
+    {
+      "text": "pseudoviaduct thereon",
+      "id": "pseudoviaduct thereon",
+      "class": "document",
+      "bbox": [
+        78,
+        523,
+        179,
+        590
+      ]
+    },
+    {
+      "text": "circumvolve paratactic histopa",
+      "id": "circumvolve paratactic histopa",
+      "class": "document",
+      "bbox": [
+        387,
+        639,
+        488,
+        706
+      ]
+    },
+    {
+      "text": "windsorite pharmacognosist",
+      "id": "windsorite pharmacognosist",
+      "class": "document",
+      "bbox": [
+        78,
+        601,
+        179,
+        667
+      ]
+    },
+    {
+      "text": "broadloom micrologist",
+      "id": "broadloom micrologist",
+      "class": "parallelogram",
+      "bbox": [
+        359,
+        172,
+        512,
+        245
+      ]
+    },
+    {
+      "text": "imperence acupunctuate cupramm",
+      "id": "imperence acupunctuate cupramm",
+      "class": "box",
+      "bbox": [
+        387,
+        378,
+        488,
+        426
+      ]
+    },
+    {
+      "text": "daemon",
+      "id": "daemon",
+      "class": "box",
+      "bbox": [
+        402,
+        494,
+        474,
+        542
+      ]
+    },
+    {
+      "text": "Alectorides keraunoscopy",
+      "id": "Alectorides keraunoscopy",
+      "class": "oval",
+      "bbox": [
+        380,
+        840,
+        495,
+        887
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "prohibitive",
+      "head": "deseret",
+      "label": null,
+      "bbox": [
+        124,
+        104,
+        133,
+        179
+      ]
+    },
+    {
+      "tail": "deseret",
+      "head": "periclasia",
+      "label": "Yes",
+      "bbox": [
+        124,
+        234,
+        133,
+        334
+      ]
+    },
+    {
+      "tail": "deseret",
+      "head": "pseudoviaduct thereon",
+      "label": "Yes",
+      "bbox": [
+        43,
+        209,
+        74,
+        562
+      ]
+    },
+    {
+      "tail": "periclasia",
+      "head": "pseudoviaduct thereon",
+      "label": "no",
+      "bbox": [
+        124,
+        389,
+        133,
+        520
+      ]
+    },
+    {
+      "tail": "periclasia",
+      "head": "circumvolve paratactic histopa",
+      "label": "no",
+      "bbox": [
+        184,
+        367,
+        383,
+        659
+      ]
+    },
+    {
+      "tail": "pseudoviaduct thereon",
+      "head": "windsorite pharmacognosist",
+      "label": null,
+      "bbox": [
+        124,
+        584,
+        133,
+        597
+      ]
+    },
+    {
+      "tail": "windsorite pharmacognosist",
+      "head": "broadloom micrologist",
+      "label": null,
+      "bbox": [
+        179,
+        250,
+        374,
+        621
+      ]
+    },
+    {
+      "tail": "broadloom micrologist",
+      "head": "imperence acupunctuate cupramm",
+      "label": null,
+      "bbox": [
+        433,
+        246,
+        442,
+        373
+      ]
+    },
+    {
+      "tail": "imperence acupunctuate cupramm",
+      "head": "daemon",
+      "label": null,
+      "bbox": [
+        433,
+        427,
+        442,
+        489
+      ]
+    },
+    {
+      "tail": "daemon",
+      "head": "circumvolve paratactic histopa",
+      "label": null,
+      "bbox": [
+        433,
+        543,
+        442,
+        635
+      ]
+    },
+    {
+      "tail": "circumvolve paratactic histopa",
+      "head": "Alectorides keraunoscopy",
+      "label": null,
+      "bbox": [
+        433,
+        706,
+        442,
+        835
+      ]
+    }
+  ]
+}

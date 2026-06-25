@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "text": "Begin",
+      "id": "Begin",
+      "bbox": [
+        4,
+        187,
+        239,
+        104
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input X,Y",
+      "id": "Input X,Y",
+      "bbox": [
+        324,
+        162,
+        361,
+        136
+      ],
+      "class": "data"
+    },
+    {
+      "text": "X>=Y",
+      "id": "X>=Y",
+      "bbox": [
+        768,
+        135,
+        164,
+        204
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "display Y",
+      "id": "display Y",
+      "bbox": [
+        950,
+        5,
+        255,
+        119
+      ],
+      "class": "data"
+    },
+    {
+      "text": "display X",
+      "id": "display X",
+      "bbox": [
+        1010,
+        360,
+        319,
+        115
+      ],
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Begin",
+      "head": "Input X,Y",
+      "bbox": [
+        237,
+        218,
+        118,
+        52
+      ],
+      "kps": [
+        239.0,
+        241.0,
+        2.0,
+        352.0,
+        233.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input X,Y",
+      "head": "X>=Y",
+      "bbox": [
+        658,
+        219,
+        116,
+        45
+      ],
+      "kps": [
+        659.0,
+        236.0,
+        2.0,
+        772.0,
+        228.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display Y",
+      "bbox": [
+        929,
+        118,
+        195,
+        115
+      ],
+      "kps": [
+        931.0,
+        229.0,
+        2.0,
+        1096.0,
+        119.0,
+        2.0
+      ],
+      "label": "0"
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display X",
+      "bbox": [
+        842,
+        326,
+        198,
+        111
+      ],
+      "kps": [
+        854.0,
+        330.0,
+        2.0,
+        1032.0,
+        407.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

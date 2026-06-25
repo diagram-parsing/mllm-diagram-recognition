@@ -1,0 +1,404 @@
+{
+  "nodes": [
+    {
+      "text": "check documents",
+      "id": "check documents",
+      "bbox": [
+        463,
+        482,
+        672,
+        622
+      ],
+      "class": "task"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        794,
+        483,
+        1001,
+        614
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check claim",
+      "id": "check claim",
+      "bbox": [
+        314,
+        861,
+        528,
+        981
+      ],
+      "class": "task"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "bbox": [
+        625,
+        856,
+        844,
+        981
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        925,
+        883,
+        988,
+        957
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Reject claim",
+      "id": "Reject claim",
+      "bbox": [
+        1039,
+        727,
+        1221,
+        851
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1407,
+        856,
+        1469,
+        930
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        1585,
+        906,
+        1643,
+        954
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Arrange Repair",
+      "id": "Arrange Repair",
+      "bbox": [
+        1055,
+        971,
+        1236,
+        1097
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Schedule Appointment",
+      "id": "Schedule Appointment",
+      "bbox": [
+        1317,
+        970,
+        1596,
+        1092
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim submitted",
+      "id": "claim submitted",
+      "bbox": [
+        292,
+        521,
+        345,
+        579
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Notify customer",
+      "id": "Notify customer",
+      "bbox": [
+        1402,
+        727,
+        1653,
+        847
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Arrange Repair",
+      "head": "Schedule Appointment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1236,
+        993,
+        1319,
+        1042
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Arrange Repair",
+      "class": "sequenceFlow",
+      "bbox": [
+        956,
+        956,
+        1057,
+        1023
+      ],
+      "label": "+"
+    },
+    {
+      "tail": "Notify customer",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1582,
+        847,
+        1631,
+        903
+      ],
+      "label": null
+    },
+    {
+      "tail": "Reject claim",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1221,
+        808,
+        1415,
+        902
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Reject claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        956,
+        814,
+        1040,
+        885
+      ],
+      "label": "-"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        844,
+        895,
+        928,
+        944
+      ],
+      "label": null
+    },
+    {
+      "tail": "check claim",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        528,
+        895,
+        626,
+        944
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "check claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        445,
+        614,
+        866,
+        862
+      ],
+      "label": null
+    },
+    {
+      "tail": "check documents",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        673,
+        528,
+        796,
+        577
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim submitted",
+      "head": "check documents",
+      "class": "sequenceFlow",
+      "bbox": [
+        345,
+        528,
+        465,
+        577
+      ],
+      "label": null
+    },
+    {
+      "tail": "Schedule Appointment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1416,
+        925,
+        1465,
+        974
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Notify customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1469,
+        846,
+        1523,
+        895
+      ],
+      "label": null
+    },
+    {
+      "tail": "Arrange Repair",
+      "head": "garage",
+      "class": "messageFlow",
+      "bbox": [
+        1099,
+        1097,
+        1148,
+        1233
+      ],
+      "label": "Damages"
+    },
+    {
+      "tail": "Schedule Appointment",
+      "head": "garage",
+      "class": "messageFlow",
+      "bbox": [
+        1416,
+        1092,
+        1465,
+        1233
+      ],
+      "label": "Payment"
+    },
+    {
+      "tail": "Notify customer",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        1492,
+        238,
+        1541,
+        728
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim submitted",
+      "class": "messageFlow",
+      "bbox": [
+        282,
+        238,
+        331,
+        529
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "car insurer",
+      "nodes": [
+        "Handling Depart",
+        "Notifiaction Depa"
+      ],
+      "bbox": [
+        62,
+        396,
+        1656,
+        1099
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Handling Depart",
+      "nodes": [
+        "check claim",
+        "perform assessment",
+        "exclusiveGateway_1",
+        "Reject claim",
+        "exclusiveGateway_2",
+        "event_1",
+        "Arrange Repair",
+        "Schedule Appointment",
+        "Notify customer"
+      ],
+      "bbox": [
+        114,
+        727,
+        1656,
+        1099
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Notifiaction Depa",
+      "nodes": [
+        "check documents",
+        "register claim",
+        "claim submitted"
+      ],
+      "bbox": [
+        114,
+        396,
+        1656,
+        727
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        132,
+        142,
+        1649,
+        238
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "garage",
+      "nodes": [],
+      "bbox": [
+        62,
+        1232,
+        1656,
+        1546
+      ],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "nodes": [
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "File the Results",
+      "id": "File the Results",
+      "class": "task"
+    },
+    {
+      "text": "Write \"ask\" for expertise",
+      "id": "Write \"ask\" for expertise",
+      "class": "task"
+    },
+    {
+      "text": "Send ask for Epertise",
+      "id": "Send ask for Epertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "received expertise",
+      "id": "received expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Send expertise",
+      "id": "Send expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "QA process finished",
+      "id": "QA process finished",
+      "class": "event"
+    },
+    {
+      "text": "send the queue",
+      "id": "send the queue",
+      "class": "messageEvent"
+    },
+    {
+      "text": "interviewing patients",
+      "id": "interviewing patients",
+      "class": "subProcess"
+    },
+    {
+      "text": "Doctor rating started",
+      "id": "Doctor rating started",
+      "class": "event"
+    },
+    {
+      "text": "Received Expertise",
+      "id": "Received Expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "filling the cheque",
+      "id": "filling the cheque",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Received Expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "filling the cheque",
+      "head": "send the queue",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Send expertise",
+      "head": "Received Expertise",
+      "class": "sequenceFlow",
+      "label": "Expertise"
+    },
+    {
+      "tail": "received expertise",
+      "head": "Send expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Write \"ask\" for expertise",
+      "head": "Send ask for Epertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Write \"ask\" for expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "filling the cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "QA process finished",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "File the Results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "File the Results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interviewing patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interviewing patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Doctor rating started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Send ask for Epertise",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": "\"ask\" for\nExpertise"
+    },
+    {
+      "tail": "Expert",
+      "head": "received expertise",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "send the queue",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Managing director",
+        "Quality Assurance"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing director",
+      "nodes": [
+        "Write \"ask\" for expertise",
+        "Send ask for Epertise",
+        "received expertise",
+        "Send expertise",
+        "send the queue",
+        "filling the cheque"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality Assurance",
+      "nodes": [
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "File the Results",
+        "QA process finished",
+        "interviewing patients",
+        "Doctor rating started",
+        "Received Expertise"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

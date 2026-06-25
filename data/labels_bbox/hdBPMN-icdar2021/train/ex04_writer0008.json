@@ -1,0 +1,560 @@
+{
+  "nodes": [
+    {
+      "text": "claim submitted",
+      "id": "claim submitted",
+      "bbox": [
+        202,
+        431,
+        227,
+        455
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "check completness",
+      "id": "check completness",
+      "bbox": [
+        307,
+        376,
+        456,
+        464
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        566,
+        400,
+        604,
+        440
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        658,
+        376,
+        768,
+        467
+      ],
+      "class": "task"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "bbox": [
+        671,
+        792,
+        832,
+        913
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        870,
+        832,
+        913,
+        867
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "contact garage",
+      "id": "contact garage",
+      "bbox": [
+        913,
+        913,
+        1007,
+        993
+      ],
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "bbox": [
+        1047,
+        913,
+        1141,
+        993
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1148,
+        846,
+        1180,
+        878
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_4",
+      "bbox": [
+        1227,
+        852,
+        1254,
+        879
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "send letter about outcome",
+      "id": "send letter about outcome",
+      "bbox": [
+        1309,
+        799,
+        1450,
+        913
+      ],
+      "class": "task"
+    },
+    {
+      "text": "positive",
+      "id": "positive",
+      "bbox": [
+        1494,
+        826,
+        1521,
+        859
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "letter send",
+      "id": "letter send",
+      "bbox": [
+        1550,
+        820,
+        1583,
+        855
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim register",
+      "id": "claim register",
+      "bbox": [
+        827,
+        369,
+        906,
+        449
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        486,
+        517,
+        534,
+        584
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "letter",
+      "id": "letter",
+      "bbox": [
+        1359,
+        651,
+        1403,
+        709
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "letter send",
+      "id": "letter send",
+      "bbox": [
+        1494,
+        750,
+        1541,
+        789
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        890,
+        752,
+        1156,
+        856
+      ],
+      "label": "negative"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        588,
+        268,
+        1250,
+        862
+      ],
+      "label": null
+    },
+    {
+      "tail": "positive",
+      "head": "letter send",
+      "class": "sequenceFlow",
+      "bbox": [
+        1518,
+        822,
+        1552,
+        856
+      ],
+      "label": null
+    },
+    {
+      "tail": "send letter about outcome",
+      "head": "positive",
+      "class": "sequenceFlow",
+      "bbox": [
+        1450,
+        827,
+        1496,
+        860
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_4",
+      "head": "send letter about outcome",
+      "class": "sequenceFlow",
+      "bbox": [
+        1254,
+        843,
+        1310,
+        877
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "exclusiveGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1180,
+        846,
+        1233,
+        879
+      ],
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1132,
+        869,
+        1165,
+        955
+      ],
+      "label": null
+    },
+    {
+      "tail": "contact garage",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1007,
+        937,
+        1049,
+        971
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "contact garage",
+      "class": "sequenceFlow",
+      "bbox": [
+        885,
+        866,
+        919,
+        953
+      ],
+      "label": "positive"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        832,
+        836,
+        873,
+        869
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        695,
+        467,
+        729,
+        793
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        601,
+        402,
+        659,
+        436
+      ],
+      "label": "complete"
+    },
+    {
+      "tail": "check completness",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        456,
+        404,
+        568,
+        437
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim submitted",
+      "head": "check completness",
+      "class": "sequenceFlow",
+      "bbox": [
+        227,
+        420,
+        308,
+        454
+      ],
+      "label": null
+    },
+    {
+      "tail": "positive",
+      "head": "letter send",
+      "class": "sequenceFlow",
+      "bbox": [
+        1492,
+        792,
+        1526,
+        827
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "check completness",
+      "class": "dataAssociation",
+      "bbox": [
+        409,
+        464,
+        487,
+        531
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        534,
+        452,
+        659,
+        535
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim register",
+      "class": "dataAssociation",
+      "bbox": [
+        768,
+        389,
+        828,
+        423
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "perform assessment",
+      "class": "dataAssociation",
+      "bbox": [
+        515,
+        584,
+        672,
+        851
+      ],
+      "label": null
+    },
+    {
+      "tail": "send letter about outcome",
+      "head": "letter",
+      "class": "dataAssociation",
+      "bbox": [
+        1355,
+        711,
+        1389,
+        800
+      ],
+      "label": null
+    },
+    {
+      "tail": "contact garage",
+      "head": "Garage",
+      "class": "messageFlow",
+      "bbox": [
+        944,
+        993,
+        977,
+        1035
+      ],
+      "label": "phone garage"
+    },
+    {
+      "tail": "Customer",
+      "head": "claim submitted",
+      "class": "messageFlow",
+      "bbox": [
+        198,
+        161,
+        232,
+        432
+      ],
+      "label": "Claim"
+    },
+    {
+      "tail": "letter send",
+      "head": "Customer",
+      "class": "messageFlow",
+      "bbox": [
+        1454,
+        161,
+        1517,
+        748
+      ],
+      "label": null
+    },
+    {
+      "tail": "letter send",
+      "head": "Customer",
+      "class": "messageFlow",
+      "bbox": [
+        1477,
+        141,
+        1566,
+        823
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Car insurer",
+      "nodes": [
+        "handling department",
+        "notification department"
+      ],
+      "bbox": [
+        40,
+        282,
+        1638,
+        1020
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling department",
+      "nodes": [
+        "perform assessment",
+        "exclusiveGateway_2",
+        "contact garage",
+        "schedule payment",
+        "exclusiveGateway_3",
+        "exclusiveGateway_4",
+        "send letter about outcome",
+        "positive",
+        "letter send",
+        "letter",
+        "letter send"
+      ],
+      "bbox": [
+        80,
+        631,
+        1638,
+        1020
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "claim submitted",
+        "check completness",
+        "exclusiveGateway_1",
+        "register claim",
+        "claim register",
+        "claim"
+      ],
+      "bbox": [
+        80,
+        282,
+        1638,
+        631
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        201,
+        26,
+        1477,
+        161
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Garage",
+      "nodes": [],
+      "bbox": [
+        255,
+        1034,
+        1450,
+        1222
+      ],
+      "class": "pool"
+    }
+  ]
+}

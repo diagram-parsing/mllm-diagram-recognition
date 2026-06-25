@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "text": "oligopepsia Aushar",
+      "id": "oligopepsia Aushar",
+      "class": "circle"
+    },
+    {
+      "text": "eggfruit",
+      "id": "eggfruit",
+      "class": "diamond"
+    },
+    {
+      "text": "squamopetrosal Severian",
+      "id": "squamopetrosal Severian",
+      "class": "box"
+    },
+    {
+      "text": "stringent",
+      "id": "stringent",
+      "class": "parallelogram"
+    },
+    {
+      "text": "saltern",
+      "id": "saltern",
+      "class": "diamond"
+    },
+    {
+      "text": "wherein",
+      "id": "wherein",
+      "class": "diamond"
+    },
+    {
+      "text": "chartographist",
+      "id": "chartographist",
+      "class": "ellipse"
+    },
+    {
+      "text": "cora",
+      "id": "cora",
+      "class": "diamond"
+    },
+    {
+      "text": "godsonship",
+      "id": "godsonship",
+      "class": "diamond"
+    },
+    {
+      "text": "Maiacca",
+      "id": "Maiacca",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unwrapping Waco",
+      "id": "unwrapping Waco",
+      "class": "document"
+    },
+    {
+      "text": "fester",
+      "id": "fester",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "oligopepsia Aushar",
+      "head": "eggfruit",
+      "label": null
+    },
+    {
+      "tail": "eggfruit",
+      "head": "squamopetrosal Severian",
+      "label": "no"
+    },
+    {
+      "tail": "eggfruit",
+      "head": "stringent",
+      "label": "no"
+    },
+    {
+      "tail": "squamopetrosal Severian",
+      "head": "stringent",
+      "label": null
+    },
+    {
+      "tail": "stringent",
+      "head": "saltern",
+      "label": null
+    },
+    {
+      "tail": "saltern",
+      "head": "wherein",
+      "label": "no"
+    },
+    {
+      "tail": "saltern",
+      "head": "chartographist",
+      "label": "no"
+    },
+    {
+      "tail": "wherein",
+      "head": "cora",
+      "label": "YES"
+    },
+    {
+      "tail": "wherein",
+      "head": "godsonship",
+      "label": "YES"
+    },
+    {
+      "tail": "cora",
+      "head": "godsonship",
+      "label": "No"
+    },
+    {
+      "tail": "cora",
+      "head": "squamopetrosal Severian",
+      "label": "No"
+    },
+    {
+      "tail": "godsonship",
+      "head": "Maiacca",
+      "label": "YES"
+    },
+    {
+      "tail": "godsonship",
+      "head": "oligopepsia Aushar",
+      "label": "YES"
+    },
+    {
+      "tail": "Maiacca",
+      "head": "unwrapping Waco",
+      "label": null
+    },
+    {
+      "tail": "unwrapping Waco",
+      "head": "fester",
+      "label": null
+    },
+    {
+      "tail": "fester",
+      "head": "chartographist",
+      "label": null
+    }
+  ]
+}

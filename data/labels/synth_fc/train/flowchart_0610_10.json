@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "scapose",
+      "id": "scapose",
+      "class": "circle"
+    },
+    {
+      "text": "dengue",
+      "id": "dengue",
+      "class": "box"
+    },
+    {
+      "text": "baseness Canton",
+      "id": "baseness Canton",
+      "class": "diamond"
+    },
+    {
+      "text": "haulback",
+      "id": "haulback",
+      "class": "hexagon"
+    },
+    {
+      "text": "antiedemic",
+      "id": "antiedemic",
+      "class": "document"
+    },
+    {
+      "text": "gobelin",
+      "id": "gobelin",
+      "class": "document"
+    },
+    {
+      "text": "deaden epiplectic",
+      "id": "deaden epiplectic",
+      "class": "diamond"
+    },
+    {
+      "text": "ribble",
+      "id": "ribble",
+      "class": "parallelogram"
+    },
+    {
+      "text": "enswathe",
+      "id": "enswathe",
+      "class": "document"
+    },
+    {
+      "text": "zymogenesis",
+      "id": "zymogenesis",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "scapose",
+      "head": "dengue",
+      "label": null
+    },
+    {
+      "tail": "dengue",
+      "head": "baseness Canton",
+      "label": null
+    },
+    {
+      "tail": "baseness Canton",
+      "head": "haulback",
+      "label": "no"
+    },
+    {
+      "tail": "baseness Canton",
+      "head": "dengue",
+      "label": "no"
+    },
+    {
+      "tail": "haulback",
+      "head": "antiedemic",
+      "label": null
+    },
+    {
+      "tail": "antiedemic",
+      "head": "gobelin",
+      "label": null
+    },
+    {
+      "tail": "gobelin",
+      "head": "deaden epiplectic",
+      "label": null
+    },
+    {
+      "tail": "deaden epiplectic",
+      "head": "ribble",
+      "label": "yes"
+    },
+    {
+      "tail": "deaden epiplectic",
+      "head": "antiedemic",
+      "label": "yes"
+    },
+    {
+      "tail": "ribble",
+      "head": "enswathe",
+      "label": null
+    },
+    {
+      "tail": "enswathe",
+      "head": "zymogenesis",
+      "label": null
+    }
+  ]
+}

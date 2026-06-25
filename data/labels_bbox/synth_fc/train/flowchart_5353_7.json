@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "appurtenance",
+      "id": "appurtenance",
+      "class": "oval",
+      "bbox": [
+        42,
+        20,
+        120,
+        72
+      ]
+    },
+    {
+      "text": "uncommunicableness",
+      "id": "uncommunicableness",
+      "class": "box",
+      "bbox": [
+        42,
+        144,
+        119,
+        192
+      ]
+    },
+    {
+      "text": "distome screamproof",
+      "id": "distome screamproof",
+      "class": "diamond",
+      "bbox": [
+        5,
+        228,
+        156,
+        302
+      ]
+    },
+    {
+      "text": "gambade zopilote",
+      "id": "gambade zopilote",
+      "class": "box",
+      "bbox": [
+        45,
+        338,
+        117,
+        381
+      ]
+    },
+    {
+      "text": "hexarchy nicotinism",
+      "id": "hexarchy nicotinism",
+      "class": "diamond",
+      "bbox": [
+        210,
+        10,
+        335,
+        83
+      ]
+    },
+    {
+      "text": "fitfulness",
+      "id": "fitfulness",
+      "class": "parallelogram",
+      "bbox": [
+        213,
+        144,
+        335,
+        192
+      ]
+    },
+    {
+      "text": "mazarine flunkyistic Taube",
+      "id": "mazarine flunkyistic Taube",
+      "class": "circle",
+      "bbox": [
+        212,
+        202,
+        335,
+        327
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "appurtenance",
+      "head": "uncommunicableness",
+      "label": null,
+      "bbox": [
+        75,
+        72,
+        87,
+        144
+      ]
+    },
+    {
+      "tail": "uncommunicableness",
+      "head": "distome screamproof",
+      "label": null,
+      "bbox": [
+        75,
+        191,
+        87,
+        228
+      ]
+    },
+    {
+      "tail": "distome screamproof",
+      "head": "gambade zopilote",
+      "label": "YES",
+      "bbox": [
+        75,
+        301,
+        87,
+        338
+      ]
+    },
+    {
+      "tail": "distome screamproof",
+      "head": "appurtenance",
+      "label": "YES",
+      "bbox": [
+        117,
+        49,
+        138,
+        256
+      ]
+    },
+    {
+      "tail": "gambade zopilote",
+      "head": "hexarchy nicotinism",
+      "label": null,
+      "bbox": [
+        116,
+        72,
+        266,
+        362
+      ]
+    },
+    {
+      "tail": "hexarchy nicotinism",
+      "head": "fitfulness",
+      "label": "Yes",
+      "bbox": [
+        269,
+        83,
+        281,
+        144
+      ]
+    },
+    {
+      "tail": "hexarchy nicotinism",
+      "head": "appurtenance",
+      "label": "Yes",
+      "bbox": [
+        117,
+        32,
+        224,
+        44
+      ]
+    },
+    {
+      "tail": "fitfulness",
+      "head": "mazarine flunkyistic Taube",
+      "label": null,
+      "bbox": [
+        269,
+        189,
+        281,
+        203
+      ]
+    }
+  ]
+}

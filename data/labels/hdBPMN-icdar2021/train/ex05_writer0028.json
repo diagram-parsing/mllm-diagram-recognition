@@ -1,0 +1,279 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "class": "task"
+    },
+    {
+      "text": "Register claim",
+      "id": "Register claim",
+      "class": "task"
+    },
+    {
+      "text": "Customer Contract Date",
+      "id": "Customer Contract Date",
+      "class": "dataStore"
+    },
+    {
+      "text": "claim with documents arrived",
+      "id": "claim with documents arrived",
+      "class": "messageEvent"
+    },
+    {
+      "text": "documents",
+      "id": "documents",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claims Management system",
+      "id": "claims Management system",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Check the insurance",
+      "id": "Check the insurance",
+      "class": "task"
+    },
+    {
+      "text": "phone number",
+      "id": "phone number",
+      "class": "dataObject"
+    },
+    {
+      "text": "phone a garage to authorize the repairs",
+      "id": "phone a garage to authorize the repairs",
+      "class": "task"
+    },
+    {
+      "text": "Pean payment",
+      "id": "Pean payment",
+      "class": "task"
+    },
+    {
+      "text": "send letter to customer",
+      "id": "send letter to customer",
+      "class": "task"
+    },
+    {
+      "text": "process completion",
+      "id": "process completion",
+      "class": "event"
+    },
+    {
+      "text": "Wise claim back",
+      "id": "Wise claim back",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Wise claim back",
+      "class": "sequenceFlow",
+      "label": "documents incomplet"
+    },
+    {
+      "tail": "Wise claim back",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send letter to customer",
+      "head": "process completion",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "send letter to customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Pean payment",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "phone a garage to authorize the repairs",
+      "head": "Pean payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "phone a garage to authorize the repairs",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Wise claim back",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "Check the insurance",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": "documents complete"
+    },
+    {
+      "tail": "task_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Register claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Register claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim with documents arrived",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Check the insurance",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "documents",
+      "head": "task_1",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Register claim",
+      "head": "claims Management system",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer Contract Date",
+      "head": "Wise claim back",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "phone number",
+      "head": "phone a garage to authorize the repairs",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim with documents arrived",
+      "class": "messageFlow",
+      "label": "with relevant documents"
+    },
+    {
+      "tail": "Pean payment",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": "Bill"
+    },
+    {
+      "tail": "Wise claim back",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": "application arrived"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Motor claim handling process",
+      "nodes": [
+        "Notification department",
+        "Handling department"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Notification department",
+      "nodes": [
+        "parallelGateway_1",
+        "task_1",
+        "Register claim",
+        "claim with documents arrived",
+        "documents",
+        "exclusiveGateway_2",
+        "claims Management system",
+        "parallelGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Handling department",
+      "nodes": [
+        "exclusiveGateway_1",
+        "Customer Contract Date",
+        "Check the insurance",
+        "phone number",
+        "phone a garage to authorize the repairs",
+        "Pean payment",
+        "send letter to customer",
+        "process completion",
+        "Wise claim back",
+        "exclusiveGateway_3"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

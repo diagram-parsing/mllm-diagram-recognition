@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "forehammer subtersurface",
+      "id": "forehammer subtersurface",
+      "class": "circle"
+    },
+    {
+      "text": "unexplored princely ethologica",
+      "id": "unexplored princely ethologica",
+      "class": "diamond"
+    },
+    {
+      "text": "sonlikeness",
+      "id": "sonlikeness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "influenza",
+      "id": "influenza",
+      "class": "diamond"
+    },
+    {
+      "text": "fargoing",
+      "id": "fargoing",
+      "class": "diamond"
+    },
+    {
+      "text": "tarten",
+      "id": "tarten",
+      "class": "parallelogram"
+    },
+    {
+      "text": "spirate",
+      "id": "spirate",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "forehammer subtersurface",
+      "head": "unexplored princely ethologica",
+      "label": null
+    },
+    {
+      "tail": "unexplored princely ethologica",
+      "head": "sonlikeness",
+      "label": "Yes"
+    },
+    {
+      "tail": "unexplored princely ethologica",
+      "head": "forehammer subtersurface",
+      "label": "Yes"
+    },
+    {
+      "tail": "sonlikeness",
+      "head": "influenza",
+      "label": null
+    },
+    {
+      "tail": "influenza",
+      "head": "fargoing",
+      "label": "no"
+    },
+    {
+      "tail": "influenza",
+      "head": "forehammer subtersurface",
+      "label": "no"
+    },
+    {
+      "tail": "fargoing",
+      "head": "tarten",
+      "label": "Yes"
+    },
+    {
+      "tail": "fargoing",
+      "head": "forehammer subtersurface",
+      "label": "Yes"
+    },
+    {
+      "tail": "tarten",
+      "head": "spirate",
+      "label": null
+    }
+  ]
+}

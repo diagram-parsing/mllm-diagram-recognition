@@ -1,0 +1,324 @@
+{
+  "nodes": [
+    {
+      "text": "rating required",
+      "id": "rating required",
+      "class": "event"
+    },
+    {
+      "text": "case closed",
+      "id": "case closed",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "response received",
+      "id": "response received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "work sent",
+      "id": "work sent",
+      "class": "messageEvent"
+    },
+    {
+      "text": "review expertise",
+      "id": "review expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_2",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "file check",
+      "id": "file check",
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "received expertise",
+      "id": "received expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "ask to review work of doctor",
+      "id": "ask to review work of doctor",
+      "class": "task"
+    },
+    {
+      "text": "24h",
+      "id": "24h",
+      "class": "timerEvent"
+    },
+    {
+      "text": "24h",
+      "id": "24h",
+      "class": "timerEvent"
+    },
+    {
+      "text": "check sent",
+      "id": "check sent",
+      "class": "messageEvent"
+    },
+    {
+      "text": "external expert paid",
+      "id": "external expert paid",
+      "class": "event"
+    },
+    {
+      "text": "check arrived",
+      "id": "check arrived",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "response received",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_2",
+      "head": "response received",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "24h",
+      "head": "ask to review work of doctor",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file check",
+      "head": "check sent",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file check",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_2",
+      "head": "24h",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "24h",
+      "head": "eventBasedGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "24h",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "review expertise",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "received expertise",
+      "head": "review expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "work sent",
+      "head": "received expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "response received",
+      "head": "work sent",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask to review work of doctor",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask to review work of doctor",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "case closed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "rating required",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check arrived",
+      "head": "external expert paid",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "patients",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "label": "receive interview feedback"
+    },
+    {
+      "tail": "interview patients",
+      "head": "patients",
+      "class": "messageFlow",
+      "label": "request review"
+    },
+    {
+      "tail": "external",
+      "head": "received expertise",
+      "class": "messageFlow",
+      "label": "received work"
+    },
+    {
+      "tail": "work sent",
+      "head": "external",
+      "class": "messageFlow",
+      "label": "work to review"
+    },
+    {
+      "tail": "check sent",
+      "head": "check arrived",
+      "class": "messageFlow",
+      "label": "sending check"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "Quality Assurance Departement Quality Assistant"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "forward expertise",
+        "eventBasedGateway_1",
+        "response received",
+        "work sent",
+        "review expertise",
+        "eventBasedGateway_2",
+        "file check",
+        "received expertise",
+        "ask to review work of doctor",
+        "24h",
+        "24h",
+        "check sent"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality Assurance Departement Quality Assistant",
+      "nodes": [
+        "rating required",
+        "case closed",
+        "create report",
+        "parallelGateway_1",
+        "interview patients",
+        "parallelGateway_2",
+        "parallelGateway_3"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "external",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "patients",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

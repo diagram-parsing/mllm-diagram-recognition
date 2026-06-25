@@ -1,0 +1,501 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        222,
+        238,
+        284,
+        300
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        490,
+        409,
+        691,
+        557
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "bbox": [
+        1004,
+        406,
+        1193,
+        553
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_3",
+      "bbox": [
+        1311,
+        204,
+        1500,
+        351
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_4",
+      "bbox": [
+        1546,
+        209,
+        1735,
+        356
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_5",
+      "bbox": [
+        1555,
+        408,
+        1735,
+        557
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_6",
+      "bbox": [
+        1313,
+        403,
+        1502,
+        557
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        349,
+        228,
+        442,
+        313
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1047,
+        241,
+        1140,
+        327
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1176,
+        240,
+        1269,
+        325
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "bbox": [
+        1775,
+        236,
+        1867,
+        322
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        1910,
+        248,
+        1972,
+        310
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        734,
+        435,
+        826,
+        521
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        879,
+        449,
+        941,
+        511
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "bbox": [
+        747,
+        625,
+        809,
+        687
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "subProcess_1",
+      "bbox": [
+        493,
+        198,
+        698,
+        355
+      ],
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_4",
+      "head": "event_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1867,
+        259,
+        1911,
+        300
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        826,
+        459,
+        881,
+        500
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        759,
+        521,
+        800,
+        627
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        691,
+        464,
+        742,
+        505
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        284,
+        251,
+        353,
+        292
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "subProcess_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        442,
+        254,
+        495,
+        295
+      ],
+      "label": null
+    },
+    {
+      "tail": "subProcess_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        698,
+        261,
+        1049,
+        302
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1140,
+        265,
+        1181,
+        306
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "task_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1269,
+        263,
+        1313,
+        304
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_3",
+      "head": "task_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1500,
+        258,
+        1548,
+        300
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_4",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1735,
+        263,
+        1779,
+        304
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        396,
+        313,
+        491,
+        490
+      ],
+      "label": null
+    },
+    {
+      "tail": "timerEvent_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        629,
+        557,
+        749,
+        658
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        941,
+        461,
+        1006,
+        502
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1079,
+        322,
+        1120,
+        407
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "task_6",
+      "class": "sequenceFlow",
+      "bbox": [
+        1222,
+        325,
+        1315,
+        483
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_6",
+      "head": "task_5",
+      "class": "sequenceFlow",
+      "bbox": [
+        1502,
+        463,
+        1556,
+        504
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_5",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1735,
+        317,
+        1827,
+        485
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "Expert",
+      "class": "messageFlow",
+      "bbox": [
+        542,
+        557,
+        583,
+        819
+      ],
+      "label": null
+    },
+    {
+      "tail": "Expert",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        890,
+        511,
+        931,
+        819
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_5",
+      "head": "Expert",
+      "class": "messageFlow",
+      "bbox": [
+        1640,
+        557,
+        1681,
+        819
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Quality assurance",
+        "Management"
+      ],
+      "bbox": [
+        32,
+        78,
+        2030,
+        773
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Quality assurance",
+      "nodes": [
+        "event_1",
+        "task_3",
+        "task_4",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "event_2",
+        "subProcess_1"
+      ],
+      "bbox": [
+        84,
+        78,
+        2030,
+        377
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Management",
+      "nodes": [
+        "task_1",
+        "task_2",
+        "task_5",
+        "task_6",
+        "eventBasedGateway_1",
+        "messageEvent_1",
+        "timerEvent_1"
+      ],
+      "bbox": [
+        84,
+        377,
+        2030,
+        773
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "bbox": [
+        17,
+        818,
+        2042,
+        960
+      ],
+      "class": "pool"
+    }
+  ]
+}

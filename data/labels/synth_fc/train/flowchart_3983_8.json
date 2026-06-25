@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "spinosotuberculate",
+      "id": "spinosotuberculate",
+      "class": "oval"
+    },
+    {
+      "text": "pedagoguish oxonium philosophi",
+      "id": "pedagoguish oxonium philosophi",
+      "class": "document"
+    },
+    {
+      "text": "Babylonic",
+      "id": "Babylonic",
+      "class": "diamond"
+    },
+    {
+      "text": "tyrantship",
+      "id": "tyrantship",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hulver",
+      "id": "hulver",
+      "class": "diamond"
+    },
+    {
+      "text": "unadvisably unforeseenness",
+      "id": "unadvisably unforeseenness",
+      "class": "document"
+    },
+    {
+      "text": "tapestrylike",
+      "id": "tapestrylike",
+      "class": "hexagon"
+    },
+    {
+      "text": "trichi",
+      "id": "trichi",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "spinosotuberculate",
+      "head": "pedagoguish oxonium philosophi",
+      "label": null
+    },
+    {
+      "tail": "pedagoguish oxonium philosophi",
+      "head": "Babylonic",
+      "label": null
+    },
+    {
+      "tail": "Babylonic",
+      "head": "tyrantship",
+      "label": "yes"
+    },
+    {
+      "tail": "Babylonic",
+      "head": "hulver",
+      "label": "yes"
+    },
+    {
+      "tail": "tyrantship",
+      "head": "unadvisably unforeseenness",
+      "label": null
+    },
+    {
+      "tail": "unadvisably unforeseenness",
+      "head": "tapestrylike",
+      "label": null
+    },
+    {
+      "tail": "tapestrylike",
+      "head": "hulver",
+      "label": null
+    },
+    {
+      "tail": "hulver",
+      "head": "trichi",
+      "label": "NO"
+    },
+    {
+      "tail": "hulver",
+      "head": "unadvisably unforeseenness",
+      "label": "NO"
+    }
+  ]
+}

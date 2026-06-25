@@ -1,0 +1,281 @@
+{
+  "nodes": [
+    {
+      "text": "postparietal",
+      "id": "postparietal",
+      "class": "oval",
+      "bbox": [
+        44,
+        5,
+        145,
+        53
+      ]
+    },
+    {
+      "text": "rasorial standpat",
+      "id": "rasorial standpat",
+      "class": "document",
+      "bbox": [
+        54,
+        112,
+        135,
+        171
+      ]
+    },
+    {
+      "text": "archruler",
+      "id": "archruler",
+      "class": "document",
+      "bbox": [
+        54,
+        224,
+        135,
+        283
+      ]
+    },
+    {
+      "text": "icterohematuria",
+      "id": "icterohematuria",
+      "class": "diamond",
+      "bbox": [
+        5,
+        341,
+        183,
+        389
+      ]
+    },
+    {
+      "text": "methoxychlor lettrin",
+      "id": "methoxychlor lettrin",
+      "class": "box",
+      "bbox": [
+        55,
+        425,
+        134,
+        473
+      ]
+    },
+    {
+      "text": "unloveableness",
+      "id": "unloveableness",
+      "class": "diamond",
+      "bbox": [
+        230,
+        89,
+        401,
+        137
+      ]
+    },
+    {
+      "text": "tarmac benzalcyanhydrin",
+      "id": "tarmac benzalcyanhydrin",
+      "class": "diamond",
+      "bbox": [
+        237,
+        245,
+        400,
+        318
+      ]
+    },
+    {
+      "text": "ministerialism odist",
+      "id": "ministerialism odist",
+      "class": "document",
+      "bbox": [
+        277,
+        560,
+        360,
+        619
+      ]
+    },
+    {
+      "text": "haulback",
+      "id": "haulback",
+      "class": "diamond",
+      "bbox": [
+        272,
+        329,
+        365,
+        402
+      ]
+    },
+    {
+      "text": "beneplacito oblateness",
+      "id": "beneplacito oblateness",
+      "class": "document",
+      "bbox": [
+        278,
+        448,
+        359,
+        507
+      ]
+    },
+    {
+      "text": "underbite",
+      "id": "underbite",
+      "class": "ellipse",
+      "bbox": [
+        282,
+        675,
+        354,
+        722
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "postparietal",
+      "head": "rasorial standpat",
+      "label": null,
+      "bbox": [
+        88,
+        53,
+        100,
+        112
+      ]
+    },
+    {
+      "tail": "rasorial standpat",
+      "head": "archruler",
+      "label": null,
+      "bbox": [
+        88,
+        170,
+        100,
+        224
+      ]
+    },
+    {
+      "tail": "archruler",
+      "head": "icterohematuria",
+      "label": null,
+      "bbox": [
+        88,
+        282,
+        100,
+        342
+      ]
+    },
+    {
+      "tail": "icterohematuria",
+      "head": "methoxychlor lettrin",
+      "label": "no",
+      "bbox": [
+        88,
+        389,
+        100,
+        426
+      ]
+    },
+    {
+      "tail": "icterohematuria",
+      "head": "unloveableness",
+      "label": "no",
+      "bbox": [
+        158,
+        125,
+        297,
+        359
+      ]
+    },
+    {
+      "tail": "methoxychlor lettrin",
+      "head": "unloveableness",
+      "label": null,
+      "bbox": [
+        134,
+        120,
+        277,
+        438
+      ]
+    },
+    {
+      "tail": "unloveableness",
+      "head": "tarmac benzalcyanhydrin",
+      "label": "Yes",
+      "bbox": [
+        312,
+        137,
+        324,
+        245
+      ]
+    },
+    {
+      "tail": "unloveableness",
+      "head": "ministerialism odist",
+      "label": "Yes",
+      "bbox": [
+        215,
+        119,
+        277,
+        596
+      ]
+    },
+    {
+      "tail": "tarmac benzalcyanhydrin",
+      "head": "haulback",
+      "label": "Yes",
+      "bbox": [
+        312,
+        316,
+        324,
+        329
+      ]
+    },
+    {
+      "tail": "tarmac benzalcyanhydrin",
+      "head": "icterohematuria",
+      "label": "Yes",
+      "bbox": [
+        164,
+        301,
+        280,
+        362
+      ]
+    },
+    {
+      "tail": "haulback",
+      "head": "beneplacito oblateness",
+      "label": "no",
+      "bbox": [
+        312,
+        401,
+        324,
+        448
+      ]
+    },
+    {
+      "tail": "haulback",
+      "head": "postparietal",
+      "label": "no",
+      "bbox": [
+        134,
+        40,
+        310,
+        335
+      ]
+    },
+    {
+      "tail": "beneplacito oblateness",
+      "head": "ministerialism odist",
+      "label": null,
+      "bbox": [
+        312,
+        506,
+        324,
+        560
+      ]
+    },
+    {
+      "tail": "ministerialism odist",
+      "head": "underbite",
+      "label": null,
+      "bbox": [
+        312,
+        618,
+        324,
+        676
+      ]
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "nodes": [
+    {
+      "text": "register and examine claim",
+      "id": "register and examine claim",
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "claim [marked]",
+      "id": "claim [marked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [marked]",
+      "id": "claim [marked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation [checked]",
+      "id": "settlement recommendation [checked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "Settlement\nrecommendation",
+      "id": "Settlement\nrecommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "Claim\n[examined]",
+      "id": "Claim\n[examined]",
+      "class": "dataObject"
+    },
+    {
+      "text": "Claim of\ncustomer",
+      "id": "Claim of\ncustomer",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "class": "task"
+    },
+    {
+      "text": "mark claim \"OK\"",
+      "id": "mark claim \"OK\"",
+      "class": "task"
+    },
+    {
+      "text": "mark claim \"not ok\"",
+      "id": "mark claim \"not ok\"",
+      "class": "task"
+    },
+    {
+      "text": "claim handling processed",
+      "id": "claim handling processed",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "register and examine claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register and examine claim",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark claim \"OK\"",
+      "class": "sequenceFlow",
+      "label": "claim \"OK\""
+    },
+    {
+      "tail": "mark claim \"OK\"",
+      "head": "claim handling processed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark claim \"not ok\"",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "mark claim \"not ok\"",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim [marked]",
+      "head": "register and examine claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Claim of\ncustomer",
+      "head": "register and examine claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register and examine claim",
+      "head": "Claim\n[examined]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Claim\n[examined]",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "Settlement\nrecommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Settlement\nrecommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "settlement recommendation [checked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Claim\n[examined]",
+      "head": "mark claim \"OK\"",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark claim \"OK\"",
+      "head": "claim [marked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation [checked]",
+      "head": "mark claim \"not ok\"",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Claim\n[examined]",
+      "head": "mark claim \"not ok\"",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark claim \"not ok\"",
+      "head": "claim [marked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation [checked]",
+      "head": "mark claim \"OK\"",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "claims officer",
+        "Senior claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "register and examine claim",
+        "write settlement recommendation",
+        "claim received",
+        "exclusiveGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Senior claims officer",
+      "nodes": [
+        "claim [marked]",
+        "claim [marked]",
+        "settlement recommendation [checked]",
+        "exclusiveGateway_1",
+        "check recommendation",
+        "mark claim \"OK\"",
+        "mark claim \"not ok\"",
+        "claim handling processed"
+      ],
+      "class": "lane"
+    }
+  ]
+}

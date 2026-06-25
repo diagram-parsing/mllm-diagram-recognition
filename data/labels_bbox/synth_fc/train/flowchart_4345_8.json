@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "text": "trichomoniasis",
+      "id": "trichomoniasis",
+      "class": "circle",
+      "bbox": [
+        37,
+        5,
+        157,
+        125
+      ]
+    },
+    {
+      "text": "Berkeleyite",
+      "id": "Berkeleyite",
+      "class": "box",
+      "bbox": [
+        61,
+        184,
+        133,
+        232
+      ]
+    },
+    {
+      "text": "overmasteringly",
+      "id": "overmasteringly",
+      "class": "diamond",
+      "bbox": [
+        5,
+        327,
+        188,
+        375
+      ]
+    },
+    {
+      "text": "parakilya",
+      "id": "parakilya",
+      "class": "parallelogram",
+      "bbox": [
+        48,
+        457,
+        146,
+        525
+      ]
+    },
+    {
+      "text": "hedgesmith unsubservient",
+      "id": "hedgesmith unsubservient",
+      "class": "diamond",
+      "bbox": [
+        298,
+        29,
+        461,
+        102
+      ]
+    },
+    {
+      "text": "beldamship",
+      "id": "beldamship",
+      "class": "diamond",
+      "bbox": [
+        331,
+        207,
+        434,
+        280
+      ]
+    },
+    {
+      "text": "isokurtic",
+      "id": "isokurtic",
+      "class": "box",
+      "bbox": [
+        346,
+        291,
+        418,
+        339
+      ]
+    },
+    {
+      "text": "keto",
+      "id": "keto",
+      "class": "oval",
+      "bbox": [
+        346,
+        434,
+        418,
+        482
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "trichomoniasis",
+      "head": "Berkeleyite",
+      "label": null,
+      "bbox": [
+        91,
+        125,
+        103,
+        184
+      ]
+    },
+    {
+      "tail": "Berkeleyite",
+      "head": "overmasteringly",
+      "label": null,
+      "bbox": [
+        91,
+        232,
+        103,
+        327
+      ]
+    },
+    {
+      "tail": "overmasteringly",
+      "head": "parakilya",
+      "label": "yes",
+      "bbox": [
+        91,
+        374,
+        103,
+        457
+      ]
+    },
+    {
+      "tail": "overmasteringly",
+      "head": "trichomoniasis",
+      "label": "yes",
+      "bbox": [
+        139,
+        101,
+        151,
+        339
+      ]
+    },
+    {
+      "tail": "parakilya",
+      "head": "hedgesmith unsubservient",
+      "label": null,
+      "bbox": [
+        143,
+        70,
+        315,
+        466
+      ]
+    },
+    {
+      "tail": "hedgesmith unsubservient",
+      "head": "beldamship",
+      "label": "NO",
+      "bbox": [
+        376,
+        102,
+        388,
+        207
+      ]
+    },
+    {
+      "tail": "hedgesmith unsubservient",
+      "head": "isokurtic",
+      "label": "NO",
+      "bbox": [
+        320,
+        75,
+        346,
+        316
+      ]
+    },
+    {
+      "tail": "beldamship",
+      "head": "isokurtic",
+      "label": "Yes",
+      "bbox": [
+        376,
+        278,
+        388,
+        291
+      ]
+    },
+    {
+      "tail": "beldamship",
+      "head": "parakilya",
+      "label": "Yes",
+      "bbox": [
+        141,
+        249,
+        339,
+        480
+      ]
+    },
+    {
+      "tail": "isokurtic",
+      "head": "keto",
+      "label": null,
+      "bbox": [
+        376,
+        339,
+        388,
+        434
+      ]
+    }
+  ]
+}

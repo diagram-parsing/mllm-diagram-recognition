@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "dutra",
+      "id": "dutra",
+      "class": "ellipse"
+    },
+    {
+      "text": "bracket",
+      "id": "bracket",
+      "class": "document"
+    },
+    {
+      "text": "vagabondage",
+      "id": "vagabondage",
+      "class": "diamond"
+    },
+    {
+      "text": "rebuffable",
+      "id": "rebuffable",
+      "class": "document"
+    },
+    {
+      "text": "Vulgate",
+      "id": "Vulgate",
+      "class": "hexagon"
+    },
+    {
+      "text": "shieldmay palpebration",
+      "id": "shieldmay palpebration",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Simonianism",
+      "id": "Simonianism",
+      "class": "hexagon"
+    },
+    {
+      "text": "monorchism ygapo misinfer",
+      "id": "monorchism ygapo misinfer",
+      "class": "document"
+    },
+    {
+      "text": "nondumping congratulational",
+      "id": "nondumping congratulational",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "dutra",
+      "head": "bracket",
+      "label": null
+    },
+    {
+      "tail": "bracket",
+      "head": "vagabondage",
+      "label": null
+    },
+    {
+      "tail": "vagabondage",
+      "head": "rebuffable",
+      "label": "YES"
+    },
+    {
+      "tail": "vagabondage",
+      "head": "bracket",
+      "label": "YES"
+    },
+    {
+      "tail": "rebuffable",
+      "head": "Vulgate",
+      "label": null
+    },
+    {
+      "tail": "Vulgate",
+      "head": "shieldmay palpebration",
+      "label": null
+    },
+    {
+      "tail": "shieldmay palpebration",
+      "head": "Simonianism",
+      "label": null
+    },
+    {
+      "tail": "Simonianism",
+      "head": "monorchism ygapo misinfer",
+      "label": null
+    },
+    {
+      "tail": "monorchism ygapo misinfer",
+      "head": "nondumping congratulational",
+      "label": null
+    }
+  ]
+}

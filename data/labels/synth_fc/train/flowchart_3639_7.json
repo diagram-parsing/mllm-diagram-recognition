@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "Sander",
+      "id": "Sander",
+      "class": "oval"
+    },
+    {
+      "text": "semipeace",
+      "id": "semipeace",
+      "class": "document"
+    },
+    {
+      "text": "corsac",
+      "id": "corsac",
+      "class": "parallelogram"
+    },
+    {
+      "text": "applanate",
+      "id": "applanate",
+      "class": "diamond"
+    },
+    {
+      "text": "prehumiliation resuppose",
+      "id": "prehumiliation resuppose",
+      "class": "hexagon"
+    },
+    {
+      "text": "microburet Deutzia",
+      "id": "microburet Deutzia",
+      "class": "document"
+    },
+    {
+      "text": "unkindness",
+      "id": "unkindness",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Sander",
+      "head": "semipeace",
+      "label": null
+    },
+    {
+      "tail": "semipeace",
+      "head": "corsac",
+      "label": null
+    },
+    {
+      "tail": "corsac",
+      "head": "applanate",
+      "label": null
+    },
+    {
+      "tail": "applanate",
+      "head": "prehumiliation resuppose",
+      "label": "NO"
+    },
+    {
+      "tail": "applanate",
+      "head": "semipeace",
+      "label": "NO"
+    },
+    {
+      "tail": "prehumiliation resuppose",
+      "head": "microburet Deutzia",
+      "label": null
+    },
+    {
+      "tail": "microburet Deutzia",
+      "head": "unkindness",
+      "label": null
+    }
+  ]
+}

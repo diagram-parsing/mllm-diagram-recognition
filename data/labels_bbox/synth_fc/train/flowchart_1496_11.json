@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "text": "quizzability wainful",
+      "id": "quizzability wainful",
+      "class": "circle",
+      "bbox": [
+        104,
+        5,
+        205,
+        106
+      ]
+    },
+    {
+      "text": "townling",
+      "id": "townling",
+      "class": "box",
+      "bbox": [
+        118,
+        163,
+        190,
+        211
+      ]
+    },
+    {
+      "text": "Geshurites submergence",
+      "id": "Geshurites submergence",
+      "class": "parallelogram",
+      "bbox": [
+        74,
+        281,
+        234,
+        354
+      ]
+    },
+    {
+      "text": "gazette unmatchable",
+      "id": "gazette unmatchable",
+      "class": "diamond",
+      "bbox": [
+        79,
+        445,
+        230,
+        518
+      ]
+    },
+    {
+      "text": "Tupperish staddle affricated",
+      "id": "Tupperish staddle affricated",
+      "class": "document",
+      "bbox": [
+        371,
+        157,
+        461,
+        216
+      ]
+    },
+    {
+      "text": "Actaea mimmouthed unvaluably",
+      "id": "Actaea mimmouthed unvaluably",
+      "class": "diamond",
+      "bbox": [
+        314,
+        281,
+        518,
+        354
+      ]
+    },
+    {
+      "text": "nocerite",
+      "id": "nocerite",
+      "class": "box",
+      "bbox": [
+        380,
+        425,
+        452,
+        473
+      ]
+    },
+    {
+      "text": "shirallee chilostomatous",
+      "id": "shirallee chilostomatous",
+      "class": "document",
+      "bbox": [
+        633,
+        419,
+        723,
+        478
+      ]
+    },
+    {
+      "text": "declassify",
+      "id": "declassify",
+      "class": "diamond",
+      "bbox": [
+        365,
+        543,
+        467,
+        611
+      ]
+    },
+    {
+      "text": "satisfactorily",
+      "id": "satisfactorily",
+      "class": "hexagon",
+      "bbox": [
+        632,
+        320,
+        724,
+        380
+      ]
+    },
+    {
+      "text": "Stakhanovism",
+      "id": "Stakhanovism",
+      "class": "circle",
+      "bbox": [
+        620,
+        489,
+        731,
+        605
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "quizzability wainful",
+      "head": "townling",
+      "label": null,
+      "bbox": [
+        150,
+        107,
+        159,
+        161
+      ]
+    },
+    {
+      "tail": "townling",
+      "head": "Geshurites submergence",
+      "label": null,
+      "bbox": [
+        150,
+        211,
+        159,
+        279
+      ]
+    },
+    {
+      "tail": "Geshurites submergence",
+      "head": "gazette unmatchable",
+      "label": null,
+      "bbox": [
+        150,
+        355,
+        159,
+        443
+      ]
+    },
+    {
+      "tail": "gazette unmatchable",
+      "head": "Tupperish staddle affricated",
+      "label": "yes",
+      "bbox": [
+        184,
+        182,
+        370,
+        459
+      ]
+    },
+    {
+      "tail": "gazette unmatchable",
+      "head": "townling",
+      "label": "yes",
+      "bbox": [
+        50,
+        182,
+        116,
+        481
+      ]
+    },
+    {
+      "tail": "Tupperish staddle affricated",
+      "head": "Actaea mimmouthed unvaluably",
+      "label": null,
+      "bbox": [
+        411,
+        216,
+        421,
+        279
+      ]
+    },
+    {
+      "tail": "Actaea mimmouthed unvaluably",
+      "head": "nocerite",
+      "label": "NO",
+      "bbox": [
+        411,
+        355,
+        421,
+        423
+      ]
+    },
+    {
+      "tail": "Actaea mimmouthed unvaluably",
+      "head": "shirallee chilostomatous",
+      "label": "NO",
+      "bbox": [
+        493,
+        327,
+        631,
+        454
+      ]
+    },
+    {
+      "tail": "nocerite",
+      "head": "declassify",
+      "label": null,
+      "bbox": [
+        411,
+        473,
+        421,
+        541
+      ]
+    },
+    {
+      "tail": "declassify",
+      "head": "satisfactorily",
+      "label": "no",
+      "bbox": [
+        460,
+        363,
+        643,
+        573
+      ]
+    },
+    {
+      "tail": "declassify",
+      "head": "quizzability wainful",
+      "label": "no",
+      "bbox": [
+        206,
+        51,
+        365,
+        580
+      ]
+    },
+    {
+      "tail": "satisfactorily",
+      "head": "shirallee chilostomatous",
+      "label": null,
+      "bbox": [
+        673,
+        381,
+        683,
+        418
+      ]
+    },
+    {
+      "tail": "shirallee chilostomatous",
+      "head": "Stakhanovism",
+      "label": null,
+      "bbox": [
+        673,
+        473,
+        683,
+        487
+      ]
+    }
+  ]
+}

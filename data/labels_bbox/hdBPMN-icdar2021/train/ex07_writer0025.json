@@ -1,0 +1,489 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        654,
+        329,
+        740,
+        413
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        843,
+        333,
+        958,
+        442
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "respond in time over",
+      "id": "respond in time over",
+      "bbox": [
+        847,
+        480,
+        935,
+        550
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "receive feeback",
+      "id": "receive feeback",
+      "bbox": [
+        1066,
+        347,
+        1194,
+        441
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        1682,
+        333,
+        1875,
+        485
+      ],
+      "class": "task"
+    },
+    {
+      "text": "new doctor rating",
+      "id": "new doctor rating",
+      "bbox": [
+        394,
+        745,
+        487,
+        838
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        550,
+        740,
+        667,
+        847
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "patient interview",
+      "id": "patient interview",
+      "bbox": [
+        749,
+        853,
+        973,
+        997
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1463,
+        858,
+        1592,
+        997
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "bbox": [
+        1653,
+        854,
+        1823,
+        1003
+      ],
+      "class": "task"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1878,
+        858,
+        1988,
+        996
+      ],
+      "class": "task"
+    },
+    {
+      "text": "report created",
+      "id": "report created",
+      "bbox": [
+        2033,
+        890,
+        2113,
+        971
+      ],
+      "class": "event"
+    },
+    {
+      "text": "feedback provided",
+      "id": "feedback provided",
+      "bbox": [
+        2112,
+        370,
+        2205,
+        450
+      ],
+      "class": "event"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "bbox": [
+        1914,
+        343,
+        2028,
+        458
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "forward feedback",
+      "id": "forward feedback",
+      "bbox": [
+        1448,
+        353,
+        1572,
+        466
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1286,
+        343,
+        1375,
+        450
+      ],
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send cheque",
+      "head": "feedback provided",
+      "class": "sequenceFlow",
+      "bbox": [
+        2026,
+        386,
+        2113,
+        436
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        1870,
+        383,
+        1920,
+        432
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward feedback",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1494,
+        471,
+        1543,
+        862
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "forward feedback",
+      "class": "sequenceFlow",
+      "bbox": [
+        1369,
+        379,
+        1450,
+        429
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1332,
+        277,
+        1754,
+        346
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive feeback",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1194,
+        369,
+        1290,
+        419
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "receive feeback",
+      "class": "sequenceFlow",
+      "bbox": [
+        955,
+        367,
+        1068,
+        417
+      ],
+      "label": null
+    },
+    {
+      "tail": "respond in time over",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        679,
+        410,
+        848,
+        518
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "respond in time over",
+      "class": "sequenceFlow",
+      "bbox": [
+        865,
+        428,
+        914,
+        478
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        740,
+        347,
+        862,
+        397
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        609,
+        388,
+        659,
+        741
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "report created",
+      "class": "sequenceFlow",
+      "bbox": [
+        1986,
+        905,
+        2036,
+        955
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1823,
+        911,
+        1879,
+        961
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1577,
+        914,
+        1654,
+        964
+      ],
+      "label": null
+    },
+    {
+      "tail": "patient interview",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        973,
+        906,
+        1469,
+        955
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "patient interview",
+      "class": "sequenceFlow",
+      "bbox": [
+        587,
+        827,
+        750,
+        944
+      ],
+      "label": null
+    },
+    {
+      "tail": "new doctor rating",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        487,
+        768,
+        553,
+        818
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "Expert",
+      "class": "messageFlow",
+      "bbox": [
+        694,
+        192,
+        786,
+        329
+      ],
+      "label": "work of doctor review"
+    },
+    {
+      "tail": "Expert",
+      "head": "receive feeback",
+      "class": "messageFlow",
+      "bbox": [
+        1029,
+        191,
+        1079,
+        360
+      ],
+      "label": "feedback"
+    },
+    {
+      "tail": "send cheque",
+      "head": "Expert",
+      "class": "messageFlow",
+      "bbox": [
+        1919,
+        192,
+        1969,
+        352
+      ],
+      "label": "cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "quality assurance departement",
+        "managing director"
+      ],
+      "bbox": [
+        88,
+        250,
+        2438,
+        1048
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "quality assurance departement",
+      "nodes": [
+        "new doctor rating",
+        "parallelGateway_1",
+        "patient interview",
+        "parallelGateway_2",
+        "file results",
+        "create report",
+        "report created"
+      ],
+      "bbox": [
+        129,
+        566,
+        2438,
+        1048
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "messageEvent_1",
+        "eventBasedGateway_1",
+        "respond in time over",
+        "receive feeback",
+        "task_1",
+        "feedback provided",
+        "send cheque",
+        "forward feedback",
+        "parallelGateway_3"
+      ],
+      "bbox": [
+        129,
+        250,
+        2438,
+        566
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "bbox": [
+        748,
+        68,
+        1993,
+        192
+      ],
+      "class": "pool"
+    }
+  ]
+}

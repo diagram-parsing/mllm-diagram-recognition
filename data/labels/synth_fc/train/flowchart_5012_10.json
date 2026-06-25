@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "honestly",
+      "id": "honestly",
+      "class": "circle"
+    },
+    {
+      "text": "ooecium",
+      "id": "ooecium",
+      "class": "box"
+    },
+    {
+      "text": "furunculous",
+      "id": "furunculous",
+      "class": "box"
+    },
+    {
+      "text": "default",
+      "id": "default",
+      "class": "diamond"
+    },
+    {
+      "text": "postcornu",
+      "id": "postcornu",
+      "class": "parallelogram"
+    },
+    {
+      "text": "actification duskiness",
+      "id": "actification duskiness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unstabled",
+      "id": "unstabled",
+      "class": "document"
+    },
+    {
+      "text": "Papiamento",
+      "id": "Papiamento",
+      "class": "parallelogram"
+    },
+    {
+      "text": "perturb",
+      "id": "perturb",
+      "class": "diamond"
+    },
+    {
+      "text": "beshell",
+      "id": "beshell",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "honestly",
+      "head": "ooecium",
+      "label": null
+    },
+    {
+      "tail": "ooecium",
+      "head": "furunculous",
+      "label": null
+    },
+    {
+      "tail": "furunculous",
+      "head": "default",
+      "label": null
+    },
+    {
+      "tail": "default",
+      "head": "postcornu",
+      "label": "YES"
+    },
+    {
+      "tail": "default",
+      "head": "actification duskiness",
+      "label": "YES"
+    },
+    {
+      "tail": "postcornu",
+      "head": "unstabled",
+      "label": null
+    },
+    {
+      "tail": "unstabled",
+      "head": "Papiamento",
+      "label": null
+    },
+    {
+      "tail": "Papiamento",
+      "head": "perturb",
+      "label": null
+    },
+    {
+      "tail": "perturb",
+      "head": "actification duskiness",
+      "label": "NO"
+    },
+    {
+      "tail": "perturb",
+      "head": "furunculous",
+      "label": "NO"
+    },
+    {
+      "tail": "actification duskiness",
+      "head": "beshell",
+      "label": null
+    }
+  ]
+}

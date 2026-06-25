@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "Susanna",
+      "id": "Susanna",
+      "class": "circle"
+    },
+    {
+      "text": "Angara Phryganea",
+      "id": "Angara Phryganea",
+      "class": "hexagon"
+    },
+    {
+      "text": "berzeliite naifly",
+      "id": "berzeliite naifly",
+      "class": "document"
+    },
+    {
+      "text": "micronometer",
+      "id": "micronometer",
+      "class": "hexagon"
+    },
+    {
+      "text": "Codiales",
+      "id": "Codiales",
+      "class": "diamond"
+    },
+    {
+      "text": "soonish ornithologic",
+      "id": "soonish ornithologic",
+      "class": "diamond"
+    },
+    {
+      "text": "contemptibly",
+      "id": "contemptibly",
+      "class": "hexagon"
+    },
+    {
+      "text": "stright",
+      "id": "stright",
+      "class": "ellipse"
+    },
+    {
+      "text": "spillway phasianic",
+      "id": "spillway phasianic",
+      "class": "document"
+    },
+    {
+      "text": "rouelle begluc halogenoid",
+      "id": "rouelle begluc halogenoid",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Susanna",
+      "head": "Angara Phryganea",
+      "label": null
+    },
+    {
+      "tail": "Angara Phryganea",
+      "head": "berzeliite naifly",
+      "label": null
+    },
+    {
+      "tail": "berzeliite naifly",
+      "head": "micronometer",
+      "label": null
+    },
+    {
+      "tail": "micronometer",
+      "head": "Codiales",
+      "label": null
+    },
+    {
+      "tail": "Codiales",
+      "head": "soonish ornithologic",
+      "label": "no"
+    },
+    {
+      "tail": "Codiales",
+      "head": "Angara Phryganea",
+      "label": "no"
+    },
+    {
+      "tail": "soonish ornithologic",
+      "head": "contemptibly",
+      "label": "yes"
+    },
+    {
+      "tail": "soonish ornithologic",
+      "head": "stright",
+      "label": "yes"
+    },
+    {
+      "tail": "contemptibly",
+      "head": "spillway phasianic",
+      "label": null
+    },
+    {
+      "tail": "spillway phasianic",
+      "head": "rouelle begluc halogenoid",
+      "label": null
+    },
+    {
+      "tail": "rouelle begluc halogenoid",
+      "head": "stright",
+      "label": null
+    }
+  ]
+}

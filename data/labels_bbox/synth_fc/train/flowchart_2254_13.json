@@ -1,0 +1,303 @@
+{
+  "nodes": [
+    {
+      "text": "decrepit",
+      "id": "decrepit",
+      "class": "ellipse",
+      "bbox": [
+        64,
+        5,
+        141,
+        53
+      ]
+    },
+    {
+      "text": "epiclastic",
+      "id": "epiclastic",
+      "class": "box",
+      "bbox": [
+        66,
+        64,
+        139,
+        112
+      ]
+    },
+    {
+      "text": "forged",
+      "id": "forged",
+      "class": "box",
+      "bbox": [
+        67,
+        142,
+        139,
+        190
+      ]
+    },
+    {
+      "text": "suavely",
+      "id": "suavely",
+      "class": "diamond",
+      "bbox": [
+        40,
+        220,
+        165,
+        268
+      ]
+    },
+    {
+      "text": "songless",
+      "id": "songless",
+      "class": "diamond",
+      "bbox": [
+        46,
+        279,
+        159,
+        327
+      ]
+    },
+    {
+      "text": "freeze indiscriminate",
+      "id": "freeze indiscriminate",
+      "class": "parallelogram",
+      "bbox": [
+        28,
+        364,
+        178,
+        438
+      ]
+    },
+    {
+      "text": "centonical Ascalabota",
+      "id": "centonical Ascalabota",
+      "class": "hexagon",
+      "bbox": [
+        200,
+        136,
+        318,
+        196
+      ]
+    },
+    {
+      "text": "mesoplastic",
+      "id": "mesoplastic",
+      "class": "parallelogram",
+      "bbox": [
+        185,
+        64,
+        328,
+        112
+      ]
+    },
+    {
+      "text": "Scitamineae",
+      "id": "Scitamineae",
+      "class": "hexagon",
+      "bbox": [
+        199,
+        220,
+        319,
+        268
+      ]
+    },
+    {
+      "text": "mantrap",
+      "id": "mantrap",
+      "class": "box",
+      "bbox": [
+        223,
+        279,
+        295,
+        327
+      ]
+    },
+    {
+      "text": "coinsure",
+      "id": "coinsure",
+      "class": "parallelogram",
+      "bbox": [
+        201,
+        377,
+        317,
+        425
+      ]
+    },
+    {
+      "text": "innervate squatarole",
+      "id": "innervate squatarole",
+      "class": "box",
+      "bbox": [
+        223,
+        455,
+        295,
+        503
+      ]
+    },
+    {
+      "text": "milarite",
+      "id": "milarite",
+      "class": "oval",
+      "bbox": [
+        221,
+        533,
+        296,
+        576
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "decrepit",
+      "head": "epiclastic",
+      "label": null,
+      "bbox": [
+        98,
+        49,
+        107,
+        62
+      ]
+    },
+    {
+      "tail": "epiclastic",
+      "head": "forged",
+      "label": null,
+      "bbox": [
+        98,
+        112,
+        107,
+        140
+      ]
+    },
+    {
+      "tail": "forged",
+      "head": "suavely",
+      "label": null,
+      "bbox": [
+        98,
+        191,
+        107,
+        219
+      ]
+    },
+    {
+      "tail": "suavely",
+      "head": "songless",
+      "label": "NO",
+      "bbox": [
+        98,
+        264,
+        107,
+        277
+      ]
+    },
+    {
+      "tail": "suavely",
+      "head": "decrepit",
+      "label": "NO",
+      "bbox": [
+        49,
+        25,
+        62,
+        240
+      ]
+    },
+    {
+      "tail": "songless",
+      "head": "freeze indiscriminate",
+      "label": "YES",
+      "bbox": [
+        98,
+        328,
+        107,
+        362
+      ]
+    },
+    {
+      "tail": "songless",
+      "head": "centonical Ascalabota",
+      "label": "YES",
+      "bbox": [
+        158,
+        162,
+        199,
+        304
+      ]
+    },
+    {
+      "tail": "freeze indiscriminate",
+      "head": "mesoplastic",
+      "label": null,
+      "bbox": [
+        175,
+        114,
+        197,
+        371
+      ]
+    },
+    {
+      "tail": "mesoplastic",
+      "head": "centonical Ascalabota",
+      "label": null,
+      "bbox": [
+        254,
+        112,
+        264,
+        135
+      ]
+    },
+    {
+      "tail": "centonical Ascalabota",
+      "head": "Scitamineae",
+      "label": null,
+      "bbox": [
+        254,
+        197,
+        264,
+        219
+      ]
+    },
+    {
+      "tail": "Scitamineae",
+      "head": "mantrap",
+      "label": null,
+      "bbox": [
+        254,
+        264,
+        264,
+        277
+      ]
+    },
+    {
+      "tail": "mantrap",
+      "head": "coinsure",
+      "label": null,
+      "bbox": [
+        254,
+        327,
+        264,
+        375
+      ]
+    },
+    {
+      "tail": "coinsure",
+      "head": "innervate squatarole",
+      "label": null,
+      "bbox": [
+        254,
+        425,
+        264,
+        453
+      ]
+    },
+    {
+      "tail": "innervate squatarole",
+      "head": "milarite",
+      "label": null,
+      "bbox": [
+        254,
+        503,
+        264,
+        531
+      ]
+    }
+  ]
+}

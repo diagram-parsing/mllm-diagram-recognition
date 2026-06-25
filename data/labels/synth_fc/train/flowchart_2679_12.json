@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "text": "scientific",
+      "id": "scientific",
+      "class": "circle"
+    },
+    {
+      "text": "priestlike overmatch",
+      "id": "priestlike overmatch",
+      "class": "hexagon"
+    },
+    {
+      "text": "mediate disenclose respectfull",
+      "id": "mediate disenclose respectfull",
+      "class": "diamond"
+    },
+    {
+      "text": "truantness",
+      "id": "truantness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "untenantableness",
+      "id": "untenantableness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "swordsmanship",
+      "id": "swordsmanship",
+      "class": "document"
+    },
+    {
+      "text": "sphacelism",
+      "id": "sphacelism",
+      "class": "box"
+    },
+    {
+      "text": "unsnare",
+      "id": "unsnare",
+      "class": "document"
+    },
+    {
+      "text": "irregulated",
+      "id": "irregulated",
+      "class": "document"
+    },
+    {
+      "text": "clacket",
+      "id": "clacket",
+      "class": "box"
+    },
+    {
+      "text": "innermore leveret uninterested",
+      "id": "innermore leveret uninterested",
+      "class": "diamond"
+    },
+    {
+      "text": "frostproof",
+      "id": "frostproof",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "scientific",
+      "head": "priestlike overmatch",
+      "label": null
+    },
+    {
+      "tail": "priestlike overmatch",
+      "head": "mediate disenclose respectfull",
+      "label": null
+    },
+    {
+      "tail": "mediate disenclose respectfull",
+      "head": "truantness",
+      "label": "NO"
+    },
+    {
+      "tail": "mediate disenclose respectfull",
+      "head": "priestlike overmatch",
+      "label": "NO"
+    },
+    {
+      "tail": "truantness",
+      "head": "untenantableness",
+      "label": null
+    },
+    {
+      "tail": "untenantableness",
+      "head": "swordsmanship",
+      "label": null
+    },
+    {
+      "tail": "swordsmanship",
+      "head": "sphacelism",
+      "label": null
+    },
+    {
+      "tail": "sphacelism",
+      "head": "unsnare",
+      "label": null
+    },
+    {
+      "tail": "unsnare",
+      "head": "irregulated",
+      "label": null
+    },
+    {
+      "tail": "irregulated",
+      "head": "clacket",
+      "label": null
+    },
+    {
+      "tail": "clacket",
+      "head": "innermore leveret uninterested",
+      "label": null
+    },
+    {
+      "tail": "innermore leveret uninterested",
+      "head": "frostproof",
+      "label": "Yes"
+    },
+    {
+      "tail": "innermore leveret uninterested",
+      "head": "swordsmanship",
+      "label": "Yes"
+    }
+  ]
+}

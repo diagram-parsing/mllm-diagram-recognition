@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "text": "write a settlement recommendation",
+      "id": "write a settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "claim request",
+      "id": "claim request",
+      "class": "dataObject"
+    },
+    {
+      "text": "check by a senior claims officer",
+      "id": "check by a senior claims officer",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "process ended",
+      "id": "process ended",
+      "class": "event"
+    },
+    {
+      "text": "process proceeds",
+      "id": "process proceeds",
+      "class": "task"
+    },
+    {
+      "text": "send back to the claim officer",
+      "id": "send back to the claim officer",
+      "class": "task"
+    },
+    {
+      "text": "process\nproceed",
+      "id": "process\nproceed",
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "register and examine",
+      "id": "register and examine",
+      "class": "task"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "register and examine",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register and examine",
+      "head": "write a settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write a settlement recommendation",
+      "head": "check by a senior claims officer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check by a senior claims officer",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "send back to the claim officer",
+      "class": "sequenceFlow",
+      "label": "Not ok"
+    },
+    {
+      "tail": "send back to the claim officer",
+      "head": "process ended",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "process proceeds",
+      "class": "sequenceFlow",
+      "label": "OK"
+    },
+    {
+      "tail": "process proceeds",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "claim request",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim request",
+      "head": "register and examine",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write a settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "process proceeds",
+      "head": "process\nproceed",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "label": "insure claim request"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claim officer",
+        "senior claim officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "write a settlement recommendation",
+        "claim request",
+        "settlement recommendation",
+        "claim received",
+        "register and examine",
+        "messageEvent_1"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claim officer",
+      "nodes": [
+        "check by a senior claims officer",
+        "exclusiveGateway_1",
+        "process ended",
+        "process proceeds",
+        "send back to the claim officer",
+        "process completed"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

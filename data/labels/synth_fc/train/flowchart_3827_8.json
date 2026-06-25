@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "herbarist preanterior",
+      "id": "herbarist preanterior",
+      "class": "oval"
+    },
+    {
+      "text": "breed harplike pappi",
+      "id": "breed harplike pappi",
+      "class": "document"
+    },
+    {
+      "text": "stonesmitch adephagous kittenh",
+      "id": "stonesmitch adephagous kittenh",
+      "class": "diamond"
+    },
+    {
+      "text": "unmischievous hostageship",
+      "id": "unmischievous hostageship",
+      "class": "diamond"
+    },
+    {
+      "text": "boodleize penalize",
+      "id": "boodleize penalize",
+      "class": "document"
+    },
+    {
+      "text": "wangtooth eisegetical advancem",
+      "id": "wangtooth eisegetical advancem",
+      "class": "document"
+    },
+    {
+      "text": "dipsetic",
+      "id": "dipsetic",
+      "class": "document"
+    },
+    {
+      "text": "Cetacea pourparler chlorophane",
+      "id": "Cetacea pourparler chlorophane",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "herbarist preanterior",
+      "head": "breed harplike pappi",
+      "label": null
+    },
+    {
+      "tail": "breed harplike pappi",
+      "head": "stonesmitch adephagous kittenh",
+      "label": null
+    },
+    {
+      "tail": "stonesmitch adephagous kittenh",
+      "head": "unmischievous hostageship",
+      "label": "NO"
+    },
+    {
+      "tail": "stonesmitch adephagous kittenh",
+      "head": "breed harplike pappi",
+      "label": "NO"
+    },
+    {
+      "tail": "unmischievous hostageship",
+      "head": "boodleize penalize",
+      "label": "YES"
+    },
+    {
+      "tail": "unmischievous hostageship",
+      "head": "breed harplike pappi",
+      "label": "YES"
+    },
+    {
+      "tail": "boodleize penalize",
+      "head": "wangtooth eisegetical advancem",
+      "label": null
+    },
+    {
+      "tail": "wangtooth eisegetical advancem",
+      "head": "dipsetic",
+      "label": null
+    },
+    {
+      "tail": "dipsetic",
+      "head": "Cetacea pourparler chlorophane",
+      "label": null
+    }
+  ]
+}

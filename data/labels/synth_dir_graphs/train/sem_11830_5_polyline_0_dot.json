@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "text": "fife",
+      "id": "fife",
+      "class": "node"
+    },
+    {
+      "text": "crimpness",
+      "id": "crimpness",
+      "class": "node"
+    },
+    {
+      "text": "unprecedently",
+      "id": "unprecedently",
+      "class": "node"
+    },
+    {
+      "text": "genal waspen",
+      "id": "genal waspen",
+      "class": "node"
+    },
+    {
+      "text": "autochromy",
+      "id": "autochromy",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fife",
+      "head": "crimpness",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "unprecedently",
+      "head": "genal waspen",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "unprecedently",
+      "head": "autochromy",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "fife",
+      "head": "unprecedently",
+      "label": "0.747",
+      "class": "bidirectional"
+    }
+  ]
+}

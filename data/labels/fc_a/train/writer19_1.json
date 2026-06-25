@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "class": "terminator"
+    },
+    {
+      "text": "Read N",
+      "id": "Read N",
+      "class": "data"
+    },
+    {
+      "text": "M=1 F=1",
+      "id": "M=1 F=1",
+      "class": "process"
+    },
+    {
+      "text": "F=F.M",
+      "id": "F=F.M",
+      "class": "process"
+    },
+    {
+      "text": "M=N",
+      "id": "M=N",
+      "class": "decision"
+    },
+    {
+      "text": "Print F",
+      "id": "Print F",
+      "class": "data"
+    },
+    {
+      "text": "End",
+      "id": "End",
+      "class": "terminator"
+    },
+    {
+      "text": "M=M+1",
+      "id": "M=M+1",
+      "class": "process"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "Read N",
+      "label": null
+    },
+    {
+      "tail": "Read N",
+      "head": "M=1 F=1",
+      "label": null
+    },
+    {
+      "tail": "M=1 F=1",
+      "head": "F=F.M",
+      "label": null
+    },
+    {
+      "tail": "F=F.M",
+      "head": "M=N",
+      "label": null
+    },
+    {
+      "tail": "M=N",
+      "head": "Print F",
+      "label": "YES"
+    },
+    {
+      "tail": "Print F",
+      "head": "End",
+      "label": null
+    },
+    {
+      "tail": "M=N",
+      "head": "M=M+1",
+      "label": "NO"
+    }
+  ]
+}

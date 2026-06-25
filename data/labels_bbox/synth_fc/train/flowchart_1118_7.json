@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "text": "atoxyl",
+      "id": "atoxyl",
+      "class": "oval",
+      "bbox": [
+        32,
+        5,
+        108,
+        53
+      ]
+    },
+    {
+      "text": "Houghton",
+      "id": "Houghton",
+      "class": "diamond",
+      "bbox": [
+        5,
+        113,
+        135,
+        161
+      ]
+    },
+    {
+      "text": "plainscraft",
+      "id": "plainscraft",
+      "class": "parallelogram",
+      "bbox": [
+        19,
+        208,
+        121,
+        281
+      ]
+    },
+    {
+      "text": "decolorate",
+      "id": "decolorate",
+      "class": "box",
+      "bbox": [
+        31,
+        436,
+        109,
+        484
+      ]
+    },
+    {
+      "text": "peristomium",
+      "id": "peristomium",
+      "class": "document",
+      "bbox": [
+        23,
+        292,
+        117,
+        358
+      ]
+    },
+    {
+      "text": "tervalent",
+      "id": "tervalent",
+      "class": "document",
+      "bbox": [
+        23,
+        507,
+        117,
+        574
+      ]
+    },
+    {
+      "text": "unsyringed infratemporal",
+      "id": "unsyringed infratemporal",
+      "class": "oval",
+      "bbox": [
+        13,
+        649,
+        127,
+        695
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "atoxyl",
+      "head": "Houghton",
+      "label": null,
+      "bbox": [
+        65,
+        54,
+        75,
+        111
+      ]
+    },
+    {
+      "tail": "Houghton",
+      "head": "plainscraft",
+      "label": "Yes",
+      "bbox": [
+        65,
+        161,
+        75,
+        206
+      ]
+    },
+    {
+      "tail": "Houghton",
+      "head": "decolorate",
+      "label": "Yes",
+      "bbox": [
+        111,
+        138,
+        159,
+        465
+      ]
+    },
+    {
+      "tail": "plainscraft",
+      "head": "peristomium",
+      "label": null,
+      "bbox": [
+        65,
+        277,
+        75,
+        291
+      ]
+    },
+    {
+      "tail": "peristomium",
+      "head": "decolorate",
+      "label": null,
+      "bbox": [
+        65,
+        358,
+        75,
+        434
+      ]
+    },
+    {
+      "tail": "decolorate",
+      "head": "tervalent",
+      "label": null,
+      "bbox": [
+        65,
+        484,
+        75,
+        506
+      ]
+    },
+    {
+      "tail": "tervalent",
+      "head": "unsyringed infratemporal",
+      "label": null,
+      "bbox": [
+        65,
+        574,
+        75,
+        647
+      ]
+    }
+  ]
+}

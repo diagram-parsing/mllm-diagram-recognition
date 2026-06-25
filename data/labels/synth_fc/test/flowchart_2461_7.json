@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "houghite",
+      "id": "houghite",
+      "class": "circle"
+    },
+    {
+      "text": "occipitothalamic",
+      "id": "occipitothalamic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "botanic uncaparisoned",
+      "id": "botanic uncaparisoned",
+      "class": "parallelogram"
+    },
+    {
+      "text": "harmattan",
+      "id": "harmattan",
+      "class": "diamond"
+    },
+    {
+      "text": "orthoceratoid Ralph",
+      "id": "orthoceratoid Ralph",
+      "class": "box"
+    },
+    {
+      "text": "unsyringed infratemporal",
+      "id": "unsyringed infratemporal",
+      "class": "hexagon"
+    },
+    {
+      "text": "Perugian",
+      "id": "Perugian",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "houghite",
+      "head": "occipitothalamic",
+      "label": null
+    },
+    {
+      "tail": "occipitothalamic",
+      "head": "botanic uncaparisoned",
+      "label": null
+    },
+    {
+      "tail": "botanic uncaparisoned",
+      "head": "harmattan",
+      "label": null
+    },
+    {
+      "tail": "harmattan",
+      "head": "orthoceratoid Ralph",
+      "label": "YES"
+    },
+    {
+      "tail": "harmattan",
+      "head": "houghite",
+      "label": "YES"
+    },
+    {
+      "tail": "orthoceratoid Ralph",
+      "head": "unsyringed infratemporal",
+      "label": null
+    },
+    {
+      "tail": "unsyringed infratemporal",
+      "head": "Perugian",
+      "label": null
+    }
+  ]
+}

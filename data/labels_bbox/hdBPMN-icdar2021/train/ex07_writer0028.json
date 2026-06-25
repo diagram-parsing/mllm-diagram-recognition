@@ -1,0 +1,388 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        400,
+        1169,
+        486,
+        1286
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "ofer accepted",
+      "id": "ofer accepted",
+      "bbox": [
+        1606,
+        1224,
+        1692,
+        1310
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create offer",
+      "id": "create offer",
+      "bbox": [
+        605,
+        1125,
+        843,
+        1316
+      ],
+      "class": "task"
+    },
+    {
+      "text": "sad offer",
+      "id": "sad offer",
+      "bbox": [
+        940,
+        1186,
+        1043,
+        1272
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        1040,
+        2182,
+        1142,
+        2283
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "update offer",
+      "id": "update offer",
+      "bbox": [
+        657,
+        2131,
+        889,
+        2321
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        369,
+        2177,
+        462,
+        2272
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        798,
+        1459,
+        885,
+        1556
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "stonate offer",
+      "id": "stonate offer",
+      "bbox": [
+        1032,
+        1409,
+        1268,
+        1601
+      ],
+      "class": "task"
+    },
+    {
+      "text": "stonate the offer automatically",
+      "id": "stonate the offer automatically",
+      "bbox": [
+        657,
+        1752,
+        986,
+        1939
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        605,
+        1470,
+        710,
+        1575
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_4",
+      "bbox": [
+        1598,
+        969,
+        1714,
+        1080
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "offer stoned",
+      "id": "offer stoned",
+      "bbox": [
+        1390,
+        1449,
+        1445,
+        1560
+      ],
+      "class": "event"
+    },
+    {
+      "text": "48 hours",
+      "id": "48 hours",
+      "bbox": [
+        1137,
+        1803,
+        1268,
+        1920
+      ],
+      "class": "timerEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "stonate the offer automatically",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        812,
+        1554,
+        869,
+        1754
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "sad offer",
+      "class": "sequenceFlow",
+      "bbox": [
+        417,
+        1228,
+        1571,
+        2518
+      ],
+      "label": "number of charge under =< 3"
+    },
+    {
+      "tail": "48 hours",
+      "head": "stonate the offer automatically",
+      "class": "sequenceFlow",
+      "bbox": [
+        986,
+        1818,
+        1140,
+        1874
+      ],
+      "label": null
+    },
+    {
+      "tail": "stonate offer",
+      "head": "offer stoned",
+      "class": "sequenceFlow",
+      "bbox": [
+        1268,
+        1475,
+        1392,
+        1532
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "stonate offer",
+      "class": "sequenceFlow",
+      "bbox": [
+        880,
+        1473,
+        1034,
+        1530
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        704,
+        1473,
+        805,
+        1530
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        417,
+        1409,
+        843,
+        2180
+      ],
+      "label": "number of charge over > 3"
+    },
+    {
+      "tail": "update offer",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        462,
+        2197,
+        659,
+        2253
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "update offer",
+      "class": "sequenceFlow",
+      "bbox": [
+        889,
+        2199,
+        1041,
+        2255
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "ofer accepted",
+      "class": "sequenceFlow",
+      "bbox": [
+        1622,
+        1081,
+        1678,
+        1226
+      ],
+      "label": null
+    },
+    {
+      "tail": "create offer",
+      "head": "sad offer",
+      "class": "sequenceFlow",
+      "bbox": [
+        843,
+        1193,
+        942,
+        1250
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "create offer",
+      "class": "sequenceFlow",
+      "bbox": [
+        485,
+        1193,
+        607,
+        1250
+      ],
+      "label": null
+    },
+    {
+      "tail": "retailer",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        381,
+        169,
+        438,
+        1204
+      ],
+      "label": "request offer"
+    },
+    {
+      "tail": "sad offer",
+      "head": "retailer",
+      "class": "messageFlow",
+      "bbox": [
+        965,
+        167,
+        1021,
+        1180
+      ],
+      "label": null
+    },
+    {
+      "tail": "retailer",
+      "head": "messageEvent_3",
+      "class": "messageFlow",
+      "bbox": [
+        659,
+        167,
+        1179,
+        1472
+      ],
+      "label": "stonate\noffer"
+    },
+    {
+      "tail": "retailer",
+      "head": "messageEvent_2",
+      "class": "messageFlow",
+      "bbox": [
+        1142,
+        167,
+        1512,
+        2236
+      ],
+      "label": "charge\noffer"
+    },
+    {
+      "tail": "retailer",
+      "head": "messageEvent_4",
+      "class": "messageFlow",
+      "bbox": [
+        1631,
+        167,
+        1688,
+        969
+      ],
+      "label": "accept\noffer"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Supplier",
+      "nodes": [],
+      "bbox": [
+        219,
+        459,
+        1845,
+        2640
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "retailer",
+      "nodes": [],
+      "bbox": [
+        276,
+        76,
+        1781,
+        169
+      ],
+      "class": "pool"
+    }
+  ]
+}

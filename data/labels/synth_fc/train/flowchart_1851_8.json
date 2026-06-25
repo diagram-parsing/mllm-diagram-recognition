@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "sonorosity",
+      "id": "sonorosity",
+      "class": "oval"
+    },
+    {
+      "text": "retromaxillary pindling",
+      "id": "retromaxillary pindling",
+      "class": "document"
+    },
+    {
+      "text": "misemploy shamefastly",
+      "id": "misemploy shamefastly",
+      "class": "parallelogram"
+    },
+    {
+      "text": "theoanthropomorphic",
+      "id": "theoanthropomorphic",
+      "class": "diamond"
+    },
+    {
+      "text": "isodiazo valiantly",
+      "id": "isodiazo valiantly",
+      "class": "parallelogram"
+    },
+    {
+      "text": "undervest",
+      "id": "undervest",
+      "class": "box"
+    },
+    {
+      "text": "macao roscoelite",
+      "id": "macao roscoelite",
+      "class": "diamond"
+    },
+    {
+      "text": "incarnadine",
+      "id": "incarnadine",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "sonorosity",
+      "head": "retromaxillary pindling",
+      "label": null
+    },
+    {
+      "tail": "retromaxillary pindling",
+      "head": "misemploy shamefastly",
+      "label": null
+    },
+    {
+      "tail": "misemploy shamefastly",
+      "head": "theoanthropomorphic",
+      "label": null
+    },
+    {
+      "tail": "theoanthropomorphic",
+      "head": "isodiazo valiantly",
+      "label": "YES"
+    },
+    {
+      "tail": "theoanthropomorphic",
+      "head": "undervest",
+      "label": "YES"
+    },
+    {
+      "tail": "isodiazo valiantly",
+      "head": "macao roscoelite",
+      "label": null
+    },
+    {
+      "tail": "macao roscoelite",
+      "head": "undervest",
+      "label": "NO"
+    },
+    {
+      "tail": "macao roscoelite",
+      "head": "sonorosity",
+      "label": "NO"
+    },
+    {
+      "tail": "undervest",
+      "head": "incarnadine",
+      "label": null
+    }
+  ]
+}

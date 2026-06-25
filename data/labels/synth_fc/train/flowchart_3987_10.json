@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "syntonical",
+      "id": "syntonical",
+      "class": "ellipse"
+    },
+    {
+      "text": "tantivy",
+      "id": "tantivy",
+      "class": "document"
+    },
+    {
+      "text": "cylindrarthrosis skidding",
+      "id": "cylindrarthrosis skidding",
+      "class": "hexagon"
+    },
+    {
+      "text": "woman vendicate thirdling",
+      "id": "woman vendicate thirdling",
+      "class": "box"
+    },
+    {
+      "text": "basinet aerophobic",
+      "id": "basinet aerophobic",
+      "class": "hexagon"
+    },
+    {
+      "text": "cellulipetally",
+      "id": "cellulipetally",
+      "class": "parallelogram"
+    },
+    {
+      "text": "uncriticisable",
+      "id": "uncriticisable",
+      "class": "diamond"
+    },
+    {
+      "text": "ptochology Warren",
+      "id": "ptochology Warren",
+      "class": "hexagon"
+    },
+    {
+      "text": "humdrummishness ecophobia",
+      "id": "humdrummishness ecophobia",
+      "class": "diamond"
+    },
+    {
+      "text": "thingamabob takingness alaskai",
+      "id": "thingamabob takingness alaskai",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "syntonical",
+      "head": "tantivy",
+      "label": null
+    },
+    {
+      "tail": "tantivy",
+      "head": "cylindrarthrosis skidding",
+      "label": null
+    },
+    {
+      "tail": "cylindrarthrosis skidding",
+      "head": "woman vendicate thirdling",
+      "label": null
+    },
+    {
+      "tail": "woman vendicate thirdling",
+      "head": "basinet aerophobic",
+      "label": null
+    },
+    {
+      "tail": "basinet aerophobic",
+      "head": "cellulipetally",
+      "label": null
+    },
+    {
+      "tail": "cellulipetally",
+      "head": "uncriticisable",
+      "label": null
+    },
+    {
+      "tail": "uncriticisable",
+      "head": "ptochology Warren",
+      "label": "YES"
+    },
+    {
+      "tail": "uncriticisable",
+      "head": "cellulipetally",
+      "label": "YES"
+    },
+    {
+      "tail": "ptochology Warren",
+      "head": "humdrummishness ecophobia",
+      "label": null
+    },
+    {
+      "tail": "humdrummishness ecophobia",
+      "head": "thingamabob takingness alaskai",
+      "label": "NO"
+    },
+    {
+      "tail": "humdrummishness ecophobia",
+      "head": "ptochology Warren",
+      "label": "NO"
+    }
+  ]
+}

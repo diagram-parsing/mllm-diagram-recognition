@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "Locrian",
+      "id": "Locrian",
+      "class": "circle"
+    },
+    {
+      "text": "spannerman",
+      "id": "spannerman",
+      "class": "diamond"
+    },
+    {
+      "text": "imbecilely archicontinent anil",
+      "id": "imbecilely archicontinent anil",
+      "class": "diamond"
+    },
+    {
+      "text": "baptizee",
+      "id": "baptizee",
+      "class": "box"
+    },
+    {
+      "text": "agaricaceous",
+      "id": "agaricaceous",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unencysted",
+      "id": "unencysted",
+      "class": "oval"
+    },
+    {
+      "text": "northmost",
+      "id": "northmost",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Locrian",
+      "head": "spannerman",
+      "label": null
+    },
+    {
+      "tail": "spannerman",
+      "head": "imbecilely archicontinent anil",
+      "label": "No"
+    },
+    {
+      "tail": "spannerman",
+      "head": "baptizee",
+      "label": "No"
+    },
+    {
+      "tail": "imbecilely archicontinent anil",
+      "head": "agaricaceous",
+      "label": "yes"
+    },
+    {
+      "tail": "imbecilely archicontinent anil",
+      "head": "unencysted",
+      "label": "yes"
+    },
+    {
+      "tail": "agaricaceous",
+      "head": "northmost",
+      "label": null
+    },
+    {
+      "tail": "northmost",
+      "head": "baptizee",
+      "label": null
+    },
+    {
+      "tail": "baptizee",
+      "head": "unencysted",
+      "label": null
+    }
+  ]
+}

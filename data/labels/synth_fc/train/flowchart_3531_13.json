@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "text": "solicitously lamish",
+      "id": "solicitously lamish",
+      "class": "oval"
+    },
+    {
+      "text": "engrammatic continentality",
+      "id": "engrammatic continentality",
+      "class": "box"
+    },
+    {
+      "text": "hessonite",
+      "id": "hessonite",
+      "class": "parallelogram"
+    },
+    {
+      "text": "ponticulus",
+      "id": "ponticulus",
+      "class": "parallelogram"
+    },
+    {
+      "text": "satisfactorily",
+      "id": "satisfactorily",
+      "class": "diamond"
+    },
+    {
+      "text": "apii",
+      "id": "apii",
+      "class": "parallelogram"
+    },
+    {
+      "text": "decumbency subserous sylvan",
+      "id": "decumbency subserous sylvan",
+      "class": "diamond"
+    },
+    {
+      "text": "quizzee ironhearted",
+      "id": "quizzee ironhearted",
+      "class": "diamond"
+    },
+    {
+      "text": "apprehensive benzazide",
+      "id": "apprehensive benzazide",
+      "class": "parallelogram"
+    },
+    {
+      "text": "oxyterpene nonjoinder",
+      "id": "oxyterpene nonjoinder",
+      "class": "diamond"
+    },
+    {
+      "text": "Psylla",
+      "id": "Psylla",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unchristen calomorphic",
+      "id": "unchristen calomorphic",
+      "class": "diamond"
+    },
+    {
+      "text": "hidlings",
+      "id": "hidlings",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "solicitously lamish",
+      "head": "engrammatic continentality",
+      "label": null
+    },
+    {
+      "tail": "engrammatic continentality",
+      "head": "hessonite",
+      "label": null
+    },
+    {
+      "tail": "hessonite",
+      "head": "ponticulus",
+      "label": null
+    },
+    {
+      "tail": "ponticulus",
+      "head": "satisfactorily",
+      "label": null
+    },
+    {
+      "tail": "satisfactorily",
+      "head": "apii",
+      "label": "NO"
+    },
+    {
+      "tail": "satisfactorily",
+      "head": "engrammatic continentality",
+      "label": "NO"
+    },
+    {
+      "tail": "apii",
+      "head": "decumbency subserous sylvan",
+      "label": null
+    },
+    {
+      "tail": "decumbency subserous sylvan",
+      "head": "quizzee ironhearted",
+      "label": "Yes"
+    },
+    {
+      "tail": "decumbency subserous sylvan",
+      "head": "apprehensive benzazide",
+      "label": "Yes"
+    },
+    {
+      "tail": "quizzee ironhearted",
+      "head": "apprehensive benzazide",
+      "label": "YES"
+    },
+    {
+      "tail": "quizzee ironhearted",
+      "head": "hessonite",
+      "label": "YES"
+    },
+    {
+      "tail": "apprehensive benzazide",
+      "head": "oxyterpene nonjoinder",
+      "label": null
+    },
+    {
+      "tail": "oxyterpene nonjoinder",
+      "head": "Psylla",
+      "label": "Yes"
+    },
+    {
+      "tail": "oxyterpene nonjoinder",
+      "head": "apprehensive benzazide",
+      "label": "Yes"
+    },
+    {
+      "tail": "Psylla",
+      "head": "unchristen calomorphic",
+      "label": null
+    },
+    {
+      "tail": "unchristen calomorphic",
+      "head": "hidlings",
+      "label": "YES"
+    },
+    {
+      "tail": "unchristen calomorphic",
+      "head": "engrammatic continentality",
+      "label": "YES"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "redcoat",
+      "id": "redcoat",
+      "class": "circle"
+    },
+    {
+      "text": "kreis",
+      "id": "kreis",
+      "class": "box"
+    },
+    {
+      "text": "tetracoralline",
+      "id": "tetracoralline",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hypostypsis",
+      "id": "hypostypsis",
+      "class": "diamond"
+    },
+    {
+      "text": "Filicineae",
+      "id": "Filicineae",
+      "class": "document"
+    },
+    {
+      "text": "pashalik resatisfaction",
+      "id": "pashalik resatisfaction",
+      "class": "document"
+    },
+    {
+      "text": "specking groovy",
+      "id": "specking groovy",
+      "class": "box"
+    },
+    {
+      "text": "haptenic",
+      "id": "haptenic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "metronomical",
+      "id": "metronomical",
+      "class": "parallelogram"
+    },
+    {
+      "text": "adder apotropous pollinizer",
+      "id": "adder apotropous pollinizer",
+      "class": "diamond"
+    },
+    {
+      "text": "filiety",
+      "id": "filiety",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "redcoat",
+      "head": "kreis",
+      "label": null
+    },
+    {
+      "tail": "kreis",
+      "head": "tetracoralline",
+      "label": null
+    },
+    {
+      "tail": "tetracoralline",
+      "head": "hypostypsis",
+      "label": null
+    },
+    {
+      "tail": "hypostypsis",
+      "head": "Filicineae",
+      "label": "Yes"
+    },
+    {
+      "tail": "hypostypsis",
+      "head": "redcoat",
+      "label": "Yes"
+    },
+    {
+      "tail": "Filicineae",
+      "head": "pashalik resatisfaction",
+      "label": null
+    },
+    {
+      "tail": "pashalik resatisfaction",
+      "head": "specking groovy",
+      "label": null
+    },
+    {
+      "tail": "specking groovy",
+      "head": "haptenic",
+      "label": null
+    },
+    {
+      "tail": "haptenic",
+      "head": "metronomical",
+      "label": null
+    },
+    {
+      "tail": "metronomical",
+      "head": "adder apotropous pollinizer",
+      "label": null
+    },
+    {
+      "tail": "adder apotropous pollinizer",
+      "head": "filiety",
+      "label": "NO"
+    },
+    {
+      "tail": "adder apotropous pollinizer",
+      "head": "pashalik resatisfaction",
+      "label": "NO"
+    }
+  ]
+}

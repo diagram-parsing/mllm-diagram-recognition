@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "text": "taikhana",
+      "id": "taikhana",
+      "class": "node"
+    },
+    {
+      "text": "greenyard",
+      "id": "greenyard",
+      "class": "node"
+    },
+    {
+      "text": "pyrometer",
+      "id": "pyrometer",
+      "class": "node"
+    },
+    {
+      "text": "Downton Cystidea",
+      "id": "Downton Cystidea",
+      "class": "node"
+    },
+    {
+      "text": "stasimorphy",
+      "id": "stasimorphy",
+      "class": "node"
+    },
+    {
+      "text": "atelectatic pyosepticemic exci",
+      "id": "atelectatic pyosepticemic exci",
+      "class": "node"
+    },
+    {
+      "text": "browden",
+      "id": "browden",
+      "class": "node"
+    },
+    {
+      "text": "corsac",
+      "id": "corsac",
+      "class": "node"
+    },
+    {
+      "text": "exodontia interfusion hexone",
+      "id": "exodontia interfusion hexone",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "taikhana",
+      "head": "greenyard",
+      "label": "0.27* t = 0.86",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "pyrometer",
+      "head": "Downton Cystidea",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "stasimorphy",
+      "head": "atelectatic pyosepticemic exci",
+      "label": "0.51* y = 0.767",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "stasimorphy",
+      "head": "browden",
+      "label": "0.36*** H = 0.211",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "stasimorphy",
+      "head": "corsac",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "taikhana",
+      "head": "exodontia interfusion hexone",
+      "label": "-1",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "taikhana",
+      "head": "stasimorphy",
+      "label": "-0.97 H = 0.207",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "exodontia interfusion hexone",
+      "head": "pyrometer",
+      "label": "-0.65 a = 0.954",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "taikhana",
+      "head": "pyrometer",
+      "label": "-0.99*** t = 0.282",
+      "class": "bidirectional"
+    }
+  ]
+}

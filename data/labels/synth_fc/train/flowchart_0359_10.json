@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "deaden epiplectic",
+      "id": "deaden epiplectic",
+      "class": "circle"
+    },
+    {
+      "text": "pinkishness untransmigrated",
+      "id": "pinkishness untransmigrated",
+      "class": "parallelogram"
+    },
+    {
+      "text": "witchlike",
+      "id": "witchlike",
+      "class": "box"
+    },
+    {
+      "text": "Malecite",
+      "id": "Malecite",
+      "class": "diamond"
+    },
+    {
+      "text": "cloudlet",
+      "id": "cloudlet",
+      "class": "box"
+    },
+    {
+      "text": "rickyard",
+      "id": "rickyard",
+      "class": "hexagon"
+    },
+    {
+      "text": "Irpex Begoniaceae",
+      "id": "Irpex Begoniaceae",
+      "class": "hexagon"
+    },
+    {
+      "text": "Frisian",
+      "id": "Frisian",
+      "class": "diamond"
+    },
+    {
+      "text": "stellify sketchable epigonal",
+      "id": "stellify sketchable epigonal",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unfired",
+      "id": "unfired",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "deaden epiplectic",
+      "head": "pinkishness untransmigrated",
+      "label": null
+    },
+    {
+      "tail": "pinkishness untransmigrated",
+      "head": "witchlike",
+      "label": null
+    },
+    {
+      "tail": "witchlike",
+      "head": "Malecite",
+      "label": null
+    },
+    {
+      "tail": "Malecite",
+      "head": "cloudlet",
+      "label": "No"
+    },
+    {
+      "tail": "Malecite",
+      "head": "deaden epiplectic",
+      "label": "No"
+    },
+    {
+      "tail": "cloudlet",
+      "head": "rickyard",
+      "label": null
+    },
+    {
+      "tail": "rickyard",
+      "head": "Irpex Begoniaceae",
+      "label": null
+    },
+    {
+      "tail": "Irpex Begoniaceae",
+      "head": "Frisian",
+      "label": null
+    },
+    {
+      "tail": "Frisian",
+      "head": "stellify sketchable epigonal",
+      "label": "YES"
+    },
+    {
+      "tail": "Frisian",
+      "head": "cloudlet",
+      "label": "YES"
+    },
+    {
+      "tail": "stellify sketchable epigonal",
+      "head": "unfired",
+      "label": null
+    }
+  ]
+}

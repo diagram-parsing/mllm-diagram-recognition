@@ -1,0 +1,327 @@
+{
+  "nodes": [
+    {
+      "text": "checks documents",
+      "id": "checks documents",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "check insurance",
+      "id": "check insurance",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "class": "task"
+    },
+    {
+      "text": "positive",
+      "id": "positive",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "send letter",
+      "id": "send letter",
+      "class": "task"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "class": "event"
+    },
+    {
+      "text": "claim DB",
+      "id": "claim DB",
+      "class": "dataStore"
+    },
+    {
+      "text": "documents",
+      "id": "documents",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "class": "event"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "phone garage",
+      "id": "phone garage",
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "class": "task"
+    },
+    {
+      "text": "send letter",
+      "id": "send letter",
+      "class": "task"
+    },
+    {
+      "text": "claim with documentation received",
+      "id": "claim with documentation received",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_2",
+      "class": "dataObject"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send letter",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "send letter",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "phone garage",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "positive",
+      "head": "phone garage",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send letter",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "positive",
+      "head": "send letter",
+      "class": "sequenceFlow",
+      "label": "negativ"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "positive",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "label": "has insurance"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": "no insurance"
+    },
+    {
+      "tail": "check insurance",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "check insurance",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": "are complete"
+    },
+    {
+      "tail": "checks documents",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim with documentation received",
+      "head": "checks documents",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "documents",
+      "head": "checks documents",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim DB",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim DB",
+      "head": "check insurance",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim with documentation received",
+      "class": "messageFlow",
+      "label": "submit claimwith relevant documentation"
+    },
+    {
+      "tail": "send letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": "letter with confirmation"
+    },
+    {
+      "tail": "send letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": "letter with rejection"
+    },
+    {
+      "tail": "phone garage",
+      "head": "garage",
+      "class": "messageFlow",
+      "label": "information\nto authorize\nthe repairs"
+    }
+  ],
+  "groups": [
+    {
+      "name": "car insurer",
+      "nodes": [
+        "handling department",
+        "Data basis",
+        "notification department"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling department",
+      "nodes": [
+        "check insurance",
+        "perform assessment",
+        "positive",
+        "send letter",
+        "process completed",
+        "claim",
+        "exclusiveGateway_3",
+        "phone garage",
+        "schedule payment",
+        "send letter"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Data basis",
+      "nodes": [
+        "claim DB"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "checks documents",
+        "exclusiveGateway_1",
+        "register claim",
+        "exclusiveGateway_2",
+        "process completed",
+        "documents",
+        "claim",
+        "claim with documentation received",
+        "dataObject_1",
+        "dataObject_2",
+        "reject claim"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "garage",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

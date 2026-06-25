@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "text": "fife",
+      "id": "fife",
+      "class": "node",
+      "bbox": [
+        27,
+        27,
+        99,
+        75
+      ]
+    },
+    {
+      "text": "crimpness",
+      "id": "crimpness",
+      "class": "node",
+      "bbox": [
+        184,
+        27,
+        297,
+        75
+      ]
+    },
+    {
+      "text": "unprecedently",
+      "id": "unprecedently",
+      "class": "node",
+      "bbox": [
+        189,
+        107,
+        292,
+        165
+      ]
+    },
+    {
+      "text": "genal waspen",
+      "id": "genal waspen",
+      "class": "node",
+      "bbox": [
+        380,
+        49,
+        468,
+        100
+      ]
+    },
+    {
+      "text": "autochromy",
+      "id": "autochromy",
+      "class": "node",
+      "bbox": [
+        361,
+        124,
+        487,
+        172
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fife",
+      "head": "crimpness",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        99,
+        45,
+        185,
+        57
+      ]
+    },
+    {
+      "tail": "unprecedently",
+      "head": "genal waspen",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        285,
+        88,
+        380,
+        121
+      ]
+    },
+    {
+      "tail": "unprecedently",
+      "head": "autochromy",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        292,
+        137,
+        361,
+        149
+      ]
+    },
+    {
+      "tail": "fife",
+      "head": "unprecedently",
+      "label": "0.747",
+      "class": "bidirectional",
+      "bbox": [
+        104,
+        70,
+        201,
+        117
+      ]
+    }
+  ]
+}

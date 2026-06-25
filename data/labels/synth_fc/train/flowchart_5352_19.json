@@ -1,0 +1,221 @@
+{
+  "nodes": [
+    {
+      "text": "Guinea",
+      "id": "Guinea",
+      "class": "circle"
+    },
+    {
+      "text": "antimoniated",
+      "id": "antimoniated",
+      "class": "diamond"
+    },
+    {
+      "text": "feldsparphyre",
+      "id": "feldsparphyre",
+      "class": "hexagon"
+    },
+    {
+      "text": "industrochemical figury",
+      "id": "industrochemical figury",
+      "class": "box"
+    },
+    {
+      "text": "unvamped",
+      "id": "unvamped",
+      "class": "hexagon"
+    },
+    {
+      "text": "witchlike",
+      "id": "witchlike",
+      "class": "diamond"
+    },
+    {
+      "text": "unleisuredness",
+      "id": "unleisuredness",
+      "class": "diamond"
+    },
+    {
+      "text": "unmethodical thalami unpeacefu",
+      "id": "unmethodical thalami unpeacefu",
+      "class": "document"
+    },
+    {
+      "text": "noneducation stearyl",
+      "id": "noneducation stearyl",
+      "class": "diamond"
+    },
+    {
+      "text": "softhead",
+      "id": "softhead",
+      "class": "box"
+    },
+    {
+      "text": "neoclassic",
+      "id": "neoclassic",
+      "class": "box"
+    },
+    {
+      "text": "kanteletar southeastwardly",
+      "id": "kanteletar southeastwardly",
+      "class": "document"
+    },
+    {
+      "text": "fairtime abasement",
+      "id": "fairtime abasement",
+      "class": "document"
+    },
+    {
+      "text": "axiomatize",
+      "id": "axiomatize",
+      "class": "box"
+    },
+    {
+      "text": "faradmeter",
+      "id": "faradmeter",
+      "class": "diamond"
+    },
+    {
+      "text": "declarant invertible swelchie",
+      "id": "declarant invertible swelchie",
+      "class": "hexagon"
+    },
+    {
+      "text": "saeculum",
+      "id": "saeculum",
+      "class": "hexagon"
+    },
+    {
+      "text": "unconditionedly",
+      "id": "unconditionedly",
+      "class": "diamond"
+    },
+    {
+      "text": "quinine",
+      "id": "quinine",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Guinea",
+      "head": "antimoniated",
+      "label": null
+    },
+    {
+      "tail": "antimoniated",
+      "head": "feldsparphyre",
+      "label": "No"
+    },
+    {
+      "tail": "antimoniated",
+      "head": "industrochemical figury",
+      "label": "No"
+    },
+    {
+      "tail": "feldsparphyre",
+      "head": "unvamped",
+      "label": null
+    },
+    {
+      "tail": "unvamped",
+      "head": "industrochemical figury",
+      "label": null
+    },
+    {
+      "tail": "industrochemical figury",
+      "head": "witchlike",
+      "label": null
+    },
+    {
+      "tail": "witchlike",
+      "head": "unleisuredness",
+      "label": "No"
+    },
+    {
+      "tail": "witchlike",
+      "head": "unmethodical thalami unpeacefu",
+      "label": "No"
+    },
+    {
+      "tail": "unleisuredness",
+      "head": "noneducation stearyl",
+      "label": "Yes"
+    },
+    {
+      "tail": "unleisuredness",
+      "head": "Guinea",
+      "label": "Yes"
+    },
+    {
+      "tail": "noneducation stearyl",
+      "head": "softhead",
+      "label": "No"
+    },
+    {
+      "tail": "noneducation stearyl",
+      "head": "unvamped",
+      "label": "No"
+    },
+    {
+      "tail": "softhead",
+      "head": "neoclassic",
+      "label": null
+    },
+    {
+      "tail": "neoclassic",
+      "head": "unmethodical thalami unpeacefu",
+      "label": null
+    },
+    {
+      "tail": "unmethodical thalami unpeacefu",
+      "head": "kanteletar southeastwardly",
+      "label": null
+    },
+    {
+      "tail": "kanteletar southeastwardly",
+      "head": "fairtime abasement",
+      "label": null
+    },
+    {
+      "tail": "fairtime abasement",
+      "head": "axiomatize",
+      "label": null
+    },
+    {
+      "tail": "axiomatize",
+      "head": "faradmeter",
+      "label": null
+    },
+    {
+      "tail": "faradmeter",
+      "head": "declarant invertible swelchie",
+      "label": "No"
+    },
+    {
+      "tail": "faradmeter",
+      "head": "witchlike",
+      "label": "No"
+    },
+    {
+      "tail": "declarant invertible swelchie",
+      "head": "saeculum",
+      "label": null
+    },
+    {
+      "tail": "saeculum",
+      "head": "unconditionedly",
+      "label": null
+    },
+    {
+      "tail": "unconditionedly",
+      "head": "quinine",
+      "label": "yes"
+    },
+    {
+      "tail": "unconditionedly",
+      "head": "saeculum",
+      "label": "yes"
+    }
+  ]
+}

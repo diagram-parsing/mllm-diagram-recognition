@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "ungulp Galbulae proctotrypoid",
+      "id": "ungulp Galbulae proctotrypoid",
+      "class": "node",
+      "bbox": [
+        72,
+        158,
+        212,
+        207
+      ]
+    },
+    {
+      "text": "dilutely outlength",
+      "id": "dilutely outlength",
+      "class": "node",
+      "bbox": [
+        5,
+        304,
+        140,
+        375
+      ]
+    },
+    {
+      "text": "catalogical",
+      "id": "catalogical",
+      "class": "node",
+      "bbox": [
+        164,
+        315,
+        257,
+        363
+      ]
+    },
+    {
+      "text": "unsleeved Betonica",
+      "id": "unsleeved Betonica",
+      "class": "node",
+      "bbox": [
+        85,
+        27,
+        199,
+        84
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "ungulp Galbulae proctotrypoid",
+      "head": "dilutely outlength",
+      "label": "-0.08 s = 0.258",
+      "class": "unidirectional",
+      "bbox": [
+        86,
+        207,
+        130,
+        304
+      ]
+    },
+    {
+      "tail": "ungulp Galbulae proctotrypoid",
+      "head": "catalogical",
+      "label": "-1",
+      "class": "unidirectional",
+      "bbox": [
+        165,
+        206,
+        214,
+        316
+      ]
+    },
+    {
+      "tail": "unsleeved Betonica",
+      "head": "ungulp Galbulae proctotrypoid",
+      "label": "1",
+      "class": "bidirectional",
+      "bbox": [
+        135,
+        101,
+        150,
+        157
+      ]
+    }
+  ]
+}

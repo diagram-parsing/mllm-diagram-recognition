@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "connection_1",
+      "bbox": [
+        4,
+        54,
+        76,
+        61
+      ],
+      "class": "connection"
+    },
+    {
+      "text": "Read m",
+      "id": "Read m",
+      "bbox": [
+        126,
+        28,
+        375,
+        128
+      ],
+      "class": "data"
+    },
+    {
+      "text": "m=m*m",
+      "id": "m=m*m",
+      "bbox": [
+        540,
+        21,
+        311,
+        139
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Print m",
+      "id": "Print m",
+      "bbox": [
+        937,
+        4,
+        283,
+        149
+      ],
+      "class": "data"
+    },
+    {
+      "text": null,
+      "id": "connection_2",
+      "bbox": [
+        1254,
+        53,
+        76,
+        77
+      ],
+      "class": "connection"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "connection_1",
+      "head": "Read m",
+      "bbox": [
+        76,
+        68,
+        89,
+        41
+      ],
+      "kps": [
+        78.0,
+        86.0,
+        2.0,
+        159.0,
+        85.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Read m",
+      "head": "m=m*m",
+      "bbox": [
+        453,
+        76,
+        91,
+        31
+      ],
+      "kps": [
+        455.0,
+        97.0,
+        2.0,
+        538.0,
+        90.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "m=m*m",
+      "head": "Print m",
+      "bbox": [
+        835,
+        65,
+        116,
+        36
+      ],
+      "kps": [
+        837.0,
+        86.0,
+        2.0,
+        944.0,
+        82.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Print m",
+      "head": "connection_2",
+      "bbox": [
+        1181,
+        65,
+        83,
+        46
+      ],
+      "kps": [
+        1183.0,
+        88.0,
+        2.0,
+        1256.0,
+        84.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

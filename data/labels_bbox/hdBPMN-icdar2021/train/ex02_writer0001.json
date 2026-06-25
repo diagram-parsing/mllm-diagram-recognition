@@ -1,0 +1,441 @@
+{
+  "nodes": [
+    {
+      "text": "claim closed",
+      "id": "claim closed",
+      "bbox": [
+        2490,
+        1777,
+        2553,
+        1833
+      ],
+      "class": "event"
+    },
+    {
+      "text": "proceed handling process",
+      "id": "proceed handling process",
+      "bbox": [
+        2191,
+        1754,
+        2389,
+        1895
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check the settlement recommendation",
+      "id": "check the settlement recommendation",
+      "bbox": [
+        1684,
+        1577,
+        2025,
+        1809
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        2107,
+        1612,
+        2184,
+        1704
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "bbox": [
+        1275,
+        1243,
+        1337,
+        1339
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation [OK]",
+      "id": "settlement recommendation [OK]",
+      "bbox": [
+        1779,
+        1855,
+        1821,
+        1910
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        386,
+        1186,
+        441,
+        1241
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "examine clime",
+      "id": "examine clime",
+      "bbox": [
+        882,
+        987,
+        1096,
+        1104
+      ],
+      "class": "task"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        558,
+        989,
+        761,
+        1120
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim [examined]",
+      "id": "claim [examined]",
+      "bbox": [
+        1061,
+        890,
+        1102,
+        936
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "bbox": [
+        1198,
+        985,
+        1561,
+        1146
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        362,
+        1003,
+        477,
+        1098
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "settlement recommendation [NOT OK]",
+      "id": "settlement recommendation [NOT OK]",
+      "bbox": [
+        1755,
+        1144,
+        1833,
+        1249
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "proceed handling process",
+      "head": "claim closed",
+      "class": "sequenceFlow",
+      "bbox": [
+        2389,
+        1785,
+        2492,
+        1841
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        477,
+        1022,
+        560,
+        1079
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "examine clime",
+      "class": "sequenceFlow",
+      "bbox": [
+        761,
+        1028,
+        884,
+        1085
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine clime",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1096,
+        1018,
+        1200,
+        1075
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check the settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1561,
+        1063,
+        1686,
+        1696
+      ],
+      "label": null
+    },
+    {
+      "tail": "check the settlement recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2025,
+        1631,
+        2109,
+        1687
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1531,
+        878,
+        2152,
+        1618
+      ],
+      "label": "Not OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "proceed handling process",
+      "class": "sequenceFlow",
+      "bbox": [
+        2141,
+        1704,
+        2198,
+        1823
+      ],
+      "label": "OK"
+    },
+    {
+      "tail": "settlement recommendation [OK]",
+      "head": "proceed handling process",
+      "class": "dataAssociation",
+      "bbox": [
+        1821,
+        1862,
+        2190,
+        1919
+      ],
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check the settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        1305,
+        1339,
+        1686,
+        1753
+      ],
+      "label": null
+    },
+    {
+      "tail": "check the settlement recommendation",
+      "head": "settlement recommendation [NOT OK]",
+      "class": "dataAssociation",
+      "bbox": [
+        1784,
+        1249,
+        1840,
+        1579
+      ],
+      "label": null
+    },
+    {
+      "tail": "check the settlement recommendation",
+      "head": "settlement recommendation [OK]",
+      "class": "dataAssociation",
+      "bbox": [
+        1774,
+        1807,
+        1830,
+        1863
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "examine clime",
+      "class": "dataAssociation",
+      "bbox": [
+        441,
+        1104,
+        991,
+        1195
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine clime",
+      "head": "claim [examined]",
+      "class": "dataAssociation",
+      "bbox": [
+        967,
+        912,
+        1063,
+        989
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        443,
+        1120,
+        652,
+        1195
+      ],
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation [NOT OK]",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        1561,
+        995,
+        1773,
+        1146
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [examined]",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        1102,
+        904,
+        1389,
+        987
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        1280,
+        1146,
+        1336,
+        1245
+      ],
+      "label": null
+    },
+    {
+      "tail": "pool_1",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        393,
+        765,
+        450,
+        995
+      ],
+      "label": "claim of costumer"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "bbox": [
+        90,
+        876,
+        2667,
+        1918
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "settlement recommendation",
+        "claim",
+        "examine clime",
+        "register claim",
+        "claim [examined]",
+        "write settlement recommendation",
+        "messageEvent_1",
+        "settlement recommendation [NOT OK]"
+      ],
+      "bbox": [
+        175,
+        876,
+        2667,
+        1481
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "claim closed",
+        "proceed handling process",
+        "check the settlement recommendation",
+        "exclusiveGateway_1",
+        "settlement recommendation [OK]"
+      ],
+      "bbox": [
+        175,
+        1481,
+        2667,
+        1918
+      ],
+      "class": "lane"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "bbox": [
+        90,
+        378,
+        1830,
+        764
+      ],
+      "class": "pool"
+    }
+  ]
+}

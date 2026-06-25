@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "legenda",
+      "id": "legenda",
+      "class": "oval"
+    },
+    {
+      "text": "Pawtucket rampike",
+      "id": "Pawtucket rampike",
+      "class": "parallelogram"
+    },
+    {
+      "text": "percurrent",
+      "id": "percurrent",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unfelon grapestone",
+      "id": "unfelon grapestone",
+      "class": "diamond"
+    },
+    {
+      "text": "mytilotoxine",
+      "id": "mytilotoxine",
+      "class": "parallelogram"
+    },
+    {
+      "text": "undismay mesityl tricenarium",
+      "id": "undismay mesityl tricenarium",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unobservantly thujone grenadie",
+      "id": "unobservantly thujone grenadie",
+      "class": "box"
+    },
+    {
+      "text": "presageful",
+      "id": "presageful",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "legenda",
+      "head": "Pawtucket rampike",
+      "label": null
+    },
+    {
+      "tail": "Pawtucket rampike",
+      "head": "percurrent",
+      "label": null
+    },
+    {
+      "tail": "percurrent",
+      "head": "unfelon grapestone",
+      "label": null
+    },
+    {
+      "tail": "unfelon grapestone",
+      "head": "mytilotoxine",
+      "label": "no"
+    },
+    {
+      "tail": "unfelon grapestone",
+      "head": "legenda",
+      "label": "no"
+    },
+    {
+      "tail": "mytilotoxine",
+      "head": "undismay mesityl tricenarium",
+      "label": null
+    },
+    {
+      "tail": "undismay mesityl tricenarium",
+      "head": "unobservantly thujone grenadie",
+      "label": null
+    },
+    {
+      "tail": "unobservantly thujone grenadie",
+      "head": "presageful",
+      "label": null
+    }
+  ]
+}

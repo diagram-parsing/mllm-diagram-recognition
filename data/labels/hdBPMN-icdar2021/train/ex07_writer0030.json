@@ -1,0 +1,296 @@
+{
+  "nodes": [
+    {
+      "text": "rating fulfilled",
+      "id": "rating fulfilled",
+      "class": "event"
+    },
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file the results",
+      "id": "file the results",
+      "class": "task"
+    },
+    {
+      "text": "pay expenses to expert",
+      "id": "pay expenses to expert",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "ask another expert to renew",
+      "id": "ask another expert to renew",
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": "ask external expert to review work of doctor underrating",
+      "id": "ask external expert to review work of doctor underrating",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "class": "timerEvent"
+    },
+    {
+      "text": "respond",
+      "id": "respond",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "file the results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "pay expenses to expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask another expert to renew",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "timerEvent_1",
+      "head": "ask another expert to renew",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "respond",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "respond",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review work of doctor underrating",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask external expert to review work of doctor underrating",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "rating fulfilled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "pay expenses to expert",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file the results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "patient",
+      "class": "messageFlow",
+      "label": "interviews"
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": "cheque"
+    },
+    {
+      "tail": "ask external expert to review work of doctor underrating",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "external expert",
+      "head": "respond",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "ask another expert to renew",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "external expert",
+      "head": "receive expertise",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "QA specialist"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "forward expertise",
+        "parallelGateway_2",
+        "pay expenses to expert",
+        "messageEvent_1",
+        "receive expertise",
+        "ask another expert to renew",
+        "ask external expert to review work of doctor underrating",
+        "eventBasedGateway_1",
+        "timerEvent_1",
+        "respond",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "rating fulfilled",
+        "new case started",
+        "parallelGateway_1",
+        "create report",
+        "file the results",
+        "interview patients",
+        "parallelGateway_3"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "patient",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

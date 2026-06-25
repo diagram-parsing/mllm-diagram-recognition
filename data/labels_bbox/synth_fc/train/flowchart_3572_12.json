@@ -1,0 +1,292 @@
+{
+  "nodes": [
+    {
+      "text": "Parietales",
+      "id": "Parietales",
+      "class": "ellipse",
+      "bbox": [
+        32,
+        27,
+        105,
+        79
+      ]
+    },
+    {
+      "text": "charmfully egocentric",
+      "id": "charmfully egocentric",
+      "class": "hexagon",
+      "bbox": [
+        7,
+        118,
+        130,
+        178
+      ]
+    },
+    {
+      "text": "Marguerite",
+      "id": "Marguerite",
+      "class": "hexagon",
+      "bbox": [
+        13,
+        219,
+        124,
+        267
+      ]
+    },
+    {
+      "text": "andirin ouachitite",
+      "id": "andirin ouachitite",
+      "class": "diamond",
+      "bbox": [
+        5,
+        302,
+        132,
+        375
+      ]
+    },
+    {
+      "text": "extramorainic",
+      "id": "extramorainic",
+      "class": "hexagon",
+      "bbox": [
+        193,
+        124,
+        325,
+        172
+      ]
+    },
+    {
+      "text": "proximobuccal",
+      "id": "proximobuccal",
+      "class": "parallelogram",
+      "bbox": [
+        198,
+        183,
+        319,
+        256
+      ]
+    },
+    {
+      "text": "annihilable lectorial",
+      "id": "annihilable lectorial",
+      "class": "diamond",
+      "bbox": [
+        189,
+        302,
+        329,
+        375
+      ]
+    },
+    {
+      "text": "bimbil",
+      "id": "bimbil",
+      "class": "document",
+      "bbox": [
+        214,
+        404,
+        304,
+        458
+      ]
+    },
+    {
+      "text": "disemploy",
+      "id": "disemploy",
+      "class": "parallelogram",
+      "bbox": [
+        381,
+        5,
+        512,
+        53
+      ]
+    },
+    {
+      "text": "drawhead",
+      "id": "drawhead",
+      "class": "document",
+      "bbox": [
+        404,
+        119,
+        494,
+        178
+      ]
+    },
+    {
+      "text": "stonish",
+      "id": "stonish",
+      "class": "diamond",
+      "bbox": [
+        390,
+        219,
+        508,
+        267
+      ]
+    },
+    {
+      "text": "unscreenably",
+      "id": "unscreenably",
+      "class": "circle",
+      "bbox": [
+        394,
+        283,
+        504,
+        394
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Parietales",
+      "head": "charmfully egocentric",
+      "label": null,
+      "bbox": [
+        63,
+        80,
+        75,
+        117
+      ]
+    },
+    {
+      "tail": "charmfully egocentric",
+      "head": "Marguerite",
+      "label": null,
+      "bbox": [
+        63,
+        179,
+        75,
+        218
+      ]
+    },
+    {
+      "tail": "Marguerite",
+      "head": "andirin ouachitite",
+      "label": null,
+      "bbox": [
+        63,
+        268,
+        75,
+        300
+      ]
+    },
+    {
+      "tail": "andirin ouachitite",
+      "head": "extramorainic",
+      "label": "Yes",
+      "bbox": [
+        101,
+        142,
+        191,
+        358
+      ]
+    },
+    {
+      "tail": "andirin ouachitite",
+      "head": "Parietales",
+      "label": "Yes",
+      "bbox": [
+        101,
+        61,
+        146,
+        339
+      ]
+    },
+    {
+      "tail": "extramorainic",
+      "head": "proximobuccal",
+      "label": null,
+      "bbox": [
+        253,
+        168,
+        265,
+        182
+      ]
+    },
+    {
+      "tail": "proximobuccal",
+      "head": "annihilable lectorial",
+      "label": null,
+      "bbox": [
+        253,
+        257,
+        265,
+        301
+      ]
+    },
+    {
+      "tail": "annihilable lectorial",
+      "head": "bimbil",
+      "label": "NO",
+      "bbox": [
+        253,
+        377,
+        265,
+        405
+      ]
+    },
+    {
+      "tail": "annihilable lectorial",
+      "head": "disemploy",
+      "label": "NO",
+      "bbox": [
+        331,
+        30,
+        390,
+        339
+      ]
+    },
+    {
+      "tail": "bimbil",
+      "head": "disemploy",
+      "label": null,
+      "bbox": [
+        304,
+        40,
+        385,
+        435
+      ]
+    },
+    {
+      "tail": "disemploy",
+      "head": "drawhead",
+      "label": null,
+      "bbox": [
+        443,
+        55,
+        455,
+        119
+      ]
+    },
+    {
+      "tail": "drawhead",
+      "head": "stonish",
+      "label": null,
+      "bbox": [
+        443,
+        177,
+        455,
+        218
+      ]
+    },
+    {
+      "tail": "stonish",
+      "head": "unscreenably",
+      "label": "no",
+      "bbox": [
+        443,
+        268,
+        455,
+        282
+      ]
+    },
+    {
+      "tail": "stonish",
+      "head": "andirin ouachitite",
+      "label": "no",
+      "bbox": [
+        103,
+        263,
+        435,
+        326
+      ]
+    }
+  ]
+}

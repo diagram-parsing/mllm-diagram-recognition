@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "glomerulonephritis inadvisabil",
+      "id": "glomerulonephritis inadvisabil",
+      "class": "circle"
+    },
+    {
+      "text": "preunderstand aint",
+      "id": "preunderstand aint",
+      "class": "diamond"
+    },
+    {
+      "text": "canoodler",
+      "id": "canoodler",
+      "class": "diamond"
+    },
+    {
+      "text": "uncheckable amputate cerotic",
+      "id": "uncheckable amputate cerotic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hessonite",
+      "id": "hessonite",
+      "class": "parallelogram"
+    },
+    {
+      "text": "illiterate musher",
+      "id": "illiterate musher",
+      "class": "box"
+    },
+    {
+      "text": "unchristianity",
+      "id": "unchristianity",
+      "class": "parallelogram"
+    },
+    {
+      "text": "inshoot",
+      "id": "inshoot",
+      "class": "hexagon"
+    },
+    {
+      "text": "Glossiphonia autotransplant",
+      "id": "Glossiphonia autotransplant",
+      "class": "box"
+    },
+    {
+      "text": "dukery balloonlike",
+      "id": "dukery balloonlike",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "glomerulonephritis inadvisabil",
+      "head": "preunderstand aint",
+      "label": null
+    },
+    {
+      "tail": "preunderstand aint",
+      "head": "canoodler",
+      "label": "NO"
+    },
+    {
+      "tail": "preunderstand aint",
+      "head": "uncheckable amputate cerotic",
+      "label": "NO"
+    },
+    {
+      "tail": "canoodler",
+      "head": "hessonite",
+      "label": "Yes"
+    },
+    {
+      "tail": "canoodler",
+      "head": "illiterate musher",
+      "label": "Yes"
+    },
+    {
+      "tail": "hessonite",
+      "head": "unchristianity",
+      "label": null
+    },
+    {
+      "tail": "unchristianity",
+      "head": "inshoot",
+      "label": null
+    },
+    {
+      "tail": "inshoot",
+      "head": "illiterate musher",
+      "label": null
+    },
+    {
+      "tail": "illiterate musher",
+      "head": "Glossiphonia autotransplant",
+      "label": null
+    },
+    {
+      "tail": "Glossiphonia autotransplant",
+      "head": "uncheckable amputate cerotic",
+      "label": null
+    },
+    {
+      "tail": "uncheckable amputate cerotic",
+      "head": "dukery balloonlike",
+      "label": null
+    }
+  ]
+}

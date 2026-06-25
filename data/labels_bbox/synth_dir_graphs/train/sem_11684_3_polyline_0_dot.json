@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "text": "clasmatocyte",
+      "id": "clasmatocyte",
+      "class": "node",
+      "bbox": [
+        89,
+        130,
+        205,
+        193
+      ]
+    },
+    {
+      "text": "microtomy inconcinnity",
+      "id": "microtomy inconcinnity",
+      "class": "node",
+      "bbox": [
+        84,
+        243,
+        210,
+        293
+      ]
+    },
+    {
+      "text": "mollichop phytopathogen",
+      "id": "mollichop phytopathogen",
+      "class": "node",
+      "bbox": [
+        86,
+        5,
+        208,
+        54
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "clasmatocyte",
+      "head": "microtomy inconcinnity",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        138,
+        193,
+        156,
+        242
+      ]
+    },
+    {
+      "tail": "mollichop phytopathogen",
+      "head": "clasmatocyte",
+      "label": "0.717",
+      "class": "unidirectional",
+      "bbox": [
+        138,
+        55,
+        156,
+        129
+      ]
+    }
+  ]
+}

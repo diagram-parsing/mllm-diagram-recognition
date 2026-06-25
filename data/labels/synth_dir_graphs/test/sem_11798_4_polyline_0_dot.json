@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "text": "Calathea",
+      "id": "Calathea",
+      "class": "node"
+    },
+    {
+      "text": "iliotrochanteric ophthalmoleuc",
+      "id": "iliotrochanteric ophthalmoleuc",
+      "class": "node"
+    },
+    {
+      "text": "grime",
+      "id": "grime",
+      "class": "node"
+    },
+    {
+      "text": "persist",
+      "id": "persist",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Calathea",
+      "head": "iliotrochanteric ophthalmoleuc",
+      "label": "0.01** f = 0.483",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "grime",
+      "head": "Calathea",
+      "label": "0.705",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "persist",
+      "head": "Calathea",
+      "label": "-0.29 s = 0.147",
+      "class": "unidirectional"
+    }
+  ]
+}

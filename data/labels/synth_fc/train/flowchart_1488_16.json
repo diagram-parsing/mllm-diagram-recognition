@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "text": "rheen",
+      "id": "rheen",
+      "class": "circle"
+    },
+    {
+      "text": "prequote",
+      "id": "prequote",
+      "class": "box"
+    },
+    {
+      "text": "convector agrege",
+      "id": "convector agrege",
+      "class": "hexagon"
+    },
+    {
+      "text": "isoxazine",
+      "id": "isoxazine",
+      "class": "diamond"
+    },
+    {
+      "text": "chromophotograph inglenook",
+      "id": "chromophotograph inglenook",
+      "class": "document"
+    },
+    {
+      "text": "chestily unconditionated ambas",
+      "id": "chestily unconditionated ambas",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Carlos",
+      "id": "Carlos",
+      "class": "diamond"
+    },
+    {
+      "text": "napiform gigster redissection",
+      "id": "napiform gigster redissection",
+      "class": "diamond"
+    },
+    {
+      "text": "agalite Arctalian decampment",
+      "id": "agalite Arctalian decampment",
+      "class": "parallelogram"
+    },
+    {
+      "text": "baseness Canton",
+      "id": "baseness Canton",
+      "class": "document"
+    },
+    {
+      "text": "Celt Hanuman alectryomancy",
+      "id": "Celt Hanuman alectryomancy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "fleabite",
+      "id": "fleabite",
+      "class": "box"
+    },
+    {
+      "text": "mockful telltale Tuba",
+      "id": "mockful telltale Tuba",
+      "class": "diamond"
+    },
+    {
+      "text": "replevin",
+      "id": "replevin",
+      "class": "diamond"
+    },
+    {
+      "text": "Guayaqui",
+      "id": "Guayaqui",
+      "class": "document"
+    },
+    {
+      "text": "agrestal dendrophilous cutty",
+      "id": "agrestal dendrophilous cutty",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "rheen",
+      "head": "prequote",
+      "label": null
+    },
+    {
+      "tail": "prequote",
+      "head": "convector agrege",
+      "label": null
+    },
+    {
+      "tail": "convector agrege",
+      "head": "isoxazine",
+      "label": null
+    },
+    {
+      "tail": "isoxazine",
+      "head": "chromophotograph inglenook",
+      "label": "No"
+    },
+    {
+      "tail": "isoxazine",
+      "head": "chestily unconditionated ambas",
+      "label": "No"
+    },
+    {
+      "tail": "chromophotograph inglenook",
+      "head": "chestily unconditionated ambas",
+      "label": null
+    },
+    {
+      "tail": "chestily unconditionated ambas",
+      "head": "Carlos",
+      "label": null
+    },
+    {
+      "tail": "Carlos",
+      "head": "napiform gigster redissection",
+      "label": "YES"
+    },
+    {
+      "tail": "Carlos",
+      "head": "convector agrege",
+      "label": "YES"
+    },
+    {
+      "tail": "napiform gigster redissection",
+      "head": "agalite Arctalian decampment",
+      "label": "YES"
+    },
+    {
+      "tail": "napiform gigster redissection",
+      "head": "baseness Canton",
+      "label": "YES"
+    },
+    {
+      "tail": "agalite Arctalian decampment",
+      "head": "baseness Canton",
+      "label": null
+    },
+    {
+      "tail": "baseness Canton",
+      "head": "Celt Hanuman alectryomancy",
+      "label": null
+    },
+    {
+      "tail": "Celt Hanuman alectryomancy",
+      "head": "fleabite",
+      "label": null
+    },
+    {
+      "tail": "fleabite",
+      "head": "mockful telltale Tuba",
+      "label": null
+    },
+    {
+      "tail": "mockful telltale Tuba",
+      "head": "replevin",
+      "label": "yes"
+    },
+    {
+      "tail": "mockful telltale Tuba",
+      "head": "convector agrege",
+      "label": "yes"
+    },
+    {
+      "tail": "replevin",
+      "head": "Guayaqui",
+      "label": "YES"
+    },
+    {
+      "tail": "replevin",
+      "head": "isoxazine",
+      "label": "YES"
+    },
+    {
+      "tail": "Guayaqui",
+      "head": "agrestal dendrophilous cutty",
+      "label": null
+    }
+  ]
+}

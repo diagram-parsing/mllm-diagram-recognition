@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "howdah",
+      "id": "howdah",
+      "class": "oval"
+    },
+    {
+      "text": "Veronicella",
+      "id": "Veronicella",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hypocrisy",
+      "id": "hypocrisy",
+      "class": "diamond"
+    },
+    {
+      "text": "iridoceratitic",
+      "id": "iridoceratitic",
+      "class": "box"
+    },
+    {
+      "text": "curio",
+      "id": "curio",
+      "class": "diamond"
+    },
+    {
+      "text": "periglottic",
+      "id": "periglottic",
+      "class": "box"
+    },
+    {
+      "text": "befringe",
+      "id": "befringe",
+      "class": "parallelogram"
+    },
+    {
+      "text": "picryl preacceptance",
+      "id": "picryl preacceptance",
+      "class": "oval"
+    },
+    {
+      "text": "crosshaul construct",
+      "id": "crosshaul construct",
+      "class": "box"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "howdah",
+      "head": "Veronicella",
+      "label": null
+    },
+    {
+      "tail": "Veronicella",
+      "head": "hypocrisy",
+      "label": null
+    },
+    {
+      "tail": "hypocrisy",
+      "head": "iridoceratitic",
+      "label": "NO"
+    },
+    {
+      "tail": "hypocrisy",
+      "head": "curio",
+      "label": "NO"
+    },
+    {
+      "tail": "iridoceratitic",
+      "head": "periglottic",
+      "label": null
+    },
+    {
+      "tail": "periglottic",
+      "head": "curio",
+      "label": null
+    },
+    {
+      "tail": "curio",
+      "head": "befringe",
+      "label": "NO"
+    },
+    {
+      "tail": "curio",
+      "head": "picryl preacceptance",
+      "label": "NO"
+    },
+    {
+      "tail": "befringe",
+      "head": "crosshaul construct",
+      "label": null
+    },
+    {
+      "tail": "crosshaul construct",
+      "head": "picryl preacceptance",
+      "label": null
+    }
+  ]
+}

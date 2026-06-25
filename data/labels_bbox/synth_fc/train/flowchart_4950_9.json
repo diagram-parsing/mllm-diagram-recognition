@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "Irritila egipto zeunerite",
+      "id": "Irritila egipto zeunerite",
+      "class": "circle",
+      "bbox": [
+        13,
+        5,
+        122,
+        115
+      ]
+    },
+    {
+      "text": "demiflouncing henad",
+      "id": "demiflouncing henad",
+      "class": "document",
+      "bbox": [
+        26,
+        125,
+        108,
+        177
+      ]
+    },
+    {
+      "text": "asininely",
+      "id": "asininely",
+      "class": "document",
+      "bbox": [
+        28,
+        217,
+        107,
+        269
+      ]
+    },
+    {
+      "text": "estrone",
+      "id": "estrone",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        310,
+        129,
+        358
+      ]
+    },
+    {
+      "text": "Erythroxylum",
+      "id": "Erythroxylum",
+      "class": "diamond",
+      "bbox": [
+        168,
+        36,
+        326,
+        84
+      ]
+    },
+    {
+      "text": "clientship",
+      "id": "clientship",
+      "class": "diamond",
+      "bbox": [
+        201,
+        115,
+        299,
+        188
+      ]
+    },
+    {
+      "text": "trichomoniasis",
+      "id": "trichomoniasis",
+      "class": "document",
+      "bbox": [
+        211,
+        217,
+        289,
+        269
+      ]
+    },
+    {
+      "text": "postepileptic",
+      "id": "postepileptic",
+      "class": "box",
+      "bbox": [
+        214,
+        310,
+        286,
+        358
+      ]
+    },
+    {
+      "text": "lodgeman",
+      "id": "lodgeman",
+      "class": "ellipse",
+      "bbox": [
+        205,
+        379,
+        294,
+        421
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Irritila egipto zeunerite",
+      "head": "demiflouncing henad",
+      "label": null,
+      "bbox": [
+        63,
+        110,
+        72,
+        123
+      ]
+    },
+    {
+      "tail": "demiflouncing henad",
+      "head": "asininely",
+      "label": null,
+      "bbox": [
+        63,
+        177,
+        72,
+        214
+      ]
+    },
+    {
+      "tail": "asininely",
+      "head": "estrone",
+      "label": null,
+      "bbox": [
+        63,
+        269,
+        72,
+        307
+      ]
+    },
+    {
+      "tail": "estrone",
+      "head": "Erythroxylum",
+      "label": null,
+      "bbox": [
+        117,
+        68,
+        189,
+        335
+      ]
+    },
+    {
+      "tail": "Erythroxylum",
+      "head": "clientship",
+      "label": "no",
+      "bbox": [
+        245,
+        85,
+        255,
+        111
+      ]
+    },
+    {
+      "tail": "Erythroxylum",
+      "head": "Irritila egipto zeunerite",
+      "label": "no",
+      "bbox": [
+        125,
+        57,
+        171,
+        66
+      ]
+    },
+    {
+      "tail": "clientship",
+      "head": "trichomoniasis",
+      "label": "YES",
+      "bbox": [
+        245,
+        189,
+        255,
+        214
+      ]
+    },
+    {
+      "tail": "clientship",
+      "head": "estrone",
+      "label": "YES",
+      "bbox": [
+        110,
+        184,
+        243,
+        307
+      ]
+    },
+    {
+      "tail": "trichomoniasis",
+      "head": "postepileptic",
+      "label": null,
+      "bbox": [
+        245,
+        269,
+        255,
+        307
+      ]
+    },
+    {
+      "tail": "postepileptic",
+      "head": "lodgeman",
+      "label": null,
+      "bbox": [
+        245,
+        358,
+        255,
+        376
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "cliffless",
+      "id": "cliffless",
+      "class": "node",
+      "bbox": [
+        27,
+        221,
+        101,
+        269
+      ]
+    },
+    {
+      "text": "agentival crosstail",
+      "id": "agentival crosstail",
+      "class": "node",
+      "bbox": [
+        236,
+        209,
+        368,
+        280
+      ]
+    },
+    {
+      "text": "lamentational",
+      "id": "lamentational",
+      "class": "node",
+      "bbox": [
+        240,
+        113,
+        363,
+        184
+      ]
+    },
+    {
+      "text": "industrochemical figury",
+      "id": "industrochemical figury",
+      "class": "node",
+      "bbox": [
+        260,
+        347,
+        343,
+        395
+      ]
+    },
+    {
+      "text": "priorate",
+      "id": "priorate",
+      "class": "node",
+      "bbox": [
+        524,
+        385,
+        612,
+        456
+      ]
+    },
+    {
+      "text": "archeocyte",
+      "id": "archeocyte",
+      "class": "node",
+      "bbox": [
+        497,
+        313,
+        639,
+        361
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "cliffless",
+      "head": "agentival crosstail",
+      "label": "0.12 h = 0.646",
+      "class": "unidirectional",
+      "bbox": [
+        101,
+        238,
+        234,
+        252
+      ]
+    },
+    {
+      "tail": "cliffless",
+      "head": "lamentational",
+      "label": "0.223",
+      "class": "unidirectional",
+      "bbox": [
+        82,
+        147,
+        238,
+        220
+      ]
+    },
+    {
+      "tail": "industrochemical figury",
+      "head": "priorate",
+      "label": "0.5284",
+      "class": "unidirectional",
+      "bbox": [
+        344,
+        383,
+        523,
+        420
+      ]
+    },
+    {
+      "tail": "industrochemical figury",
+      "head": "archeocyte",
+      "label": "0.97 f = 0.857",
+      "class": "unidirectional",
+      "bbox": [
+        344,
+        341,
+        500,
+        366
+      ]
+    },
+    {
+      "tail": "cliffless",
+      "head": "industrochemical figury",
+      "label": "0.13",
+      "class": "bidirectional",
+      "bbox": [
+        120,
+        278,
+        258,
+        351
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "text": "intrashop",
+      "id": "intrashop",
+      "class": "node",
+      "bbox": [
+        609,
+        27,
+        701,
+        90
+      ]
+    },
+    {
+      "text": "protoforaminifer pave",
+      "id": "protoforaminifer pave",
+      "class": "node",
+      "bbox": [
+        317,
+        112,
+        488,
+        184
+      ]
+    },
+    {
+      "text": "postcardiac Lamanite semiglaze",
+      "id": "postcardiac Lamanite semiglaze",
+      "class": "node",
+      "bbox": [
+        286,
+        208,
+        519,
+        280
+      ]
+    },
+    {
+      "text": "concorporate",
+      "id": "concorporate",
+      "class": "node",
+      "bbox": [
+        320,
+        304,
+        485,
+        352
+      ]
+    },
+    {
+      "text": "persecuting",
+      "id": "persecuting",
+      "class": "node",
+      "bbox": [
+        339,
+        40,
+        466,
+        88
+      ]
+    },
+    {
+      "text": "upstare buba",
+      "id": "upstare buba",
+      "class": "node",
+      "bbox": [
+        42,
+        112,
+        157,
+        184
+      ]
+    },
+    {
+      "text": "malinstruction robot",
+      "id": "malinstruction robot",
+      "class": "node",
+      "bbox": [
+        5,
+        208,
+        194,
+        280
+      ]
+    },
+    {
+      "text": "Hukbalahap",
+      "id": "Hukbalahap",
+      "class": "node",
+      "bbox": [
+        33,
+        40,
+        166,
+        88
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "intrashop",
+      "head": "protoforaminifer pave",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        468,
+        73,
+        614,
+        127
+      ]
+    },
+    {
+      "tail": "intrashop",
+      "head": "postcardiac Lamanite semiglaze",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        474,
+        84,
+        629,
+        216
+      ]
+    },
+    {
+      "tail": "intrashop",
+      "head": "concorporate",
+      "label": "-1",
+      "class": "unidirectional",
+      "bbox": [
+        460,
+        89,
+        639,
+        313
+      ]
+    },
+    {
+      "tail": "persecuting",
+      "head": "upstare buba",
+      "label": "0.17*** H = 0.244",
+      "class": "unidirectional",
+      "bbox": [
+        153,
+        79,
+        352,
+        138
+      ]
+    },
+    {
+      "tail": "persecuting",
+      "head": "malinstruction robot",
+      "label": "-0.06 y = 0.912",
+      "class": "unidirectional",
+      "bbox": [
+        157,
+        79,
+        352,
+        215
+      ]
+    },
+    {
+      "tail": "intrashop",
+      "head": "persecuting",
+      "label": "0.19 a = 0.175",
+      "class": "unidirectional",
+      "bbox": [
+        467,
+        53,
+        609,
+        71
+      ]
+    },
+    {
+      "tail": "persecuting",
+      "head": "Hukbalahap",
+      "label": "0.63** H = 0.859",
+      "class": "bidirectional",
+      "bbox": [
+        166,
+        55,
+        318,
+        73
+      ]
+    }
+  ]
+}

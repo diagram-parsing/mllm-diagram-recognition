@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "text": "reabsent demivol",
+      "id": "reabsent demivol",
+      "class": "circle",
+      "bbox": [
+        28,
+        21,
+        109,
+        102
+      ]
+    },
+    {
+      "text": "canjac",
+      "id": "canjac",
+      "class": "parallelogram",
+      "bbox": [
+        11,
+        116,
+        126,
+        164
+      ]
+    },
+    {
+      "text": "hierarchal",
+      "id": "hierarchal",
+      "class": "diamond",
+      "bbox": [
+        5,
+        194,
+        131,
+        242
+      ]
+    },
+    {
+      "text": "entosternal",
+      "id": "entosternal",
+      "class": "box",
+      "bbox": [
+        32,
+        292,
+        104,
+        334
+      ]
+    },
+    {
+      "text": "cantaloupe freshwoman",
+      "id": "cantaloupe freshwoman",
+      "class": "diamond",
+      "bbox": [
+        304,
+        5,
+        453,
+        79
+      ]
+    },
+    {
+      "text": "laudableness coarsish",
+      "id": "laudableness coarsish",
+      "class": "document",
+      "bbox": [
+        183,
+        38,
+        266,
+        86
+      ]
+    },
+    {
+      "text": "doctor",
+      "id": "doctor",
+      "class": "document",
+      "bbox": [
+        183,
+        116,
+        266,
+        164
+      ]
+    },
+    {
+      "text": "dumbledore curine",
+      "id": "dumbledore curine",
+      "class": "box",
+      "bbox": [
+        189,
+        174,
+        261,
+        222
+      ]
+    },
+    {
+      "text": "overdestructive funt",
+      "id": "overdestructive funt",
+      "class": "box",
+      "bbox": [
+        181,
+        253,
+        268,
+        301
+      ]
+    },
+    {
+      "text": "enallage",
+      "id": "enallage",
+      "class": "oval",
+      "bbox": [
+        345,
+        114,
+        417,
+        166
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "reabsent demivol",
+      "head": "canjac",
+      "label": null,
+      "bbox": [
+        62,
+        101,
+        74,
+        115
+      ]
+    },
+    {
+      "tail": "canjac",
+      "head": "hierarchal",
+      "label": null,
+      "bbox": [
+        62,
+        165,
+        74,
+        193
+      ]
+    },
+    {
+      "tail": "hierarchal",
+      "head": "entosternal",
+      "label": "Yes",
+      "bbox": [
+        62,
+        243,
+        74,
+        291
+      ]
+    },
+    {
+      "tail": "hierarchal",
+      "head": "cantaloupe freshwoman",
+      "label": "Yes",
+      "bbox": [
+        95,
+        50,
+        324,
+        233
+      ]
+    },
+    {
+      "tail": "entosternal",
+      "head": "laudableness coarsish",
+      "label": null,
+      "bbox": [
+        106,
+        56,
+        184,
+        321
+      ]
+    },
+    {
+      "tail": "laudableness coarsish",
+      "head": "doctor",
+      "label": null,
+      "bbox": [
+        219,
+        85,
+        231,
+        116
+      ]
+    },
+    {
+      "tail": "doctor",
+      "head": "dumbledore curine",
+      "label": null,
+      "bbox": [
+        219,
+        160,
+        231,
+        173
+      ]
+    },
+    {
+      "tail": "dumbledore curine",
+      "head": "overdestructive funt",
+      "label": null,
+      "bbox": [
+        219,
+        224,
+        231,
+        252
+      ]
+    },
+    {
+      "tail": "overdestructive funt",
+      "head": "cantaloupe freshwoman",
+      "label": null,
+      "bbox": [
+        269,
+        56,
+        338,
+        277
+      ]
+    },
+    {
+      "tail": "cantaloupe freshwoman",
+      "head": "enallage",
+      "label": "YES",
+      "bbox": [
+        375,
+        80,
+        387,
+        113
+      ]
+    },
+    {
+      "tail": "cantaloupe freshwoman",
+      "head": "laudableness coarsish",
+      "label": "YES",
+      "bbox": [
+        266,
+        52,
+        336,
+        64
+      ]
+    }
+  ]
+}

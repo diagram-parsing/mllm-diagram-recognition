@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "setirostral",
+      "id": "setirostral",
+      "class": "circle"
+    },
+    {
+      "text": "fractile",
+      "id": "fractile",
+      "class": "hexagon"
+    },
+    {
+      "text": "washin",
+      "id": "washin",
+      "class": "box"
+    },
+    {
+      "text": "oppressor",
+      "id": "oppressor",
+      "class": "diamond"
+    },
+    {
+      "text": "cimicoid hysterotomy foliose",
+      "id": "cimicoid hysterotomy foliose",
+      "class": "diamond"
+    },
+    {
+      "text": "episiocele tributer",
+      "id": "episiocele tributer",
+      "class": "document"
+    },
+    {
+      "text": "polyphobic",
+      "id": "polyphobic",
+      "class": "hexagon"
+    },
+    {
+      "text": "cubmaster",
+      "id": "cubmaster",
+      "class": "diamond"
+    },
+    {
+      "text": "canalling",
+      "id": "canalling",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "setirostral",
+      "head": "fractile",
+      "label": null
+    },
+    {
+      "tail": "fractile",
+      "head": "washin",
+      "label": null
+    },
+    {
+      "tail": "washin",
+      "head": "oppressor",
+      "label": null
+    },
+    {
+      "tail": "oppressor",
+      "head": "cimicoid hysterotomy foliose",
+      "label": "NO"
+    },
+    {
+      "tail": "oppressor",
+      "head": "washin",
+      "label": "NO"
+    },
+    {
+      "tail": "cimicoid hysterotomy foliose",
+      "head": "episiocele tributer",
+      "label": "NO"
+    },
+    {
+      "tail": "cimicoid hysterotomy foliose",
+      "head": "fractile",
+      "label": "NO"
+    },
+    {
+      "tail": "episiocele tributer",
+      "head": "polyphobic",
+      "label": null
+    },
+    {
+      "tail": "polyphobic",
+      "head": "cubmaster",
+      "label": null
+    },
+    {
+      "tail": "cubmaster",
+      "head": "canalling",
+      "label": "NO"
+    },
+    {
+      "tail": "cubmaster",
+      "head": "fractile",
+      "label": "NO"
+    }
+  ]
+}

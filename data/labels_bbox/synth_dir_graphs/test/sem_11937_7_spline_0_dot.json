@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "text": "Andarko",
+      "id": "Andarko",
+      "class": "node",
+      "bbox": [
+        49,
+        157,
+        164,
+        205
+      ]
+    },
+    {
+      "text": "plantlet chitinoid",
+      "id": "plantlet chitinoid",
+      "class": "node",
+      "bbox": [
+        5,
+        5,
+        93,
+        56
+      ]
+    },
+    {
+      "text": "nondeferential",
+      "id": "nondeferential",
+      "class": "node",
+      "bbox": [
+        116,
+        5,
+        214,
+        56
+      ]
+    },
+    {
+      "text": "syngenism mesomeric",
+      "id": "syngenism mesomeric",
+      "class": "node",
+      "bbox": [
+        195,
+        439,
+        316,
+        496
+      ]
+    },
+    {
+      "text": "mettle stour agricolite",
+      "id": "mettle stour agricolite",
+      "class": "node",
+      "bbox": [
+        195,
+        284,
+        316,
+        334
+      ]
+    },
+    {
+      "text": "talbot",
+      "id": "talbot",
+      "class": "node",
+      "bbox": [
+        341,
+        285,
+        413,
+        333
+      ]
+    },
+    {
+      "text": "vagotomy prostrike",
+      "id": "vagotomy prostrike",
+      "class": "node",
+      "bbox": [
+        51,
+        280,
+        162,
+        338
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Andarko",
+      "head": "plantlet chitinoid",
+      "label": "0.42*** t = 0.008",
+      "class": "unidirectional",
+      "bbox": [
+        46,
+        60,
+        83,
+        159
+      ]
+    },
+    {
+      "tail": "Andarko",
+      "head": "nondeferential",
+      "label": "0.5149",
+      "class": "unidirectional",
+      "bbox": [
+        122,
+        59,
+        161,
+        157
+      ]
+    },
+    {
+      "tail": "syngenism mesomeric",
+      "head": "mettle stour agricolite",
+      "label": "0.39 s = 0.751",
+      "class": "unidirectional",
+      "bbox": [
+        252,
+        338,
+        259,
+        438
+      ]
+    },
+    {
+      "tail": "syngenism mesomeric",
+      "head": "talbot",
+      "label": "-0.8** s = 0.477",
+      "class": "unidirectional",
+      "bbox": [
+        298,
+        336,
+        374,
+        446
+      ]
+    },
+    {
+      "tail": "vagotomy prostrike",
+      "head": "Andarko",
+      "label": "0.46",
+      "class": "unidirectional",
+      "bbox": [
+        103,
+        209,
+        110,
+        280
+      ]
+    },
+    {
+      "tail": "syngenism mesomeric",
+      "head": "vagotomy prostrike",
+      "label": "0.33* t = 0.402",
+      "class": "bidirectional",
+      "bbox": [
+        122,
+        340,
+        206,
+        437
+      ]
+    }
+  ]
+}

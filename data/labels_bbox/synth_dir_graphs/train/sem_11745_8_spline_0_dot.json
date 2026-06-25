@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "text": "unwishful",
+      "id": "unwishful",
+      "class": "node",
+      "bbox": [
+        111,
+        337,
+        183,
+        385
+      ]
+    },
+    {
+      "text": "uncomplimentary",
+      "id": "uncomplimentary",
+      "class": "node",
+      "bbox": [
+        54,
+        178,
+        198,
+        249
+      ]
+    },
+    {
+      "text": "softhead",
+      "id": "softhead",
+      "class": "node",
+      "bbox": [
+        222,
+        189,
+        294,
+        237
+      ]
+    },
+    {
+      "text": "superinference",
+      "id": "superinference",
+      "class": "node",
+      "bbox": [
+        5,
+        5,
+        134,
+        77
+      ]
+    },
+    {
+      "text": "Christogram warping Apoda",
+      "id": "Christogram warping Apoda",
+      "class": "node",
+      "bbox": [
+        158,
+        5,
+        358,
+        77
+      ]
+    },
+    {
+      "text": "antecavern whatreck spectrosco",
+      "id": "antecavern whatreck spectrosco",
+      "class": "node",
+      "bbox": [
+        382,
+        5,
+        609,
+        77
+      ]
+    },
+    {
+      "text": "tarentala amphorous Rauraci",
+      "id": "tarentala amphorous Rauraci",
+      "class": "node",
+      "bbox": [
+        167,
+        497,
+        261,
+        545
+      ]
+    },
+    {
+      "text": "sacerdotal grouser",
+      "id": "sacerdotal grouser",
+      "class": "node",
+      "bbox": [
+        207,
+        325,
+        354,
+        397
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unwishful",
+      "head": "uncomplimentary",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        127,
+        256,
+        144,
+        336
+      ]
+    },
+    {
+      "tail": "softhead",
+      "head": "superinference",
+      "label": "-0.33** x = 0.024",
+      "class": "unidirectional",
+      "bbox": [
+        103,
+        79,
+        226,
+        189
+      ]
+    },
+    {
+      "tail": "softhead",
+      "head": "Christogram warping Apoda",
+      "label": "0.0589",
+      "class": "unidirectional",
+      "bbox": [
+        251,
+        85,
+        265,
+        189
+      ]
+    },
+    {
+      "tail": "softhead",
+      "head": "antecavern whatreck spectrosco",
+      "label": "0.54",
+      "class": "unidirectional",
+      "bbox": [
+        291,
+        79,
+        447,
+        189
+      ]
+    },
+    {
+      "tail": "tarentala amphorous Rauraci",
+      "head": "sacerdotal grouser",
+      "label": "0.33*** t = 0.05",
+      "class": "unidirectional",
+      "bbox": [
+        229,
+        404,
+        270,
+        497
+      ]
+    },
+    {
+      "tail": "unwishful",
+      "head": "softhead",
+      "label": "0.96",
+      "class": "bidirectional",
+      "bbox": [
+        182,
+        243,
+        236,
+        314
+      ]
+    },
+    {
+      "tail": "tarentala amphorous Rauraci",
+      "head": "unwishful",
+      "label": "-0.3** y = 0.989",
+      "class": "bidirectional",
+      "bbox": [
+        139,
+        393,
+        162,
+        476
+      ]
+    }
+  ]
+}

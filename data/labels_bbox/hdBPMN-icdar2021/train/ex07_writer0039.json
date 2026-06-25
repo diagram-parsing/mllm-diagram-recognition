@@ -1,0 +1,536 @@
+{
+  "nodes": [
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1225,
+        323,
+        1319,
+        406
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        501,
+        350,
+        536,
+        384
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        840,
+        343,
+        880,
+        384
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        963,
+        348,
+        999,
+        385
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "bbox": [
+        1394,
+        333,
+        1433,
+        381
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        402,
+        716,
+        453,
+        759
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "review request sent",
+      "id": "review request sent",
+      "bbox": [
+        373,
+        825,
+        467,
+        905
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        638,
+        846,
+        715,
+        917
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "review received",
+      "id": "review received",
+      "bbox": [
+        814,
+        844,
+        908,
+        909
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Forward review",
+      "id": "Forward review",
+      "bbox": [
+        949,
+        729,
+        1073,
+        798
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send check",
+      "id": "send check",
+      "bbox": [
+        1128,
+        729,
+        1252,
+        784
+      ],
+      "class": "task"
+    },
+    {
+      "text": "File everything",
+      "id": "File everything",
+      "bbox": [
+        1059,
+        313,
+        1175,
+        404
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "bbox": [
+        642,
+        689,
+        713,
+        755
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "rating finished",
+      "id": "rating finished",
+      "bbox": [
+        1493,
+        341,
+        1527,
+        363
+      ],
+      "class": "event"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        604,
+        316,
+        756,
+        406
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "rating started",
+      "id": "rating started",
+      "bbox": [
+        366,
+        347,
+        402,
+        383
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_4",
+      "head": "rating finished",
+      "class": "sequenceFlow",
+      "bbox": [
+        1434,
+        340,
+        1494,
+        373
+      ],
+      "label": null
+    },
+    {
+      "tail": "review received",
+      "head": "Forward review",
+      "class": "sequenceFlow",
+      "bbox": [
+        908,
+        798,
+        1015,
+        880
+      ],
+      "label": null
+    },
+    {
+      "tail": "timerEvent_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        450,
+        709,
+        644,
+        742
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1319,
+        345,
+        1396,
+        378
+      ],
+      "label": null
+    },
+    {
+      "tail": "File everything",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1175,
+        346,
+        1226,
+        379
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "File everything",
+      "class": "sequenceFlow",
+      "bbox": [
+        998,
+        346,
+        1060,
+        379
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        878,
+        350,
+        966,
+        383
+      ],
+      "label": null
+    },
+    {
+      "tail": "send check",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1225,
+        381,
+        1415,
+        730
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "send check",
+      "class": "sequenceFlow",
+      "bbox": [
+        978,
+        383,
+        1139,
+        726
+      ],
+      "label": null
+    },
+    {
+      "tail": "Forward review",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        839,
+        379,
+        992,
+        730
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "review received",
+      "class": "sequenceFlow",
+      "bbox": [
+        713,
+        864,
+        815,
+        897
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        664,
+        758,
+        698,
+        851
+      ],
+      "label": null
+    },
+    {
+      "tail": "review request sent",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        466,
+        857,
+        640,
+        890
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "review request sent",
+      "class": "sequenceFlow",
+      "bbox": [
+        412,
+        758,
+        445,
+        819
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        427,
+        384,
+        520,
+        717
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        756,
+        347,
+        843,
+        381
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        535,
+        349,
+        606,
+        382
+      ],
+      "label": null
+    },
+    {
+      "tail": "rating started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        402,
+        349,
+        505,
+        382
+      ],
+      "label": null
+    },
+    {
+      "tail": "Patient",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "bbox": [
+        699,
+        219,
+        733,
+        317
+      ],
+      "label": "answer"
+    },
+    {
+      "tail": "interview patients",
+      "head": "Patient",
+      "class": "messageFlow",
+      "bbox": [
+        617,
+        219,
+        650,
+        317
+      ],
+      "label": "Interview question"
+    },
+    {
+      "tail": "review request sent",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        404,
+        912,
+        437,
+        1185
+      ],
+      "label": "review request"
+    },
+    {
+      "tail": "external expert",
+      "head": "review received",
+      "class": "messageFlow",
+      "bbox": [
+        841,
+        923,
+        874,
+        1185
+      ],
+      "label": "review"
+    },
+    {
+      "tail": "send check",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        1209,
+        784,
+        1242,
+        1185
+      ],
+      "label": "check"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "director",
+        "QA specialist"
+      ],
+      "bbox": [
+        246,
+        302,
+        1570,
+        1102
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "director",
+      "nodes": [
+        "exclusiveGateway_1",
+        "review request sent",
+        "eventBasedGateway_1",
+        "review received",
+        "Forward review",
+        "send check",
+        "timerEvent_1"
+      ],
+      "bbox": [
+        288,
+        674,
+        1569,
+        1101
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "File everything",
+        "rating finished",
+        "interview patients",
+        "rating started"
+      ],
+      "bbox": [
+        288,
+        302,
+        1570,
+        674
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "bbox": [
+        246,
+        1183,
+        1363,
+        1266
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "bbox": [
+        246,
+        144,
+        1363,
+        219
+      ],
+      "class": "pool"
+    }
+  ]
+}

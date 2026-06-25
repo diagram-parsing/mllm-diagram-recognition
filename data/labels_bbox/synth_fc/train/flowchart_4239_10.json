@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "text": "Rotal",
+      "id": "Rotal",
+      "class": "oval",
+      "bbox": [
+        20,
+        18,
+        92,
+        66
+      ]
+    },
+    {
+      "text": "actinoneuritis chromocollograp",
+      "id": "actinoneuritis chromocollograp",
+      "class": "box",
+      "bbox": [
+        9,
+        103,
+        103,
+        151
+      ]
+    },
+    {
+      "text": "April",
+      "id": "April",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        210,
+        107,
+        258
+      ]
+    },
+    {
+      "text": "paster",
+      "id": "paster",
+      "class": "document",
+      "bbox": [
+        13,
+        269,
+        99,
+        322
+      ]
+    },
+    {
+      "text": "doomsday",
+      "id": "doomsday",
+      "class": "diamond",
+      "bbox": [
+        175,
+        5,
+        278,
+        79
+      ]
+    },
+    {
+      "text": "Herbert",
+      "id": "Herbert",
+      "class": "parallelogram",
+      "bbox": [
+        162,
+        103,
+        291,
+        151
+      ]
+    },
+    {
+      "text": "overintense organologic",
+      "id": "overintense organologic",
+      "class": "diamond",
+      "bbox": [
+        149,
+        176,
+        304,
+        249
+      ]
+    },
+    {
+      "text": "photonegative",
+      "id": "photonegative",
+      "class": "parallelogram",
+      "bbox": [
+        140,
+        274,
+        314,
+        322
+      ]
+    },
+    {
+      "text": "notencephalus",
+      "id": "notencephalus",
+      "class": "diamond",
+      "bbox": [
+        341,
+        176,
+        448,
+        249
+      ]
+    },
+    {
+      "text": "crapulent",
+      "id": "crapulent",
+      "class": "oval",
+      "bbox": [
+        355,
+        274,
+        440,
+        322
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Rotal",
+      "head": "actinoneuritis chromocollograp",
+      "label": null,
+      "bbox": [
+        39,
+        65,
+        49,
+        102
+      ]
+    },
+    {
+      "tail": "actinoneuritis chromocollograp",
+      "head": "April",
+      "label": null,
+      "bbox": [
+        51,
+        152,
+        61,
+        208
+      ]
+    },
+    {
+      "tail": "April",
+      "head": "paster",
+      "label": null,
+      "bbox": [
+        51,
+        254,
+        61,
+        268
+      ]
+    },
+    {
+      "tail": "paster",
+      "head": "doomsday",
+      "label": null,
+      "bbox": [
+        99,
+        67,
+        214,
+        286
+      ]
+    },
+    {
+      "tail": "doomsday",
+      "head": "Herbert",
+      "label": "YES",
+      "bbox": [
+        222,
+        79,
+        231,
+        102
+      ]
+    },
+    {
+      "tail": "doomsday",
+      "head": "paster",
+      "label": "YES",
+      "bbox": [
+        101,
+        75,
+        221,
+        303
+      ]
+    },
+    {
+      "tail": "Herbert",
+      "head": "overintense organologic",
+      "label": null,
+      "bbox": [
+        222,
+        152,
+        231,
+        174
+      ]
+    },
+    {
+      "tail": "overintense organologic",
+      "head": "photonegative",
+      "label": "yes",
+      "bbox": [
+        222,
+        250,
+        231,
+        272
+      ]
+    },
+    {
+      "tail": "overintense organologic",
+      "head": "paster",
+      "label": "yes",
+      "bbox": [
+        100,
+        230,
+        185,
+        315
+      ]
+    },
+    {
+      "tail": "photonegative",
+      "head": "notencephalus",
+      "label": null,
+      "bbox": [
+        296,
+        219,
+        352,
+        298
+      ]
+    },
+    {
+      "tail": "notencephalus",
+      "head": "crapulent",
+      "label": "yes",
+      "bbox": [
+        393,
+        250,
+        402,
+        272
+      ]
+    },
+    {
+      "tail": "notencephalus",
+      "head": "Rotal",
+      "label": "yes",
+      "bbox": [
+        63,
+        66,
+        397,
+        176
+      ]
+    }
+  ]
+}

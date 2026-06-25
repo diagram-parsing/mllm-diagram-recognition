@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "snecket",
+      "id": "snecket",
+      "class": "circle"
+    },
+    {
+      "text": "synesis",
+      "id": "synesis",
+      "class": "document"
+    },
+    {
+      "text": "jangly",
+      "id": "jangly",
+      "class": "diamond"
+    },
+    {
+      "text": "photophane",
+      "id": "photophane",
+      "class": "box"
+    },
+    {
+      "text": "holstered",
+      "id": "holstered",
+      "class": "diamond"
+    },
+    {
+      "text": "protoforaminifer pave",
+      "id": "protoforaminifer pave",
+      "class": "parallelogram"
+    },
+    {
+      "text": "cockneyize",
+      "id": "cockneyize",
+      "class": "parallelogram"
+    },
+    {
+      "text": "melancholily acapu",
+      "id": "melancholily acapu",
+      "class": "hexagon"
+    },
+    {
+      "text": "metaphysicous cystogram",
+      "id": "metaphysicous cystogram",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "snecket",
+      "head": "synesis",
+      "label": null
+    },
+    {
+      "tail": "synesis",
+      "head": "jangly",
+      "label": null
+    },
+    {
+      "tail": "jangly",
+      "head": "photophane",
+      "label": "YES"
+    },
+    {
+      "tail": "jangly",
+      "head": "snecket",
+      "label": "YES"
+    },
+    {
+      "tail": "photophane",
+      "head": "holstered",
+      "label": null
+    },
+    {
+      "tail": "holstered",
+      "head": "protoforaminifer pave",
+      "label": "No"
+    },
+    {
+      "tail": "holstered",
+      "head": "snecket",
+      "label": "No"
+    },
+    {
+      "tail": "protoforaminifer pave",
+      "head": "cockneyize",
+      "label": null
+    },
+    {
+      "tail": "cockneyize",
+      "head": "melancholily acapu",
+      "label": null
+    },
+    {
+      "tail": "melancholily acapu",
+      "head": "metaphysicous cystogram",
+      "label": null
+    }
+  ]
+}

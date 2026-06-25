@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "magnetooptics leopardine",
+      "id": "magnetooptics leopardine",
+      "class": "oval"
+    },
+    {
+      "text": "Sabbathize",
+      "id": "Sabbathize",
+      "class": "document"
+    },
+    {
+      "text": "inquisitorial",
+      "id": "inquisitorial",
+      "class": "hexagon"
+    },
+    {
+      "text": "epirrhema",
+      "id": "epirrhema",
+      "class": "document"
+    },
+    {
+      "text": "Mossi valiantly pyroglutamic",
+      "id": "Mossi valiantly pyroglutamic",
+      "class": "diamond"
+    },
+    {
+      "text": "Zygadenus partition",
+      "id": "Zygadenus partition",
+      "class": "parallelogram"
+    },
+    {
+      "text": "violaceous diaschisis",
+      "id": "violaceous diaschisis",
+      "class": "circle"
+    },
+    {
+      "text": "kindredless",
+      "id": "kindredless",
+      "class": "box"
+    },
+    {
+      "text": "abnormity",
+      "id": "abnormity",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "magnetooptics leopardine",
+      "head": "Sabbathize",
+      "label": null
+    },
+    {
+      "tail": "Sabbathize",
+      "head": "inquisitorial",
+      "label": null
+    },
+    {
+      "tail": "inquisitorial",
+      "head": "epirrhema",
+      "label": null
+    },
+    {
+      "tail": "epirrhema",
+      "head": "Mossi valiantly pyroglutamic",
+      "label": null
+    },
+    {
+      "tail": "Mossi valiantly pyroglutamic",
+      "head": "Zygadenus partition",
+      "label": "YES"
+    },
+    {
+      "tail": "Mossi valiantly pyroglutamic",
+      "head": "violaceous diaschisis",
+      "label": "YES"
+    },
+    {
+      "tail": "Zygadenus partition",
+      "head": "kindredless",
+      "label": null
+    },
+    {
+      "tail": "kindredless",
+      "head": "abnormity",
+      "label": null
+    },
+    {
+      "tail": "abnormity",
+      "head": "violaceous diaschisis",
+      "label": "no"
+    },
+    {
+      "tail": "abnormity",
+      "head": "kindredless",
+      "label": "no"
+    }
+  ]
+}

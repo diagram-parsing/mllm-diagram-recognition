@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "steinkirk orthometopic Callist",
+      "id": "steinkirk orthometopic Callist",
+      "class": "ellipse"
+    },
+    {
+      "text": "imidazolyl",
+      "id": "imidazolyl",
+      "class": "hexagon"
+    },
+    {
+      "text": "granulate ureterocolostomy",
+      "id": "granulate ureterocolostomy",
+      "class": "diamond"
+    },
+    {
+      "text": "hydronegative squireen",
+      "id": "hydronegative squireen",
+      "class": "document"
+    },
+    {
+      "text": "exterminable glegness",
+      "id": "exterminable glegness",
+      "class": "diamond"
+    },
+    {
+      "text": "preconizer",
+      "id": "preconizer",
+      "class": "document"
+    },
+    {
+      "text": "manify overlightheaded heinous",
+      "id": "manify overlightheaded heinous",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "steinkirk orthometopic Callist",
+      "head": "imidazolyl",
+      "label": null
+    },
+    {
+      "tail": "imidazolyl",
+      "head": "granulate ureterocolostomy",
+      "label": null
+    },
+    {
+      "tail": "granulate ureterocolostomy",
+      "head": "hydronegative squireen",
+      "label": "no"
+    },
+    {
+      "tail": "granulate ureterocolostomy",
+      "head": "steinkirk orthometopic Callist",
+      "label": "no"
+    },
+    {
+      "tail": "hydronegative squireen",
+      "head": "exterminable glegness",
+      "label": null
+    },
+    {
+      "tail": "exterminable glegness",
+      "head": "preconizer",
+      "label": "Yes"
+    },
+    {
+      "tail": "exterminable glegness",
+      "head": "hydronegative squireen",
+      "label": "Yes"
+    },
+    {
+      "tail": "preconizer",
+      "head": "manify overlightheaded heinous",
+      "label": null
+    }
+  ]
+}

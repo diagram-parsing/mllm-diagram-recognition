@@ -1,0 +1,292 @@
+{
+  "nodes": [
+    {
+      "text": "muggins",
+      "id": "muggins",
+      "class": "circle",
+      "bbox": [
+        44,
+        5,
+        140,
+        101
+      ]
+    },
+    {
+      "text": "wring",
+      "id": "wring",
+      "class": "document",
+      "bbox": [
+        43,
+        152,
+        142,
+        210
+      ]
+    },
+    {
+      "text": "anticonstitutionalist",
+      "id": "anticonstitutionalist",
+      "class": "diamond",
+      "bbox": [
+        23,
+        221,
+        162,
+        294
+      ]
+    },
+    {
+      "text": "inapprehensiveness",
+      "id": "inapprehensiveness",
+      "class": "hexagon",
+      "bbox": [
+        5,
+        362,
+        179,
+        410
+      ]
+    },
+    {
+      "text": "Lethean tinge",
+      "id": "Lethean tinge",
+      "class": "box",
+      "bbox": [
+        465,
+        464,
+        537,
+        512
+      ]
+    },
+    {
+      "text": "vaporous",
+      "id": "vaporous",
+      "class": "parallelogram",
+      "bbox": [
+        235,
+        157,
+        359,
+        205
+      ]
+    },
+    {
+      "text": "interarmy",
+      "id": "interarmy",
+      "class": "diamond",
+      "bbox": [
+        235,
+        259,
+        358,
+        307
+      ]
+    },
+    {
+      "text": "remisrepresent enteroid",
+      "id": "remisrepresent enteroid",
+      "class": "diamond",
+      "bbox": [
+        217,
+        349,
+        376,
+        422
+      ]
+    },
+    {
+      "text": "oxamid",
+      "id": "oxamid",
+      "class": "document",
+      "bbox": [
+        247,
+        458,
+        346,
+        517
+      ]
+    },
+    {
+      "text": "befop affordable",
+      "id": "befop affordable",
+      "class": "document",
+      "bbox": [
+        452,
+        254,
+        551,
+        313
+      ]
+    },
+    {
+      "text": "unbait Jacobinism theatropolis",
+      "id": "unbait Jacobinism theatropolis",
+      "class": "box",
+      "bbox": [
+        455,
+        336,
+        547,
+        384
+      ]
+    },
+    {
+      "text": "mosquitoproof",
+      "id": "mosquitoproof",
+      "class": "ellipse",
+      "bbox": [
+        441,
+        566,
+        556,
+        609
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "muggins",
+      "head": "wring",
+      "label": null,
+      "bbox": [
+        88,
+        101,
+        97,
+        152
+      ]
+    },
+    {
+      "tail": "wring",
+      "head": "anticonstitutionalist",
+      "label": null,
+      "bbox": [
+        88,
+        208,
+        97,
+        221
+      ]
+    },
+    {
+      "tail": "anticonstitutionalist",
+      "head": "inapprehensiveness",
+      "label": "Yes",
+      "bbox": [
+        88,
+        294,
+        97,
+        362
+      ]
+    },
+    {
+      "tail": "anticonstitutionalist",
+      "head": "Lethean tinge",
+      "label": "Yes",
+      "bbox": [
+        124,
+        238,
+        466,
+        485
+      ]
+    },
+    {
+      "tail": "inapprehensiveness",
+      "head": "vaporous",
+      "label": null,
+      "bbox": [
+        170,
+        177,
+        247,
+        381
+      ]
+    },
+    {
+      "tail": "vaporous",
+      "head": "interarmy",
+      "label": null,
+      "bbox": [
+        292,
+        205,
+        301,
+        259
+      ]
+    },
+    {
+      "tail": "interarmy",
+      "head": "remisrepresent enteroid",
+      "label": "no",
+      "bbox": [
+        292,
+        307,
+        301,
+        349
+      ]
+    },
+    {
+      "tail": "interarmy",
+      "head": "oxamid",
+      "label": "no",
+      "bbox": [
+        198,
+        302,
+        284,
+        493
+      ]
+    },
+    {
+      "tail": "remisrepresent enteroid",
+      "head": "oxamid",
+      "label": "NO",
+      "bbox": [
+        292,
+        422,
+        301,
+        459
+      ]
+    },
+    {
+      "tail": "remisrepresent enteroid",
+      "head": "muggins",
+      "label": "NO",
+      "bbox": [
+        140,
+        49,
+        226,
+        382
+      ]
+    },
+    {
+      "tail": "oxamid",
+      "head": "befop affordable",
+      "label": null,
+      "bbox": [
+        346,
+        279,
+        452,
+        497
+      ]
+    },
+    {
+      "tail": "befop affordable",
+      "head": "unbait Jacobinism theatropolis",
+      "label": null,
+      "bbox": [
+        497,
+        312,
+        506,
+        336
+      ]
+    },
+    {
+      "tail": "unbait Jacobinism theatropolis",
+      "head": "Lethean tinge",
+      "label": null,
+      "bbox": [
+        497,
+        383,
+        506,
+        464
+      ]
+    },
+    {
+      "tail": "Lethean tinge",
+      "head": "mosquitoproof",
+      "label": null,
+      "bbox": [
+        497,
+        511,
+        506,
+        566
+      ]
+    }
+  ]
+}

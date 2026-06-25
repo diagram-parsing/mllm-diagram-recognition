@@ -1,0 +1,416 @@
+{
+  "nodes": [
+    {
+      "text": "started new case",
+      "id": "started new case",
+      "bbox": [
+        166,
+        683,
+        209,
+        726
+      ],
+      "class": "event"
+    },
+    {
+      "text": "bills paid",
+      "id": "bills paid",
+      "bbox": [
+        1459,
+        425,
+        1501,
+        467
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1233,
+        611,
+        1386,
+        726
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        246,
+        687,
+        296,
+        736
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        769,
+        664,
+        832,
+        718
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "bbox": [
+        904,
+        621,
+        1022,
+        715
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1078,
+        645,
+        1133,
+        698
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "doctor rated",
+      "id": "doctor rated",
+      "bbox": [
+        1577,
+        647,
+        1619,
+        689
+      ],
+      "class": "event"
+    },
+    {
+      "text": "forward review",
+      "id": "forward review",
+      "bbox": [
+        734,
+        340,
+        881,
+        452
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Obtain review of doctors work",
+      "id": "Obtain review of doctors work",
+      "bbox": [
+        340,
+        364,
+        587,
+        493
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "conduct interviews",
+      "id": "conduct interviews",
+      "bbox": [
+        376,
+        634,
+        552,
+        775
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "pay expert",
+      "id": "pay expert",
+      "bbox": [
+        1222,
+        387,
+        1374,
+        493
+      ],
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "forward review",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        788,
+        452,
+        822,
+        666
+      ],
+      "label": null
+    },
+    {
+      "tail": "Obtain review of doctors work",
+      "head": "forward review",
+      "class": "sequenceFlow",
+      "bbox": [
+        587,
+        394,
+        735,
+        428
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Obtain review of doctors work",
+      "class": "sequenceFlow",
+      "bbox": [
+        258,
+        411,
+        341,
+        690
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "doctor rated",
+      "class": "sequenceFlow",
+      "bbox": [
+        1386,
+        665,
+        1582,
+        699
+      ],
+      "label": null
+    },
+    {
+      "tail": "pay expert",
+      "head": "bills paid",
+      "class": "sequenceFlow",
+      "bbox": [
+        1374,
+        430,
+        1460,
+        464
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "pay expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1105,
+        446,
+        1222,
+        647
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1129,
+        651,
+        1235,
+        685
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1022,
+        655,
+        1080,
+        689
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "bbox": [
+        819,
+        664,
+        905,
+        698
+      ],
+      "label": null
+    },
+    {
+      "tail": "conduct interviews",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        552,
+        682,
+        772,
+        716
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "conduct interviews",
+      "class": "sequenceFlow",
+      "bbox": [
+        295,
+        692,
+        376,
+        726
+      ],
+      "label": null
+    },
+    {
+      "tail": "started new case",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        209,
+        690,
+        250,
+        724
+      ],
+      "label": null
+    },
+    {
+      "tail": "Obtain review of doctors work",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        371,
+        187,
+        405,
+        365
+      ],
+      "label": "request review"
+    },
+    {
+      "tail": "external expert",
+      "head": "Obtain review of doctors work",
+      "class": "messageFlow",
+      "bbox": [
+        430,
+        188,
+        464,
+        365
+      ],
+      "label": "reciev review"
+    },
+    {
+      "tail": "pay expert",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        1252,
+        188,
+        1286,
+        388
+      ],
+      "label": "send cheque"
+    },
+    {
+      "tail": "conduct interviews",
+      "head": "patient",
+      "class": "messageFlow",
+      "bbox": [
+        406,
+        775,
+        440,
+        917
+      ],
+      "label": "ask questions"
+    },
+    {
+      "tail": "patient",
+      "head": "conduct interviews",
+      "class": "messageFlow",
+      "bbox": [
+        465,
+        775,
+        499,
+        917
+      ],
+      "label": "answer questions"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospitak",
+      "nodes": [
+        "QA",
+        "managing director"
+      ],
+      "bbox": [
+        47,
+        235,
+        1692,
+        857
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA",
+      "nodes": [
+        "started new case",
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "file results",
+        "parallelGateway_3",
+        "doctor rated",
+        "conduct interviews"
+      ],
+      "bbox": [
+        82,
+        546,
+        1692,
+        857
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "bills paid",
+        "forward review",
+        "Obtain review of doctors work",
+        "pay expert"
+      ],
+      "bbox": [
+        82,
+        235,
+        1692,
+        546
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "patient",
+      "nodes": [],
+      "bbox": [
+        82,
+        916,
+        1680,
+        1010
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "bbox": [
+        94,
+        105,
+        1645,
+        188
+      ],
+      "class": "pool"
+    }
+  ]
+}

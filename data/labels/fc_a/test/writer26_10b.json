@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "text": "start",
+      "id": "start",
+      "bbox": [
+        145,
+        4,
+        290,
+        132
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "input v",
+      "id": "input v",
+      "bbox": [
+        4,
+        269,
+        497,
+        199
+      ],
+      "class": "data"
+    },
+    {
+      "text": "v>0",
+      "id": "v>0",
+      "bbox": [
+        110,
+        554,
+        262,
+        205
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "output v",
+      "id": "output v",
+      "bbox": [
+        75,
+        919,
+        428,
+        156
+      ],
+      "class": "data"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "bbox": [
+        148,
+        1157,
+        264,
+        173
+      ],
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "start",
+      "head": "input v",
+      "bbox": [
+        246,
+        130,
+        62,
+        150
+      ],
+      "kps": [
+        284.0,
+        131.0,
+        2.0,
+        286.0,
+        278.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "input v",
+      "head": "v>0",
+      "bbox": [
+        220,
+        427,
+        62,
+        148
+      ],
+      "kps": [
+        263.0,
+        429.0,
+        2.0,
+        257.0,
+        572.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "v>0",
+      "head": "output v",
+      "bbox": [
+        232,
+        754,
+        63,
+        164
+      ],
+      "kps": [
+        276.0,
+        755.0,
+        2.0,
+        271.0,
+        916.0,
+        2.0
+      ],
+      "label": "true"
+    },
+    {
+      "tail": "output v",
+      "head": "end",
+      "bbox": [
+        228,
+        1068,
+        69,
+        124
+      ],
+      "kps": [
+        270.0,
+        1069.0,
+        2.0,
+        263.0,
+        1190.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

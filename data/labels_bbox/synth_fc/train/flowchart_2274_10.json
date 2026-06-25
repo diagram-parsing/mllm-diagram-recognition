@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "text": "nonplane",
+      "id": "nonplane",
+      "class": "circle",
+      "bbox": [
+        100,
+        5,
+        185,
+        91
+      ]
+    },
+    {
+      "text": "loading literacy",
+      "id": "loading literacy",
+      "class": "document",
+      "bbox": [
+        97,
+        129,
+        188,
+        191
+      ]
+    },
+    {
+      "text": "mesolite Grotian",
+      "id": "mesolite Grotian",
+      "class": "parallelogram",
+      "bbox": [
+        83,
+        235,
+        202,
+        309
+      ]
+    },
+    {
+      "text": "mindsight",
+      "id": "mindsight",
+      "class": "diamond",
+      "bbox": [
+        93,
+        319,
+        192,
+        393
+      ]
+    },
+    {
+      "text": "emboly",
+      "id": "emboly",
+      "class": "box",
+      "bbox": [
+        106,
+        444,
+        178,
+        492
+      ]
+    },
+    {
+      "text": "withertip",
+      "id": "withertip",
+      "class": "box",
+      "bbox": [
+        106,
+        584,
+        178,
+        627
+      ]
+    },
+    {
+      "text": "unmercenariness crystallology",
+      "id": "unmercenariness crystallology",
+      "class": "document",
+      "bbox": [
+        318,
+        17,
+        415,
+        79
+      ]
+    },
+    {
+      "text": "discredit Peelite",
+      "id": "discredit Peelite",
+      "class": "diamond",
+      "bbox": [
+        308,
+        151,
+        419,
+        225
+      ]
+    },
+    {
+      "text": "reputatively arrhenotokous",
+      "id": "reputatively arrhenotokous",
+      "class": "document",
+      "bbox": [
+        321,
+        241,
+        412,
+        303
+      ]
+    },
+    {
+      "text": "Chara cryptolite",
+      "id": "Chara cryptolite",
+      "class": "oval",
+      "bbox": [
+        322,
+        358,
+        411,
+        410
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "nonplane",
+      "head": "loading literacy",
+      "label": null,
+      "bbox": [
+        138,
+        90,
+        147,
+        129
+      ]
+    },
+    {
+      "tail": "loading literacy",
+      "head": "mesolite Grotian",
+      "label": null,
+      "bbox": [
+        138,
+        191,
+        147,
+        236
+      ]
+    },
+    {
+      "tail": "mesolite Grotian",
+      "head": "mindsight",
+      "label": null,
+      "bbox": [
+        138,
+        307,
+        147,
+        320
+      ]
+    },
+    {
+      "tail": "mindsight",
+      "head": "emboly",
+      "label": "YES",
+      "bbox": [
+        138,
+        392,
+        147,
+        444
+      ]
+    },
+    {
+      "tail": "mindsight",
+      "head": "nonplane",
+      "label": "YES",
+      "bbox": [
+        59,
+        44,
+        100,
+        356
+      ]
+    },
+    {
+      "tail": "emboly",
+      "head": "withertip",
+      "label": null,
+      "bbox": [
+        138,
+        492,
+        147,
+        584
+      ]
+    },
+    {
+      "tail": "withertip",
+      "head": "unmercenariness crystallology",
+      "label": null,
+      "bbox": [
+        178,
+        44,
+        319,
+        610
+      ]
+    },
+    {
+      "tail": "unmercenariness crystallology",
+      "head": "discredit Peelite",
+      "label": null,
+      "bbox": [
+        362,
+        79,
+        371,
+        152
+      ]
+    },
+    {
+      "tail": "discredit Peelite",
+      "head": "reputatively arrhenotokous",
+      "label": "NO",
+      "bbox": [
+        362,
+        225,
+        371,
+        241
+      ]
+    },
+    {
+      "tail": "discredit Peelite",
+      "head": "Chara cryptolite",
+      "label": "NO",
+      "bbox": [
+        311,
+        192,
+        325,
+        381
+      ]
+    },
+    {
+      "tail": "reputatively arrhenotokous",
+      "head": "Chara cryptolite",
+      "label": null,
+      "bbox": [
+        362,
+        303,
+        371,
+        358
+      ]
+    }
+  ]
+}

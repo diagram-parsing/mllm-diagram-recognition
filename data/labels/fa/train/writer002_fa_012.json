@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "I",
+      "id": "I",
+      "class": "state"
+    },
+    {
+      "text": "III",
+      "id": "III",
+      "class": "state"
+    },
+    {
+      "text": "II",
+      "id": "II",
+      "class": "state"
+    },
+    {
+      "text": "V",
+      "id": "V",
+      "class": "final state"
+    },
+    {
+      "text": "IV",
+      "id": "IV",
+      "class": "final state"
+    }
+  ],
+  "relations": [
+    {
+      "tail": null,
+      "head": "IV",
+      "label": null
+    },
+    {
+      "tail": "III",
+      "head": "IV",
+      "label": "c"
+    },
+    {
+      "tail": "III",
+      "head": "I",
+      "label": "a"
+    },
+    {
+      "tail": "I",
+      "head": "III",
+      "label": "b"
+    },
+    {
+      "tail": "III",
+      "head": "II",
+      "label": "b"
+    },
+    {
+      "tail": "II",
+      "head": "II",
+      "label": "b"
+    },
+    {
+      "tail": "II",
+      "head": "V",
+      "label": "a,c"
+    },
+    {
+      "tail": "I",
+      "head": "V",
+      "label": "a,c"
+    },
+    {
+      "tail": "IV",
+      "head": "I",
+      "label": "a"
+    },
+    {
+      "tail": "IV",
+      "head": "V",
+      "label": "b,c"
+    },
+    {
+      "tail": "V",
+      "head": "V",
+      "label": "a,b,c"
+    }
+  ]
+}

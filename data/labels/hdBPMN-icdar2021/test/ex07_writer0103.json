@@ -1,0 +1,808 @@
+{
+  "nodes": [
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        263.921,
+        522.761,
+        152.26,
+        82.901
+      ],
+      "class": "task"
+    },
+    {
+      "text": "create respond",
+      "id": "create respond",
+      "bbox": [
+        961.063,
+        504.498,
+        136.61,
+        87.478
+      ],
+      "class": "task"
+    },
+    {
+      "text": "regard doctor",
+      "id": "regard doctor",
+      "bbox": [
+        508.093,
+        538.052,
+        123.428,
+        76.693
+      ],
+      "class": "task"
+    },
+    {
+      "text": "files result contain the interview",
+      "id": "files result contain the interview",
+      "bbox": [
+        742.967,
+        505.697,
+        172.56,
+        104.255
+      ],
+      "class": "task"
+    },
+    {
+      "text": "request expert to review",
+      "id": "request expert to review",
+      "bbox": [
+        255.964,
+        849.858,
+        143.8,
+        93.47
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1104.384,
+        874.304,
+        34.512,
+        33.074
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "ask another expert",
+      "id": "ask another expert",
+      "bbox": [
+        940.452,
+        892.998,
+        127.982,
+        89.156
+      ],
+      "class": "task"
+    },
+    {
+      "text": "pays expanses",
+      "id": "pays expanses",
+      "bbox": [
+        738.173,
+        1036.558,
+        144.998,
+        56.322
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        717.562,
+        803.842,
+        73.338,
+        60.396
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "not response in time",
+      "id": "not response in time",
+      "bbox": [
+        726.19,
+        907.378,
+        169.684,
+        58.958
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive expert and forward to QA",
+      "id": "receive expert and forward to QA",
+      "bbox": [
+        1019.542,
+        1012.352,
+        208.51,
+        71.9
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        651.414,
+        888.684,
+        34.512,
+        28.76
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "received message",
+      "id": "received message",
+      "bbox": [
+        1180.598,
+        849.858,
+        56.082,
+        56.082
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "bbox": [
+        585.266,
+        1035.36,
+        40.264,
+        50.33
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        1158.788,
+        544.043,
+        26.363,
+        22.768
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        170.163,
+        574.002,
+        26.363,
+        26.363
+      ],
+      "class": "event"
+    },
+    {
+      "text": "wait for response",
+      "id": "wait for response",
+      "bbox": [
+        493.713,
+        880.775,
+        49.132,
+        38.347
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "event_3",
+      "bbox": [
+        164.172,
+        901.147,
+        23.967,
+        14.38
+      ],
+      "class": "event"
+    },
+    {
+      "text": "review doctor",
+      "id": "review doctor",
+      "bbox": [
+        373.88,
+        1399.174,
+        110.726,
+        67.586
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send review",
+      "id": "send review",
+      "bbox": [
+        562.258,
+        1396.298,
+        60.396,
+        60.396
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "received cheque",
+      "id": "received cheque",
+      "bbox": [
+        763.338,
+        1397.257,
+        58.718,
+        49.132
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "received request",
+      "id": "received request",
+      "bbox": [
+        177.353,
+        1400.852,
+        65.908,
+        59.917
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "received message",
+      "head": "receive expert and forward to QA",
+      "class": "sequenceFlow",
+      "bbox": [
+        1172.461,
+        901.147,
+        40.96,
+        112.643
+      ],
+      "kps": [
+        1192.342,
+        901.147,
+        2.0,
+        1192.342,
+        1012.592,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive expert and forward to QA",
+      "head": "pays expanses",
+      "class": "sequenceFlow",
+      "bbox": [
+        883.172,
+        1045.438,
+        137.808,
+        40.96
+      ],
+      "kps": [
+        1019.782,
+        1065.318,
+        2.0,
+        883.172,
+        1065.318,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "regard doctor",
+      "head": "files result contain the interview",
+      "class": "sequenceFlow",
+      "bbox": [
+        631.522,
+        549.327,
+        112.643,
+        40.96
+      ],
+      "kps": [
+        631.522,
+        569.208,
+        2.0,
+        742.967,
+        569.208,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "files result contain the interview",
+      "head": "create respond",
+      "class": "sequenceFlow",
+      "bbox": [
+        915.527,
+        537.943,
+        46.735,
+        40.96
+      ],
+      "kps": [
+        915.527,
+        556.027,
+        2.0,
+        961.063,
+        559.622,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_2",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        194.13,
+        568.261,
+        71.66,
+        40.96
+      ],
+      "kps": [
+        194.13,
+        588.142,
+        2.0,
+        264.592,
+        588.142,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "pays expanses",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        624.332,
+        1045.438,
+        115.04,
+        40.96
+      ],
+      "kps": [
+        738.173,
+        1065.318,
+        2.0,
+        624.332,
+        1065.318,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "wait for response",
+      "class": "sequenceFlow",
+      "bbox": [
+        514.085,
+        903.543,
+        614.745,
+        123.428
+      ],
+      "kps": [
+        1127.632,
+        903.543,
+        2.0,
+        514.085,
+        923.915,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask another expert",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1068.434,
+        901.158,
+        52.966,
+        40.96
+      ],
+      "kps": [
+        1068.434,
+        936.138,
+        2.0,
+        1120.202,
+        905.94,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "not response in time",
+      "head": "ask another expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        895.874,
+        917.695,
+        45.776,
+        40.96
+      ],
+      "kps": [
+        895.874,
+        937.576,
+        2.0,
+        940.452,
+        937.576,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "not response in time",
+      "class": "sequenceFlow",
+      "bbox": [
+        668.67,
+        915.538,
+        58.718,
+        40.96
+      ],
+      "kps": [
+        668.67,
+        917.444,
+        2.0,
+        726.19,
+        953.394,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "received message",
+      "class": "sequenceFlow",
+      "bbox": [
+        1137.458,
+        871.679,
+        48.652,
+        40.96
+      ],
+      "kps": [
+        1137.458,
+        891.56,
+        2.0,
+        1184.912,
+        891.56,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        790.9,
+        834.04,
+        329.062,
+        44.338
+      ],
+      "kps": [
+        790.9,
+        834.04,
+        2.0,
+        1118.764,
+        877.18,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        668.67,
+        834.04,
+        50.09,
+        55.842
+      ],
+      "kps": [
+        668.67,
+        888.684,
+        2.0,
+        717.562,
+        834.04,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "wait for response",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        542.845,
+        881.865,
+        111.445,
+        40.96
+      ],
+      "kps": [
+        542.845,
+        898.75,
+        2.0,
+        653.092,
+        904.742,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "request expert to review",
+      "head": "wait for response",
+      "class": "sequenceFlow",
+      "bbox": [
+        400.243,
+        881.266,
+        94.668,
+        40.96
+      ],
+      "kps": [
+        400.243,
+        903.543,
+        2.0,
+        493.713,
+        898.75,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_3",
+      "head": "request expert to review",
+      "class": "sequenceFlow",
+      "bbox": [
+        186.94,
+        885.46,
+        70.702,
+        40.96
+      ],
+      "kps": [
+        186.94,
+        905.94,
+        2.0,
+        256.443,
+        904.742,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create respond",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1097.673,
+        534.948,
+        62.313,
+        40.96
+      ],
+      "kps": [
+        1097.673,
+        554.828,
+        2.0,
+        1158.788,
+        554.828,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "regard doctor",
+      "class": "sequenceFlow",
+      "bbox": [
+        415.822,
+        545.732,
+        93.47,
+        40.96
+      ],
+      "kps": [
+        415.822,
+        565.613,
+        2.0,
+        508.093,
+        565.613,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send review",
+      "head": "received cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        621.935,
+        1409.132,
+        143.8,
+        40.96
+      ],
+      "kps": [
+        621.935,
+        1428.413,
+        2.0,
+        764.537,
+        1429.612,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "received request",
+      "head": "review doctor",
+      "class": "sequenceFlow",
+      "bbox": [
+        243.262,
+        1412.127,
+        131.817,
+        40.96
+      ],
+      "kps": [
+        243.262,
+        1432.008,
+        2.0,
+        373.88,
+        1432.008,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "review doctor",
+      "head": "send review",
+      "class": "sequenceFlow",
+      "bbox": [
+        484.606,
+        1408.053,
+        78.85,
+        40.96
+      ],
+      "kps": [
+        484.606,
+        1427.934,
+        2.0,
+        562.258,
+        1427.934,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "request expert to review",
+      "head": "received request",
+      "class": "messageFlow",
+      "bbox": [
+        215.7,
+        943.088,
+        106.652,
+        456.565
+      ],
+      "kps": [
+        321.153,
+        943.088,
+        2.0,
+        215.7,
+        1398.455,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Patient",
+      "head": "regard doctor",
+      "class": "messageFlow",
+      "bbox": [
+        535.655,
+        251.65,
+        62.313,
+        287.6
+      ],
+      "kps": [
+        596.77,
+        251.65,
+        2.0,
+        535.655,
+        538.052,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "Patient",
+      "class": "messageFlow",
+      "bbox": [
+        313.484,
+        251.65,
+        173.758,
+        272.98
+      ],
+      "kps": [
+        313.484,
+        523.432,
+        2.0,
+        486.044,
+        251.65,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "HOSPITAL",
+      "nodes": [
+        "managing director",
+        "QR"
+      ],
+      "bbox": [
+        60.396,
+        419.896,
+        1187.788,
+        680.174
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "request expert to review",
+        "exclusiveGateway_1",
+        "ask another expert",
+        "pays expanses",
+        "messageEvent_1",
+        "not response in time",
+        "receive expert and forward to QA",
+        "exclusiveGateway_2",
+        "received message",
+        "send cheque",
+        "wait for response",
+        "event_3"
+      ],
+      "bbox": [
+        103.536,
+        729.066,
+        1144.648,
+        371.004
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QR",
+      "nodes": [
+        "interview patients",
+        "create respond",
+        "regard doctor",
+        "files result contain the interview",
+        "event_1",
+        "event_2"
+      ],
+      "bbox": [
+        103.536,
+        419.896,
+        1144.648,
+        309.17
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Extern Expert",
+      "nodes": [],
+      "bbox": [
+        60.899,
+        1265.44,
+        1184.241,
+        287.6
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "bbox": [
+        44.578,
+        178.312,
+        1200.73,
+        73.338
+      ],
+      "class": "pool"
+    }
+  ]
+}

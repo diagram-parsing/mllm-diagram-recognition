@@ -1,0 +1,376 @@
+{
+  "nodes": [
+    {
+      "text": "Report created",
+      "id": "Report created",
+      "bbox": [
+        2784,
+        575,
+        2876,
+        668
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        2415,
+        575,
+        2645,
+        710
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Received expertise",
+      "id": "Received expertise",
+      "bbox": [
+        1651,
+        575,
+        1800,
+        677
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "File results",
+      "id": "File results",
+      "bbox": [
+        2031,
+        575,
+        2242,
+        710
+      ],
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        936,
+        552,
+        1274,
+        748
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "Started case",
+      "id": "Started case",
+      "bbox": [
+        594,
+        599,
+        663,
+        668
+      ],
+      "class": "event"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "bbox": [
+        1925,
+        1065,
+        2164,
+        1197
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Sent cheque",
+      "id": "Sent cheque",
+      "bbox": [
+        2788,
+        1065,
+        2911,
+        1173
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "bbox": [
+        2376,
+        1075,
+        2626,
+        1200
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Received expertise",
+      "id": "Received expertise",
+      "bbox": [
+        1544,
+        1049,
+        1712,
+        1202
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Ask to review",
+      "id": "Ask to review",
+      "bbox": [
+        936,
+        1040,
+        1186,
+        1244
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Requested to role doctor (?)",
+      "id": "Requested to role doctor (?)",
+      "bbox": [
+        561,
+        1097,
+        599,
+        1150
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "create report",
+      "head": "Report created",
+      "class": "sequenceFlow",
+      "bbox": [
+        2645,
+        611,
+        2791,
+        676
+      ],
+      "label": null
+    },
+    {
+      "tail": "File results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        2242,
+        611,
+        2417,
+        676
+      ],
+      "label": null
+    },
+    {
+      "tail": "Received expertise",
+      "head": "File results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1800,
+        598,
+        2033,
+        664
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "Received expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1274,
+        611,
+        1654,
+        676
+      ],
+      "label": null
+    },
+    {
+      "tail": "Started case",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        663,
+        602,
+        937,
+        667
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "Sent cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        2626,
+        1107,
+        2793,
+        1172
+      ],
+      "label": null
+    },
+    {
+      "tail": "Requested to role doctor (?)",
+      "head": "Ask to review",
+      "class": "sequenceFlow",
+      "bbox": [
+        599,
+        1093,
+        937,
+        1158
+      ],
+      "label": null
+    },
+    {
+      "tail": "Ask to review",
+      "head": "Received expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1185,
+        1091,
+        1546,
+        1157
+      ],
+      "label": null
+    },
+    {
+      "tail": "Received expertise",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1711,
+        1081,
+        1927,
+        1146
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        2164,
+        1084,
+        2379,
+        1150
+      ],
+      "label": null
+    },
+    {
+      "tail": "Ask to review",
+      "head": "External Expert",
+      "class": "messageFlow",
+      "bbox": [
+        1001,
+        1244,
+        1066,
+        1614
+      ],
+      "label": null
+    },
+    {
+      "tail": "External Expert",
+      "head": "Received expertise",
+      "class": "messageFlow",
+      "bbox": [
+        1593,
+        1209,
+        1658,
+        1614
+      ],
+      "label": null
+    },
+    {
+      "tail": "Sent cheque",
+      "head": "External Expert",
+      "class": "messageFlow",
+      "bbox": [
+        1820,
+        1150,
+        2798,
+        1664
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "Received expertise",
+      "class": "messageFlow",
+      "bbox": [
+        1762,
+        690,
+        2004,
+        1066
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "Patient",
+      "class": "messageFlow",
+      "bbox": [
+        998,
+        288,
+        1064,
+        554
+      ],
+      "label": null
+    },
+    {
+      "tail": "Patient",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "bbox": [
+        1127,
+        288,
+        1193,
+        554
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "QA specialist",
+      "nodes": [],
+      "bbox": [
+        245,
+        326,
+        2935,
+        825
+      ],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [],
+      "bbox": [
+        245,
+        883,
+        2991,
+        1324
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Patient",
+      "nodes": [],
+      "bbox": [
+        668,
+        172,
+        1647,
+        288
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "External Expert",
+      "nodes": [],
+      "bbox": [
+        879,
+        1612,
+        1820,
+        1766
+      ],
+      "class": "pool"
+    }
+  ]
+}

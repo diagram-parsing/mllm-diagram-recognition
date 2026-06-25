@@ -1,0 +1,357 @@
+{
+  "nodes": [
+    {
+      "text": "customer claim received",
+      "id": "customer claim received",
+      "bbox": [
+        260,
+        322,
+        334,
+        398
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        530,
+        252,
+        656,
+        322
+      ],
+      "class": "task"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "bbox": [
+        538,
+        365,
+        662,
+        448
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "bbox": [
+        807,
+        277,
+        983,
+        370
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "bbox": [
+        757,
+        610,
+        964,
+        703
+      ],
+      "class": "task"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "bbox": [
+        1105,
+        262,
+        1283,
+        362
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        427,
+        327,
+        480,
+        372
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        704,
+        305,
+        748,
+        350
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "settlement recommendation [checked]",
+      "id": "settlement recommendation [checked]",
+      "bbox": [
+        783,
+        721,
+        977,
+        840
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1038,
+        612,
+        1108,
+        694
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claim handling proceeded",
+      "id": "claim handling proceeded",
+      "bbox": [
+        1198,
+        720,
+        1250,
+        772
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "customer claim received",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        334,
+        341,
+        432,
+        371
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        457,
+        274,
+        531,
+        331
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        656,
+        275,
+        725,
+        308
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        454,
+        372,
+        540,
+        428
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        662,
+        348,
+        729,
+        413
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        745,
+        309,
+        808,
+        339
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        833,
+        370,
+        862,
+        611
+      ],
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        964,
+        640,
+        1040,
+        669
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        670,
+        336,
+        1260,
+        615
+      ],
+      "label": "claim \"Not OK\""
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "claim handling proceeded",
+      "class": "sequenceFlow",
+      "bbox": [
+        1074,
+        692,
+        1199,
+        747
+      ],
+      "label": "claim \"OK\""
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        983,
+        331,
+        1106,
+        360
+      ],
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        917,
+        362,
+        1118,
+        611
+      ],
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "settlement recommendation [checked]",
+      "class": "dataAssociation",
+      "bbox": [
+        746,
+        696,
+        784,
+        766
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "customer claim received",
+      "class": "messageFlow",
+      "bbox": [
+        276,
+        96,
+        305,
+        325
+      ],
+      "label": "makes claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        84,
+        14,
+        847,
+        96
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "insurance company/ insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "bbox": [
+        32,
+        235,
+        1449,
+        874
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "customer claim received",
+        "register claim",
+        "examine claim",
+        "write settlement recommendation",
+        "settlement recommendation",
+        "parallelGateway_1",
+        "parallelGateway_2"
+      ],
+      "bbox": [
+        76,
+        235,
+        1449,
+        551
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check recommendation",
+        "settlement recommendation [checked]",
+        "exclusiveGateway_1",
+        "claim handling proceeded"
+      ],
+      "bbox": [
+        76,
+        551,
+        1449,
+        874
+      ],
+      "class": "lane"
+    }
+  ]
+}

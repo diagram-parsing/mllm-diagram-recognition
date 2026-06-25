@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "appurtenance",
+      "id": "appurtenance",
+      "class": "oval"
+    },
+    {
+      "text": "uncommunicableness",
+      "id": "uncommunicableness",
+      "class": "box"
+    },
+    {
+      "text": "distome screamproof",
+      "id": "distome screamproof",
+      "class": "diamond"
+    },
+    {
+      "text": "gambade zopilote",
+      "id": "gambade zopilote",
+      "class": "box"
+    },
+    {
+      "text": "hexarchy nicotinism",
+      "id": "hexarchy nicotinism",
+      "class": "diamond"
+    },
+    {
+      "text": "fitfulness",
+      "id": "fitfulness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "mazarine flunkyistic Taube",
+      "id": "mazarine flunkyistic Taube",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "appurtenance",
+      "head": "uncommunicableness",
+      "label": null
+    },
+    {
+      "tail": "uncommunicableness",
+      "head": "distome screamproof",
+      "label": null
+    },
+    {
+      "tail": "distome screamproof",
+      "head": "gambade zopilote",
+      "label": "YES"
+    },
+    {
+      "tail": "distome screamproof",
+      "head": "appurtenance",
+      "label": "YES"
+    },
+    {
+      "tail": "gambade zopilote",
+      "head": "hexarchy nicotinism",
+      "label": null
+    },
+    {
+      "tail": "hexarchy nicotinism",
+      "head": "fitfulness",
+      "label": "Yes"
+    },
+    {
+      "tail": "hexarchy nicotinism",
+      "head": "appurtenance",
+      "label": "Yes"
+    },
+    {
+      "tail": "fitfulness",
+      "head": "mazarine flunkyistic Taube",
+      "label": null
+    }
+  ]
+}

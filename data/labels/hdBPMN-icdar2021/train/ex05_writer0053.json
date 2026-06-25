@@ -1,0 +1,267 @@
+{
+  "nodes": [
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "check for completness",
+      "id": "check for completness",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "assess",
+      "id": "assess",
+      "class": "task"
+    },
+    {
+      "text": "phone garage to authorize repairs",
+      "id": "phone garage to authorize repairs",
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "class": "task"
+    },
+    {
+      "text": "acceptance letter sent",
+      "id": "acceptance letter sent",
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim [complete]",
+      "id": "claim [complete]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "rejection letter sent",
+      "id": "rejection letter sent",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "rejection letter sent",
+      "id": "rejection letter sent",
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim [registered]",
+      "id": "claim [registered]",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "rejection letter sent",
+      "class": "sequenceFlow",
+      "label": "incomplete"
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "acceptance letter sent",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "phone garage to authorize repairs",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "phone garage to authorize repairs",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "rejection letter sent",
+      "class": "sequenceFlow",
+      "label": "negative"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": "positive"
+    },
+    {
+      "tail": "assess",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "assess",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": "complete"
+    },
+    {
+      "tail": "claim received",
+      "head": "check for completness",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check for completness",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "check for completness",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check for completness",
+      "head": "claim [complete]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [complete]",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim [registered]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [registered]",
+      "head": "assess",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "label": "claim"
+    },
+    {
+      "tail": "rejection letter sent",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": "rejection letter"
+    },
+    {
+      "tail": "rejection letter sent",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": "rejection letter"
+    },
+    {
+      "tail": "acceptance letter sent",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": "acceptance letter"
+    }
+  ],
+  "groups": [
+    {
+      "name": "car insurer",
+      "nodes": [
+        "handling department",
+        "notification department"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling department",
+      "nodes": [
+        "parallelGateway_1",
+        "assess",
+        "phone garage to authorize repairs",
+        "schedule payment",
+        "acceptance letter sent",
+        "claim [complete]",
+        "rejection letter sent",
+        "parallelGateway_2",
+        "exclusiveGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "claim received",
+        "check for completness",
+        "exclusiveGateway_1",
+        "register claim",
+        "claim",
+        "rejection letter sent",
+        "claim [registered]"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

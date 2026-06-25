@@ -1,0 +1,225 @@
+{
+  "nodes": [
+    {
+      "text": "application received",
+      "id": "application received",
+      "bbox": [
+        231,
+        174,
+        301,
+        251
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate of the application",
+      "id": "evaluate of the application",
+      "bbox": [
+        590,
+        94,
+        988,
+        291
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1190,
+        144,
+        1312,
+        258
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "customer notified by email",
+      "id": "customer notified by email",
+      "bbox": [
+        1984,
+        69,
+        2460,
+        318
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application rejected",
+      "id": "application rejected",
+      "bbox": [
+        2186,
+        537,
+        2255,
+        595
+      ],
+      "class": "event"
+    },
+    {
+      "text": "new bank account created",
+      "id": "new bank account created",
+      "bbox": [
+        328,
+        517,
+        814,
+        742
+      ],
+      "class": "task"
+    },
+    {
+      "text": "reject application",
+      "id": "reject application",
+      "bbox": [
+        1536,
+        94,
+        1852,
+        293
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application approved",
+      "id": "application approved",
+      "bbox": [
+        1095,
+        527,
+        1446,
+        729
+      ],
+      "class": "task"
+    },
+    {
+      "text": "sending 3 seperate letters",
+      "id": "sending 3 seperate letters",
+      "bbox": [
+        333,
+        866,
+        814,
+        1080
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application fulfilled",
+      "id": "application fulfilled",
+      "bbox": [
+        517,
+        1230,
+        597,
+        1299
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "customer notified by email",
+      "head": "application rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        2209,
+        318,
+        2259,
+        537
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject application",
+      "head": "customer notified by email",
+      "class": "sequenceFlow",
+      "bbox": [
+        1852,
+        170,
+        1987,
+        220
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate of the application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        988,
+        173,
+        1195,
+        222
+      ],
+      "label": null
+    },
+    {
+      "tail": "application received",
+      "head": "evaluate of the application",
+      "class": "sequenceFlow",
+      "bbox": [
+        301,
+        195,
+        592,
+        245
+      ],
+      "label": null
+    },
+    {
+      "tail": "sending 3 seperate letters",
+      "head": "application fulfilled",
+      "class": "sequenceFlow",
+      "bbox": [
+        529,
+        1080,
+        578,
+        1227
+      ],
+      "label": null
+    },
+    {
+      "tail": "new bank account created",
+      "head": "sending 3 seperate letters",
+      "class": "sequenceFlow",
+      "bbox": [
+        549,
+        742,
+        598,
+        869
+      ],
+      "label": null
+    },
+    {
+      "tail": "application approved",
+      "head": "new bank account created",
+      "class": "sequenceFlow",
+      "bbox": [
+        814,
+        606,
+        1098,
+        656
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "application approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        1236,
+        251,
+        1286,
+        530
+      ],
+      "label": "positive evaluation"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject application",
+      "class": "sequenceFlow",
+      "bbox": [
+        1309,
+        173,
+        1538,
+        222
+      ],
+      "label": "negative evaluation"
+    }
+  ],
+  "groups": []
+}

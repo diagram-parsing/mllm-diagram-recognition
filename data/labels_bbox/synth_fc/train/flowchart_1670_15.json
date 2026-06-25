@@ -1,0 +1,369 @@
+{
+  "nodes": [
+    {
+      "text": "phospham",
+      "id": "phospham",
+      "class": "circle",
+      "bbox": [
+        20,
+        20,
+        87,
+        87
+      ]
+    },
+    {
+      "text": "nonnarcotic",
+      "id": "nonnarcotic",
+      "class": "box",
+      "bbox": [
+        10,
+        100,
+        97,
+        148
+      ]
+    },
+    {
+      "text": "capreoline",
+      "id": "capreoline",
+      "class": "box",
+      "bbox": [
+        15,
+        196,
+        93,
+        244
+      ]
+    },
+    {
+      "text": "tesack stifle",
+      "id": "tesack stifle",
+      "class": "diamond",
+      "bbox": [
+        5,
+        254,
+        102,
+        328
+      ]
+    },
+    {
+      "text": "foretoken lithodomous",
+      "id": "foretoken lithodomous",
+      "class": "hexagon",
+      "bbox": [
+        185,
+        71,
+        303,
+        131
+      ]
+    },
+    {
+      "text": "otherwhence",
+      "id": "otherwhence",
+      "class": "ellipse",
+      "bbox": [
+        586,
+        194,
+        663,
+        246
+      ]
+    },
+    {
+      "text": "osazone",
+      "id": "osazone",
+      "class": "box",
+      "bbox": [
+        208,
+        196,
+        280,
+        244
+      ]
+    },
+    {
+      "text": "coeliorrhea brulyie",
+      "id": "coeliorrhea brulyie",
+      "class": "parallelogram",
+      "bbox": [
+        171,
+        278,
+        317,
+        351
+      ]
+    },
+    {
+      "text": "noncollinear",
+      "id": "noncollinear",
+      "class": "box",
+      "bbox": [
+        208,
+        386,
+        280,
+        428
+      ]
+    },
+    {
+      "text": "kissar",
+      "id": "kissar",
+      "class": "hexagon",
+      "bbox": [
+        392,
+        5,
+        476,
+        53
+      ]
+    },
+    {
+      "text": "doorpost",
+      "id": "doorpost",
+      "class": "diamond",
+      "bbox": [
+        388,
+        88,
+        480,
+        161
+      ]
+    },
+    {
+      "text": "interrex",
+      "id": "interrex",
+      "class": "box",
+      "bbox": [
+        398,
+        196,
+        470,
+        244
+      ]
+    },
+    {
+      "text": "megascopic egophonic",
+      "id": "megascopic egophonic",
+      "class": "diamond",
+      "bbox": [
+        363,
+        278,
+        505,
+        351
+      ]
+    },
+    {
+      "text": "repellency",
+      "id": "repellency",
+      "class": "diamond",
+      "bbox": [
+        559,
+        5,
+        685,
+        53
+      ]
+    },
+    {
+      "text": "paroeciousness",
+      "id": "paroeciousness",
+      "class": "box",
+      "bbox": [
+        588,
+        100,
+        660,
+        148
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "phospham",
+      "head": "nonnarcotic",
+      "label": null,
+      "bbox": [
+        49,
+        85,
+        58,
+        99
+      ]
+    },
+    {
+      "tail": "nonnarcotic",
+      "head": "capreoline",
+      "label": null,
+      "bbox": [
+        49,
+        149,
+        58,
+        194
+      ]
+    },
+    {
+      "tail": "capreoline",
+      "head": "tesack stifle",
+      "label": null,
+      "bbox": [
+        49,
+        239,
+        58,
+        252
+      ]
+    },
+    {
+      "tail": "tesack stifle",
+      "head": "foretoken lithodomous",
+      "label": "No",
+      "bbox": [
+        66,
+        114,
+        201,
+        263
+      ]
+    },
+    {
+      "tail": "tesack stifle",
+      "head": "otherwhence",
+      "label": "No",
+      "bbox": [
+        77,
+        247,
+        629,
+        271
+      ]
+    },
+    {
+      "tail": "foretoken lithodomous",
+      "head": "osazone",
+      "label": null,
+      "bbox": [
+        239,
+        131,
+        249,
+        194
+      ]
+    },
+    {
+      "tail": "osazone",
+      "head": "coeliorrhea brulyie",
+      "label": null,
+      "bbox": [
+        239,
+        244,
+        249,
+        276
+      ]
+    },
+    {
+      "tail": "coeliorrhea brulyie",
+      "head": "noncollinear",
+      "label": null,
+      "bbox": [
+        239,
+        352,
+        249,
+        384
+      ]
+    },
+    {
+      "tail": "noncollinear",
+      "head": "kissar",
+      "label": null,
+      "bbox": [
+        280,
+        33,
+        398,
+        402
+      ]
+    },
+    {
+      "tail": "kissar",
+      "head": "doorpost",
+      "label": null,
+      "bbox": [
+        429,
+        54,
+        439,
+        86
+      ]
+    },
+    {
+      "tail": "doorpost",
+      "head": "interrex",
+      "label": "YES",
+      "bbox": [
+        429,
+        161,
+        439,
+        194
+      ]
+    },
+    {
+      "tail": "doorpost",
+      "head": "megascopic egophonic",
+      "label": "YES",
+      "bbox": [
+        471,
+        129,
+        480,
+        298
+      ]
+    },
+    {
+      "tail": "interrex",
+      "head": "megascopic egophonic",
+      "label": null,
+      "bbox": [
+        429,
+        244,
+        439,
+        276
+      ]
+    },
+    {
+      "tail": "megascopic egophonic",
+      "head": "repellency",
+      "label": "yes",
+      "bbox": [
+        489,
+        25,
+        557,
+        306
+      ]
+    },
+    {
+      "tail": "megascopic egophonic",
+      "head": "paroeciousness",
+      "label": "yes",
+      "bbox": [
+        497,
+        120,
+        587,
+        310
+      ]
+    },
+    {
+      "tail": "repellency",
+      "head": "paroeciousness",
+      "label": "yes",
+      "bbox": [
+        620,
+        54,
+        629,
+        99
+      ]
+    },
+    {
+      "tail": "repellency",
+      "head": "noncollinear",
+      "label": "yes",
+      "bbox": [
+        282,
+        35,
+        572,
+        422
+      ]
+    },
+    {
+      "tail": "paroeciousness",
+      "head": "otherwhence",
+      "label": null,
+      "bbox": [
+        620,
+        149,
+        629,
+        192
+      ]
+    }
+  ]
+}

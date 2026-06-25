@@ -1,0 +1,720 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        228,
+        550,
+        299,
+        624
+      ],
+      "class": "event"
+    },
+    {
+      "text": "rating finished",
+      "id": "rating finished",
+      "bbox": [
+        1956,
+        392,
+        2028,
+        464
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1690,
+        542,
+        1877,
+        616
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send cheque to expert",
+      "id": "send cheque to expert",
+      "bbox": [
+        1838,
+        842,
+        2028,
+        917
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forward expertise to QA specialist",
+      "id": "forward expertise to QA specialist",
+      "bbox": [
+        1277,
+        843,
+        1457,
+        918
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        412,
+        548,
+        488,
+        618
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "ask for review from expert",
+      "id": "ask for review from expert",
+      "bbox": [
+        345,
+        963,
+        525,
+        1038
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "bbox": [
+        977,
+        842,
+        1163,
+        919
+      ],
+      "class": "task"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "bbox": [
+        1240,
+        542,
+        1427,
+        619
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1540,
+        542,
+        1615,
+        617
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "fill cheque to expert",
+      "id": "fill cheque to expert",
+      "bbox": [
+        1547,
+        843,
+        1728,
+        918
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1955,
+        542,
+        2030,
+        617
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        607,
+        1074,
+        829,
+        1158
+      ],
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        601,
+        542,
+        781,
+        625
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        826,
+        956,
+        901,
+        1031
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "bbox": [
+        633,
+        948,
+        721,
+        1035
+      ],
+      "class": "timerEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "task_1",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        651,
+        1034,
+        695,
+        1077
+      ],
+      "kps": [
+        668.227,
+        1074.973,
+        2.0,
+        677.471,
+        1035.355,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        826,
+        1031,
+        869,
+        1118
+      ],
+      "kps": [
+        864.997,
+        1031.393,
+        2.0,
+        829.341,
+        1117.233,
+        2.0
+      ],
+      "label": "responding not in time"
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "rating finished",
+      "class": "sequenceFlow",
+      "bbox": [
+        1971,
+        464,
+        2015,
+        543
+      ],
+      "kps": [
+        1992.662,
+        542.492,
+        2.0,
+        1992.662,
+        464.352,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1877,
+        558,
+        1957,
+        602
+      ],
+      "kps": [
+        1877.902,
+        579.746,
+        2.0,
+        1955.818,
+        579.746,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send cheque to expert",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1971,
+        618,
+        2015,
+        843
+      ],
+      "kps": [
+        1992.795,
+        842.547,
+        2.0,
+        1992.795,
+        618.044,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill cheque to expert",
+      "head": "send cheque to expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1728,
+        859,
+        1839,
+        903
+      ],
+      "kps": [
+        1728.673,
+        880.844,
+        2.0,
+        1838.284,
+        880.844,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "fill cheque to expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1556,
+        617,
+        1600,
+        844
+      ],
+      "kps": [
+        1577.9,
+        617.634,
+        2.0,
+        1577.9,
+        843.048,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1615,
+        558,
+        1691,
+        602
+      ],
+      "kps": [
+        1615.101,
+        579.746,
+        2.0,
+        1690.376,
+        579.746,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1427,
+        558,
+        1542,
+        602
+      ],
+      "kps": [
+        1427.575,
+        579.746,
+        2.0,
+        1541.147,
+        579.746,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "forward expertise to QA specialist",
+      "class": "sequenceFlow",
+      "bbox": [
+        1163,
+        859,
+        1278,
+        903
+      ],
+      "kps": [
+        1163.454,
+        880.844,
+        2.0,
+        1277.026,
+        880.844,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        864,
+        880,
+        978,
+        958
+      ],
+      "kps": [
+        864.997,
+        957.439,
+        2.0,
+        977.248,
+        880.844,
+        2.0
+      ],
+      "label": "responding in time"
+    },
+    {
+      "tail": "timerEvent_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        721,
+        971,
+        829,
+        1015
+      ],
+      "kps": [
+        721.051,
+        991.775,
+        2.0,
+        828.02,
+        994.416,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask for review from expert",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        526,
+        979,
+        636,
+        1023
+      ],
+      "kps": [
+        526.922,
+        1001.019,
+        2.0,
+        635.212,
+        1001.019,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask for review from expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        429,
+        618,
+        472,
+        964
+      ],
+      "kps": [
+        450.327,
+        618.044,
+        2.0,
+        450.327,
+        962.722,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        484,
+        561,
+        602,
+        604
+      ],
+      "kps": [
+        484.662,
+        579.746,
+        2.0,
+        600.876,
+        585.028,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        299,
+        566,
+        418,
+        610
+      ],
+      "kps": [
+        299.778,
+        587.67,
+        2.0,
+        417.312,
+        587.67,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward expertise to QA specialist",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1292,
+        619,
+        1336,
+        843
+      ],
+      "kps": [
+        1314.003,
+        842.547,
+        2.0,
+        1314.003,
+        619.364,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "patient",
+      "class": "messageFlow",
+      "bbox": [
+        610,
+        281,
+        653,
+        544
+      ],
+      "kps": [
+        631.25,
+        542.769,
+        2.0,
+        631.25,
+        281.289,
+        2.0
+      ],
+      "label": "interview questions"
+    },
+    {
+      "tail": "patient",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "bbox": [
+        730,
+        281,
+        773,
+        544
+      ],
+      "kps": [
+        751.425,
+        281.289,
+        2.0,
+        751.425,
+        542.769,
+        2.0
+      ],
+      "label": "interview answers"
+    },
+    {
+      "tail": "ask for review from expert",
+      "head": "expert",
+      "class": "messageFlow",
+      "bbox": [
+        353,
+        1037,
+        397,
+        1294
+      ],
+      "kps": [
+        375.052,
+        1037.996,
+        2.0,
+        375.052,
+        1292.873,
+        2.0
+      ],
+      "label": "request"
+    },
+    {
+      "tail": "task_1",
+      "head": "expert",
+      "class": "messageFlow",
+      "bbox": [
+        697,
+        1158,
+        740,
+        1294
+      ],
+      "kps": [
+        718.41,
+        1158.172,
+        2.0,
+        718.41,
+        1292.873,
+        2.0
+      ],
+      "label": "request"
+    },
+    {
+      "tail": "expert",
+      "head": "receive expertise",
+      "class": "messageFlow",
+      "bbox": [
+        1076,
+        919,
+        1119,
+        1294
+      ],
+      "kps": [
+        1097.424,
+        1292.873,
+        2.0,
+        1097.424,
+        919.142,
+        2.0
+      ],
+      "label": "expertise"
+    },
+    {
+      "tail": "send cheque to expert",
+      "head": "expert",
+      "class": "messageFlow",
+      "bbox": [
+        1856,
+        917,
+        1900,
+        1294
+      ],
+      "kps": [
+        1877.902,
+        917.821,
+        2.0,
+        1877.902,
+        1292.873,
+        2.0
+      ],
+      "label": "cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "quality assurance (QA) specialist"
+      ],
+      "bbox": [
+        75,
+        362,
+        2118,
+        1218
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "send cheque to expert",
+        "forward expertise to QA specialist",
+        "ask for review from expert",
+        "receive expertise",
+        "fill cheque to expert",
+        "task_1",
+        "exclusiveGateway_1",
+        "timerEvent_1"
+      ],
+      "bbox": [
+        120,
+        767,
+        2118,
+        1218
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance (QA) specialist",
+      "nodes": [
+        "event_1",
+        "rating finished",
+        "create report",
+        "parallelGateway_1",
+        "file results",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "interview patients"
+      ],
+      "bbox": [
+        120,
+        362,
+        2118,
+        767
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "patient",
+      "nodes": [],
+      "bbox": [
+        75,
+        207,
+        2103,
+        281
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "expert",
+      "nodes": [],
+      "bbox": [
+        75,
+        1292,
+        2103,
+        1368
+      ],
+      "class": "pool"
+    }
+  ]
+}

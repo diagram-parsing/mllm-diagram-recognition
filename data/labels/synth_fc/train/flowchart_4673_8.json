@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "Mitella",
+      "id": "Mitella",
+      "class": "oval"
+    },
+    {
+      "text": "pintado",
+      "id": "pintado",
+      "class": "box"
+    },
+    {
+      "text": "proterandrous",
+      "id": "proterandrous",
+      "class": "hexagon"
+    },
+    {
+      "text": "crakefeet",
+      "id": "crakefeet",
+      "class": "hexagon"
+    },
+    {
+      "text": "pulpectomy stilter unslot",
+      "id": "pulpectomy stilter unslot",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Samsonistic",
+      "id": "Samsonistic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "backjoint",
+      "id": "backjoint",
+      "class": "diamond"
+    },
+    {
+      "text": "unresonant",
+      "id": "unresonant",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Mitella",
+      "head": "pintado",
+      "label": null
+    },
+    {
+      "tail": "pintado",
+      "head": "proterandrous",
+      "label": null
+    },
+    {
+      "tail": "proterandrous",
+      "head": "crakefeet",
+      "label": null
+    },
+    {
+      "tail": "crakefeet",
+      "head": "pulpectomy stilter unslot",
+      "label": null
+    },
+    {
+      "tail": "pulpectomy stilter unslot",
+      "head": "Samsonistic",
+      "label": null
+    },
+    {
+      "tail": "Samsonistic",
+      "head": "backjoint",
+      "label": null
+    },
+    {
+      "tail": "backjoint",
+      "head": "unresonant",
+      "label": "Yes"
+    },
+    {
+      "tail": "backjoint",
+      "head": "Samsonistic",
+      "label": "Yes"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "dandy interstadial",
+      "id": "dandy interstadial",
+      "class": "circle"
+    },
+    {
+      "text": "manist preamble",
+      "id": "manist preamble",
+      "class": "parallelogram"
+    },
+    {
+      "text": "microcoat unskin blanketflower",
+      "id": "microcoat unskin blanketflower",
+      "class": "diamond"
+    },
+    {
+      "text": "scandalmongering prejudicedly",
+      "id": "scandalmongering prejudicedly",
+      "class": "parallelogram"
+    },
+    {
+      "text": "meliorater dotate",
+      "id": "meliorater dotate",
+      "class": "oval"
+    },
+    {
+      "text": "Siphonata overcautiousness",
+      "id": "Siphonata overcautiousness",
+      "class": "document"
+    },
+    {
+      "text": "untasteable",
+      "id": "untasteable",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "dandy interstadial",
+      "head": "manist preamble",
+      "label": null
+    },
+    {
+      "tail": "manist preamble",
+      "head": "microcoat unskin blanketflower",
+      "label": null
+    },
+    {
+      "tail": "microcoat unskin blanketflower",
+      "head": "scandalmongering prejudicedly",
+      "label": "yes"
+    },
+    {
+      "tail": "microcoat unskin blanketflower",
+      "head": "meliorater dotate",
+      "label": "yes"
+    },
+    {
+      "tail": "scandalmongering prejudicedly",
+      "head": "Siphonata overcautiousness",
+      "label": null
+    },
+    {
+      "tail": "Siphonata overcautiousness",
+      "head": "untasteable",
+      "label": null
+    },
+    {
+      "tail": "untasteable",
+      "head": "meliorater dotate",
+      "label": "No"
+    },
+    {
+      "tail": "untasteable",
+      "head": "scandalmongering prejudicedly",
+      "label": "No"
+    }
+  ]
+}

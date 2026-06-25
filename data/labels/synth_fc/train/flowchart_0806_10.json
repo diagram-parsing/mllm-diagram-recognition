@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "titleboard thermantic",
+      "id": "titleboard thermantic",
+      "class": "oval"
+    },
+    {
+      "text": "cuffer nagor",
+      "id": "cuffer nagor",
+      "class": "parallelogram"
+    },
+    {
+      "text": "doorba hoofs",
+      "id": "doorba hoofs",
+      "class": "box"
+    },
+    {
+      "text": "schoolingly",
+      "id": "schoolingly",
+      "class": "diamond"
+    },
+    {
+      "text": "internals",
+      "id": "internals",
+      "class": "document"
+    },
+    {
+      "text": "guama",
+      "id": "guama",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unretrenched",
+      "id": "unretrenched",
+      "class": "diamond"
+    },
+    {
+      "text": "intendantship",
+      "id": "intendantship",
+      "class": "diamond"
+    },
+    {
+      "text": "gangmaster",
+      "id": "gangmaster",
+      "class": "diamond"
+    },
+    {
+      "text": "trophallactic",
+      "id": "trophallactic",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "titleboard thermantic",
+      "head": "cuffer nagor",
+      "label": null
+    },
+    {
+      "tail": "cuffer nagor",
+      "head": "doorba hoofs",
+      "label": null
+    },
+    {
+      "tail": "doorba hoofs",
+      "head": "schoolingly",
+      "label": null
+    },
+    {
+      "tail": "schoolingly",
+      "head": "internals",
+      "label": "NO"
+    },
+    {
+      "tail": "schoolingly",
+      "head": "cuffer nagor",
+      "label": "NO"
+    },
+    {
+      "tail": "internals",
+      "head": "guama",
+      "label": null
+    },
+    {
+      "tail": "guama",
+      "head": "unretrenched",
+      "label": null
+    },
+    {
+      "tail": "unretrenched",
+      "head": "intendantship",
+      "label": "NO"
+    },
+    {
+      "tail": "unretrenched",
+      "head": "schoolingly",
+      "label": "NO"
+    },
+    {
+      "tail": "intendantship",
+      "head": "gangmaster",
+      "label": "No"
+    },
+    {
+      "tail": "intendantship",
+      "head": "trophallactic",
+      "label": "No"
+    },
+    {
+      "tail": "gangmaster",
+      "head": "trophallactic",
+      "label": "yes"
+    },
+    {
+      "tail": "gangmaster",
+      "head": "titleboard thermantic",
+      "label": "yes"
+    }
+  ]
+}

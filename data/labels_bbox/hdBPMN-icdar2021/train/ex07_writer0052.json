@@ -1,0 +1,642 @@
+{
+  "nodes": [
+    {
+      "text": "rating required",
+      "id": "rating required",
+      "bbox": [
+        443,
+        1029,
+        524,
+        1099
+      ],
+      "class": "event"
+    },
+    {
+      "text": "case closed",
+      "id": "case closed",
+      "bbox": [
+        1524,
+        556,
+        1606,
+        633
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1486,
+        737,
+        1698,
+        873
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "bbox": [
+        1938,
+        1906,
+        2230,
+        2044
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        696,
+        997,
+        818,
+        1117
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        791,
+        1761,
+        953,
+        1922
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "response received",
+      "id": "response received",
+      "bbox": [
+        1054,
+        1590,
+        1219,
+        1716
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "work sent",
+      "id": "work sent",
+      "bbox": [
+        1366,
+        1596,
+        1542,
+        1696
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "review expertise",
+      "id": "review expertise",
+      "bbox": [
+        1974,
+        1583,
+        2196,
+        1725
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_2",
+      "bbox": [
+        1257,
+        1992,
+        1397,
+        2137
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "file check",
+      "id": "file check",
+      "bbox": [
+        608,
+        1965,
+        773,
+        2083
+      ],
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        936,
+        925,
+        1194,
+        1131
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1520,
+        965,
+        1615,
+        1065
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1307,
+        963,
+        1416,
+        1078
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "received expertise",
+      "id": "received expertise",
+      "bbox": [
+        1719,
+        1594,
+        1879,
+        1696
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "ask to review work of doctor",
+      "id": "ask to review work of doctor",
+      "bbox": [
+        348,
+        1694,
+        626,
+        1952
+      ],
+      "class": "task"
+    },
+    {
+      "text": "24h",
+      "id": "24h",
+      "bbox": [
+        977,
+        2015,
+        1106,
+        2135
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "24h",
+      "id": "24h",
+      "bbox": [
+        1454,
+        2090,
+        1601,
+        2209
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "check sent",
+      "id": "check sent",
+      "bbox": [
+        782,
+        2133,
+        902,
+        2232
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "external expert paid",
+      "id": "external expert paid",
+      "bbox": [
+        989,
+        2655,
+        1091,
+        2751
+      ],
+      "class": "event"
+    },
+    {
+      "text": "check arrived",
+      "id": "check arrived",
+      "bbox": [
+        554,
+        2662,
+        705,
+        2764
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "response received",
+      "class": "sequenceFlow",
+      "bbox": [
+        873,
+        1653,
+        1074,
+        1766
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_2",
+      "head": "response received",
+      "class": "sequenceFlow",
+      "bbox": [
+        1002,
+        1698,
+        1330,
+        1995
+      ],
+      "label": null
+    },
+    {
+      "tail": "24h",
+      "head": "ask to review work of doctor",
+      "class": "sequenceFlow",
+      "bbox": [
+        517,
+        1954,
+        1506,
+        2296
+      ],
+      "label": null
+    },
+    {
+      "tail": "file check",
+      "head": "check sent",
+      "class": "sequenceFlow",
+      "bbox": [
+        667,
+        2083,
+        796,
+        2148
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file check",
+      "class": "sequenceFlow",
+      "bbox": [
+        678,
+        1065,
+        1569,
+        1967
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1359,
+        1076,
+        1940,
+        1931
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_2",
+      "head": "24h",
+      "class": "sequenceFlow",
+      "bbox": [
+        1325,
+        2119,
+        1458,
+        2182
+      ],
+      "label": null
+    },
+    {
+      "tail": "24h",
+      "head": "eventBasedGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1106,
+        2037,
+        1262,
+        2100
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "24h",
+      "class": "sequenceFlow",
+      "bbox": [
+        872,
+        1922,
+        979,
+        2074
+      ],
+      "label": null
+    },
+    {
+      "tail": "review expertise",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        2052,
+        1725,
+        2115,
+        1909
+      ],
+      "label": null
+    },
+    {
+      "tail": "received expertise",
+      "head": "review expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1879,
+        1617,
+        1976,
+        1680
+      ],
+      "label": null
+    },
+    {
+      "tail": "work sent",
+      "head": "received expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1542,
+        1618,
+        1721,
+        1681
+      ],
+      "label": null
+    },
+    {
+      "tail": "response received",
+      "head": "work sent",
+      "class": "sequenceFlow",
+      "bbox": [
+        1219,
+        1628,
+        1368,
+        1691
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask to review work of doctor",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        626,
+        1842,
+        825,
+        1905
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask to review work of doctor",
+      "class": "sequenceFlow",
+      "bbox": [
+        479,
+        1117,
+        760,
+        1696
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "case closed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1548,
+        635,
+        1611,
+        739
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1545,
+        873,
+        1608,
+        968
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1416,
+        990,
+        1529,
+        1053
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1194,
+        997,
+        1309,
+        1060
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        814,
+        1016,
+        938,
+        1079
+      ],
+      "label": null
+    },
+    {
+      "tail": "rating required",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        524,
+        1035,
+        708,
+        1098
+      ],
+      "label": null
+    },
+    {
+      "tail": "check arrived",
+      "head": "external expert paid",
+      "class": "sequenceFlow",
+      "bbox": [
+        705,
+        2684,
+        993,
+        2747
+      ],
+      "label": null
+    },
+    {
+      "tail": "patients",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "bbox": [
+        1134,
+        260,
+        1197,
+        927
+      ],
+      "label": "receive interview feedback"
+    },
+    {
+      "tail": "interview patients",
+      "head": "patients",
+      "class": "messageFlow",
+      "bbox": [
+        912,
+        260,
+        975,
+        934
+      ],
+      "label": "request review"
+    },
+    {
+      "tail": "external",
+      "head": "received expertise",
+      "class": "messageFlow",
+      "bbox": [
+        1765,
+        1725,
+        1828,
+        2556
+      ],
+      "label": "received work"
+    },
+    {
+      "tail": "work sent",
+      "head": "external",
+      "class": "messageFlow",
+      "bbox": [
+        1531,
+        1689,
+        1678,
+        2556
+      ],
+      "label": "work to review"
+    },
+    {
+      "tail": "check sent",
+      "head": "check arrived",
+      "class": "messageFlow",
+      "bbox": [
+        653,
+        2237,
+        821,
+        2644
+      ],
+      "label": "sending check"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "Quality Assurance Departement Quality Assistant"
+      ],
+      "bbox": [
+        70,
+        484,
+        2232,
+        2366
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "forward expertise",
+        "eventBasedGateway_1",
+        "response received",
+        "work sent",
+        "review expertise",
+        "eventBasedGateway_2",
+        "file check",
+        "received expertise",
+        "ask to review work of doctor",
+        "24h",
+        "24h",
+        "check sent"
+      ],
+      "bbox": [
+        165,
+        1583,
+        2230,
+        2366
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality Assurance Departement Quality Assistant",
+      "nodes": [
+        "rating required",
+        "case closed",
+        "create report",
+        "parallelGateway_1",
+        "interview patients",
+        "parallelGateway_2",
+        "parallelGateway_3"
+      ],
+      "bbox": [
+        165,
+        484,
+        2230,
+        1583
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "external",
+      "nodes": [],
+      "bbox": [
+        96,
+        2552,
+        2229,
+        2908
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "patients",
+      "nodes": [],
+      "bbox": [
+        193,
+        87,
+        2136,
+        258
+      ],
+      "class": "pool"
+    }
+  ]
+}

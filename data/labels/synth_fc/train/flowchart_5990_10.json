@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "unsmutty unsmoked",
+      "id": "unsmutty unsmoked",
+      "class": "circle"
+    },
+    {
+      "text": "debacle flameless",
+      "id": "debacle flameless",
+      "class": "box"
+    },
+    {
+      "text": "cruster",
+      "id": "cruster",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unpossessable",
+      "id": "unpossessable",
+      "class": "hexagon"
+    },
+    {
+      "text": "allotropically",
+      "id": "allotropically",
+      "class": "box"
+    },
+    {
+      "text": "volumenometer amphistome",
+      "id": "volumenometer amphistome",
+      "class": "diamond"
+    },
+    {
+      "text": "Hollander",
+      "id": "Hollander",
+      "class": "diamond"
+    },
+    {
+      "text": "unmockingly trimethylstibine",
+      "id": "unmockingly trimethylstibine",
+      "class": "hexagon"
+    },
+    {
+      "text": "prophoric passpenny",
+      "id": "prophoric passpenny",
+      "class": "box"
+    },
+    {
+      "text": "dingmaul stormwise unchangeabl",
+      "id": "dingmaul stormwise unchangeabl",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unsmutty unsmoked",
+      "head": "debacle flameless",
+      "label": null
+    },
+    {
+      "tail": "debacle flameless",
+      "head": "cruster",
+      "label": null
+    },
+    {
+      "tail": "cruster",
+      "head": "unpossessable",
+      "label": null
+    },
+    {
+      "tail": "unpossessable",
+      "head": "allotropically",
+      "label": null
+    },
+    {
+      "tail": "allotropically",
+      "head": "volumenometer amphistome",
+      "label": null
+    },
+    {
+      "tail": "volumenometer amphistome",
+      "head": "Hollander",
+      "label": "YES"
+    },
+    {
+      "tail": "volumenometer amphistome",
+      "head": "allotropically",
+      "label": "YES"
+    },
+    {
+      "tail": "Hollander",
+      "head": "unmockingly trimethylstibine",
+      "label": "yes"
+    },
+    {
+      "tail": "Hollander",
+      "head": "unsmutty unsmoked",
+      "label": "yes"
+    },
+    {
+      "tail": "unmockingly trimethylstibine",
+      "head": "prophoric passpenny",
+      "label": null
+    },
+    {
+      "tail": "prophoric passpenny",
+      "head": "dingmaul stormwise unchangeabl",
+      "label": null
+    }
+  ]
+}

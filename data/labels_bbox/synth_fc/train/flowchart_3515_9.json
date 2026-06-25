@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "setirostral",
+      "id": "setirostral",
+      "class": "circle",
+      "bbox": [
+        23,
+        5,
+        111,
+        93
+      ]
+    },
+    {
+      "text": "fractile",
+      "id": "fractile",
+      "class": "hexagon",
+      "bbox": [
+        26,
+        133,
+        107,
+        181
+      ]
+    },
+    {
+      "text": "washin",
+      "id": "washin",
+      "class": "box",
+      "bbox": [
+        31,
+        219,
+        103,
+        267
+      ]
+    },
+    {
+      "text": "oppressor",
+      "id": "oppressor",
+      "class": "diamond",
+      "bbox": [
+        5,
+        305,
+        128,
+        353
+      ]
+    },
+    {
+      "text": "cimicoid hysterotomy foliose",
+      "id": "cimicoid hysterotomy foliose",
+      "class": "diamond",
+      "bbox": [
+        149,
+        34,
+        324,
+        108
+      ]
+    },
+    {
+      "text": "episiocele tributer",
+      "id": "episiocele tributer",
+      "class": "document",
+      "bbox": [
+        201,
+        155,
+        277,
+        203
+      ]
+    },
+    {
+      "text": "polyphobic",
+      "id": "polyphobic",
+      "class": "hexagon",
+      "bbox": [
+        197,
+        213,
+        281,
+        273
+      ]
+    },
+    {
+      "text": "cubmaster",
+      "id": "cubmaster",
+      "class": "diamond",
+      "bbox": [
+        188,
+        293,
+        290,
+        366
+      ]
+    },
+    {
+      "text": "canalling",
+      "id": "canalling",
+      "class": "ellipse",
+      "bbox": [
+        203,
+        390,
+        275,
+        436
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "setirostral",
+      "head": "fractile",
+      "label": null,
+      "bbox": [
+        61,
+        94,
+        73,
+        132
+      ]
+    },
+    {
+      "tail": "fractile",
+      "head": "washin",
+      "label": null,
+      "bbox": [
+        61,
+        181,
+        73,
+        219
+      ]
+    },
+    {
+      "tail": "washin",
+      "head": "oppressor",
+      "label": null,
+      "bbox": [
+        49,
+        268,
+        61,
+        310
+      ]
+    },
+    {
+      "tail": "oppressor",
+      "head": "cimicoid hysterotomy foliose",
+      "label": "NO",
+      "bbox": [
+        119,
+        95,
+        222,
+        325
+      ]
+    },
+    {
+      "tail": "oppressor",
+      "head": "washin",
+      "label": "NO",
+      "bbox": [
+        73,
+        267,
+        85,
+        309
+      ]
+    },
+    {
+      "tail": "cimicoid hysterotomy foliose",
+      "head": "episiocele tributer",
+      "label": "NO",
+      "bbox": [
+        233,
+        108,
+        245,
+        155
+      ]
+    },
+    {
+      "tail": "cimicoid hysterotomy foliose",
+      "head": "fractile",
+      "label": "NO",
+      "bbox": [
+        97,
+        79,
+        168,
+        150
+      ]
+    },
+    {
+      "tail": "episiocele tributer",
+      "head": "polyphobic",
+      "label": null,
+      "bbox": [
+        233,
+        200,
+        245,
+        213
+      ]
+    },
+    {
+      "tail": "polyphobic",
+      "head": "cubmaster",
+      "label": null,
+      "bbox": [
+        233,
+        273,
+        245,
+        292
+      ]
+    },
+    {
+      "tail": "cubmaster",
+      "head": "canalling",
+      "label": "NO",
+      "bbox": [
+        233,
+        366,
+        245,
+        389
+      ]
+    },
+    {
+      "tail": "cubmaster",
+      "head": "fractile",
+      "label": "NO",
+      "bbox": [
+        98,
+        162,
+        192,
+        325
+      ]
+    }
+  ]
+}

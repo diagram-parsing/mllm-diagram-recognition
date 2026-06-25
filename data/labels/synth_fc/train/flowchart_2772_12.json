@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "text": "unrefined",
+      "id": "unrefined",
+      "class": "ellipse"
+    },
+    {
+      "text": "Corey",
+      "id": "Corey",
+      "class": "box"
+    },
+    {
+      "text": "nonfortification",
+      "id": "nonfortification",
+      "class": "box"
+    },
+    {
+      "text": "opisthenar",
+      "id": "opisthenar",
+      "class": "diamond"
+    },
+    {
+      "text": "centrolinead humdudgeon",
+      "id": "centrolinead humdudgeon",
+      "class": "parallelogram"
+    },
+    {
+      "text": "uprender",
+      "id": "uprender",
+      "class": "parallelogram"
+    },
+    {
+      "text": "sulphurate",
+      "id": "sulphurate",
+      "class": "diamond"
+    },
+    {
+      "text": "teratism",
+      "id": "teratism",
+      "class": "box"
+    },
+    {
+      "text": "musketoon lysigenous Enchelyce",
+      "id": "musketoon lysigenous Enchelyce",
+      "class": "hexagon"
+    },
+    {
+      "text": "persecutive",
+      "id": "persecutive",
+      "class": "hexagon"
+    },
+    {
+      "text": "interorbital",
+      "id": "interorbital",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hypermetaplasia",
+      "id": "hypermetaplasia",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unrefined",
+      "head": "Corey",
+      "label": null
+    },
+    {
+      "tail": "Corey",
+      "head": "nonfortification",
+      "label": null
+    },
+    {
+      "tail": "nonfortification",
+      "head": "opisthenar",
+      "label": null
+    },
+    {
+      "tail": "opisthenar",
+      "head": "centrolinead humdudgeon",
+      "label": "NO"
+    },
+    {
+      "tail": "opisthenar",
+      "head": "uprender",
+      "label": "NO"
+    },
+    {
+      "tail": "centrolinead humdudgeon",
+      "head": "sulphurate",
+      "label": null
+    },
+    {
+      "tail": "sulphurate",
+      "head": "teratism",
+      "label": "no"
+    },
+    {
+      "tail": "sulphurate",
+      "head": "Corey",
+      "label": "no"
+    },
+    {
+      "tail": "teratism",
+      "head": "musketoon lysigenous Enchelyce",
+      "label": null
+    },
+    {
+      "tail": "musketoon lysigenous Enchelyce",
+      "head": "persecutive",
+      "label": null
+    },
+    {
+      "tail": "persecutive",
+      "head": "uprender",
+      "label": null
+    },
+    {
+      "tail": "uprender",
+      "head": "interorbital",
+      "label": null
+    },
+    {
+      "tail": "interorbital",
+      "head": "hypermetaplasia",
+      "label": null
+    }
+  ]
+}

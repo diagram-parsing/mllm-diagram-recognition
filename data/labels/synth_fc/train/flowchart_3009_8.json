@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "spellbind",
+      "id": "spellbind",
+      "class": "oval"
+    },
+    {
+      "text": "progne",
+      "id": "progne",
+      "class": "document"
+    },
+    {
+      "text": "unwailing",
+      "id": "unwailing",
+      "class": "document"
+    },
+    {
+      "text": "unsuppliable",
+      "id": "unsuppliable",
+      "class": "box"
+    },
+    {
+      "text": "dissoul",
+      "id": "dissoul",
+      "class": "diamond"
+    },
+    {
+      "text": "gleamless",
+      "id": "gleamless",
+      "class": "document"
+    },
+    {
+      "text": "faithworthy adoration",
+      "id": "faithworthy adoration",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Nyctimene hypnosis",
+      "id": "Nyctimene hypnosis",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "spellbind",
+      "head": "progne",
+      "label": null
+    },
+    {
+      "tail": "progne",
+      "head": "unwailing",
+      "label": null
+    },
+    {
+      "tail": "unwailing",
+      "head": "unsuppliable",
+      "label": null
+    },
+    {
+      "tail": "unsuppliable",
+      "head": "dissoul",
+      "label": null
+    },
+    {
+      "tail": "dissoul",
+      "head": "gleamless",
+      "label": "No"
+    },
+    {
+      "tail": "dissoul",
+      "head": "unwailing",
+      "label": "No"
+    },
+    {
+      "tail": "gleamless",
+      "head": "faithworthy adoration",
+      "label": null
+    },
+    {
+      "tail": "faithworthy adoration",
+      "head": "Nyctimene hypnosis",
+      "label": null
+    }
+  ]
+}

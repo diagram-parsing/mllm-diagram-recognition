@@ -1,0 +1,479 @@
+{
+  "nodes": [
+    {
+      "text": "retrieves the file",
+      "id": "retrieves the file",
+      "bbox": [
+        242,
+        435,
+        445,
+        537
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        496,
+        440,
+        557,
+        517
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "acceptable for filling",
+      "id": "acceptable for filling",
+      "bbox": [
+        660,
+        413,
+        841,
+        537
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        890,
+        440,
+        960,
+        509
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "compliant with the description",
+      "id": "compliant with the description",
+      "bbox": [
+        638,
+        582,
+        887,
+        673
+      ],
+      "class": "task"
+    },
+    {
+      "text": "need to set a hearing date",
+      "id": "need to set a hearing date",
+      "bbox": [
+        1045,
+        435,
+        1249,
+        548
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1311,
+        459,
+        1376,
+        525
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "cashier allocates a hearing date",
+      "id": "cashier allocates a hearing date",
+      "bbox": [
+        1373,
+        333,
+        1566,
+        452
+      ],
+      "class": "task"
+    },
+    {
+      "text": "event ends",
+      "id": "event ends",
+      "bbox": [
+        1609,
+        373,
+        1643,
+        410
+      ],
+      "class": "event"
+    },
+    {
+      "text": "fees notice",
+      "id": "fees notice",
+      "bbox": [
+        1219,
+        594,
+        1339,
+        689
+      ],
+      "class": "task"
+    },
+    {
+      "text": "wait for the owner to pay the fees",
+      "id": "wait for the owner to pay the fees",
+      "bbox": [
+        1385,
+        571,
+        1543,
+        718
+      ],
+      "class": "task"
+    },
+    {
+      "text": "owner paid the fees",
+      "id": "owner paid the fees",
+      "bbox": [
+        1588,
+        582,
+        1643,
+        718
+      ],
+      "class": "task"
+    },
+    {
+      "text": "cashier DB",
+      "id": "cashier DB",
+      "bbox": [
+        1424,
+        746,
+        1464,
+        797
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "cashier",
+      "id": "cashier",
+      "bbox": [
+        1549,
+        497,
+        1588,
+        548
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "hearing date",
+      "id": "hearing date",
+      "bbox": [
+        1115,
+        305,
+        1147,
+        345
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "request letter",
+      "id": "request letter",
+      "bbox": [
+        134,
+        324,
+        169,
+        360
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "received a request",
+      "id": "received a request",
+      "bbox": [
+        101,
+        471,
+        167,
+        526
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "event ends",
+      "id": "event ends",
+      "bbox": [
+        1670,
+        646,
+        1707,
+        682
+      ],
+      "class": "event"
+    },
+    {
+      "text": "fees informations",
+      "id": "fees informations",
+      "bbox": [
+        1292,
+        298,
+        1333,
+        339
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "received a request",
+      "head": "retrieves the file",
+      "class": "sequenceFlow",
+      "bbox": [
+        165,
+        469,
+        243,
+        504
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieves the file",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        445,
+        466,
+        500,
+        501
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "acceptable for filling",
+      "class": "sequenceFlow",
+      "bbox": [
+        555,
+        463,
+        661,
+        499
+      ],
+      "label": null
+    },
+    {
+      "tail": "acceptable for filling",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        841,
+        461,
+        898,
+        496
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "compliant with the description",
+      "class": "sequenceFlow",
+      "bbox": [
+        525,
+        513,
+        639,
+        629
+      ],
+      "label": null
+    },
+    {
+      "tail": "compliant with the description",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        887,
+        502,
+        933,
+        651
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "need to set a hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        953,
+        463,
+        1046,
+        499
+      ],
+      "label": null
+    },
+    {
+      "tail": "need to set a hearing date",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1249,
+        477,
+        1317,
+        512
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "cashier allocates a hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        1339,
+        379,
+        1374,
+        465
+      ],
+      "label": "paid?"
+    },
+    {
+      "tail": "cashier allocates a hearing date",
+      "head": "event ends",
+      "class": "sequenceFlow",
+      "bbox": [
+        1566,
+        376,
+        1610,
+        411
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "fees notice",
+      "class": "sequenceFlow",
+      "bbox": [
+        1291,
+        512,
+        1333,
+        595
+      ],
+      "label": "not paid?"
+    },
+    {
+      "tail": "fees notice",
+      "head": "wait for the owner to pay the fees",
+      "class": "sequenceFlow",
+      "bbox": [
+        1339,
+        611,
+        1386,
+        646
+      ],
+      "label": null
+    },
+    {
+      "tail": "wait for the owner to pay the fees",
+      "head": "owner paid the fees",
+      "class": "sequenceFlow",
+      "bbox": [
+        1543,
+        633,
+        1589,
+        668
+      ],
+      "label": null
+    },
+    {
+      "tail": "owner paid the fees",
+      "head": "event ends",
+      "class": "sequenceFlow",
+      "bbox": [
+        1639,
+        649,
+        1674,
+        684
+      ],
+      "label": null
+    },
+    {
+      "tail": "need to set a hearing date",
+      "head": "hearing date",
+      "class": "dataAssociation",
+      "bbox": [
+        1112,
+        345,
+        1148,
+        425
+      ],
+      "label": null
+    },
+    {
+      "tail": "cashier allocates a hearing date",
+      "head": "cashier",
+      "class": "dataAssociation",
+      "bbox": [
+        1548,
+        452,
+        1583,
+        499
+      ],
+      "label": null
+    },
+    {
+      "tail": "cashier",
+      "head": "owner paid the fees",
+      "class": "dataAssociation",
+      "bbox": [
+        1565,
+        548,
+        1600,
+        605
+      ],
+      "label": null
+    },
+    {
+      "tail": "owner paid the fees",
+      "head": "cashier DB",
+      "class": "dataAssociation",
+      "bbox": [
+        1464,
+        691,
+        1589,
+        776
+      ],
+      "label": null
+    },
+    {
+      "tail": "owner",
+      "head": "received a request",
+      "class": "messageFlow",
+      "bbox": [
+        132,
+        254,
+        168,
+        467
+      ],
+      "label": null
+    },
+    {
+      "tail": "fees informations",
+      "head": "owner",
+      "class": "messageFlow",
+      "bbox": [
+        1295,
+        254,
+        1330,
+        299
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "cashier",
+      "nodes": [],
+      "bbox": [
+        27,
+        274,
+        1664,
+        978
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "owner",
+      "nodes": [],
+      "bbox": [
+        117,
+        164,
+        1634,
+        254
+      ],
+      "class": "pool"
+    }
+  ]
+}

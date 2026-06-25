@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    {
+      "text": "doctor chosen",
+      "id": "doctor chosen",
+      "class": "event"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "task"
+    },
+    {
+      "text": "report finished",
+      "id": "report finished",
+      "class": "event"
+    },
+    {
+      "text": "file a cheque",
+      "id": "file a cheque",
+      "class": "task"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "ask expert to review doctor\u00c2\u00b4s work",
+      "id": "ask expert to review doctor\u00c2\u00b4s work",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "choose other expert",
+      "id": "choose other expert",
+      "class": "task"
+    },
+    {
+      "text": "forward to QA",
+      "id": "forward to QA",
+      "class": "messageEvent"
+    },
+    {
+      "text": "send cheque to expert",
+      "id": "send cheque to expert",
+      "class": "messageEvent"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "file a cheque",
+      "head": "send cheque to expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward to QA",
+      "head": "file a cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "forward to QA",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "label": "response in time"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "choose other expert",
+      "class": "sequenceFlow",
+      "label": "no response in time"
+    },
+    {
+      "tail": "ask expert to review doctor\u00c2\u00b4s work",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask expert to review doctor\u00c2\u00b4s work",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "doctor chosen",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "report finished",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "doctor chosen",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "expert",
+      "head": "receive expertise",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "send cheque to expert",
+      "head": "expert",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "quality assurance"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "file a cheque",
+        "exclusiveGateway_1",
+        "ask expert to review doctor\u00c2\u00b4s work",
+        "exclusiveGateway_2",
+        "choose other expert",
+        "forward to QA",
+        "send cheque to expert",
+        "receive expertise"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance",
+      "nodes": [
+        "doctor chosen",
+        "interview patients",
+        "report finished",
+        "file results",
+        "create report"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

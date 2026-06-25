@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "text": "blepharophyma",
+      "id": "blepharophyma",
+      "class": "oval"
+    },
+    {
+      "text": "Blatta",
+      "id": "Blatta",
+      "class": "document"
+    },
+    {
+      "text": "charisma",
+      "id": "charisma",
+      "class": "document"
+    },
+    {
+      "text": "whitethorn",
+      "id": "whitethorn",
+      "class": "diamond"
+    },
+    {
+      "text": "Murray",
+      "id": "Murray",
+      "class": "diamond"
+    },
+    {
+      "text": "hyperresonant",
+      "id": "hyperresonant",
+      "class": "diamond"
+    },
+    {
+      "text": "vitreoelectric",
+      "id": "vitreoelectric",
+      "class": "document"
+    },
+    {
+      "text": "heliconist",
+      "id": "heliconist",
+      "class": "box"
+    },
+    {
+      "text": "humeroulnar",
+      "id": "humeroulnar",
+      "class": "document"
+    },
+    {
+      "text": "alveolation psychesthetic quir",
+      "id": "alveolation psychesthetic quir",
+      "class": "hexagon"
+    },
+    {
+      "text": "vasculose cookshack",
+      "id": "vasculose cookshack",
+      "class": "diamond"
+    },
+    {
+      "text": "prereverse entrain",
+      "id": "prereverse entrain",
+      "class": "parallelogram"
+    },
+    {
+      "text": "croze omentoplasty Alcibiadean",
+      "id": "croze omentoplasty Alcibiadean",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "blepharophyma",
+      "head": "Blatta",
+      "label": null
+    },
+    {
+      "tail": "Blatta",
+      "head": "charisma",
+      "label": null
+    },
+    {
+      "tail": "charisma",
+      "head": "whitethorn",
+      "label": null
+    },
+    {
+      "tail": "whitethorn",
+      "head": "Murray",
+      "label": "No"
+    },
+    {
+      "tail": "whitethorn",
+      "head": "charisma",
+      "label": "No"
+    },
+    {
+      "tail": "Murray",
+      "head": "hyperresonant",
+      "label": "NO"
+    },
+    {
+      "tail": "Murray",
+      "head": "vitreoelectric",
+      "label": "NO"
+    },
+    {
+      "tail": "hyperresonant",
+      "head": "heliconist",
+      "label": "yes"
+    },
+    {
+      "tail": "hyperresonant",
+      "head": "humeroulnar",
+      "label": "yes"
+    },
+    {
+      "tail": "heliconist",
+      "head": "humeroulnar",
+      "label": null
+    },
+    {
+      "tail": "humeroulnar",
+      "head": "alveolation psychesthetic quir",
+      "label": null
+    },
+    {
+      "tail": "alveolation psychesthetic quir",
+      "head": "vasculose cookshack",
+      "label": null
+    },
+    {
+      "tail": "vasculose cookshack",
+      "head": "prereverse entrain",
+      "label": "YES"
+    },
+    {
+      "tail": "vasculose cookshack",
+      "head": "humeroulnar",
+      "label": "YES"
+    },
+    {
+      "tail": "prereverse entrain",
+      "head": "vitreoelectric",
+      "label": null
+    },
+    {
+      "tail": "vitreoelectric",
+      "head": "croze omentoplasty Alcibiadean",
+      "label": null
+    }
+  ]
+}

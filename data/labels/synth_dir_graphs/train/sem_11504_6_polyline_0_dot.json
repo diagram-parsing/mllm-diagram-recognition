@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "text": "encephalosclerosis rotulad",
+      "id": "encephalosclerosis rotulad",
+      "class": "node"
+    },
+    {
+      "text": "searlesite shisn tricksome",
+      "id": "searlesite shisn tricksome",
+      "class": "node"
+    },
+    {
+      "text": "photomicrographer",
+      "id": "photomicrographer",
+      "class": "node"
+    },
+    {
+      "text": "achira inoculation",
+      "id": "achira inoculation",
+      "class": "node"
+    },
+    {
+      "text": "prowarden terebral",
+      "id": "prowarden terebral",
+      "class": "node"
+    },
+    {
+      "text": "patient edgrew simiousness",
+      "id": "patient edgrew simiousness",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "encephalosclerosis rotulad",
+      "head": "searlesite shisn tricksome",
+      "label": "0.641",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "photomicrographer",
+      "head": "achira inoculation",
+      "label": "0.232",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "photomicrographer",
+      "head": "prowarden terebral",
+      "label": "0.313",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "patient edgrew simiousness",
+      "head": "photomicrographer",
+      "label": "0.196",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "encephalosclerosis rotulad",
+      "head": "patient edgrew simiousness",
+      "label": null,
+      "class": "bidirectional"
+    }
+  ]
+}

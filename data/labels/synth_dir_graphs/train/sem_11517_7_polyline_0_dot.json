@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "text": "medullary",
+      "id": "medullary",
+      "class": "node"
+    },
+    {
+      "text": "asak hemiprotein",
+      "id": "asak hemiprotein",
+      "class": "node"
+    },
+    {
+      "text": "workshop",
+      "id": "workshop",
+      "class": "node"
+    },
+    {
+      "text": "chloroformic",
+      "id": "chloroformic",
+      "class": "node"
+    },
+    {
+      "text": "siffilate",
+      "id": "siffilate",
+      "class": "node"
+    },
+    {
+      "text": "Huguenotism Serpentinian elect",
+      "id": "Huguenotism Serpentinian elect",
+      "class": "node"
+    },
+    {
+      "text": "hammerless",
+      "id": "hammerless",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "medullary",
+      "head": "asak hemiprotein",
+      "label": "0.62 y = 0.788",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "workshop",
+      "head": "chloroformic",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "siffilate",
+      "head": "Huguenotism Serpentinian elect",
+      "label": "-0.35* t = 0.389",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "workshop",
+      "head": "siffilate",
+      "label": "-0.54 h = 0.225",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "medullary",
+      "head": "siffilate",
+      "label": "0.2653",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "hammerless",
+      "head": "siffilate",
+      "label": "-0.32* h = 0.777",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "hammerless",
+      "head": "workshop",
+      "label": "0.71 H = 0.904",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "medullary",
+      "head": "workshop",
+      "label": "1",
+      "class": "unidirectional"
+    }
+  ]
+}

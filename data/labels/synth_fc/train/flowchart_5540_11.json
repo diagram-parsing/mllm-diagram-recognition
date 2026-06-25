@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "noticeability endosteum",
+      "id": "noticeability endosteum",
+      "class": "circle"
+    },
+    {
+      "text": "orthitic",
+      "id": "orthitic",
+      "class": "document"
+    },
+    {
+      "text": "polyphobic",
+      "id": "polyphobic",
+      "class": "box"
+    },
+    {
+      "text": "deplumate miaower",
+      "id": "deplumate miaower",
+      "class": "diamond"
+    },
+    {
+      "text": "siccimeter",
+      "id": "siccimeter",
+      "class": "diamond"
+    },
+    {
+      "text": "goety",
+      "id": "goety",
+      "class": "diamond"
+    },
+    {
+      "text": "splenoma",
+      "id": "splenoma",
+      "class": "diamond"
+    },
+    {
+      "text": "answerably",
+      "id": "answerably",
+      "class": "box"
+    },
+    {
+      "text": "blistery",
+      "id": "blistery",
+      "class": "document"
+    },
+    {
+      "text": "morainic epipodium",
+      "id": "morainic epipodium",
+      "class": "diamond"
+    },
+    {
+      "text": "dikage umbrally surrenderer",
+      "id": "dikage umbrally surrenderer",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "noticeability endosteum",
+      "head": "orthitic",
+      "label": null
+    },
+    {
+      "tail": "orthitic",
+      "head": "polyphobic",
+      "label": null
+    },
+    {
+      "tail": "polyphobic",
+      "head": "deplumate miaower",
+      "label": null
+    },
+    {
+      "tail": "deplumate miaower",
+      "head": "siccimeter",
+      "label": "no"
+    },
+    {
+      "tail": "deplumate miaower",
+      "head": "orthitic",
+      "label": "no"
+    },
+    {
+      "tail": "siccimeter",
+      "head": "goety",
+      "label": "Yes"
+    },
+    {
+      "tail": "siccimeter",
+      "head": "splenoma",
+      "label": "Yes"
+    },
+    {
+      "tail": "goety",
+      "head": "answerably",
+      "label": "NO"
+    },
+    {
+      "tail": "goety",
+      "head": "splenoma",
+      "label": "NO"
+    },
+    {
+      "tail": "answerably",
+      "head": "splenoma",
+      "label": null
+    },
+    {
+      "tail": "splenoma",
+      "head": "blistery",
+      "label": "YES"
+    },
+    {
+      "tail": "splenoma",
+      "head": "answerably",
+      "label": "YES"
+    },
+    {
+      "tail": "blistery",
+      "head": "morainic epipodium",
+      "label": null
+    },
+    {
+      "tail": "morainic epipodium",
+      "head": "dikage umbrally surrenderer",
+      "label": "NO"
+    },
+    {
+      "tail": "morainic epipodium",
+      "head": "orthitic",
+      "label": "NO"
+    }
+  ]
+}

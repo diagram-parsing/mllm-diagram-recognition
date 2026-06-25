@@ -1,0 +1,231 @@
+{
+  "nodes": [
+    {
+      "text": "Retrieve the file",
+      "id": "Retrieve the file",
+      "class": "task"
+    },
+    {
+      "text": "set a hearing date",
+      "id": "set a hearing date",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "fees notice",
+      "id": "fees notice",
+      "class": "dataObject"
+    },
+    {
+      "text": "check complianccat the description",
+      "id": "check complianccat the description",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check acceptable for filing",
+      "id": "check acceptable for filing",
+      "class": "task"
+    },
+    {
+      "text": "receive fees",
+      "id": "receive fees",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "Request for compensation",
+      "id": "Request for compensation",
+      "class": "dataObject"
+    },
+    {
+      "text": "File of the promises",
+      "id": "File of the promises",
+      "class": "dataObject"
+    },
+    {
+      "text": "Receive request for compensation",
+      "id": "Receive request for compensation",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Receive request for compensation",
+      "head": "Retrieve the file",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Retrieve the file",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "check acceptable for filing",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check acceptable for filing",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "set a hearing date",
+      "class": "sequenceFlow",
+      "label": "fees have been paid"
+    },
+    {
+      "tail": "set a hearing date",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": "fees have not been paid"
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "receive fees",
+      "class": "sequenceFlow",
+      "label": "send fees notice"
+    },
+    {
+      "tail": "receive fees",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "check complianccat the description",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check complianccat the description",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Receive request for compensation",
+      "head": "Request for compensation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Request for compensation",
+      "head": "Retrieve the file",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Retrieve the file",
+      "head": "File of the promises",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Request for compensation",
+      "head": "check acceptable for filing",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "fees notice",
+      "head": "messageEvent_1",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "File of the promises",
+      "head": "check complianccat the description",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Request for compensation",
+      "head": "check complianccat the description",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Owner",
+      "head": "Receive request for compensation",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "Owner",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Owner",
+      "head": "receive fees",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Tribunal cashier",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Owner",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

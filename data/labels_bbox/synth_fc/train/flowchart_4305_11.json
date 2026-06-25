@@ -1,0 +1,303 @@
+{
+  "nodes": [
+    {
+      "text": "undersomething",
+      "id": "undersomething",
+      "class": "oval",
+      "bbox": [
+        32,
+        5,
+        161,
+        53
+      ]
+    },
+    {
+      "text": "unalcoholized",
+      "id": "unalcoholized",
+      "class": "diamond",
+      "bbox": [
+        40,
+        79,
+        153,
+        152
+      ]
+    },
+    {
+      "text": "parthenic",
+      "id": "parthenic",
+      "class": "diamond",
+      "bbox": [
+        36,
+        177,
+        157,
+        225
+      ]
+    },
+    {
+      "text": "ahungry",
+      "id": "ahungry",
+      "class": "box",
+      "bbox": [
+        60,
+        241,
+        133,
+        289
+      ]
+    },
+    {
+      "text": "reimage",
+      "id": "reimage",
+      "class": "diamond",
+      "bbox": [
+        204,
+        263,
+        333,
+        311
+      ]
+    },
+    {
+      "text": "parasitoid",
+      "id": "parasitoid",
+      "class": "document",
+      "bbox": [
+        59,
+        349,
+        134,
+        397
+      ]
+    },
+    {
+      "text": "symbranchous Baruch knower",
+      "id": "symbranchous Baruch knower",
+      "class": "diamond",
+      "bbox": [
+        5,
+        422,
+        188,
+        490
+      ]
+    },
+    {
+      "text": "unsparred chemicoengineering",
+      "id": "unsparred chemicoengineering",
+      "class": "diamond",
+      "bbox": [
+        172,
+        57,
+        359,
+        130
+      ]
+    },
+    {
+      "text": "Habab",
+      "id": "Habab",
+      "class": "parallelogram",
+      "bbox": [
+        209,
+        198,
+        327,
+        246
+      ]
+    },
+    {
+      "text": "chaffseed",
+      "id": "chaffseed",
+      "class": "diamond",
+      "bbox": [
+        208,
+        370,
+        329,
+        418
+      ]
+    },
+    {
+      "text": "overfaint downsitting collecte",
+      "id": "overfaint downsitting collecte",
+      "class": "oval",
+      "bbox": [
+        200,
+        433,
+        337,
+        485
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "undersomething",
+      "head": "unalcoholized",
+      "label": null,
+      "bbox": [
+        91,
+        54,
+        103,
+        78
+      ]
+    },
+    {
+      "tail": "unalcoholized",
+      "head": "parthenic",
+      "label": "no",
+      "bbox": [
+        91,
+        153,
+        103,
+        177
+      ]
+    },
+    {
+      "tail": "unalcoholized",
+      "head": "ahungry",
+      "label": "no",
+      "bbox": [
+        113,
+        142,
+        167,
+        261
+      ]
+    },
+    {
+      "tail": "parthenic",
+      "head": "ahungry",
+      "label": "Yes",
+      "bbox": [
+        91,
+        226,
+        103,
+        241
+      ]
+    },
+    {
+      "tail": "parthenic",
+      "head": "reimage",
+      "label": "Yes",
+      "bbox": [
+        146,
+        206,
+        230,
+        283
+      ]
+    },
+    {
+      "tail": "ahungry",
+      "head": "parasitoid",
+      "label": null,
+      "bbox": [
+        91,
+        290,
+        103,
+        349
+      ]
+    },
+    {
+      "tail": "parasitoid",
+      "head": "symbranchous Baruch knower",
+      "label": null,
+      "bbox": [
+        91,
+        397,
+        103,
+        422
+      ]
+    },
+    {
+      "tail": "symbranchous Baruch knower",
+      "head": "unsparred chemicoengineering",
+      "label": "No",
+      "bbox": [
+        171,
+        96,
+        183,
+        454
+      ]
+    },
+    {
+      "tail": "symbranchous Baruch knower",
+      "head": "reimage",
+      "label": "No",
+      "bbox": [
+        183,
+        295,
+        239,
+        456
+      ]
+    },
+    {
+      "tail": "unsparred chemicoengineering",
+      "head": "Habab",
+      "label": "No",
+      "bbox": [
+        262,
+        131,
+        274,
+        198
+      ]
+    },
+    {
+      "tail": "unsparred chemicoengineering",
+      "head": "reimage",
+      "label": "No",
+      "bbox": [
+        194,
+        103,
+        248,
+        276
+      ]
+    },
+    {
+      "tail": "Habab",
+      "head": "reimage",
+      "label": null,
+      "bbox": [
+        262,
+        247,
+        274,
+        263
+      ]
+    },
+    {
+      "tail": "reimage",
+      "head": "chaffseed",
+      "label": "No",
+      "bbox": [
+        262,
+        311,
+        274,
+        370
+      ]
+    },
+    {
+      "tail": "reimage",
+      "head": "ahungry",
+      "label": "No",
+      "bbox": [
+        134,
+        277,
+        212,
+        289
+      ]
+    },
+    {
+      "tail": "chaffseed",
+      "head": "overfaint downsitting collecte",
+      "label": "Yes",
+      "bbox": [
+        262,
+        419,
+        274,
+        432
+      ]
+    },
+    {
+      "tail": "chaffseed",
+      "head": "parasitoid",
+      "label": "Yes",
+      "bbox": [
+        134,
+        379,
+        231,
+        391
+      ]
+    }
+  ]
+}

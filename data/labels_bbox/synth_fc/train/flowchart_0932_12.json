@@ -1,0 +1,281 @@
+{
+  "nodes": [
+    {
+      "text": "pretraining",
+      "id": "pretraining",
+      "class": "oval",
+      "bbox": [
+        32,
+        5,
+        104,
+        57
+      ]
+    },
+    {
+      "text": "myophan",
+      "id": "myophan",
+      "class": "box",
+      "bbox": [
+        27,
+        125,
+        108,
+        173
+      ]
+    },
+    {
+      "text": "sunglass woodland",
+      "id": "sunglass woodland",
+      "class": "diamond",
+      "bbox": [
+        5,
+        229,
+        130,
+        303
+      ]
+    },
+    {
+      "text": "privacy juiceless",
+      "id": "privacy juiceless",
+      "class": "parallelogram",
+      "bbox": [
+        7,
+        347,
+        128,
+        420
+      ]
+    },
+    {
+      "text": "saute psychologically",
+      "id": "saute psychologically",
+      "class": "diamond",
+      "bbox": [
+        230,
+        493,
+        375,
+        561
+      ]
+    },
+    {
+      "text": "battered bretelle",
+      "id": "battered bretelle",
+      "class": "document",
+      "bbox": [
+        258,
+        154,
+        347,
+        202
+      ]
+    },
+    {
+      "text": "chrysobull",
+      "id": "chrysobull",
+      "class": "parallelogram",
+      "bbox": [
+        234,
+        213,
+        371,
+        261
+      ]
+    },
+    {
+      "text": "androgyny phantasist cytoblast",
+      "id": "androgyny phantasist cytoblast",
+      "class": "document",
+      "bbox": [
+        253,
+        330,
+        352,
+        378
+      ]
+    },
+    {
+      "text": "spiriferous",
+      "id": "spiriferous",
+      "class": "parallelogram",
+      "bbox": [
+        469,
+        37,
+        601,
+        85
+      ]
+    },
+    {
+      "text": "kameelthorn supermanism",
+      "id": "kameelthorn supermanism",
+      "class": "document",
+      "bbox": [
+        492,
+        125,
+        582,
+        173
+      ]
+    },
+    {
+      "text": "Serridentinus",
+      "id": "Serridentinus",
+      "class": "box",
+      "bbox": [
+        501,
+        213,
+        573,
+        261
+      ]
+    },
+    {
+      "text": "kanephoros untentaculate Dipne",
+      "id": "kanephoros untentaculate Dipne",
+      "class": "circle",
+      "bbox": [
+        468,
+        314,
+        601,
+        452
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pretraining",
+      "head": "myophan",
+      "label": null,
+      "bbox": [
+        63,
+        57,
+        72,
+        123
+      ]
+    },
+    {
+      "tail": "myophan",
+      "head": "sunglass woodland",
+      "label": null,
+      "bbox": [
+        63,
+        173,
+        72,
+        227
+      ]
+    },
+    {
+      "tail": "sunglass woodland",
+      "head": "privacy juiceless",
+      "label": "YES",
+      "bbox": [
+        63,
+        303,
+        72,
+        345
+      ]
+    },
+    {
+      "tail": "sunglass woodland",
+      "head": "saute psychologically",
+      "label": "YES",
+      "bbox": [
+        103,
+        283,
+        248,
+        522
+      ]
+    },
+    {
+      "tail": "privacy juiceless",
+      "head": "battered bretelle",
+      "label": null,
+      "bbox": [
+        123,
+        183,
+        257,
+        363
+      ]
+    },
+    {
+      "tail": "battered bretelle",
+      "head": "chrysobull",
+      "label": null,
+      "bbox": [
+        298,
+        198,
+        307,
+        211
+      ]
+    },
+    {
+      "tail": "chrysobull",
+      "head": "androgyny phantasist cytoblast",
+      "label": null,
+      "bbox": [
+        298,
+        261,
+        307,
+        329
+      ]
+    },
+    {
+      "tail": "androgyny phantasist cytoblast",
+      "head": "saute psychologically",
+      "label": null,
+      "bbox": [
+        298,
+        378,
+        307,
+        492
+      ]
+    },
+    {
+      "tail": "saute psychologically",
+      "head": "spiriferous",
+      "label": "no",
+      "bbox": [
+        361,
+        86,
+        485,
+        523
+      ]
+    },
+    {
+      "tail": "saute psychologically",
+      "head": "battered bretelle",
+      "label": "no",
+      "bbox": [
+        348,
+        183,
+        421,
+        531
+      ]
+    },
+    {
+      "tail": "spiriferous",
+      "head": "kameelthorn supermanism",
+      "label": null,
+      "bbox": [
+        532,
+        85,
+        542,
+        123
+      ]
+    },
+    {
+      "tail": "kameelthorn supermanism",
+      "head": "Serridentinus",
+      "label": null,
+      "bbox": [
+        532,
+        172,
+        542,
+        211
+      ]
+    },
+    {
+      "tail": "Serridentinus",
+      "head": "kanephoros untentaculate Dipne",
+      "label": null,
+      "bbox": [
+        532,
+        261,
+        542,
+        313
+      ]
+    }
+  ]
+}

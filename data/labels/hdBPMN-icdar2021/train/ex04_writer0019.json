@@ -1,0 +1,169 @@
+{
+  "nodes": [
+    {
+      "text": "Retrieves file for particular premises",
+      "id": "Retrieves file for particular premises",
+      "class": "task"
+    },
+    {
+      "text": "Check if request is acceptable for filing",
+      "id": "Check if request is acceptable for filing",
+      "class": "task"
+    },
+    {
+      "text": "Check if request is compliant with the description of the process",
+      "id": "Check if request is compliant with the description of the process",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "produce a fees notice",
+      "id": "produce a fees notice",
+      "class": "task"
+    },
+    {
+      "text": "Allocate hearing date",
+      "id": "Allocate hearing date",
+      "class": "task"
+    },
+    {
+      "text": "Database",
+      "id": "Database",
+      "class": "dataStore"
+    },
+    {
+      "text": "File",
+      "id": "File",
+      "class": "dataObject"
+    },
+    {
+      "text": "Hearing date allocated",
+      "id": "Hearing date allocated",
+      "class": "event"
+    },
+    {
+      "text": "Wait before reassessy the document",
+      "id": "Wait before reassessy the document",
+      "class": "task"
+    },
+    {
+      "text": "Request recieved",
+      "id": "Request recieved",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Request recieved",
+      "head": "Retrieves file for particular premises",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Retrieves file for particular premises",
+      "head": "Check if request is acceptable for filing",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Check if request is acceptable for filing",
+      "head": "Check if request is compliant with the description of the process",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Check if request is compliant with the description of the process",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "produce a fees notice",
+      "class": "sequenceFlow",
+      "label": "Fees not yet paid"
+    },
+    {
+      "tail": "produce a fees notice",
+      "head": "Wait before reassessy the document",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Allocate hearing date",
+      "class": "sequenceFlow",
+      "label": "Fees already paid"
+    },
+    {
+      "tail": "Allocate hearing date",
+      "head": "Hearing date allocated",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Wait before reassessy the document",
+      "head": "Retrieves file for particular premises",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Database",
+      "head": "Retrieves file for particular premises",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Retrieves file for particular premises",
+      "head": "File",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "File",
+      "head": "Check if request is acceptable for filing",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "File",
+      "head": "Check if request is compliant with the description of the process",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Owner",
+      "head": "Request recieved",
+      "class": "messageFlow",
+      "label": "Request for compensation"
+    },
+    {
+      "tail": "produce a fees notice",
+      "head": "Owner",
+      "class": "messageFlow",
+      "label": "Fees notice"
+    },
+    {
+      "tail": "Owner",
+      "head": "Wait before reassessy the document",
+      "class": "messageFlow",
+      "label": "Fees paid"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Tribunal",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Owner",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

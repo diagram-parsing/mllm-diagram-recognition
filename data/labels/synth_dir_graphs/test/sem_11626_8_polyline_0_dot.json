@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "text": "intrashop",
+      "id": "intrashop",
+      "class": "node"
+    },
+    {
+      "text": "protoforaminifer pave",
+      "id": "protoforaminifer pave",
+      "class": "node"
+    },
+    {
+      "text": "postcardiac Lamanite semiglaze",
+      "id": "postcardiac Lamanite semiglaze",
+      "class": "node"
+    },
+    {
+      "text": "concorporate",
+      "id": "concorporate",
+      "class": "node"
+    },
+    {
+      "text": "persecuting",
+      "id": "persecuting",
+      "class": "node"
+    },
+    {
+      "text": "upstare buba",
+      "id": "upstare buba",
+      "class": "node"
+    },
+    {
+      "text": "malinstruction robot",
+      "id": "malinstruction robot",
+      "class": "node"
+    },
+    {
+      "text": "Hukbalahap",
+      "id": "Hukbalahap",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "intrashop",
+      "head": "protoforaminifer pave",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "intrashop",
+      "head": "postcardiac Lamanite semiglaze",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "intrashop",
+      "head": "concorporate",
+      "label": "-1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "persecuting",
+      "head": "upstare buba",
+      "label": "0.17*** H = 0.244",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "persecuting",
+      "head": "malinstruction robot",
+      "label": "-0.06 y = 0.912",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "intrashop",
+      "head": "persecuting",
+      "label": "0.19 a = 0.175",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "persecuting",
+      "head": "Hukbalahap",
+      "label": "0.63** H = 0.859",
+      "class": "bidirectional"
+    }
+  ]
+}

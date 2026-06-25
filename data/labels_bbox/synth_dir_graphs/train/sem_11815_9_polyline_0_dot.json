@@ -1,0 +1,213 @@
+{
+  "nodes": [
+    {
+      "text": "taikhana",
+      "id": "taikhana",
+      "class": "node",
+      "bbox": [
+        699,
+        40,
+        780,
+        104
+      ]
+    },
+    {
+      "text": "greenyard",
+      "id": "greenyard",
+      "class": "node",
+      "bbox": [
+        469,
+        27,
+        541,
+        77
+      ]
+    },
+    {
+      "text": "pyrometer",
+      "id": "pyrometer",
+      "class": "node",
+      "bbox": [
+        183,
+        189,
+        295,
+        237
+      ]
+    },
+    {
+      "text": "Downton Cystidea",
+      "id": "Downton Cystidea",
+      "class": "node",
+      "bbox": [
+        5,
+        188,
+        98,
+        239
+      ]
+    },
+    {
+      "text": "stasimorphy",
+      "id": "stasimorphy",
+      "class": "node",
+      "bbox": [
+        439,
+        351,
+        571,
+        399
+      ]
+    },
+    {
+      "text": "atelectatic pyosepticemic exci",
+      "id": "atelectatic pyosepticemic exci",
+      "class": "node",
+      "bbox": [
+        165,
+        453,
+        313,
+        504
+      ]
+    },
+    {
+      "text": "browden",
+      "id": "browden",
+      "class": "node",
+      "bbox": [
+        194,
+        372,
+        284,
+        420
+      ]
+    },
+    {
+      "text": "corsac",
+      "id": "corsac",
+      "class": "node",
+      "bbox": [
+        202,
+        288,
+        276,
+        336
+      ]
+    },
+    {
+      "text": "exodontia interfusion hexone",
+      "id": "exodontia interfusion hexone",
+      "class": "node",
+      "bbox": [
+        438,
+        203,
+        572,
+        253
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "taikhana",
+      "head": "greenyard",
+      "label": "0.27* t = 0.86",
+      "class": "unidirectional",
+      "bbox": [
+        541,
+        53,
+        699,
+        69
+      ]
+    },
+    {
+      "tail": "pyrometer",
+      "head": "Downton Cystidea",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        98,
+        210,
+        182,
+        216
+      ]
+    },
+    {
+      "tail": "stasimorphy",
+      "head": "atelectatic pyosepticemic exci",
+      "label": "0.51* y = 0.767",
+      "class": "unidirectional",
+      "bbox": [
+        313,
+        397,
+        478,
+        470
+      ]
+    },
+    {
+      "tail": "stasimorphy",
+      "head": "browden",
+      "label": "0.36*** H = 0.211",
+      "class": "unidirectional",
+      "bbox": [
+        285,
+        387,
+        448,
+        398
+      ]
+    },
+    {
+      "tail": "stasimorphy",
+      "head": "corsac",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        277,
+        316,
+        458,
+        358
+      ]
+    },
+    {
+      "tail": "taikhana",
+      "head": "exodontia interfusion hexone",
+      "label": "-1",
+      "class": "bidirectional",
+      "bbox": [
+        567,
+        107,
+        721,
+        220
+      ]
+    },
+    {
+      "tail": "taikhana",
+      "head": "stasimorphy",
+      "label": "-0.97 H = 0.207",
+      "class": "unidirectional",
+      "bbox": [
+        541,
+        103,
+        729,
+        354
+      ]
+    },
+    {
+      "tail": "exodontia interfusion hexone",
+      "head": "pyrometer",
+      "label": "-0.65 a = 0.954",
+      "class": "unidirectional",
+      "bbox": [
+        294,
+        218,
+        438,
+        227
+      ]
+    },
+    {
+      "tail": "taikhana",
+      "head": "pyrometer",
+      "label": "-0.99*** t = 0.282",
+      "class": "bidirectional",
+      "bbox": [
+        281,
+        90,
+        698,
+        197
+      ]
+    }
+  ]
+}

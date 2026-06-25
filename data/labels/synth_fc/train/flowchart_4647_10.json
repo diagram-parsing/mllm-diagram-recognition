@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "undeify",
+      "id": "undeify",
+      "class": "oval"
+    },
+    {
+      "text": "adtevac fatbird libidinously",
+      "id": "adtevac fatbird libidinously",
+      "class": "hexagon"
+    },
+    {
+      "text": "Benedictine",
+      "id": "Benedictine",
+      "class": "parallelogram"
+    },
+    {
+      "text": "iliotrochanteric ophthalmoleuc",
+      "id": "iliotrochanteric ophthalmoleuc",
+      "class": "diamond"
+    },
+    {
+      "text": "backjaw azoparaffin",
+      "id": "backjaw azoparaffin",
+      "class": "diamond"
+    },
+    {
+      "text": "feeze",
+      "id": "feeze",
+      "class": "hexagon"
+    },
+    {
+      "text": "nailrod",
+      "id": "nailrod",
+      "class": "diamond"
+    },
+    {
+      "text": "sacramentalist tritencephalon",
+      "id": "sacramentalist tritencephalon",
+      "class": "parallelogram"
+    },
+    {
+      "text": "allocryptic assumed",
+      "id": "allocryptic assumed",
+      "class": "hexagon"
+    },
+    {
+      "text": "unbush",
+      "id": "unbush",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "undeify",
+      "head": "adtevac fatbird libidinously",
+      "label": null
+    },
+    {
+      "tail": "adtevac fatbird libidinously",
+      "head": "Benedictine",
+      "label": null
+    },
+    {
+      "tail": "Benedictine",
+      "head": "iliotrochanteric ophthalmoleuc",
+      "label": null
+    },
+    {
+      "tail": "iliotrochanteric ophthalmoleuc",
+      "head": "backjaw azoparaffin",
+      "label": "No"
+    },
+    {
+      "tail": "iliotrochanteric ophthalmoleuc",
+      "head": "feeze",
+      "label": "No"
+    },
+    {
+      "tail": "backjaw azoparaffin",
+      "head": "nailrod",
+      "label": "no"
+    },
+    {
+      "tail": "backjaw azoparaffin",
+      "head": "iliotrochanteric ophthalmoleuc",
+      "label": "no"
+    },
+    {
+      "tail": "nailrod",
+      "head": "sacramentalist tritencephalon",
+      "label": "Yes"
+    },
+    {
+      "tail": "nailrod",
+      "head": "Benedictine",
+      "label": "Yes"
+    },
+    {
+      "tail": "sacramentalist tritencephalon",
+      "head": "feeze",
+      "label": null
+    },
+    {
+      "tail": "feeze",
+      "head": "allocryptic assumed",
+      "label": null
+    },
+    {
+      "tail": "allocryptic assumed",
+      "head": "unbush",
+      "label": null
+    }
+  ]
+}

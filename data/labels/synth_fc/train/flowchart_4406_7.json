@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "agrobiology",
+      "id": "agrobiology",
+      "class": "ellipse"
+    },
+    {
+      "text": "Gigantostraca digitoplantar",
+      "id": "Gigantostraca digitoplantar",
+      "class": "document"
+    },
+    {
+      "text": "Woodsia pulpamenta",
+      "id": "Woodsia pulpamenta",
+      "class": "diamond"
+    },
+    {
+      "text": "mesodont",
+      "id": "mesodont",
+      "class": "document"
+    },
+    {
+      "text": "Diphylleia",
+      "id": "Diphylleia",
+      "class": "ellipse"
+    },
+    {
+      "text": "annihilable lectorial",
+      "id": "annihilable lectorial",
+      "class": "diamond"
+    },
+    {
+      "text": "clubhand acrodrome backtenter",
+      "id": "clubhand acrodrome backtenter",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "agrobiology",
+      "head": "Gigantostraca digitoplantar",
+      "label": null
+    },
+    {
+      "tail": "Gigantostraca digitoplantar",
+      "head": "Woodsia pulpamenta",
+      "label": null
+    },
+    {
+      "tail": "Woodsia pulpamenta",
+      "head": "mesodont",
+      "label": "NO"
+    },
+    {
+      "tail": "Woodsia pulpamenta",
+      "head": "Diphylleia",
+      "label": "NO"
+    },
+    {
+      "tail": "mesodont",
+      "head": "annihilable lectorial",
+      "label": null
+    },
+    {
+      "tail": "annihilable lectorial",
+      "head": "clubhand acrodrome backtenter",
+      "label": "Yes"
+    },
+    {
+      "tail": "annihilable lectorial",
+      "head": "Woodsia pulpamenta",
+      "label": "Yes"
+    },
+    {
+      "tail": "clubhand acrodrome backtenter",
+      "head": "Diphylleia",
+      "label": "YES"
+    },
+    {
+      "tail": "clubhand acrodrome backtenter",
+      "head": "Gigantostraca digitoplantar",
+      "label": "YES"
+    }
+  ]
+}

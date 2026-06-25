@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "logistical graveward fortifica",
+      "id": "logistical graveward fortifica",
+      "class": "oval"
+    },
+    {
+      "text": "unplenished",
+      "id": "unplenished",
+      "class": "parallelogram"
+    },
+    {
+      "text": "azymous peevishness",
+      "id": "azymous peevishness",
+      "class": "box"
+    },
+    {
+      "text": "unkindness",
+      "id": "unkindness",
+      "class": "hexagon"
+    },
+    {
+      "text": "acologic sway",
+      "id": "acologic sway",
+      "class": "diamond"
+    },
+    {
+      "text": "cassareep",
+      "id": "cassareep",
+      "class": "diamond"
+    },
+    {
+      "text": "uncredibly",
+      "id": "uncredibly",
+      "class": "parallelogram"
+    },
+    {
+      "text": "blot cospecific",
+      "id": "blot cospecific",
+      "class": "hexagon"
+    },
+    {
+      "text": "syndicalistic",
+      "id": "syndicalistic",
+      "class": "document"
+    },
+    {
+      "text": "unhorizontal",
+      "id": "unhorizontal",
+      "class": "document"
+    },
+    {
+      "text": "vainful",
+      "id": "vainful",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "logistical graveward fortifica",
+      "head": "unplenished",
+      "label": null
+    },
+    {
+      "tail": "unplenished",
+      "head": "azymous peevishness",
+      "label": null
+    },
+    {
+      "tail": "azymous peevishness",
+      "head": "unkindness",
+      "label": null
+    },
+    {
+      "tail": "unkindness",
+      "head": "acologic sway",
+      "label": null
+    },
+    {
+      "tail": "acologic sway",
+      "head": "cassareep",
+      "label": "No"
+    },
+    {
+      "tail": "acologic sway",
+      "head": "unplenished",
+      "label": "No"
+    },
+    {
+      "tail": "cassareep",
+      "head": "uncredibly",
+      "label": "YES"
+    },
+    {
+      "tail": "cassareep",
+      "head": "blot cospecific",
+      "label": "YES"
+    },
+    {
+      "tail": "uncredibly",
+      "head": "blot cospecific",
+      "label": null
+    },
+    {
+      "tail": "blot cospecific",
+      "head": "syndicalistic",
+      "label": null
+    },
+    {
+      "tail": "syndicalistic",
+      "head": "unhorizontal",
+      "label": null
+    },
+    {
+      "tail": "unhorizontal",
+      "head": "vainful",
+      "label": null
+    }
+  ]
+}

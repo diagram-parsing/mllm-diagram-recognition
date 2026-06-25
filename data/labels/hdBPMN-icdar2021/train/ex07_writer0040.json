@@ -1,0 +1,212 @@
+{
+  "nodes": [
+    {
+      "text": "started new case",
+      "id": "started new case",
+      "class": "event"
+    },
+    {
+      "text": "bills paid",
+      "id": "bills paid",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "doctor rated",
+      "id": "doctor rated",
+      "class": "event"
+    },
+    {
+      "text": "forward review",
+      "id": "forward review",
+      "class": "task"
+    },
+    {
+      "text": "Obtain review of doctors work",
+      "id": "Obtain review of doctors work",
+      "class": "subProcess"
+    },
+    {
+      "text": "conduct interviews",
+      "id": "conduct interviews",
+      "class": "subProcess"
+    },
+    {
+      "text": "pay expert",
+      "id": "pay expert",
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "forward review",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Obtain review of doctors work",
+      "head": "forward review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Obtain review of doctors work",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "doctor rated",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "pay expert",
+      "head": "bills paid",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "pay expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "conduct interviews",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "conduct interviews",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "started new case",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Obtain review of doctors work",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": "request review"
+    },
+    {
+      "tail": "external expert",
+      "head": "Obtain review of doctors work",
+      "class": "messageFlow",
+      "label": "reciev review"
+    },
+    {
+      "tail": "pay expert",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": "send cheque"
+    },
+    {
+      "tail": "conduct interviews",
+      "head": "patient",
+      "class": "messageFlow",
+      "label": "ask questions"
+    },
+    {
+      "tail": "patient",
+      "head": "conduct interviews",
+      "class": "messageFlow",
+      "label": "answer questions"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospitak",
+      "nodes": [
+        "QA",
+        "managing director"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA",
+      "nodes": [
+        "started new case",
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "file results",
+        "parallelGateway_3",
+        "doctor rated",
+        "conduct interviews"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "bills paid",
+        "forward review",
+        "Obtain review of doctors work",
+        "pay expert"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "patient",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "nodes": [
+    {
+      "text": "register the claim",
+      "id": "register the claim",
+      "bbox": [
+        453,
+        327,
+        607,
+        427
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check the insurance",
+      "id": "check the insurance",
+      "bbox": [
+        537,
+        689,
+        713,
+        806
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        748,
+        699,
+        823,
+        772
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1362,
+        730,
+        1420,
+        789
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "sent a letter to the customer",
+      "id": "sent a letter to the customer",
+      "bbox": [
+        1444,
+        712,
+        1573,
+        861
+      ],
+      "class": "task"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "bbox": [
+        841,
+        806,
+        1075,
+        865
+      ],
+      "class": "task"
+    },
+    {
+      "text": "insurance DB",
+      "id": "insurance DB",
+      "bbox": [
+        449,
+        870,
+        508,
+        922
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        671,
+        252,
+        704,
+        302
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "bbox": [
+        914,
+        953,
+        946,
+        1002
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "submited a claim",
+      "id": "submited a claim",
+      "bbox": [
+        116,
+        351,
+        169,
+        407
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "letter",
+      "id": "letter",
+      "bbox": [
+        1504,
+        313,
+        1556,
+        360
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim request",
+      "id": "claim request",
+      "bbox": [
+        138,
+        253,
+        180,
+        296
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "check the document upon completness",
+      "id": "check the document upon completness",
+      "bbox": [
+        219,
+        329,
+        418,
+        434
+      ],
+      "class": "task"
+    },
+    {
+      "text": "call a garage",
+      "id": "call a garage",
+      "bbox": [
+        841,
+        611,
+        982,
+        699
+      ],
+      "class": "task"
+    },
+    {
+      "text": "authorize the repairs",
+      "id": "authorize the repairs",
+      "bbox": [
+        1033,
+        611,
+        1175,
+        692
+      ],
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "bbox": [
+        1217,
+        609,
+        1369,
+        702
+      ],
+      "class": "task"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "bbox": [
+        1628,
+        751,
+        1670,
+        793
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "reject claim",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1075,
+        789,
+        1392,
+        854
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        783,
+        770,
+        842,
+        854
+      ],
+      "label": "negativ"
+    },
+    {
+      "tail": "sent a letter to the customer",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1573,
+        760,
+        1629,
+        795
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "sent a letter to the customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1415,
+        750,
+        1450,
+        785
+      ],
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1363,
+        644,
+        1398,
+        731
+      ],
+      "label": null
+    },
+    {
+      "tail": "authorize the repairs",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1175,
+        634,
+        1218,
+        669
+      ],
+      "label": null
+    },
+    {
+      "tail": "call a garage",
+      "head": "authorize the repairs",
+      "class": "sequenceFlow",
+      "bbox": [
+        982,
+        640,
+        1034,
+        675
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "call a garage",
+      "class": "sequenceFlow",
+      "bbox": [
+        783,
+        658,
+        842,
+        702
+      ],
+      "label": "positiv"
+    },
+    {
+      "tail": "check the insurance",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        712,
+        725,
+        750,
+        760
+      ],
+      "label": null
+    },
+    {
+      "tail": "register the claim",
+      "head": "check the insurance",
+      "class": "sequenceFlow",
+      "bbox": [
+        544,
+        427,
+        579,
+        691
+      ],
+      "label": null
+    },
+    {
+      "tail": "check the document upon completness",
+      "head": "register the claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        418,
+        363,
+        455,
+        398
+      ],
+      "label": null
+    },
+    {
+      "tail": "submited a claim",
+      "head": "check the document upon completness",
+      "class": "sequenceFlow",
+      "bbox": [
+        168,
+        368,
+        220,
+        403
+      ],
+      "label": null
+    },
+    {
+      "tail": "register the claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        607,
+        294,
+        672,
+        337
+      ],
+      "label": null
+    },
+    {
+      "tail": "insurance DB",
+      "head": "check the insurance",
+      "class": "dataAssociation",
+      "bbox": [
+        508,
+        806,
+        574,
+        871
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "claim rejected",
+      "class": "dataAssociation",
+      "bbox": [
+        928,
+        865,
+        963,
+        954
+      ],
+      "label": null
+    },
+    {
+      "tail": "letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        1496,
+        209,
+        1531,
+        317
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "handling department",
+        "notification department"
+      ],
+      "bbox": [
+        23,
+        228,
+        1682,
+        1008
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling department",
+      "nodes": [
+        "check the insurance",
+        "exclusiveGateway_1",
+        "exclusiveGateway_2",
+        "sent a letter to the customer",
+        "reject claim",
+        "insurance DB",
+        "claim rejected",
+        "call a garage",
+        "authorize the repairs",
+        "schedule payment",
+        "process completed"
+      ],
+      "bbox": [
+        58,
+        596,
+        1682,
+        1008
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "register the claim",
+        "register claim",
+        "submited a claim",
+        "letter",
+        "claim request",
+        "check the document upon completness"
+      ],
+      "bbox": [
+        58,
+        228,
+        1682,
+        596
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        137,
+        148,
+        1638,
+        209
+      ],
+      "class": "pool"
+    }
+  ]
+}

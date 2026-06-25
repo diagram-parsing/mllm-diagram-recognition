@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "morse headpenny",
+      "id": "morse headpenny",
+      "class": "circle"
+    },
+    {
+      "text": "crenitic",
+      "id": "crenitic",
+      "class": "diamond"
+    },
+    {
+      "text": "ungroupable",
+      "id": "ungroupable",
+      "class": "box"
+    },
+    {
+      "text": "medullary",
+      "id": "medullary",
+      "class": "hexagon"
+    },
+    {
+      "text": "trellislike litholyte vernitio",
+      "id": "trellislike litholyte vernitio",
+      "class": "document"
+    },
+    {
+      "text": "pitchstone abditory",
+      "id": "pitchstone abditory",
+      "class": "diamond"
+    },
+    {
+      "text": "reallege",
+      "id": "reallege",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "morse headpenny",
+      "head": "crenitic",
+      "label": null
+    },
+    {
+      "tail": "crenitic",
+      "head": "ungroupable",
+      "label": "No"
+    },
+    {
+      "tail": "crenitic",
+      "head": "morse headpenny",
+      "label": "No"
+    },
+    {
+      "tail": "ungroupable",
+      "head": "medullary",
+      "label": null
+    },
+    {
+      "tail": "medullary",
+      "head": "trellislike litholyte vernitio",
+      "label": null
+    },
+    {
+      "tail": "trellislike litholyte vernitio",
+      "head": "pitchstone abditory",
+      "label": null
+    },
+    {
+      "tail": "pitchstone abditory",
+      "head": "reallege",
+      "label": "yes"
+    },
+    {
+      "tail": "pitchstone abditory",
+      "head": "trellislike litholyte vernitio",
+      "label": "yes"
+    }
+  ]
+}

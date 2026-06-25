@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "text": "begin",
+      "id": "begin",
+      "class": "terminator"
+    },
+    {
+      "text": "Enter x",
+      "id": "Enter x",
+      "class": "data"
+    },
+    {
+      "text": "calculate h(x)",
+      "id": "calculate h(x)",
+      "class": "data"
+    },
+    {
+      "text": "calculate g(x)",
+      "id": "calculate g(x)",
+      "class": "process"
+    },
+    {
+      "text": "display h(x)g(x)",
+      "id": "display h(x)g(x)",
+      "class": "data"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "begin",
+      "head": "Enter x",
+      "label": null
+    },
+    {
+      "tail": "Enter x",
+      "head": "calculate h(x)",
+      "label": null
+    },
+    {
+      "tail": "calculate h(x)",
+      "head": "calculate g(x)",
+      "label": null
+    },
+    {
+      "tail": "calculate g(x)",
+      "head": "display h(x)g(x)",
+      "label": null
+    },
+    {
+      "tail": "display h(x)g(x)",
+      "head": "end",
+      "label": null
+    }
+  ]
+}

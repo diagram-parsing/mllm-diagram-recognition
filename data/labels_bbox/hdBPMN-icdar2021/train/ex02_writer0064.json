@@ -1,0 +1,307 @@
+{
+  "nodes": [
+    {
+      "text": "Registration of the claim",
+      "id": "Registration of the claim",
+      "bbox": [
+        652,
+        1032,
+        979,
+        1207
+      ],
+      "class": "task"
+    },
+    {
+      "text": "examination of the claim",
+      "id": "examination of the claim",
+      "bbox": [
+        1039,
+        1042,
+        1384,
+        1207
+      ],
+      "class": "task"
+    },
+    {
+      "text": "checking of Recommendation",
+      "id": "checking of Recommendation",
+      "bbox": [
+        1395,
+        712,
+        1757,
+        895
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1882,
+        1077,
+        1999,
+        1227
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        697,
+        1687,
+        837,
+        1890
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        512,
+        1352,
+        595,
+        1472
+      ],
+      "class": "event"
+    },
+    {
+      "text": "claim\n[recommendation]",
+      "id": "claim\n[recommendation]",
+      "bbox": [
+        1957,
+        325,
+        2152,
+        530
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim\n[sr. officer signed]",
+      "id": "claim\n[sr. officer signed]",
+      "bbox": [
+        2188,
+        825,
+        2315,
+        1002
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "writing of settlement recommendation",
+      "id": "writing of settlement recommendation",
+      "bbox": [
+        1440,
+        1045,
+        1815,
+        1222
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Database (claims)",
+      "id": "Database (claims)",
+      "bbox": [
+        1142,
+        1609,
+        1392,
+        1914
+      ],
+      "class": "dataStore"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "Registration of the claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        587,
+        1120,
+        654,
+        1392
+      ],
+      "label": null
+    },
+    {
+      "tail": "Registration of the claim",
+      "head": "examination of the claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        979,
+        1092,
+        1042,
+        1152
+      ],
+      "label": null
+    },
+    {
+      "tail": "examination of the claim",
+      "head": "writing of settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1383,
+        1091,
+        1443,
+        1151
+      ],
+      "label": null
+    },
+    {
+      "tail": "writing of settlement recommendation",
+      "head": "checking of Recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1232,
+        782,
+        1637,
+        1047
+      ],
+      "label": null
+    },
+    {
+      "tail": "checking of Recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1757,
+        805,
+        1984,
+        1097
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "examination of the claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1172,
+        1152,
+        1884,
+        1279
+      ],
+      "label": "\"Not OK\""
+    },
+    {
+      "tail": "claim",
+      "head": "Registration of the claim",
+      "class": "dataAssociation",
+      "bbox": [
+        762,
+        1207,
+        822,
+        1689
+      ],
+      "label": null
+    },
+    {
+      "tail": "Registration of the claim",
+      "head": "Database (claims)",
+      "class": "dataAssociation",
+      "bbox": [
+        904,
+        1210,
+        1144,
+        1614
+      ],
+      "label": null
+    },
+    {
+      "tail": "writing of settlement recommendation",
+      "head": "claim\n[recommendation]",
+      "class": "dataAssociation",
+      "bbox": [
+        1785,
+        532,
+        2002,
+        1047
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim\n[recommendation]",
+      "head": "checking of Recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        1727,
+        527,
+        1959,
+        714
+      ],
+      "label": null
+    },
+    {
+      "tail": "checking of Recommendation",
+      "head": "claim\n[sr. officer signed]",
+      "class": "dataAssociation",
+      "bbox": [
+        1759,
+        874,
+        2189,
+        954
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurence",
+      "nodes": [
+        "sr. claims officer",
+        "claims officer",
+        "lane_1"
+      ],
+      "bbox": [
+        165,
+        640,
+        2072,
+        1537
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "sr. claims officer",
+      "nodes": [
+        "checking of Recommendation"
+      ],
+      "bbox": [
+        270,
+        640,
+        2072,
+        937
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "Registration of the claim",
+        "examination of the claim",
+        "exclusiveGateway_1",
+        "writing of settlement recommendation"
+      ],
+      "bbox": [
+        270,
+        937,
+        2072,
+        1312
+      ],
+      "class": "lane"
+    },
+    {
+      "name": null,
+      "nodes": [
+        "claim received"
+      ],
+      "bbox": [
+        270,
+        1312,
+        2072,
+        1537
+      ],
+      "class": "lane"
+    }
+  ]
+}

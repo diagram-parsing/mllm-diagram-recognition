@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "text": "Theriodontia",
+      "id": "Theriodontia",
+      "class": "ellipse",
+      "bbox": [
+        44,
+        5,
+        125,
+        57
+      ]
+    },
+    {
+      "text": "pneumonopexy",
+      "id": "pneumonopexy",
+      "class": "parallelogram",
+      "bbox": [
+        21,
+        81,
+        148,
+        154
+      ]
+    },
+    {
+      "text": "reserveless prearm",
+      "id": "reserveless prearm",
+      "class": "diamond",
+      "bbox": [
+        15,
+        167,
+        154,
+        240
+      ]
+    },
+    {
+      "text": "xenagogue infirmarian",
+      "id": "xenagogue infirmarian",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        253,
+        164,
+        326
+      ]
+    },
+    {
+      "text": "scaffoldage",
+      "id": "scaffoldage",
+      "class": "ellipse",
+      "bbox": [
+        380,
+        244,
+        473,
+        292
+      ]
+    },
+    {
+      "text": "Potamogalidae",
+      "id": "Potamogalidae",
+      "class": "document",
+      "bbox": [
+        206,
+        86,
+        307,
+        149
+      ]
+    },
+    {
+      "text": "oxypicric",
+      "id": "oxypicric",
+      "class": "document",
+      "bbox": [
+        206,
+        172,
+        307,
+        235
+      ]
+    },
+    {
+      "text": "sannup battish endoss",
+      "id": "sannup battish endoss",
+      "class": "diamond",
+      "bbox": [
+        183,
+        253,
+        330,
+        326
+      ]
+    },
+    {
+      "text": "scoleciform",
+      "id": "scoleciform",
+      "class": "hexagon",
+      "bbox": [
+        216,
+        346,
+        298,
+        400
+      ]
+    },
+    {
+      "text": "pyrometer",
+      "id": "pyrometer",
+      "class": "hexagon",
+      "bbox": [
+        390,
+        174,
+        468,
+        233
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Theriodontia",
+      "head": "pneumonopexy",
+      "label": null,
+      "bbox": [
+        80,
+        58,
+        89,
+        77
+      ]
+    },
+    {
+      "tail": "pneumonopexy",
+      "head": "reserveless prearm",
+      "label": null,
+      "bbox": [
+        59,
+        154,
+        68,
+        175
+      ]
+    },
+    {
+      "tail": "reserveless prearm",
+      "head": "xenagogue infirmarian",
+      "label": "no",
+      "bbox": [
+        80,
+        237,
+        89,
+        250
+      ]
+    },
+    {
+      "tail": "reserveless prearm",
+      "head": "scaffoldage",
+      "label": "no",
+      "bbox": [
+        106,
+        162,
+        390,
+        254
+      ]
+    },
+    {
+      "tail": "xenagogue infirmarian",
+      "head": "Potamogalidae",
+      "label": null,
+      "bbox": [
+        159,
+        113,
+        204,
+        252
+      ]
+    },
+    {
+      "tail": "Potamogalidae",
+      "head": "oxypicric",
+      "label": null,
+      "bbox": [
+        252,
+        149,
+        261,
+        170
+      ]
+    },
+    {
+      "tail": "oxypicric",
+      "head": "sannup battish endoss",
+      "label": null,
+      "bbox": [
+        252,
+        235,
+        261,
+        250
+      ]
+    },
+    {
+      "tail": "sannup battish endoss",
+      "head": "scoleciform",
+      "label": "NO",
+      "bbox": [
+        252,
+        327,
+        261,
+        343
+      ]
+    },
+    {
+      "tail": "sannup battish endoss",
+      "head": "reserveless prearm",
+      "label": "NO",
+      "bbox": [
+        156,
+        200,
+        195,
+        284
+      ]
+    },
+    {
+      "tail": "scoleciform",
+      "head": "pyrometer",
+      "label": null,
+      "bbox": [
+        298,
+        200,
+        388,
+        376
+      ]
+    },
+    {
+      "tail": "pyrometer",
+      "head": "scaffoldage",
+      "label": null,
+      "bbox": [
+        424,
+        228,
+        434,
+        241
+      ]
+    }
+  ]
+}

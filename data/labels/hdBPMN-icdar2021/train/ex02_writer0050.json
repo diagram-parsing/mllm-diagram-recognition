@@ -1,0 +1,205 @@
+{
+  "nodes": [
+    {
+      "text": "claim [examined]",
+      "id": "claim [examined]",
+      "class": "dataObject"
+    },
+    {
+      "text": "recommendation [checked]",
+      "id": "recommendation [checked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "event"
+    },
+    {
+      "text": "write settelment recommendation",
+      "id": "write settelment recommendation",
+      "class": "task"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "proceed claim handling",
+      "id": "proceed claim handling",
+      "class": "task"
+    },
+    {
+      "text": "claim handling process proceeded",
+      "id": "claim handling process proceeded",
+      "class": "event"
+    },
+    {
+      "text": "register and examined claim",
+      "id": "register and examined claim",
+      "class": "task"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "registration point",
+      "id": "registration point",
+      "class": "dataStore"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "register and examined claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register and examined claim",
+      "head": "write settelment recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write settelment recommendation",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "proceed claim handling",
+      "class": "sequenceFlow",
+      "label": "OK"
+    },
+    {
+      "tail": "proceed claim handling",
+      "head": "claim handling process proceeded",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "register and examined claim",
+      "class": "sequenceFlow",
+      "label": "Not OK"
+    },
+    {
+      "tail": "claim [examined]",
+      "head": "write settelment recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write settelment recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "recommendation [checked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "recommendation [checked]",
+      "head": "proceed claim handling",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register and examined claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "recommendation [checked]",
+      "head": "register and examined claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register and examined claim",
+      "head": "claim [examined]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register and examined claim",
+      "head": "registration point",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claimant",
+      "head": "claim received",
+      "class": "messageFlow",
+      "label": "send claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "senior claims officer",
+        "claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "claim [examined]",
+        "check recommendation",
+        "exclusiveGateway_1",
+        "proceed claim handling",
+        "claim"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "settlement recommendation",
+        "claim received",
+        "write settelment recommendation",
+        "claim handling process proceeded",
+        "register and examined claim"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claimant",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

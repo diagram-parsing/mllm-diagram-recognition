@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "entify",
+      "id": "entify",
+      "class": "circle"
+    },
+    {
+      "text": "gonosphere",
+      "id": "gonosphere",
+      "class": "hexagon"
+    },
+    {
+      "text": "Diphylleia",
+      "id": "Diphylleia",
+      "class": "parallelogram"
+    },
+    {
+      "text": "deemstership anhydride",
+      "id": "deemstership anhydride",
+      "class": "document"
+    },
+    {
+      "text": "thymonucleic",
+      "id": "thymonucleic",
+      "class": "document"
+    },
+    {
+      "text": "aptly",
+      "id": "aptly",
+      "class": "diamond"
+    },
+    {
+      "text": "arbuscle",
+      "id": "arbuscle",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "entify",
+      "head": "gonosphere",
+      "label": null
+    },
+    {
+      "tail": "gonosphere",
+      "head": "Diphylleia",
+      "label": null
+    },
+    {
+      "tail": "Diphylleia",
+      "head": "deemstership anhydride",
+      "label": null
+    },
+    {
+      "tail": "deemstership anhydride",
+      "head": "thymonucleic",
+      "label": null
+    },
+    {
+      "tail": "thymonucleic",
+      "head": "aptly",
+      "label": null
+    },
+    {
+      "tail": "aptly",
+      "head": "arbuscle",
+      "label": "Yes"
+    },
+    {
+      "tail": "aptly",
+      "head": "deemstership anhydride",
+      "label": "Yes"
+    }
+  ]
+}

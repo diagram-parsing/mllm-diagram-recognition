@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "nonguttural",
+      "id": "nonguttural",
+      "class": "oval"
+    },
+    {
+      "text": "tophaceous",
+      "id": "tophaceous",
+      "class": "box"
+    },
+    {
+      "text": "picrotoxinin",
+      "id": "picrotoxinin",
+      "class": "diamond"
+    },
+    {
+      "text": "nonfluid",
+      "id": "nonfluid",
+      "class": "document"
+    },
+    {
+      "text": "channel Clarinda",
+      "id": "channel Clarinda",
+      "class": "document"
+    },
+    {
+      "text": "as",
+      "id": "as",
+      "class": "document"
+    },
+    {
+      "text": "scatologia polychromatize woma",
+      "id": "scatologia polychromatize woma",
+      "class": "diamond"
+    },
+    {
+      "text": "Pantotheria sip",
+      "id": "Pantotheria sip",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "nonguttural",
+      "head": "tophaceous",
+      "label": null
+    },
+    {
+      "tail": "tophaceous",
+      "head": "picrotoxinin",
+      "label": null
+    },
+    {
+      "tail": "picrotoxinin",
+      "head": "nonfluid",
+      "label": "no"
+    },
+    {
+      "tail": "picrotoxinin",
+      "head": "channel Clarinda",
+      "label": "no"
+    },
+    {
+      "tail": "nonfluid",
+      "head": "as",
+      "label": null
+    },
+    {
+      "tail": "as",
+      "head": "channel Clarinda",
+      "label": null
+    },
+    {
+      "tail": "channel Clarinda",
+      "head": "scatologia polychromatize woma",
+      "label": null
+    },
+    {
+      "tail": "scatologia polychromatize woma",
+      "head": "Pantotheria sip",
+      "label": "yes"
+    },
+    {
+      "tail": "scatologia polychromatize woma",
+      "head": "channel Clarinda",
+      "label": "yes"
+    }
+  ]
+}

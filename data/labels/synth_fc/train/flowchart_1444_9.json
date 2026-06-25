@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "personeity",
+      "id": "personeity",
+      "class": "circle"
+    },
+    {
+      "text": "wheer",
+      "id": "wheer",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Caririan",
+      "id": "Caririan",
+      "class": "document"
+    },
+    {
+      "text": "Jovicentrically Hottentot",
+      "id": "Jovicentrically Hottentot",
+      "class": "hexagon"
+    },
+    {
+      "text": "roaring",
+      "id": "roaring",
+      "class": "diamond"
+    },
+    {
+      "text": "Serridentinus",
+      "id": "Serridentinus",
+      "class": "diamond"
+    },
+    {
+      "text": "spoon",
+      "id": "spoon",
+      "class": "diamond"
+    },
+    {
+      "text": "hemoptysis paraphenetidine",
+      "id": "hemoptysis paraphenetidine",
+      "class": "parallelogram"
+    },
+    {
+      "text": "ratten autarkic slothfully",
+      "id": "ratten autarkic slothfully",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "personeity",
+      "head": "wheer",
+      "label": null
+    },
+    {
+      "tail": "wheer",
+      "head": "Caririan",
+      "label": null
+    },
+    {
+      "tail": "Caririan",
+      "head": "Jovicentrically Hottentot",
+      "label": null
+    },
+    {
+      "tail": "Jovicentrically Hottentot",
+      "head": "roaring",
+      "label": null
+    },
+    {
+      "tail": "roaring",
+      "head": "Serridentinus",
+      "label": "yes"
+    },
+    {
+      "tail": "roaring",
+      "head": "spoon",
+      "label": "yes"
+    },
+    {
+      "tail": "Serridentinus",
+      "head": "spoon",
+      "label": "yes"
+    },
+    {
+      "tail": "Serridentinus",
+      "head": "hemoptysis paraphenetidine",
+      "label": "yes"
+    },
+    {
+      "tail": "spoon",
+      "head": "hemoptysis paraphenetidine",
+      "label": "NO"
+    },
+    {
+      "tail": "spoon",
+      "head": "ratten autarkic slothfully",
+      "label": "NO"
+    },
+    {
+      "tail": "hemoptysis paraphenetidine",
+      "head": "ratten autarkic slothfully",
+      "label": null
+    }
+  ]
+}

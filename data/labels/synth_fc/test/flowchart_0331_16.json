@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "text": "charpit ophiolitic",
+      "id": "charpit ophiolitic",
+      "class": "ellipse"
+    },
+    {
+      "text": "pudiano",
+      "id": "pudiano",
+      "class": "parallelogram"
+    },
+    {
+      "text": "strig",
+      "id": "strig",
+      "class": "box"
+    },
+    {
+      "text": "metathetic",
+      "id": "metathetic",
+      "class": "document"
+    },
+    {
+      "text": "subhypothesis",
+      "id": "subhypothesis",
+      "class": "box"
+    },
+    {
+      "text": "endocolitis eutony quartole",
+      "id": "endocolitis eutony quartole",
+      "class": "hexagon"
+    },
+    {
+      "text": "hydroxylamine shalloon",
+      "id": "hydroxylamine shalloon",
+      "class": "diamond"
+    },
+    {
+      "text": "Silicoidea lamziekte dodecarch",
+      "id": "Silicoidea lamziekte dodecarch",
+      "class": "box"
+    },
+    {
+      "text": "hercynite",
+      "id": "hercynite",
+      "class": "document"
+    },
+    {
+      "text": "straky multicylindered outspue",
+      "id": "straky multicylindered outspue",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Socratism brazilette clubhaul",
+      "id": "Socratism brazilette clubhaul",
+      "class": "diamond"
+    },
+    {
+      "text": "pandura",
+      "id": "pandura",
+      "class": "hexagon"
+    },
+    {
+      "text": "rhizocaulus",
+      "id": "rhizocaulus",
+      "class": "diamond"
+    },
+    {
+      "text": "coccigenic cryptanalysis",
+      "id": "coccigenic cryptanalysis",
+      "class": "hexagon"
+    },
+    {
+      "text": "myosarcoma",
+      "id": "myosarcoma",
+      "class": "box"
+    },
+    {
+      "text": "cruster",
+      "id": "cruster",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "charpit ophiolitic",
+      "head": "pudiano",
+      "label": null
+    },
+    {
+      "tail": "pudiano",
+      "head": "strig",
+      "label": null
+    },
+    {
+      "tail": "strig",
+      "head": "metathetic",
+      "label": null
+    },
+    {
+      "tail": "metathetic",
+      "head": "subhypothesis",
+      "label": null
+    },
+    {
+      "tail": "subhypothesis",
+      "head": "endocolitis eutony quartole",
+      "label": null
+    },
+    {
+      "tail": "endocolitis eutony quartole",
+      "head": "hydroxylamine shalloon",
+      "label": null
+    },
+    {
+      "tail": "hydroxylamine shalloon",
+      "head": "Silicoidea lamziekte dodecarch",
+      "label": "NO"
+    },
+    {
+      "tail": "hydroxylamine shalloon",
+      "head": "subhypothesis",
+      "label": "NO"
+    },
+    {
+      "tail": "Silicoidea lamziekte dodecarch",
+      "head": "hercynite",
+      "label": null
+    },
+    {
+      "tail": "hercynite",
+      "head": "straky multicylindered outspue",
+      "label": null
+    },
+    {
+      "tail": "straky multicylindered outspue",
+      "head": "Socratism brazilette clubhaul",
+      "label": null
+    },
+    {
+      "tail": "Socratism brazilette clubhaul",
+      "head": "pandura",
+      "label": "YES"
+    },
+    {
+      "tail": "Socratism brazilette clubhaul",
+      "head": "charpit ophiolitic",
+      "label": "YES"
+    },
+    {
+      "tail": "pandura",
+      "head": "rhizocaulus",
+      "label": null
+    },
+    {
+      "tail": "rhizocaulus",
+      "head": "coccigenic cryptanalysis",
+      "label": "YES"
+    },
+    {
+      "tail": "rhizocaulus",
+      "head": "pudiano",
+      "label": "YES"
+    },
+    {
+      "tail": "coccigenic cryptanalysis",
+      "head": "myosarcoma",
+      "label": null
+    },
+    {
+      "tail": "myosarcoma",
+      "head": "cruster",
+      "label": null
+    }
+  ]
+}

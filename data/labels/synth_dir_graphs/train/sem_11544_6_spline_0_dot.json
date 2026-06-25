@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "text": "utterly",
+      "id": "utterly",
+      "class": "node"
+    },
+    {
+      "text": "epigastraeum fleshing",
+      "id": "epigastraeum fleshing",
+      "class": "node"
+    },
+    {
+      "text": "sepic",
+      "id": "sepic",
+      "class": "node"
+    },
+    {
+      "text": "omphalopsychite",
+      "id": "omphalopsychite",
+      "class": "node"
+    },
+    {
+      "text": "trilithon",
+      "id": "trilithon",
+      "class": "node"
+    },
+    {
+      "text": "irreparably",
+      "id": "irreparably",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "utterly",
+      "head": "epigastraeum fleshing",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "utterly",
+      "head": "sepic",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "omphalopsychite",
+      "head": "trilithon",
+      "label": "0.94 t = 0.826",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "utterly",
+      "head": "omphalopsychite",
+      "label": "-0.2** y = 0.974",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "utterly",
+      "head": "irreparably",
+      "label": "-1",
+      "class": "bidirectional"
+    }
+  ]
+}

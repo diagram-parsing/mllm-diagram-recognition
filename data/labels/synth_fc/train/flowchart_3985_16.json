@@ -1,0 +1,196 @@
+{
+  "nodes": [
+    {
+      "text": "translative",
+      "id": "translative",
+      "class": "ellipse"
+    },
+    {
+      "text": "vulcanization",
+      "id": "vulcanization",
+      "class": "document"
+    },
+    {
+      "text": "myxoflagellate cytoplastic",
+      "id": "myxoflagellate cytoplastic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "struck",
+      "id": "struck",
+      "class": "diamond"
+    },
+    {
+      "text": "rangler",
+      "id": "rangler",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unflagitious",
+      "id": "unflagitious",
+      "class": "diamond"
+    },
+    {
+      "text": "experiencer",
+      "id": "experiencer",
+      "class": "diamond"
+    },
+    {
+      "text": "hornbook arolium Thalesia",
+      "id": "hornbook arolium Thalesia",
+      "class": "document"
+    },
+    {
+      "text": "primevous dicacodyl",
+      "id": "primevous dicacodyl",
+      "class": "diamond"
+    },
+    {
+      "text": "brambrack",
+      "id": "brambrack",
+      "class": "document"
+    },
+    {
+      "text": "multimascular",
+      "id": "multimascular",
+      "class": "diamond"
+    },
+    {
+      "text": "trifle",
+      "id": "trifle",
+      "class": "diamond"
+    },
+    {
+      "text": "anodos",
+      "id": "anodos",
+      "class": "box"
+    },
+    {
+      "text": "scaled",
+      "id": "scaled",
+      "class": "document"
+    },
+    {
+      "text": "cardioparplasis snobscat bespe",
+      "id": "cardioparplasis snobscat bespe",
+      "class": "diamond"
+    },
+    {
+      "text": "multilateral amusee interbreat",
+      "id": "multilateral amusee interbreat",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "translative",
+      "head": "vulcanization",
+      "label": null
+    },
+    {
+      "tail": "vulcanization",
+      "head": "myxoflagellate cytoplastic",
+      "label": null
+    },
+    {
+      "tail": "myxoflagellate cytoplastic",
+      "head": "struck",
+      "label": null
+    },
+    {
+      "tail": "struck",
+      "head": "rangler",
+      "label": "Yes"
+    },
+    {
+      "tail": "struck",
+      "head": "unflagitious",
+      "label": "Yes"
+    },
+    {
+      "tail": "rangler",
+      "head": "experiencer",
+      "label": null
+    },
+    {
+      "tail": "experiencer",
+      "head": "hornbook arolium Thalesia",
+      "label": "YES"
+    },
+    {
+      "tail": "experiencer",
+      "head": "vulcanization",
+      "label": "YES"
+    },
+    {
+      "tail": "hornbook arolium Thalesia",
+      "head": "primevous dicacodyl",
+      "label": null
+    },
+    {
+      "tail": "primevous dicacodyl",
+      "head": "brambrack",
+      "label": "YES"
+    },
+    {
+      "tail": "primevous dicacodyl",
+      "head": "vulcanization",
+      "label": "YES"
+    },
+    {
+      "tail": "brambrack",
+      "head": "unflagitious",
+      "label": null
+    },
+    {
+      "tail": "unflagitious",
+      "head": "multimascular",
+      "label": "NO"
+    },
+    {
+      "tail": "unflagitious",
+      "head": "trifle",
+      "label": "NO"
+    },
+    {
+      "tail": "multimascular",
+      "head": "anodos",
+      "label": "no"
+    },
+    {
+      "tail": "multimascular",
+      "head": "hornbook arolium Thalesia",
+      "label": "no"
+    },
+    {
+      "tail": "anodos",
+      "head": "scaled",
+      "label": null
+    },
+    {
+      "tail": "scaled",
+      "head": "cardioparplasis snobscat bespe",
+      "label": null
+    },
+    {
+      "tail": "cardioparplasis snobscat bespe",
+      "head": "trifle",
+      "label": "YES"
+    },
+    {
+      "tail": "cardioparplasis snobscat bespe",
+      "head": "rangler",
+      "label": "YES"
+    },
+    {
+      "tail": "trifle",
+      "head": "multilateral amusee interbreat",
+      "label": "no"
+    },
+    {
+      "tail": "trifle",
+      "head": "hornbook arolium Thalesia",
+      "label": "no"
+    }
+  ]
+}

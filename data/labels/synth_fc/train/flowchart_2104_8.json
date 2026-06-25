@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "zombi",
+      "id": "zombi",
+      "class": "ellipse"
+    },
+    {
+      "text": "bioral ceraunophone hydrocarbo",
+      "id": "bioral ceraunophone hydrocarbo",
+      "class": "document"
+    },
+    {
+      "text": "overmournful",
+      "id": "overmournful",
+      "class": "hexagon"
+    },
+    {
+      "text": "intracosmic",
+      "id": "intracosmic",
+      "class": "diamond"
+    },
+    {
+      "text": "mycological",
+      "id": "mycological",
+      "class": "diamond"
+    },
+    {
+      "text": "onychotrophy polytrichous",
+      "id": "onychotrophy polytrichous",
+      "class": "document"
+    },
+    {
+      "text": "divinable sacramentarist",
+      "id": "divinable sacramentarist",
+      "class": "parallelogram"
+    },
+    {
+      "text": "kaligenous",
+      "id": "kaligenous",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "zombi",
+      "head": "bioral ceraunophone hydrocarbo",
+      "label": null
+    },
+    {
+      "tail": "bioral ceraunophone hydrocarbo",
+      "head": "overmournful",
+      "label": null
+    },
+    {
+      "tail": "overmournful",
+      "head": "intracosmic",
+      "label": null
+    },
+    {
+      "tail": "intracosmic",
+      "head": "mycological",
+      "label": "YES"
+    },
+    {
+      "tail": "intracosmic",
+      "head": "onychotrophy polytrichous",
+      "label": "YES"
+    },
+    {
+      "tail": "mycological",
+      "head": "divinable sacramentarist",
+      "label": "yes"
+    },
+    {
+      "tail": "mycological",
+      "head": "onychotrophy polytrichous",
+      "label": "yes"
+    },
+    {
+      "tail": "divinable sacramentarist",
+      "head": "onychotrophy polytrichous",
+      "label": null
+    },
+    {
+      "tail": "onychotrophy polytrichous",
+      "head": "kaligenous",
+      "label": null
+    }
+  ]
+}

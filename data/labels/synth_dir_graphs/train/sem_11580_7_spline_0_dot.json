@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "text": "caudices",
+      "id": "caudices",
+      "class": "node"
+    },
+    {
+      "text": "hyperotretan",
+      "id": "hyperotretan",
+      "class": "node"
+    },
+    {
+      "text": "unconducted psychometrist",
+      "id": "unconducted psychometrist",
+      "class": "node"
+    },
+    {
+      "text": "Huron repack",
+      "id": "Huron repack",
+      "class": "node"
+    },
+    {
+      "text": "communicant",
+      "id": "communicant",
+      "class": "node"
+    },
+    {
+      "text": "unretrenched",
+      "id": "unretrenched",
+      "class": "node"
+    },
+    {
+      "text": "unrest",
+      "id": "unrest",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "caudices",
+      "head": "hyperotretan",
+      "label": "0.2363",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "unconducted psychometrist",
+      "head": "Huron repack",
+      "label": "-0.11 H = 0.215",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "unconducted psychometrist",
+      "head": "communicant",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "caudices",
+      "head": "unconducted psychometrist",
+      "label": "-0.85* x = 0.803",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "unretrenched",
+      "head": "communicant",
+      "label": "0.96* f = 0.71",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "unrest",
+      "head": "communicant",
+      "label": "-0.42 s = 0.708",
+      "class": "bidirectional"
+    }
+  ]
+}

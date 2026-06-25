@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "amidoketone",
+      "id": "amidoketone",
+      "class": "oval"
+    },
+    {
+      "text": "prodigiousness",
+      "id": "prodigiousness",
+      "class": "box"
+    },
+    {
+      "text": "unlay",
+      "id": "unlay",
+      "class": "diamond"
+    },
+    {
+      "text": "dentex",
+      "id": "dentex",
+      "class": "parallelogram"
+    },
+    {
+      "text": "scrimshon dissatisfiedness",
+      "id": "scrimshon dissatisfiedness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "cornbin purga oosperm",
+      "id": "cornbin purga oosperm",
+      "class": "hexagon"
+    },
+    {
+      "text": "pretraining",
+      "id": "pretraining",
+      "class": "document"
+    },
+    {
+      "text": "lipography",
+      "id": "lipography",
+      "class": "diamond"
+    },
+    {
+      "text": "antler",
+      "id": "antler",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "amidoketone",
+      "head": "prodigiousness",
+      "label": null
+    },
+    {
+      "tail": "prodigiousness",
+      "head": "unlay",
+      "label": null
+    },
+    {
+      "tail": "unlay",
+      "head": "dentex",
+      "label": "Yes"
+    },
+    {
+      "tail": "unlay",
+      "head": "scrimshon dissatisfiedness",
+      "label": "Yes"
+    },
+    {
+      "tail": "dentex",
+      "head": "scrimshon dissatisfiedness",
+      "label": null
+    },
+    {
+      "tail": "scrimshon dissatisfiedness",
+      "head": "cornbin purga oosperm",
+      "label": null
+    },
+    {
+      "tail": "cornbin purga oosperm",
+      "head": "pretraining",
+      "label": null
+    },
+    {
+      "tail": "pretraining",
+      "head": "lipography",
+      "label": null
+    },
+    {
+      "tail": "lipography",
+      "head": "antler",
+      "label": "no"
+    },
+    {
+      "tail": "lipography",
+      "head": "pretraining",
+      "label": "no"
+    }
+  ]
+}

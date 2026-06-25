@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "unsanction",
+      "id": "unsanction",
+      "class": "ellipse"
+    },
+    {
+      "text": "mislest",
+      "id": "mislest",
+      "class": "hexagon"
+    },
+    {
+      "text": "pseudoviperine",
+      "id": "pseudoviperine",
+      "class": "hexagon"
+    },
+    {
+      "text": "ember",
+      "id": "ember",
+      "class": "box"
+    },
+    {
+      "text": "Archidamus",
+      "id": "Archidamus",
+      "class": "box"
+    },
+    {
+      "text": "extratarsal redberry",
+      "id": "extratarsal redberry",
+      "class": "box"
+    },
+    {
+      "text": "empathic autodyne Vickie",
+      "id": "empathic autodyne Vickie",
+      "class": "diamond"
+    },
+    {
+      "text": "Delphinoidea",
+      "id": "Delphinoidea",
+      "class": "diamond"
+    },
+    {
+      "text": "magnetoelectrical",
+      "id": "magnetoelectrical",
+      "class": "document"
+    },
+    {
+      "text": "shyster boringness",
+      "id": "shyster boringness",
+      "class": "diamond"
+    },
+    {
+      "text": "restlessly acquainted",
+      "id": "restlessly acquainted",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unsanction",
+      "head": "mislest",
+      "label": null
+    },
+    {
+      "tail": "mislest",
+      "head": "pseudoviperine",
+      "label": null
+    },
+    {
+      "tail": "pseudoviperine",
+      "head": "ember",
+      "label": null
+    },
+    {
+      "tail": "ember",
+      "head": "Archidamus",
+      "label": null
+    },
+    {
+      "tail": "Archidamus",
+      "head": "extratarsal redberry",
+      "label": null
+    },
+    {
+      "tail": "extratarsal redberry",
+      "head": "empathic autodyne Vickie",
+      "label": null
+    },
+    {
+      "tail": "empathic autodyne Vickie",
+      "head": "Delphinoidea",
+      "label": "yes"
+    },
+    {
+      "tail": "empathic autodyne Vickie",
+      "head": "pseudoviperine",
+      "label": "yes"
+    },
+    {
+      "tail": "Delphinoidea",
+      "head": "magnetoelectrical",
+      "label": "no"
+    },
+    {
+      "tail": "Delphinoidea",
+      "head": "mislest",
+      "label": "no"
+    },
+    {
+      "tail": "magnetoelectrical",
+      "head": "shyster boringness",
+      "label": null
+    },
+    {
+      "tail": "shyster boringness",
+      "head": "restlessly acquainted",
+      "label": "YES"
+    },
+    {
+      "tail": "shyster boringness",
+      "head": "Delphinoidea",
+      "label": "YES"
+    }
+  ]
+}

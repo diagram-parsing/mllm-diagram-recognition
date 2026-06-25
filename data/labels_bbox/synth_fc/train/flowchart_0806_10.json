@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "text": "titleboard thermantic",
+      "id": "titleboard thermantic",
+      "class": "oval",
+      "bbox": [
+        45,
+        13,
+        144,
+        65
+      ]
+    },
+    {
+      "text": "cuffer nagor",
+      "id": "cuffer nagor",
+      "class": "parallelogram",
+      "bbox": [
+        45,
+        76,
+        144,
+        149
+      ]
+    },
+    {
+      "text": "doorba hoofs",
+      "id": "doorba hoofs",
+      "class": "box",
+      "bbox": [
+        59,
+        211,
+        131,
+        259
+      ]
+    },
+    {
+      "text": "schoolingly",
+      "id": "schoolingly",
+      "class": "diamond",
+      "bbox": [
+        22,
+        284,
+        167,
+        332
+      ]
+    },
+    {
+      "text": "internals",
+      "id": "internals",
+      "class": "document",
+      "bbox": [
+        235,
+        5,
+        345,
+        73
+      ]
+    },
+    {
+      "text": "guama",
+      "id": "guama",
+      "class": "parallelogram",
+      "bbox": [
+        231,
+        113,
+        349,
+        161
+      ]
+    },
+    {
+      "text": "unretrenched",
+      "id": "unretrenched",
+      "class": "diamond",
+      "bbox": [
+        237,
+        198,
+        343,
+        271
+      ]
+    },
+    {
+      "text": "intendantship",
+      "id": "intendantship",
+      "class": "diamond",
+      "bbox": [
+        209,
+        284,
+        371,
+        332
+      ]
+    },
+    {
+      "text": "gangmaster",
+      "id": "gangmaster",
+      "class": "diamond",
+      "bbox": [
+        429,
+        222,
+        536,
+        296
+      ]
+    },
+    {
+      "text": "trophallactic",
+      "id": "trophallactic",
+      "class": "ellipse",
+      "bbox": [
+        446,
+        306,
+        524,
+        353
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "titleboard thermantic",
+      "head": "cuffer nagor",
+      "label": null,
+      "bbox": [
+        90,
+        61,
+        99,
+        74
+      ]
+    },
+    {
+      "tail": "cuffer nagor",
+      "head": "doorba hoofs",
+      "label": null,
+      "bbox": [
+        90,
+        150,
+        99,
+        209
+      ]
+    },
+    {
+      "tail": "doorba hoofs",
+      "head": "schoolingly",
+      "label": null,
+      "bbox": [
+        90,
+        259,
+        99,
+        282
+      ]
+    },
+    {
+      "tail": "schoolingly",
+      "head": "internals",
+      "label": "NO",
+      "bbox": [
+        152,
+        27,
+        234,
+        303
+      ]
+    },
+    {
+      "tail": "schoolingly",
+      "head": "cuffer nagor",
+      "label": "NO",
+      "bbox": [
+        47,
+        151,
+        57,
+        297
+      ]
+    },
+    {
+      "tail": "internals",
+      "head": "guama",
+      "label": null,
+      "bbox": [
+        285,
+        73,
+        295,
+        111
+      ]
+    },
+    {
+      "tail": "guama",
+      "head": "unretrenched",
+      "label": null,
+      "bbox": [
+        285,
+        162,
+        295,
+        196
+      ]
+    },
+    {
+      "tail": "unretrenched",
+      "head": "intendantship",
+      "label": "NO",
+      "bbox": [
+        285,
+        269,
+        295,
+        282
+      ]
+    },
+    {
+      "tail": "unretrenched",
+      "head": "schoolingly",
+      "label": "NO",
+      "bbox": [
+        155,
+        266,
+        282,
+        304
+      ]
+    },
+    {
+      "tail": "intendantship",
+      "head": "gangmaster",
+      "label": "No",
+      "bbox": [
+        313,
+        286,
+        475,
+        295
+      ]
+    },
+    {
+      "tail": "intendantship",
+      "head": "trophallactic",
+      "label": "No",
+      "bbox": [
+        333,
+        315,
+        449,
+        324
+      ]
+    },
+    {
+      "tail": "gangmaster",
+      "head": "trophallactic",
+      "label": "yes",
+      "bbox": [
+        481,
+        291,
+        490,
+        305
+      ]
+    },
+    {
+      "tail": "gangmaster",
+      "head": "titleboard thermantic",
+      "label": "yes",
+      "bbox": [
+        143,
+        44,
+        457,
+        278
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "fyrd",
+      "id": "fyrd",
+      "class": "node",
+      "bbox": [
+        91,
+        221,
+        163,
+        269
+      ]
+    },
+    {
+      "text": "undoing",
+      "id": "undoing",
+      "class": "node",
+      "bbox": [
+        16,
+        93,
+        102,
+        141
+      ]
+    },
+    {
+      "text": "unheathen interpunctuation",
+      "id": "unheathen interpunctuation",
+      "class": "node",
+      "bbox": [
+        125,
+        92,
+        267,
+        142
+      ]
+    },
+    {
+      "text": "striction neuropsychopathic",
+      "id": "striction neuropsychopathic",
+      "class": "node",
+      "bbox": [
+        62,
+        318,
+        192,
+        367
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fyrd",
+      "head": "undoing",
+      "label": "-0.0523",
+      "class": "unidirectional",
+      "bbox": [
+        70,
+        144,
+        111,
+        220
+      ]
+    },
+    {
+      "tail": "fyrd",
+      "head": "unheathen interpunctuation",
+      "label": "-1",
+      "class": "unidirectional",
+      "bbox": [
+        147,
+        145,
+        187,
+        220
+      ]
+    },
+    {
+      "tail": "striction neuropsychopathic",
+      "head": "fyrd",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        125,
+        272,
+        129,
+        318
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "codling apneal",
+      "id": "codling apneal",
+      "class": "oval"
+    },
+    {
+      "text": "blepharophyma",
+      "id": "blepharophyma",
+      "class": "parallelogram"
+    },
+    {
+      "text": "glyoxylic",
+      "id": "glyoxylic",
+      "class": "document"
+    },
+    {
+      "text": "unshaven birthmark",
+      "id": "unshaven birthmark",
+      "class": "diamond"
+    },
+    {
+      "text": "lactochrome coarbitrator Hexag",
+      "id": "lactochrome coarbitrator Hexag",
+      "class": "hexagon"
+    },
+    {
+      "text": "seriate",
+      "id": "seriate",
+      "class": "hexagon"
+    },
+    {
+      "text": "microscopics",
+      "id": "microscopics",
+      "class": "hexagon"
+    },
+    {
+      "text": "precontrolled bedash",
+      "id": "precontrolled bedash",
+      "class": "hexagon"
+    },
+    {
+      "text": "estrone",
+      "id": "estrone",
+      "class": "diamond"
+    },
+    {
+      "text": "phototonic numud",
+      "id": "phototonic numud",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "codling apneal",
+      "head": "blepharophyma",
+      "label": null
+    },
+    {
+      "tail": "blepharophyma",
+      "head": "glyoxylic",
+      "label": null
+    },
+    {
+      "tail": "glyoxylic",
+      "head": "unshaven birthmark",
+      "label": null
+    },
+    {
+      "tail": "unshaven birthmark",
+      "head": "lactochrome coarbitrator Hexag",
+      "label": "YES"
+    },
+    {
+      "tail": "unshaven birthmark",
+      "head": "seriate",
+      "label": "YES"
+    },
+    {
+      "tail": "lactochrome coarbitrator Hexag",
+      "head": "microscopics",
+      "label": null
+    },
+    {
+      "tail": "microscopics",
+      "head": "seriate",
+      "label": null
+    },
+    {
+      "tail": "seriate",
+      "head": "precontrolled bedash",
+      "label": null
+    },
+    {
+      "tail": "precontrolled bedash",
+      "head": "estrone",
+      "label": null
+    },
+    {
+      "tail": "estrone",
+      "head": "phototonic numud",
+      "label": "Yes"
+    },
+    {
+      "tail": "estrone",
+      "head": "seriate",
+      "label": "Yes"
+    }
+  ]
+}

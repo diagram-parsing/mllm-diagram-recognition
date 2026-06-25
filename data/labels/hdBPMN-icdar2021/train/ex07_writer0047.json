@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    {
+      "text": "Start new case",
+      "id": "Start new case",
+      "class": "event"
+    },
+    {
+      "text": "case completed",
+      "id": "case completed",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "files result",
+      "id": "files result",
+      "class": "task"
+    },
+    {
+      "text": "ask for review",
+      "id": "ask for review",
+      "class": "task"
+    },
+    {
+      "text": "pays expenses",
+      "id": "pays expenses",
+      "class": "task"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "class": "messageEvent"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "forward expertise",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "pays expenses",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "pays expenses",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask for review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask for review",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "case completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "files result",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "files result",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Start new case",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask for review",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": "review request"
+    },
+    {
+      "tail": "send cheque",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": "cheque"
+    },
+    {
+      "tail": "Expert",
+      "head": "receive expertise",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "QA - Specialist",
+        "Director"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA - Specialist",
+      "nodes": [
+        "Start new case",
+        "case completed",
+        "create report",
+        "parallelGateway_1",
+        "files result",
+        "receive expertise",
+        "interview patients"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Director",
+      "nodes": [
+        "ask for review",
+        "pays expenses",
+        "receive expertise",
+        "send cheque",
+        "forward expertise"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

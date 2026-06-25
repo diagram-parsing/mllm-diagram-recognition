@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "Switzeress",
+      "id": "Switzeress",
+      "class": "circle"
+    },
+    {
+      "text": "ostariophysan togless wirework",
+      "id": "ostariophysan togless wirework",
+      "class": "parallelogram"
+    },
+    {
+      "text": "gagate",
+      "id": "gagate",
+      "class": "diamond"
+    },
+    {
+      "text": "padcloth",
+      "id": "padcloth",
+      "class": "hexagon"
+    },
+    {
+      "text": "cornu",
+      "id": "cornu",
+      "class": "box"
+    },
+    {
+      "text": "underclay barkevikitic earthfa",
+      "id": "underclay barkevikitic earthfa",
+      "class": "diamond"
+    },
+    {
+      "text": "unepilogued",
+      "id": "unepilogued",
+      "class": "diamond"
+    },
+    {
+      "text": "sammer unrecriminative bimilli",
+      "id": "sammer unrecriminative bimilli",
+      "class": "document"
+    },
+    {
+      "text": "melenic",
+      "id": "melenic",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Switzeress",
+      "head": "ostariophysan togless wirework",
+      "label": null
+    },
+    {
+      "tail": "ostariophysan togless wirework",
+      "head": "gagate",
+      "label": null
+    },
+    {
+      "tail": "gagate",
+      "head": "padcloth",
+      "label": "Yes"
+    },
+    {
+      "tail": "gagate",
+      "head": "cornu",
+      "label": "Yes"
+    },
+    {
+      "tail": "padcloth",
+      "head": "cornu",
+      "label": null
+    },
+    {
+      "tail": "cornu",
+      "head": "underclay barkevikitic earthfa",
+      "label": null
+    },
+    {
+      "tail": "underclay barkevikitic earthfa",
+      "head": "unepilogued",
+      "label": "NO"
+    },
+    {
+      "tail": "underclay barkevikitic earthfa",
+      "head": "padcloth",
+      "label": "NO"
+    },
+    {
+      "tail": "unepilogued",
+      "head": "sammer unrecriminative bimilli",
+      "label": "yes"
+    },
+    {
+      "tail": "unepilogued",
+      "head": "gagate",
+      "label": "yes"
+    },
+    {
+      "tail": "sammer unrecriminative bimilli",
+      "head": "melenic",
+      "label": null
+    }
+  ]
+}

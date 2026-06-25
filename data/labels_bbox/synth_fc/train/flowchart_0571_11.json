@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "text": "myoparalysis",
+      "id": "myoparalysis",
+      "class": "circle",
+      "bbox": [
+        45,
+        5,
+        155,
+        116
+      ]
+    },
+    {
+      "text": "macrosepalous leptoprosopy",
+      "id": "macrosepalous leptoprosopy",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        130,
+        195,
+        203
+      ]
+    },
+    {
+      "text": "circumaviate",
+      "id": "circumaviate",
+      "class": "diamond",
+      "bbox": [
+        24,
+        248,
+        176,
+        296
+      ]
+    },
+    {
+      "text": "deuterotokous depolymerization",
+      "id": "deuterotokous depolymerization",
+      "class": "document",
+      "bbox": [
+        52,
+        344,
+        148,
+        411
+      ]
+    },
+    {
+      "text": "undefrayed",
+      "id": "undefrayed",
+      "class": "hexagon",
+      "bbox": [
+        57,
+        453,
+        143,
+        513
+      ]
+    },
+    {
+      "text": "tetrasaccharide redelivery",
+      "id": "tetrasaccharide redelivery",
+      "class": "parallelogram",
+      "bbox": [
+        224,
+        24,
+        393,
+        97
+      ]
+    },
+    {
+      "text": "hereticize",
+      "id": "hereticize",
+      "class": "diamond",
+      "bbox": [
+        261,
+        130,
+        362,
+        203
+      ]
+    },
+    {
+      "text": "schismless predeliberately",
+      "id": "schismless predeliberately",
+      "class": "hexagon",
+      "bbox": [
+        242,
+        242,
+        380,
+        302
+      ]
+    },
+    {
+      "text": "Hitlerism humbuzz actinography",
+      "id": "Hitlerism humbuzz actinography",
+      "class": "hexagon",
+      "bbox": [
+        229,
+        347,
+        393,
+        407
+      ]
+    },
+    {
+      "text": "convector agrege",
+      "id": "convector agrege",
+      "class": "box",
+      "bbox": [
+        275,
+        485,
+        347,
+        533
+      ]
+    },
+    {
+      "text": "undonkey Thessalian postpulmon",
+      "id": "undonkey Thessalian postpulmon",
+      "class": "circle",
+      "bbox": [
+        240,
+        544,
+        382,
+        681
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "myoparalysis",
+      "head": "macrosepalous leptoprosopy",
+      "label": null,
+      "bbox": [
+        95,
+        115,
+        105,
+        128
+      ]
+    },
+    {
+      "tail": "macrosepalous leptoprosopy",
+      "head": "circumaviate",
+      "label": null,
+      "bbox": [
+        95,
+        203,
+        105,
+        246
+      ]
+    },
+    {
+      "tail": "circumaviate",
+      "head": "deuterotokous depolymerization",
+      "label": "yes",
+      "bbox": [
+        95,
+        296,
+        105,
+        343
+      ]
+    },
+    {
+      "tail": "circumaviate",
+      "head": "myoparalysis",
+      "label": "yes",
+      "bbox": [
+        132,
+        103,
+        204,
+        273
+      ]
+    },
+    {
+      "tail": "deuterotokous depolymerization",
+      "head": "undefrayed",
+      "label": null,
+      "bbox": [
+        95,
+        410,
+        105,
+        451
+      ]
+    },
+    {
+      "tail": "undefrayed",
+      "head": "tetrasaccharide redelivery",
+      "label": null,
+      "bbox": [
+        134,
+        56,
+        240,
+        470
+      ]
+    },
+    {
+      "tail": "tetrasaccharide redelivery",
+      "head": "hereticize",
+      "label": null,
+      "bbox": [
+        307,
+        97,
+        316,
+        127
+      ]
+    },
+    {
+      "tail": "hereticize",
+      "head": "schismless predeliberately",
+      "label": "YES",
+      "bbox": [
+        307,
+        203,
+        316,
+        240
+      ]
+    },
+    {
+      "tail": "hereticize",
+      "head": "macrosepalous leptoprosopy",
+      "label": "YES",
+      "bbox": [
+        177,
+        163,
+        262,
+        172
+      ]
+    },
+    {
+      "tail": "schismless predeliberately",
+      "head": "Hitlerism humbuzz actinography",
+      "label": null,
+      "bbox": [
+        307,
+        302,
+        316,
+        346
+      ]
+    },
+    {
+      "tail": "Hitlerism humbuzz actinography",
+      "head": "convector agrege",
+      "label": null,
+      "bbox": [
+        307,
+        407,
+        316,
+        484
+      ]
+    },
+    {
+      "tail": "convector agrege",
+      "head": "undonkey Thessalian postpulmon",
+      "label": null,
+      "bbox": [
+        307,
+        529,
+        316,
+        542
+      ]
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "nodes": [
+    {
+      "text": "set hearing date",
+      "id": "set hearing date",
+      "bbox": [
+        2210,
+        1065,
+        2582,
+        1168
+      ],
+      "class": "task"
+    },
+    {
+      "text": "compensation request fullfieled",
+      "id": "compensation request fullfieled",
+      "bbox": [
+        2734,
+        1079,
+        2828,
+        1145
+      ],
+      "class": "event"
+    },
+    {
+      "text": "get owner fee payment",
+      "id": "get owner fee payment",
+      "bbox": [
+        2193,
+        632,
+        2577,
+        761
+      ],
+      "class": "task"
+    },
+    {
+      "text": "produce fee notice",
+      "id": "produce fee notice",
+      "bbox": [
+        1623,
+        638,
+        2021,
+        744
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        873,
+        647,
+        990,
+        747
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check the request for filling",
+      "id": "check the request for filling",
+      "bbox": [
+        1557,
+        893,
+        1864,
+        1030
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check the request for compliant",
+      "id": "check the request for compliant",
+      "bbox": [
+        1554,
+        1242,
+        1909,
+        1331
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1961,
+        1056,
+        2047,
+        1159
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "fee notice",
+      "id": "fee notice",
+      "bbox": [
+        1720,
+        357,
+        1809,
+        546
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "file for particular premises",
+      "id": "file for particular premises",
+      "bbox": [
+        443,
+        460,
+        564,
+        595
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1228,
+        896,
+        1348,
+        1010
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "request for compensation arrived",
+      "id": "request for compensation arrived",
+      "bbox": [
+        420,
+        647,
+        538,
+        715
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "set hearing date",
+      "head": "compensation request fullfieled",
+      "class": "sequenceFlow",
+      "bbox": [
+        2582,
+        1083,
+        2737,
+        1152
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "set hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        2047,
+        1075,
+        2213,
+        1143
+      ],
+      "label": null
+    },
+    {
+      "tail": "check the request for compliant",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1909,
+        1159,
+        2007,
+        1291
+      ],
+      "label": null
+    },
+    {
+      "tail": "check the request for filling",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1864,
+        962,
+        2007,
+        1059
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "check the request for filling",
+      "class": "sequenceFlow",
+      "bbox": [
+        1334,
+        934,
+        1560,
+        1003
+      ],
+      "label": null
+    },
+    {
+      "tail": "produce fee notice",
+      "head": "get owner fee payment",
+      "class": "sequenceFlow",
+      "bbox": [
+        2021,
+        659,
+        2196,
+        728
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "produce fee notice",
+      "class": "sequenceFlow",
+      "bbox": [
+        987,
+        665,
+        1626,
+        734
+      ],
+      "label": "owner droht parol fees"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        933,
+        747,
+        1231,
+        956
+      ],
+      "label": "owner paid fees"
+    },
+    {
+      "tail": "request for compensation arrived",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        538,
+        655,
+        881,
+        724
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "check the request for compliant",
+      "class": "sequenceFlow",
+      "bbox": [
+        1288,
+        1010,
+        1557,
+        1294
+      ],
+      "label": null
+    },
+    {
+      "tail": "get owner fee payment",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1288,
+        692,
+        2768,
+        1016
+      ],
+      "label": null
+    },
+    {
+      "tail": "produce fee notice",
+      "head": "fee notice",
+      "class": "dataAssociation",
+      "bbox": [
+        1752,
+        546,
+        1821,
+        641
+      ],
+      "label": null
+    },
+    {
+      "tail": "file for particular premises",
+      "head": "check the request for filling",
+      "class": "dataAssociation",
+      "bbox": [
+        541,
+        595,
+        1643,
+        896
+      ],
+      "label": null
+    },
+    {
+      "tail": "file for particular premises",
+      "head": "check the request for compliant",
+      "class": "dataAssociation",
+      "bbox": [
+        538,
+        595,
+        1566,
+        1254
+      ],
+      "label": null
+    },
+    {
+      "tail": "Owner",
+      "head": "request for compensation arrived",
+      "class": "messageFlow",
+      "bbox": [
+        448,
+        335,
+        516,
+        627
+      ],
+      "label": null
+    },
+    {
+      "tail": "produce fee notice",
+      "head": "Owner",
+      "class": "messageFlow",
+      "bbox": [
+        1769,
+        335,
+        1915,
+        641
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "tribunal",
+      "nodes": [
+        "cashier of the tribunal"
+      ],
+      "bbox": [
+        85,
+        426,
+        3415,
+        1529
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "cashier of the tribunal",
+      "nodes": [
+        "set hearing date",
+        "compensation request fullfieled",
+        "get owner fee payment",
+        "produce fee notice",
+        "exclusiveGateway_1",
+        "check the request for filling",
+        "check the request for compliant",
+        "parallelGateway_1",
+        "file for particular premises",
+        "parallelGateway_2",
+        "request for compensation arrived"
+      ],
+      "bbox": [
+        171,
+        426,
+        3415,
+        1529
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Owner",
+      "nodes": [],
+      "bbox": [
+        297,
+        209,
+        3436,
+        335
+      ],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "nodes": [
+    {
+      "text": "evaluation started",
+      "id": "evaluation started",
+      "class": "event"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "class": "task"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "get expertise",
+      "id": "get expertise",
+      "class": "task"
+    },
+    {
+      "text": "send expertise to QA specialist",
+      "id": "send expertise to QA specialist",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "evalutation ended",
+      "id": "evalutation ended",
+      "class": "event"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send expertise to QA specialist",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send cheque",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "evalutation ended",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "get expertise",
+      "head": "send expertise to QA specialist",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "get expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "evaluation started",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "get expertise",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": "request"
+    },
+    {
+      "tail": "experts",
+      "head": "get expertise",
+      "class": "messageFlow",
+      "label": "expertise"
+    },
+    {
+      "tail": "send cheque",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": "pay"
+    },
+    {
+      "tail": "patients",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "label": "experiences"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "QA specialist",
+        "director"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "create report",
+        "interview patients",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "evalutation ended",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "director",
+      "nodes": [
+        "evaluation started",
+        "fill cheque",
+        "parallelGateway_1",
+        "get expertise",
+        "send expertise to QA specialist",
+        "send cheque"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "patients",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "experts",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

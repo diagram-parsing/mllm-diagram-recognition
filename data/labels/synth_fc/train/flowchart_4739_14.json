@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "text": "pancreatoenterostomy misotheis",
+      "id": "pancreatoenterostomy misotheis",
+      "class": "oval"
+    },
+    {
+      "text": "myxoid",
+      "id": "myxoid",
+      "class": "hexagon"
+    },
+    {
+      "text": "marginated",
+      "id": "marginated",
+      "class": "parallelogram"
+    },
+    {
+      "text": "metaphysicous cystogram",
+      "id": "metaphysicous cystogram",
+      "class": "parallelogram"
+    },
+    {
+      "text": "tuberculatospinous",
+      "id": "tuberculatospinous",
+      "class": "parallelogram"
+    },
+    {
+      "text": "outstagger unconformableness",
+      "id": "outstagger unconformableness",
+      "class": "box"
+    },
+    {
+      "text": "Nahuan",
+      "id": "Nahuan",
+      "class": "diamond"
+    },
+    {
+      "text": "manucaptor cilioflagellate",
+      "id": "manucaptor cilioflagellate",
+      "class": "parallelogram"
+    },
+    {
+      "text": "knotweed",
+      "id": "knotweed",
+      "class": "diamond"
+    },
+    {
+      "text": "aptitudinally pargeboard rumbl",
+      "id": "aptitudinally pargeboard rumbl",
+      "class": "diamond"
+    },
+    {
+      "text": "Vejoces",
+      "id": "Vejoces",
+      "class": "parallelogram"
+    },
+    {
+      "text": "indulgenced tonalamatl",
+      "id": "indulgenced tonalamatl",
+      "class": "diamond"
+    },
+    {
+      "text": "agrestal dendrophilous cutty",
+      "id": "agrestal dendrophilous cutty",
+      "class": "parallelogram"
+    },
+    {
+      "text": "stackman merchantable",
+      "id": "stackman merchantable",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pancreatoenterostomy misotheis",
+      "head": "myxoid",
+      "label": null
+    },
+    {
+      "tail": "myxoid",
+      "head": "marginated",
+      "label": null
+    },
+    {
+      "tail": "marginated",
+      "head": "metaphysicous cystogram",
+      "label": null
+    },
+    {
+      "tail": "metaphysicous cystogram",
+      "head": "tuberculatospinous",
+      "label": null
+    },
+    {
+      "tail": "tuberculatospinous",
+      "head": "outstagger unconformableness",
+      "label": null
+    },
+    {
+      "tail": "outstagger unconformableness",
+      "head": "Nahuan",
+      "label": null
+    },
+    {
+      "tail": "Nahuan",
+      "head": "manucaptor cilioflagellate",
+      "label": "NO"
+    },
+    {
+      "tail": "Nahuan",
+      "head": "pancreatoenterostomy misotheis",
+      "label": "NO"
+    },
+    {
+      "tail": "manucaptor cilioflagellate",
+      "head": "knotweed",
+      "label": null
+    },
+    {
+      "tail": "knotweed",
+      "head": "aptitudinally pargeboard rumbl",
+      "label": "yes"
+    },
+    {
+      "tail": "knotweed",
+      "head": "manucaptor cilioflagellate",
+      "label": "yes"
+    },
+    {
+      "tail": "aptitudinally pargeboard rumbl",
+      "head": "Vejoces",
+      "label": "NO"
+    },
+    {
+      "tail": "aptitudinally pargeboard rumbl",
+      "head": "Nahuan",
+      "label": "NO"
+    },
+    {
+      "tail": "Vejoces",
+      "head": "indulgenced tonalamatl",
+      "label": null
+    },
+    {
+      "tail": "indulgenced tonalamatl",
+      "head": "agrestal dendrophilous cutty",
+      "label": "yes"
+    },
+    {
+      "tail": "indulgenced tonalamatl",
+      "head": "Vejoces",
+      "label": "yes"
+    },
+    {
+      "tail": "agrestal dendrophilous cutty",
+      "head": "stackman merchantable",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "nodes": [
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1986,
+        338,
+        2210,
+        472
+      ],
+      "class": "task"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "bbox": [
+        1594,
+        315,
+        1841,
+        472
+      ],
+      "class": "task"
+    },
+    {
+      "text": "results",
+      "id": "results",
+      "bbox": [
+        1509,
+        555,
+        1590,
+        685
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "expertise",
+      "id": "expertise",
+      "bbox": [
+        1751,
+        573,
+        1881,
+        707
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "report",
+      "id": "report",
+      "bbox": [
+        2058,
+        604,
+        2148,
+        730
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        698,
+        248,
+        1034,
+        472
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "bbox": [
+        1218,
+        342,
+        1382,
+        479
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "bbox": [
+        376,
+        333,
+        483,
+        441
+      ],
+      "class": "event"
+    },
+    {
+      "text": "case handled",
+      "id": "case handled",
+      "bbox": [
+        2446,
+        358,
+        2520,
+        431
+      ],
+      "class": "event"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "bbox": [
+        1989,
+        1289,
+        2202,
+        1459
+      ],
+      "class": "task"
+    },
+    {
+      "text": "ask external expert to review work",
+      "id": "ask external expert to review work",
+      "bbox": [
+        743,
+        1279,
+        1168,
+        1549
+      ],
+      "class": "task"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "bbox": [
+        1363,
+        1336,
+        1527,
+        1476
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "expertise forwarded",
+      "id": "expertise forwarded",
+      "bbox": [
+        1711,
+        1346,
+        1863,
+        1476
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "expertise",
+      "id": "expertise",
+      "bbox": [
+        1588,
+        1565,
+        1693,
+        1693
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "cheque",
+      "id": "cheque",
+      "bbox": [
+        2204,
+        1133,
+        2284,
+        1245
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "bbox": [
+        344,
+        1346,
+        452,
+        1453
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        2331,
+        1318,
+        2497,
+        1459
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "case handled",
+      "id": "case handled",
+      "bbox": [
+        2567,
+        1529,
+        2647,
+        1610
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "create report",
+      "head": "case handled",
+      "class": "sequenceFlow",
+      "bbox": [
+        2210,
+        372,
+        2448,
+        433
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1841,
+        370,
+        1988,
+        431
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "bbox": [
+        1382,
+        379,
+        1596,
+        440
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "bbox": [
+        1034,
+        398,
+        1222,
+        459
+      ],
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        483,
+        356,
+        700,
+        416
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "case handled",
+      "class": "sequenceFlow",
+      "bbox": [
+        2460,
+        1457,
+        2571,
+        1556
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2202,
+        1359,
+        2333,
+        1420
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise forwarded",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        1863,
+        1381,
+        1991,
+        1441
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "expertise forwarded",
+      "class": "sequenceFlow",
+      "bbox": [
+        1527,
+        1381,
+        1712,
+        1441
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review work",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "bbox": [
+        1168,
+        1383,
+        1365,
+        1444
+      ],
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "ask external expert to review work",
+      "class": "sequenceFlow",
+      "bbox": [
+        452,
+        1371,
+        745,
+        1432
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "create report",
+      "class": "dataAssociation",
+      "bbox": [
+        1881,
+        472,
+        2067,
+        597
+      ],
+      "label": null
+    },
+    {
+      "tail": "results",
+      "head": "create report",
+      "class": "dataAssociation",
+      "bbox": [
+        1590,
+        459,
+        1991,
+        604
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "report",
+      "class": "dataAssociation",
+      "bbox": [
+        2102,
+        472,
+        2162,
+        606
+      ],
+      "label": null
+    },
+    {
+      "tail": "results",
+      "head": "file results",
+      "class": "dataAssociation",
+      "bbox": [
+        1543,
+        450,
+        1603,
+        557
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "results",
+      "class": "dataAssociation",
+      "bbox": [
+        1014,
+        472,
+        1511,
+        620
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "expertise",
+      "class": "dataAssociation",
+      "bbox": [
+        1377,
+        442,
+        1753,
+        596
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "cheque",
+      "class": "dataAssociation",
+      "bbox": [
+        2134,
+        1211,
+        2206,
+        1291
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "expertise",
+      "class": "dataAssociation",
+      "bbox": [
+        1500,
+        1467,
+        1590,
+        1574
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "expertise forwarded",
+      "class": "dataAssociation",
+      "bbox": [
+        1640,
+        1453,
+        1726,
+        1558
+      ],
+      "label": null
+    },
+    {
+      "tail": "cheque",
+      "head": "messageEvent_1",
+      "class": "dataAssociation",
+      "bbox": [
+        2284,
+        1221,
+        2370,
+        1322
+      ],
+      "label": null
+    },
+    {
+      "tail": "experts",
+      "head": "expertise received",
+      "class": "messageFlow",
+      "bbox": [
+        1205,
+        1482,
+        1418,
+        1886
+      ],
+      "label": "send expertise"
+    },
+    {
+      "tail": "ask external expert to review work",
+      "head": "experts",
+      "class": "messageFlow",
+      "bbox": [
+        922,
+        1549,
+        1020,
+        1952
+      ],
+      "label": "ask for expertise"
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "experts",
+      "class": "messageFlow",
+      "bbox": [
+        1471,
+        1451,
+        2360,
+        1986
+      ],
+      "label": "send cheque"
+    },
+    {
+      "tail": "expertise forwarded",
+      "head": "expertise received",
+      "class": "messageFlow",
+      "bbox": [
+        1301,
+        492,
+        1749,
+        1348
+      ],
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "new case started",
+      "class": "messageFlow",
+      "bbox": [
+        380,
+        441,
+        441,
+        1348
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "quality assurance (QA) specialist",
+      "nodes": [],
+      "bbox": [
+        138,
+        114,
+        2714,
+        853
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director of hospital",
+      "nodes": [],
+      "bbox": [
+        138,
+        1059,
+        2793,
+        1771
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "experts",
+      "nodes": [],
+      "bbox": [
+        1018,
+        1884,
+        1471,
+        2087
+      ],
+      "class": "pool"
+    }
+  ]
+}

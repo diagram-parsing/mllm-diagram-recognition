@@ -1,0 +1,303 @@
+{
+  "nodes": [
+    {
+      "text": "factorize",
+      "id": "factorize",
+      "class": "circle",
+      "bbox": [
+        24,
+        10,
+        105,
+        91
+      ]
+    },
+    {
+      "text": "organistrum secundiparous cons",
+      "id": "organistrum secundiparous cons",
+      "class": "document",
+      "bbox": [
+        6,
+        102,
+        123,
+        168
+      ]
+    },
+    {
+      "text": "Japonizer",
+      "id": "Japonizer",
+      "class": "box",
+      "bbox": [
+        29,
+        195,
+        101,
+        243
+      ]
+    },
+    {
+      "text": "Pandanales",
+      "id": "Pandanales",
+      "class": "box",
+      "bbox": [
+        29,
+        280,
+        101,
+        328
+      ]
+    },
+    {
+      "text": "unshrinkability",
+      "id": "unshrinkability",
+      "class": "diamond",
+      "bbox": [
+        5,
+        352,
+        124,
+        420
+      ]
+    },
+    {
+      "text": "wattmeter",
+      "id": "wattmeter",
+      "class": "parallelogram",
+      "bbox": [
+        168,
+        5,
+        299,
+        53
+      ]
+    },
+    {
+      "text": "cadaverine",
+      "id": "cadaverine",
+      "class": "hexagon",
+      "bbox": [
+        359,
+        105,
+        441,
+        165
+      ]
+    },
+    {
+      "text": "collegatary",
+      "id": "collegatary",
+      "class": "document",
+      "bbox": [
+        175,
+        102,
+        292,
+        168
+      ]
+    },
+    {
+      "text": "uncomprising",
+      "id": "uncomprising",
+      "class": "parallelogram",
+      "bbox": [
+        150,
+        195,
+        317,
+        243
+      ]
+    },
+    {
+      "text": "Irvingiana",
+      "id": "Irvingiana",
+      "class": "diamond",
+      "bbox": [
+        169,
+        280,
+        298,
+        328
+      ]
+    },
+    {
+      "text": "mahatma",
+      "id": "mahatma",
+      "class": "parallelogram",
+      "bbox": [
+        161,
+        343,
+        307,
+        391
+      ]
+    },
+    {
+      "text": "complexion",
+      "id": "complexion",
+      "class": "box",
+      "bbox": [
+        366,
+        26,
+        438,
+        74
+      ]
+    },
+    {
+      "text": "jitterbug",
+      "id": "jitterbug",
+      "class": "ellipse",
+      "bbox": [
+        366,
+        215,
+        438,
+        266
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "factorize",
+      "head": "organistrum secundiparous cons",
+      "label": null,
+      "bbox": [
+        60,
+        87,
+        69,
+        101
+      ]
+    },
+    {
+      "tail": "organistrum secundiparous cons",
+      "head": "Japonizer",
+      "label": null,
+      "bbox": [
+        60,
+        168,
+        69,
+        194
+      ]
+    },
+    {
+      "tail": "Japonizer",
+      "head": "Pandanales",
+      "label": null,
+      "bbox": [
+        60,
+        243,
+        69,
+        279
+      ]
+    },
+    {
+      "tail": "Pandanales",
+      "head": "unshrinkability",
+      "label": null,
+      "bbox": [
+        60,
+        328,
+        69,
+        350
+      ]
+    },
+    {
+      "tail": "unshrinkability",
+      "head": "wattmeter",
+      "label": "NO",
+      "bbox": [
+        97,
+        28,
+        178,
+        372
+      ]
+    },
+    {
+      "tail": "unshrinkability",
+      "head": "cadaverine",
+      "label": "NO",
+      "bbox": [
+        112,
+        166,
+        395,
+        381
+      ]
+    },
+    {
+      "tail": "wattmeter",
+      "head": "collegatary",
+      "label": null,
+      "bbox": [
+        229,
+        53,
+        238,
+        100
+      ]
+    },
+    {
+      "tail": "collegatary",
+      "head": "uncomprising",
+      "label": null,
+      "bbox": [
+        229,
+        168,
+        238,
+        194
+      ]
+    },
+    {
+      "tail": "uncomprising",
+      "head": "Irvingiana",
+      "label": null,
+      "bbox": [
+        207,
+        243,
+        217,
+        287
+      ]
+    },
+    {
+      "tail": "Irvingiana",
+      "head": "mahatma",
+      "label": "yes",
+      "bbox": [
+        229,
+        328,
+        238,
+        342
+      ]
+    },
+    {
+      "tail": "Irvingiana",
+      "head": "uncomprising",
+      "label": "yes",
+      "bbox": [
+        250,
+        244,
+        260,
+        288
+      ]
+    },
+    {
+      "tail": "mahatma",
+      "head": "complexion",
+      "label": null,
+      "bbox": [
+        291,
+        60,
+        365,
+        368
+      ]
+    },
+    {
+      "tail": "complexion",
+      "head": "cadaverine",
+      "label": null,
+      "bbox": [
+        398,
+        74,
+        407,
+        104
+      ]
+    },
+    {
+      "tail": "cadaverine",
+      "head": "jitterbug",
+      "label": null,
+      "bbox": [
+        410,
+        164,
+        419,
+        215
+      ]
+    }
+  ]
+}

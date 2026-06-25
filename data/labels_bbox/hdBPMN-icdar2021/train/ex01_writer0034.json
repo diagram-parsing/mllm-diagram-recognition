@@ -1,0 +1,341 @@
+{
+  "nodes": [
+    {
+      "text": "receive credit request",
+      "id": "receive credit request",
+      "bbox": [
+        177,
+        312,
+        232,
+        355
+      ],
+      "class": "event"
+    },
+    {
+      "text": "assess risk",
+      "id": "assess risk",
+      "bbox": [
+        306,
+        291,
+        484,
+        383
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        531,
+        326,
+        574,
+        363
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "carry out advanced risk assessment",
+      "id": "carry out advanced risk assessment",
+      "bbox": [
+        624,
+        105,
+        895,
+        219
+      ],
+      "class": "task"
+    },
+    {
+      "text": "credit approved",
+      "id": "credit approved",
+      "bbox": [
+        597,
+        433,
+        770,
+        540
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        945,
+        136,
+        991,
+        189
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "informcustomer",
+      "id": "informcustomer",
+      "bbox": [
+        1231,
+        29,
+        1390,
+        143
+      ],
+      "class": "task"
+    },
+    {
+      "text": "organize disbursement",
+      "id": "organize disbursement",
+      "bbox": [
+        951,
+        591,
+        1167,
+        714
+      ],
+      "class": "task"
+    },
+    {
+      "text": "give credit",
+      "id": "give credit",
+      "bbox": [
+        1343,
+        446,
+        1403,
+        505
+      ],
+      "class": "event"
+    },
+    {
+      "text": "inform customer",
+      "id": "inform customer",
+      "bbox": [
+        948,
+        433,
+        1113,
+        545
+      ],
+      "class": "task"
+    },
+    {
+      "text": "credit declined",
+      "id": "credit declined",
+      "bbox": [
+        1016,
+        37,
+        1182,
+        138
+      ],
+      "class": "task"
+    },
+    {
+      "text": "don\u00c3\u0082\u00c2\u00b4t give credit",
+      "id": "don\u00c3\u0082\u00c2\u00b4t give credit",
+      "bbox": [
+        1431,
+        90,
+        1472,
+        125
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        853,
+        462,
+        899,
+        515
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1236,
+        457,
+        1276,
+        510
+      ],
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_1",
+      "head": "inform customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        897,
+        475,
+        950,
+        507
+      ],
+      "label": null
+    },
+    {
+      "tail": "carry out advanced risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        895,
+        148,
+        950,
+        181
+      ],
+      "label": null
+    },
+    {
+      "tail": "assess risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        484,
+        325,
+        535,
+        358
+      ],
+      "label": null
+    },
+    {
+      "tail": "credit declined",
+      "head": "informcustomer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1182,
+        73,
+        1233,
+        106
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive credit request",
+      "head": "assess risk",
+      "class": "sequenceFlow",
+      "bbox": [
+        230,
+        326,
+        307,
+        359
+      ],
+      "label": null
+    },
+    {
+      "tail": "informcustomer",
+      "head": "don\u00c3\u0082\u00c2\u00b4t give credit",
+      "class": "sequenceFlow",
+      "bbox": [
+        1390,
+        83,
+        1432,
+        116
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "credit declined",
+      "class": "sequenceFlow",
+      "bbox": [
+        968,
+        88,
+        1017,
+        138
+      ],
+      "label": "still too much risk"
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "give credit",
+      "class": "sequenceFlow",
+      "bbox": [
+        1274,
+        465,
+        1345,
+        498
+      ],
+      "label": null
+    },
+    {
+      "tail": "inform customer",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1113,
+        471,
+        1241,
+        504
+      ],
+      "label": null
+    },
+    {
+      "tail": "organize disbursement",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1167,
+        497,
+        1267,
+        674
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "organize disbursement",
+      "class": "sequenceFlow",
+      "bbox": [
+        877,
+        513,
+        953,
+        655
+      ],
+      "label": null
+    },
+    {
+      "tail": "credit approved",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        770,
+        473,
+        856,
+        506
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        568,
+        187,
+        968,
+        367
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "credit approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        553,
+        363,
+        599,
+        488
+      ],
+      "label": "approve risk"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out advanced risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        545,
+        181,
+        625,
+        334
+      ],
+      "label": "risk above threshold"
+    }
+  ],
+  "groups": []
+}

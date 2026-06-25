@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "text": "unabsurd",
+      "id": "unabsurd",
+      "class": "oval",
+      "bbox": [
+        42,
+        5,
+        114,
+        57
+      ]
+    },
+    {
+      "text": "rotational",
+      "id": "rotational",
+      "class": "diamond",
+      "bbox": [
+        15,
+        126,
+        140,
+        174
+      ]
+    },
+    {
+      "text": "rachialgia",
+      "id": "rachialgia",
+      "class": "box",
+      "bbox": [
+        42,
+        245,
+        114,
+        293
+      ]
+    },
+    {
+      "text": "polythene relatable",
+      "id": "polythene relatable",
+      "class": "diamond",
+      "bbox": [
+        15,
+        304,
+        140,
+        377
+      ]
+    },
+    {
+      "text": "felling isospondylous",
+      "id": "felling isospondylous",
+      "class": "diamond",
+      "bbox": [
+        5,
+        399,
+        150,
+        467
+      ]
+    },
+    {
+      "text": "tarantular boronatrocalcite",
+      "id": "tarantular boronatrocalcite",
+      "class": "diamond",
+      "bbox": [
+        185,
+        18,
+        346,
+        92
+      ]
+    },
+    {
+      "text": "approach",
+      "id": "approach",
+      "class": "document",
+      "bbox": [
+        232,
+        126,
+        304,
+        174
+      ]
+    },
+    {
+      "text": "latensification",
+      "id": "latensification",
+      "class": "diamond",
+      "bbox": [
+        212,
+        209,
+        324,
+        282
+      ]
+    },
+    {
+      "text": "baseness Canton",
+      "id": "baseness Canton",
+      "class": "circle",
+      "bbox": [
+        227,
+        299,
+        309,
+        382
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unabsurd",
+      "head": "rotational",
+      "label": null,
+      "bbox": [
+        61,
+        56,
+        70,
+        129
+      ]
+    },
+    {
+      "tail": "rotational",
+      "head": "rachialgia",
+      "label": "No",
+      "bbox": [
+        73,
+        175,
+        82,
+        243
+      ]
+    },
+    {
+      "tail": "rotational",
+      "head": "unabsurd",
+      "label": "No",
+      "bbox": [
+        85,
+        58,
+        94,
+        131
+      ]
+    },
+    {
+      "tail": "rachialgia",
+      "head": "polythene relatable",
+      "label": null,
+      "bbox": [
+        61,
+        294,
+        70,
+        309
+      ]
+    },
+    {
+      "tail": "polythene relatable",
+      "head": "felling isospondylous",
+      "label": "no",
+      "bbox": [
+        73,
+        377,
+        82,
+        397
+      ]
+    },
+    {
+      "tail": "polythene relatable",
+      "head": "rachialgia",
+      "label": "no",
+      "bbox": [
+        85,
+        295,
+        94,
+        310
+      ]
+    },
+    {
+      "tail": "felling isospondylous",
+      "head": "tarantular boronatrocalcite",
+      "label": "yes",
+      "bbox": [
+        147,
+        77,
+        242,
+        433
+      ]
+    },
+    {
+      "tail": "felling isospondylous",
+      "head": "rotational",
+      "label": "yes",
+      "bbox": [
+        141,
+        146,
+        154,
+        431
+      ]
+    },
+    {
+      "tail": "tarantular boronatrocalcite",
+      "head": "approach",
+      "label": "NO",
+      "bbox": [
+        263,
+        92,
+        273,
+        125
+      ]
+    },
+    {
+      "tail": "tarantular boronatrocalcite",
+      "head": "rotational",
+      "label": "NO",
+      "bbox": [
+        122,
+        70,
+        216,
+        144
+      ]
+    },
+    {
+      "tail": "approach",
+      "head": "latensification",
+      "label": null,
+      "bbox": [
+        263,
+        174,
+        273,
+        207
+      ]
+    },
+    {
+      "tail": "latensification",
+      "head": "baseness Canton",
+      "label": "yes",
+      "bbox": [
+        263,
+        282,
+        273,
+        298
+      ]
+    },
+    {
+      "tail": "latensification",
+      "head": "polythene relatable",
+      "label": "yes",
+      "bbox": [
+        122,
+        264,
+        240,
+        331
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "Solea",
+      "id": "Solea",
+      "class": "circle"
+    },
+    {
+      "text": "cyanogen",
+      "id": "cyanogen",
+      "class": "hexagon"
+    },
+    {
+      "text": "falsetto Elymus",
+      "id": "falsetto Elymus",
+      "class": "diamond"
+    },
+    {
+      "text": "taphole prepossessionary parso",
+      "id": "taphole prepossessionary parso",
+      "class": "box"
+    },
+    {
+      "text": "laparogastrotomy",
+      "id": "laparogastrotomy",
+      "class": "diamond"
+    },
+    {
+      "text": "abdicable",
+      "id": "abdicable",
+      "class": "box"
+    },
+    {
+      "text": "ahungry",
+      "id": "ahungry",
+      "class": "parallelogram"
+    },
+    {
+      "text": "atoner lactate",
+      "id": "atoner lactate",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Solea",
+      "head": "cyanogen",
+      "label": null
+    },
+    {
+      "tail": "cyanogen",
+      "head": "falsetto Elymus",
+      "label": null
+    },
+    {
+      "tail": "falsetto Elymus",
+      "head": "taphole prepossessionary parso",
+      "label": "no"
+    },
+    {
+      "tail": "falsetto Elymus",
+      "head": "laparogastrotomy",
+      "label": "no"
+    },
+    {
+      "tail": "taphole prepossessionary parso",
+      "head": "abdicable",
+      "label": null
+    },
+    {
+      "tail": "abdicable",
+      "head": "ahungry",
+      "label": null
+    },
+    {
+      "tail": "ahungry",
+      "head": "laparogastrotomy",
+      "label": null
+    },
+    {
+      "tail": "laparogastrotomy",
+      "head": "atoner lactate",
+      "label": "NO"
+    },
+    {
+      "tail": "laparogastrotomy",
+      "head": "falsetto Elymus",
+      "label": "NO"
+    }
+  ]
+}

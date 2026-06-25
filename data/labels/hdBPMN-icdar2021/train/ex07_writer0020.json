@@ -1,0 +1,225 @@
+{
+  "nodes": [
+    {
+      "text": "create new QA case",
+      "id": "create new QA case",
+      "class": "event"
+    },
+    {
+      "text": "fill cheque for expert",
+      "id": "fill cheque for expert",
+      "class": "task"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "task"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "File interviews and expertise",
+      "id": "File interviews and expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Ask external expert for review of doctor",
+      "id": "Ask external expert for review of doctor",
+      "class": "task"
+    },
+    {
+      "text": "Expert not answered in time",
+      "id": "Expert not answered in time",
+      "class": "timerEvent"
+    },
+    {
+      "text": "end QA case",
+      "id": "end QA case",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_4",
+      "head": "end QA case",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Expert not answered in time",
+      "head": "Ask external expert for review of doctor",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask external expert for review of doctor",
+      "head": "Expert not answered in time",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "Ask external expert for review of doctor",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "File interviews and expertise",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "File interviews and expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill cheque for expert",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "fill cheque for expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create new QA case",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask external expert for review of doctor",
+      "head": "External Expert",
+      "class": "messageFlow",
+      "label": "request"
+    },
+    {
+      "tail": "External Expert",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "label": "expertise"
+    },
+    {
+      "tail": "fill cheque for expert",
+      "head": "External Expert",
+      "class": "messageFlow",
+      "label": "send cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hosptal",
+      "nodes": [
+        "QA Departement",
+        "Managing Director"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA Departement",
+      "nodes": [
+        "create new QA case",
+        "create report",
+        "interview patients",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4",
+        "File interviews and expertise",
+        "end QA case"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Managing Director",
+      "nodes": [
+        "fill cheque for expert",
+        "forward expertise",
+        "messageEvent_1",
+        "Ask external expert for review of doctor",
+        "Expert not answered in time"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "External Expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

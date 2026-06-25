@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "swithe",
+      "id": "swithe",
+      "class": "oval"
+    },
+    {
+      "text": "hologamy",
+      "id": "hologamy",
+      "class": "diamond"
+    },
+    {
+      "text": "impermanency",
+      "id": "impermanency",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hereticize",
+      "id": "hereticize",
+      "class": "box"
+    },
+    {
+      "text": "remnantal Justinian",
+      "id": "remnantal Justinian",
+      "class": "hexagon"
+    },
+    {
+      "text": "antioxygen Scripturalist",
+      "id": "antioxygen Scripturalist",
+      "class": "document"
+    },
+    {
+      "text": "omphalos",
+      "id": "omphalos",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "swithe",
+      "head": "hologamy",
+      "label": null
+    },
+    {
+      "tail": "hologamy",
+      "head": "impermanency",
+      "label": "YES"
+    },
+    {
+      "tail": "hologamy",
+      "head": "hereticize",
+      "label": "YES"
+    },
+    {
+      "tail": "impermanency",
+      "head": "hereticize",
+      "label": null
+    },
+    {
+      "tail": "hereticize",
+      "head": "remnantal Justinian",
+      "label": null
+    },
+    {
+      "tail": "remnantal Justinian",
+      "head": "antioxygen Scripturalist",
+      "label": null
+    },
+    {
+      "tail": "antioxygen Scripturalist",
+      "head": "omphalos",
+      "label": null
+    }
+  ]
+}

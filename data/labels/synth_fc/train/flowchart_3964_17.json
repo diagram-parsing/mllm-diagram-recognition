@@ -1,0 +1,191 @@
+{
+  "nodes": [
+    {
+      "text": "reinstate",
+      "id": "reinstate",
+      "class": "oval"
+    },
+    {
+      "text": "pacation",
+      "id": "pacation",
+      "class": "diamond"
+    },
+    {
+      "text": "unchauffeured",
+      "id": "unchauffeured",
+      "class": "box"
+    },
+    {
+      "text": "soterial",
+      "id": "soterial",
+      "class": "diamond"
+    },
+    {
+      "text": "unattainment",
+      "id": "unattainment",
+      "class": "document"
+    },
+    {
+      "text": "pandura",
+      "id": "pandura",
+      "class": "hexagon"
+    },
+    {
+      "text": "influxible unstarred dodecahyd",
+      "id": "influxible unstarred dodecahyd",
+      "class": "parallelogram"
+    },
+    {
+      "text": "butylic",
+      "id": "butylic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Nabalism oligometochia",
+      "id": "Nabalism oligometochia",
+      "class": "document"
+    },
+    {
+      "text": "horograph coring",
+      "id": "horograph coring",
+      "class": "parallelogram"
+    },
+    {
+      "text": "saltatorial archdisturber celi",
+      "id": "saltatorial archdisturber celi",
+      "class": "diamond"
+    },
+    {
+      "text": "interferant turus",
+      "id": "interferant turus",
+      "class": "document"
+    },
+    {
+      "text": "phospham",
+      "id": "phospham",
+      "class": "diamond"
+    },
+    {
+      "text": "tracheitis",
+      "id": "tracheitis",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unworkableness",
+      "id": "unworkableness",
+      "class": "box"
+    },
+    {
+      "text": "avoidment",
+      "id": "avoidment",
+      "class": "document"
+    },
+    {
+      "text": "orthal eduction",
+      "id": "orthal eduction",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "reinstate",
+      "head": "pacation",
+      "label": null
+    },
+    {
+      "tail": "pacation",
+      "head": "unchauffeured",
+      "label": "no"
+    },
+    {
+      "tail": "pacation",
+      "head": "soterial",
+      "label": "no"
+    },
+    {
+      "tail": "unchauffeured",
+      "head": "unattainment",
+      "label": null
+    },
+    {
+      "tail": "unattainment",
+      "head": "pandura",
+      "label": null
+    },
+    {
+      "tail": "pandura",
+      "head": "influxible unstarred dodecahyd",
+      "label": null
+    },
+    {
+      "tail": "influxible unstarred dodecahyd",
+      "head": "butylic",
+      "label": null
+    },
+    {
+      "tail": "butylic",
+      "head": "soterial",
+      "label": null
+    },
+    {
+      "tail": "soterial",
+      "head": "Nabalism oligometochia",
+      "label": "NO"
+    },
+    {
+      "tail": "soterial",
+      "head": "horograph coring",
+      "label": "NO"
+    },
+    {
+      "tail": "Nabalism oligometochia",
+      "head": "saltatorial archdisturber celi",
+      "label": null
+    },
+    {
+      "tail": "saltatorial archdisturber celi",
+      "head": "horograph coring",
+      "label": "YES"
+    },
+    {
+      "tail": "saltatorial archdisturber celi",
+      "head": "Nabalism oligometochia",
+      "label": "YES"
+    },
+    {
+      "tail": "horograph coring",
+      "head": "interferant turus",
+      "label": null
+    },
+    {
+      "tail": "interferant turus",
+      "head": "phospham",
+      "label": null
+    },
+    {
+      "tail": "phospham",
+      "head": "tracheitis",
+      "label": "YES"
+    },
+    {
+      "tail": "phospham",
+      "head": "reinstate",
+      "label": "YES"
+    },
+    {
+      "tail": "tracheitis",
+      "head": "unworkableness",
+      "label": null
+    },
+    {
+      "tail": "unworkableness",
+      "head": "avoidment",
+      "label": null
+    },
+    {
+      "tail": "avoidment",
+      "head": "orthal eduction",
+      "label": null
+    }
+  ]
+}

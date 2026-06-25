@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "sackdoudle",
+      "id": "sackdoudle",
+      "class": "ellipse"
+    },
+    {
+      "text": "hingeways",
+      "id": "hingeways",
+      "class": "hexagon"
+    },
+    {
+      "text": "rallentando",
+      "id": "rallentando",
+      "class": "diamond"
+    },
+    {
+      "text": "bank Sarcina",
+      "id": "bank Sarcina",
+      "class": "hexagon"
+    },
+    {
+      "text": "metal limited",
+      "id": "metal limited",
+      "class": "parallelogram"
+    },
+    {
+      "text": "herbarist preanterior",
+      "id": "herbarist preanterior",
+      "class": "diamond"
+    },
+    {
+      "text": "geomorphological",
+      "id": "geomorphological",
+      "class": "box"
+    },
+    {
+      "text": "bechern Plowrightia",
+      "id": "bechern Plowrightia",
+      "class": "ellipse"
+    },
+    {
+      "text": "extraordinary dispenser freeho",
+      "id": "extraordinary dispenser freeho",
+      "class": "parallelogram"
+    },
+    {
+      "text": "molluscoid",
+      "id": "molluscoid",
+      "class": "box"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "sackdoudle",
+      "head": "hingeways",
+      "label": null
+    },
+    {
+      "tail": "hingeways",
+      "head": "rallentando",
+      "label": null
+    },
+    {
+      "tail": "rallentando",
+      "head": "bank Sarcina",
+      "label": "YES"
+    },
+    {
+      "tail": "rallentando",
+      "head": "metal limited",
+      "label": "YES"
+    },
+    {
+      "tail": "bank Sarcina",
+      "head": "herbarist preanterior",
+      "label": null
+    },
+    {
+      "tail": "herbarist preanterior",
+      "head": "geomorphological",
+      "label": "yes"
+    },
+    {
+      "tail": "herbarist preanterior",
+      "head": "bechern Plowrightia",
+      "label": "yes"
+    },
+    {
+      "tail": "geomorphological",
+      "head": "extraordinary dispenser freeho",
+      "label": null
+    },
+    {
+      "tail": "extraordinary dispenser freeho",
+      "head": "molluscoid",
+      "label": null
+    },
+    {
+      "tail": "molluscoid",
+      "head": "metal limited",
+      "label": null
+    },
+    {
+      "tail": "metal limited",
+      "head": "bechern Plowrightia",
+      "label": null
+    }
+  ]
+}

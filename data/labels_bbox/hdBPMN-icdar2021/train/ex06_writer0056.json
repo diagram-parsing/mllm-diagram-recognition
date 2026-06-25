@@ -1,0 +1,295 @@
+{
+  "nodes": [
+    {
+      "text": "recieved order",
+      "id": "recieved order",
+      "bbox": [
+        286,
+        501,
+        342,
+        570
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "recive by Lieferando",
+      "id": "recive by Lieferando",
+      "bbox": [
+        655,
+        305,
+        934,
+        421
+      ],
+      "class": "task"
+    },
+    {
+      "text": "recieve by Website",
+      "id": "recieve by Website",
+      "bbox": [
+        655,
+        467,
+        934,
+        606
+      ],
+      "class": "task"
+    },
+    {
+      "text": "take order by phone",
+      "id": "take order by phone",
+      "bbox": [
+        649,
+        653,
+        940,
+        792
+      ],
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        1021,
+        305,
+        1259,
+        421
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "bbox": [
+        1067,
+        653,
+        1334,
+        804
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print\u00c2\u00a0 order",
+      "id": "print\u00c2\u00a0 order",
+      "bbox": [
+        1247,
+        467,
+        1479,
+        606
+      ],
+      "class": "task"
+    },
+    {
+      "text": "attach order to pinboard",
+      "id": "attach order to pinboard",
+      "bbox": [
+        1328,
+        897,
+        1607,
+        1048
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        1138,
+        931,
+        1212,
+        1010
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        442,
+        497,
+        519,
+        577
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1056,
+        497,
+        1138,
+        573
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1591,
+        474,
+        1678,
+        561
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "attach order to pinboard",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1212,
+        949,
+        1329,
+        992
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1333,
+        557,
+        1632,
+        725
+      ],
+      "label": null
+    },
+    {
+      "tail": "take order by phone",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "bbox": [
+        940,
+        679,
+        1069,
+        721
+      ],
+      "label": null
+    },
+    {
+      "tail": "recieve by Website",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        934,
+        516,
+        1058,
+        558
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "recieve by Website",
+      "class": "sequenceFlow",
+      "bbox": [
+        517,
+        516,
+        657,
+        558
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "take order by phone",
+      "class": "sequenceFlow",
+      "bbox": [
+        482,
+        575,
+        651,
+        713
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "attach order to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        1607,
+        517,
+        1794,
+        933
+      ],
+      "label": null
+    },
+    {
+      "tail": "print\u00c2\u00a0 order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1480,
+        493,
+        1596,
+        535
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print\u00c2\u00a0 order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1137,
+        516,
+        1248,
+        558
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1076,
+        421,
+        1118,
+        510
+      ],
+      "label": null
+    },
+    {
+      "tail": "recive by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        934,
+        342,
+        1022,
+        385
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "recive by Lieferando",
+      "class": "sequenceFlow",
+      "bbox": [
+        486,
+        364,
+        657,
+        505
+      ],
+      "label": null
+    },
+    {
+      "tail": "recieved order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        342,
+        515,
+        445,
+        558
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "text": "landgrave",
+      "id": "landgrave",
+      "class": "oval"
+    },
+    {
+      "text": "nonintoxicating",
+      "id": "nonintoxicating",
+      "class": "diamond"
+    },
+    {
+      "text": "Leonist",
+      "id": "Leonist",
+      "class": "diamond"
+    },
+    {
+      "text": "reilluminate sans",
+      "id": "reilluminate sans",
+      "class": "document"
+    },
+    {
+      "text": "truff novcic",
+      "id": "truff novcic",
+      "class": "hexagon"
+    },
+    {
+      "text": "unqualifiedly",
+      "id": "unqualifiedly",
+      "class": "diamond"
+    },
+    {
+      "text": "anarchosocialist",
+      "id": "anarchosocialist",
+      "class": "document"
+    },
+    {
+      "text": "Ophiuchus knapbottle charas",
+      "id": "Ophiuchus knapbottle charas",
+      "class": "document"
+    },
+    {
+      "text": "overmournful",
+      "id": "overmournful",
+      "class": "document"
+    },
+    {
+      "text": "brookie anacusia",
+      "id": "brookie anacusia",
+      "class": "diamond"
+    },
+    {
+      "text": "ytterbium",
+      "id": "ytterbium",
+      "class": "diamond"
+    },
+    {
+      "text": "mobocratical amidate plaiding",
+      "id": "mobocratical amidate plaiding",
+      "class": "box"
+    },
+    {
+      "text": "precedentary",
+      "id": "precedentary",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "landgrave",
+      "head": "nonintoxicating",
+      "label": null
+    },
+    {
+      "tail": "nonintoxicating",
+      "head": "Leonist",
+      "label": "yes"
+    },
+    {
+      "tail": "nonintoxicating",
+      "head": "reilluminate sans",
+      "label": "yes"
+    },
+    {
+      "tail": "Leonist",
+      "head": "reilluminate sans",
+      "label": "No"
+    },
+    {
+      "tail": "Leonist",
+      "head": "truff novcic",
+      "label": "No"
+    },
+    {
+      "tail": "reilluminate sans",
+      "head": "unqualifiedly",
+      "label": null
+    },
+    {
+      "tail": "unqualifiedly",
+      "head": "anarchosocialist",
+      "label": "Yes"
+    },
+    {
+      "tail": "unqualifiedly",
+      "head": "Ophiuchus knapbottle charas",
+      "label": "Yes"
+    },
+    {
+      "tail": "anarchosocialist",
+      "head": "overmournful",
+      "label": null
+    },
+    {
+      "tail": "overmournful",
+      "head": "truff novcic",
+      "label": null
+    },
+    {
+      "tail": "truff novcic",
+      "head": "brookie anacusia",
+      "label": null
+    },
+    {
+      "tail": "brookie anacusia",
+      "head": "ytterbium",
+      "label": "NO"
+    },
+    {
+      "tail": "brookie anacusia",
+      "head": "Leonist",
+      "label": "NO"
+    },
+    {
+      "tail": "ytterbium",
+      "head": "Ophiuchus knapbottle charas",
+      "label": "yes"
+    },
+    {
+      "tail": "ytterbium",
+      "head": "overmournful",
+      "label": "yes"
+    },
+    {
+      "tail": "Ophiuchus knapbottle charas",
+      "head": "mobocratical amidate plaiding",
+      "label": null
+    },
+    {
+      "tail": "mobocratical amidate plaiding",
+      "head": "precedentary",
+      "label": null
+    }
+  ]
+}

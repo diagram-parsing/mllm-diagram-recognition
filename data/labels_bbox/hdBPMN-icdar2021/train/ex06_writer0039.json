@@ -1,0 +1,353 @@
+{
+  "nodes": [
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        405,
+        170,
+        591,
+        253
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write note",
+      "id": "write note",
+      "bbox": [
+        405,
+        484,
+        574,
+        575
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print order",
+      "id": "print order",
+      "bbox": [
+        815,
+        343,
+        972,
+        409
+      ],
+      "class": "task"
+    },
+    {
+      "text": "attach to pinboard",
+      "id": "attach to pinboard",
+      "bbox": [
+        1029,
+        459,
+        1203,
+        559
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Lieferando received",
+      "id": "Lieferando received",
+      "bbox": [
+        248,
+        192,
+        283,
+        226
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Websitte received",
+      "id": "Websitte received",
+      "bbox": [
+        249,
+        362,
+        274,
+        390
+      ],
+      "class": "event"
+    },
+    {
+      "text": "Phone received",
+      "id": "Phone received",
+      "bbox": [
+        247,
+        515,
+        283,
+        555
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        640,
+        355,
+        688,
+        405
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        838,
+        509,
+        884,
+        552
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "bbox": [
+        340,
+        110,
+        370,
+        151
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order [confirmed]",
+      "id": "order [confirmed]",
+      "bbox": [
+        650,
+        100,
+        680,
+        141
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order",
+      "id": "order",
+      "bbox": [
+        390,
+        407,
+        419,
+        449
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order note",
+      "id": "order note",
+      "bbox": [
+        700,
+        425,
+        734,
+        472
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order processed",
+      "id": "order processed",
+      "bbox": [
+        1370,
+        464,
+        1404,
+        507
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "print order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        848,
+        409,
+        881,
+        512
+      ],
+      "label": null
+    },
+    {
+      "tail": "attach to pinboard",
+      "head": "order processed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1203,
+        489,
+        1372,
+        523
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        883,
+        514,
+        1030,
+        547
+      ],
+      "label": null
+    },
+    {
+      "tail": "write note",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        575,
+        514,
+        839,
+        547
+      ],
+      "label": null
+    },
+    {
+      "tail": "Phone received",
+      "head": "write note",
+      "class": "sequenceFlow",
+      "bbox": [
+        283,
+        517,
+        406,
+        550
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        591,
+        198,
+        667,
+        358
+      ],
+      "label": null
+    },
+    {
+      "tail": "Lieferando received",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        283,
+        195,
+        406,
+        228
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "bbox": [
+        683,
+        364,
+        815,
+        397
+      ],
+      "label": null
+    },
+    {
+      "tail": "Websitte received",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        274,
+        364,
+        645,
+        397
+      ],
+      "label": null
+    },
+    {
+      "tail": "order",
+      "head": "confirm order",
+      "class": "dataAssociation",
+      "bbox": [
+        370,
+        138,
+        426,
+        171
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "order [confirmed]",
+      "class": "dataAssociation",
+      "bbox": [
+        578,
+        133,
+        651,
+        171
+      ],
+      "label": null
+    },
+    {
+      "tail": "order",
+      "head": "write note",
+      "class": "dataAssociation",
+      "bbox": [
+        419,
+        439,
+        480,
+        485
+      ],
+      "label": null
+    },
+    {
+      "tail": "write note",
+      "head": "order note",
+      "class": "dataAssociation",
+      "bbox": [
+        574,
+        453,
+        701,
+        489
+      ],
+      "label": null
+    },
+    {
+      "tail": "order [confirmed]",
+      "head": "print order",
+      "class": "dataAssociation",
+      "bbox": [
+        679,
+        139,
+        824,
+        344
+      ],
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "order note",
+      "class": "dataAssociation",
+      "bbox": [
+        734,
+        407,
+        818,
+        443
+      ],
+      "label": null
+    },
+    {
+      "tail": "order note",
+      "head": "attach to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        723,
+        472,
+        1030,
+        584
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

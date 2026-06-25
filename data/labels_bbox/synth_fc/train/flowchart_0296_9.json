@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "marginality",
+      "id": "marginality",
+      "class": "oval",
+      "bbox": [
+        17,
+        5,
+        117,
+        53
+      ]
+    },
+    {
+      "text": "thiophosgene",
+      "id": "thiophosgene",
+      "class": "diamond",
+      "bbox": [
+        12,
+        71,
+        121,
+        144
+      ]
+    },
+    {
+      "text": "rimiform",
+      "id": "rimiform",
+      "class": "box",
+      "bbox": [
+        31,
+        162,
+        103,
+        210
+      ]
+    },
+    {
+      "text": "safeblowing",
+      "id": "safeblowing",
+      "class": "box",
+      "bbox": [
+        23,
+        240,
+        111,
+        288
+      ]
+    },
+    {
+      "text": "minutia",
+      "id": "minutia",
+      "class": "diamond",
+      "bbox": [
+        5,
+        318,
+        128,
+        366
+      ]
+    },
+    {
+      "text": "vext",
+      "id": "vext",
+      "class": "diamond",
+      "bbox": [
+        23,
+        377,
+        110,
+        420
+      ]
+    },
+    {
+      "text": "micranthropos",
+      "id": "micranthropos",
+      "class": "box",
+      "bbox": [
+        187,
+        25,
+        259,
+        73
+      ]
+    },
+    {
+      "text": "disproportionably",
+      "id": "disproportionably",
+      "class": "oval",
+      "bbox": [
+        153,
+        142,
+        289,
+        190
+      ]
+    },
+    {
+      "text": "anastrophe mealies",
+      "id": "anastrophe mealies",
+      "class": "box",
+      "bbox": [
+        187,
+        84,
+        259,
+        132
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "marginality",
+      "head": "thiophosgene",
+      "label": null,
+      "bbox": [
+        62,
+        54,
+        71,
+        69
+      ]
+    },
+    {
+      "tail": "thiophosgene",
+      "head": "rimiform",
+      "label": "NO",
+      "bbox": [
+        62,
+        145,
+        71,
+        160
+      ]
+    },
+    {
+      "tail": "thiophosgene",
+      "head": "safeblowing",
+      "label": "NO",
+      "bbox": [
+        113,
+        112,
+        126,
+        270
+      ]
+    },
+    {
+      "tail": "rimiform",
+      "head": "safeblowing",
+      "label": null,
+      "bbox": [
+        62,
+        210,
+        71,
+        238
+      ]
+    },
+    {
+      "tail": "safeblowing",
+      "head": "minutia",
+      "label": null,
+      "bbox": [
+        62,
+        288,
+        71,
+        316
+      ]
+    },
+    {
+      "tail": "minutia",
+      "head": "vext",
+      "label": "No",
+      "bbox": [
+        62,
+        362,
+        71,
+        375
+      ]
+    },
+    {
+      "tail": "minutia",
+      "head": "micranthropos",
+      "label": "No",
+      "bbox": [
+        130,
+        55,
+        186,
+        342
+      ]
+    },
+    {
+      "tail": "vext",
+      "head": "micranthropos",
+      "label": "no",
+      "bbox": [
+        97,
+        62,
+        185,
+        393
+      ]
+    },
+    {
+      "tail": "vext",
+      "head": "disproportionably",
+      "label": "no",
+      "bbox": [
+        97,
+        192,
+        228,
+        409
+      ]
+    },
+    {
+      "tail": "micranthropos",
+      "head": "anastrophe mealies",
+      "label": null,
+      "bbox": [
+        219,
+        68,
+        228,
+        82
+      ]
+    },
+    {
+      "tail": "anastrophe mealies",
+      "head": "disproportionably",
+      "label": null,
+      "bbox": [
+        219,
+        127,
+        228,
+        140
+      ]
+    }
+  ]
+}

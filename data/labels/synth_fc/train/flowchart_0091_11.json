@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "isokurtic",
+      "id": "isokurtic",
+      "class": "ellipse"
+    },
+    {
+      "text": "oolitic fableland",
+      "id": "oolitic fableland",
+      "class": "parallelogram"
+    },
+    {
+      "text": "melilitite",
+      "id": "melilitite",
+      "class": "parallelogram"
+    },
+    {
+      "text": "ornithomantic",
+      "id": "ornithomantic",
+      "class": "diamond"
+    },
+    {
+      "text": "paroxysm",
+      "id": "paroxysm",
+      "class": "hexagon"
+    },
+    {
+      "text": "mononymization",
+      "id": "mononymization",
+      "class": "diamond"
+    },
+    {
+      "text": "ponticulus",
+      "id": "ponticulus",
+      "class": "parallelogram"
+    },
+    {
+      "text": "drant",
+      "id": "drant",
+      "class": "hexagon"
+    },
+    {
+      "text": "gastraea",
+      "id": "gastraea",
+      "class": "box"
+    },
+    {
+      "text": "unpillared",
+      "id": "unpillared",
+      "class": "diamond"
+    },
+    {
+      "text": "examinative departed coleopter",
+      "id": "examinative departed coleopter",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "isokurtic",
+      "head": "oolitic fableland",
+      "label": null
+    },
+    {
+      "tail": "oolitic fableland",
+      "head": "melilitite",
+      "label": null
+    },
+    {
+      "tail": "melilitite",
+      "head": "ornithomantic",
+      "label": null
+    },
+    {
+      "tail": "ornithomantic",
+      "head": "paroxysm",
+      "label": "No"
+    },
+    {
+      "tail": "ornithomantic",
+      "head": "mononymization",
+      "label": "No"
+    },
+    {
+      "tail": "paroxysm",
+      "head": "ponticulus",
+      "label": null
+    },
+    {
+      "tail": "ponticulus",
+      "head": "drant",
+      "label": null
+    },
+    {
+      "tail": "drant",
+      "head": "gastraea",
+      "label": null
+    },
+    {
+      "tail": "gastraea",
+      "head": "unpillared",
+      "label": null
+    },
+    {
+      "tail": "unpillared",
+      "head": "mononymization",
+      "label": "yes"
+    },
+    {
+      "tail": "unpillared",
+      "head": "paroxysm",
+      "label": "yes"
+    },
+    {
+      "tail": "mononymization",
+      "head": "examinative departed coleopter",
+      "label": "yes"
+    },
+    {
+      "tail": "mononymization",
+      "head": "gastraea",
+      "label": "yes"
+    }
+  ]
+}

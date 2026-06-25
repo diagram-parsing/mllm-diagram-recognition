@@ -1,0 +1,341 @@
+{
+  "nodes": [
+    {
+      "text": "application received",
+      "id": "application received",
+      "bbox": [
+        289,
+        860,
+        355,
+        944
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "bbox": [
+        509,
+        820,
+        743,
+        970
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        829,
+        832,
+        930,
+        935
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "bbox": [
+        1304,
+        1066,
+        1538,
+        1218
+      ],
+      "class": "task"
+    },
+    {
+      "text": "opening failed",
+      "id": "opening failed",
+      "bbox": [
+        1594,
+        1115,
+        1652,
+        1185
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create new bank account",
+      "id": "create new bank account",
+      "bbox": [
+        1269,
+        584,
+        1505,
+        738
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack",
+      "id": "send welcome pack",
+      "bbox": [
+        1681,
+        353,
+        1928,
+        505
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        1671,
+        579,
+        1919,
+        729
+      ],
+      "class": "task"
+    },
+    {
+      "text": "opening succeeded",
+      "id": "opening succeeded",
+      "bbox": [
+        2150,
+        617,
+        2221,
+        689
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1998,
+        612,
+        2059,
+        687
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "approve application",
+      "id": "approve application",
+      "bbox": [
+        953,
+        577,
+        1208,
+        738
+      ],
+      "class": "task"
+    },
+    {
+      "text": "reject application",
+      "id": "reject application",
+      "bbox": [
+        970,
+        1054,
+        1204,
+        1220
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1554,
+        619,
+        1624,
+        694
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "send PIN number",
+      "id": "send PIN number",
+      "bbox": [
+        1681,
+        785,
+        1919,
+        949
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send PIN number",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1919,
+        687,
+        2031,
+        897
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send PIN number",
+      "class": "sequenceFlow",
+      "bbox": [
+        1589,
+        694,
+        1683,
+        895
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1919,
+        634,
+        2008,
+        681
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "opening succeeded",
+      "class": "sequenceFlow",
+      "bbox": [
+        2055,
+        623,
+        2155,
+        669
+      ],
+      "label": null
+    },
+    {
+      "tail": "send welcome pack",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1928,
+        434,
+        2031,
+        614
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send welcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        1589,
+        434,
+        1683,
+        621
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new bank account",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1505,
+        637,
+        1557,
+        683
+      ],
+      "label": null
+    },
+    {
+      "tail": "approve application",
+      "head": "create new bank account",
+      "class": "sequenceFlow",
+      "bbox": [
+        1208,
+        644,
+        1271,
+        690
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "approve application",
+      "class": "sequenceFlow",
+      "bbox": [
+        881,
+        645,
+        956,
+        837
+      ],
+      "label": "complete application"
+    },
+    {
+      "tail": "notify customer",
+      "head": "opening failed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1538,
+        1129,
+        1599,
+        1176
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject application",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1204,
+        1117,
+        1306,
+        1164
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject application",
+      "class": "sequenceFlow",
+      "bbox": [
+        881,
+        932,
+        972,
+        1138
+      ],
+      "label": "incomplete application"
+    },
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        743,
+        867,
+        832,
+        914
+      ],
+      "label": null
+    },
+    {
+      "tail": "application received",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "bbox": [
+        355,
+        876,
+        512,
+        923
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        1624,
+        634,
+        1674,
+        681
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

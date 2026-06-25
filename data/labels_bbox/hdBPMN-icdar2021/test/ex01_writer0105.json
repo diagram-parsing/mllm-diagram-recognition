@@ -1,0 +1,399 @@
+{
+  "nodes": [
+    {
+      "text": "credit request recieved",
+      "id": "credit request recieved",
+      "bbox": [
+        293,
+        474,
+        362,
+        523
+      ],
+      "class": "event"
+    },
+    {
+      "text": "assess risk",
+      "id": "assess risk",
+      "bbox": [
+        786,
+        453,
+        1028,
+        635
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1194,
+        480,
+        1300,
+        574
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "carry out simple risk assessment",
+      "id": "carry out simple risk assessment",
+      "bbox": [
+        1572,
+        756,
+        1965,
+        997
+      ],
+      "class": "task"
+    },
+    {
+      "text": "complete risk assessment",
+      "id": "complete risk assessment",
+      "bbox": [
+        2388,
+        483,
+        2872,
+        695
+      ],
+      "class": "task"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "bbox": [
+        1617,
+        1149,
+        1920,
+        1330
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1363,
+        1391,
+        1442,
+        1472
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "organize disbusement",
+      "id": "organize disbusement",
+      "bbox": [
+        1617,
+        1472,
+        2026,
+        1632
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        2131,
+        523,
+        2225,
+        610
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2222,
+        1233,
+        2307,
+        1330
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "request fullfilled",
+      "id": "request fullfilled",
+      "bbox": [
+        1061,
+        1378,
+        1115,
+        1454
+      ],
+      "class": "event"
+    },
+    {
+      "text": "carry out advanced risk assessment",
+      "id": "carry out advanced risk assessment",
+      "bbox": [
+        1572,
+        105,
+        2026,
+        347
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "organize disbusement",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1406,
+        1469,
+        1620,
+        1556
+      ],
+      "kps": [
+        1617.84,
+        1554.336,
+        2.0,
+        1406.16,
+        1469.664,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "organize disbusement",
+      "class": "sequenceFlow",
+      "bbox": [
+        2026,
+        1321,
+        2261,
+        1587
+      ],
+      "kps": [
+        2258.928,
+        1321.488,
+        2.0,
+        2026.08,
+        1584.576,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "request fullfilled",
+      "class": "sequenceFlow",
+      "bbox": [
+        1106,
+        1398,
+        1375,
+        1458
+      ],
+      "kps": [
+        1372.896,
+        1421.28,
+        2.0,
+        1106.784,
+        1433.376,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customer",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1412,
+        1209,
+        1620,
+        1402
+      ],
+      "kps": [
+        1617.84,
+        1209.6,
+        2.0,
+        1412.208,
+        1400.112,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        1920,
+        1219,
+        2255,
+        1280
+      ],
+      "kps": [
+        2252.88,
+        1248.912,
+        2.0,
+        1920.24,
+        1248.912,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "complete risk assessment",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2283,
+        695,
+        2542,
+        1311
+      ],
+      "kps": [
+        2540.16,
+        695.52,
+        2.0,
+        2283.12,
+        1309.392,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "complete risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        2222,
+        539,
+        2391,
+        600
+      ],
+      "kps": [
+        2222.64,
+        568.512,
+        2.0,
+        2388.96,
+        568.512,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "carry out simple risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1965,
+        610,
+        2179,
+        879
+      ],
+      "kps": [
+        1965.6,
+        876.96,
+        2.0,
+        2177.28,
+        610.848,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out simple risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1248,
+        574,
+        1575,
+        909
+      ],
+      "kps": [
+        1248.912,
+        574.56,
+        2.0,
+        1572.48,
+        907.2,
+        2.0
+      ],
+      "label": "risk is under threshold"
+    },
+    {
+      "tail": "carry out advanced risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2026,
+        226,
+        2182,
+        525
+      ],
+      "kps": [
+        2026.08,
+        226.8,
+        2.0,
+        2180.304,
+        523.152,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out advanced risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1248,
+        184,
+        1575,
+        483
+      ],
+      "kps": [
+        1248.912,
+        480.816,
+        2.0,
+        1572.48,
+        184.464,
+        2.0
+      ],
+      "label": "riks is above threshold"
+    },
+    {
+      "tail": "assess risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1028,
+        515,
+        1215,
+        575
+      ],
+      "kps": [
+        1028.16,
+        544.32,
+        2.0,
+        1212.624,
+        544.32,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "credit request recieved",
+      "head": "assess risk",
+      "class": "sequenceFlow",
+      "bbox": [
+        362,
+        473,
+        788,
+        533
+      ],
+      "kps": [
+        362.88,
+        501.984,
+        2.0,
+        786.24,
+        501.984,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

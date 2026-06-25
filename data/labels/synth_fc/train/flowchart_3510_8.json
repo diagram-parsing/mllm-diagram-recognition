@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "Glossiphonia autotransplant",
+      "id": "Glossiphonia autotransplant",
+      "class": "ellipse"
+    },
+    {
+      "text": "auspicy",
+      "id": "auspicy",
+      "class": "diamond"
+    },
+    {
+      "text": "uncunning",
+      "id": "uncunning",
+      "class": "box"
+    },
+    {
+      "text": "premeasurement",
+      "id": "premeasurement",
+      "class": "hexagon"
+    },
+    {
+      "text": "suspension futilitarian",
+      "id": "suspension futilitarian",
+      "class": "hexagon"
+    },
+    {
+      "text": "splanchnoskeleton",
+      "id": "splanchnoskeleton",
+      "class": "diamond"
+    },
+    {
+      "text": "stormy",
+      "id": "stormy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "outrave",
+      "id": "outrave",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Glossiphonia autotransplant",
+      "head": "auspicy",
+      "label": null
+    },
+    {
+      "tail": "auspicy",
+      "head": "uncunning",
+      "label": "YES"
+    },
+    {
+      "tail": "auspicy",
+      "head": "premeasurement",
+      "label": "YES"
+    },
+    {
+      "tail": "uncunning",
+      "head": "premeasurement",
+      "label": null
+    },
+    {
+      "tail": "premeasurement",
+      "head": "suspension futilitarian",
+      "label": null
+    },
+    {
+      "tail": "suspension futilitarian",
+      "head": "splanchnoskeleton",
+      "label": null
+    },
+    {
+      "tail": "splanchnoskeleton",
+      "head": "stormy",
+      "label": "no"
+    },
+    {
+      "tail": "splanchnoskeleton",
+      "head": "outrave",
+      "label": "no"
+    },
+    {
+      "tail": "stormy",
+      "head": "outrave",
+      "label": null
+    }
+  ]
+}

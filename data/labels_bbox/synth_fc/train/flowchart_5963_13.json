@@ -1,0 +1,303 @@
+{
+  "nodes": [
+    {
+      "text": "uncommonplace",
+      "id": "uncommonplace",
+      "class": "oval",
+      "bbox": [
+        44,
+        16,
+        135,
+        68
+      ]
+    },
+    {
+      "text": "unsacerdotal",
+      "id": "unsacerdotal",
+      "class": "document",
+      "bbox": [
+        45,
+        98,
+        135,
+        154
+      ]
+    },
+    {
+      "text": "liniya",
+      "id": "liniya",
+      "class": "diamond",
+      "bbox": [
+        39,
+        164,
+        140,
+        212
+      ]
+    },
+    {
+      "text": "urethrophyma",
+      "id": "urethrophyma",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        269,
+        174,
+        317
+      ]
+    },
+    {
+      "text": "drawhead",
+      "id": "drawhead",
+      "class": "circle",
+      "bbox": [
+        388,
+        341,
+        460,
+        407
+      ]
+    },
+    {
+      "text": "punchproof",
+      "id": "punchproof",
+      "class": "box",
+      "bbox": [
+        221,
+        102,
+        293,
+        150
+      ]
+    },
+    {
+      "text": "taligrade",
+      "id": "taligrade",
+      "class": "document",
+      "bbox": [
+        218,
+        181,
+        296,
+        237
+      ]
+    },
+    {
+      "text": "churchgoer miscreative",
+      "id": "churchgoer miscreative",
+      "class": "document",
+      "bbox": [
+        217,
+        265,
+        297,
+        321
+      ]
+    },
+    {
+      "text": "gadolinic",
+      "id": "gadolinic",
+      "class": "diamond",
+      "bbox": [
+        196,
+        352,
+        318,
+        400
+      ]
+    },
+    {
+      "text": "coexchangeable",
+      "id": "coexchangeable",
+      "class": "parallelogram",
+      "bbox": [
+        358,
+        5,
+        487,
+        79
+      ]
+    },
+    {
+      "text": "Potorous",
+      "id": "Potorous",
+      "class": "document",
+      "bbox": [
+        385,
+        98,
+        463,
+        154
+      ]
+    },
+    {
+      "text": "foehn",
+      "id": "foehn",
+      "class": "hexagon",
+      "bbox": [
+        382,
+        164,
+        466,
+        212
+      ]
+    },
+    {
+      "text": "zecchini Scylliorhinidae",
+      "id": "zecchini Scylliorhinidae",
+      "class": "hexagon",
+      "bbox": [
+        356,
+        242,
+        487,
+        302
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "uncommonplace",
+      "head": "unsacerdotal",
+      "label": null,
+      "bbox": [
+        85,
+        68,
+        94,
+        98
+      ]
+    },
+    {
+      "tail": "unsacerdotal",
+      "head": "liniya",
+      "label": null,
+      "bbox": [
+        85,
+        151,
+        94,
+        164
+      ]
+    },
+    {
+      "tail": "liniya",
+      "head": "urethrophyma",
+      "label": "YES",
+      "bbox": [
+        85,
+        212,
+        94,
+        269
+      ]
+    },
+    {
+      "tail": "liniya",
+      "head": "drawhead",
+      "label": "YES",
+      "bbox": [
+        121,
+        197,
+        405,
+        351
+      ]
+    },
+    {
+      "tail": "urethrophyma",
+      "head": "punchproof",
+      "label": null,
+      "bbox": [
+        157,
+        130,
+        221,
+        269
+      ]
+    },
+    {
+      "tail": "punchproof",
+      "head": "taligrade",
+      "label": null,
+      "bbox": [
+        252,
+        149,
+        262,
+        182
+      ]
+    },
+    {
+      "tail": "taligrade",
+      "head": "churchgoer miscreative",
+      "label": null,
+      "bbox": [
+        252,
+        237,
+        262,
+        265
+      ]
+    },
+    {
+      "tail": "churchgoer miscreative",
+      "head": "gadolinic",
+      "label": null,
+      "bbox": [
+        252,
+        321,
+        262,
+        353
+      ]
+    },
+    {
+      "tail": "gadolinic",
+      "head": "coexchangeable",
+      "label": "NO",
+      "bbox": [
+        307,
+        70,
+        360,
+        372
+      ]
+    },
+    {
+      "tail": "gadolinic",
+      "head": "unsacerdotal",
+      "label": "NO",
+      "bbox": [
+        135,
+        114,
+        210,
+        371
+      ]
+    },
+    {
+      "tail": "coexchangeable",
+      "head": "Potorous",
+      "label": null,
+      "bbox": [
+        419,
+        78,
+        429,
+        98
+      ]
+    },
+    {
+      "tail": "Potorous",
+      "head": "foehn",
+      "label": null,
+      "bbox": [
+        419,
+        151,
+        429,
+        164
+      ]
+    },
+    {
+      "tail": "foehn",
+      "head": "zecchini Scylliorhinidae",
+      "label": null,
+      "bbox": [
+        419,
+        212,
+        429,
+        242
+      ]
+    },
+    {
+      "tail": "zecchini Scylliorhinidae",
+      "head": "drawhead",
+      "label": null,
+      "bbox": [
+        419,
+        301,
+        429,
+        341
+      ]
+    }
+  ]
+}

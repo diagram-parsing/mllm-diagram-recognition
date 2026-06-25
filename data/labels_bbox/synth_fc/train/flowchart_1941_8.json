@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "becombed squantum",
+      "id": "becombed squantum",
+      "class": "ellipse",
+      "bbox": [
+        69,
+        5,
+        160,
+        57
+      ]
+    },
+    {
+      "text": "lingulated",
+      "id": "lingulated",
+      "class": "parallelogram",
+      "bbox": [
+        63,
+        107,
+        165,
+        180
+      ]
+    },
+    {
+      "text": "unscarified",
+      "id": "unscarified",
+      "class": "diamond",
+      "bbox": [
+        62,
+        191,
+        167,
+        264
+      ]
+    },
+    {
+      "text": "patronly uncaptious",
+      "id": "patronly uncaptious",
+      "class": "document",
+      "bbox": [
+        73,
+        315,
+        156,
+        363
+      ]
+    },
+    {
+      "text": "floorless",
+      "id": "floorless",
+      "class": "diamond",
+      "bbox": [
+        69,
+        415,
+        160,
+        488
+      ]
+    },
+    {
+      "text": "cystidium",
+      "id": "cystidium",
+      "class": "document",
+      "bbox": [
+        73,
+        539,
+        156,
+        582
+      ]
+    },
+    {
+      "text": "bistipuled intermeddlesomeness",
+      "id": "bistipuled intermeddlesomeness",
+      "class": "hexagon",
+      "bbox": [
+        260,
+        85,
+        412,
+        145
+      ]
+    },
+    {
+      "text": "caudices",
+      "id": "caudices",
+      "class": "ellipse",
+      "bbox": [
+        302,
+        201,
+        374,
+        253
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "becombed squantum",
+      "head": "lingulated",
+      "label": null,
+      "bbox": [
+        110,
+        58,
+        119,
+        105
+      ]
+    },
+    {
+      "tail": "lingulated",
+      "head": "unscarified",
+      "label": null,
+      "bbox": [
+        110,
+        175,
+        119,
+        189
+      ]
+    },
+    {
+      "tail": "unscarified",
+      "head": "patronly uncaptious",
+      "label": "No",
+      "bbox": [
+        110,
+        265,
+        119,
+        314
+      ]
+    },
+    {
+      "tail": "unscarified",
+      "head": "floorless",
+      "label": "No",
+      "bbox": [
+        38,
+        227,
+        67,
+        456
+      ]
+    },
+    {
+      "tail": "patronly uncaptious",
+      "head": "floorless",
+      "label": null,
+      "bbox": [
+        110,
+        363,
+        119,
+        413
+      ]
+    },
+    {
+      "tail": "floorless",
+      "head": "cystidium",
+      "label": "YES",
+      "bbox": [
+        110,
+        489,
+        119,
+        538
+      ]
+    },
+    {
+      "tail": "floorless",
+      "head": "bistipuled intermeddlesomeness",
+      "label": "YES",
+      "bbox": [
+        160,
+        128,
+        279,
+        451
+      ]
+    },
+    {
+      "tail": "cystidium",
+      "head": "bistipuled intermeddlesomeness",
+      "label": null,
+      "bbox": [
+        156,
+        139,
+        293,
+        563
+      ]
+    },
+    {
+      "tail": "bistipuled intermeddlesomeness",
+      "head": "caudices",
+      "label": null,
+      "bbox": [
+        334,
+        145,
+        343,
+        200
+      ]
+    }
+  ]
+}

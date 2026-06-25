@@ -1,0 +1,828 @@
+{
+  "nodes": [
+    {
+      "text": "process finished",
+      "id": "process finished",
+      "bbox": [
+        343,
+        357,
+        407,
+        424
+      ],
+      "class": "event"
+    },
+    {
+      "text": "new case opened",
+      "id": "new case opened",
+      "bbox": [
+        190,
+        70,
+        244,
+        104
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create a report",
+      "id": "create a report",
+      "bbox": [
+        561,
+        322,
+        701,
+        425
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        320,
+        28,
+        473,
+        124
+      ],
+      "class": "task"
+    },
+    {
+      "text": "File the results",
+      "id": "File the results",
+      "bbox": [
+        969,
+        333,
+        1109,
+        419
+      ],
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        567,
+        26,
+        750,
+        145
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "QA - DB",
+      "id": "QA - DB",
+      "bbox": [
+        1076,
+        498,
+        1140,
+        546
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        834,
+        48,
+        892,
+        105
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "fill a cheque",
+      "id": "fill a cheque",
+      "bbox": [
+        825,
+        1354,
+        987,
+        1454
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        225,
+        824,
+        274,
+        868
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        307,
+        814,
+        355,
+        872
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "ask external expert to review doctor",
+      "id": "ask external expert to review doctor",
+      "bbox": [
+        396,
+        786,
+        590,
+        890
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        832,
+        812,
+        892,
+        874
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "director receives expertise",
+      "id": "director receives expertise",
+      "bbox": [
+        860,
+        1116,
+        1026,
+        1241
+      ],
+      "class": "task"
+    },
+    {
+      "text": "expertise",
+      "id": "expertise",
+      "bbox": [
+        1019,
+        934,
+        1065,
+        988
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "cheque",
+      "id": "cheque",
+      "bbox": [
+        678,
+        1219,
+        720,
+        1278
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        649,
+        1380,
+        711,
+        1435
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "external expert list",
+      "id": "external expert list",
+      "bbox": [
+        398,
+        644,
+        452,
+        705
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_4",
+      "bbox": [
+        719,
+        810,
+        778,
+        868
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_5",
+      "bbox": [
+        1083,
+        1376,
+        1145,
+        1438
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "create a report",
+      "head": "process finished",
+      "class": "sequenceFlow",
+      "bbox": [
+        407,
+        360,
+        562,
+        395
+      ],
+      "kps": [
+        561.72,
+        369.52,
+        2.0,
+        407.96,
+        385.64,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "File the results",
+      "head": "create a report",
+      "class": "sequenceFlow",
+      "bbox": [
+        701,
+        352,
+        970,
+        387
+      ],
+      "kps": [
+        969.68,
+        369.52,
+        2.0,
+        701.84,
+        369.52,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "File the results",
+      "class": "sequenceFlow",
+      "bbox": [
+        892,
+        76,
+        1027,
+        334
+      ],
+      "kps": [
+        892.8,
+        76.88,
+        2.0,
+        1026.72,
+        333.56,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        750,
+        61,
+        835,
+        96
+      ],
+      "kps": [
+        750.2,
+        75.64,
+        2.0,
+        834.52,
+        81.84,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        472,
+        59,
+        569,
+        94
+      ],
+      "kps": [
+        472.44,
+        76.88,
+        2.0,
+        567.92,
+        76.88,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "new case opened",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        244,
+        69,
+        321,
+        104
+      ],
+      "kps": [
+        244.28,
+        86.8,
+        2.0,
+        319.92,
+        86.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask external expert to review doctor",
+      "class": "sequenceFlow",
+      "bbox": [
+        355,
+        825,
+        398,
+        860
+      ],
+      "kps": [
+        355.88,
+        844.44,
+        2.0,
+        396.8,
+        840.72,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill a cheque",
+      "head": "messageEvent_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        711,
+        1385,
+        827,
+        1420
+      ],
+      "kps": [
+        825.84,
+        1402.44,
+        2.0,
+        711.76,
+        1402.44,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_5",
+      "head": "fill a cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        987,
+        1390,
+        1085,
+        1425
+      ],
+      "kps": [
+        1083.76,
+        1407.4,
+        2.0,
+        987.04,
+        1407.4,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        778,
+        823,
+        835,
+        858
+      ],
+      "kps": [
+        778.72,
+        839.48,
+        2.0,
+        834.52,
+        840.72,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        332,
+        871,
+        864,
+        1021
+      ],
+      "kps": [
+        863.04,
+        872.96,
+        2.0,
+        332.32,
+        871.72,
+        2.0
+      ],
+      "label": "response not n time"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "director receives expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        889,
+        839,
+        970,
+        1117
+      ],
+      "kps": [
+        889.08,
+        839.48,
+        2.0,
+        969.68,
+        1116.0,
+        2.0
+      ],
+      "label": "response in time"
+    },
+    {
+      "tail": "ask external expert to review doctor",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        590,
+        753,
+        871,
+        848
+      ],
+      "kps": [
+        590.24,
+        846.92,
+        2.0,
+        870.48,
+        820.88,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        274,
+        829,
+        310,
+        864
+      ],
+      "kps": [
+        274.04,
+        846.92,
+        2.0,
+        308.76,
+        845.68,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "File the results",
+      "head": "QA - DB",
+      "class": "dataAssociation",
+      "bbox": [
+        1056,
+        419,
+        1091,
+        499
+      ],
+      "kps": [
+        1061.44,
+        419.12,
+        2.0,
+        1085.0,
+        498.48,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill a cheque",
+      "head": "cheque",
+      "class": "dataAssociation",
+      "bbox": [
+        721,
+        1254,
+        840,
+        1355
+      ],
+      "kps": [
+        839.48,
+        1354.08,
+        2.0,
+        721.68,
+        1254.88,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review doctor",
+      "head": "external expert list",
+      "class": "dataAssociation",
+      "bbox": [
+        408,
+        705,
+        443,
+        787
+      ],
+      "kps": [
+        425.32,
+        786.16,
+        2.0,
+        425.32,
+        705.56,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "director receives expertise",
+      "class": "dataAssociation",
+      "bbox": [
+        996,
+        982,
+        1031,
+        1117
+      ],
+      "kps": [
+        1019.28,
+        982.08,
+        2.0,
+        1006.88,
+        1116.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "cheque",
+      "head": "messageEvent_3",
+      "class": "dataAssociation",
+      "bbox": [
+        666,
+        1279,
+        701,
+        1378
+      ],
+      "kps": [
+        683.24,
+        1279.68,
+        2.0,
+        683.24,
+        1377.64,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "expertise",
+      "class": "dataAssociation",
+      "bbox": [
+        775,
+        853,
+        1020,
+        956
+      ],
+      "kps": [
+        775.0,
+        853.12,
+        2.0,
+        1019.28,
+        954.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "messageEvent_2",
+      "class": "messageFlow",
+      "bbox": [
+        167,
+        124,
+        398,
+        848
+      ],
+      "kps": [
+        396.8,
+        124.0,
+        2.0,
+        225.68,
+        846.92,
+        2.0
+      ],
+      "label": "new case"
+    },
+    {
+      "tail": "director receives expertise",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        864,
+        105,
+        1142,
+        1180
+      ],
+      "kps": [
+        1026.72,
+        1179.24,
+        2.0,
+        864.28,
+        105.4,
+        2.0
+      ],
+      "label": "expertise"
+    },
+    {
+      "tail": "File the results",
+      "head": "messageEvent_5",
+      "class": "messageFlow",
+      "bbox": [
+        1031,
+        419,
+        1196,
+        1408
+      ],
+      "kps": [
+        1031.68,
+        419.12,
+        2.0,
+        1145.76,
+        1407.4,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review doctor",
+      "head": "expert",
+      "class": "messageFlow",
+      "bbox": [
+        436,
+        890,
+        471,
+        1655
+      ],
+      "kps": [
+        453.84,
+        890.32,
+        2.0,
+        453.84,
+        1654.16,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "expert",
+      "head": "messageEvent_4",
+      "class": "messageFlow",
+      "bbox": [
+        499,
+        868,
+        746,
+        1655
+      ],
+      "kps": [
+        499.1,
+        1653.85,
+        2.0,
+        745.55,
+        868.0,
+        2.0
+      ],
+      "label": "expertise"
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "expert",
+      "class": "messageFlow",
+      "bbox": [
+        666,
+        1438,
+        701,
+        1655
+      ],
+      "kps": [
+        683.24,
+        1438.4,
+        2.0,
+        683.24,
+        1654.16,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "quality assurance departement",
+      "nodes": [
+        "QA Speciailist"
+      ],
+      "bbox": [
+        6,
+        14,
+        1215,
+        603
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA Speciailist",
+      "nodes": [
+        "process finished",
+        "new case opened",
+        "create a report",
+        "task_1",
+        "File the results",
+        "interview patients",
+        "QA - DB",
+        "messageEvent_1"
+      ],
+      "bbox": [
+        53,
+        14,
+        1215,
+        603
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "hospital",
+      "nodes": [
+        "director"
+      ],
+      "bbox": [
+        4,
+        722,
+        1218,
+        1536
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "director",
+      "nodes": [
+        "fill a cheque",
+        "messageEvent_2",
+        "exclusiveGateway_1",
+        "ask external expert to review doctor",
+        "exclusiveGateway_2",
+        "director receives expertise",
+        "expertise",
+        "cheque",
+        "messageEvent_3",
+        "messageEvent_4",
+        "messageEvent_5"
+      ],
+      "bbox": [
+        51,
+        722,
+        1218,
+        1536
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "expert",
+      "nodes": [],
+      "bbox": [
+        331,
+        1653,
+        766,
+        1711
+      ],
+      "class": "pool"
+    }
+  ]
+}

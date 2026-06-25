@@ -1,0 +1,342 @@
+{
+  "nodes": [
+    {
+      "text": "receive order by Lieferando",
+      "id": "receive order by Lieferando",
+      "bbox": [
+        716,
+        167,
+        1077,
+        302
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive order by Website",
+      "id": "receive order by Website",
+      "bbox": [
+        728,
+        451,
+        983,
+        550
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive order by phone",
+      "id": "receive order by phone",
+      "bbox": [
+        688,
+        651,
+        885,
+        764
+      ],
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        1150,
+        145,
+        1319,
+        269
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down note",
+      "id": "write down note",
+      "bbox": [
+        981,
+        629,
+        1133,
+        752
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "bbox": [
+        1279,
+        392,
+        1448,
+        482
+      ],
+      "class": "task"
+    },
+    {
+      "text": "attach order to pinboard",
+      "id": "attach order to pinboard",
+      "bbox": [
+        1448,
+        539,
+        1632,
+        696
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Process complete",
+      "id": "Process complete",
+      "bbox": [
+        1522,
+        338,
+        1576,
+        401
+      ],
+      "class": "event"
+    },
+    {
+      "text": "new pizza request",
+      "id": "new pizza request",
+      "bbox": [
+        54,
+        399,
+        164,
+        498
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        326,
+        391,
+        432,
+        489
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1287,
+        583,
+        1383,
+        688
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1120,
+        415,
+        1215,
+        515
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order note",
+      "id": "order note",
+      "bbox": [
+        1181,
+        701,
+        1299,
+        823
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1148,
+        268,
+        1181,
+        420
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive order by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1077,
+        207,
+        1151,
+        240
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1208,
+        437,
+        1280,
+        470
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive order by Website",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        983,
+        466,
+        1121,
+        506
+      ],
+      "label": null
+    },
+    {
+      "tail": "attach order to pinboard",
+      "head": "Process complete",
+      "class": "sequenceFlow",
+      "bbox": [
+        1534,
+        397,
+        1566,
+        540
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach order to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        1380,
+        606,
+        1449,
+        639
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1331,
+        483,
+        1364,
+        597
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive order by phone",
+      "head": "write down note",
+      "class": "sequenceFlow",
+      "bbox": [
+        886,
+        656,
+        983,
+        689
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by phone",
+      "class": "sequenceFlow",
+      "bbox": [
+        356,
+        468,
+        690,
+        709
+      ],
+      "label": "Phone"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by Website",
+      "class": "sequenceFlow",
+      "bbox": [
+        425,
+        446,
+        729,
+        523
+      ],
+      "label": "order by Website"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by Lieferando",
+      "class": "sequenceFlow",
+      "bbox": [
+        379,
+        246,
+        718,
+        392
+      ],
+      "label": "Lieferando"
+    },
+    {
+      "tail": "new pizza request",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        163,
+        433,
+        336,
+        466
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down note",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1133,
+        639,
+        1288,
+        672
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down note",
+      "head": "order note",
+      "class": "dataAssociation",
+      "bbox": [
+        1043,
+        753,
+        1182,
+        799
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "order note",
+      "class": "dataAssociation",
+      "bbox": [
+        1223,
+        483,
+        1295,
+        702
+      ],
+      "label": null
+    },
+    {
+      "tail": "order note",
+      "head": "attach order to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        1299,
+        697,
+        1548,
+        765
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

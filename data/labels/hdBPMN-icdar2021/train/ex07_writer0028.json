@@ -1,0 +1,190 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "ofer accepted",
+      "id": "ofer accepted",
+      "class": "event"
+    },
+    {
+      "text": "create offer",
+      "id": "create offer",
+      "class": "task"
+    },
+    {
+      "text": "sad offer",
+      "id": "sad offer",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "class": "messageEvent"
+    },
+    {
+      "text": "update offer",
+      "id": "update offer",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "stonate offer",
+      "id": "stonate offer",
+      "class": "task"
+    },
+    {
+      "text": "stonate the offer automatically",
+      "id": "stonate the offer automatically",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_4",
+      "class": "messageEvent"
+    },
+    {
+      "text": "offer stoned",
+      "id": "offer stoned",
+      "class": "event"
+    },
+    {
+      "text": "48 hours",
+      "id": "48 hours",
+      "class": "timerEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "stonate the offer automatically",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "sad offer",
+      "class": "sequenceFlow",
+      "label": "number of charge under =< 3"
+    },
+    {
+      "tail": "48 hours",
+      "head": "stonate the offer automatically",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "stonate offer",
+      "head": "offer stoned",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "stonate offer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": "number of charge over > 3"
+    },
+    {
+      "tail": "update offer",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "update offer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "ofer accepted",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create offer",
+      "head": "sad offer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "create offer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retailer",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "label": "request offer"
+    },
+    {
+      "tail": "sad offer",
+      "head": "retailer",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "retailer",
+      "head": "messageEvent_3",
+      "class": "messageFlow",
+      "label": "stonate\noffer"
+    },
+    {
+      "tail": "retailer",
+      "head": "messageEvent_2",
+      "class": "messageFlow",
+      "label": "charge\noffer"
+    },
+    {
+      "tail": "retailer",
+      "head": "messageEvent_4",
+      "class": "messageFlow",
+      "label": "accept\noffer"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Supplier",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "retailer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

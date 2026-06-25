@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "imam reword",
+      "id": "imam reword",
+      "class": "circle"
+    },
+    {
+      "text": "pandanaceous",
+      "id": "pandanaceous",
+      "class": "hexagon"
+    },
+    {
+      "text": "ecuelling",
+      "id": "ecuelling",
+      "class": "diamond"
+    },
+    {
+      "text": "soterial",
+      "id": "soterial",
+      "class": "document"
+    },
+    {
+      "text": "unplanished",
+      "id": "unplanished",
+      "class": "circle"
+    },
+    {
+      "text": "toxicodermatitis luteinize",
+      "id": "toxicodermatitis luteinize",
+      "class": "hexagon"
+    },
+    {
+      "text": "waggishness",
+      "id": "waggishness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "doctor",
+      "id": "doctor",
+      "class": "box"
+    },
+    {
+      "text": "hypocrater uninfringeable Trac",
+      "id": "hypocrater uninfringeable Trac",
+      "class": "hexagon"
+    },
+    {
+      "text": "petaloid",
+      "id": "petaloid",
+      "class": "diamond"
+    },
+    {
+      "text": "bloodworthy",
+      "id": "bloodworthy",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "imam reword",
+      "head": "pandanaceous",
+      "label": null
+    },
+    {
+      "tail": "pandanaceous",
+      "head": "ecuelling",
+      "label": null
+    },
+    {
+      "tail": "ecuelling",
+      "head": "soterial",
+      "label": "No"
+    },
+    {
+      "tail": "ecuelling",
+      "head": "unplanished",
+      "label": "No"
+    },
+    {
+      "tail": "soterial",
+      "head": "toxicodermatitis luteinize",
+      "label": null
+    },
+    {
+      "tail": "toxicodermatitis luteinize",
+      "head": "waggishness",
+      "label": null
+    },
+    {
+      "tail": "waggishness",
+      "head": "doctor",
+      "label": null
+    },
+    {
+      "tail": "doctor",
+      "head": "hypocrater uninfringeable Trac",
+      "label": null
+    },
+    {
+      "tail": "hypocrater uninfringeable Trac",
+      "head": "petaloid",
+      "label": null
+    },
+    {
+      "tail": "petaloid",
+      "head": "bloodworthy",
+      "label": "no"
+    },
+    {
+      "tail": "petaloid",
+      "head": "hypocrater uninfringeable Trac",
+      "label": "no"
+    },
+    {
+      "tail": "bloodworthy",
+      "head": "unplanished",
+      "label": "YES"
+    },
+    {
+      "tail": "bloodworthy",
+      "head": "imam reword",
+      "label": "YES"
+    }
+  ]
+}

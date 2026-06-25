@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "onychophyma galanga cholesteri",
+      "id": "onychophyma galanga cholesteri",
+      "class": "oval"
+    },
+    {
+      "text": "electrometrical",
+      "id": "electrometrical",
+      "class": "document"
+    },
+    {
+      "text": "noninformative",
+      "id": "noninformative",
+      "class": "diamond"
+    },
+    {
+      "text": "barracouta",
+      "id": "barracouta",
+      "class": "diamond"
+    },
+    {
+      "text": "topologic deflex godlessness",
+      "id": "topologic deflex godlessness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "interlamellation",
+      "id": "interlamellation",
+      "class": "circle"
+    },
+    {
+      "text": "carbonize Conularia sheathe",
+      "id": "carbonize Conularia sheathe",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "onychophyma galanga cholesteri",
+      "head": "electrometrical",
+      "label": null
+    },
+    {
+      "tail": "electrometrical",
+      "head": "noninformative",
+      "label": null
+    },
+    {
+      "tail": "noninformative",
+      "head": "barracouta",
+      "label": "NO"
+    },
+    {
+      "tail": "noninformative",
+      "head": "onychophyma galanga cholesteri",
+      "label": "NO"
+    },
+    {
+      "tail": "barracouta",
+      "head": "topologic deflex godlessness",
+      "label": "yes"
+    },
+    {
+      "tail": "barracouta",
+      "head": "interlamellation",
+      "label": "yes"
+    },
+    {
+      "tail": "topologic deflex godlessness",
+      "head": "carbonize Conularia sheathe",
+      "label": null
+    },
+    {
+      "tail": "carbonize Conularia sheathe",
+      "head": "interlamellation",
+      "label": null
+    }
+  ]
+}

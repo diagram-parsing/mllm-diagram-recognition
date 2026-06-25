@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "text": "dutra",
+      "id": "dutra",
+      "class": "ellipse",
+      "bbox": [
+        27,
+        5,
+        99,
+        53
+      ]
+    },
+    {
+      "text": "bracket",
+      "id": "bracket",
+      "class": "document",
+      "bbox": [
+        5,
+        104,
+        120,
+        170
+      ]
+    },
+    {
+      "text": "vagabondage",
+      "id": "vagabondage",
+      "class": "diamond",
+      "bbox": [
+        9,
+        181,
+        116,
+        254
+      ]
+    },
+    {
+      "text": "rebuffable",
+      "id": "rebuffable",
+      "class": "document",
+      "bbox": [
+        5,
+        319,
+        120,
+        385
+      ]
+    },
+    {
+      "text": "Vulgate",
+      "id": "Vulgate",
+      "class": "hexagon",
+      "bbox": [
+        226,
+        5,
+        329,
+        53
+      ]
+    },
+    {
+      "text": "shieldmay palpebration",
+      "id": "shieldmay palpebration",
+      "class": "parallelogram",
+      "bbox": [
+        196,
+        73,
+        355,
+        147
+      ]
+    },
+    {
+      "text": "Simonianism",
+      "id": "Simonianism",
+      "class": "hexagon",
+      "bbox": [
+        215,
+        220,
+        341,
+        268
+      ]
+    },
+    {
+      "text": "monorchism ygapo misinfer",
+      "id": "monorchism ygapo misinfer",
+      "class": "document",
+      "bbox": [
+        220,
+        319,
+        335,
+        385
+      ]
+    },
+    {
+      "text": "nondumping congratulational",
+      "id": "nondumping congratulational",
+      "class": "ellipse",
+      "bbox": [
+        213,
+        434,
+        343,
+        480
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "dutra",
+      "head": "bracket",
+      "label": null,
+      "bbox": [
+        58,
+        53,
+        67,
+        104
+      ]
+    },
+    {
+      "tail": "bracket",
+      "head": "vagabondage",
+      "label": null,
+      "bbox": [
+        40,
+        170,
+        50,
+        193
+      ]
+    },
+    {
+      "tail": "vagabondage",
+      "head": "rebuffable",
+      "label": "YES",
+      "bbox": [
+        58,
+        254,
+        67,
+        319
+      ]
+    },
+    {
+      "tail": "vagabondage",
+      "head": "bracket",
+      "label": "YES",
+      "bbox": [
+        76,
+        170,
+        85,
+        193
+      ]
+    },
+    {
+      "tail": "rebuffable",
+      "head": "Vulgate",
+      "label": null,
+      "bbox": [
+        120,
+        25,
+        227,
+        352
+      ]
+    },
+    {
+      "tail": "Vulgate",
+      "head": "shieldmay palpebration",
+      "label": null,
+      "bbox": [
+        273,
+        53,
+        282,
+        74
+      ]
+    },
+    {
+      "tail": "shieldmay palpebration",
+      "head": "Simonianism",
+      "label": null,
+      "bbox": [
+        273,
+        146,
+        282,
+        221
+      ]
+    },
+    {
+      "tail": "Simonianism",
+      "head": "monorchism ygapo misinfer",
+      "label": null,
+      "bbox": [
+        273,
+        268,
+        282,
+        319
+      ]
+    },
+    {
+      "tail": "monorchism ygapo misinfer",
+      "head": "nondumping congratulational",
+      "label": null,
+      "bbox": [
+        273,
+        385,
+        282,
+        434
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "blighty",
+      "id": "blighty",
+      "class": "ellipse"
+    },
+    {
+      "text": "tintinnabulary",
+      "id": "tintinnabulary",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Kriton trypograph decadary",
+      "id": "Kriton trypograph decadary",
+      "class": "diamond"
+    },
+    {
+      "text": "wilded",
+      "id": "wilded",
+      "class": "hexagon"
+    },
+    {
+      "text": "kiley",
+      "id": "kiley",
+      "class": "hexagon"
+    },
+    {
+      "text": "multilamellous",
+      "id": "multilamellous",
+      "class": "document"
+    },
+    {
+      "text": "melanocyte",
+      "id": "melanocyte",
+      "class": "hexagon"
+    },
+    {
+      "text": "altarage",
+      "id": "altarage",
+      "class": "box"
+    },
+    {
+      "text": "filtrability aminobenzoic",
+      "id": "filtrability aminobenzoic",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "blighty",
+      "head": "tintinnabulary",
+      "label": null
+    },
+    {
+      "tail": "tintinnabulary",
+      "head": "Kriton trypograph decadary",
+      "label": null
+    },
+    {
+      "tail": "Kriton trypograph decadary",
+      "head": "wilded",
+      "label": "YES"
+    },
+    {
+      "tail": "Kriton trypograph decadary",
+      "head": "kiley",
+      "label": "YES"
+    },
+    {
+      "tail": "wilded",
+      "head": "multilamellous",
+      "label": null
+    },
+    {
+      "tail": "multilamellous",
+      "head": "melanocyte",
+      "label": null
+    },
+    {
+      "tail": "melanocyte",
+      "head": "kiley",
+      "label": null
+    },
+    {
+      "tail": "kiley",
+      "head": "altarage",
+      "label": null
+    },
+    {
+      "tail": "altarage",
+      "head": "filtrability aminobenzoic",
+      "label": null
+    }
+  ]
+}

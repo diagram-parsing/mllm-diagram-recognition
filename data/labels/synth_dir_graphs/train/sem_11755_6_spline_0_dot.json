@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "text": "kiefekil",
+      "id": "kiefekil",
+      "class": "node"
+    },
+    {
+      "text": "hypoplasty photoperimeter subd",
+      "id": "hypoplasty photoperimeter subd",
+      "class": "node"
+    },
+    {
+      "text": "unimprovised stenometer unfore",
+      "id": "unimprovised stenometer unfore",
+      "class": "node"
+    },
+    {
+      "text": "analyser",
+      "id": "analyser",
+      "class": "node"
+    },
+    {
+      "text": "satinite isohel",
+      "id": "satinite isohel",
+      "class": "node"
+    },
+    {
+      "text": "reperception",
+      "id": "reperception",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "kiefekil",
+      "head": "hypoplasty photoperimeter subd",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "kiefekil",
+      "head": "unimprovised stenometer unfore",
+      "label": "-0.01",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "analyser",
+      "head": "satinite isohel",
+      "label": "0.9*** a = 0.341",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "analyser",
+      "head": "reperception",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "kiefekil",
+      "head": "analyser",
+      "label": "-0.69*** x = 0.665",
+      "class": "unidirectional"
+    }
+  ]
+}

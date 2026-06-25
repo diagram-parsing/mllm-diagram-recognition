@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "text": "unflouted",
+      "id": "unflouted",
+      "class": "circle",
+      "bbox": [
+        38,
+        5,
+        102,
+        69
+      ]
+    },
+    {
+      "text": "glasshouse",
+      "id": "glasshouse",
+      "class": "hexagon",
+      "bbox": [
+        29,
+        86,
+        110,
+        146
+      ]
+    },
+    {
+      "text": "pyrexic",
+      "id": "pyrexic",
+      "class": "diamond",
+      "bbox": [
+        8,
+        170,
+        131,
+        218
+      ]
+    },
+    {
+      "text": "counterstimulate",
+      "id": "counterstimulate",
+      "class": "diamond",
+      "bbox": [
+        5,
+        235,
+        134,
+        309
+      ]
+    },
+    {
+      "text": "nonvoting",
+      "id": "nonvoting",
+      "class": "box",
+      "bbox": [
+        31,
+        326,
+        109,
+        374
+      ]
+    },
+    {
+      "text": "Hondurean whalebird",
+      "id": "Hondurean whalebird",
+      "class": "ellipse",
+      "bbox": [
+        178,
+        422,
+        274,
+        469
+      ]
+    },
+    {
+      "text": "towd auriculately",
+      "id": "towd auriculately",
+      "class": "box",
+      "bbox": [
+        190,
+        33,
+        262,
+        81
+      ]
+    },
+    {
+      "text": "Woodwardia",
+      "id": "Woodwardia",
+      "class": "diamond",
+      "bbox": [
+        150,
+        92,
+        302,
+        140
+      ]
+    },
+    {
+      "text": "infracephalic",
+      "id": "infracephalic",
+      "class": "hexagon",
+      "bbox": [
+        182,
+        164,
+        270,
+        224
+      ]
+    },
+    {
+      "text": "citadel",
+      "id": "citadel",
+      "class": "box",
+      "bbox": [
+        190,
+        248,
+        262,
+        296
+      ]
+    },
+    {
+      "text": "Heliconiinae patterist",
+      "id": "Heliconiinae patterist",
+      "class": "parallelogram",
+      "bbox": [
+        145,
+        314,
+        302,
+        387
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unflouted",
+      "head": "glasshouse",
+      "label": null,
+      "bbox": [
+        65,
+        69,
+        74,
+        86
+      ]
+    },
+    {
+      "tail": "glasshouse",
+      "head": "pyrexic",
+      "label": null,
+      "bbox": [
+        52,
+        145,
+        61,
+        175
+      ]
+    },
+    {
+      "tail": "pyrexic",
+      "head": "counterstimulate",
+      "label": "Yes",
+      "bbox": [
+        65,
+        218,
+        74,
+        236
+      ]
+    },
+    {
+      "tail": "pyrexic",
+      "head": "glasshouse",
+      "label": "Yes",
+      "bbox": [
+        78,
+        145,
+        88,
+        175
+      ]
+    },
+    {
+      "tail": "counterstimulate",
+      "head": "nonvoting",
+      "label": "Yes",
+      "bbox": [
+        65,
+        308,
+        74,
+        326
+      ]
+    },
+    {
+      "tail": "counterstimulate",
+      "head": "Hondurean whalebird",
+      "label": "Yes",
+      "bbox": [
+        121,
+        279,
+        178,
+        453
+      ]
+    },
+    {
+      "tail": "nonvoting",
+      "head": "towd auriculately",
+      "label": null,
+      "bbox": [
+        109,
+        71,
+        190,
+        351
+      ]
+    },
+    {
+      "tail": "towd auriculately",
+      "head": "Woodwardia",
+      "label": null,
+      "bbox": [
+        221,
+        79,
+        231,
+        92
+      ]
+    },
+    {
+      "tail": "Woodwardia",
+      "head": "infracephalic",
+      "label": "Yes",
+      "bbox": [
+        221,
+        140,
+        231,
+        164
+      ]
+    },
+    {
+      "tail": "Woodwardia",
+      "head": "glasshouse",
+      "label": "Yes",
+      "bbox": [
+        109,
+        112,
+        153,
+        121
+      ]
+    },
+    {
+      "tail": "infracephalic",
+      "head": "citadel",
+      "label": null,
+      "bbox": [
+        221,
+        223,
+        231,
+        249
+      ]
+    },
+    {
+      "tail": "citadel",
+      "head": "Heliconiinae patterist",
+      "label": null,
+      "bbox": [
+        221,
+        296,
+        231,
+        314
+      ]
+    },
+    {
+      "tail": "Heliconiinae patterist",
+      "head": "Hondurean whalebird",
+      "label": null,
+      "bbox": [
+        221,
+        387,
+        231,
+        423
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "flaxdrop canelike",
+      "id": "flaxdrop canelike",
+      "class": "node",
+      "bbox": [
+        226,
+        185,
+        298,
+        233
+      ]
+    },
+    {
+      "text": "atomization",
+      "id": "atomization",
+      "class": "node",
+      "bbox": [
+        5,
+        17,
+        154,
+        65
+      ]
+    },
+    {
+      "text": "garnice holostomatous",
+      "id": "garnice holostomatous",
+      "class": "node",
+      "bbox": [
+        178,
+        5,
+        347,
+        77
+      ]
+    },
+    {
+      "text": "grasper antibacchius",
+      "id": "grasper antibacchius",
+      "class": "node",
+      "bbox": [
+        273,
+        342,
+        406,
+        399
+      ]
+    },
+    {
+      "text": "daubreeite caplin",
+      "id": "daubreeite caplin",
+      "class": "node",
+      "bbox": [
+        322,
+        174,
+        472,
+        245
+      ]
+    },
+    {
+      "text": "blancmanger due",
+      "id": "blancmanger due",
+      "class": "node",
+      "bbox": [
+        370,
+        17,
+        479,
+        65
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "flaxdrop canelike",
+      "head": "atomization",
+      "label": "0.07 H = 0.455",
+      "class": "unidirectional",
+      "bbox": [
+        101,
+        65,
+        231,
+        185
+      ]
+    },
+    {
+      "tail": "flaxdrop canelike",
+      "head": "garnice holostomatous",
+      "label": "0.95 t = 0.127",
+      "class": "unidirectional",
+      "bbox": [
+        253,
+        77,
+        271,
+        185
+      ]
+    },
+    {
+      "tail": "grasper antibacchius",
+      "head": "daubreeite caplin",
+      "label": "0.74** y = 0.477",
+      "class": "unidirectional",
+      "bbox": [
+        350,
+        245,
+        386,
+        342
+      ]
+    },
+    {
+      "tail": "flaxdrop canelike",
+      "head": "blancmanger due",
+      "label": "-1",
+      "class": "unidirectional",
+      "bbox": [
+        291,
+        65,
+        408,
+        185
+      ]
+    },
+    {
+      "tail": "grasper antibacchius",
+      "head": "flaxdrop canelike",
+      "label": "0.5* f = 0.169",
+      "class": "bidirectional",
+      "bbox": [
+        261,
+        234,
+        300,
+        329
+      ]
+    }
+  ]
+}

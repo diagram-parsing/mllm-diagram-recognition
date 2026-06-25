@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "text": "lawyerism",
+      "id": "lawyerism",
+      "class": "node"
+    },
+    {
+      "text": "playful",
+      "id": "playful",
+      "class": "node"
+    },
+    {
+      "text": "gnostical saltimbank",
+      "id": "gnostical saltimbank",
+      "class": "node"
+    },
+    {
+      "text": "tannogelatin",
+      "id": "tannogelatin",
+      "class": "node"
+    },
+    {
+      "text": "untheoretical",
+      "id": "untheoretical",
+      "class": "node"
+    },
+    {
+      "text": "unpuzzle",
+      "id": "unpuzzle",
+      "class": "node"
+    },
+    {
+      "text": "overconsiderately",
+      "id": "overconsiderately",
+      "class": "node"
+    },
+    {
+      "text": "tinegrass",
+      "id": "tinegrass",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "lawyerism",
+      "head": "playful",
+      "label": "0.37* H = 0.13",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "gnostical saltimbank",
+      "head": "tannogelatin",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "gnostical saltimbank",
+      "head": "untheoretical",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "unpuzzle",
+      "head": "overconsiderately",
+      "label": "-0.2096",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "lawyerism",
+      "head": "tinegrass",
+      "label": "0.768",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "lawyerism",
+      "head": "gnostical saltimbank",
+      "label": "0.64 s = 0.115",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "gnostical saltimbank",
+      "head": "unpuzzle",
+      "label": null,
+      "class": "unidirectional"
+    }
+  ]
+}

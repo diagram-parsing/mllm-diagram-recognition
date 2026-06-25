@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "text": "spellbind",
+      "id": "spellbind",
+      "class": "oval",
+      "bbox": [
+        49,
+        18,
+        135,
+        66
+      ]
+    },
+    {
+      "text": "progne",
+      "id": "progne",
+      "class": "document",
+      "bbox": [
+        43,
+        109,
+        140,
+        166
+      ]
+    },
+    {
+      "text": "unwailing",
+      "id": "unwailing",
+      "class": "document",
+      "bbox": [
+        43,
+        205,
+        140,
+        262
+      ]
+    },
+    {
+      "text": "unsuppliable",
+      "id": "unsuppliable",
+      "class": "box",
+      "bbox": [
+        46,
+        305,
+        138,
+        353
+      ]
+    },
+    {
+      "text": "dissoul",
+      "id": "dissoul",
+      "class": "diamond",
+      "bbox": [
+        33,
+        401,
+        150,
+        449
+      ]
+    },
+    {
+      "text": "gleamless",
+      "id": "gleamless",
+      "class": "document",
+      "bbox": [
+        43,
+        492,
+        140,
+        544
+      ]
+    },
+    {
+      "text": "faithworthy adoration",
+      "id": "faithworthy adoration",
+      "class": "parallelogram",
+      "bbox": [
+        207,
+        5,
+        354,
+        79
+      ]
+    },
+    {
+      "text": "Nyctimene hypnosis",
+      "id": "Nyctimene hypnosis",
+      "class": "circle",
+      "bbox": [
+        235,
+        89,
+        331,
+        186
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "spellbind",
+      "head": "progne",
+      "label": null,
+      "bbox": [
+        87,
+        67,
+        96,
+        105
+      ]
+    },
+    {
+      "tail": "progne",
+      "head": "unwailing",
+      "label": null,
+      "bbox": [
+        87,
+        166,
+        96,
+        201
+      ]
+    },
+    {
+      "tail": "unwailing",
+      "head": "unsuppliable",
+      "label": null,
+      "bbox": [
+        87,
+        262,
+        96,
+        300
+      ]
+    },
+    {
+      "tail": "unsuppliable",
+      "head": "dissoul",
+      "label": null,
+      "bbox": [
+        87,
+        354,
+        96,
+        395
+      ]
+    },
+    {
+      "tail": "dissoul",
+      "head": "gleamless",
+      "label": "No",
+      "bbox": [
+        87,
+        450,
+        96,
+        488
+      ]
+    },
+    {
+      "tail": "dissoul",
+      "head": "unwailing",
+      "label": "No",
+      "bbox": [
+        26,
+        230,
+        39,
+        421
+      ]
+    },
+    {
+      "tail": "gleamless",
+      "head": "faithworthy adoration",
+      "label": null,
+      "bbox": [
+        140,
+        84,
+        226,
+        521
+      ]
+    },
+    {
+      "tail": "faithworthy adoration",
+      "head": "Nyctimene hypnosis",
+      "label": null,
+      "bbox": [
+        278,
+        71,
+        288,
+        84
+      ]
+    }
+  ]
+}

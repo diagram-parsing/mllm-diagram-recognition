@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "anterosuperior",
+      "id": "anterosuperior",
+      "class": "circle"
+    },
+    {
+      "text": "flaxwort macrocephalism",
+      "id": "flaxwort macrocephalism",
+      "class": "box"
+    },
+    {
+      "text": "expenditor",
+      "id": "expenditor",
+      "class": "parallelogram"
+    },
+    {
+      "text": "sulphurate",
+      "id": "sulphurate",
+      "class": "hexagon"
+    },
+    {
+      "text": "hepatogastric Euclid",
+      "id": "hepatogastric Euclid",
+      "class": "document"
+    },
+    {
+      "text": "methoxychlor lettrin",
+      "id": "methoxychlor lettrin",
+      "class": "diamond"
+    },
+    {
+      "text": "ovule ribald",
+      "id": "ovule ribald",
+      "class": "box"
+    },
+    {
+      "text": "procreate",
+      "id": "procreate",
+      "class": "diamond"
+    },
+    {
+      "text": "shoresman registership",
+      "id": "shoresman registership",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Spartacide astrer",
+      "id": "Spartacide astrer",
+      "class": "hexagon"
+    },
+    {
+      "text": "wellcurb elegiacal anthropophi",
+      "id": "wellcurb elegiacal anthropophi",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "anterosuperior",
+      "head": "flaxwort macrocephalism",
+      "label": null
+    },
+    {
+      "tail": "flaxwort macrocephalism",
+      "head": "expenditor",
+      "label": null
+    },
+    {
+      "tail": "expenditor",
+      "head": "sulphurate",
+      "label": null
+    },
+    {
+      "tail": "sulphurate",
+      "head": "hepatogastric Euclid",
+      "label": null
+    },
+    {
+      "tail": "hepatogastric Euclid",
+      "head": "methoxychlor lettrin",
+      "label": null
+    },
+    {
+      "tail": "methoxychlor lettrin",
+      "head": "ovule ribald",
+      "label": "yes"
+    },
+    {
+      "tail": "methoxychlor lettrin",
+      "head": "hepatogastric Euclid",
+      "label": "yes"
+    },
+    {
+      "tail": "ovule ribald",
+      "head": "procreate",
+      "label": null
+    },
+    {
+      "tail": "procreate",
+      "head": "shoresman registership",
+      "label": "NO"
+    },
+    {
+      "tail": "procreate",
+      "head": "anterosuperior",
+      "label": "NO"
+    },
+    {
+      "tail": "shoresman registership",
+      "head": "Spartacide astrer",
+      "label": null
+    },
+    {
+      "tail": "Spartacide astrer",
+      "head": "wellcurb elegiacal anthropophi",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "write down order note",
+      "id": "write down order note",
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "attach order note to pinboard",
+      "id": "attach order note to pinboard",
+      "class": "task"
+    },
+    {
+      "text": "order received by phone",
+      "id": "order received by phone",
+      "class": "messageEvent"
+    },
+    {
+      "text": "order received by website",
+      "id": "order received by website",
+      "class": "messageEvent"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "class": "task"
+    },
+    {
+      "text": "order note",
+      "id": "order note",
+      "class": "dataObject"
+    },
+    {
+      "text": "order note",
+      "id": "order note",
+      "class": "dataObject"
+    },
+    {
+      "text": "pinboard",
+      "id": "pinboard",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_2",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "order received by lieferando",
+      "id": "order received by lieferando",
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "attach order note to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_2",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "order received by phone",
+      "head": "write down order note",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "order received by lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "eventBasedGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "order received by website",
+      "head": "eventBasedGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "order note",
+      "head": "attach order note to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "order note",
+      "head": "attach order note to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "client",
+      "head": "Lieferando",
+      "class": "messageFlow",
+      "label": "order pizza"
+    },
+    {
+      "tail": "client",
+      "head": "order received by phone",
+      "class": "messageFlow",
+      "label": "order by phone"
+    },
+    {
+      "tail": "client",
+      "head": "order received by website",
+      "class": "messageFlow",
+      "label": "order over website"
+    },
+    {
+      "tail": "Lieferando",
+      "head": "order received by lieferando",
+      "class": "messageFlow",
+      "label": "order"
+    }
+  ],
+  "groups": [
+    {
+      "name": "pizzeria",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Lieferando",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "client",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

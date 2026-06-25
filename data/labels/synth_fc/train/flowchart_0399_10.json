@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "soulsaving",
+      "id": "soulsaving",
+      "class": "oval"
+    },
+    {
+      "text": "stereophotography",
+      "id": "stereophotography",
+      "class": "hexagon"
+    },
+    {
+      "text": "goety",
+      "id": "goety",
+      "class": "hexagon"
+    },
+    {
+      "text": "tricosanone",
+      "id": "tricosanone",
+      "class": "document"
+    },
+    {
+      "text": "Lilian",
+      "id": "Lilian",
+      "class": "diamond"
+    },
+    {
+      "text": "cacodylate allophone",
+      "id": "cacodylate allophone",
+      "class": "parallelogram"
+    },
+    {
+      "text": "laceflower counterword",
+      "id": "laceflower counterword",
+      "class": "document"
+    },
+    {
+      "text": "prophetess",
+      "id": "prophetess",
+      "class": "parallelogram"
+    },
+    {
+      "text": "ornamentalize",
+      "id": "ornamentalize",
+      "class": "hexagon"
+    },
+    {
+      "text": "chelation synchronously",
+      "id": "chelation synchronously",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "soulsaving",
+      "head": "stereophotography",
+      "label": null
+    },
+    {
+      "tail": "stereophotography",
+      "head": "goety",
+      "label": null
+    },
+    {
+      "tail": "goety",
+      "head": "tricosanone",
+      "label": null
+    },
+    {
+      "tail": "tricosanone",
+      "head": "Lilian",
+      "label": null
+    },
+    {
+      "tail": "Lilian",
+      "head": "cacodylate allophone",
+      "label": "YES"
+    },
+    {
+      "tail": "Lilian",
+      "head": "soulsaving",
+      "label": "YES"
+    },
+    {
+      "tail": "cacodylate allophone",
+      "head": "laceflower counterword",
+      "label": null
+    },
+    {
+      "tail": "laceflower counterword",
+      "head": "prophetess",
+      "label": null
+    },
+    {
+      "tail": "prophetess",
+      "head": "ornamentalize",
+      "label": null
+    },
+    {
+      "tail": "ornamentalize",
+      "head": "chelation synchronously",
+      "label": null
+    }
+  ]
+}

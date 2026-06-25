@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "gaily",
+      "id": "gaily",
+      "class": "oval"
+    },
+    {
+      "text": "predinner",
+      "id": "predinner",
+      "class": "box"
+    },
+    {
+      "text": "bairn",
+      "id": "bairn",
+      "class": "hexagon"
+    },
+    {
+      "text": "chromatosis",
+      "id": "chromatosis",
+      "class": "diamond"
+    },
+    {
+      "text": "astrophotometrical",
+      "id": "astrophotometrical",
+      "class": "diamond"
+    },
+    {
+      "text": "myristate siruelas",
+      "id": "myristate siruelas",
+      "class": "diamond"
+    },
+    {
+      "text": "becard bacterious",
+      "id": "becard bacterious",
+      "class": "box"
+    },
+    {
+      "text": "magnetoid monopotassium",
+      "id": "magnetoid monopotassium",
+      "class": "diamond"
+    },
+    {
+      "text": "juggernaut",
+      "id": "juggernaut",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "gaily",
+      "head": "predinner",
+      "label": null
+    },
+    {
+      "tail": "predinner",
+      "head": "bairn",
+      "label": null
+    },
+    {
+      "tail": "bairn",
+      "head": "chromatosis",
+      "label": null
+    },
+    {
+      "tail": "chromatosis",
+      "head": "astrophotometrical",
+      "label": "yes"
+    },
+    {
+      "tail": "chromatosis",
+      "head": "myristate siruelas",
+      "label": "yes"
+    },
+    {
+      "tail": "astrophotometrical",
+      "head": "becard bacterious",
+      "label": "YES"
+    },
+    {
+      "tail": "astrophotometrical",
+      "head": "myristate siruelas",
+      "label": "YES"
+    },
+    {
+      "tail": "becard bacterious",
+      "head": "myristate siruelas",
+      "label": null
+    },
+    {
+      "tail": "myristate siruelas",
+      "head": "magnetoid monopotassium",
+      "label": "no"
+    },
+    {
+      "tail": "myristate siruelas",
+      "head": "juggernaut",
+      "label": "no"
+    },
+    {
+      "tail": "magnetoid monopotassium",
+      "head": "juggernaut",
+      "label": "NO"
+    },
+    {
+      "tail": "magnetoid monopotassium",
+      "head": "becard bacterious",
+      "label": "NO"
+    }
+  ]
+}

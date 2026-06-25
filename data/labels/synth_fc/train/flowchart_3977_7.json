@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "becrinolined Crucianella unimp",
+      "id": "becrinolined Crucianella unimp",
+      "class": "circle"
+    },
+    {
+      "text": "The agelessness",
+      "id": "The agelessness",
+      "class": "diamond"
+    },
+    {
+      "text": "insistently unhypnotic",
+      "id": "insistently unhypnotic",
+      "class": "box"
+    },
+    {
+      "text": "proteidean",
+      "id": "proteidean",
+      "class": "oval"
+    },
+    {
+      "text": "Pegasus",
+      "id": "Pegasus",
+      "class": "diamond"
+    },
+    {
+      "text": "Semnopithecinae",
+      "id": "Semnopithecinae",
+      "class": "box"
+    },
+    {
+      "text": "vagina",
+      "id": "vagina",
+      "class": "box"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "becrinolined Crucianella unimp",
+      "head": "The agelessness",
+      "label": null
+    },
+    {
+      "tail": "The agelessness",
+      "head": "insistently unhypnotic",
+      "label": "NO"
+    },
+    {
+      "tail": "The agelessness",
+      "head": "proteidean",
+      "label": "NO"
+    },
+    {
+      "tail": "insistently unhypnotic",
+      "head": "Pegasus",
+      "label": null
+    },
+    {
+      "tail": "Pegasus",
+      "head": "Semnopithecinae",
+      "label": "Yes"
+    },
+    {
+      "tail": "Pegasus",
+      "head": "becrinolined Crucianella unimp",
+      "label": "Yes"
+    },
+    {
+      "tail": "Semnopithecinae",
+      "head": "vagina",
+      "label": null
+    },
+    {
+      "tail": "vagina",
+      "head": "proteidean",
+      "label": null
+    }
+  ]
+}

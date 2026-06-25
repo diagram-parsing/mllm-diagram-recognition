@@ -1,0 +1,191 @@
+{
+  "nodes": [
+    {
+      "text": "besieging",
+      "id": "besieging",
+      "class": "circle"
+    },
+    {
+      "text": "morphiate",
+      "id": "morphiate",
+      "class": "diamond"
+    },
+    {
+      "text": "penthouselike",
+      "id": "penthouselike",
+      "class": "diamond"
+    },
+    {
+      "text": "worm",
+      "id": "worm",
+      "class": "document"
+    },
+    {
+      "text": "alternance",
+      "id": "alternance",
+      "class": "box"
+    },
+    {
+      "text": "precriticism unbuild",
+      "id": "precriticism unbuild",
+      "class": "diamond"
+    },
+    {
+      "text": "unincisive Fehmic",
+      "id": "unincisive Fehmic",
+      "class": "hexagon"
+    },
+    {
+      "text": "pseudocollegiate overlier",
+      "id": "pseudocollegiate overlier",
+      "class": "diamond"
+    },
+    {
+      "text": "ungentility relocable",
+      "id": "ungentility relocable",
+      "class": "document"
+    },
+    {
+      "text": "overmature",
+      "id": "overmature",
+      "class": "document"
+    },
+    {
+      "text": "Soiesette",
+      "id": "Soiesette",
+      "class": "document"
+    },
+    {
+      "text": "dissemination",
+      "id": "dissemination",
+      "class": "diamond"
+    },
+    {
+      "text": "Chumulu",
+      "id": "Chumulu",
+      "class": "document"
+    },
+    {
+      "text": "subastringent blusher",
+      "id": "subastringent blusher",
+      "class": "box"
+    },
+    {
+      "text": "dubitancy",
+      "id": "dubitancy",
+      "class": "diamond"
+    },
+    {
+      "text": "Cadet",
+      "id": "Cadet",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "besieging",
+      "head": "morphiate",
+      "label": null
+    },
+    {
+      "tail": "morphiate",
+      "head": "penthouselike",
+      "label": "NO"
+    },
+    {
+      "tail": "morphiate",
+      "head": "worm",
+      "label": "NO"
+    },
+    {
+      "tail": "penthouselike",
+      "head": "alternance",
+      "label": "Yes"
+    },
+    {
+      "tail": "penthouselike",
+      "head": "precriticism unbuild",
+      "label": "Yes"
+    },
+    {
+      "tail": "alternance",
+      "head": "unincisive Fehmic",
+      "label": null
+    },
+    {
+      "tail": "unincisive Fehmic",
+      "head": "precriticism unbuild",
+      "label": null
+    },
+    {
+      "tail": "precriticism unbuild",
+      "head": "pseudocollegiate overlier",
+      "label": "No"
+    },
+    {
+      "tail": "precriticism unbuild",
+      "head": "ungentility relocable",
+      "label": "No"
+    },
+    {
+      "tail": "pseudocollegiate overlier",
+      "head": "worm",
+      "label": "no"
+    },
+    {
+      "tail": "pseudocollegiate overlier",
+      "head": "overmature",
+      "label": "no"
+    },
+    {
+      "tail": "worm",
+      "head": "ungentility relocable",
+      "label": null
+    },
+    {
+      "tail": "ungentility relocable",
+      "head": "overmature",
+      "label": null
+    },
+    {
+      "tail": "overmature",
+      "head": "Soiesette",
+      "label": null
+    },
+    {
+      "tail": "Soiesette",
+      "head": "dissemination",
+      "label": null
+    },
+    {
+      "tail": "dissemination",
+      "head": "Chumulu",
+      "label": "no"
+    },
+    {
+      "tail": "dissemination",
+      "head": "pseudocollegiate overlier",
+      "label": "no"
+    },
+    {
+      "tail": "Chumulu",
+      "head": "subastringent blusher",
+      "label": null
+    },
+    {
+      "tail": "subastringent blusher",
+      "head": "dubitancy",
+      "label": null
+    },
+    {
+      "tail": "dubitancy",
+      "head": "Cadet",
+      "label": "yes"
+    },
+    {
+      "tail": "dubitancy",
+      "head": "ungentility relocable",
+      "label": "yes"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "pseudovolcano",
+      "id": "pseudovolcano",
+      "class": "circle"
+    },
+    {
+      "text": "divellent slabber",
+      "id": "divellent slabber",
+      "class": "parallelogram"
+    },
+    {
+      "text": "hyperdicrotism",
+      "id": "hyperdicrotism",
+      "class": "box"
+    },
+    {
+      "text": "wiglike",
+      "id": "wiglike",
+      "class": "document"
+    },
+    {
+      "text": "leatherleaf",
+      "id": "leatherleaf",
+      "class": "diamond"
+    },
+    {
+      "text": "tritolo bidentate",
+      "id": "tritolo bidentate",
+      "class": "diamond"
+    },
+    {
+      "text": "flirty",
+      "id": "flirty",
+      "class": "diamond"
+    },
+    {
+      "text": "rebrutalize ponderously parado",
+      "id": "rebrutalize ponderously parado",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pseudovolcano",
+      "head": "divellent slabber",
+      "label": null
+    },
+    {
+      "tail": "divellent slabber",
+      "head": "hyperdicrotism",
+      "label": null
+    },
+    {
+      "tail": "hyperdicrotism",
+      "head": "wiglike",
+      "label": null
+    },
+    {
+      "tail": "wiglike",
+      "head": "leatherleaf",
+      "label": null
+    },
+    {
+      "tail": "leatherleaf",
+      "head": "tritolo bidentate",
+      "label": "NO"
+    },
+    {
+      "tail": "leatherleaf",
+      "head": "pseudovolcano",
+      "label": "NO"
+    },
+    {
+      "tail": "tritolo bidentate",
+      "head": "flirty",
+      "label": "YES"
+    },
+    {
+      "tail": "tritolo bidentate",
+      "head": "rebrutalize ponderously parado",
+      "label": "YES"
+    },
+    {
+      "tail": "flirty",
+      "head": "rebrutalize ponderously parado",
+      "label": "No"
+    },
+    {
+      "tail": "flirty",
+      "head": "hyperdicrotism",
+      "label": "No"
+    }
+  ]
+}

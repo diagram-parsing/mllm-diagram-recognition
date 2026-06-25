@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "text": "factorize",
+      "id": "factorize",
+      "class": "circle"
+    },
+    {
+      "text": "organistrum secundiparous cons",
+      "id": "organistrum secundiparous cons",
+      "class": "document"
+    },
+    {
+      "text": "Japonizer",
+      "id": "Japonizer",
+      "class": "box"
+    },
+    {
+      "text": "Pandanales",
+      "id": "Pandanales",
+      "class": "box"
+    },
+    {
+      "text": "unshrinkability",
+      "id": "unshrinkability",
+      "class": "diamond"
+    },
+    {
+      "text": "wattmeter",
+      "id": "wattmeter",
+      "class": "parallelogram"
+    },
+    {
+      "text": "cadaverine",
+      "id": "cadaverine",
+      "class": "hexagon"
+    },
+    {
+      "text": "collegatary",
+      "id": "collegatary",
+      "class": "document"
+    },
+    {
+      "text": "uncomprising",
+      "id": "uncomprising",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Irvingiana",
+      "id": "Irvingiana",
+      "class": "diamond"
+    },
+    {
+      "text": "mahatma",
+      "id": "mahatma",
+      "class": "parallelogram"
+    },
+    {
+      "text": "complexion",
+      "id": "complexion",
+      "class": "box"
+    },
+    {
+      "text": "jitterbug",
+      "id": "jitterbug",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "factorize",
+      "head": "organistrum secundiparous cons",
+      "label": null
+    },
+    {
+      "tail": "organistrum secundiparous cons",
+      "head": "Japonizer",
+      "label": null
+    },
+    {
+      "tail": "Japonizer",
+      "head": "Pandanales",
+      "label": null
+    },
+    {
+      "tail": "Pandanales",
+      "head": "unshrinkability",
+      "label": null
+    },
+    {
+      "tail": "unshrinkability",
+      "head": "wattmeter",
+      "label": "NO"
+    },
+    {
+      "tail": "unshrinkability",
+      "head": "cadaverine",
+      "label": "NO"
+    },
+    {
+      "tail": "wattmeter",
+      "head": "collegatary",
+      "label": null
+    },
+    {
+      "tail": "collegatary",
+      "head": "uncomprising",
+      "label": null
+    },
+    {
+      "tail": "uncomprising",
+      "head": "Irvingiana",
+      "label": null
+    },
+    {
+      "tail": "Irvingiana",
+      "head": "mahatma",
+      "label": "yes"
+    },
+    {
+      "tail": "Irvingiana",
+      "head": "uncomprising",
+      "label": "yes"
+    },
+    {
+      "tail": "mahatma",
+      "head": "complexion",
+      "label": null
+    },
+    {
+      "tail": "complexion",
+      "head": "cadaverine",
+      "label": null
+    },
+    {
+      "tail": "cadaverine",
+      "head": "jitterbug",
+      "label": null
+    }
+  ]
+}

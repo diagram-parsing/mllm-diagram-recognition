@@ -1,0 +1,196 @@
+{
+  "nodes": [
+    {
+      "text": "parentheses",
+      "id": "parentheses",
+      "class": "ellipse"
+    },
+    {
+      "text": "sinister",
+      "id": "sinister",
+      "class": "diamond"
+    },
+    {
+      "text": "pedialgia",
+      "id": "pedialgia",
+      "class": "document"
+    },
+    {
+      "text": "kinkajou",
+      "id": "kinkajou",
+      "class": "hexagon"
+    },
+    {
+      "text": "Azolla hagstone hastingsite",
+      "id": "Azolla hagstone hastingsite",
+      "class": "box"
+    },
+    {
+      "text": "ranche crossflower",
+      "id": "ranche crossflower",
+      "class": "parallelogram"
+    },
+    {
+      "text": "antediluvially bountiful Negro",
+      "id": "antediluvially bountiful Negro",
+      "class": "diamond"
+    },
+    {
+      "text": "nail",
+      "id": "nail",
+      "class": "box"
+    },
+    {
+      "text": "primeval triflorous",
+      "id": "primeval triflorous",
+      "class": "hexagon"
+    },
+    {
+      "text": "asterospondylic admixture",
+      "id": "asterospondylic admixture",
+      "class": "diamond"
+    },
+    {
+      "text": "selectionist superoxalate",
+      "id": "selectionist superoxalate",
+      "class": "diamond"
+    },
+    {
+      "text": "reactiveness",
+      "id": "reactiveness",
+      "class": "diamond"
+    },
+    {
+      "text": "undelivered heartless theses",
+      "id": "undelivered heartless theses",
+      "class": "parallelogram"
+    },
+    {
+      "text": "verificative",
+      "id": "verificative",
+      "class": "circle"
+    },
+    {
+      "text": "trollflower Exonian zootype",
+      "id": "trollflower Exonian zootype",
+      "class": "diamond"
+    },
+    {
+      "text": "clacket",
+      "id": "clacket",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parentheses",
+      "head": "sinister",
+      "label": null
+    },
+    {
+      "tail": "sinister",
+      "head": "pedialgia",
+      "label": "No"
+    },
+    {
+      "tail": "sinister",
+      "head": "kinkajou",
+      "label": "No"
+    },
+    {
+      "tail": "pedialgia",
+      "head": "Azolla hagstone hastingsite",
+      "label": null
+    },
+    {
+      "tail": "Azolla hagstone hastingsite",
+      "head": "ranche crossflower",
+      "label": null
+    },
+    {
+      "tail": "ranche crossflower",
+      "head": "antediluvially bountiful Negro",
+      "label": null
+    },
+    {
+      "tail": "antediluvially bountiful Negro",
+      "head": "nail",
+      "label": "Yes"
+    },
+    {
+      "tail": "antediluvially bountiful Negro",
+      "head": "ranche crossflower",
+      "label": "Yes"
+    },
+    {
+      "tail": "nail",
+      "head": "primeval triflorous",
+      "label": null
+    },
+    {
+      "tail": "primeval triflorous",
+      "head": "asterospondylic admixture",
+      "label": null
+    },
+    {
+      "tail": "asterospondylic admixture",
+      "head": "selectionist superoxalate",
+      "label": "YES"
+    },
+    {
+      "tail": "asterospondylic admixture",
+      "head": "sinister",
+      "label": "YES"
+    },
+    {
+      "tail": "selectionist superoxalate",
+      "head": "reactiveness",
+      "label": "No"
+    },
+    {
+      "tail": "selectionist superoxalate",
+      "head": "primeval triflorous",
+      "label": "No"
+    },
+    {
+      "tail": "reactiveness",
+      "head": "undelivered heartless theses",
+      "label": "NO"
+    },
+    {
+      "tail": "reactiveness",
+      "head": "verificative",
+      "label": "NO"
+    },
+    {
+      "tail": "undelivered heartless theses",
+      "head": "kinkajou",
+      "label": null
+    },
+    {
+      "tail": "kinkajou",
+      "head": "trollflower Exonian zootype",
+      "label": null
+    },
+    {
+      "tail": "trollflower Exonian zootype",
+      "head": "clacket",
+      "label": "Yes"
+    },
+    {
+      "tail": "trollflower Exonian zootype",
+      "head": "reactiveness",
+      "label": "Yes"
+    },
+    {
+      "tail": "clacket",
+      "head": "verificative",
+      "label": "Yes"
+    },
+    {
+      "tail": "clacket",
+      "head": "antediluvially bountiful Negro",
+      "label": "Yes"
+    }
+  ]
+}

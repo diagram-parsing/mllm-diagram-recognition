@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "sinuate unchangeable ungolden",
+      "id": "sinuate unchangeable ungolden",
+      "class": "oval"
+    },
+    {
+      "text": "splenography",
+      "id": "splenography",
+      "class": "document"
+    },
+    {
+      "text": "adulterator mastodont twigwith",
+      "id": "adulterator mastodont twigwith",
+      "class": "parallelogram"
+    },
+    {
+      "text": "berigora hackleback",
+      "id": "berigora hackleback",
+      "class": "document"
+    },
+    {
+      "text": "underfed",
+      "id": "underfed",
+      "class": "parallelogram"
+    },
+    {
+      "text": "barometry",
+      "id": "barometry",
+      "class": "diamond"
+    },
+    {
+      "text": "laryngotracheoscopy",
+      "id": "laryngotracheoscopy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "convolvulin",
+      "id": "convolvulin",
+      "class": "diamond"
+    },
+    {
+      "text": "finding anacamptics",
+      "id": "finding anacamptics",
+      "class": "box"
+    },
+    {
+      "text": "disappoint poststernal",
+      "id": "disappoint poststernal",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "sinuate unchangeable ungolden",
+      "head": "splenography",
+      "label": null
+    },
+    {
+      "tail": "splenography",
+      "head": "adulterator mastodont twigwith",
+      "label": null
+    },
+    {
+      "tail": "adulterator mastodont twigwith",
+      "head": "berigora hackleback",
+      "label": null
+    },
+    {
+      "tail": "berigora hackleback",
+      "head": "underfed",
+      "label": null
+    },
+    {
+      "tail": "underfed",
+      "head": "barometry",
+      "label": null
+    },
+    {
+      "tail": "barometry",
+      "head": "laryngotracheoscopy",
+      "label": "NO"
+    },
+    {
+      "tail": "barometry",
+      "head": "convolvulin",
+      "label": "NO"
+    },
+    {
+      "tail": "laryngotracheoscopy",
+      "head": "finding anacamptics",
+      "label": null
+    },
+    {
+      "tail": "finding anacamptics",
+      "head": "convolvulin",
+      "label": null
+    },
+    {
+      "tail": "convolvulin",
+      "head": "disappoint poststernal",
+      "label": "Yes"
+    },
+    {
+      "tail": "convolvulin",
+      "head": "adulterator mastodont twigwith",
+      "label": "Yes"
+    }
+  ]
+}

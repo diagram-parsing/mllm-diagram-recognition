@@ -1,0 +1,471 @@
+{
+  "nodes": [
+    {
+      "text": "order process started",
+      "id": "order process started",
+      "bbox": [
+        315,
+        901,
+        413,
+        998
+      ],
+      "class": "event"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        1321,
+        574,
+        1575,
+        799
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "bbox": [
+        1056,
+        1104,
+        1321,
+        1329
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "bbox": [
+        1494,
+        839,
+        1759,
+        1064
+      ],
+      "class": "task"
+    },
+    {
+      "text": "order process completed",
+      "id": "order process completed",
+      "bbox": [
+        2688,
+        1180,
+        2775,
+        1274
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        627,
+        899,
+        729,
+        1000
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        884,
+        894,
+        1003,
+        1005
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        642,
+        1159,
+        729,
+        1253
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1219,
+        899,
+        1321,
+        1000
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order confirmation",
+      "id": "order confirmation",
+      "bbox": [
+        1722,
+        574,
+        1861,
+        737
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order management system",
+      "id": "order management system",
+      "bbox": [
+        933,
+        425,
+        1039,
+        595
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "order on paper",
+      "id": "order on paper",
+      "bbox": [
+        1518,
+        1274,
+        1657,
+        1420
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1830,
+        1166,
+        1932,
+        1268
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        1098,
+        621,
+        1216,
+        729
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "attach order to pinboard",
+      "id": "attach order to pinboard",
+      "bbox": [
+        2093,
+        1114,
+        2420,
+        1319
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "messageEvent_2",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "bbox": [
+        729,
+        1182,
+        1058,
+        1243
+      ],
+      "label": null
+    },
+    {
+      "tail": "attach order to pinboard",
+      "head": "order process completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        2420,
+        1186,
+        2693,
+        1247
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "attach order to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        1931,
+        1186,
+        2095,
+        1247
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1759,
+        952,
+        1884,
+        1168
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1321,
+        921,
+        1496,
+        982
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1321,
+        1187,
+        1833,
+        1248
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1270,
+        799,
+        1451,
+        901
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1216,
+        655,
+        1324,
+        716
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1003,
+        920,
+        1221,
+        981
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        649,
+        1000,
+        710,
+        1166
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        729,
+        920,
+        887,
+        981
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        678,
+        675,
+        1100,
+        900
+      ],
+      "label": null
+    },
+    {
+      "tail": "order process started",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        413,
+        920,
+        630,
+        981
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "order confirmation",
+      "class": "dataAssociation",
+      "bbox": [
+        1575,
+        651,
+        1725,
+        712
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "order on paper",
+      "class": "dataAssociation",
+      "bbox": [
+        1321,
+        1271,
+        1521,
+        1332
+      ],
+      "label": null
+    },
+    {
+      "tail": "order management system",
+      "head": "print out order",
+      "class": "dataAssociation",
+      "bbox": [
+        1039,
+        452,
+        1660,
+        842
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "order on paper",
+      "class": "dataAssociation",
+      "bbox": [
+        1565,
+        1067,
+        1626,
+        1277
+      ],
+      "label": null
+    },
+    {
+      "tail": "order on paper",
+      "head": "attach order to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        1658,
+        1291,
+        2088,
+        1366
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "order management system",
+      "class": "dataAssociation",
+      "bbox": [
+        1039,
+        582,
+        1112,
+        643
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "order management system",
+      "class": "dataAssociation",
+      "bbox": [
+        946,
+        595,
+        1007,
+        893
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "messageEvent_2",
+      "class": "messageFlow",
+      "bbox": [
+        657,
+        1249,
+        718,
+        1698
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        914,
+        1009,
+        975,
+        1698
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "messageEvent_3",
+      "class": "messageFlow",
+      "bbox": [
+        1002,
+        733,
+        1159,
+        1698
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Restaurant",
+      "nodes": [],
+      "bbox": [
+        148,
+        350,
+        2941,
+        1594
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        169,
+        1696,
+        2941,
+        1859
+      ],
+      "class": "pool"
+    }
+  ]
+}

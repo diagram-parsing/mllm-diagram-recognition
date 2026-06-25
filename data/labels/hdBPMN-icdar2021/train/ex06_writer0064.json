@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "attach note to pinboard",
+      "id": "attach note to pinboard",
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "take order write down order note",
+      "id": "take order write down order note",
+      "class": "task"
+    },
+    {
+      "text": "Receive order",
+      "id": "Receive order",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Received order by Phone",
+      "id": "Received order by Phone",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Received order",
+      "id": "Received order",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Order [virtual]",
+      "id": "Order [virtual]",
+      "class": "dataObject"
+    },
+    {
+      "text": "Order [physical]",
+      "id": "Order [physical]",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "print out order",
+      "head": "attach note to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "attach note to pinboard",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Received order",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Receive order",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "take order write down order note",
+      "head": "attach note to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Received order by Phone",
+      "head": "take order write down order note",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Order [physical]",
+      "head": "attach note to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order [virtual]",
+      "head": "print out order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "Order [physical]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "take order write down order note",
+      "head": "Order [physical]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Receive order",
+      "head": "Order [virtual]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Received order",
+      "head": "Order [virtual]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "Lieferando-App",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Lieferando-App",
+      "head": "Received order",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Pizzeria",
+      "nodes": [
+        "Website",
+        "lane_1"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Website",
+      "nodes": [
+        "Receive order"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": null,
+      "nodes": [
+        "attach note to pinboard",
+        "print out order",
+        "confirm order",
+        "take order write down order note",
+        "Received order by Phone",
+        "Received order"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Lieferando-App",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

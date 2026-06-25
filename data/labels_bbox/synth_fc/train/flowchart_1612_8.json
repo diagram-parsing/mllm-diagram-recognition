@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "text": "postmeningeal",
+      "id": "postmeningeal",
+      "class": "circle",
+      "bbox": [
+        48,
+        5,
+        131,
+        88
+      ]
+    },
+    {
+      "text": "pace",
+      "id": "pace",
+      "class": "diamond",
+      "bbox": [
+        44,
+        100,
+        135,
+        148
+      ]
+    },
+    {
+      "text": "vibratiunculation foreland",
+      "id": "vibratiunculation foreland",
+      "class": "diamond",
+      "bbox": [
+        5,
+        164,
+        174,
+        238
+      ]
+    },
+    {
+      "text": "proteidean",
+      "id": "proteidean",
+      "class": "hexagon",
+      "bbox": [
+        49,
+        403,
+        131,
+        458
+      ]
+    },
+    {
+      "text": "revisitant ungentlemanlikeness",
+      "id": "revisitant ungentlemanlikeness",
+      "class": "hexagon",
+      "bbox": [
+        15,
+        248,
+        164,
+        308
+      ]
+    },
+    {
+      "text": "underhold",
+      "id": "underhold",
+      "class": "diamond",
+      "bbox": [
+        25,
+        332,
+        154,
+        380
+      ]
+    },
+    {
+      "text": "cower",
+      "id": "cower",
+      "class": "ellipse",
+      "bbox": [
+        206,
+        100,
+        283,
+        148
+      ]
+    },
+    {
+      "text": "orthoceratoid Hanse hydropropu",
+      "id": "orthoceratoid Hanse hydropropu",
+      "class": "document",
+      "bbox": [
+        196,
+        17,
+        287,
+        76
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "postmeningeal",
+      "head": "pace",
+      "label": null,
+      "bbox": [
+        85,
+        85,
+        94,
+        98
+      ]
+    },
+    {
+      "tail": "pace",
+      "head": "vibratiunculation foreland",
+      "label": "yes",
+      "bbox": [
+        85,
+        148,
+        94,
+        163
+      ]
+    },
+    {
+      "tail": "pace",
+      "head": "proteidean",
+      "label": "yes",
+      "bbox": [
+        127,
+        124,
+        185,
+        429
+      ]
+    },
+    {
+      "tail": "vibratiunculation foreland",
+      "head": "revisitant ungentlemanlikeness",
+      "label": "yes",
+      "bbox": [
+        85,
+        233,
+        94,
+        247
+      ]
+    },
+    {
+      "tail": "vibratiunculation foreland",
+      "head": "postmeningeal",
+      "label": "yes",
+      "bbox": [
+        112,
+        78,
+        154,
+        192
+      ]
+    },
+    {
+      "tail": "revisitant ungentlemanlikeness",
+      "head": "underhold",
+      "label": null,
+      "bbox": [
+        85,
+        309,
+        94,
+        330
+      ]
+    },
+    {
+      "tail": "underhold",
+      "head": "proteidean",
+      "label": "Yes",
+      "bbox": [
+        85,
+        380,
+        94,
+        401
+      ]
+    },
+    {
+      "tail": "underhold",
+      "head": "cower",
+      "label": "Yes",
+      "bbox": [
+        155,
+        150,
+        249,
+        356
+      ]
+    },
+    {
+      "tail": "proteidean",
+      "head": "orthoceratoid Hanse hydropropu",
+      "label": null,
+      "bbox": [
+        124,
+        77,
+        206,
+        444
+      ]
+    },
+    {
+      "tail": "orthoceratoid Hanse hydropropu",
+      "head": "cower",
+      "label": null,
+      "bbox": [
+        240,
+        76,
+        249,
+        98
+      ]
+    }
+  ]
+}

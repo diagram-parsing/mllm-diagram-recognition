@@ -1,0 +1,1024 @@
+{
+  "nodes": [
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        202,
+        334,
+        253,
+        389
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "check completness",
+      "id": "check completness",
+      "bbox": [
+        342,
+        315,
+        526,
+        393
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        583,
+        328,
+        640,
+        379
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        762,
+        404,
+        889,
+        468
+      ],
+      "class": "task"
+    },
+    {
+      "text": "pick up claim and check insurance",
+      "id": "pick up claim and check insurance",
+      "bbox": [
+        189,
+        679,
+        431,
+        799
+      ],
+      "class": "task"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "bbox": [
+        495,
+        684,
+        673,
+        763
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        743,
+        692,
+        814,
+        763
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "reject claim and send letter",
+      "id": "reject claim and send letter",
+      "bbox": [
+        985,
+        608,
+        1220,
+        677
+      ],
+      "class": "task"
+    },
+    {
+      "text": "phone garage to authorize repair",
+      "id": "phone garage to authorize repair",
+      "bbox": [
+        965,
+        761,
+        1207,
+        875
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim [checked]",
+      "id": "claim [checked]",
+      "bbox": [
+        306,
+        436,
+        352,
+        500
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        268,
+        236,
+        308,
+        294
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [assesed]",
+      "id": "claim [assesed]",
+      "bbox": [
+        649,
+        812,
+        683,
+        876
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "authorization info",
+      "id": "authorization info",
+      "bbox": [
+        1197,
+        875,
+        1228,
+        933
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "schedule payment and send letter",
+      "id": "schedule payment and send letter",
+      "bbox": [
+        1276,
+        761,
+        1442,
+        890
+      ],
+      "class": "task"
+    },
+    {
+      "text": "approved",
+      "id": "approved",
+      "bbox": [
+        1502,
+        783,
+        1564,
+        845
+      ],
+      "class": "event"
+    },
+    {
+      "text": "rejected",
+      "id": "rejected",
+      "bbox": [
+        1316,
+        625,
+        1367,
+        673
+      ],
+      "class": "event"
+    },
+    {
+      "text": "rejected",
+      "id": "rejected",
+      "bbox": [
+        1062,
+        258,
+        1123,
+        304
+      ],
+      "class": "event"
+    },
+    {
+      "text": "letter",
+      "id": "letter",
+      "bbox": [
+        1166,
+        696,
+        1189,
+        734
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "letter",
+      "id": "letter",
+      "bbox": [
+        943,
+        333,
+        976,
+        387
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "reject claim and send letter",
+      "id": "reject claim and send letter",
+      "bbox": [
+        765,
+        232,
+        1007,
+        309
+      ],
+      "class": "task"
+    },
+    {
+      "text": "letter",
+      "id": "letter",
+      "bbox": [
+        1531,
+        658,
+        1569,
+        722
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [checked]",
+      "id": "claim [checked]",
+      "bbox": [
+        418,
+        847,
+        454,
+        896
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [registered]",
+      "id": "claim [registered]",
+      "bbox": [
+        904,
+        484,
+        949,
+        547
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "schedule payment and send letter",
+      "head": "approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        1442,
+        798,
+        1504,
+        832
+      ],
+      "kps": [
+        1442.012,
+        814.665,
+        2.0,
+        1502.973,
+        814.665,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone garage to authorize repair",
+      "head": "schedule payment and send letter",
+      "class": "sequenceFlow",
+      "bbox": [
+        1207,
+        802,
+        1277,
+        836
+      ],
+      "kps": [
+        1207.034,
+        819.098,
+        2.0,
+        1276.862,
+        819.098,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "phone garage to authorize repair",
+      "class": "sequenceFlow",
+      "bbox": [
+        774,
+        759,
+        966,
+        825
+      ],
+      "kps": [
+        774.763,
+        759.245,
+        2.0,
+        965.405,
+        824.64,
+        2.0
+      ],
+      "label": "positive"
+    },
+    {
+      "tail": "reject claim and send letter",
+      "head": "rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        1220,
+        636,
+        1317,
+        670
+      ],
+      "kps": [
+        1220.334,
+        652.84,
+        2.0,
+        1316.764,
+        652.84,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "reject claim and send letter",
+      "class": "sequenceFlow",
+      "bbox": [
+        781,
+        659,
+        986,
+        696
+      ],
+      "kps": [
+        781.413,
+        694.959,
+        2.0,
+        985.356,
+        659.49,
+        2.0
+      ],
+      "label": "negative"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        673,
+        712,
+        745,
+        747
+      ],
+      "kps": [
+        673.899,
+        729.319,
+        2.0,
+        744.836,
+        729.319,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "pick up claim and check insurance",
+      "class": "sequenceFlow",
+      "bbox": [
+        329,
+        467,
+        826,
+        680
+      ],
+      "kps": [
+        825.748,
+        467.739,
+        2.0,
+        329.191,
+        679.441,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        609,
+        376,
+        763,
+        437
+      ],
+      "kps": [
+        609.613,
+        376.852,
+        2.0,
+        762.57,
+        436.705,
+        2.0
+      ],
+      "label": "complete"
+    },
+    {
+      "tail": "reject claim and send letter",
+      "head": "rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        1007,
+        264,
+        1064,
+        299
+      ],
+      "kps": [
+        1007.524,
+        281.53,
+        2.0,
+        1062.943,
+        281.53,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject claim and send letter",
+      "class": "sequenceFlow",
+      "bbox": [
+        609,
+        283,
+        767,
+        331
+      ],
+      "kps": [
+        609.613,
+        330.299,
+        2.0,
+        765.895,
+        283.747,
+        2.0
+      ],
+      "label": "not complete"
+    },
+    {
+      "tail": "check completness",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        526,
+        338,
+        585,
+        372
+      ],
+      "kps": [
+        526.484,
+        354.684,
+        2.0,
+        584.12,
+        354.684,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "check completness",
+      "class": "sequenceFlow",
+      "bbox": [
+        252,
+        350,
+        343,
+        384
+      ],
+      "kps": [
+        252.712,
+        366.876,
+        2.0,
+        342.492,
+        366.876,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "pick up claim and check insurance",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        431,
+        732,
+        496,
+        767
+      ],
+      "kps": [
+        431.163,
+        749.27,
+        2.0,
+        495.449,
+        749.27,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "check completness",
+      "class": "dataAssociation",
+      "bbox": [
+        308,
+        277,
+        369,
+        316
+      ],
+      "kps": [
+        308.132,
+        277.097,
+        2.0,
+        367.985,
+        315.89,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check completness",
+      "head": "claim [checked]",
+      "class": "dataAssociation",
+      "bbox": [
+        329,
+        393,
+        369,
+        437
+      ],
+      "kps": [
+        367.985,
+        393.477,
+        2.0,
+        329.191,
+        436.705,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        352,
+        464,
+        789,
+        499
+      ],
+      "kps": [
+        352.467,
+        483.257,
+        2.0,
+        788.063,
+        467.739,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim [registered]",
+      "class": "dataAssociation",
+      "bbox": [
+        850,
+        467,
+        905,
+        507
+      ],
+      "kps": [
+        850.133,
+        467.739,
+        2.0,
+        904.444,
+        506.533,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [registered]",
+      "head": "pick up claim and check insurance",
+      "class": "dataAssociation",
+      "bbox": [
+        373,
+        532,
+        905,
+        680
+      ],
+      "kps": [
+        904.444,
+        532.026,
+        2.0,
+        373.526,
+        679.441,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "pick up claim and check insurance",
+      "head": "claim [checked]",
+      "class": "dataAssociation",
+      "bbox": [
+        367,
+        799,
+        420,
+        870
+      ],
+      "kps": [
+        379.068,
+        799.147,
+        2.0,
+        418.97,
+        868.975,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "perform assessment",
+      "class": "dataAssociation",
+      "bbox": [
+        454,
+        763,
+        533,
+        880
+      ],
+      "kps": [
+        454.439,
+        872.301,
+        2.0,
+        532.026,
+        763.679,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "perform assessment",
+      "head": "claim [assesed]",
+      "class": "dataAssociation",
+      "bbox": [
+        609,
+        763,
+        650,
+        851
+      ],
+      "kps": [
+        609.613,
+        763.679,
+        2.0,
+        649.515,
+        850.133,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [assesed]",
+      "head": "reject claim and send letter",
+      "class": "dataAssociation",
+      "bbox": [
+        683,
+        679,
+        1041,
+        829
+      ],
+      "kps": [
+        683.875,
+        827.965,
+        2.0,
+        1040.775,
+        679.441,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject claim and send letter",
+      "head": "letter",
+      "class": "dataAssociation",
+      "bbox": [
+        1137,
+        678,
+        1171,
+        712
+      ],
+      "kps": [
+        1140.53,
+        681.658,
+        2.0,
+        1167.132,
+        708.259,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [assesed]",
+      "head": "phone garage to authorize repair",
+      "class": "dataAssociation",
+      "bbox": [
+        683,
+        870,
+        1020,
+        904
+      ],
+      "kps": [
+        683.875,
+        872.301,
+        2.0,
+        1019.716,
+        875.626,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone garage to authorize repair",
+      "head": "authorization info",
+      "class": "dataAssociation",
+      "bbox": [
+        1141,
+        875,
+        1198,
+        917
+      ],
+      "kps": [
+        1152.723,
+        875.626,
+        2.0,
+        1197.058,
+        916.636,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "authorization info",
+      "head": "schedule payment and send letter",
+      "class": "dataAssociation",
+      "bbox": [
+        1228,
+        890,
+        1325,
+        926
+      ],
+      "kps": [
+        1228.093,
+        914.419,
+        2.0,
+        1324.523,
+        890.035,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "schedule payment and send letter",
+      "head": "letter",
+      "class": "dataAssociation",
+      "bbox": [
+        1442,
+        709,
+        1532,
+        773
+      ],
+      "kps": [
+        1442.012,
+        772.546,
+        2.0,
+        1531.791,
+        709.368,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "reject claim and send letter",
+      "class": "dataAssociation",
+      "bbox": [
+        353,
+        309,
+        852,
+        455
+      ],
+      "kps": [
+        353.575,
+        454.439,
+        2.0,
+        851.241,
+        309.24,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject claim and send letter",
+      "head": "letter",
+      "class": "dataAssociation",
+      "bbox": [
+        912,
+        309,
+        947,
+        363
+      ],
+      "kps": [
+        915.528,
+        309.24,
+        2.0,
+        943.237,
+        362.443,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        211,
+        67,
+        246,
+        338
+      ],
+      "kps": [
+        228.328,
+        67.612,
+        2.0,
+        228.328,
+        336.95,
+        2.0
+      ],
+      "label": "claim"
+    },
+    {
+      "tail": "reject claim and send letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        851,
+        67,
+        885,
+        233
+      ],
+      "kps": [
+        867.867,
+        232.761,
+        2.0,
+        867.867,
+        67.612,
+        2.0
+      ],
+      "label": "rejection letter"
+    },
+    {
+      "tail": "reject claim and send letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        1178,
+        67,
+        1212,
+        609
+      ],
+      "kps": [
+        1194.841,
+        608.505,
+        2.0,
+        1194.841,
+        67.612,
+        2.0
+      ],
+      "label": "rejection letter"
+    },
+    {
+      "tail": "schedule payment and send letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        1427,
+        67,
+        1461,
+        764
+      ],
+      "kps": [
+        1436.47,
+        763.679,
+        2.0,
+        1451.987,
+        67.612,
+        2.0
+      ],
+      "label": "approval letter"
+    },
+    {
+      "tail": "phone garage to authorize repair",
+      "head": "garage",
+      "class": "messageFlow",
+      "bbox": [
+        1070,
+        875,
+        1105,
+        1128
+      ],
+      "kps": [
+        1087.328,
+        875.626,
+        2.0,
+        1087.328,
+        1127.23,
+        2.0
+      ],
+      "label": "phone"
+    }
+  ],
+  "groups": [
+    {
+      "name": "car insurer",
+      "nodes": [
+        "Handling department",
+        "notification department"
+      ],
+      "bbox": [
+        11,
+        206,
+        1659,
+        994
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Handling department",
+      "nodes": [
+        "pick up claim and check insurance",
+        "perform assessment",
+        "exclusiveGateway_2",
+        "reject claim and send letter",
+        "phone garage to authorize repair",
+        "claim [assesed]",
+        "authorization info",
+        "schedule payment and send letter",
+        "approved",
+        "rejected",
+        "letter",
+        "letter",
+        "claim [checked]"
+      ],
+      "bbox": [
+        48,
+        580,
+        1658,
+        994
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "claim received",
+        "check completness",
+        "exclusiveGateway_1",
+        "register claim",
+        "claim [checked]",
+        "claim",
+        "rejected",
+        "letter",
+        "reject claim and send letter",
+        "claim [registered]"
+      ],
+      "bbox": [
+        48,
+        206,
+        1658,
+        580
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "garage",
+      "nodes": [],
+      "bbox": [
+        75,
+        1127,
+        1691,
+        1195
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        189,
+        2,
+        1668,
+        67
+      ],
+      "class": "pool"
+    }
+  ]
+}

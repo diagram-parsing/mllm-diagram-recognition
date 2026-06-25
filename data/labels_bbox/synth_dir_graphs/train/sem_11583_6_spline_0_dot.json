@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "tumulosity Junonia",
+      "id": "tumulosity Junonia",
+      "class": "node",
+      "bbox": [
+        109,
+        533,
+        224,
+        585
+      ]
+    },
+    {
+      "text": "vaccinatory extusion",
+      "id": "vaccinatory extusion",
+      "class": "node",
+      "bbox": [
+        179,
+        382,
+        285,
+        432
+      ]
+    },
+    {
+      "text": "thrillingly",
+      "id": "thrillingly",
+      "class": "node",
+      "bbox": [
+        57,
+        243,
+        141,
+        306
+      ]
+    },
+    {
+      "text": "gallinazo",
+      "id": "gallinazo",
+      "class": "node",
+      "bbox": [
+        5,
+        91,
+        77,
+        142
+      ]
+    },
+    {
+      "text": "osmograph",
+      "id": "osmograph",
+      "class": "node",
+      "bbox": [
+        101,
+        93,
+        213,
+        141
+      ]
+    },
+    {
+      "text": "hypobulia",
+      "id": "hypobulia",
+      "class": "node",
+      "bbox": [
+        43,
+        383,
+        155,
+        431
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tumulosity Junonia",
+      "head": "vaccinatory extusion",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        185,
+        432,
+        229,
+        534
+      ]
+    },
+    {
+      "tail": "thrillingly",
+      "head": "gallinazo",
+      "label": "0.905",
+      "class": "unidirectional",
+      "bbox": [
+        48,
+        142,
+        87,
+        244
+      ]
+    },
+    {
+      "tail": "thrillingly",
+      "head": "osmograph",
+      "label": "0.41*** t = 0.485",
+      "class": "unidirectional",
+      "bbox": [
+        115,
+        140,
+        155,
+        245
+      ]
+    },
+    {
+      "tail": "hypobulia",
+      "head": "thrillingly",
+      "label": "0.1985",
+      "class": "unidirectional",
+      "bbox": [
+        93,
+        306,
+        105,
+        382
+      ]
+    },
+    {
+      "tail": "tumulosity Junonia",
+      "head": "hypobulia",
+      "label": "0.2 t = 0.387",
+      "class": "bidirectional",
+      "bbox": [
+        97,
+        431,
+        132,
+        525
+      ]
+    }
+  ]
+}

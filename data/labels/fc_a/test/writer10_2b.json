@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "connection_1",
+      "bbox": [
+        4,
+        51,
+        64,
+        75
+      ],
+      "class": "connection"
+    },
+    {
+      "text": "Read n",
+      "id": "Read n",
+      "bbox": [
+        200,
+        21,
+        258,
+        101
+      ],
+      "class": "data"
+    },
+    {
+      "text": "n=n*n",
+      "id": "n=n*n",
+      "bbox": [
+        543,
+        4,
+        249,
+        116
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Print n",
+      "id": "Print n",
+      "bbox": [
+        911,
+        5,
+        256,
+        116
+      ],
+      "class": "data"
+    },
+    {
+      "text": null,
+      "id": "connection_2",
+      "bbox": [
+        1259,
+        20,
+        71,
+        72
+      ],
+      "class": "connection"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "connection_1",
+      "head": "Read n",
+      "bbox": [
+        61,
+        70,
+        153,
+        36
+      ],
+      "kps": [
+        62.0,
+        89.0,
+        2.0,
+        211.0,
+        86.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Read n",
+      "head": "n=n*n",
+      "bbox": [
+        419,
+        57,
+        134,
+        33
+      ],
+      "kps": [
+        421.0,
+        79.0,
+        2.0,
+        546.0,
+        73.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "n=n*n",
+      "head": "Print n",
+      "bbox": [
+        786,
+        34,
+        152,
+        37
+      ],
+      "kps": [
+        788.0,
+        59.0,
+        2.0,
+        930.0,
+        54.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Print n",
+      "head": "connection_2",
+      "bbox": [
+        1127,
+        41,
+        138,
+        35
+      ],
+      "kps": [
+        1128.0,
+        61.0,
+        2.0,
+        1258.0,
+        54.0,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

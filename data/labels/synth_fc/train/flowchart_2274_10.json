@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "nonplane",
+      "id": "nonplane",
+      "class": "circle"
+    },
+    {
+      "text": "loading literacy",
+      "id": "loading literacy",
+      "class": "document"
+    },
+    {
+      "text": "mesolite Grotian",
+      "id": "mesolite Grotian",
+      "class": "parallelogram"
+    },
+    {
+      "text": "mindsight",
+      "id": "mindsight",
+      "class": "diamond"
+    },
+    {
+      "text": "emboly",
+      "id": "emboly",
+      "class": "box"
+    },
+    {
+      "text": "withertip",
+      "id": "withertip",
+      "class": "box"
+    },
+    {
+      "text": "unmercenariness crystallology",
+      "id": "unmercenariness crystallology",
+      "class": "document"
+    },
+    {
+      "text": "discredit Peelite",
+      "id": "discredit Peelite",
+      "class": "diamond"
+    },
+    {
+      "text": "reputatively arrhenotokous",
+      "id": "reputatively arrhenotokous",
+      "class": "document"
+    },
+    {
+      "text": "Chara cryptolite",
+      "id": "Chara cryptolite",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "nonplane",
+      "head": "loading literacy",
+      "label": null
+    },
+    {
+      "tail": "loading literacy",
+      "head": "mesolite Grotian",
+      "label": null
+    },
+    {
+      "tail": "mesolite Grotian",
+      "head": "mindsight",
+      "label": null
+    },
+    {
+      "tail": "mindsight",
+      "head": "emboly",
+      "label": "YES"
+    },
+    {
+      "tail": "mindsight",
+      "head": "nonplane",
+      "label": "YES"
+    },
+    {
+      "tail": "emboly",
+      "head": "withertip",
+      "label": null
+    },
+    {
+      "tail": "withertip",
+      "head": "unmercenariness crystallology",
+      "label": null
+    },
+    {
+      "tail": "unmercenariness crystallology",
+      "head": "discredit Peelite",
+      "label": null
+    },
+    {
+      "tail": "discredit Peelite",
+      "head": "reputatively arrhenotokous",
+      "label": "NO"
+    },
+    {
+      "tail": "discredit Peelite",
+      "head": "Chara cryptolite",
+      "label": "NO"
+    },
+    {
+      "tail": "reputatively arrhenotokous",
+      "head": "Chara cryptolite",
+      "label": null
+    }
+  ]
+}

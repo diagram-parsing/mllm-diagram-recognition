@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "tortrices",
+      "id": "tortrices",
+      "class": "circle"
+    },
+    {
+      "text": "curver",
+      "id": "curver",
+      "class": "parallelogram"
+    },
+    {
+      "text": "sabanut violmaker",
+      "id": "sabanut violmaker",
+      "class": "diamond"
+    },
+    {
+      "text": "isograft",
+      "id": "isograft",
+      "class": "box"
+    },
+    {
+      "text": "rachialgia",
+      "id": "rachialgia",
+      "class": "box"
+    },
+    {
+      "text": "nonharmonic",
+      "id": "nonharmonic",
+      "class": "box"
+    },
+    {
+      "text": "reallege",
+      "id": "reallege",
+      "class": "document"
+    },
+    {
+      "text": "unpriggish",
+      "id": "unpriggish",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tortrices",
+      "head": "curver",
+      "label": null
+    },
+    {
+      "tail": "curver",
+      "head": "sabanut violmaker",
+      "label": null
+    },
+    {
+      "tail": "sabanut violmaker",
+      "head": "isograft",
+      "label": "Yes"
+    },
+    {
+      "tail": "sabanut violmaker",
+      "head": "rachialgia",
+      "label": "Yes"
+    },
+    {
+      "tail": "isograft",
+      "head": "rachialgia",
+      "label": null
+    },
+    {
+      "tail": "rachialgia",
+      "head": "nonharmonic",
+      "label": null
+    },
+    {
+      "tail": "nonharmonic",
+      "head": "reallege",
+      "label": null
+    },
+    {
+      "tail": "reallege",
+      "head": "unpriggish",
+      "label": null
+    }
+  ]
+}

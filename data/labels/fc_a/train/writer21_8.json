@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "terminator_1",
+      "class": "terminator"
+    },
+    {
+      "text": "input a,b",
+      "id": "input a,b",
+      "class": "data"
+    },
+    {
+      "text": "r=a%b",
+      "id": "r=a%b",
+      "class": "process"
+    },
+    {
+      "text": "r=0?",
+      "id": "r=0?",
+      "class": "decision"
+    },
+    {
+      "text": "output b",
+      "id": "output b",
+      "class": "data"
+    },
+    {
+      "text": "a=b b=r",
+      "id": "a=b b=r",
+      "class": "process"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "terminator_1",
+      "head": "input a,b",
+      "label": null
+    },
+    {
+      "tail": "input a,b",
+      "head": "r=a%b",
+      "label": null
+    },
+    {
+      "tail": "r=a%b",
+      "head": "r=0?",
+      "label": null
+    },
+    {
+      "tail": "r=0?",
+      "head": "output b",
+      "label": "yes"
+    },
+    {
+      "tail": "r=0?",
+      "head": "a=b b=r",
+      "label": "No"
+    },
+    {
+      "tail": "a=b b=r",
+      "head": "r=a%b",
+      "label": null
+    },
+    {
+      "tail": "output b",
+      "head": "end",
+      "label": null
+    }
+  ]
+}

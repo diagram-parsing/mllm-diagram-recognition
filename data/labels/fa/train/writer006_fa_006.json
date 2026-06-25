@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "S",
+      "id": "S",
+      "class": "state"
+    },
+    {
+      "text": "{q1}",
+      "id": "{q1}",
+      "class": "state"
+    },
+    {
+      "text": "{q2}",
+      "id": "{q2}",
+      "class": "state"
+    },
+    {
+      "text": "{q2,f}",
+      "id": "{q2,f}",
+      "class": "final state"
+    },
+    {
+      "text": "{f}",
+      "id": "{f}",
+      "class": "final state"
+    }
+  ],
+  "relations": [
+    {
+      "tail": null,
+      "head": "S",
+      "label": null
+    },
+    {
+      "tail": "S",
+      "head": "{q2,f}",
+      "label": "b"
+    },
+    {
+      "tail": "S",
+      "head": "{q1}",
+      "label": "a"
+    },
+    {
+      "tail": "{q1}",
+      "head": "{q2}",
+      "label": "b"
+    },
+    {
+      "tail": "{q2,f}",
+      "head": "{q2}",
+      "label": "c"
+    },
+    {
+      "tail": "{q2}",
+      "head": "{q2}",
+      "label": "c"
+    },
+    {
+      "tail": "{q2,f}",
+      "head": "{f}",
+      "label": "b"
+    },
+    {
+      "tail": "{q2}",
+      "head": "{f}",
+      "label": "b"
+    },
+    {
+      "tail": "S",
+      "head": "{q2}",
+      "label": "c"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "antirevolutionist",
+      "id": "antirevolutionist",
+      "class": "circle"
+    },
+    {
+      "text": "centrolecithal",
+      "id": "centrolecithal",
+      "class": "box"
+    },
+    {
+      "text": "unreliance",
+      "id": "unreliance",
+      "class": "parallelogram"
+    },
+    {
+      "text": "overlargely",
+      "id": "overlargely",
+      "class": "hexagon"
+    },
+    {
+      "text": "hybridation unbottle",
+      "id": "hybridation unbottle",
+      "class": "diamond"
+    },
+    {
+      "text": "strategian",
+      "id": "strategian",
+      "class": "parallelogram"
+    },
+    {
+      "text": "noneducation stearyl",
+      "id": "noneducation stearyl",
+      "class": "box"
+    },
+    {
+      "text": "protyle",
+      "id": "protyle",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "antirevolutionist",
+      "head": "centrolecithal",
+      "label": null
+    },
+    {
+      "tail": "centrolecithal",
+      "head": "unreliance",
+      "label": null
+    },
+    {
+      "tail": "unreliance",
+      "head": "overlargely",
+      "label": null
+    },
+    {
+      "tail": "overlargely",
+      "head": "hybridation unbottle",
+      "label": null
+    },
+    {
+      "tail": "hybridation unbottle",
+      "head": "strategian",
+      "label": "yes"
+    },
+    {
+      "tail": "hybridation unbottle",
+      "head": "antirevolutionist",
+      "label": "yes"
+    },
+    {
+      "tail": "strategian",
+      "head": "noneducation stearyl",
+      "label": null
+    },
+    {
+      "tail": "noneducation stearyl",
+      "head": "protyle",
+      "label": null
+    }
+  ]
+}

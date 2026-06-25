@@ -1,0 +1,490 @@
+{
+  "nodes": [
+    {
+      "text": "receive order",
+      "id": "receive order",
+      "bbox": [
+        416,
+        512,
+        548,
+        644
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "order registered",
+      "id": "order registered",
+      "bbox": [
+        2813,
+        1716,
+        2956,
+        1868
+      ],
+      "class": "event"
+    },
+    {
+      "text": "attach order note to pinboard",
+      "id": "attach order note to pinboard",
+      "bbox": [
+        2131,
+        1681,
+        2622,
+        1904
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "bbox": [
+        804,
+        1703,
+        1063,
+        1899
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print order",
+      "id": "print order",
+      "bbox": [
+        1284,
+        1449,
+        1507,
+        1609
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive order",
+      "id": "receive order",
+      "bbox": [
+        432,
+        1074,
+        544,
+        1168
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "take order by phone",
+      "id": "take order by phone",
+      "bbox": [
+        432,
+        1716,
+        548,
+        1832
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1719,
+        1719,
+        1830,
+        1830
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order [printed]",
+      "id": "order [printed]",
+      "bbox": [
+        2002,
+        1449,
+        2093,
+        1545
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order [website]",
+      "id": "order [website]",
+      "bbox": [
+        842,
+        1210,
+        923,
+        1304
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order [Liferando]",
+      "id": "order [Liferando]",
+      "bbox": [
+        858,
+        717,
+        936,
+        816
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "pinboard",
+      "id": "pinboard",
+      "bbox": [
+        2767,
+        1487,
+        2849,
+        1616
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "order [written]",
+      "id": "order [written]",
+      "bbox": [
+        1114,
+        1950,
+        1212,
+        2060
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        952,
+        477,
+        1208,
+        655
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "receive order",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "bbox": [
+        544,
+        1128,
+        1353,
+        1451
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1208,
+        566,
+        1473,
+        1451
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive order",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        548,
+        555,
+        954,
+        624
+      ],
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1507,
+        1538,
+        1777,
+        1721
+      ],
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "order registered",
+      "class": "sequenceFlow",
+      "bbox": [
+        2622,
+        1734,
+        2820,
+        1803
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "attach order note to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        1830,
+        1741,
+        2133,
+        1810
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1063,
+        1741,
+        1721,
+        1810
+      ],
+      "label": null
+    },
+    {
+      "tail": "take order by phone",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "bbox": [
+        548,
+        1741,
+        807,
+        1810
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive order",
+      "head": "order [Liferando]",
+      "class": "dataAssociation",
+      "bbox": [
+        535,
+        617,
+        860,
+        769
+      ],
+      "label": null
+    },
+    {
+      "tail": "order [written]",
+      "head": "attach order note to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        1212,
+        1904,
+        2358,
+        2008
+      ],
+      "label": null
+    },
+    {
+      "tail": "order [printed]",
+      "head": "attach order note to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        2093,
+        1471,
+        2312,
+        1683
+      ],
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        2575,
+        1574,
+        2769,
+        1683
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "order [written]",
+      "class": "dataAssociation",
+      "bbox": [
+        934,
+        1899,
+        1117,
+        2020
+      ],
+      "label": null
+    },
+    {
+      "tail": "order [website]",
+      "head": "print order",
+      "class": "dataAssociation",
+      "bbox": [
+        923,
+        1248,
+        1286,
+        1540
+      ],
+      "label": null
+    },
+    {
+      "tail": "order [Liferando]",
+      "head": "print order",
+      "class": "dataAssociation",
+      "bbox": [
+        936,
+        780,
+        1398,
+        1451
+      ],
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "order [printed]",
+      "class": "dataAssociation",
+      "bbox": [
+        1507,
+        1448,
+        2004,
+        1517
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive order",
+      "head": "order [website]",
+      "class": "dataAssociation",
+      "bbox": [
+        539,
+        1143,
+        845,
+        1250
+      ],
+      "label": null
+    },
+    {
+      "tail": "costumer",
+      "head": "receive order",
+      "class": "messageFlow",
+      "bbox": [
+        470,
+        178,
+        539,
+        519
+      ],
+      "label": "order [Liferando]"
+    },
+    {
+      "tail": "costumer",
+      "head": "take order by phone",
+      "class": "messageFlow",
+      "bbox": [
+        521,
+        178,
+        706,
+        1728
+      ],
+      "label": "order [phone]"
+    },
+    {
+      "tail": "confirm order",
+      "head": "costumer",
+      "class": "messageFlow",
+      "bbox": [
+        1047,
+        178,
+        1117,
+        479
+      ],
+      "label": "confirmation"
+    },
+    {
+      "tail": "costumer",
+      "head": "receive order",
+      "class": "messageFlow",
+      "bbox": [
+        373,
+        178,
+        442,
+        1139
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Pizzeria",
+      "nodes": [
+        "employee",
+        "website",
+        "Lieferando"
+      ],
+      "bbox": [
+        57,
+        289,
+        3246,
+        2113
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "employee",
+      "nodes": [
+        "order registered",
+        "attach order note to pinboard",
+        "write down order",
+        "print order",
+        "take order by phone",
+        "exclusiveGateway_1",
+        "order [printed]",
+        "pinboard",
+        "order [written]"
+      ],
+      "bbox": [
+        124,
+        1404,
+        3246,
+        2113
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "website",
+      "nodes": [
+        "receive order",
+        "order [website]"
+      ],
+      "bbox": [
+        124,
+        898,
+        3246,
+        1404
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Lieferando",
+      "nodes": [
+        "receive order",
+        "order [Liferando]",
+        "confirm order"
+      ],
+      "bbox": [
+        124,
+        289,
+        3246,
+        898
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "costumer",
+      "nodes": [],
+      "bbox": [
+        80,
+        44,
+        3246,
+        178
+      ],
+      "class": "pool"
+    }
+  ]
+}

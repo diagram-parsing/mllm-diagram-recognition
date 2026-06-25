@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "text": "postparietal",
+      "id": "postparietal",
+      "class": "oval"
+    },
+    {
+      "text": "rasorial standpat",
+      "id": "rasorial standpat",
+      "class": "document"
+    },
+    {
+      "text": "archruler",
+      "id": "archruler",
+      "class": "document"
+    },
+    {
+      "text": "icterohematuria",
+      "id": "icterohematuria",
+      "class": "diamond"
+    },
+    {
+      "text": "methoxychlor lettrin",
+      "id": "methoxychlor lettrin",
+      "class": "box"
+    },
+    {
+      "text": "unloveableness",
+      "id": "unloveableness",
+      "class": "diamond"
+    },
+    {
+      "text": "tarmac benzalcyanhydrin",
+      "id": "tarmac benzalcyanhydrin",
+      "class": "diamond"
+    },
+    {
+      "text": "ministerialism odist",
+      "id": "ministerialism odist",
+      "class": "document"
+    },
+    {
+      "text": "haulback",
+      "id": "haulback",
+      "class": "diamond"
+    },
+    {
+      "text": "beneplacito oblateness",
+      "id": "beneplacito oblateness",
+      "class": "document"
+    },
+    {
+      "text": "underbite",
+      "id": "underbite",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "postparietal",
+      "head": "rasorial standpat",
+      "label": null
+    },
+    {
+      "tail": "rasorial standpat",
+      "head": "archruler",
+      "label": null
+    },
+    {
+      "tail": "archruler",
+      "head": "icterohematuria",
+      "label": null
+    },
+    {
+      "tail": "icterohematuria",
+      "head": "methoxychlor lettrin",
+      "label": "no"
+    },
+    {
+      "tail": "icterohematuria",
+      "head": "unloveableness",
+      "label": "no"
+    },
+    {
+      "tail": "methoxychlor lettrin",
+      "head": "unloveableness",
+      "label": null
+    },
+    {
+      "tail": "unloveableness",
+      "head": "tarmac benzalcyanhydrin",
+      "label": "Yes"
+    },
+    {
+      "tail": "unloveableness",
+      "head": "ministerialism odist",
+      "label": "Yes"
+    },
+    {
+      "tail": "tarmac benzalcyanhydrin",
+      "head": "haulback",
+      "label": "Yes"
+    },
+    {
+      "tail": "tarmac benzalcyanhydrin",
+      "head": "icterohematuria",
+      "label": "Yes"
+    },
+    {
+      "tail": "haulback",
+      "head": "beneplacito oblateness",
+      "label": "no"
+    },
+    {
+      "tail": "haulback",
+      "head": "postparietal",
+      "label": "no"
+    },
+    {
+      "tail": "beneplacito oblateness",
+      "head": "ministerialism odist",
+      "label": null
+    },
+    {
+      "tail": "ministerialism odist",
+      "head": "underbite",
+      "label": null
+    }
+  ]
+}

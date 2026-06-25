@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "text": "prebendate myricyl",
+      "id": "prebendate myricyl",
+      "class": "node"
+    },
+    {
+      "text": "yabu",
+      "id": "yabu",
+      "class": "node"
+    },
+    {
+      "text": "apogeal",
+      "id": "apogeal",
+      "class": "node"
+    },
+    {
+      "text": "aculea nidicolous",
+      "id": "aculea nidicolous",
+      "class": "node"
+    },
+    {
+      "text": "coldfinch unweariness",
+      "id": "coldfinch unweariness",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "prebendate myricyl",
+      "head": "yabu",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "apogeal",
+      "head": "aculea nidicolous",
+      "label": "-1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "apogeal",
+      "head": "coldfinch unweariness",
+      "label": "0.34",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "prebendate myricyl",
+      "head": "apogeal",
+      "label": "0.17** t = 0.094",
+      "class": "unidirectional"
+    }
+  ]
+}

@@ -1,0 +1,626 @@
+{
+  "nodes": [
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        3175.805,
+        1942.752,
+        459.917,
+        380.621
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1030.848,
+        2006.189,
+        198.24,
+        222.029
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2344.701,
+        2016.579,
+        146.971,
+        222.166
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "ask expert for review",
+      "id": "ask expert for review",
+      "bbox": [
+        1209.264,
+        2815.008,
+        705.734,
+        388.55
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send to QA specialist",
+      "id": "send to QA specialist",
+      "bbox": [
+        2355.091,
+        2818.973,
+        519.389,
+        325.114
+      ],
+      "class": "task"
+    },
+    {
+      "text": "pay expert",
+      "id": "pay expert",
+      "bbox": [
+        3072.72,
+        2779.325,
+        582.826,
+        352.867
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        3725.545,
+        2047.341,
+        153.807,
+        208.494
+      ],
+      "class": "event"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        1407.504,
+        1918.963,
+        761.242,
+        416.304
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        3647.616,
+        2299.584,
+        99.12,
+        99.12
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        604.974,
+        2040.505,
+        229.001,
+        198.24
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        2023.415,
+        2894.988,
+        191.404,
+        201.658
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "bbox": [
+        2628.389,
+        1982.4,
+        396.48,
+        317.868
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "bbox": [
+        2512.179,
+        2054.177,
+        64.941,
+        164.061
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "review wort of doctor",
+      "id": "review wort of doctor",
+      "bbox": [
+        1209.264,
+        638.333,
+        674.016,
+        348.902
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        709.699,
+        753.312,
+        360.797,
+        241.853
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        2133.062,
+        646.262,
+        376.656,
+        297.36
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        2454.074,
+        2084.938,
+        99.12,
+        99.12
+      ],
+      "kps": [
+        2491.672,
+        2129.371,
+        2.0,
+        2512.179,
+        2136.207,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "pay expert",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        3655.546,
+        2390.774,
+        110.468,
+        570.384
+      ],
+      "kps": [
+        3655.546,
+        2957.741,
+        2.0,
+        3703.123,
+        2390.774,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "pay expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        2546.359,
+        2214.819,
+        529.779,
+        792.96
+      ],
+      "kps": [
+        2546.359,
+        2214.819,
+        2.0,
+        3072.72,
+        3004.361,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "bbox": [
+        2554.903,
+        2090.065,
+        99.12,
+        99.12
+      ],
+      "kps": [
+        2577.12,
+        2136.207,
+        2.0,
+        2628.389,
+        2139.625,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send to QA specialist",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2423.313,
+        2231.909,
+        246.091,
+        591.302
+      ],
+      "kps": [
+        2665.986,
+        2819.793,
+        2.0,
+        2423.313,
+        2231.909,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "send to QA specialist",
+      "class": "sequenceFlow",
+      "bbox": [
+        2214.819,
+        2937.712,
+        143.553,
+        99.12
+      ],
+      "kps": [
+        2214.819,
+        2994.108,
+        2.0,
+        2354.954,
+        2977.018,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask expert for review",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1914.041,
+        2963.346,
+        112.792,
+        99.12
+      ],
+      "kps": [
+        1914.041,
+        3021.451,
+        2.0,
+        2023.415,
+        3000.943,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask expert for review",
+      "class": "sequenceFlow",
+      "bbox": [
+        1093.738,
+        2225.073,
+        119.628,
+        789.542
+      ],
+      "kps": [
+        1127.917,
+        2225.073,
+        2.0,
+        1209.948,
+        3011.197,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        3727.254,
+        2228.491,
+        99.12,
+        126.463
+      ],
+      "kps": [
+        3746.052,
+        2351.537,
+        2.0,
+        3804.157,
+        2228.491,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        3469.2,
+        2311.205,
+        193.728,
+        99.12
+      ],
+      "kps": [
+        3469.2,
+        2323.373,
+        2.0,
+        3659.51,
+        2359.056,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        3024.869,
+        2084.528,
+        153.807,
+        99.12
+      ],
+      "kps": [
+        3024.869,
+        2139.625,
+        2.0,
+        3175.258,
+        2125.953,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2170.386,
+        2075.983,
+        181.15,
+        99.12
+      ],
+      "kps": [
+        2170.386,
+        2125.953,
+        2.0,
+        2348.119,
+        2122.535,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        1217.194,
+        2057.458,
+        193.728,
+        99.12
+      ],
+      "kps": [
+        1217.194,
+        2105.309,
+        2.0,
+        1407.504,
+        2105.309,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_2",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        833.975,
+        2067.78,
+        211.912,
+        99.12
+      ],
+      "kps": [
+        833.975,
+        2125.953,
+        2.0,
+        1042.469,
+        2105.446,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "review wort of doctor",
+      "head": "messageEvent_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1883.28,
+        764.933,
+        253.2,
+        99.12
+      ],
+      "kps": [
+        1883.28,
+        812.784,
+        2.0,
+        2133.062,
+        812.784,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "review wort of doctor",
+      "class": "sequenceFlow",
+      "bbox": [
+        1066.531,
+        784.757,
+        146.151,
+        99.12
+      ],
+      "kps": [
+        1066.531,
+        844.502,
+        2.0,
+        1209.264,
+        820.714,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        2002.224,
+        202.205,
+        2025.466,
+        3214.906
+      ],
+      "kps": [
+        2344.701,
+        608.392,
+        2.0,
+        2098.61,
+        3089.81,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask expert for review",
+      "head": "messageEvent_2",
+      "class": "messageFlow",
+      "bbox": [
+        892.08,
+        83.261,
+        3254.554,
+        3452.794
+      ],
+      "kps": [
+        1329.575,
+        3206.019,
+        2.0,
+        892.08,
+        693.84,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "pay expert",
+      "head": "external export",
+      "class": "messageFlow",
+      "bbox": [
+        3270.96,
+        836.573,
+        954.97,
+        2965.124
+      ],
+      "kps": [
+        3544.531,
+        3132.192,
+        2.0,
+        3270.96,
+        915.869,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "director",
+        "QA specialist"
+      ],
+      "bbox": [
+        177.732,
+        1538.069,
+        3722.127,
+        1787.578
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "director",
+      "nodes": [
+        "ask expert for review",
+        "send to QA specialist",
+        "pay expert",
+        "messageEvent_1"
+      ],
+      "bbox": [
+        297.36,
+        2460.91,
+        3602.499,
+        864.737
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "event_1",
+        "interview patients",
+        "parallelGateway_3",
+        "event_2",
+        "file results",
+        "parallelGateway_4"
+      ],
+      "bbox": [
+        297.36,
+        1538.069,
+        3602.499,
+        922.841
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "external export",
+      "nodes": [],
+      "bbox": [
+        297.36,
+        400.445,
+        2973.6,
+        753.312
+      ],
+      "class": "pool"
+    }
+  ]
+}

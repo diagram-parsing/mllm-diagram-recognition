@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "intracardial worthiest",
+      "id": "intracardial worthiest",
+      "class": "circle"
+    },
+    {
+      "text": "draughtswoman unintimidated",
+      "id": "draughtswoman unintimidated",
+      "class": "hexagon"
+    },
+    {
+      "text": "perforation unindustrialized",
+      "id": "perforation unindustrialized",
+      "class": "diamond"
+    },
+    {
+      "text": "biparasitic",
+      "id": "biparasitic",
+      "class": "hexagon"
+    },
+    {
+      "text": "nonocculting raftlike",
+      "id": "nonocculting raftlike",
+      "class": "ellipse"
+    },
+    {
+      "text": "mesoplastic",
+      "id": "mesoplastic",
+      "class": "hexagon"
+    },
+    {
+      "text": "slideman",
+      "id": "slideman",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "intracardial worthiest",
+      "head": "draughtswoman unintimidated",
+      "label": null
+    },
+    {
+      "tail": "draughtswoman unintimidated",
+      "head": "perforation unindustrialized",
+      "label": null
+    },
+    {
+      "tail": "perforation unindustrialized",
+      "head": "biparasitic",
+      "label": "no"
+    },
+    {
+      "tail": "perforation unindustrialized",
+      "head": "nonocculting raftlike",
+      "label": "no"
+    },
+    {
+      "tail": "biparasitic",
+      "head": "mesoplastic",
+      "label": null
+    },
+    {
+      "tail": "mesoplastic",
+      "head": "slideman",
+      "label": null
+    },
+    {
+      "tail": "slideman",
+      "head": "nonocculting raftlike",
+      "label": null
+    }
+  ]
+}

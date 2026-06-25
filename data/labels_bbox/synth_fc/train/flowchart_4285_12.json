@@ -1,0 +1,303 @@
+{
+  "nodes": [
+    {
+      "text": "trawler",
+      "id": "trawler",
+      "class": "ellipse",
+      "bbox": [
+        109,
+        46,
+        192,
+        94
+      ]
+    },
+    {
+      "text": "droughtiness evilproof gloryin",
+      "id": "droughtiness evilproof gloryin",
+      "class": "box",
+      "bbox": [
+        103,
+        130,
+        197,
+        178
+      ]
+    },
+    {
+      "text": "dentiparous",
+      "id": "dentiparous",
+      "class": "parallelogram",
+      "bbox": [
+        99,
+        229,
+        201,
+        303
+      ]
+    },
+    {
+      "text": "anorectic aversive",
+      "id": "anorectic aversive",
+      "class": "diamond",
+      "bbox": [
+        89,
+        313,
+        212,
+        387
+      ]
+    },
+    {
+      "text": "placidly",
+      "id": "placidly",
+      "class": "document",
+      "bbox": [
+        109,
+        466,
+        192,
+        514
+      ]
+    },
+    {
+      "text": "sheely",
+      "id": "sheely",
+      "class": "hexagon",
+      "bbox": [
+        329,
+        438,
+        419,
+        486
+      ]
+    },
+    {
+      "text": "refreshener",
+      "id": "refreshener",
+      "class": "diamond",
+      "bbox": [
+        83,
+        550,
+        217,
+        598
+      ]
+    },
+    {
+      "text": "sematic quintuplet",
+      "id": "sematic quintuplet",
+      "class": "parallelogram",
+      "bbox": [
+        309,
+        5,
+        440,
+        79
+      ]
+    },
+    {
+      "text": "preachment",
+      "id": "preachment",
+      "class": "box",
+      "bbox": [
+        338,
+        158,
+        410,
+        206
+      ]
+    },
+    {
+      "text": "authentically tintinnabulist",
+      "id": "authentically tintinnabulist",
+      "class": "diamond",
+      "bbox": [
+        288,
+        229,
+        455,
+        303
+      ]
+    },
+    {
+      "text": "teer rea populationist",
+      "id": "teer rea populationist",
+      "class": "diamond",
+      "bbox": [
+        299,
+        313,
+        450,
+        387
+      ]
+    },
+    {
+      "text": "daisybush",
+      "id": "daisybush",
+      "class": "circle",
+      "bbox": [
+        329,
+        557,
+        419,
+        642
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "trawler",
+      "head": "droughtiness evilproof gloryin",
+      "label": null,
+      "bbox": [
+        146,
+        94,
+        155,
+        130
+      ]
+    },
+    {
+      "tail": "droughtiness evilproof gloryin",
+      "head": "dentiparous",
+      "label": null,
+      "bbox": [
+        146,
+        178,
+        155,
+        230
+      ]
+    },
+    {
+      "tail": "dentiparous",
+      "head": "anorectic aversive",
+      "label": null,
+      "bbox": [
+        146,
+        300,
+        155,
+        314
+      ]
+    },
+    {
+      "tail": "anorectic aversive",
+      "head": "placidly",
+      "label": "YES",
+      "bbox": [
+        146,
+        386,
+        155,
+        466
+      ]
+    },
+    {
+      "tail": "anorectic aversive",
+      "head": "sheely",
+      "label": "YES",
+      "bbox": [
+        202,
+        356,
+        338,
+        457
+      ]
+    },
+    {
+      "tail": "placidly",
+      "head": "refreshener",
+      "label": null,
+      "bbox": [
+        146,
+        514,
+        155,
+        550
+      ]
+    },
+    {
+      "tail": "refreshener",
+      "head": "sematic quintuplet",
+      "label": "YES",
+      "bbox": [
+        177,
+        59,
+        315,
+        589
+      ]
+    },
+    {
+      "tail": "refreshener",
+      "head": "dentiparous",
+      "label": "YES",
+      "bbox": [
+        59,
+        263,
+        109,
+        575
+      ]
+    },
+    {
+      "tail": "sematic quintuplet",
+      "head": "preachment",
+      "label": null,
+      "bbox": [
+        370,
+        78,
+        379,
+        158
+      ]
+    },
+    {
+      "tail": "preachment",
+      "head": "authentically tintinnabulist",
+      "label": null,
+      "bbox": [
+        370,
+        206,
+        379,
+        230
+      ]
+    },
+    {
+      "tail": "authentically tintinnabulist",
+      "head": "teer rea populationist",
+      "label": "No",
+      "bbox": [
+        370,
+        300,
+        379,
+        314
+      ]
+    },
+    {
+      "tail": "authentically tintinnabulist",
+      "head": "refreshener",
+      "label": "No",
+      "bbox": [
+        198,
+        268,
+        293,
+        572
+      ]
+    },
+    {
+      "tail": "teer rea populationist",
+      "head": "sheely",
+      "label": "YES",
+      "bbox": [
+        370,
+        386,
+        379,
+        438
+      ]
+    },
+    {
+      "tail": "teer rea populationist",
+      "head": "refreshener",
+      "label": "YES",
+      "bbox": [
+        207,
+        357,
+        314,
+        583
+      ]
+    },
+    {
+      "tail": "sheely",
+      "head": "daisybush",
+      "label": null,
+      "bbox": [
+        370,
+        486,
+        379,
+        557
+      ]
+    }
+  ]
+}

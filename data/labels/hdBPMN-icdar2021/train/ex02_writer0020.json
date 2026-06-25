@@ -1,0 +1,243 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "register",
+      "id": "register",
+      "class": "task"
+    },
+    {
+      "text": "examine",
+      "id": "examine",
+      "class": "task"
+    },
+    {
+      "text": "create settlement recommendation",
+      "id": "create settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "check settlement recommendation",
+      "id": "check settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "mark claim as \"not ok\"",
+      "id": "mark claim as \"not ok\"",
+      "class": "task"
+    },
+    {
+      "text": "mark claim as \"ok\"",
+      "id": "mark claim as \"ok\"",
+      "class": "task"
+    },
+    {
+      "text": "insurance claims",
+      "id": "insurance claims",
+      "class": "dataObject"
+    },
+    {
+      "text": "Insurance claims",
+      "id": "Insurance claims",
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "class": "dataObject"
+    },
+    {
+      "text": "receives",
+      "id": "receives",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "end of claim handling process",
+      "id": "end of claim handling process",
+      "class": "event"
+    },
+    {
+      "text": "proceed claim wiht handling process",
+      "id": "proceed claim wiht handling process",
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "receives",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "register",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "examine",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create settlement recommendation",
+      "head": "check settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check settlement recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark claim as \"not ok\"",
+      "class": "sequenceFlow",
+      "label": "claim not ok"
+    },
+    {
+      "tail": "mark claim as \"not ok\"",
+      "head": "create settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark claim as \"ok\"",
+      "class": "sequenceFlow",
+      "label": "claim ok"
+    },
+    {
+      "tail": "mark claim as \"ok\"",
+      "head": "proceed claim wiht handling process",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "proceed claim wiht handling process",
+      "head": "end of claim handling process",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "insurance claims",
+      "head": "register",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "insurance claims",
+      "head": "examine",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Insurance claims",
+      "head": "create settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "create settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "receives",
+      "class": "messageFlow",
+      "label": "Insurance claims"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurance",
+      "nodes": [
+        "Insurance Officer",
+        "senior officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Insurance Officer",
+      "nodes": [
+        "parallelGateway_1",
+        "register",
+        "examine",
+        "create settlement recommendation",
+        "insurance claims",
+        "Insurance claims",
+        "settlement recommendation",
+        "receives",
+        "parallelGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior officer",
+      "nodes": [
+        "check settlement recommendation",
+        "exclusiveGateway_1",
+        "mark claim as \"not ok\"",
+        "mark claim as \"ok\"",
+        "settlement recommendation",
+        "end of claim handling process",
+        "proceed claim wiht handling process"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

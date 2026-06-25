@@ -1,0 +1,51 @@
+{
+  "nodes": [
+    {
+      "text": "q0",
+      "id": "q0",
+      "class": "state"
+    },
+    {
+      "text": null,
+      "id": "state_1",
+      "class": "state"
+    },
+    {
+      "text": "q2",
+      "id": "q2",
+      "class": "final state"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "q2",
+      "head": "q2",
+      "label": "b"
+    },
+    {
+      "tail": "state_1",
+      "head": "q2",
+      "label": "a,b"
+    },
+    {
+      "tail": "q2",
+      "head": "state_1",
+      "label": "a"
+    },
+    {
+      "tail": "q0",
+      "head": "state_1",
+      "label": "b"
+    },
+    {
+      "tail": "q0",
+      "head": "q0",
+      "label": "a"
+    },
+    {
+      "tail": null,
+      "head": "q0",
+      "label": null
+    }
+  ]
+}

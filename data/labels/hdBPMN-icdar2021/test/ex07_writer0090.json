@@ -1,0 +1,585 @@
+{
+  "nodes": [
+    {
+      "text": "request to rate doctor received",
+      "id": "request to rate doctor received",
+      "bbox": [
+        173.742,
+        800.766,
+        34.942,
+        33.001
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1142.426,
+        790.089,
+        117.446,
+        68.914
+      ],
+      "class": "task"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "bbox": [
+        976.167,
+        603.447,
+        110.933,
+        66.556
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receive expert review",
+      "id": "receive expert review",
+      "bbox": [
+        560.051,
+        603.729,
+        128.123,
+        68.914
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forward it to QA",
+      "id": "forward it to QA",
+      "bbox": [
+        735.734,
+        603.729,
+        118.416,
+        66.973
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        270.804,
+        800.766,
+        37.854,
+        46.59
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "ask expert to review",
+      "id": "ask expert to review",
+      "bbox": [
+        349.425,
+        604.699,
+        137.829,
+        87.356
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        759.999,
+        797.854,
+        37.854,
+        45.619
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "send to expert",
+      "id": "send to expert",
+      "bbox": [
+        1142.426,
+        608.582,
+        104.828,
+        61.149
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        1328.786,
+        618.288,
+        32.031,
+        42.708
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "bbox": [
+        976.449,
+        787.177,
+        125.211,
+        87.356
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "bbox": [
+        880.357,
+        797.854,
+        31.06,
+        46.59
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "doctor rated",
+      "id": "doctor rated",
+      "bbox": [
+        1428.76,
+        621.2,
+        39.796,
+        30.089
+      ],
+      "class": "event"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        348.454,
+        790.089,
+        134.917,
+        79.591
+      ],
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        483.371,
+        809.987,
+        281.481,
+        31.06
+      ],
+      "kps": [
+        483.371,
+        825.031,
+        2.0,
+        763.882,
+        825.031,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1259.871,
+        659.054,
+        87.356,
+        166.948
+      ],
+      "kps": [
+        1259.871,
+        825.031,
+        2.0,
+        1346.257,
+        659.054,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1101.659,
+        809.987,
+        41.737,
+        31.06
+      ],
+      "kps": [
+        1101.659,
+        825.031,
+        2.0,
+        1142.426,
+        825.031,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "bbox": [
+        908.505,
+        801.251,
+        68.914,
+        31.06
+      ],
+      "kps": [
+        908.505,
+        816.296,
+        2.0,
+        976.449,
+        816.296,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "doctor rated",
+      "class": "sequenceFlow",
+      "bbox": [
+        1358.875,
+        621.685,
+        70.856,
+        31.06
+      ],
+      "kps": [
+        1358.875,
+        636.73,
+        2.0,
+        1428.76,
+        636.73,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send to expert",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1247.253,
+        624.597,
+        82.503,
+        31.06
+      ],
+      "kps": [
+        1247.253,
+        639.642,
+        2.0,
+        1328.786,
+        639.642,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "send to expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1087.1,
+        621.685,
+        56.296,
+        31.06
+      ],
+      "kps": [
+        1087.1,
+        636.73,
+        2.0,
+        1142.426,
+        636.73,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        895.887,
+        636.73,
+        81.533,
+        162.094
+      ],
+      "kps": [
+        895.887,
+        797.854,
+        2.0,
+        976.449,
+        636.73,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        797.854,
+        806.104,
+        83.474,
+        31.06
+      ],
+      "kps": [
+        797.854,
+        821.149,
+        2.0,
+        880.357,
+        821.149,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward it to QA",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        776.5,
+        670.702,
+        31.06,
+        134.917
+      ],
+      "kps": [
+        798.824,
+        670.702,
+        2.0,
+        784.265,
+        804.648,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive expert review",
+      "head": "forward it to QA",
+      "class": "sequenceFlow",
+      "bbox": [
+        688.173,
+        622.171,
+        48.531,
+        31.06
+      ],
+      "kps": [
+        688.173,
+        636.73,
+        2.0,
+        735.734,
+        637.701,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask expert to review",
+      "head": "receive expert review",
+      "class": "sequenceFlow",
+      "bbox": [
+        487.254,
+        633.333,
+        73.767,
+        31.06
+      ],
+      "kps": [
+        487.254,
+        648.377,
+        2.0,
+        560.051,
+        648.377,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask expert to review",
+      "class": "sequenceFlow",
+      "bbox": [
+        288.276,
+        659.054,
+        62.12,
+        144.623
+      ],
+      "kps": [
+        288.276,
+        802.707,
+        2.0,
+        349.425,
+        659.054,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        307.688,
+        806.104,
+        41.737,
+        31.06
+      ],
+      "kps": [
+        307.688,
+        823.09,
+        2.0,
+        348.454,
+        819.208,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "request to rate doctor received",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        208.684,
+        799.31,
+        70.856,
+        31.06
+      ],
+      "kps": [
+        208.684,
+        814.354,
+        2.0,
+        278.569,
+        814.354,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask expert to review",
+      "head": "External Expert",
+      "class": "messageFlow",
+      "bbox": [
+        395.53,
+        460.076,
+        31.06,
+        145.594
+      ],
+      "kps": [
+        410.574,
+        604.699,
+        2.0,
+        410.574,
+        460.076,
+        2.0
+      ],
+      "label": "request for review"
+    },
+    {
+      "tail": "External Expert",
+      "head": "receive expert review",
+      "class": "messageFlow",
+      "bbox": [
+        616.832,
+        460.076,
+        31.06,
+        144.623
+      ],
+      "kps": [
+        631.877,
+        460.076,
+        2.0,
+        631.877,
+        603.729,
+        2.0
+      ],
+      "label": "review"
+    },
+    {
+      "tail": "send to expert",
+      "head": "External Expert",
+      "class": "messageFlow",
+      "bbox": [
+        1179.795,
+        460.076,
+        31.06,
+        149.476
+      ],
+      "kps": [
+        1194.839,
+        608.582,
+        2.0,
+        1194.839,
+        460.076,
+        2.0
+      ],
+      "label": "cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "QA specialist",
+        "Managing director"
+      ],
+      "bbox": [
+        33.283,
+        581.268,
+        1497.538,
+        343.883
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "request to rate doctor received",
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "file results",
+        "parallelGateway_4",
+        "interview patients"
+      ],
+      "bbox": [
+        66.556,
+        736.568,
+        1464.256,
+        188.583
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Managing director",
+      "nodes": [
+        "fill cheque",
+        "receive expert review",
+        "forward it to QA",
+        "ask expert to review",
+        "send to expert",
+        "parallelGateway_3",
+        "doctor rated"
+      ],
+      "bbox": [
+        66.556,
+        581.268,
+        1464.256,
+        155.3
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "External Expert",
+      "nodes": [],
+      "bbox": [
+        44.367,
+        392.686,
+        1486.444,
+        66.556
+      ],
+      "class": "pool"
+    }
+  ]
+}

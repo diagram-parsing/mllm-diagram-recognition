@@ -1,0 +1,331 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        1965,
+        975,
+        2039,
+        1049
+      ],
+      "class": "event"
+    },
+    {
+      "text": "registration and\nexamination",
+      "id": "registration and\nexamination",
+      "bbox": [
+        313,
+        352,
+        809,
+        560
+      ],
+      "class": "task"
+    },
+    {
+      "text": "customer\nclaim received",
+      "id": "customer\nclaim received",
+      "bbox": [
+        1960,
+        340,
+        2035,
+        414
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "write\nrecommendation",
+      "id": "write\nrecommendation",
+      "bbox": [
+        365,
+        634,
+        834,
+        821
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check\nrecommendation",
+      "id": "check\nrecommendation",
+      "bbox": [
+        1159,
+        620,
+        1666,
+        790
+      ],
+      "class": "task"
+    },
+    {
+      "text": "mark with\n\"OK\"",
+      "id": "mark with\n\"OK\"",
+      "bbox": [
+        1060,
+        931,
+        1340,
+        1101
+      ],
+      "class": "task"
+    },
+    {
+      "text": "mark with\n\"Not OK\"",
+      "id": "mark with\n\"Not OK\"",
+      "bbox": [
+        1510,
+        919,
+        1821,
+        1108
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1379,
+        854,
+        1440,
+        921
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "recommendation",
+      "id": "recommendation",
+      "bbox": [
+        408,
+        1083,
+        508,
+        1209
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "recommendation\n[marked]",
+      "id": "recommendation\n[marked]",
+      "bbox": [
+        1126,
+        1338,
+        1238,
+        1485
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "recommendation\n[checked]",
+      "id": "recommendation\n[checked]",
+      "bbox": [
+        1365,
+        441,
+        1452,
+        549
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "customer\nclaim received",
+      "head": "registration and\nexamination",
+      "class": "sequenceFlow",
+      "bbox": [
+        809,
+        361,
+        1964,
+        411
+      ],
+      "label": null
+    },
+    {
+      "tail": "registration and\nexamination",
+      "head": "write\nrecommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        552,
+        560,
+        602,
+        636
+      ],
+      "label": null
+    },
+    {
+      "tail": "write\nrecommendation",
+      "head": "check\nrecommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        834,
+        703,
+        1161,
+        753
+      ],
+      "label": null
+    },
+    {
+      "tail": "check\nrecommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1388,
+        790,
+        1437,
+        858
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark with\n\"OK\"",
+      "class": "sequenceFlow",
+      "bbox": [
+        1201,
+        885,
+        1381,
+        935
+      ],
+      "label": "claim ok"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark with\n\"Not OK\"",
+      "class": "sequenceFlow",
+      "bbox": [
+        1440,
+        879,
+        1614,
+        929
+      ],
+      "label": "claim not ok"
+    },
+    {
+      "tail": "mark with\n\"Not OK\"",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1821,
+        994,
+        1966,
+        1044
+      ],
+      "label": null
+    },
+    {
+      "tail": "check\nrecommendation",
+      "head": "recommendation\n[checked]",
+      "class": "dataAssociation",
+      "bbox": [
+        1253,
+        514,
+        1367,
+        622
+      ],
+      "label": null
+    },
+    {
+      "tail": "recommendation\n[checked]",
+      "head": "mark with\n\"Not OK\"",
+      "class": "dataAssociation",
+      "bbox": [
+        1452,
+        471,
+        1744,
+        920
+      ],
+      "label": null
+    },
+    {
+      "tail": "recommendation\n[checked]",
+      "head": "mark with\n\"OK\"",
+      "class": "dataAssociation",
+      "bbox": [
+        1097,
+        471,
+        1367,
+        933
+      ],
+      "label": null
+    },
+    {
+      "tail": "write\nrecommendation",
+      "head": "recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        409,
+        821,
+        459,
+        1084
+      ],
+      "label": null
+    },
+    {
+      "tail": "check\nrecommendation",
+      "head": "recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        508,
+        678,
+        1161,
+        1165
+      ],
+      "label": null
+    },
+    {
+      "tail": "mark with\n\"OK\"",
+      "head": "recommendation\n[marked]",
+      "class": "dataAssociation",
+      "bbox": [
+        1150,
+        1101,
+        1200,
+        1340
+      ],
+      "label": null
+    },
+    {
+      "tail": "mark with\n\"Not OK\"",
+      "head": "recommendation\n[marked]",
+      "class": "dataAssociation",
+      "bbox": [
+        1238,
+        1108,
+        1638,
+        1427
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "customer\nclaim received",
+      "class": "messageFlow",
+      "bbox": [
+        2033,
+        341,
+        2267,
+        390
+      ],
+      "label": "claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurance",
+      "nodes": [],
+      "bbox": [
+        147,
+        105,
+        2187,
+        1572
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        2265,
+        103,
+        2350,
+        1576
+      ],
+      "class": "pool"
+    }
+  ]
+}

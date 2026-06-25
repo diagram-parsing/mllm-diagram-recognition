@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "Sarcocystidea",
+      "id": "Sarcocystidea",
+      "class": "circle"
+    },
+    {
+      "text": "pia",
+      "id": "pia",
+      "class": "hexagon"
+    },
+    {
+      "text": "stablewards pelting",
+      "id": "stablewards pelting",
+      "class": "box"
+    },
+    {
+      "text": "fusional",
+      "id": "fusional",
+      "class": "diamond"
+    },
+    {
+      "text": "pyroxyle",
+      "id": "pyroxyle",
+      "class": "hexagon"
+    },
+    {
+      "text": "alpaca",
+      "id": "alpaca",
+      "class": "document"
+    },
+    {
+      "text": "disilicide",
+      "id": "disilicide",
+      "class": "parallelogram"
+    },
+    {
+      "text": "juggernaut",
+      "id": "juggernaut",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Sarcocystidea",
+      "head": "pia",
+      "label": null
+    },
+    {
+      "tail": "pia",
+      "head": "stablewards pelting",
+      "label": null
+    },
+    {
+      "tail": "stablewards pelting",
+      "head": "fusional",
+      "label": null
+    },
+    {
+      "tail": "fusional",
+      "head": "pyroxyle",
+      "label": "No"
+    },
+    {
+      "tail": "fusional",
+      "head": "stablewards pelting",
+      "label": "No"
+    },
+    {
+      "tail": "pyroxyle",
+      "head": "alpaca",
+      "label": null
+    },
+    {
+      "tail": "alpaca",
+      "head": "disilicide",
+      "label": null
+    },
+    {
+      "tail": "disilicide",
+      "head": "juggernaut",
+      "label": null
+    }
+  ]
+}

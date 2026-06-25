@@ -1,0 +1,297 @@
+{
+  "nodes": [
+    {
+      "text": "application received",
+      "id": "application received",
+      "bbox": [
+        917.6,
+        1235.04,
+        223.2,
+        193.44
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "bbox": [
+        1830.24,
+        1170.56,
+        684.48,
+        441.44
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        2787.52,
+        1225.12,
+        248,
+        277.76
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "bbox": [
+        3135.811,
+        507.011,
+        826.683,
+        413.317
+      ],
+      "class": "task"
+    },
+    {
+      "text": "create new bank account",
+      "id": "create new bank account",
+      "bbox": [
+        3108.283,
+        1758.022,
+        854.211,
+        512.517
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack",
+      "id": "send welcome pack",
+      "bbox": [
+        3769.6,
+        2599.04,
+        937.44,
+        362.08
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        2420.48,
+        2499.84,
+        917.6,
+        590.24
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send PIN",
+      "id": "send PIN",
+      "bbox": [
+        1428.48,
+        2584.16,
+        744,
+        550.56
+      ],
+      "class": "task"
+    },
+    {
+      "text": "end process",
+      "id": "end process",
+      "bbox": [
+        887.84,
+        2747.84,
+        282.72,
+        257.92
+      ],
+      "class": "event"
+    },
+    {
+      "text": "end process",
+      "id": "end process",
+      "bbox": [
+        4206.08,
+        585.28,
+        282.72,
+        218.24
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send PIN",
+      "head": "end process",
+      "class": "sequenceFlow",
+      "bbox": [
+        1170.56,
+        2822.24,
+        262.88,
+        99.2
+      ],
+      "kps": [
+        1428.48,
+        2861.92,
+        2.0,
+        1170.56,
+        2876.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "send PIN",
+      "class": "sequenceFlow",
+      "bbox": [
+        2172.48,
+        2750.32,
+        252.96,
+        99.2
+      ],
+      "kps": [
+        2420.48,
+        2797.44,
+        2.0,
+        2172.48,
+        2797.44,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send welcome pack",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        3338.08,
+        2737.92,
+        436.48,
+        99.2
+      ],
+      "kps": [
+        3769.6,
+        2792.48,
+        2.0,
+        3338.08,
+        2777.6,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new bank account",
+      "head": "send welcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        3963.04,
+        2018.72,
+        421.6,
+        585.28
+      ],
+      "kps": [
+        3963.04,
+        2018.72,
+        2.0,
+        4379.68,
+        2599.04,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customer",
+      "head": "end process",
+      "class": "sequenceFlow",
+      "bbox": [
+        3963.04,
+        660.771,
+        248,
+        99.2
+      ],
+      "kps": [
+        3963.04,
+        714.24,
+        2.0,
+        4206.08,
+        699.36,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2514.72,
+        1341.68,
+        297.6,
+        99.2
+      ],
+      "kps": [
+        2514.72,
+        1388.8,
+        2.0,
+        2807.36,
+        1388.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "application received",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "bbox": [
+        1140.8,
+        1287.12,
+        694.4,
+        99.2
+      ],
+      "kps": [
+        1140.8,
+        1334.24,
+        2.0,
+        1830.24,
+        1334.24,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        2916.48,
+        773.76,
+        223.2,
+        461.28
+      ],
+      "kps": [
+        2916.48,
+        1230.08,
+        2.0,
+        3134.72,
+        773.76,
+        2.0
+      ],
+      "label": "application declined"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create new bank account",
+      "class": "sequenceFlow",
+      "bbox": [
+        2856.96,
+        1497.92,
+        257.92,
+        520.8
+      ],
+      "kps": [
+        2906.56,
+        1497.92,
+        2.0,
+        3109.92,
+        2013.76,
+        2.0
+      ],
+      "label": "application accepted"
+    }
+  ],
+  "groups": []
+}

@@ -1,0 +1,723 @@
+{
+  "nodes": [
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        941.41,
+        867.967,
+        350.525,
+        270.405
+      ],
+      "class": "task"
+    },
+    {
+      "text": "file the expertise",
+      "id": "file the expertise",
+      "bbox": [
+        2510.427,
+        1138.372,
+        333.833,
+        267.067
+      ],
+      "class": "task"
+    },
+    {
+      "text": "report created",
+      "id": "report created",
+      "bbox": [
+        3585.37,
+        1031.545,
+        170.255,
+        110.165
+      ],
+      "class": "event"
+    },
+    {
+      "text": "fill a cheque",
+      "id": "fill a cheque",
+      "bbox": [
+        2290.097,
+        2173.255,
+        320.48,
+        200.3
+      ],
+      "class": "task"
+    },
+    {
+      "text": "New case received",
+      "id": "New case received",
+      "bbox": [
+        544.148,
+        1011.515,
+        193.623,
+        126.857
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        2323.48,
+        884.658,
+        136.872,
+        170.255
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file the results containing the patients interviews",
+      "id": "file the results containing the patients interviews",
+      "bbox": [
+        2497.073,
+        657.652,
+        413.953,
+        373.893
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2977.793,
+        1008.177,
+        106.827,
+        120.18
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "ask an enternal expertise",
+      "id": "ask an enternal expertise",
+      "bbox": [
+        941.41,
+        2119.842,
+        333.833,
+        267.067
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Expertise sent",
+      "id": "Expertise sent",
+      "bbox": [
+        1916.203,
+        2173.255,
+        260.39,
+        227.007
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "expenses sent",
+      "id": "expenses sent",
+      "bbox": [
+        2750.787,
+        2173.255,
+        160.24,
+        193.623
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Expertise received",
+      "id": "Expertise received",
+      "bbox": [
+        1458.852,
+        2189.947,
+        216.992,
+        176.932
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "bbox": [
+        1946.248,
+        911.365,
+        193.623,
+        156.902
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "doctor underrating received",
+      "id": "doctor underrating received",
+      "bbox": [
+        413.953,
+        2139.872,
+        227.007,
+        227.007
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "interview established",
+      "id": "interview established",
+      "bbox": [
+        1445.498,
+        908.027,
+        193.623,
+        193.623
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "create a report",
+      "id": "create a report",
+      "bbox": [
+        3231.507,
+        981.47,
+        267.067,
+        200.3
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Expertise sent",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "bbox": [
+        1971.286,
+        1081.62,
+        80.12,
+        1084.958
+      ],
+      "kps": [
+        2009.677,
+        2163.24,
+        2.0,
+        2009.677,
+        1081.62,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview established",
+      "head": "doctor underrating received",
+      "class": "sequenceFlow",
+      "bbox": [
+        574.193,
+        1091.635,
+        928.057,
+        1061.59
+      ],
+      "kps": [
+        1498.912,
+        1091.635,
+        2.0,
+        574.193,
+        2149.887,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill a cheque",
+      "head": "expenses sent",
+      "class": "sequenceFlow",
+      "bbox": [
+        2610.577,
+        2235.014,
+        143.548,
+        80.12
+      ],
+      "kps": [
+        2610.577,
+        2273.405,
+        2.0,
+        2750.787,
+        2273.405,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Expertise sent",
+      "head": "fill a cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        2176.593,
+        2241.691,
+        116.842,
+        80.12
+      ],
+      "kps": [
+        2176.593,
+        2286.758,
+        2.0,
+        2290.097,
+        2273.405,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Expertise received",
+      "head": "Expertise sent",
+      "class": "sequenceFlow",
+      "bbox": [
+        1675.843,
+        2248.368,
+        243.698,
+        80.12
+      ],
+      "kps": [
+        1675.843,
+        2286.758,
+        2.0,
+        1916.203,
+        2286.758,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "file the expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2844.26,
+        1115.003,
+        203.638,
+        160.24
+      ],
+      "kps": [
+        2844.26,
+        1271.905,
+        2.0,
+        3044.56,
+        1115.003,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "file the expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        2376.893,
+        1034.883,
+        136.872,
+        203.638
+      ],
+      "kps": [
+        2376.893,
+        1034.883,
+        2.0,
+        2510.427,
+        1235.183,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "create a report",
+      "head": "report created",
+      "class": "sequenceFlow",
+      "bbox": [
+        3498.573,
+        1051.575,
+        90.135,
+        80.12
+      ],
+      "kps": [
+        3498.573,
+        1088.297,
+        2.0,
+        3585.37,
+        1091.635,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create a report",
+      "class": "sequenceFlow",
+      "bbox": [
+        3064.59,
+        1048.237,
+        170.255,
+        80.12
+      ],
+      "kps": [
+        3064.59,
+        1091.635,
+        2.0,
+        3231.507,
+        1081.62,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "file the results containing the patients interviews",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2911.027,
+        851.275,
+        136.872,
+        176.932
+      ],
+      "kps": [
+        2911.027,
+        851.275,
+        2.0,
+        3044.56,
+        1024.868,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "file the results containing the patients interviews",
+      "class": "sequenceFlow",
+      "bbox": [
+        2376.893,
+        707.727,
+        123.518,
+        200.3
+      ],
+      "kps": [
+        2376.893,
+        904.688,
+        2.0,
+        2497.073,
+        707.727,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2139.872,
+        948.087,
+        193.623,
+        80.12
+      ],
+      "kps": [
+        2139.872,
+        991.485,
+        2.0,
+        2330.157,
+        981.47,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview established",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "bbox": [
+        1639.122,
+        968.117,
+        313.803,
+        80.12
+      ],
+      "kps": [
+        1639.122,
+        1004.838,
+        2.0,
+        1949.587,
+        1008.177,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "interview established",
+      "class": "sequenceFlow",
+      "bbox": [
+        1291.935,
+        1003.169,
+        163.578,
+        80.12
+      ],
+      "kps": [
+        1291.935,
+        1041.56,
+        2.0,
+        1452.175,
+        1041.56,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "New case received",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        737.772,
+        1029.876,
+        206.977,
+        80.12
+      ],
+      "kps": [
+        737.772,
+        1074.943,
+        2.0,
+        941.41,
+        1061.59,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "doctor underrating received",
+      "head": "ask an enternal expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        637.622,
+        2245.029,
+        307.127,
+        80.12
+      ],
+      "kps": [
+        637.622,
+        2283.42,
+        2.0,
+        941.41,
+        2283.42,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask an enternal expertise",
+      "head": "Expertise received",
+      "class": "sequenceFlow",
+      "bbox": [
+        1275.243,
+        2251.706,
+        186.947,
+        80.12
+      ],
+      "kps": [
+        1275.243,
+        2293.435,
+        2.0,
+        1458.852,
+        2286.758,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Doctors",
+      "head": "New case received",
+      "class": "messageFlow",
+      "bbox": [
+        569.186,
+        387.247,
+        80.12,
+        600.9
+      ],
+      "kps": [
+        607.577,
+        387.247,
+        2.0,
+        607.577,
+        984.808,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Doctors",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "bbox": [
+        1136.702,
+        387.247,
+        80.12,
+        484.058
+      ],
+      "kps": [
+        1175.093,
+        387.247,
+        2.0,
+        1175.093,
+        867.967,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask an enternal expertise",
+      "head": "external experts",
+      "class": "messageFlow",
+      "bbox": [
+        969.786,
+        2386.908,
+        80.12,
+        430.645
+      ],
+      "kps": [
+        1008.177,
+        2386.908,
+        2.0,
+        1008.177,
+        2814.215,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "expenses sent",
+      "head": "external experts",
+      "class": "messageFlow",
+      "bbox": [
+        2739.102,
+        2330.157,
+        80.12,
+        487.397
+      ],
+      "kps": [
+        2777.493,
+        2330.157,
+        2.0,
+        2777.493,
+        2814.215,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "external experts",
+      "head": "Expertise received",
+      "class": "messageFlow",
+      "bbox": [
+        1467.198,
+        2366.878,
+        80.12,
+        450.675
+      ],
+      "kps": [
+        1505.588,
+        2814.215,
+        2.0,
+        1505.588,
+        2366.878,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "Managing director",
+        "Quality assurance document",
+        "QA"
+      ],
+      "bbox": [
+        106.827,
+        570.855,
+        3839.083,
+        2103.15
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Managing director",
+      "nodes": [
+        "fill a cheque",
+        "ask an enternal expertise",
+        "Expertise sent",
+        "expenses sent",
+        "Expertise received",
+        "doctor underrating received"
+      ],
+      "bbox": [
+        206.977,
+        1772.655,
+        3738.933,
+        901.35
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Quality assurance document",
+      "nodes": [
+        "interview patients",
+        "file the expertise",
+        "report created",
+        "New case received",
+        "parallelGateway_1",
+        "file the results containing the patients interviews",
+        "parallelGateway_2",
+        "expertise received",
+        "interview established",
+        "create a report"
+      ],
+      "bbox": [
+        206.977,
+        570.855,
+        3738.933,
+        1201.8
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA",
+      "nodes": [
+        "interview patients",
+        "file the expertise",
+        "report created",
+        "New case received",
+        "parallelGateway_1",
+        "file the results containing the patients interviews",
+        "parallelGateway_2",
+        "expertise received",
+        "interview established",
+        "create a report"
+      ],
+      "bbox": [
+        307.127,
+        570.855,
+        3638.783,
+        1201.8
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Doctors",
+      "nodes": [],
+      "bbox": [
+        73.443,
+        237.022,
+        3345.01,
+        150.225
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "external experts",
+      "nodes": [],
+      "bbox": [
+        76.782,
+        2814.215,
+        3849.098,
+        136.872
+      ],
+      "class": "pool"
+    }
+  ]
+}

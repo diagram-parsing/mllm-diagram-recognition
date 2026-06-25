@@ -1,0 +1,1128 @@
+{
+  "nodes": [
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        403,
+        724,
+        607,
+        876
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        705,
+        731,
+        842,
+        871
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "check completness",
+      "id": "check completness",
+      "bbox": [
+        881,
+        565,
+        1240,
+        717
+      ],
+      "class": "task"
+    },
+    {
+      "text": "register the claim",
+      "id": "register the claim",
+      "bbox": [
+        862,
+        961,
+        1192,
+        1133
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        880,
+        783,
+        992,
+        878
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1313,
+        757,
+        1446,
+        883
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1365,
+        586,
+        1453,
+        683
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        2097,
+        672,
+        2213,
+        774
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claim\n[checked]",
+      "id": "claim\n[checked]",
+      "bbox": [
+        1653,
+        904,
+        1738,
+        1017
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [checked]",
+      "id": "claim [checked]",
+      "bbox": [
+        409,
+        1563,
+        494,
+        1667
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "bbox": [
+        2295,
+        619,
+        2569,
+        760
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "bbox": [
+        2699,
+        842,
+        2770,
+        932
+      ],
+      "class": "event"
+    },
+    {
+      "text": "send letter",
+      "id": "send letter",
+      "bbox": [
+        2266,
+        847,
+        2614,
+        958
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check insurance",
+      "id": "check insurance",
+      "bbox": [
+        548,
+        1351,
+        904,
+        1597
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1068,
+        1365,
+        1180,
+        1460
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "bbox": [
+        1305,
+        1362,
+        1619,
+        1582
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_4",
+      "bbox": [
+        1730,
+        1398,
+        1823,
+        1495
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "phone gargae",
+      "id": "phone gargae",
+      "bbox": [
+        2001,
+        1503,
+        2332,
+        1664
+      ],
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "bbox": [
+        2388,
+        1430,
+        2821,
+        1667
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send letter",
+      "id": "send letter",
+      "bbox": [
+        2213,
+        1215,
+        2467,
+        1328
+      ],
+      "class": "task"
+    },
+    {
+      "text": "insurence [checked]",
+      "id": "insurence [checked]",
+      "bbox": [
+        994,
+        1498,
+        1204,
+        1605
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim\n[rejected]",
+      "id": "claim\n[rejected]",
+      "bbox": [
+        2383,
+        341,
+        2464,
+        422
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim\n[checked]",
+      "id": "claim\n[checked]",
+      "bbox": [
+        1370,
+        364,
+        1461,
+        463
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "documentation",
+      "id": "documentation",
+      "bbox": [
+        737,
+        356,
+        828,
+        455
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [approved]",
+      "id": "claim [approved]",
+      "bbox": [
+        2057,
+        986,
+        2145,
+        1068
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [checked]",
+      "id": "claim [checked]",
+      "bbox": [
+        1551,
+        1588,
+        1619,
+        1664
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "bbox": [
+        2634,
+        1150,
+        2736,
+        1240
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send letter",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        2450,
+        1186,
+        2639,
+        1246
+      ],
+      "kps": [
+        2450.713,
+        1218.305,
+        2.0,
+        2637.27,
+        1212.63,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "send letter",
+      "class": "sequenceFlow",
+      "bbox": [
+        2372,
+        1328,
+        2432,
+        1435
+      ],
+      "kps": [
+        2405.505,
+        1433.117,
+        2.0,
+        2397.004,
+        1328.524,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone gargae",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "bbox": [
+        2331,
+        1550,
+        2391,
+        1609
+      ],
+      "kps": [
+        2331.661,
+        1583.725,
+        2.0,
+        2388.646,
+        1574.227,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_4",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1780,
+        774,
+        2158,
+        1405
+      ],
+      "kps": [
+        1780.8,
+        1403.27,
+        2.0,
+        2155.955,
+        774.054,
+        2.0
+      ],
+      "label": "negativ"
+    },
+    {
+      "tail": "exclusiveGateway_4",
+      "head": "phone gargae",
+      "class": "sequenceFlow",
+      "bbox": [
+        1780,
+        1491,
+        2003,
+        1571
+      ],
+      "kps": [
+        1780.8,
+        1491.123,
+        2.0,
+        2001.619,
+        1569.478,
+        2.0
+      ],
+      "label": "positiv"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1619,
+        1415,
+        1735,
+        1474
+      ],
+      "kps": [
+        1619.341,
+        1443.635,
+        2.0,
+        1733.312,
+        1443.635,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1130,
+        755,
+        2136,
+        1372
+      ],
+      "kps": [
+        1130.214,
+        1370.029,
+        2.0,
+        2134.586,
+        755.059,
+        2.0
+      ],
+      "label": "nein"
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1180,
+        1406,
+        1308,
+        1466
+      ],
+      "kps": [
+        1180.077,
+        1412.768,
+        2.0,
+        1305.92,
+        1457.882,
+        2.0
+      ],
+      "label": "ja"
+    },
+    {
+      "tail": "check insurance",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        904,
+        1384,
+        1070,
+        1443
+      ],
+      "kps": [
+        904.646,
+        1412.768,
+        2.0,
+        1068.48,
+        1412.768,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "check insurance",
+      "class": "sequenceFlow",
+      "bbox": [
+        480,
+        791,
+        1585,
+        1472
+      ],
+      "kps": [
+        1436.512,
+        812.045,
+        2.0,
+        548.486,
+        1469.754,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send letter",
+      "head": "claim rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        2614,
+        876,
+        2707,
+        935
+      ],
+      "kps": [
+        2614.666,
+        904.528,
+        2.0,
+        2705.13,
+        904.528,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "send letter",
+      "class": "sequenceFlow",
+      "bbox": [
+        2353,
+        762,
+        2412,
+        850
+      ],
+      "kps": [
+        2381.523,
+        762.182,
+        2.0,
+        2381.523,
+        847.661,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        2201,
+        676,
+        2297,
+        736
+      ],
+      "kps": [
+        2201.971,
+        712.32,
+        2.0,
+        2295.261,
+        698.192,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1441,
+        622,
+        2101,
+        726
+      ],
+      "kps": [
+        1441.261,
+        622.093,
+        2.0,
+        2098.97,
+        724.192,
+        2.0
+      ],
+      "label": "incomplete"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1370,
+        679,
+        1429,
+        764
+      ],
+      "kps": [
+        1412.768,
+        679.078,
+        2.0,
+        1384.275,
+        762.182,
+        2.0
+      ],
+      "label": "complete"
+    },
+    {
+      "tail": "check completness",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1239,
+        612,
+        1372,
+        671
+      ],
+      "kps": [
+        1239.437,
+        641.088,
+        2.0,
+        1370.029,
+        641.088,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register the claim",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1191,
+        878,
+        1386,
+        1048
+      ],
+      "kps": [
+        1191.949,
+        1044.736,
+        2.0,
+        1384.275,
+        878.528,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "register the claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        774,
+        871,
+        864,
+        1047
+      ],
+      "kps": [
+        774.054,
+        871.405,
+        2.0,
+        861.907,
+        1044.736,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check completness",
+      "class": "sequenceFlow",
+      "bbox": [
+        774,
+        622,
+        883,
+        733
+      ],
+      "kps": [
+        774.054,
+        731.315,
+        2.0,
+        880.902,
+        622.093,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        607,
+        771,
+        707,
+        831
+      ],
+      "kps": [
+        607.846,
+        800.173,
+        2.0,
+        705.197,
+        800.173,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "check completness",
+      "class": "dataAssociation",
+      "bbox": [
+        890,
+        717,
+        949,
+        781
+      ],
+      "kps": [
+        902.272,
+        778.803,
+        2.0,
+        935.514,
+        717.069,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "documentation",
+      "head": "check completness",
+      "class": "dataAssociation",
+      "bbox": [
+        828,
+        373,
+        1076,
+        565
+      ],
+      "kps": [
+        828.666,
+        401.274,
+        2.0,
+        1073.229,
+        562.733,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check completness",
+      "head": "claim\n[checked]",
+      "class": "dataAssociation",
+      "bbox": [
+        1240,
+        421,
+        1373,
+        595
+      ],
+      "kps": [
+        1240.909,
+        593.6,
+        2.0,
+        1370.931,
+        421.171,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register the claim",
+      "class": "dataAssociation",
+      "bbox": [
+        837,
+        871,
+        896,
+        964
+      ],
+      "kps": [
+        880.902,
+        871.405,
+        2.0,
+        883.277,
+        961.632,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "claim\n[rejected]",
+      "class": "dataAssociation",
+      "bbox": [
+        2433,
+        422,
+        2493,
+        622
+      ],
+      "kps": [
+        2474.125,
+        619.718,
+        2.0,
+        2450.381,
+        422.643,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim\n[rejected]",
+      "head": "send letter",
+      "class": "dataAssociation",
+      "bbox": [
+        2464,
+        391,
+        2764,
+        850
+      ],
+      "kps": [
+        2464.627,
+        391.776,
+        2.0,
+        2580.973,
+        847.661,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "check insurance",
+      "class": "dataAssociation",
+      "bbox": [
+        452,
+        1513,
+        550,
+        1572
+      ],
+      "kps": [
+        452.276,
+        1563.139,
+        2.0,
+        548.368,
+        1520.756,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check insurance",
+      "head": "insurence [checked]",
+      "class": "dataAssociation",
+      "bbox": [
+        902,
+        1583,
+        1020,
+        1655
+      ],
+      "kps": [
+        902.272,
+        1583.725,
+        2.0,
+        1018.618,
+        1605.094,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim\n[checked]",
+      "head": "perform assessment",
+      "class": "dataAssociation",
+      "bbox": [
+        1586,
+        1004,
+        1654,
+        1365
+      ],
+      "kps": [
+        1652.582,
+        1004.371,
+        2.0,
+        1586.099,
+        1362.906,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "insurence [checked]",
+      "head": "perform assessment",
+      "class": "dataAssociation",
+      "bbox": [
+        1203,
+        1527,
+        1308,
+        1587
+      ],
+      "kps": [
+        1203.821,
+        1550.483,
+        2.0,
+        1305.92,
+        1562.355,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [checked]",
+      "head": "perform assessment",
+      "class": "dataAssociation",
+      "bbox": [
+        1461,
+        1582,
+        1554,
+        1647
+      ],
+      "kps": [
+        1551.837,
+        1645.127,
+        2.0,
+        1461.396,
+        1582.941,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [approved]",
+      "head": "send letter",
+      "class": "dataAssociation",
+      "bbox": [
+        2063,
+        1075,
+        2215,
+        1291
+      ],
+      "kps": [
+        2063.354,
+        1075.603,
+        2.0,
+        2212.941,
+        1289.299,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        496,
+        311,
+        555,
+        700
+      ],
+      "kps": [
+        536.614,
+        311.046,
+        2.0,
+        512.87,
+        698.074,
+        2.0
+      ],
+      "label": "claim with relevant documentation"
+    },
+    {
+      "tail": "send letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        2534,
+        311,
+        2594,
+        850
+      ],
+      "kps": [
+        2578.598,
+        847.661,
+        2.0,
+        2547.731,
+        311.046,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "send letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        2198,
+        310,
+        2258,
+        1220
+      ],
+      "kps": [
+        2227.425,
+        1218.305,
+        2.0,
+        2227.425,
+        310.928,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone gargae",
+      "head": "garage",
+      "class": "messageFlow",
+      "bbox": [
+        2119,
+        1664,
+        2179,
+        1794
+      ],
+      "kps": [
+        2148.262,
+        1664.906,
+        2.0,
+        2148.262,
+        1792.102,
+        2.0
+      ],
+      "label": "authrize repairs"
+    },
+    {
+      "tail": "garage",
+      "head": "schedule payment",
+      "class": "messageFlow",
+      "bbox": [
+        2602,
+        1666,
+        2661,
+        1795
+      ],
+      "kps": [
+        2630.835,
+        1792.672,
+        2.0,
+        2630.835,
+        1666.829,
+        2.0
+      ],
+      "label": "payment"
+    }
+  ],
+  "groups": [
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        94,
+        206,
+        2882,
+        311
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "car insurer",
+      "nodes": [
+        "handling depart.",
+        "notification depart."
+      ],
+      "bbox": [
+        68,
+        522,
+        2899,
+        1721
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling depart.",
+      "nodes": [
+        "claim [checked]",
+        "check insurance",
+        "exclusiveGateway_3",
+        "perform assessment",
+        "exclusiveGateway_4",
+        "phone gargae",
+        "schedule payment",
+        "send letter",
+        "insurence [checked]",
+        "claim [checked]"
+      ],
+      "bbox": [
+        152,
+        1187,
+        2897,
+        1721
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification depart.",
+      "nodes": [
+        "claim received",
+        "parallelGateway_1",
+        "check completness",
+        "register the claim",
+        "claim",
+        "parallelGateway_2",
+        "exclusiveGateway_1",
+        "exclusiveGateway_2",
+        "claim\n[checked]",
+        "reject claim",
+        "claim rejected",
+        "send letter",
+        "claim [approved]"
+      ],
+      "bbox": [
+        151,
+        522,
+        2896,
+        1187
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "garage",
+      "nodes": [],
+      "bbox": [
+        84,
+        1792,
+        2905,
+        1922
+      ],
+      "class": "pool"
+    }
+  ]
+}

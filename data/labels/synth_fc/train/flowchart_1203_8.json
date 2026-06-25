@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "anaplasm",
+      "id": "anaplasm",
+      "class": "ellipse"
+    },
+    {
+      "text": "usuriously",
+      "id": "usuriously",
+      "class": "document"
+    },
+    {
+      "text": "accomplishment",
+      "id": "accomplishment",
+      "class": "diamond"
+    },
+    {
+      "text": "Telinga",
+      "id": "Telinga",
+      "class": "diamond"
+    },
+    {
+      "text": "bolo",
+      "id": "bolo",
+      "class": "hexagon"
+    },
+    {
+      "text": "infancy",
+      "id": "infancy",
+      "class": "document"
+    },
+    {
+      "text": "soonish ornithologic",
+      "id": "soonish ornithologic",
+      "class": "document"
+    },
+    {
+      "text": "sporocarp",
+      "id": "sporocarp",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "anaplasm",
+      "head": "usuriously",
+      "label": null
+    },
+    {
+      "tail": "usuriously",
+      "head": "accomplishment",
+      "label": null
+    },
+    {
+      "tail": "accomplishment",
+      "head": "Telinga",
+      "label": "yes"
+    },
+    {
+      "tail": "accomplishment",
+      "head": "bolo",
+      "label": "yes"
+    },
+    {
+      "tail": "Telinga",
+      "head": "bolo",
+      "label": "No"
+    },
+    {
+      "tail": "Telinga",
+      "head": "anaplasm",
+      "label": "No"
+    },
+    {
+      "tail": "bolo",
+      "head": "infancy",
+      "label": null
+    },
+    {
+      "tail": "infancy",
+      "head": "soonish ornithologic",
+      "label": null
+    },
+    {
+      "tail": "soonish ornithologic",
+      "head": "sporocarp",
+      "label": null
+    }
+  ]
+}

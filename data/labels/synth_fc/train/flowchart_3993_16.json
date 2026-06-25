@@ -1,0 +1,191 @@
+{
+  "nodes": [
+    {
+      "text": "squad",
+      "id": "squad",
+      "class": "circle"
+    },
+    {
+      "text": "ponticulus",
+      "id": "ponticulus",
+      "class": "hexagon"
+    },
+    {
+      "text": "nonlegal",
+      "id": "nonlegal",
+      "class": "document"
+    },
+    {
+      "text": "demitoilet",
+      "id": "demitoilet",
+      "class": "hexagon"
+    },
+    {
+      "text": "molligrant",
+      "id": "molligrant",
+      "class": "box"
+    },
+    {
+      "text": "unrefreshingly",
+      "id": "unrefreshingly",
+      "class": "diamond"
+    },
+    {
+      "text": "tagilite",
+      "id": "tagilite",
+      "class": "diamond"
+    },
+    {
+      "text": "Egyptology",
+      "id": "Egyptology",
+      "class": "box"
+    },
+    {
+      "text": "worriter havers",
+      "id": "worriter havers",
+      "class": "diamond"
+    },
+    {
+      "text": "unannexedness",
+      "id": "unannexedness",
+      "class": "diamond"
+    },
+    {
+      "text": "antilithic",
+      "id": "antilithic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Euglandina",
+      "id": "Euglandina",
+      "class": "circle"
+    },
+    {
+      "text": "foeship bosselation",
+      "id": "foeship bosselation",
+      "class": "diamond"
+    },
+    {
+      "text": "sensualize",
+      "id": "sensualize",
+      "class": "diamond"
+    },
+    {
+      "text": "delegant obliquangular",
+      "id": "delegant obliquangular",
+      "class": "document"
+    },
+    {
+      "text": "apii",
+      "id": "apii",
+      "class": "box"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "squad",
+      "head": "ponticulus",
+      "label": null
+    },
+    {
+      "tail": "ponticulus",
+      "head": "nonlegal",
+      "label": null
+    },
+    {
+      "tail": "nonlegal",
+      "head": "demitoilet",
+      "label": null
+    },
+    {
+      "tail": "demitoilet",
+      "head": "molligrant",
+      "label": null
+    },
+    {
+      "tail": "molligrant",
+      "head": "unrefreshingly",
+      "label": null
+    },
+    {
+      "tail": "unrefreshingly",
+      "head": "tagilite",
+      "label": "NO"
+    },
+    {
+      "tail": "unrefreshingly",
+      "head": "Egyptology",
+      "label": "NO"
+    },
+    {
+      "tail": "tagilite",
+      "head": "Egyptology",
+      "label": "YES"
+    },
+    {
+      "tail": "tagilite",
+      "head": "molligrant",
+      "label": "YES"
+    },
+    {
+      "tail": "Egyptology",
+      "head": "worriter havers",
+      "label": null
+    },
+    {
+      "tail": "worriter havers",
+      "head": "unannexedness",
+      "label": "No"
+    },
+    {
+      "tail": "worriter havers",
+      "head": "ponticulus",
+      "label": "No"
+    },
+    {
+      "tail": "unannexedness",
+      "head": "antilithic",
+      "label": "yes"
+    },
+    {
+      "tail": "unannexedness",
+      "head": "Euglandina",
+      "label": "yes"
+    },
+    {
+      "tail": "antilithic",
+      "head": "foeship bosselation",
+      "label": null
+    },
+    {
+      "tail": "foeship bosselation",
+      "head": "sensualize",
+      "label": "no"
+    },
+    {
+      "tail": "foeship bosselation",
+      "head": "delegant obliquangular",
+      "label": "no"
+    },
+    {
+      "tail": "sensualize",
+      "head": "delegant obliquangular",
+      "label": "yes"
+    },
+    {
+      "tail": "sensualize",
+      "head": "apii",
+      "label": "yes"
+    },
+    {
+      "tail": "delegant obliquangular",
+      "head": "apii",
+      "label": null
+    },
+    {
+      "tail": "apii",
+      "head": "Euglandina",
+      "label": null
+    }
+  ]
+}

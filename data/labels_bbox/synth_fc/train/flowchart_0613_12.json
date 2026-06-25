@@ -1,0 +1,281 @@
+{
+  "nodes": [
+    {
+      "text": "atavus seaward",
+      "id": "atavus seaward",
+      "class": "ellipse",
+      "bbox": [
+        57,
+        5,
+        138,
+        57
+      ]
+    },
+    {
+      "text": "parasitoid",
+      "id": "parasitoid",
+      "class": "hexagon",
+      "bbox": [
+        56,
+        109,
+        140,
+        169
+      ]
+    },
+    {
+      "text": "antiparliamental",
+      "id": "antiparliamental",
+      "class": "diamond",
+      "bbox": [
+        5,
+        222,
+        190,
+        270
+      ]
+    },
+    {
+      "text": "screenman",
+      "id": "screenman",
+      "class": "box",
+      "bbox": [
+        62,
+        330,
+        134,
+        378
+      ]
+    },
+    {
+      "text": "homoanisic ked",
+      "id": "homoanisic ked",
+      "class": "diamond",
+      "bbox": [
+        28,
+        398,
+        167,
+        471
+      ]
+    },
+    {
+      "text": "Tionontates omnivoracity",
+      "id": "Tionontates omnivoracity",
+      "class": "parallelogram",
+      "bbox": [
+        14,
+        506,
+        181,
+        579
+      ]
+    },
+    {
+      "text": "Chayota Martha cathin",
+      "id": "Chayota Martha cathin",
+      "class": "parallelogram",
+      "bbox": [
+        230,
+        129,
+        391,
+        202
+      ]
+    },
+    {
+      "text": "Tepehuane gangliocyte",
+      "id": "Tepehuane gangliocyte",
+      "class": "document",
+      "bbox": [
+        255,
+        213,
+        370,
+        280
+      ]
+    },
+    {
+      "text": "Perugian",
+      "id": "Perugian",
+      "class": "hexagon",
+      "bbox": [
+        273,
+        324,
+        352,
+        384
+      ]
+    },
+    {
+      "text": "isokurtic",
+      "id": "isokurtic",
+      "class": "hexagon",
+      "bbox": [
+        276,
+        432,
+        350,
+        491
+      ]
+    },
+    {
+      "text": "chromocollotype",
+      "id": "chromocollotype",
+      "class": "hexagon",
+      "bbox": [
+        235,
+        545,
+        391,
+        593
+      ]
+    },
+    {
+      "text": "unannexedness",
+      "id": "unannexedness",
+      "class": "ellipse",
+      "bbox": [
+        272,
+        624,
+        354,
+        670
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "atavus seaward",
+      "head": "parasitoid",
+      "label": null,
+      "bbox": [
+        93,
+        58,
+        102,
+        107
+      ]
+    },
+    {
+      "tail": "parasitoid",
+      "head": "antiparliamental",
+      "label": null,
+      "bbox": [
+        93,
+        169,
+        102,
+        221
+      ]
+    },
+    {
+      "tail": "antiparliamental",
+      "head": "screenman",
+      "label": "YES",
+      "bbox": [
+        93,
+        271,
+        102,
+        328
+      ]
+    },
+    {
+      "tail": "antiparliamental",
+      "head": "atavus seaward",
+      "label": "YES",
+      "bbox": [
+        140,
+        27,
+        165,
+        239
+      ]
+    },
+    {
+      "tail": "screenman",
+      "head": "homoanisic ked",
+      "label": null,
+      "bbox": [
+        93,
+        379,
+        102,
+        396
+      ]
+    },
+    {
+      "tail": "homoanisic ked",
+      "head": "Tionontates omnivoracity",
+      "label": "Yes",
+      "bbox": [
+        93,
+        472,
+        102,
+        504
+      ]
+    },
+    {
+      "tail": "homoanisic ked",
+      "head": "parasitoid",
+      "label": "Yes",
+      "bbox": [
+        133,
+        144,
+        210,
+        416
+      ]
+    },
+    {
+      "tail": "Tionontates omnivoracity",
+      "head": "Chayota Martha cathin",
+      "label": null,
+      "bbox": [
+        172,
+        204,
+        250,
+        526
+      ]
+    },
+    {
+      "tail": "Chayota Martha cathin",
+      "head": "Tepehuane gangliocyte",
+      "label": null,
+      "bbox": [
+        308,
+        199,
+        317,
+        212
+      ]
+    },
+    {
+      "tail": "Tepehuane gangliocyte",
+      "head": "Perugian",
+      "label": null,
+      "bbox": [
+        308,
+        279,
+        317,
+        322
+      ]
+    },
+    {
+      "tail": "Perugian",
+      "head": "isokurtic",
+      "label": null,
+      "bbox": [
+        308,
+        384,
+        317,
+        430
+      ]
+    },
+    {
+      "tail": "isokurtic",
+      "head": "chromocollotype",
+      "label": null,
+      "bbox": [
+        308,
+        492,
+        317,
+        543
+      ]
+    },
+    {
+      "tail": "chromocollotype",
+      "head": "unannexedness",
+      "label": null,
+      "bbox": [
+        308,
+        594,
+        317,
+        622
+      ]
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "nodes": [
+    {
+      "text": "request received",
+      "id": "request received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "retrieve file",
+      "id": "retrieve file",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check if acceptable",
+      "id": "check if acceptable",
+      "class": "task"
+    },
+    {
+      "text": "check if compliant",
+      "id": "check if compliant",
+      "class": "task"
+    },
+    {
+      "text": "check for payment",
+      "id": "check for payment",
+      "class": "task"
+    },
+    {
+      "text": "create fee notice",
+      "id": "create fee notice",
+      "class": "task"
+    },
+    {
+      "text": "promises DB",
+      "id": "promises DB",
+      "class": "dataStore"
+    },
+    {
+      "text": "allocate hearing date",
+      "id": "allocate hearing date",
+      "class": "task"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "class": "event"
+    },
+    {
+      "text": "request",
+      "id": "request",
+      "class": "dataObject"
+    },
+    {
+      "text": "payment accepted",
+      "id": "payment accepted",
+      "class": "dataObject"
+    },
+    {
+      "text": "payment receives",
+      "id": "payment receives",
+      "class": "messageEvent"
+    },
+    {
+      "text": "payment\nreceipt",
+      "id": "payment\nreceipt",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "class": "dataObject"
+    },
+    {
+      "text": "request",
+      "id": "request",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "request received",
+      "head": "retrieve file",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieve file",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if acceptable",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check if acceptable",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": "yes"
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if compliant",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check if compliant",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": "yes"
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "check for payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check for payment",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create fee notice",
+      "class": "sequenceFlow",
+      "label": "not paid"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "allocate hearing date",
+      "class": "sequenceFlow",
+      "label": "paid"
+    },
+    {
+      "tail": "allocate hearing date",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "payment receives",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "retrieve file",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "promises DB",
+      "head": "retrieve file",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "check if acceptable",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "check if compliant",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "payment accepted",
+      "head": "check for payment",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "payment\nreceipt",
+      "head": "check for payment",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Owner",
+      "head": "request received",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Owner",
+      "head": "payment receives",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "create fee notice",
+      "head": "Owner",
+      "class": "messageFlow",
+      "label": "fee notice"
+    }
+  ],
+  "groups": [
+    {
+      "name": "tribunal",
+      "nodes": [
+        "cashier",
+        "Beta Basis"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "cashier",
+      "nodes": [
+        "request received",
+        "retrieve file",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "exclusiveGateway_1",
+        "exclusiveGateway_2",
+        "check if acceptable",
+        "check if compliant",
+        "check for payment",
+        "create fee notice",
+        "allocate hearing date",
+        "process completed",
+        "request",
+        "payment accepted",
+        "payment receives",
+        "request"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Beta Basis",
+      "nodes": [
+        "promises DB"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Owner",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

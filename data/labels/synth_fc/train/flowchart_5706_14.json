@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "text": "ravisher",
+      "id": "ravisher",
+      "class": "ellipse"
+    },
+    {
+      "text": "smithy puzzledly manna",
+      "id": "smithy puzzledly manna",
+      "class": "diamond"
+    },
+    {
+      "text": "plasmophagy evilproof",
+      "id": "plasmophagy evilproof",
+      "class": "box"
+    },
+    {
+      "text": "enquiry worktime",
+      "id": "enquiry worktime",
+      "class": "diamond"
+    },
+    {
+      "text": "skepticism",
+      "id": "skepticism",
+      "class": "hexagon"
+    },
+    {
+      "text": "Thilanottine unsaintly",
+      "id": "Thilanottine unsaintly",
+      "class": "document"
+    },
+    {
+      "text": "phosphomolybdic imbannered",
+      "id": "phosphomolybdic imbannered",
+      "class": "diamond"
+    },
+    {
+      "text": "overrun reviewage",
+      "id": "overrun reviewage",
+      "class": "hexagon"
+    },
+    {
+      "text": "bulldogism Dictyotales",
+      "id": "bulldogism Dictyotales",
+      "class": "parallelogram"
+    },
+    {
+      "text": "chromocollotype",
+      "id": "chromocollotype",
+      "class": "box"
+    },
+    {
+      "text": "exsomatic malinowskite scyphip",
+      "id": "exsomatic malinowskite scyphip",
+      "class": "diamond"
+    },
+    {
+      "text": "cheque Himyaritic",
+      "id": "cheque Himyaritic",
+      "class": "box"
+    },
+    {
+      "text": "Ella pulpousness",
+      "id": "Ella pulpousness",
+      "class": "hexagon"
+    },
+    {
+      "text": "Catocala",
+      "id": "Catocala",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "ravisher",
+      "head": "smithy puzzledly manna",
+      "label": null
+    },
+    {
+      "tail": "smithy puzzledly manna",
+      "head": "plasmophagy evilproof",
+      "label": "NO"
+    },
+    {
+      "tail": "smithy puzzledly manna",
+      "head": "ravisher",
+      "label": "NO"
+    },
+    {
+      "tail": "plasmophagy evilproof",
+      "head": "enquiry worktime",
+      "label": null
+    },
+    {
+      "tail": "enquiry worktime",
+      "head": "skepticism",
+      "label": "No"
+    },
+    {
+      "tail": "enquiry worktime",
+      "head": "Thilanottine unsaintly",
+      "label": "No"
+    },
+    {
+      "tail": "skepticism",
+      "head": "phosphomolybdic imbannered",
+      "label": null
+    },
+    {
+      "tail": "phosphomolybdic imbannered",
+      "head": "Thilanottine unsaintly",
+      "label": "YES"
+    },
+    {
+      "tail": "phosphomolybdic imbannered",
+      "head": "overrun reviewage",
+      "label": "YES"
+    },
+    {
+      "tail": "Thilanottine unsaintly",
+      "head": "bulldogism Dictyotales",
+      "label": null
+    },
+    {
+      "tail": "bulldogism Dictyotales",
+      "head": "chromocollotype",
+      "label": null
+    },
+    {
+      "tail": "chromocollotype",
+      "head": "exsomatic malinowskite scyphip",
+      "label": null
+    },
+    {
+      "tail": "exsomatic malinowskite scyphip",
+      "head": "overrun reviewage",
+      "label": "yes"
+    },
+    {
+      "tail": "exsomatic malinowskite scyphip",
+      "head": "phosphomolybdic imbannered",
+      "label": "yes"
+    },
+    {
+      "tail": "overrun reviewage",
+      "head": "cheque Himyaritic",
+      "label": null
+    },
+    {
+      "tail": "cheque Himyaritic",
+      "head": "Ella pulpousness",
+      "label": null
+    },
+    {
+      "tail": "Ella pulpousness",
+      "head": "Catocala",
+      "label": null
+    }
+  ]
+}

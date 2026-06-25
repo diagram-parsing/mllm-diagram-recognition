@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "default",
+      "id": "default",
+      "class": "ellipse"
+    },
+    {
+      "text": "castellate tetrapodic",
+      "id": "castellate tetrapodic",
+      "class": "diamond"
+    },
+    {
+      "text": "macrorhinia irrepressive uncos",
+      "id": "macrorhinia irrepressive uncos",
+      "class": "diamond"
+    },
+    {
+      "text": "unappeasedness",
+      "id": "unappeasedness",
+      "class": "diamond"
+    },
+    {
+      "text": "snorting foremast",
+      "id": "snorting foremast",
+      "class": "document"
+    },
+    {
+      "text": "Hadentomoidea pliosaur",
+      "id": "Hadentomoidea pliosaur",
+      "class": "parallelogram"
+    },
+    {
+      "text": "subparallel rotatoplane",
+      "id": "subparallel rotatoplane",
+      "class": "diamond"
+    },
+    {
+      "text": "taperly",
+      "id": "taperly",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "default",
+      "head": "castellate tetrapodic",
+      "label": null
+    },
+    {
+      "tail": "castellate tetrapodic",
+      "head": "macrorhinia irrepressive uncos",
+      "label": "Yes"
+    },
+    {
+      "tail": "castellate tetrapodic",
+      "head": "default",
+      "label": "Yes"
+    },
+    {
+      "tail": "macrorhinia irrepressive uncos",
+      "head": "unappeasedness",
+      "label": "Yes"
+    },
+    {
+      "tail": "macrorhinia irrepressive uncos",
+      "head": "snorting foremast",
+      "label": "Yes"
+    },
+    {
+      "tail": "unappeasedness",
+      "head": "Hadentomoidea pliosaur",
+      "label": "Yes"
+    },
+    {
+      "tail": "unappeasedness",
+      "head": "snorting foremast",
+      "label": "Yes"
+    },
+    {
+      "tail": "Hadentomoidea pliosaur",
+      "head": "subparallel rotatoplane",
+      "label": null
+    },
+    {
+      "tail": "subparallel rotatoplane",
+      "head": "snorting foremast",
+      "label": "Yes"
+    },
+    {
+      "tail": "subparallel rotatoplane",
+      "head": "castellate tetrapodic",
+      "label": "Yes"
+    },
+    {
+      "tail": "snorting foremast",
+      "head": "taperly",
+      "label": null
+    }
+  ]
+}

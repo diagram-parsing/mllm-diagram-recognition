@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "universal",
+      "id": "universal",
+      "class": "ellipse"
+    },
+    {
+      "text": "unbiddable latecomer",
+      "id": "unbiddable latecomer",
+      "class": "diamond"
+    },
+    {
+      "text": "warmed",
+      "id": "warmed",
+      "class": "parallelogram"
+    },
+    {
+      "text": "sweatweed dishearteningly intr",
+      "id": "sweatweed dishearteningly intr",
+      "class": "diamond"
+    },
+    {
+      "text": "hoistway",
+      "id": "hoistway",
+      "class": "parallelogram"
+    },
+    {
+      "text": "blindingly canch misenunciatio",
+      "id": "blindingly canch misenunciatio",
+      "class": "parallelogram"
+    },
+    {
+      "text": "stem patently manganate",
+      "id": "stem patently manganate",
+      "class": "diamond"
+    },
+    {
+      "text": "sleevefish",
+      "id": "sleevefish",
+      "class": "box"
+    },
+    {
+      "text": "timberlike fluctuate",
+      "id": "timberlike fluctuate",
+      "class": "parallelogram"
+    },
+    {
+      "text": "versesmith periclinal",
+      "id": "versesmith periclinal",
+      "class": "document"
+    },
+    {
+      "text": "beermaking physicalness",
+      "id": "beermaking physicalness",
+      "class": "box"
+    },
+    {
+      "text": "pasquiler",
+      "id": "pasquiler",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "universal",
+      "head": "unbiddable latecomer",
+      "label": null
+    },
+    {
+      "tail": "unbiddable latecomer",
+      "head": "warmed",
+      "label": "No"
+    },
+    {
+      "tail": "unbiddable latecomer",
+      "head": "sweatweed dishearteningly intr",
+      "label": "No"
+    },
+    {
+      "tail": "warmed",
+      "head": "hoistway",
+      "label": null
+    },
+    {
+      "tail": "hoistway",
+      "head": "blindingly canch misenunciatio",
+      "label": null
+    },
+    {
+      "tail": "blindingly canch misenunciatio",
+      "head": "stem patently manganate",
+      "label": null
+    },
+    {
+      "tail": "stem patently manganate",
+      "head": "sleevefish",
+      "label": "Yes"
+    },
+    {
+      "tail": "stem patently manganate",
+      "head": "unbiddable latecomer",
+      "label": "Yes"
+    },
+    {
+      "tail": "sleevefish",
+      "head": "timberlike fluctuate",
+      "label": null
+    },
+    {
+      "tail": "timberlike fluctuate",
+      "head": "versesmith periclinal",
+      "label": null
+    },
+    {
+      "tail": "versesmith periclinal",
+      "head": "sweatweed dishearteningly intr",
+      "label": null
+    },
+    {
+      "tail": "sweatweed dishearteningly intr",
+      "head": "beermaking physicalness",
+      "label": "YES"
+    },
+    {
+      "tail": "sweatweed dishearteningly intr",
+      "head": "hoistway",
+      "label": "YES"
+    },
+    {
+      "tail": "beermaking physicalness",
+      "head": "pasquiler",
+      "label": null
+    }
+  ]
+}

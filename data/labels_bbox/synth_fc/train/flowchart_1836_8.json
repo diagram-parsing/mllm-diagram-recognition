@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "text": "resplend morbidity",
+      "id": "resplend morbidity",
+      "class": "circle",
+      "bbox": [
+        38,
+        5,
+        126,
+        93
+      ]
+    },
+    {
+      "text": "wheaten",
+      "id": "wheaten",
+      "class": "hexagon",
+      "bbox": [
+        27,
+        144,
+        136,
+        192
+      ]
+    },
+    {
+      "text": "cohune confess feague",
+      "id": "cohune confess feague",
+      "class": "diamond",
+      "bbox": [
+        5,
+        203,
+        158,
+        276
+      ]
+    },
+    {
+      "text": "interopercle",
+      "id": "interopercle",
+      "class": "hexagon",
+      "bbox": [
+        23,
+        311,
+        141,
+        359
+      ]
+    },
+    {
+      "text": "umbrae",
+      "id": "umbrae",
+      "class": "hexagon",
+      "bbox": [
+        222,
+        121,
+        321,
+        169
+      ]
+    },
+    {
+      "text": "submolecule polysomy",
+      "id": "submolecule polysomy",
+      "class": "box",
+      "bbox": [
+        235,
+        216,
+        309,
+        264
+      ]
+    },
+    {
+      "text": "unpracticableness unaccustomed",
+      "id": "unpracticableness unaccustomed",
+      "class": "document",
+      "bbox": [
+        217,
+        309,
+        321,
+        361
+      ]
+    },
+    {
+      "text": "jestbook",
+      "id": "jestbook",
+      "class": "circle",
+      "bbox": [
+        241,
+        423,
+        303,
+        479
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "resplend morbidity",
+      "head": "wheaten",
+      "label": null,
+      "bbox": [
+        77,
+        94,
+        86,
+        142
+      ]
+    },
+    {
+      "tail": "wheaten",
+      "head": "cohune confess feague",
+      "label": null,
+      "bbox": [
+        77,
+        188,
+        86,
+        201
+      ]
+    },
+    {
+      "tail": "cohune confess feague",
+      "head": "interopercle",
+      "label": "YES",
+      "bbox": [
+        77,
+        277,
+        86,
+        309
+      ]
+    },
+    {
+      "tail": "cohune confess feague",
+      "head": "umbrae",
+      "label": "YES",
+      "bbox": [
+        97,
+        153,
+        233,
+        210
+      ]
+    },
+    {
+      "tail": "interopercle",
+      "head": "umbrae",
+      "label": null,
+      "bbox": [
+        141,
+        153,
+        233,
+        335
+      ]
+    },
+    {
+      "tail": "umbrae",
+      "head": "submolecule polysomy",
+      "label": null,
+      "bbox": [
+        267,
+        169,
+        277,
+        214
+      ]
+    },
+    {
+      "tail": "submolecule polysomy",
+      "head": "unpracticableness unaccustomed",
+      "label": null,
+      "bbox": [
+        267,
+        264,
+        277,
+        308
+      ]
+    },
+    {
+      "tail": "unpracticableness unaccustomed",
+      "head": "jestbook",
+      "label": null,
+      "bbox": [
+        267,
+        361,
+        277,
+        421
+      ]
+    }
+  ]
+}

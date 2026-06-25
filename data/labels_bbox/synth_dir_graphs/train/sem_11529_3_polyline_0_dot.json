@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "text": "green",
+      "id": "green",
+      "class": "node",
+      "bbox": [
+        264,
+        52,
+        351,
+        100
+      ]
+    },
+    {
+      "text": "cytode",
+      "id": "cytode",
+      "class": "node",
+      "bbox": [
+        40,
+        123,
+        137,
+        171
+      ]
+    },
+    {
+      "text": "draftsmanship micropore",
+      "id": "draftsmanship micropore",
+      "class": "node",
+      "bbox": [
+        27,
+        50,
+        150,
+        99
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "green",
+      "head": "cytode",
+      "label": "-0.1182",
+      "class": "unidirectional",
+      "bbox": [
+        135,
+        91,
+        273,
+        137
+      ]
+    },
+    {
+      "tail": "green",
+      "head": "draftsmanship micropore",
+      "label": "-0.22* x = 0.632",
+      "class": "unidirectional",
+      "bbox": [
+        153,
+        70,
+        263,
+        80
+      ]
+    }
+  ]
+}

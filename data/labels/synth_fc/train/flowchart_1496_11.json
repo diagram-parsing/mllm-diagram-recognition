@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "quizzability wainful",
+      "id": "quizzability wainful",
+      "class": "circle"
+    },
+    {
+      "text": "townling",
+      "id": "townling",
+      "class": "box"
+    },
+    {
+      "text": "Geshurites submergence",
+      "id": "Geshurites submergence",
+      "class": "parallelogram"
+    },
+    {
+      "text": "gazette unmatchable",
+      "id": "gazette unmatchable",
+      "class": "diamond"
+    },
+    {
+      "text": "Tupperish staddle affricated",
+      "id": "Tupperish staddle affricated",
+      "class": "document"
+    },
+    {
+      "text": "Actaea mimmouthed unvaluably",
+      "id": "Actaea mimmouthed unvaluably",
+      "class": "diamond"
+    },
+    {
+      "text": "nocerite",
+      "id": "nocerite",
+      "class": "box"
+    },
+    {
+      "text": "shirallee chilostomatous",
+      "id": "shirallee chilostomatous",
+      "class": "document"
+    },
+    {
+      "text": "declassify",
+      "id": "declassify",
+      "class": "diamond"
+    },
+    {
+      "text": "satisfactorily",
+      "id": "satisfactorily",
+      "class": "hexagon"
+    },
+    {
+      "text": "Stakhanovism",
+      "id": "Stakhanovism",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "quizzability wainful",
+      "head": "townling",
+      "label": null
+    },
+    {
+      "tail": "townling",
+      "head": "Geshurites submergence",
+      "label": null
+    },
+    {
+      "tail": "Geshurites submergence",
+      "head": "gazette unmatchable",
+      "label": null
+    },
+    {
+      "tail": "gazette unmatchable",
+      "head": "Tupperish staddle affricated",
+      "label": "yes"
+    },
+    {
+      "tail": "gazette unmatchable",
+      "head": "townling",
+      "label": "yes"
+    },
+    {
+      "tail": "Tupperish staddle affricated",
+      "head": "Actaea mimmouthed unvaluably",
+      "label": null
+    },
+    {
+      "tail": "Actaea mimmouthed unvaluably",
+      "head": "nocerite",
+      "label": "NO"
+    },
+    {
+      "tail": "Actaea mimmouthed unvaluably",
+      "head": "shirallee chilostomatous",
+      "label": "NO"
+    },
+    {
+      "tail": "nocerite",
+      "head": "declassify",
+      "label": null
+    },
+    {
+      "tail": "declassify",
+      "head": "satisfactorily",
+      "label": "no"
+    },
+    {
+      "tail": "declassify",
+      "head": "quizzability wainful",
+      "label": "no"
+    },
+    {
+      "tail": "satisfactorily",
+      "head": "shirallee chilostomatous",
+      "label": null
+    },
+    {
+      "tail": "shirallee chilostomatous",
+      "head": "Stakhanovism",
+      "label": null
+    }
+  ]
+}

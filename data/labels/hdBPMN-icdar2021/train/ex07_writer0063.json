@@ -1,0 +1,201 @@
+{
+  "nodes": [
+    {
+      "text": "rating finifshed",
+      "id": "rating finifshed",
+      "class": "event"
+    },
+    {
+      "text": "file cheque",
+      "id": "file cheque",
+      "class": "task"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "class": "task"
+    },
+    {
+      "text": "ask experts for review",
+      "id": "ask experts for review",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file cheque",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask experts for review",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "ask experts for review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "rating finifshed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask experts for review",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": "request for review"
+    },
+    {
+      "tail": "experts",
+      "head": "ask experts for review",
+      "class": "messageFlow",
+      "label": "review"
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": "check sent"
+    }
+  ],
+  "groups": [
+    {
+      "name": null,
+      "nodes": [
+        "managing directors",
+        "quality assurance"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing directors",
+      "nodes": [
+        "file cheque",
+        "ask experts for review",
+        "parallelGateway_2",
+        "messageEvent_1"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance",
+      "nodes": [
+        "rating finifshed",
+        "create report",
+        "parallelGateway_1",
+        "file results",
+        "parallelGateway_3",
+        "event_1",
+        "interview patients",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "experts",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

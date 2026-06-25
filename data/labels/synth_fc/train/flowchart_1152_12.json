@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "proclamatory",
+      "id": "proclamatory",
+      "class": "ellipse"
+    },
+    {
+      "text": "phylactolaematous frogeater",
+      "id": "phylactolaematous frogeater",
+      "class": "document"
+    },
+    {
+      "text": "outdure carbonometry layman",
+      "id": "outdure carbonometry layman",
+      "class": "box"
+    },
+    {
+      "text": "bellicoseness Aspatia",
+      "id": "bellicoseness Aspatia",
+      "class": "parallelogram"
+    },
+    {
+      "text": "polychromism thymiosis",
+      "id": "polychromism thymiosis",
+      "class": "parallelogram"
+    },
+    {
+      "text": "gulinula",
+      "id": "gulinula",
+      "class": "diamond"
+    },
+    {
+      "text": "patriotship habille",
+      "id": "patriotship habille",
+      "class": "box"
+    },
+    {
+      "text": "event preinitiate suffering",
+      "id": "event preinitiate suffering",
+      "class": "document"
+    },
+    {
+      "text": "supersulcus",
+      "id": "supersulcus",
+      "class": "diamond"
+    },
+    {
+      "text": "sphygmomanometer planoferrite",
+      "id": "sphygmomanometer planoferrite",
+      "class": "hexagon"
+    },
+    {
+      "text": "vestryman prereceipt",
+      "id": "vestryman prereceipt",
+      "class": "diamond"
+    },
+    {
+      "text": "colloped",
+      "id": "colloped",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "proclamatory",
+      "head": "phylactolaematous frogeater",
+      "label": null
+    },
+    {
+      "tail": "phylactolaematous frogeater",
+      "head": "outdure carbonometry layman",
+      "label": null
+    },
+    {
+      "tail": "outdure carbonometry layman",
+      "head": "bellicoseness Aspatia",
+      "label": null
+    },
+    {
+      "tail": "bellicoseness Aspatia",
+      "head": "polychromism thymiosis",
+      "label": null
+    },
+    {
+      "tail": "polychromism thymiosis",
+      "head": "gulinula",
+      "label": null
+    },
+    {
+      "tail": "gulinula",
+      "head": "patriotship habille",
+      "label": "YES"
+    },
+    {
+      "tail": "gulinula",
+      "head": "event preinitiate suffering",
+      "label": "YES"
+    },
+    {
+      "tail": "patriotship habille",
+      "head": "event preinitiate suffering",
+      "label": null
+    },
+    {
+      "tail": "event preinitiate suffering",
+      "head": "supersulcus",
+      "label": null
+    },
+    {
+      "tail": "supersulcus",
+      "head": "sphygmomanometer planoferrite",
+      "label": "NO"
+    },
+    {
+      "tail": "supersulcus",
+      "head": "vestryman prereceipt",
+      "label": "NO"
+    },
+    {
+      "tail": "sphygmomanometer planoferrite",
+      "head": "vestryman prereceipt",
+      "label": null
+    },
+    {
+      "tail": "vestryman prereceipt",
+      "head": "colloped",
+      "label": "YES"
+    },
+    {
+      "tail": "vestryman prereceipt",
+      "head": "proclamatory",
+      "label": "YES"
+    }
+  ]
+}

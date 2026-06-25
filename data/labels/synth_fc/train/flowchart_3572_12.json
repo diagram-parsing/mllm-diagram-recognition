@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "Parietales",
+      "id": "Parietales",
+      "class": "ellipse"
+    },
+    {
+      "text": "charmfully egocentric",
+      "id": "charmfully egocentric",
+      "class": "hexagon"
+    },
+    {
+      "text": "Marguerite",
+      "id": "Marguerite",
+      "class": "hexagon"
+    },
+    {
+      "text": "andirin ouachitite",
+      "id": "andirin ouachitite",
+      "class": "diamond"
+    },
+    {
+      "text": "extramorainic",
+      "id": "extramorainic",
+      "class": "hexagon"
+    },
+    {
+      "text": "proximobuccal",
+      "id": "proximobuccal",
+      "class": "parallelogram"
+    },
+    {
+      "text": "annihilable lectorial",
+      "id": "annihilable lectorial",
+      "class": "diamond"
+    },
+    {
+      "text": "bimbil",
+      "id": "bimbil",
+      "class": "document"
+    },
+    {
+      "text": "disemploy",
+      "id": "disemploy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "drawhead",
+      "id": "drawhead",
+      "class": "document"
+    },
+    {
+      "text": "stonish",
+      "id": "stonish",
+      "class": "diamond"
+    },
+    {
+      "text": "unscreenably",
+      "id": "unscreenably",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Parietales",
+      "head": "charmfully egocentric",
+      "label": null
+    },
+    {
+      "tail": "charmfully egocentric",
+      "head": "Marguerite",
+      "label": null
+    },
+    {
+      "tail": "Marguerite",
+      "head": "andirin ouachitite",
+      "label": null
+    },
+    {
+      "tail": "andirin ouachitite",
+      "head": "extramorainic",
+      "label": "Yes"
+    },
+    {
+      "tail": "andirin ouachitite",
+      "head": "Parietales",
+      "label": "Yes"
+    },
+    {
+      "tail": "extramorainic",
+      "head": "proximobuccal",
+      "label": null
+    },
+    {
+      "tail": "proximobuccal",
+      "head": "annihilable lectorial",
+      "label": null
+    },
+    {
+      "tail": "annihilable lectorial",
+      "head": "bimbil",
+      "label": "NO"
+    },
+    {
+      "tail": "annihilable lectorial",
+      "head": "disemploy",
+      "label": "NO"
+    },
+    {
+      "tail": "bimbil",
+      "head": "disemploy",
+      "label": null
+    },
+    {
+      "tail": "disemploy",
+      "head": "drawhead",
+      "label": null
+    },
+    {
+      "tail": "drawhead",
+      "head": "stonish",
+      "label": null
+    },
+    {
+      "tail": "stonish",
+      "head": "unscreenably",
+      "label": "no"
+    },
+    {
+      "tail": "stonish",
+      "head": "andirin ouachitite",
+      "label": "no"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "starts new case",
+      "id": "starts new case",
+      "class": "event"
+    },
+    {
+      "text": "interviewing patients",
+      "id": "interviewing patients",
+      "class": "task"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "filling cheque",
+      "id": "filling cheque",
+      "class": "task"
+    },
+    {
+      "text": "forward expertise to QA",
+      "id": "forward expertise to QA",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "ask external experts",
+      "id": "ask external experts",
+      "class": "task"
+    },
+    {
+      "text": "receive Expertise",
+      "id": "receive Expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "Experts",
+      "id": "Experts",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "Send to expert",
+      "id": "Send to expert",
+      "class": "task"
+    },
+    {
+      "text": "End cases",
+      "id": "End cases",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "intime",
+      "id": "intime",
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_3",
+      "head": "End cases",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Send to expert",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "filling cheque",
+      "head": "Send to expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "filling cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise to QA",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "forward expertise to QA",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive Expertise",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "receive Expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "intime",
+      "head": "ask external experts",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "intime",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external experts",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "ask external experts",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interviewing patients",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interviewing patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "starts new case",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "managing director",
+        "quality assurance departement"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "filling cheque",
+        "forward expertise to QA",
+        "ask external experts",
+        "receive Expertise",
+        "Experts",
+        "parallelGateway_3",
+        "Send to expert",
+        "End cases",
+        "eventBasedGateway_1",
+        "intime",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance departement",
+      "nodes": [
+        "starts new case",
+        "interviewing patients",
+        "create report",
+        "parallelGateway_1",
+        "parallelGateway_2"
+      ],
+      "class": "lane"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "geomorphological",
+      "id": "geomorphological",
+      "class": "node",
+      "bbox": [
+        466,
+        333,
+        588,
+        391
+      ]
+    },
+    {
+      "text": "nonviscid",
+      "id": "nonviscid",
+      "class": "node",
+      "bbox": [
+        215,
+        174,
+        340,
+        222
+      ]
+    },
+    {
+      "text": "Patarin Porkopolis",
+      "id": "Patarin Porkopolis",
+      "class": "node",
+      "bbox": [
+        203,
+        246,
+        352,
+        318
+      ]
+    },
+    {
+      "text": "cardiasthenia",
+      "id": "cardiasthenia",
+      "class": "node",
+      "bbox": [
+        194,
+        342,
+        361,
+        390
+      ]
+    },
+    {
+      "text": "Vaucheria polyprotodont legiti",
+      "id": "Vaucheria polyprotodont legiti",
+      "class": "node",
+      "bbox": [
+        225,
+        414,
+        329,
+        462
+      ]
+    },
+    {
+      "text": "phonogramically",
+      "id": "phonogramically",
+      "class": "node",
+      "bbox": [
+        5,
+        402,
+        144,
+        468
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "geomorphological",
+      "head": "nonviscid",
+      "label": "0.7* x = 0.114",
+      "class": "unidirectional",
+      "bbox": [
+        335,
+        206,
+        511,
+        334
+      ]
+    },
+    {
+      "tail": "geomorphological",
+      "head": "Patarin Porkopolis",
+      "label": "0.85 x = 0.334",
+      "class": "unidirectional",
+      "bbox": [
+        349,
+        289,
+        489,
+        339
+      ]
+    },
+    {
+      "tail": "geomorphological",
+      "head": "cardiasthenia",
+      "label": "0.34* H = 0.843",
+      "class": "unidirectional",
+      "bbox": [
+        361,
+        358,
+        466,
+        370
+      ]
+    },
+    {
+      "tail": "Vaucheria polyprotodont legiti",
+      "head": "phonogramically",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        145,
+        432,
+        225,
+        444
+      ]
+    },
+    {
+      "tail": "geomorphological",
+      "head": "Vaucheria polyprotodont legiti",
+      "label": null,
+      "class": "bidirectional",
+      "bbox": [
+        329,
+        381,
+        463,
+        424
+      ]
+    }
+  ]
+}

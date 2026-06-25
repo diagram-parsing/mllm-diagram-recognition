@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "text": "scapose",
+      "id": "scapose",
+      "class": "circle",
+      "bbox": [
+        19,
+        8,
+        108,
+        98
+      ]
+    },
+    {
+      "text": "dengue",
+      "id": "dengue",
+      "class": "box",
+      "bbox": [
+        28,
+        124,
+        100,
+        172
+      ]
+    },
+    {
+      "text": "baseness Canton",
+      "id": "baseness Canton",
+      "class": "diamond",
+      "bbox": [
+        5,
+        183,
+        122,
+        256
+      ]
+    },
+    {
+      "text": "haulback",
+      "id": "haulback",
+      "class": "hexagon",
+      "bbox": [
+        26,
+        285,
+        101,
+        345
+      ]
+    },
+    {
+      "text": "antiedemic",
+      "id": "antiedemic",
+      "class": "document",
+      "bbox": [
+        18,
+        362,
+        110,
+        410
+      ]
+    },
+    {
+      "text": "gobelin",
+      "id": "gobelin",
+      "class": "document",
+      "bbox": [
+        208,
+        5,
+        300,
+        53
+      ]
+    },
+    {
+      "text": "deaden epiplectic",
+      "id": "deaden epiplectic",
+      "class": "diamond",
+      "bbox": [
+        191,
+        88,
+        312,
+        161
+      ]
+    },
+    {
+      "text": "ribble",
+      "id": "ribble",
+      "class": "parallelogram",
+      "bbox": [
+        200,
+        196,
+        307,
+        244
+      ]
+    },
+    {
+      "text": "enswathe",
+      "id": "enswathe",
+      "class": "document",
+      "bbox": [
+        208,
+        291,
+        300,
+        339
+      ]
+    },
+    {
+      "text": "zymogenesis",
+      "id": "zymogenesis",
+      "class": "circle",
+      "bbox": [
+        200,
+        356,
+        308,
+        459
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "scapose",
+      "head": "dengue",
+      "label": null,
+      "bbox": [
+        59,
+        98,
+        68,
+        123
+      ]
+    },
+    {
+      "tail": "dengue",
+      "head": "baseness Canton",
+      "label": null,
+      "bbox": [
+        47,
+        173,
+        56,
+        188
+      ]
+    },
+    {
+      "tail": "baseness Canton",
+      "head": "haulback",
+      "label": "no",
+      "bbox": [
+        59,
+        257,
+        68,
+        283
+      ]
+    },
+    {
+      "tail": "baseness Canton",
+      "head": "dengue",
+      "label": "no",
+      "bbox": [
+        71,
+        174,
+        80,
+        190
+      ]
+    },
+    {
+      "tail": "haulback",
+      "head": "antiedemic",
+      "label": null,
+      "bbox": [
+        59,
+        345,
+        68,
+        361
+      ]
+    },
+    {
+      "tail": "antiedemic",
+      "head": "gobelin",
+      "label": null,
+      "bbox": [
+        109,
+        27,
+        207,
+        379
+      ]
+    },
+    {
+      "tail": "gobelin",
+      "head": "deaden epiplectic",
+      "label": null,
+      "bbox": [
+        249,
+        53,
+        259,
+        86
+      ]
+    },
+    {
+      "tail": "deaden epiplectic",
+      "head": "ribble",
+      "label": "yes",
+      "bbox": [
+        249,
+        161,
+        259,
+        194
+      ]
+    },
+    {
+      "tail": "deaden epiplectic",
+      "head": "antiedemic",
+      "label": "yes",
+      "bbox": [
+        111,
+        144,
+        223,
+        399
+      ]
+    },
+    {
+      "tail": "ribble",
+      "head": "enswathe",
+      "label": null,
+      "bbox": [
+        249,
+        244,
+        259,
+        290
+      ]
+    },
+    {
+      "tail": "enswathe",
+      "head": "zymogenesis",
+      "label": null,
+      "bbox": [
+        249,
+        338,
+        259,
+        354
+      ]
+    }
+  ]
+}

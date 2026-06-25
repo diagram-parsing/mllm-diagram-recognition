@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "overlength",
+      "id": "overlength",
+      "class": "ellipse"
+    },
+    {
+      "text": "madrigal Saltigradae irresolut",
+      "id": "madrigal Saltigradae irresolut",
+      "class": "diamond"
+    },
+    {
+      "text": "thyrsus",
+      "id": "thyrsus",
+      "class": "diamond"
+    },
+    {
+      "text": "menologium",
+      "id": "menologium",
+      "class": "hexagon"
+    },
+    {
+      "text": "microsporiasis",
+      "id": "microsporiasis",
+      "class": "diamond"
+    },
+    {
+      "text": "fluoborate",
+      "id": "fluoborate",
+      "class": "document"
+    },
+    {
+      "text": "gamene Sphaeropsidaceae",
+      "id": "gamene Sphaeropsidaceae",
+      "class": "document"
+    },
+    {
+      "text": "Litopterna rubrisher",
+      "id": "Litopterna rubrisher",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "overlength",
+      "head": "madrigal Saltigradae irresolut",
+      "label": null
+    },
+    {
+      "tail": "madrigal Saltigradae irresolut",
+      "head": "thyrsus",
+      "label": "yes"
+    },
+    {
+      "tail": "madrigal Saltigradae irresolut",
+      "head": "menologium",
+      "label": "yes"
+    },
+    {
+      "tail": "thyrsus",
+      "head": "menologium",
+      "label": "Yes"
+    },
+    {
+      "tail": "thyrsus",
+      "head": "microsporiasis",
+      "label": "Yes"
+    },
+    {
+      "tail": "menologium",
+      "head": "microsporiasis",
+      "label": null
+    },
+    {
+      "tail": "microsporiasis",
+      "head": "fluoborate",
+      "label": "YES"
+    },
+    {
+      "tail": "microsporiasis",
+      "head": "menologium",
+      "label": "YES"
+    },
+    {
+      "tail": "fluoborate",
+      "head": "gamene Sphaeropsidaceae",
+      "label": null
+    },
+    {
+      "tail": "gamene Sphaeropsidaceae",
+      "head": "Litopterna rubrisher",
+      "label": null
+    }
+  ]
+}

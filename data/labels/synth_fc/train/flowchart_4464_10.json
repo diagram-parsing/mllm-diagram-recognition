@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "slightingly",
+      "id": "slightingly",
+      "class": "oval"
+    },
+    {
+      "text": "Melanoplus",
+      "id": "Melanoplus",
+      "class": "diamond"
+    },
+    {
+      "text": "machinism",
+      "id": "machinism",
+      "class": "diamond"
+    },
+    {
+      "text": "undersomething",
+      "id": "undersomething",
+      "class": "box"
+    },
+    {
+      "text": "neurism",
+      "id": "neurism",
+      "class": "box"
+    },
+    {
+      "text": "anachueta pythogenous",
+      "id": "anachueta pythogenous",
+      "class": "box"
+    },
+    {
+      "text": "undervest",
+      "id": "undervest",
+      "class": "hexagon"
+    },
+    {
+      "text": "pavan",
+      "id": "pavan",
+      "class": "diamond"
+    },
+    {
+      "text": "oversaid",
+      "id": "oversaid",
+      "class": "diamond"
+    },
+    {
+      "text": "elaphurine",
+      "id": "elaphurine",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "slightingly",
+      "head": "Melanoplus",
+      "label": null
+    },
+    {
+      "tail": "Melanoplus",
+      "head": "machinism",
+      "label": "No"
+    },
+    {
+      "tail": "Melanoplus",
+      "head": "slightingly",
+      "label": "No"
+    },
+    {
+      "tail": "machinism",
+      "head": "undersomething",
+      "label": "Yes"
+    },
+    {
+      "tail": "machinism",
+      "head": "neurism",
+      "label": "Yes"
+    },
+    {
+      "tail": "undersomething",
+      "head": "anachueta pythogenous",
+      "label": null
+    },
+    {
+      "tail": "anachueta pythogenous",
+      "head": "undervest",
+      "label": null
+    },
+    {
+      "tail": "undervest",
+      "head": "pavan",
+      "label": null
+    },
+    {
+      "tail": "pavan",
+      "head": "oversaid",
+      "label": "YES"
+    },
+    {
+      "tail": "pavan",
+      "head": "undervest",
+      "label": "YES"
+    },
+    {
+      "tail": "oversaid",
+      "head": "neurism",
+      "label": "NO"
+    },
+    {
+      "tail": "oversaid",
+      "head": "elaphurine",
+      "label": "NO"
+    },
+    {
+      "tail": "neurism",
+      "head": "elaphurine",
+      "label": null
+    }
+  ]
+}

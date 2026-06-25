@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "text": "meteyard",
+      "id": "meteyard",
+      "class": "node",
+      "bbox": [
+        27,
+        65,
+        176,
+        113
+      ]
+    },
+    {
+      "text": "summarist bahiaite photoperime",
+      "id": "summarist bahiaite photoperime",
+      "class": "node",
+      "bbox": [
+        334,
+        135,
+        542,
+        190
+      ]
+    },
+    {
+      "text": "granduncle",
+      "id": "granduncle",
+      "class": "node",
+      "bbox": [
+        372,
+        215,
+        503,
+        263
+      ]
+    },
+    {
+      "text": "penfieldite",
+      "id": "penfieldite",
+      "class": "node",
+      "bbox": [
+        354,
+        63,
+        521,
+        111
+      ]
+    },
+    {
+      "text": "Siam",
+      "id": "Siam",
+      "class": "node",
+      "bbox": [
+        645,
+        63,
+        734,
+        111
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "meteyard",
+      "head": "summarist bahiaite photoperime",
+      "label": "-0.19",
+      "class": "unidirectional",
+      "bbox": [
+        150,
+        108,
+        333,
+        149
+      ]
+    },
+    {
+      "tail": "meteyard",
+      "head": "granduncle",
+      "label": "0.759",
+      "class": "unidirectional",
+      "bbox": [
+        127,
+        112,
+        372,
+        224
+      ]
+    },
+    {
+      "tail": "penfieldite",
+      "head": "Siam",
+      "label": "0.41",
+      "class": "bidirectional",
+      "bbox": [
+        532,
+        83,
+        644,
+        90
+      ]
+    },
+    {
+      "tail": "meteyard",
+      "head": "penfieldite",
+      "label": "0.82** a = 0.258",
+      "class": "unidirectional",
+      "bbox": [
+        176,
+        84,
+        354,
+        91
+      ]
+    }
+  ]
+}

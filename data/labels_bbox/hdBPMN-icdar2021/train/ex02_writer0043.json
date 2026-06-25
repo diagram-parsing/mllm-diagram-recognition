@@ -1,0 +1,381 @@
+{
+  "nodes": [
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        554,
+        500,
+        631,
+        564
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "rec.",
+      "id": "rec.",
+      "bbox": [
+        1397,
+        599,
+        1426,
+        655
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "cases DB",
+      "id": "cases DB",
+      "bbox": [
+        1036,
+        321,
+        1125,
+        408
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        718,
+        496,
+        787,
+        573
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "register",
+      "id": "register",
+      "bbox": [
+        806,
+        408,
+        949,
+        496
+      ],
+      "class": "task"
+    },
+    {
+      "text": "examine",
+      "id": "examine",
+      "bbox": [
+        798,
+        572,
+        966,
+        656
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        969,
+        496,
+        1025,
+        575
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "writes recommendation",
+      "id": "writes recommendation",
+      "bbox": [
+        1117,
+        491,
+        1426,
+        578
+      ],
+      "class": "task"
+    },
+    {
+      "text": "checks recommendation",
+      "id": "checks recommendation",
+      "bbox": [
+        1192,
+        774,
+        1442,
+        869
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1098,
+        782,
+        1163,
+        861
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "rec. [not ok]",
+      "id": "rec. [not ok]",
+      "bbox": [
+        1178,
+        605,
+        1222,
+        661
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "handling process proceeded",
+      "id": "handling process proceeded",
+      "bbox": [
+        831,
+        785,
+        915,
+        861
+      ],
+      "class": "event"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        632,
+        327,
+        682,
+        408
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        631,
+        519,
+        720,
+        554
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "register",
+      "class": "sequenceFlow",
+      "bbox": [
+        750,
+        453,
+        807,
+        500
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "examine",
+      "class": "sequenceFlow",
+      "bbox": [
+        753,
+        572,
+        799,
+        612
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        965,
+        573,
+        1000,
+        612
+      ],
+      "label": null
+    },
+    {
+      "tail": "register",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        949,
+        453,
+        998,
+        499
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "writes recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1023,
+        515,
+        1119,
+        550
+      ],
+      "label": null
+    },
+    {
+      "tail": "writes recommendation",
+      "head": "checks recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1426,
+        535,
+        1523,
+        823
+      ],
+      "label": null
+    },
+    {
+      "tail": "checks recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1161,
+        805,
+        1196,
+        840
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "writes recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1112,
+        578,
+        1147,
+        791
+      ],
+      "label": "not OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "handling process proceeded",
+      "class": "sequenceFlow",
+      "bbox": [
+        915,
+        805,
+        1100,
+        840
+      ],
+      "label": "OK"
+    },
+    {
+      "tail": "claim received",
+      "head": "claim",
+      "class": "dataAssociation",
+      "bbox": [
+        620,
+        408,
+        670,
+        507
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register",
+      "class": "dataAssociation",
+      "bbox": [
+        682,
+        360,
+        879,
+        410
+      ],
+      "label": null
+    },
+    {
+      "tail": "register",
+      "head": "cases DB",
+      "class": "dataAssociation",
+      "bbox": [
+        914,
+        365,
+        1038,
+        410
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        576,
+        217,
+        611,
+        496
+      ],
+      "label": "insurance claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "bbox": [
+        345,
+        281,
+        1648,
+        917
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "claim received",
+        "rec.",
+        "cases DB",
+        "parallelGateway_1",
+        "register",
+        "examine",
+        "parallelGateway_2",
+        "writes recommendation",
+        "rec. [not ok]",
+        "claim"
+      ],
+      "bbox": [
+        392,
+        281,
+        1648,
+        694
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "checks recommendation",
+        "exclusiveGateway_1",
+        "handling process proceeded"
+      ],
+      "bbox": [
+        392,
+        694,
+        1648,
+        917
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        345,
+        90,
+        1648,
+        217
+      ],
+      "class": "pool"
+    }
+  ]
+}

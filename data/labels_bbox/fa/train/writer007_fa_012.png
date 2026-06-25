@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "text": "I",
+      "id": "I",
+      "class": "state",
+      "bbox": [
+        316,
+        386,
+        446,
+        517
+      ]
+    },
+    {
+      "text": "III",
+      "id": "III",
+      "class": "state",
+      "bbox": [
+        496,
+        624,
+        619,
+        779
+      ]
+    },
+    {
+      "text": "II",
+      "id": "II",
+      "class": "state",
+      "bbox": [
+        847,
+        562,
+        950,
+        686
+      ]
+    },
+    {
+      "text": "V",
+      "id": "V",
+      "class": "final state",
+      "bbox": [
+        983,
+        331,
+        1117,
+        445
+      ]
+    },
+    {
+      "text": "IV",
+      "id": "IV",
+      "class": "final state",
+      "bbox": [
+        143,
+        5,
+        331,
+        161
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "IV",
+      "head": "I",
+      "bbox": [
+        246,
+        147,
+        342,
+        394
+      ],
+      "label": "a"
+    },
+    {
+      "tail": "III",
+      "head": "IV",
+      "bbox": [
+        157,
+        148,
+        498,
+        760
+      ],
+      "label": "c"
+    },
+    {
+      "tail": null,
+      "head": "IV",
+      "bbox": [
+        5,
+        74,
+        140,
+        113
+      ],
+      "label": null
+    },
+    {
+      "tail": "IV",
+      "head": "V",
+      "bbox": [
+        336,
+        66,
+        981,
+        332
+      ],
+      "label": "b,c"
+    },
+    {
+      "tail": "V",
+      "head": "V",
+      "bbox": [
+        1044,
+        297,
+        1177,
+        409
+      ],
+      "label": "a,b,c"
+    },
+    {
+      "tail": "I",
+      "head": "V",
+      "bbox": [
+        418,
+        349,
+        978,
+        430
+      ],
+      "label": "a,c"
+    },
+    {
+      "tail": "I",
+      "head": "III",
+      "bbox": [
+        408,
+        496,
+        518,
+        644
+      ],
+      "label": "b"
+    },
+    {
+      "tail": "III",
+      "head": "I",
+      "bbox": [
+        377,
+        510,
+        493,
+        693
+      ],
+      "label": "a"
+    },
+    {
+      "tail": "III",
+      "head": "II",
+      "bbox": [
+        610,
+        629,
+        853,
+        720
+      ],
+      "label": "b"
+    },
+    {
+      "tail": "II",
+      "head": "II",
+      "bbox": [
+        848,
+        500,
+        946,
+        585
+      ],
+      "label": "b"
+    },
+    {
+      "tail": "II",
+      "head": "V",
+      "bbox": [
+        943,
+        448,
+        1053,
+        580
+      ],
+      "label": "a,c"
+    }
+  ]
+}

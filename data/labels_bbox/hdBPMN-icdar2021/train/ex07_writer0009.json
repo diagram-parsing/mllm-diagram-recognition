@@ -1,0 +1,381 @@
+{
+  "nodes": [
+    {
+      "text": "doctor chosen",
+      "id": "doctor chosen",
+      "bbox": [
+        235,
+        187,
+        318,
+        270
+      ],
+      "class": "event"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        446,
+        187,
+        649,
+        270
+      ],
+      "class": "task"
+    },
+    {
+      "text": "report finished",
+      "id": "report finished",
+      "bbox": [
+        1376,
+        155,
+        1461,
+        227
+      ],
+      "class": "event"
+    },
+    {
+      "text": "file a cheque",
+      "id": "file a cheque",
+      "bbox": [
+        1014,
+        631,
+        1279,
+        710
+      ],
+      "class": "task"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "bbox": [
+        733,
+        176,
+        1027,
+        260
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        224,
+        398,
+        316,
+        472
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "ask expert to review doctor\u00c2\u00b4s work",
+      "id": "ask expert to review doctor\u00c2\u00b4s work",
+      "bbox": [
+        224,
+        558,
+        447,
+        688
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        529,
+        552,
+        617,
+        636
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "choose other expert",
+      "id": "choose other expert",
+      "bbox": [
+        617,
+        422,
+        830,
+        507
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forward to QA",
+      "id": "forward to QA",
+      "bbox": [
+        841,
+        632,
+        927,
+        713
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "send cheque to expert",
+      "id": "send cheque to expert",
+      "bbox": [
+        1372,
+        620,
+        1481,
+        711
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "receive expertise",
+      "id": "receive expertise",
+      "bbox": [
+        622,
+        640,
+        704,
+        726
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1109,
+        165,
+        1323,
+        240
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "file a cheque",
+      "head": "send cheque to expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1279,
+        647,
+        1373,
+        679
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward to QA",
+      "head": "file a cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        927,
+        655,
+        1015,
+        687
+      ],
+      "label": null
+    },
+    {
+      "tail": "receive expertise",
+      "head": "forward to QA",
+      "class": "sequenceFlow",
+      "bbox": [
+        704,
+        668,
+        844,
+        700
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "receive expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        575,
+        635,
+        623,
+        684
+      ],
+      "label": "response in time"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "choose other expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        575,
+        476,
+        618,
+        554
+      ],
+      "label": "no response in time"
+    },
+    {
+      "tail": "ask expert to review doctor\u00c2\u00b4s work",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        447,
+        583,
+        532,
+        615
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask expert to review doctor\u00c2\u00b4s work",
+      "class": "sequenceFlow",
+      "bbox": [
+        255,
+        472,
+        287,
+        559
+      ],
+      "label": null
+    },
+    {
+      "tail": "doctor chosen",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        255,
+        270,
+        287,
+        399
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "report finished",
+      "class": "sequenceFlow",
+      "bbox": [
+        1323,
+        182,
+        1377,
+        214
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "bbox": [
+        649,
+        214,
+        734,
+        246
+      ],
+      "label": null
+    },
+    {
+      "tail": "doctor chosen",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        318,
+        213,
+        447,
+        245
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1027,
+        198,
+        1110,
+        230
+      ],
+      "label": null
+    },
+    {
+      "tail": "expert",
+      "head": "receive expertise",
+      "class": "messageFlow",
+      "bbox": [
+        648,
+        724,
+        680,
+        860
+      ],
+      "label": null
+    },
+    {
+      "tail": "send cheque to expert",
+      "head": "expert",
+      "class": "messageFlow",
+      "bbox": [
+        1277,
+        710,
+        1395,
+        860
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "managing director",
+        "quality assurance"
+      ],
+      "bbox": [
+        86,
+        133,
+        1556,
+        761
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "file a cheque",
+        "exclusiveGateway_1",
+        "ask expert to review doctor\u00c2\u00b4s work",
+        "exclusiveGateway_2",
+        "choose other expert",
+        "forward to QA",
+        "send cheque to expert",
+        "receive expertise"
+      ],
+      "bbox": [
+        118,
+        379,
+        1556,
+        761
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "quality assurance",
+      "nodes": [
+        "doctor chosen",
+        "interview patients",
+        "report finished",
+        "file results",
+        "create report"
+      ],
+      "bbox": [
+        118,
+        133,
+        1556,
+        380
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "expert",
+      "nodes": [],
+      "bbox": [
+        532,
+        859,
+        1355,
+        945
+      ],
+      "class": "pool"
+    }
+  ]
+}

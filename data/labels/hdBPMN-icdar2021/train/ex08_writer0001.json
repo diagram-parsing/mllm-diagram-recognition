@@ -1,0 +1,293 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "task_1",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_3",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_4",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_5",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_6",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_2",
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_3",
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "task_7",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_8",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_9",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "subProcess_1",
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "task_10",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "task_11",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_4",
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "task_12",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_13",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_3",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_5",
+      "class": "timerEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "task_6",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_5",
+      "head": "task_6",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_4",
+      "head": "task_5",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_3",
+      "head": "task_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "timerEvent_2",
+      "head": "task_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "timerEvent_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "timerEvent_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_11",
+      "head": "event_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "task_11",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "subProcess_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_10",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_10",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "subProcess_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_8",
+      "head": "task_9",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_7",
+      "head": "task_8",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "timerEvent_3",
+      "head": "task_7",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_9",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "timerEvent_5",
+      "head": "task_13",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_13",
+      "head": "event_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_12",
+      "head": "timerEvent_5",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "timerEvent_4",
+      "head": "task_12",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_8",
+      "head": "task_1",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "task_3",
+      "head": "task_9",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "task_11",
+      "head": "task_4",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "secretary",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "teacher",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "students",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "q1",
+      "id": "q1",
+      "class": "state"
+    },
+    {
+      "text": "q3",
+      "id": "q3",
+      "class": "state"
+    },
+    {
+      "text": "q0",
+      "id": "q0",
+      "class": "state"
+    },
+    {
+      "text": "q2",
+      "id": "q2",
+      "class": "state"
+    },
+    {
+      "text": "q5",
+      "id": "q5",
+      "class": "final state"
+    },
+    {
+      "text": "q4",
+      "id": "q4",
+      "class": "state"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "q1",
+      "head": "q0",
+      "label": "b"
+    },
+    {
+      "tail": "q0",
+      "head": "q1",
+      "label": "b"
+    },
+    {
+      "tail": "q1",
+      "head": "q3",
+      "label": "a"
+    },
+    {
+      "tail": null,
+      "head": "q0",
+      "label": null
+    },
+    {
+      "tail": "q0",
+      "head": "q2",
+      "label": "a"
+    },
+    {
+      "tail": "q3",
+      "head": "q2",
+      "label": "b"
+    },
+    {
+      "tail": "q3",
+      "head": "q5",
+      "label": "a"
+    },
+    {
+      "tail": "q5",
+      "head": "q5",
+      "label": "a"
+    },
+    {
+      "tail": "q4",
+      "head": "q4",
+      "label": "a"
+    },
+    {
+      "tail": "q4",
+      "head": "q5",
+      "label": "b"
+    },
+    {
+      "tail": "q4",
+      "head": "q5",
+      "label": "b"
+    },
+    {
+      "tail": "q2",
+      "head": "q4",
+      "label": "a"
+    },
+    {
+      "tail": "q2",
+      "head": "q3",
+      "label": "b"
+    }
+  ]
+}

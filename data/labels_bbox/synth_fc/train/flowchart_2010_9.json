@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "text": "tonograph",
+      "id": "tonograph",
+      "class": "ellipse",
+      "bbox": [
+        37,
+        5,
+        109,
+        57
+      ]
+    },
+    {
+      "text": "whitter",
+      "id": "whitter",
+      "class": "parallelogram",
+      "bbox": [
+        12,
+        93,
+        134,
+        141
+      ]
+    },
+    {
+      "text": "loathful citizen",
+      "id": "loathful citizen",
+      "class": "diamond",
+      "bbox": [
+        19,
+        188,
+        128,
+        262
+      ]
+    },
+    {
+      "text": "Rusty",
+      "id": "Rusty",
+      "class": "parallelogram",
+      "bbox": [
+        19,
+        287,
+        128,
+        335
+      ]
+    },
+    {
+      "text": "thermalgesia snaggletooth",
+      "id": "thermalgesia snaggletooth",
+      "class": "hexagon",
+      "bbox": [
+        5,
+        367,
+        141,
+        427
+      ]
+    },
+    {
+      "text": "microtomical",
+      "id": "microtomical",
+      "class": "box",
+      "bbox": [
+        27,
+        438,
+        120,
+        481
+      ]
+    },
+    {
+      "text": "unguent",
+      "id": "unguent",
+      "class": "hexagon",
+      "bbox": [
+        193,
+        115,
+        299,
+        163
+      ]
+    },
+    {
+      "text": "unannexedness",
+      "id": "unannexedness",
+      "class": "document",
+      "bbox": [
+        186,
+        194,
+        305,
+        256
+      ]
+    },
+    {
+      "text": "teca absolvatory pervadingness",
+      "id": "teca absolvatory pervadingness",
+      "class": "oval",
+      "bbox": [
+        180,
+        285,
+        306,
+        337
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tonograph",
+      "head": "whitter",
+      "label": null,
+      "bbox": [
+        69,
+        58,
+        78,
+        92
+      ]
+    },
+    {
+      "tail": "whitter",
+      "head": "loathful citizen",
+      "label": null,
+      "bbox": [
+        69,
+        142,
+        78,
+        186
+      ]
+    },
+    {
+      "tail": "loathful citizen",
+      "head": "Rusty",
+      "label": "YES",
+      "bbox": [
+        69,
+        262,
+        78,
+        286
+      ]
+    },
+    {
+      "tail": "loathful citizen",
+      "head": "thermalgesia snaggletooth",
+      "label": "YES",
+      "bbox": [
+        127,
+        226,
+        156,
+        403
+      ]
+    },
+    {
+      "tail": "Rusty",
+      "head": "thermalgesia snaggletooth",
+      "label": null,
+      "bbox": [
+        69,
+        336,
+        78,
+        366
+      ]
+    },
+    {
+      "tail": "thermalgesia snaggletooth",
+      "head": "microtomical",
+      "label": null,
+      "bbox": [
+        69,
+        423,
+        78,
+        436
+      ]
+    },
+    {
+      "tail": "microtomical",
+      "head": "unguent",
+      "label": null,
+      "bbox": [
+        120,
+        148,
+        206,
+        462
+      ]
+    },
+    {
+      "tail": "unguent",
+      "head": "unannexedness",
+      "label": null,
+      "bbox": [
+        241,
+        163,
+        250,
+        193
+      ]
+    },
+    {
+      "tail": "unannexedness",
+      "head": "teca absolvatory pervadingness",
+      "label": null,
+      "bbox": [
+        241,
+        256,
+        250,
+        283
+      ]
+    }
+  ]
+}

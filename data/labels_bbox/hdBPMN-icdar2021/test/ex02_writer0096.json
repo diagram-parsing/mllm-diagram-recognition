@@ -1,0 +1,597 @@
+{
+  "nodes": [
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        322,
+        314,
+        431,
+        378
+      ],
+      "class": "task"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "bbox": [
+        469,
+        314,
+        589,
+        382
+      ],
+      "class": "task"
+    },
+    {
+      "text": "writes settlement recommendation",
+      "id": "writes settlement recommendation",
+      "bbox": [
+        738,
+        310,
+        961,
+        384
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check settlement",
+      "id": "check settlement",
+      "bbox": [
+        733,
+        472,
+        899,
+        549
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim approved",
+      "id": "claim approved",
+      "bbox": [
+        910,
+        569,
+        1038,
+        639
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "bbox": [
+        557,
+        569,
+        671,
+        642
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        283,
+        383,
+        318,
+        422
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "bbox": [
+        1026,
+        308,
+        1070,
+        358
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "DB",
+      "id": "DB",
+      "bbox": [
+        412,
+        396,
+        444,
+        428
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "claim [examined]",
+      "id": "claim [examined]",
+      "bbox": [
+        472,
+        238,
+        501,
+        276
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        246,
+        320,
+        288,
+        358
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        817,
+        574,
+        861,
+        618
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "settlement recommendation [approved]",
+      "id": "settlement recommendation [approved]",
+      "bbox": [
+        1000,
+        471,
+        1027,
+        516
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        652,
+        324,
+        687,
+        365
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "settlement recommendation [rejected]",
+      "id": "settlement recommendation [rejected]",
+      "bbox": [
+        411,
+        544,
+        459,
+        600
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "messageEvent_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        288,
+        324,
+        323,
+        349
+      ],
+      "kps": [
+        288.671,
+        336.333,
+        2.0,
+        322.844,
+        336.333,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        431,
+        328,
+        470,
+        353
+      ],
+      "kps": [
+        431.657,
+        340.829,
+        2.0,
+        469.427,
+        340.829,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        589,
+        334,
+        654,
+        359
+      ],
+      "kps": [
+        589.931,
+        346.225,
+        2.0,
+        653.781,
+        346.225,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "writes settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        686,
+        334,
+        739,
+        359
+      ],
+      "kps": [
+        686.155,
+        346.225,
+        2.0,
+        738.314,
+        346.225,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "writes settlement recommendation",
+      "head": "check settlement",
+      "class": "sequenceFlow",
+      "bbox": [
+        822,
+        384,
+        847,
+        473
+      ],
+      "kps": [
+        834.537,
+        384.894,
+        2.0,
+        834.537,
+        472.125,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "claim approved",
+      "class": "sequenceFlow",
+      "bbox": [
+        861,
+        584,
+        910,
+        610
+      ],
+      "kps": [
+        861.516,
+        597.126,
+        2.0,
+        910.077,
+        597.126,
+        2.0
+      ],
+      "label": "ok"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "claim rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        670,
+        584,
+        819,
+        610
+      ],
+      "kps": [
+        818.35,
+        597.126,
+        2.0,
+        670.867,
+        597.126,
+        2.0
+      ],
+      "label": "not ok"
+    },
+    {
+      "tail": "claim rejected",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        607,
+        362,
+        669,
+        570
+      ],
+      "kps": [
+        607.018,
+        569.248,
+        2.0,
+        668.169,
+        362.412,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check settlement",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        825,
+        549,
+        850,
+        578
+      ],
+      "kps": [
+        837.235,
+        549.464,
+        2.0,
+        837.235,
+        577.341,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        319,
+        378,
+        350,
+        404
+      ],
+      "kps": [
+        319.246,
+        403.779,
+        2.0,
+        349.822,
+        378.599,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "DB",
+      "class": "dataAssociation",
+      "bbox": [
+        382,
+        378,
+        413,
+        413
+      ],
+      "kps": [
+        382.196,
+        378.599,
+        2.0,
+        412.772,
+        412.772,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "DB",
+      "head": "examine claim",
+      "class": "dataAssociation",
+      "bbox": [
+        444,
+        381,
+        496,
+        406
+      ],
+      "kps": [
+        444.247,
+        405.578,
+        2.0,
+        495.506,
+        382.196,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "claim [examined]",
+      "class": "dataAssociation",
+      "bbox": [
+        499,
+        273,
+        524,
+        315
+      ],
+      "kps": [
+        519.787,
+        314.75,
+        2.0,
+        503.6,
+        273.383,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "writes settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        961,
+        327,
+        1026,
+        352
+      ],
+      "kps": [
+        961.336,
+        341.729,
+        2.0,
+        1026.085,
+        338.131,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check settlement",
+      "class": "dataAssociation",
+      "bbox": [
+        899,
+        358,
+        1028,
+        482
+      ],
+      "kps": [
+        1027.884,
+        358.815,
+        2.0,
+        899.286,
+        482.017,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim approved",
+      "head": "settlement recommendation [approved]",
+      "class": "dataAssociation",
+      "bbox": [
+        977,
+        516,
+        1014,
+        570
+      ],
+      "kps": [
+        977.524,
+        569.248,
+        2.0,
+        1013.495,
+        516.19,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim rejected",
+      "head": "settlement recommendation [rejected]",
+      "class": "dataAssociation",
+      "bbox": [
+        462,
+        562,
+        558,
+        589
+      ],
+      "kps": [
+        557.557,
+        589.032,
+        2.0,
+        462.233,
+        562.054,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        255,
+        125,
+        281,
+        319
+      ],
+      "kps": [
+        267.987,
+        125.001,
+        2.0,
+        267.987,
+        318.347,
+        2.0
+      ],
+      "label": "claims"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claim officer",
+        "senior claim officer"
+      ],
+      "bbox": [
+        154,
+        214,
+        1136,
+        679
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "register claim",
+        "examine claim",
+        "writes settlement recommendation",
+        "claim",
+        "settlement recommendation",
+        "DB",
+        "claim [examined]",
+        "messageEvent_1",
+        "exclusiveGateway_2"
+      ],
+      "bbox": [
+        192,
+        214,
+        1136,
+        446
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claim officer",
+      "nodes": [
+        "check settlement",
+        "claim approved",
+        "claim rejected",
+        "exclusiveGateway_1",
+        "settlement recommendation [approved]",
+        "settlement recommendation [rejected]"
+      ],
+      "bbox": [
+        192,
+        446,
+        1136,
+        679
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        154,
+        57,
+        1111,
+        125
+      ],
+      "class": "pool"
+    }
+  ]
+}

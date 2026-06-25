@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "herbarist preanterior",
+      "id": "herbarist preanterior",
+      "class": "oval",
+      "bbox": [
+        53,
+        5,
+        151,
+        57
+      ]
+    },
+    {
+      "text": "breed harplike pappi",
+      "id": "breed harplike pappi",
+      "class": "document",
+      "bbox": [
+        51,
+        98,
+        152,
+        160
+      ]
+    },
+    {
+      "text": "stonesmitch adephagous kittenh",
+      "id": "stonesmitch adephagous kittenh",
+      "class": "diamond",
+      "bbox": [
+        5,
+        190,
+        198,
+        263
+      ]
+    },
+    {
+      "text": "unmischievous hostageship",
+      "id": "unmischievous hostageship",
+      "class": "diamond",
+      "bbox": [
+        15,
+        288,
+        188,
+        361
+      ]
+    },
+    {
+      "text": "boodleize penalize",
+      "id": "boodleize penalize",
+      "class": "document",
+      "bbox": [
+        247,
+        98,
+        348,
+        160
+      ]
+    },
+    {
+      "text": "wangtooth eisegetical advancem",
+      "id": "wangtooth eisegetical advancem",
+      "class": "document",
+      "bbox": [
+        247,
+        171,
+        348,
+        234
+      ]
+    },
+    {
+      "text": "dipsetic",
+      "id": "dipsetic",
+      "class": "document",
+      "bbox": [
+        247,
+        318,
+        348,
+        380
+      ]
+    },
+    {
+      "text": "Cetacea pourparler chlorophane",
+      "id": "Cetacea pourparler chlorophane",
+      "class": "oval",
+      "bbox": [
+        228,
+        396,
+        361,
+        443
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "herbarist preanterior",
+      "head": "breed harplike pappi",
+      "label": null,
+      "bbox": [
+        96,
+        57,
+        108,
+        98
+      ]
+    },
+    {
+      "tail": "breed harplike pappi",
+      "head": "stonesmitch adephagous kittenh",
+      "label": null,
+      "bbox": [
+        113,
+        160,
+        125,
+        196
+      ]
+    },
+    {
+      "tail": "stonesmitch adephagous kittenh",
+      "head": "unmischievous hostageship",
+      "label": "NO",
+      "bbox": [
+        96,
+        264,
+        108,
+        288
+      ]
+    },
+    {
+      "tail": "stonesmitch adephagous kittenh",
+      "head": "breed harplike pappi",
+      "label": "NO",
+      "bbox": [
+        79,
+        160,
+        91,
+        196
+      ]
+    },
+    {
+      "tail": "unmischievous hostageship",
+      "head": "boodleize penalize",
+      "label": "YES",
+      "bbox": [
+        151,
+        113,
+        247,
+        308
+      ]
+    },
+    {
+      "tail": "unmischievous hostageship",
+      "head": "breed harplike pappi",
+      "label": "YES",
+      "bbox": [
+        129,
+        134,
+        208,
+        299
+      ]
+    },
+    {
+      "tail": "boodleize penalize",
+      "head": "wangtooth eisegetical advancem",
+      "label": null,
+      "bbox": [
+        291,
+        158,
+        303,
+        171
+      ]
+    },
+    {
+      "tail": "wangtooth eisegetical advancem",
+      "head": "dipsetic",
+      "label": null,
+      "bbox": [
+        291,
+        233,
+        303,
+        318
+      ]
+    },
+    {
+      "tail": "dipsetic",
+      "head": "Cetacea pourparler chlorophane",
+      "label": null,
+      "bbox": [
+        291,
+        380,
+        303,
+        396
+      ]
+    }
+  ]
+}

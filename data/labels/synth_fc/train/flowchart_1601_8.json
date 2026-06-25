@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "text": "subpectinate rushiness androsi",
+      "id": "subpectinate rushiness androsi",
+      "class": "oval"
+    },
+    {
+      "text": "ozonization",
+      "id": "ozonization",
+      "class": "diamond"
+    },
+    {
+      "text": "corectome",
+      "id": "corectome",
+      "class": "diamond"
+    },
+    {
+      "text": "symmetry tetrachoric",
+      "id": "symmetry tetrachoric",
+      "class": "diamond"
+    },
+    {
+      "text": "roundtail",
+      "id": "roundtail",
+      "class": "parallelogram"
+    },
+    {
+      "text": "ratably",
+      "id": "ratably",
+      "class": "parallelogram"
+    },
+    {
+      "text": "comport tractellate",
+      "id": "comport tractellate",
+      "class": "box"
+    },
+    {
+      "text": "disconanthous",
+      "id": "disconanthous",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "subpectinate rushiness androsi",
+      "head": "ozonization",
+      "label": null
+    },
+    {
+      "tail": "ozonization",
+      "head": "corectome",
+      "label": "NO"
+    },
+    {
+      "tail": "ozonization",
+      "head": "symmetry tetrachoric",
+      "label": "NO"
+    },
+    {
+      "tail": "corectome",
+      "head": "roundtail",
+      "label": "yes"
+    },
+    {
+      "tail": "corectome",
+      "head": "symmetry tetrachoric",
+      "label": "yes"
+    },
+    {
+      "tail": "roundtail",
+      "head": "symmetry tetrachoric",
+      "label": null
+    },
+    {
+      "tail": "symmetry tetrachoric",
+      "head": "ratably",
+      "label": "YES"
+    },
+    {
+      "tail": "symmetry tetrachoric",
+      "head": "roundtail",
+      "label": "YES"
+    },
+    {
+      "tail": "ratably",
+      "head": "comport tractellate",
+      "label": null
+    },
+    {
+      "tail": "comport tractellate",
+      "head": "disconanthous",
+      "label": null
+    }
+  ]
+}

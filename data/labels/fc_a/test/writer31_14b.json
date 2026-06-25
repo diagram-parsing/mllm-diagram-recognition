@@ -1,0 +1,325 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "bbox": [
+        352,
+        4,
+        303,
+        70
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "input a,b,c",
+      "id": "input a,b,c",
+      "bbox": [
+        285,
+        137,
+        429,
+        91
+      ],
+      "class": "data"
+    },
+    {
+      "text": "delta=b^2-4ac",
+      "id": "delta=b^2-4ac",
+      "bbox": [
+        357,
+        270,
+        308,
+        81
+      ],
+      "class": "process"
+    },
+    {
+      "text": "delta<0",
+      "id": "delta<0",
+      "bbox": [
+        382,
+        403,
+        228,
+        174
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "No solution",
+      "id": "No solution",
+      "bbox": [
+        4,
+        581,
+        324,
+        83
+      ],
+      "class": "data"
+    },
+    {
+      "text": "delta=0",
+      "id": "delta=0",
+      "bbox": [
+        686,
+        591,
+        151,
+        143
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "Output (-b+sqrt(delta))/2a",
+      "id": "Output (-b+sqrt(delta))/2a",
+      "bbox": [
+        954,
+        770,
+        351,
+        112
+      ],
+      "class": "data"
+    },
+    {
+      "text": "Output (-b-sqrt(delta))/2a",
+      "id": "Output (-b-sqrt(delta))/2a",
+      "bbox": [
+        918,
+        980,
+        412,
+        118
+      ],
+      "class": "data"
+    },
+    {
+      "text": "End",
+      "id": "End",
+      "bbox": [
+        462,
+        1164,
+        235,
+        110
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Output -b/(2a)",
+      "id": "Output -b/(2a)",
+      "bbox": [
+        376,
+        786,
+        311,
+        115
+      ],
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "input a,b,c",
+      "bbox": [
+        486,
+        70,
+        32,
+        76
+      ],
+      "kps": [
+        503.0,
+        71.0,
+        2.0,
+        508.0,
+        134.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "input a,b,c",
+      "head": "delta=b^2-4ac",
+      "bbox": [
+        483,
+        223,
+        32,
+        57
+      ],
+      "kps": [
+        499.0,
+        224.0,
+        2.0,
+        494.0,
+        273.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "delta=b^2-4ac",
+      "head": "delta<0",
+      "bbox": [
+        488,
+        346,
+        32,
+        68
+      ],
+      "kps": [
+        514.0,
+        347.0,
+        2.0,
+        500.0,
+        408.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "delta<0",
+      "head": "No solution",
+      "bbox": [
+        159,
+        481,
+        241,
+        104
+      ],
+      "kps": [
+        397.0,
+        494.0,
+        2.0,
+        172.0,
+        579.0,
+        2.0
+      ],
+      "label": "Y"
+    },
+    {
+      "tail": "delta<0",
+      "head": "delta=0",
+      "bbox": [
+        603,
+        482,
+        167,
+        116
+      ],
+      "kps": [
+        604.0,
+        487.0,
+        2.0,
+        755.0,
+        597.0,
+        2.0
+      ],
+      "label": "N"
+    },
+    {
+      "tail": "delta=0",
+      "head": "Output (-b+sqrt(delta))/2a",
+      "bbox": [
+        825,
+        654,
+        258,
+        127
+      ],
+      "kps": [
+        826.0,
+        657.0,
+        2.0,
+        1065.0,
+        775.0,
+        2.0
+      ],
+      "label": "N"
+    },
+    {
+      "tail": "Output (-b+sqrt(delta))/2a",
+      "head": "Output (-b-sqrt(delta))/2a",
+      "bbox": [
+        1098,
+        870,
+        25,
+        118
+      ],
+      "kps": [
+        1109.0,
+        872.0,
+        2.0,
+        1109.0,
+        987.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Output (-b-sqrt(delta))/2a",
+      "head": "End",
+      "bbox": [
+        685,
+        1089,
+        438,
+        144
+      ],
+      "kps": [
+        1119.0,
+        1090.0,
+        2.0,
+        686.0,
+        1220.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "delta=0",
+      "head": "Output -b/(2a)",
+      "bbox": [
+        501,
+        660,
+        194,
+        133
+      ],
+      "kps": [
+        692.0,
+        662.0,
+        2.0,
+        514.0,
+        791.0,
+        2.0
+      ],
+      "label": "Y"
+    },
+    {
+      "tail": "Output -b/(2a)",
+      "head": "End",
+      "bbox": [
+        508,
+        893,
+        32,
+        285
+      ],
+      "kps": [
+        534.0,
+        895.0,
+        2.0,
+        520.0,
+        1171.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "No solution",
+      "head": "End",
+      "bbox": [
+        148,
+        650,
+        321,
+        573
+      ],
+      "kps": [
+        152.0,
+        651.0,
+        2.0,
+        467.0,
+        1215.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

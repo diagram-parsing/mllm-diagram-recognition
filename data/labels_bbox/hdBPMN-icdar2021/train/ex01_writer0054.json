@@ -1,0 +1,260 @@
+{
+  "nodes": [
+    {
+      "text": "received request",
+      "id": "received request",
+      "bbox": [
+        221,
+        117,
+        268,
+        171
+      ],
+      "class": "event"
+    },
+    {
+      "text": "assessment of risk",
+      "id": "assessment of risk",
+      "bbox": [
+        597,
+        67,
+        893,
+        246
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1003,
+        107,
+        1083,
+        214
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "advanced risk assessment",
+      "id": "advanced risk assessment",
+      "bbox": [
+        1668,
+        59,
+        2084,
+        261
+      ],
+      "class": "task"
+    },
+    {
+      "text": "risk below threshold",
+      "id": "risk below threshold",
+      "bbox": [
+        903,
+        363,
+        1235,
+        572
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1899,
+        388,
+        1977,
+        480
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notification with result",
+      "id": "notification with result",
+      "bbox": [
+        209,
+        371,
+        577,
+        582
+      ],
+      "class": "task"
+    },
+    {
+      "text": "disbursement organized",
+      "id": "disbursement organized",
+      "bbox": [
+        199,
+        669,
+        595,
+        918
+      ],
+      "class": "task"
+    },
+    {
+      "text": "request fulfilled",
+      "id": "request fulfilled",
+      "bbox": [
+        326,
+        1090,
+        393,
+        1167
+      ],
+      "class": "event"
+    },
+    {
+      "text": "simple risk assessment",
+      "id": "simple risk assessment",
+      "bbox": [
+        1369,
+        338,
+        1745,
+        577
+      ],
+      "class": "task"
+    },
+    {
+      "text": "risk above threshold",
+      "id": "risk above threshold",
+      "bbox": [
+        1195,
+        74,
+        1503,
+        268
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "assessment of risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        893,
+        133,
+        1008,
+        182
+      ],
+      "label": null
+    },
+    {
+      "tail": "received request",
+      "head": "assessment of risk",
+      "class": "sequenceFlow",
+      "bbox": [
+        268,
+        120,
+        599,
+        170
+      ],
+      "label": null
+    },
+    {
+      "tail": "notification with result",
+      "head": "disbursement organized",
+      "class": "sequenceFlow",
+      "bbox": [
+        329,
+        582,
+        379,
+        671
+      ],
+      "label": null
+    },
+    {
+      "tail": "disbursement organized",
+      "head": "request fulfilled",
+      "class": "sequenceFlow",
+      "bbox": [
+        324,
+        918,
+        374,
+        1100
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "notification with result",
+      "class": "sequenceFlow",
+      "bbox": [
+        577,
+        433,
+        1939,
+        766
+      ],
+      "label": null
+    },
+    {
+      "tail": "advanced risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1918,
+        261,
+        1968,
+        395
+      ],
+      "label": "assessment passed"
+    },
+    {
+      "tail": "risk above threshold",
+      "head": "advanced risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1506,
+        139,
+        1670,
+        189
+      ],
+      "label": null
+    },
+    {
+      "tail": "simple risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1745,
+        409,
+        1901,
+        459
+      ],
+      "label": "assassment passed"
+    },
+    {
+      "tail": "risk below threshold",
+      "head": "simple risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1235,
+        434,
+        1371,
+        484
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "risk below threshold",
+      "class": "sequenceFlow",
+      "bbox": [
+        1019,
+        214,
+        1069,
+        365
+      ],
+      "label": "lower risk"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "risk above threshold",
+      "class": "sequenceFlow",
+      "bbox": [
+        1083,
+        137,
+        1197,
+        187
+      ],
+      "label": "higher risk"
+    }
+  ],
+  "groups": []
+}

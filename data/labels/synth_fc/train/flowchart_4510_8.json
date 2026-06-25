@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "mazzard",
+      "id": "mazzard",
+      "class": "oval"
+    },
+    {
+      "text": "Donn crucifix",
+      "id": "Donn crucifix",
+      "class": "hexagon"
+    },
+    {
+      "text": "charmel",
+      "id": "charmel",
+      "class": "diamond"
+    },
+    {
+      "text": "leiomyosarcoma",
+      "id": "leiomyosarcoma",
+      "class": "document"
+    },
+    {
+      "text": "photophane",
+      "id": "photophane",
+      "class": "diamond"
+    },
+    {
+      "text": "remotely",
+      "id": "remotely",
+      "class": "document"
+    },
+    {
+      "text": "aerometer",
+      "id": "aerometer",
+      "class": "box"
+    },
+    {
+      "text": "Isegrim",
+      "id": "Isegrim",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "mazzard",
+      "head": "Donn crucifix",
+      "label": null
+    },
+    {
+      "tail": "Donn crucifix",
+      "head": "charmel",
+      "label": null
+    },
+    {
+      "tail": "charmel",
+      "head": "leiomyosarcoma",
+      "label": "yes"
+    },
+    {
+      "tail": "charmel",
+      "head": "photophane",
+      "label": "yes"
+    },
+    {
+      "tail": "leiomyosarcoma",
+      "head": "remotely",
+      "label": null
+    },
+    {
+      "tail": "remotely",
+      "head": "photophane",
+      "label": null
+    },
+    {
+      "tail": "photophane",
+      "head": "aerometer",
+      "label": "no"
+    },
+    {
+      "tail": "photophane",
+      "head": "Donn crucifix",
+      "label": "no"
+    },
+    {
+      "tail": "aerometer",
+      "head": "Isegrim",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "nodes": [
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        530,
+        304,
+        782,
+        512
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "check for completness",
+      "id": "check for completness",
+      "bbox": [
+        391,
+        608,
+        1303,
+        695
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1449,
+        569,
+        1564,
+        696
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        4179,
+        1270,
+        4280,
+        1415
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        1651,
+        738,
+        2172,
+        825
+      ],
+      "class": "task"
+    },
+    {
+      "text": "assess",
+      "id": "assess",
+      "bbox": [
+        1650,
+        957,
+        2197,
+        1057
+      ],
+      "class": "task"
+    },
+    {
+      "text": "phone garage to authorize repairs",
+      "id": "phone garage to authorize repairs",
+      "bbox": [
+        2808,
+        1128,
+        4041,
+        1255
+      ],
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "bbox": [
+        3020,
+        1441,
+        3780,
+        1542
+      ],
+      "class": "task"
+    },
+    {
+      "text": "acceptance letter sent",
+      "id": "acceptance letter sent",
+      "bbox": [
+        4712,
+        1203,
+        4965,
+        1415
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim [complete]",
+      "id": "claim [complete]",
+      "bbox": [
+        530,
+        899,
+        1043,
+        1142
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        1136,
+        331,
+        1318,
+        484
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "rejection letter sent",
+      "id": "rejection letter sent",
+      "bbox": [
+        2937,
+        882,
+        3137,
+        1069
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2573,
+        1270,
+        2700,
+        1419
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        2357,
+        931,
+        2469,
+        1054
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "rejection letter sent",
+      "id": "rejection letter sent",
+      "bbox": [
+        1404,
+        290,
+        1575,
+        458
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim [registered]",
+      "id": "claim [registered]",
+      "bbox": [
+        2149,
+        379,
+        2611,
+        596
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "rejection letter sent",
+      "class": "sequenceFlow",
+      "bbox": [
+        1452,
+        458,
+        1557,
+        581
+      ],
+      "label": "incomplete"
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "acceptance letter sent",
+      "class": "sequenceFlow",
+      "bbox": [
+        4280,
+        1294,
+        4719,
+        1398
+      ],
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        3780,
+        1406,
+        4235,
+        1510
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "bbox": [
+        2637,
+        1409,
+        3024,
+        1514
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone garage to authorize repairs",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        4041,
+        1190,
+        4224,
+        1294
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "phone garage to authorize repairs",
+      "class": "sequenceFlow",
+      "bbox": [
+        2637,
+        1203,
+        2816,
+        1307
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "rejection letter sent",
+      "class": "sequenceFlow",
+      "bbox": [
+        2465,
+        936,
+        2942,
+        1041
+      ],
+      "label": "negative"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2417,
+        1050,
+        2581,
+        1352
+      ],
+      "label": "positive"
+    },
+    {
+      "tail": "assess",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2197,
+        948,
+        2365,
+        1052
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "assess",
+      "class": "sequenceFlow",
+      "bbox": [
+        1819,
+        823,
+        1923,
+        961
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1512,
+        685,
+        1653,
+        789
+      ],
+      "label": "complete"
+    },
+    {
+      "tail": "claim received",
+      "head": "check for completness",
+      "class": "sequenceFlow",
+      "bbox": [
+        605,
+        521,
+        710,
+        625
+      ],
+      "label": null
+    },
+    {
+      "tail": "check for completness",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1303,
+        596,
+        1460,
+        700
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "claim",
+      "class": "dataAssociation",
+      "bbox": [
+        767,
+        419,
+        1139,
+        523
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "check for completness",
+      "class": "dataAssociation",
+      "bbox": [
+        1126,
+        487,
+        1231,
+        610
+      ],
+      "label": null
+    },
+    {
+      "tail": "check for completness",
+      "head": "claim [complete]",
+      "class": "dataAssociation",
+      "bbox": [
+        724,
+        700,
+        828,
+        905
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [complete]",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        1043,
+        823,
+        1750,
+        1013
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim [registered]",
+      "class": "dataAssociation",
+      "bbox": [
+        2041,
+        478,
+        2153,
+        741
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim [registered]",
+      "head": "assess",
+      "class": "dataAssociation",
+      "bbox": [
+        2149,
+        596,
+        2380,
+        961
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        605,
+        122,
+        709,
+        286
+      ],
+      "label": "claim"
+    },
+    {
+      "tail": "rejection letter sent",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        1432,
+        122,
+        1536,
+        294
+      ],
+      "label": "rejection letter"
+    },
+    {
+      "tail": "rejection letter sent",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        2989,
+        122,
+        3093,
+        879
+      ],
+      "label": "rejection letter"
+    },
+    {
+      "tail": "acceptance letter sent",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        4740,
+        122,
+        4844,
+        1195
+      ],
+      "label": "acceptance letter"
+    }
+  ],
+  "groups": [
+    {
+      "name": "car insurer",
+      "nodes": [
+        "handling department",
+        "notification department"
+      ],
+      "bbox": [
+        85,
+        298,
+        5077,
+        1642
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling department",
+      "nodes": [
+        "parallelGateway_1",
+        "assess",
+        "phone garage to authorize repairs",
+        "schedule payment",
+        "acceptance letter sent",
+        "claim [complete]",
+        "rejection letter sent",
+        "parallelGateway_2",
+        "exclusiveGateway_2"
+      ],
+      "bbox": [
+        216,
+        879,
+        5077,
+        1642
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "claim received",
+        "check for completness",
+        "exclusiveGateway_1",
+        "register claim",
+        "claim",
+        "rejection letter sent",
+        "claim [registered]"
+      ],
+      "bbox": [
+        216,
+        298,
+        5077,
+        875
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        476,
+        26,
+        5002,
+        122
+      ],
+      "class": "pool"
+    }
+  ]
+}

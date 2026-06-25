@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "unlay",
+      "id": "unlay",
+      "class": "oval"
+    },
+    {
+      "text": "changedale",
+      "id": "changedale",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unexpressableness misbrand",
+      "id": "unexpressableness misbrand",
+      "class": "box"
+    },
+    {
+      "text": "ballmine",
+      "id": "ballmine",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Xiphisura inhibitive",
+      "id": "Xiphisura inhibitive",
+      "class": "diamond"
+    },
+    {
+      "text": "tikitiki acholic",
+      "id": "tikitiki acholic",
+      "class": "hexagon"
+    },
+    {
+      "text": "nonplane",
+      "id": "nonplane",
+      "class": "diamond"
+    },
+    {
+      "text": "antigen sclerodermic",
+      "id": "antigen sclerodermic",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unlay",
+      "head": "changedale",
+      "label": null
+    },
+    {
+      "tail": "changedale",
+      "head": "unexpressableness misbrand",
+      "label": null
+    },
+    {
+      "tail": "unexpressableness misbrand",
+      "head": "ballmine",
+      "label": null
+    },
+    {
+      "tail": "ballmine",
+      "head": "Xiphisura inhibitive",
+      "label": null
+    },
+    {
+      "tail": "Xiphisura inhibitive",
+      "head": "tikitiki acholic",
+      "label": "Yes"
+    },
+    {
+      "tail": "Xiphisura inhibitive",
+      "head": "unexpressableness misbrand",
+      "label": "Yes"
+    },
+    {
+      "tail": "tikitiki acholic",
+      "head": "nonplane",
+      "label": null
+    },
+    {
+      "tail": "nonplane",
+      "head": "antigen sclerodermic",
+      "label": "No"
+    },
+    {
+      "tail": "nonplane",
+      "head": "Xiphisura inhibitive",
+      "label": "No"
+    }
+  ]
+}

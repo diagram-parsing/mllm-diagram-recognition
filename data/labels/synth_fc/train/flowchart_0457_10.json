@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "denitrification rodwood",
+      "id": "denitrification rodwood",
+      "class": "circle"
+    },
+    {
+      "text": "premanhood Puseyite filopodium",
+      "id": "premanhood Puseyite filopodium",
+      "class": "box"
+    },
+    {
+      "text": "polk biggin",
+      "id": "polk biggin",
+      "class": "diamond"
+    },
+    {
+      "text": "Difflugia",
+      "id": "Difflugia",
+      "class": "diamond"
+    },
+    {
+      "text": "hygrometrical unsullied",
+      "id": "hygrometrical unsullied",
+      "class": "diamond"
+    },
+    {
+      "text": "analysation",
+      "id": "analysation",
+      "class": "diamond"
+    },
+    {
+      "text": "Pyracantha",
+      "id": "Pyracantha",
+      "class": "diamond"
+    },
+    {
+      "text": "laniiform Barcan",
+      "id": "laniiform Barcan",
+      "class": "hexagon"
+    },
+    {
+      "text": "ontosophy",
+      "id": "ontosophy",
+      "class": "circle"
+    },
+    {
+      "text": "preallot uncoverable",
+      "id": "preallot uncoverable",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "denitrification rodwood",
+      "head": "premanhood Puseyite filopodium",
+      "label": null
+    },
+    {
+      "tail": "premanhood Puseyite filopodium",
+      "head": "polk biggin",
+      "label": null
+    },
+    {
+      "tail": "polk biggin",
+      "head": "Difflugia",
+      "label": "NO"
+    },
+    {
+      "tail": "polk biggin",
+      "head": "hygrometrical unsullied",
+      "label": "NO"
+    },
+    {
+      "tail": "Difflugia",
+      "head": "hygrometrical unsullied",
+      "label": "YES"
+    },
+    {
+      "tail": "Difflugia",
+      "head": "premanhood Puseyite filopodium",
+      "label": "YES"
+    },
+    {
+      "tail": "hygrometrical unsullied",
+      "head": "analysation",
+      "label": "NO"
+    },
+    {
+      "tail": "hygrometrical unsullied",
+      "head": "polk biggin",
+      "label": "NO"
+    },
+    {
+      "tail": "analysation",
+      "head": "Pyracantha",
+      "label": "Yes"
+    },
+    {
+      "tail": "analysation",
+      "head": "premanhood Puseyite filopodium",
+      "label": "Yes"
+    },
+    {
+      "tail": "Pyracantha",
+      "head": "laniiform Barcan",
+      "label": "no"
+    },
+    {
+      "tail": "Pyracantha",
+      "head": "ontosophy",
+      "label": "no"
+    },
+    {
+      "tail": "laniiform Barcan",
+      "head": "preallot uncoverable",
+      "label": null
+    },
+    {
+      "tail": "preallot uncoverable",
+      "head": "ontosophy",
+      "label": null
+    }
+  ]
+}

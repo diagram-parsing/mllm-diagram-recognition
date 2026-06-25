@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "application received",
+      "id": "application received",
+      "class": "event"
+    },
+    {
+      "text": "evaluate of the application",
+      "id": "evaluate of the application",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "customer notified by email",
+      "id": "customer notified by email",
+      "class": "task"
+    },
+    {
+      "text": "application rejected",
+      "id": "application rejected",
+      "class": "event"
+    },
+    {
+      "text": "new bank account created",
+      "id": "new bank account created",
+      "class": "task"
+    },
+    {
+      "text": "reject application",
+      "id": "reject application",
+      "class": "task"
+    },
+    {
+      "text": "application approved",
+      "id": "application approved",
+      "class": "task"
+    },
+    {
+      "text": "sending 3 seperate letters",
+      "id": "sending 3 seperate letters",
+      "class": "task"
+    },
+    {
+      "text": "application fulfilled",
+      "id": "application fulfilled",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "customer notified by email",
+      "head": "application rejected",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "reject application",
+      "head": "customer notified by email",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "evaluate of the application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "application received",
+      "head": "evaluate of the application",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "sending 3 seperate letters",
+      "head": "application fulfilled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new bank account created",
+      "head": "sending 3 seperate letters",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "application approved",
+      "head": "new bank account created",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "application approved",
+      "class": "sequenceFlow",
+      "label": "positive evaluation"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject application",
+      "class": "sequenceFlow",
+      "label": "negative evaluation"
+    }
+  ],
+  "groups": []
+}

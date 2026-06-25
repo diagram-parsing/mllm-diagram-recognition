@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "epithalamus thoughtfulness",
+      "id": "epithalamus thoughtfulness",
+      "class": "oval",
+      "bbox": [
+        19,
+        5,
+        140,
+        57
+      ]
+    },
+    {
+      "text": "Randall",
+      "id": "Randall",
+      "class": "diamond",
+      "bbox": [
+        16,
+        68,
+        143,
+        116
+      ]
+    },
+    {
+      "text": "submolecule polysomy",
+      "id": "submolecule polysomy",
+      "class": "diamond",
+      "bbox": [
+        5,
+        156,
+        154,
+        230
+      ]
+    },
+    {
+      "text": "dysacousia begowned kakistocra",
+      "id": "dysacousia begowned kakistocra",
+      "class": "box",
+      "bbox": [
+        193,
+        88,
+        290,
+        136
+      ]
+    },
+    {
+      "text": "shackland",
+      "id": "shackland",
+      "class": "parallelogram",
+      "bbox": [
+        13,
+        250,
+        146,
+        292
+      ]
+    },
+    {
+      "text": "pessimize Cathartae",
+      "id": "pessimize Cathartae",
+      "class": "box",
+      "bbox": [
+        205,
+        169,
+        277,
+        217
+      ]
+    },
+    {
+      "text": "vibratiunculation foreland",
+      "id": "vibratiunculation foreland",
+      "class": "ellipse",
+      "bbox": [
+        182,
+        228,
+        296,
+        279
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "epithalamus thoughtfulness",
+      "head": "Randall",
+      "label": null,
+      "bbox": [
+        75,
+        53,
+        84,
+        66
+      ]
+    },
+    {
+      "tail": "Randall",
+      "head": "submolecule polysomy",
+      "label": "yes",
+      "bbox": [
+        75,
+        116,
+        84,
+        154
+      ]
+    },
+    {
+      "tail": "Randall",
+      "head": "dysacousia begowned kakistocra",
+      "label": "yes",
+      "bbox": [
+        115,
+        98,
+        191,
+        108
+      ]
+    },
+    {
+      "tail": "submolecule polysomy",
+      "head": "shackland",
+      "label": "NO",
+      "bbox": [
+        75,
+        230,
+        84,
+        248
+      ]
+    },
+    {
+      "tail": "submolecule polysomy",
+      "head": "dysacousia begowned kakistocra",
+      "label": "NO",
+      "bbox": [
+        95,
+        138,
+        204,
+        163
+      ]
+    },
+    {
+      "tail": "shackland",
+      "head": "dysacousia begowned kakistocra",
+      "label": null,
+      "bbox": [
+        137,
+        122,
+        191,
+        266
+      ]
+    },
+    {
+      "tail": "dysacousia begowned kakistocra",
+      "head": "pessimize Cathartae",
+      "label": null,
+      "bbox": [
+        237,
+        136,
+        246,
+        167
+      ]
+    },
+    {
+      "tail": "pessimize Cathartae",
+      "head": "vibratiunculation foreland",
+      "label": null,
+      "bbox": [
+        237,
+        212,
+        246,
+        226
+      ]
+    }
+  ]
+}

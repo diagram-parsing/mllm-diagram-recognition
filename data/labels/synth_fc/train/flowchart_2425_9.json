@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "pseudoviperine",
+      "id": "pseudoviperine",
+      "class": "oval"
+    },
+    {
+      "text": "daggerproof",
+      "id": "daggerproof",
+      "class": "diamond"
+    },
+    {
+      "text": "sensist",
+      "id": "sensist",
+      "class": "parallelogram"
+    },
+    {
+      "text": "elect deliberalization",
+      "id": "elect deliberalization",
+      "class": "box"
+    },
+    {
+      "text": "larvicolous",
+      "id": "larvicolous",
+      "class": "hexagon"
+    },
+    {
+      "text": "bellicoseness Aspatia",
+      "id": "bellicoseness Aspatia",
+      "class": "box"
+    },
+    {
+      "text": "percomorph",
+      "id": "percomorph",
+      "class": "parallelogram"
+    },
+    {
+      "text": "apii",
+      "id": "apii",
+      "class": "diamond"
+    },
+    {
+      "text": "wheer",
+      "id": "wheer",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pseudoviperine",
+      "head": "daggerproof",
+      "label": null
+    },
+    {
+      "tail": "daggerproof",
+      "head": "sensist",
+      "label": "no"
+    },
+    {
+      "tail": "daggerproof",
+      "head": "elect deliberalization",
+      "label": "no"
+    },
+    {
+      "tail": "sensist",
+      "head": "larvicolous",
+      "label": null
+    },
+    {
+      "tail": "larvicolous",
+      "head": "bellicoseness Aspatia",
+      "label": null
+    },
+    {
+      "tail": "bellicoseness Aspatia",
+      "head": "elect deliberalization",
+      "label": null
+    },
+    {
+      "tail": "elect deliberalization",
+      "head": "percomorph",
+      "label": null
+    },
+    {
+      "tail": "percomorph",
+      "head": "apii",
+      "label": null
+    },
+    {
+      "tail": "apii",
+      "head": "wheer",
+      "label": "yes"
+    },
+    {
+      "tail": "apii",
+      "head": "percomorph",
+      "label": "yes"
+    }
+  ]
+}

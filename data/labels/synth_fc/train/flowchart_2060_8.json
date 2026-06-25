@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "bacchian Stictaceae",
+      "id": "bacchian Stictaceae",
+      "class": "ellipse"
+    },
+    {
+      "text": "chiffer glazily",
+      "id": "chiffer glazily",
+      "class": "diamond"
+    },
+    {
+      "text": "zootrophy",
+      "id": "zootrophy",
+      "class": "document"
+    },
+    {
+      "text": "maricolous",
+      "id": "maricolous",
+      "class": "document"
+    },
+    {
+      "text": "neoplastic",
+      "id": "neoplastic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "worm",
+      "id": "worm",
+      "class": "diamond"
+    },
+    {
+      "text": "monosyllabism unrepresentative",
+      "id": "monosyllabism unrepresentative",
+      "class": "document"
+    },
+    {
+      "text": "uncivilish nondynastic",
+      "id": "uncivilish nondynastic",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "bacchian Stictaceae",
+      "head": "chiffer glazily",
+      "label": null
+    },
+    {
+      "tail": "chiffer glazily",
+      "head": "zootrophy",
+      "label": "YES"
+    },
+    {
+      "tail": "chiffer glazily",
+      "head": "maricolous",
+      "label": "YES"
+    },
+    {
+      "tail": "zootrophy",
+      "head": "neoplastic",
+      "label": null
+    },
+    {
+      "tail": "neoplastic",
+      "head": "worm",
+      "label": null
+    },
+    {
+      "tail": "worm",
+      "head": "maricolous",
+      "label": "No"
+    },
+    {
+      "tail": "worm",
+      "head": "monosyllabism unrepresentative",
+      "label": "No"
+    },
+    {
+      "tail": "maricolous",
+      "head": "monosyllabism unrepresentative",
+      "label": null
+    },
+    {
+      "tail": "monosyllabism unrepresentative",
+      "head": "uncivilish nondynastic",
+      "label": null
+    }
+  ]
+}

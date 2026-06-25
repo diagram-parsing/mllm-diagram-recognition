@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "text": "hammerless",
+      "id": "hammerless",
+      "class": "oval"
+    },
+    {
+      "text": "Trudy",
+      "id": "Trudy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "casate",
+      "id": "casate",
+      "class": "document"
+    },
+    {
+      "text": "theatrophone",
+      "id": "theatrophone",
+      "class": "document"
+    },
+    {
+      "text": "chromatophile",
+      "id": "chromatophile",
+      "class": "diamond"
+    },
+    {
+      "text": "melancholily acapu",
+      "id": "melancholily acapu",
+      "class": "diamond"
+    },
+    {
+      "text": "heterodromy stiffly inscient",
+      "id": "heterodromy stiffly inscient",
+      "class": "diamond"
+    },
+    {
+      "text": "tapestrylike",
+      "id": "tapestrylike",
+      "class": "document"
+    },
+    {
+      "text": "bellflower",
+      "id": "bellflower",
+      "class": "parallelogram"
+    },
+    {
+      "text": "iconoclastically argininephosp",
+      "id": "iconoclastically argininephosp",
+      "class": "hexagon"
+    },
+    {
+      "text": "aptly",
+      "id": "aptly",
+      "class": "document"
+    },
+    {
+      "text": "rhythmicize",
+      "id": "rhythmicize",
+      "class": "document"
+    },
+    {
+      "text": "dodgery underdown prolepticall",
+      "id": "dodgery underdown prolepticall",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "hammerless",
+      "head": "Trudy",
+      "label": null
+    },
+    {
+      "tail": "Trudy",
+      "head": "casate",
+      "label": null
+    },
+    {
+      "tail": "casate",
+      "head": "theatrophone",
+      "label": null
+    },
+    {
+      "tail": "theatrophone",
+      "head": "chromatophile",
+      "label": null
+    },
+    {
+      "tail": "chromatophile",
+      "head": "melancholily acapu",
+      "label": "No"
+    },
+    {
+      "tail": "chromatophile",
+      "head": "heterodromy stiffly inscient",
+      "label": "No"
+    },
+    {
+      "tail": "melancholily acapu",
+      "head": "tapestrylike",
+      "label": "No"
+    },
+    {
+      "tail": "melancholily acapu",
+      "head": "theatrophone",
+      "label": "No"
+    },
+    {
+      "tail": "tapestrylike",
+      "head": "bellflower",
+      "label": null
+    },
+    {
+      "tail": "bellflower",
+      "head": "iconoclastically argininephosp",
+      "label": null
+    },
+    {
+      "tail": "iconoclastically argininephosp",
+      "head": "aptly",
+      "label": null
+    },
+    {
+      "tail": "aptly",
+      "head": "heterodromy stiffly inscient",
+      "label": null
+    },
+    {
+      "tail": "heterodromy stiffly inscient",
+      "head": "rhythmicize",
+      "label": "yes"
+    },
+    {
+      "tail": "heterodromy stiffly inscient",
+      "head": "melancholily acapu",
+      "label": "yes"
+    },
+    {
+      "tail": "rhythmicize",
+      "head": "dodgery underdown prolepticall",
+      "label": null
+    }
+  ]
+}

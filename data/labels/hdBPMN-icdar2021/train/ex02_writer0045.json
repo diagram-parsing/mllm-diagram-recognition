@@ -1,0 +1,266 @@
+{
+  "nodes": [
+    {
+      "text": "claim is received",
+      "id": "claim is received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "task"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "class": "task"
+    },
+    {
+      "text": "claim [registered]",
+      "id": "claim [registered]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [examined]",
+      "id": "claim [examined]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [with settlement recommendation]",
+      "id": "claim [with settlement recommendation]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim [OK]",
+      "id": "claim [OK]",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "mark claim as not ok",
+      "id": "mark claim as not ok",
+      "class": "task"
+    },
+    {
+      "text": "claim closed",
+      "id": "claim closed",
+      "class": "event"
+    },
+    {
+      "text": "claim [not ok]",
+      "id": "claim [not ok]",
+      "class": "dataObject"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "class": "task"
+    },
+    {
+      "text": "mark claim as ok",
+      "id": "mark claim as ok",
+      "class": "task"
+    },
+    {
+      "text": "proceed handling process",
+      "id": "proceed handling process",
+      "class": "task"
+    },
+    {
+      "text": "write setlement recommendation",
+      "id": "write setlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "claim [with checked recommendation]",
+      "id": "claim [with checked recommendation]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "mark claim as ok",
+      "head": "proceed handling process",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "claim is received",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "write setlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark claim as not ok",
+      "class": "sequenceFlow",
+      "label": "not ok"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark claim as ok",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "proceed handling process",
+      "head": "claim closed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "mark claim as not ok",
+      "head": "write setlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim [registered]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [registered]",
+      "head": "examine claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "claim [examined]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [with checked recommendation]",
+      "head": "mark claim as not ok",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark claim as not ok",
+      "head": "claim [not ok]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [with settlement recommendation]",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "claim [with checked recommendation]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [with checked recommendation]",
+      "head": "mark claim as ok",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "mark claim as ok",
+      "head": "claim [OK]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [examined]",
+      "head": "write setlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim [not ok]",
+      "head": "write setlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write setlement recommendation",
+      "head": "claim [with settlement recommendation]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "costumer",
+      "head": "claim is received",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "claim is received",
+        "register claim",
+        "examine claim",
+        "claim [registered]",
+        "claim [examined]",
+        "claim [not ok]",
+        "write setlement recommendation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "claim [with settlement recommendation]",
+        "claim [OK]",
+        "exclusiveGateway_1",
+        "mark claim as not ok",
+        "claim closed",
+        "check recommendation",
+        "mark claim as ok",
+        "proceed handling process",
+        "claim [with checked recommendation]"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "costumer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

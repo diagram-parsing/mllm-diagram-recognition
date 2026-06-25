@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "text": "superrenal",
+      "id": "superrenal",
+      "class": "node",
+      "bbox": [
+        188,
+        27,
+        307,
+        75
+      ]
+    },
+    {
+      "text": "acetylize",
+      "id": "acetylize",
+      "class": "node",
+      "bbox": [
+        5,
+        27,
+        97,
+        75
+      ]
+    },
+    {
+      "text": "Lophura",
+      "id": "Lophura",
+      "class": "node",
+      "bbox": [
+        399,
+        27,
+        513,
+        75
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "superrenal",
+      "head": "acetylize",
+      "label": "0.3363",
+      "class": "unidirectional",
+      "bbox": [
+        96,
+        46,
+        188,
+        55
+      ]
+    },
+    {
+      "tail": "Lophura",
+      "head": "superrenal",
+      "label": "0.0086",
+      "class": "unidirectional",
+      "bbox": [
+        308,
+        46,
+        399,
+        55
+      ]
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "nodes": [
+    {
+      "text": "check completeness",
+      "id": "check completeness",
+      "bbox": [
+        760,
+        547,
+        1286,
+        900
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1368,
+        623,
+        1492,
+        790
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "bbox": [
+        1576,
+        445,
+        2129,
+        613
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        2287,
+        441,
+        2415,
+        547
+      ],
+      "class": "event"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        1512,
+        768,
+        2129,
+        915
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1059,
+        1260,
+        1162,
+        1455
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check insurance",
+      "id": "check insurance",
+      "bbox": [
+        496,
+        1253,
+        949,
+        1551
+      ],
+      "class": "task"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "bbox": [
+        1357,
+        1210,
+        1841,
+        1459
+      ],
+      "class": "task"
+    },
+    {
+      "text": "phone garage to authorize repair",
+      "id": "phone garage to authorize repair",
+      "bbox": [
+        1974,
+        1429,
+        2525,
+        1615
+      ],
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "bbox": [
+        2635,
+        1319,
+        3098,
+        1584
+      ],
+      "class": "task"
+    },
+    {
+      "text": "confirm letter",
+      "id": "confirm letter",
+      "bbox": [
+        2923,
+        966,
+        3430,
+        1231
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        3254,
+        1412,
+        3360,
+        1517
+      ],
+      "class": "event"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        502,
+        709,
+        651,
+        866
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1963,
+        1221,
+        2106,
+        1364
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "check insurance",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        949,
+        1328,
+        1062,
+        1399
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm letter",
+      "head": "event_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        3286,
+        1231,
+        3356,
+        1416
+      ],
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "confirm letter",
+      "class": "sequenceFlow",
+      "bbox": [
+        2812,
+        1121,
+        2925,
+        1321
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone garage to authorize repair",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "bbox": [
+        2525,
+        1462,
+        2637,
+        1532
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "phone garage to authorize repair",
+      "class": "sequenceFlow",
+      "bbox": [
+        1886,
+        1361,
+        2033,
+        1519
+      ],
+      "label": "positive"
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        2106,
+        562,
+        2373,
+        1296
+      ],
+      "label": "negative"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1841,
+        1284,
+        1982,
+        1355
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1111,
+        1339,
+        1359,
+        1519
+      ],
+      "label": "positive"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1111,
+        613,
+        2219,
+        1264
+      ],
+      "label": "negative"
+    },
+    {
+      "tail": "register claim",
+      "head": "check insurance",
+      "class": "sequenceFlow",
+      "bbox": [
+        696,
+        915,
+        1739,
+        1255
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1423,
+        780,
+        1513,
+        890
+      ],
+      "label": "complete"
+    },
+    {
+      "tail": "reject claim",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        2129,
+        477,
+        2290,
+        548
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1431,
+        504,
+        1578,
+        627
+      ],
+      "label": "not complete"
+    },
+    {
+      "tail": "check completeness",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1286,
+        667,
+        1374,
+        738
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim received",
+      "head": "check completeness",
+      "class": "sequenceFlow",
+      "bbox": [
+        651,
+        734,
+        762,
+        805
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone garage to authorize repair",
+      "head": "garage",
+      "class": "messageFlow",
+      "bbox": [
+        2160,
+        1615,
+        2230,
+        1851
+      ],
+      "label": "phone call"
+    },
+    {
+      "tail": "reject claim",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        1742,
+        225,
+        1813,
+        447
+      ],
+      "label": "rejection letter"
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        540,
+        225,
+        610,
+        715
+      ],
+      "label": "claim with relevant documentation"
+    },
+    {
+      "tail": "confirm letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        2769,
+        225,
+        2991,
+        968
+      ],
+      "label": "confirmation letter"
+    }
+  ],
+  "groups": [
+    {
+      "name": "car insurer",
+      "nodes": [
+        "handling department",
+        "notification department"
+      ],
+      "bbox": [
+        54,
+        394,
+        2749,
+        1668
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling department",
+      "nodes": [
+        "exclusiveGateway_2",
+        "check insurance",
+        "perform assessment",
+        "phone garage to authorize repair",
+        "exclusiveGateway_3"
+      ],
+      "bbox": [
+        121,
+        1045,
+        2749,
+        1668
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "check completeness",
+        "exclusiveGateway_1",
+        "reject claim",
+        "event_1",
+        "register claim",
+        "claim received"
+      ],
+      "bbox": [
+        121,
+        394,
+        2749,
+        1045
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        252,
+        13,
+        2849,
+        225
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "garage",
+      "nodes": [],
+      "bbox": [
+        187,
+        1848,
+        2812,
+        2003
+      ],
+      "class": "pool"
+    }
+  ]
+}

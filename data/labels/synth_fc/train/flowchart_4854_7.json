@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "semibolshevist",
+      "id": "semibolshevist",
+      "class": "oval"
+    },
+    {
+      "text": "byplay",
+      "id": "byplay",
+      "class": "hexagon"
+    },
+    {
+      "text": "seasonalness membranelle",
+      "id": "seasonalness membranelle",
+      "class": "hexagon"
+    },
+    {
+      "text": "mydaleine",
+      "id": "mydaleine",
+      "class": "parallelogram"
+    },
+    {
+      "text": "railroading Wasp",
+      "id": "railroading Wasp",
+      "class": "diamond"
+    },
+    {
+      "text": "deprivable",
+      "id": "deprivable",
+      "class": "hexagon"
+    },
+    {
+      "text": "terrella unsplayed transversen",
+      "id": "terrella unsplayed transversen",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "semibolshevist",
+      "head": "byplay",
+      "label": null
+    },
+    {
+      "tail": "byplay",
+      "head": "seasonalness membranelle",
+      "label": null
+    },
+    {
+      "tail": "seasonalness membranelle",
+      "head": "mydaleine",
+      "label": null
+    },
+    {
+      "tail": "mydaleine",
+      "head": "railroading Wasp",
+      "label": null
+    },
+    {
+      "tail": "railroading Wasp",
+      "head": "deprivable",
+      "label": "YES"
+    },
+    {
+      "tail": "railroading Wasp",
+      "head": "byplay",
+      "label": "YES"
+    },
+    {
+      "tail": "deprivable",
+      "head": "terrella unsplayed transversen",
+      "label": null
+    }
+  ]
+}

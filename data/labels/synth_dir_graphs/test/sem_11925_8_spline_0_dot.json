@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "text": "hatred",
+      "id": "hatred",
+      "class": "node"
+    },
+    {
+      "text": "habituation",
+      "id": "habituation",
+      "class": "node"
+    },
+    {
+      "text": "Adullam pearlet",
+      "id": "Adullam pearlet",
+      "class": "node"
+    },
+    {
+      "text": "anorectic aversive",
+      "id": "anorectic aversive",
+      "class": "node"
+    },
+    {
+      "text": "insurgentism  ricolettaite",
+      "id": "insurgentism  ricolettaite",
+      "class": "node"
+    },
+    {
+      "text": "Sabbatization",
+      "id": "Sabbatization",
+      "class": "node"
+    },
+    {
+      "text": "Zythia drastic",
+      "id": "Zythia drastic",
+      "class": "node"
+    },
+    {
+      "text": "cephalopharyngeal",
+      "id": "cephalopharyngeal",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "hatred",
+      "head": "habituation",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Adullam pearlet",
+      "head": "anorectic aversive",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Adullam pearlet",
+      "head": "insurgentism  ricolettaite",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Sabbatization",
+      "head": "Zythia drastic",
+      "label": "0.44 H = 0.112",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Sabbatization",
+      "head": "cephalopharyngeal",
+      "label": "0.74 y = 0.427",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "Adullam pearlet",
+      "head": "cephalopharyngeal",
+      "label": "-0.05 f = 0.871",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "hatred",
+      "head": "cephalopharyngeal",
+      "label": "0.83 s = 0.004",
+      "class": "unidirectional"
+    }
+  ]
+}

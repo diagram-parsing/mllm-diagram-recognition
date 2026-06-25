@@ -1,0 +1,269 @@
+{
+  "nodes": [
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "class": "task"
+    },
+    {
+      "text": "results",
+      "id": "results",
+      "class": "dataObject"
+    },
+    {
+      "text": "expertise",
+      "id": "expertise",
+      "class": "dataObject"
+    },
+    {
+      "text": "report",
+      "id": "report",
+      "class": "dataObject"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "class": "event"
+    },
+    {
+      "text": "case handled",
+      "id": "case handled",
+      "class": "event"
+    },
+    {
+      "text": "fill cheque",
+      "id": "fill cheque",
+      "class": "task"
+    },
+    {
+      "text": "ask external expert to review work",
+      "id": "ask external expert to review work",
+      "class": "task"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "expertise forwarded",
+      "id": "expertise forwarded",
+      "class": "messageEvent"
+    },
+    {
+      "text": "expertise",
+      "id": "expertise",
+      "class": "dataObject"
+    },
+    {
+      "text": "cheque",
+      "id": "cheque",
+      "class": "dataObject"
+    },
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": "case handled",
+      "id": "case handled",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "create report",
+      "head": "case handled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "case handled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "expertise forwarded",
+      "head": "fill cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "expertise forwarded",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review work",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "ask external expert to review work",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "create report",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "results",
+      "head": "create report",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "report",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "results",
+      "head": "file results",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "results",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "expertise",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "fill cheque",
+      "head": "cheque",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "expertise",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "expertise",
+      "head": "expertise forwarded",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "cheque",
+      "head": "messageEvent_1",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "experts",
+      "head": "expertise received",
+      "class": "messageFlow",
+      "label": "send expertise"
+    },
+    {
+      "tail": "ask external expert to review work",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": "ask for expertise"
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": "send cheque"
+    },
+    {
+      "tail": "expertise forwarded",
+      "head": "expertise received",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "new case started",
+      "head": "new case started",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "quality assurance (QA) specialist",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "managing director of hospital",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "experts",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

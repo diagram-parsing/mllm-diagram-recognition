@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "morse headpenny",
+      "id": "morse headpenny",
+      "class": "circle",
+      "bbox": [
+        11,
+        5,
+        104,
+        99
+      ]
+    },
+    {
+      "text": "crenitic",
+      "id": "crenitic",
+      "class": "diamond",
+      "bbox": [
+        10,
+        129,
+        105,
+        203
+      ]
+    },
+    {
+      "text": "ungroupable",
+      "id": "ungroupable",
+      "class": "box",
+      "bbox": [
+        21,
+        284,
+        93,
+        332
+      ]
+    },
+    {
+      "text": "medullary",
+      "id": "medullary",
+      "class": "hexagon",
+      "bbox": [
+        5,
+        370,
+        110,
+        418
+      ]
+    },
+    {
+      "text": "trellislike litholyte vernitio",
+      "id": "trellislike litholyte vernitio",
+      "class": "document",
+      "bbox": [
+        16,
+        480,
+        99,
+        530
+      ]
+    },
+    {
+      "text": "pitchstone abditory",
+      "id": "pitchstone abditory",
+      "class": "diamond",
+      "bbox": [
+        221,
+        158,
+        344,
+        231
+      ]
+    },
+    {
+      "text": "reallege",
+      "id": "reallege",
+      "class": "circle",
+      "bbox": [
+        247,
+        242,
+        323,
+        318
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "morse headpenny",
+      "head": "crenitic",
+      "label": null,
+      "bbox": [
+        37,
+        97,
+        47,
+        139
+      ]
+    },
+    {
+      "tail": "crenitic",
+      "head": "ungroupable",
+      "label": "No",
+      "bbox": [
+        53,
+        204,
+        62,
+        283
+      ]
+    },
+    {
+      "tail": "crenitic",
+      "head": "morse headpenny",
+      "label": "No",
+      "bbox": [
+        68,
+        98,
+        78,
+        141
+      ]
+    },
+    {
+      "tail": "ungroupable",
+      "head": "medullary",
+      "label": null,
+      "bbox": [
+        53,
+        333,
+        62,
+        368
+      ]
+    },
+    {
+      "tail": "medullary",
+      "head": "trellislike litholyte vernitio",
+      "label": null,
+      "bbox": [
+        53,
+        418,
+        62,
+        479
+      ]
+    },
+    {
+      "tail": "trellislike litholyte vernitio",
+      "head": "pitchstone abditory",
+      "label": null,
+      "bbox": [
+        99,
+        201,
+        234,
+        499
+      ]
+    },
+    {
+      "tail": "pitchstone abditory",
+      "head": "reallege",
+      "label": "yes",
+      "bbox": [
+        281,
+        227,
+        290,
+        240
+      ]
+    },
+    {
+      "tail": "pitchstone abditory",
+      "head": "trellislike litholyte vernitio",
+      "label": "yes",
+      "bbox": [
+        100,
+        205,
+        238,
+        522
+      ]
+    }
+  ]
+}

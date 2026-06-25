@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "text": "fossed rotular",
+      "id": "fossed rotular",
+      "class": "node",
+      "bbox": [
+        250,
+        111,
+        346,
+        174
+      ]
+    },
+    {
+      "text": "angustiseptate  domesticality",
+      "id": "angustiseptate  domesticality",
+      "class": "node",
+      "bbox": [
+        423,
+        117,
+        556,
+        168
+      ]
+    },
+    {
+      "text": "tetradactyly calendric",
+      "id": "tetradactyly calendric",
+      "class": "node",
+      "bbox": [
+        27,
+        126,
+        136,
+        175
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fossed rotular",
+      "head": "angustiseptate  domesticality",
+      "label": "0.4",
+      "class": "unidirectional",
+      "bbox": [
+        347,
+        136,
+        421,
+        150
+      ]
+    },
+    {
+      "tail": "tetradactyly calendric",
+      "head": "fossed rotular",
+      "label": "0.1** y = 0.845",
+      "class": "unidirectional",
+      "bbox": [
+        136,
+        138,
+        248,
+        152
+      ]
+    }
+  ]
+}

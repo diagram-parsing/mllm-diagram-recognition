@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "text": "begin",
+      "id": "begin",
+      "class": "terminator"
+    },
+    {
+      "text": "input p",
+      "id": "input p",
+      "class": "data"
+    },
+    {
+      "text": "p>0",
+      "id": "p>0",
+      "class": "decision"
+    },
+    {
+      "text": "output p",
+      "id": "output p",
+      "class": "data"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "begin",
+      "head": "input p",
+      "label": null
+    },
+    {
+      "tail": "p>0",
+      "head": "input p",
+      "label": "else"
+    },
+    {
+      "tail": "input p",
+      "head": "p>0",
+      "label": null
+    },
+    {
+      "tail": "p>0",
+      "head": "output p",
+      "label": "then"
+    },
+    {
+      "tail": "output p",
+      "head": "end",
+      "label": null
+    }
+  ]
+}

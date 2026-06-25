@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "sulphonalism",
+      "id": "sulphonalism",
+      "class": "circle"
+    },
+    {
+      "text": "explication",
+      "id": "explication",
+      "class": "document"
+    },
+    {
+      "text": "summity colleger",
+      "id": "summity colleger",
+      "class": "document"
+    },
+    {
+      "text": "drawback",
+      "id": "drawback",
+      "class": "parallelogram"
+    },
+    {
+      "text": "periblastula",
+      "id": "periblastula",
+      "class": "diamond"
+    },
+    {
+      "text": "moorburning pearlwort",
+      "id": "moorburning pearlwort",
+      "class": "hexagon"
+    },
+    {
+      "text": "patroonship bushranging bloodl",
+      "id": "patroonship bushranging bloodl",
+      "class": "circle"
+    },
+    {
+      "text": "freewoman",
+      "id": "freewoman",
+      "class": "parallelogram"
+    },
+    {
+      "text": "exterminable glegness",
+      "id": "exterminable glegness",
+      "class": "hexagon"
+    },
+    {
+      "text": "bibliothecarial",
+      "id": "bibliothecarial",
+      "class": "diamond"
+    },
+    {
+      "text": "beermaking physicalness",
+      "id": "beermaking physicalness",
+      "class": "diamond"
+    },
+    {
+      "text": "urchin inroader intemporally",
+      "id": "urchin inroader intemporally",
+      "class": "parallelogram"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "sulphonalism",
+      "head": "explication",
+      "label": null
+    },
+    {
+      "tail": "explication",
+      "head": "summity colleger",
+      "label": null
+    },
+    {
+      "tail": "summity colleger",
+      "head": "drawback",
+      "label": null
+    },
+    {
+      "tail": "drawback",
+      "head": "periblastula",
+      "label": null
+    },
+    {
+      "tail": "periblastula",
+      "head": "moorburning pearlwort",
+      "label": "YES"
+    },
+    {
+      "tail": "periblastula",
+      "head": "patroonship bushranging bloodl",
+      "label": "YES"
+    },
+    {
+      "tail": "moorburning pearlwort",
+      "head": "freewoman",
+      "label": null
+    },
+    {
+      "tail": "freewoman",
+      "head": "exterminable glegness",
+      "label": null
+    },
+    {
+      "tail": "exterminable glegness",
+      "head": "bibliothecarial",
+      "label": null
+    },
+    {
+      "tail": "bibliothecarial",
+      "head": "beermaking physicalness",
+      "label": "yes"
+    },
+    {
+      "tail": "bibliothecarial",
+      "head": "freewoman",
+      "label": "yes"
+    },
+    {
+      "tail": "beermaking physicalness",
+      "head": "urchin inroader intemporally",
+      "label": "No"
+    },
+    {
+      "tail": "beermaking physicalness",
+      "head": "freewoman",
+      "label": "No"
+    },
+    {
+      "tail": "urchin inroader intemporally",
+      "head": "patroonship bushranging bloodl",
+      "label": null
+    }
+  ]
+}

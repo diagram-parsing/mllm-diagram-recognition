@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "preact",
+      "id": "preact",
+      "class": "oval"
+    },
+    {
+      "text": "invigilance",
+      "id": "invigilance",
+      "class": "hexagon"
+    },
+    {
+      "text": "mad",
+      "id": "mad",
+      "class": "diamond"
+    },
+    {
+      "text": "flashly",
+      "id": "flashly",
+      "class": "box"
+    },
+    {
+      "text": "velocious auxosubstance archtr",
+      "id": "velocious auxosubstance archtr",
+      "class": "document"
+    },
+    {
+      "text": "profeminism reunfold skirting",
+      "id": "profeminism reunfold skirting",
+      "class": "diamond"
+    },
+    {
+      "text": "waggishness",
+      "id": "waggishness",
+      "class": "document"
+    },
+    {
+      "text": "chicane",
+      "id": "chicane",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "preact",
+      "head": "invigilance",
+      "label": null
+    },
+    {
+      "tail": "invigilance",
+      "head": "mad",
+      "label": null
+    },
+    {
+      "tail": "mad",
+      "head": "flashly",
+      "label": "YES"
+    },
+    {
+      "tail": "mad",
+      "head": "velocious auxosubstance archtr",
+      "label": "YES"
+    },
+    {
+      "tail": "flashly",
+      "head": "profeminism reunfold skirting",
+      "label": null
+    },
+    {
+      "tail": "profeminism reunfold skirting",
+      "head": "waggishness",
+      "label": "Yes"
+    },
+    {
+      "tail": "profeminism reunfold skirting",
+      "head": "flashly",
+      "label": "Yes"
+    },
+    {
+      "tail": "waggishness",
+      "head": "velocious auxosubstance archtr",
+      "label": null
+    },
+    {
+      "tail": "velocious auxosubstance archtr",
+      "head": "chicane",
+      "label": null
+    }
+  ]
+}

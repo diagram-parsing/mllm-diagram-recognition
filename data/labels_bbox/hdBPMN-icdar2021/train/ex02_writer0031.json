@@ -1,0 +1,548 @@
+{
+  "nodes": [
+    {
+      "text": "insurance claim received",
+      "id": "insurance claim received",
+      "bbox": [
+        249,
+        752,
+        301,
+        798
+      ],
+      "class": "event"
+    },
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "bbox": [
+        515,
+        808,
+        660,
+        888
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        744,
+        760,
+        797,
+        804
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "write settlement recommendation\u00c3\u0083\u00c2\u00bc",
+      "id": "write settlement recommendation\u00c3\u0083\u00c2\u00bc",
+      "bbox": [
+        870,
+        732,
+        1104,
+        816
+      ],
+      "class": "task"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "bbox": [
+        536,
+        681,
+        644,
+        753
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        409,
+        746,
+        472,
+        794
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        460,
+        960,
+        508,
+        1024
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "recommendation",
+      "id": "recommendation",
+      "bbox": [
+        1461,
+        517,
+        1496,
+        558
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        1540,
+        392,
+        1572,
+        424
+      ],
+      "class": "event"
+    },
+    {
+      "text": "proceed claim handling process",
+      "id": "proceed claim handling process",
+      "bbox": [
+        1400,
+        373,
+        1501,
+        478
+      ],
+      "class": "task"
+    },
+    {
+      "text": "mark \"OK\"",
+      "id": "mark \"OK\"",
+      "bbox": [
+        1268,
+        387,
+        1361,
+        446
+      ],
+      "class": "task"
+    },
+    {
+      "text": "mark \"not OK\"",
+      "id": "mark \"not OK\"",
+      "bbox": [
+        1265,
+        520,
+        1368,
+        580
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1141,
+        485,
+        1198,
+        533
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "check recommendation",
+      "id": "check recommendation",
+      "bbox": [
+        866,
+        502,
+        1074,
+        574
+      ],
+      "class": "task"
+    },
+    {
+      "text": "recommendation",
+      "id": "recommendation",
+      "bbox": [
+        700,
+        408,
+        748,
+        472
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim DB",
+      "id": "claim DB",
+      "bbox": [
+        741,
+        656,
+        805,
+        708
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "bbox": [
+        186,
+        636,
+        234,
+        700
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "recommendation",
+      "id": "recommendation",
+      "bbox": [
+        1214,
+        750,
+        1262,
+        814
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "insurance claim received",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        301,
+        758,
+        410,
+        790
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "register claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        440,
+        722,
+        537,
+        754
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        440,
+        794,
+        516,
+        832
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        660,
+        796,
+        762,
+        848
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        644,
+        718,
+        757,
+        773
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "write settlement recommendation\u00c3\u0083\u00c2\u00bc",
+      "class": "sequenceFlow",
+      "bbox": [
+        794,
+        768,
+        872,
+        800
+      ],
+      "label": null
+    },
+    {
+      "tail": "check recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1074,
+        501,
+        1142,
+        533
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark \"OK\"",
+      "class": "sequenceFlow",
+      "bbox": [
+        1170,
+        417,
+        1270,
+        486
+      ],
+      "label": "is ok"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "mark \"not OK\"",
+      "class": "sequenceFlow",
+      "bbox": [
+        1170,
+        531,
+        1266,
+        563
+      ],
+      "label": "isnt ok"
+    },
+    {
+      "tail": "mark \"OK\"",
+      "head": "proceed claim handling process",
+      "class": "sequenceFlow",
+      "bbox": [
+        1362,
+        400,
+        1401,
+        432
+      ],
+      "label": null
+    },
+    {
+      "tail": "proceed claim handling process",
+      "head": "claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        1501,
+        392,
+        1542,
+        424
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation\u00c3\u0083\u00c2\u00bc",
+      "head": "check recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        950,
+        574,
+        982,
+        734
+      ],
+      "label": null
+    },
+    {
+      "tail": "mark \"not OK\"",
+      "head": "write settlement recommendation\u00c3\u0083\u00c2\u00bc",
+      "class": "sequenceFlow",
+      "bbox": [
+        1104,
+        580,
+        1280,
+        785
+      ],
+      "label": null
+    },
+    {
+      "tail": "insurance claim received",
+      "head": "claim",
+      "class": "dataAssociation",
+      "bbox": [
+        227,
+        700,
+        259,
+        758
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "examine claim",
+      "class": "dataAssociation",
+      "bbox": [
+        507,
+        888,
+        559,
+        961
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "write settlement recommendation\u00c3\u0083\u00c2\u00bc",
+      "class": "dataAssociation",
+      "bbox": [
+        508,
+        814,
+        882,
+        996
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation\u00c3\u0083\u00c2\u00bc",
+      "head": "recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        1104,
+        768,
+        1216,
+        800
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "bbox": [
+        234,
+        660,
+        537,
+        692
+      ],
+      "label": null
+    },
+    {
+      "tail": "register claim",
+      "head": "claim DB",
+      "class": "dataAssociation",
+      "bbox": [
+        642,
+        663,
+        738,
+        695
+      ],
+      "label": null
+    },
+    {
+      "tail": "recommendation",
+      "head": "mark \"OK\"",
+      "class": "dataAssociation",
+      "bbox": [
+        749,
+        348,
+        1301,
+        432
+      ],
+      "label": null
+    },
+    {
+      "tail": "recommendation",
+      "head": "mark \"not OK\"",
+      "class": "dataAssociation",
+      "bbox": [
+        1368,
+        530,
+        1462,
+        562
+      ],
+      "label": null
+    },
+    {
+      "tail": "recommendation",
+      "head": "check recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        749,
+        449,
+        880,
+        504
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "insurance claim received",
+      "class": "messageFlow",
+      "bbox": [
+        279,
+        170,
+        311,
+        760
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        84,
+        75,
+        1492,
+        171
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Insurer",
+      "nodes": [
+        "senior claims officer",
+        "claims officer"
+      ],
+      "bbox": [
+        27,
+        315,
+        1600,
+        1107
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "recommendation",
+        "claim",
+        "proceed claim handling process",
+        "mark \"OK\"",
+        "mark \"not OK\"",
+        "exclusiveGateway_1",
+        "check recommendation",
+        "recommendation",
+        "claim DB",
+        "claim"
+      ],
+      "bbox": [
+        66,
+        314,
+        1600,
+        710
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "insurance claim received",
+        "examine claim",
+        "parallelGateway_1",
+        "write settlement recommendation\u00c3\u0083\u00c2\u00bc",
+        "parallelGateway_2",
+        "claim",
+        "recommendation"
+      ],
+      "bbox": [
+        66,
+        710,
+        1600,
+        1106
+      ],
+      "class": "lane"
+    }
+  ]
+}

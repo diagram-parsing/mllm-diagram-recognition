@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "text": "start",
+      "id": "start",
+      "bbox": [
+        390,
+        4,
+        543,
+        93
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input n",
+      "id": "Input n",
+      "bbox": [
+        373,
+        181,
+        601,
+        267
+      ],
+      "class": "data"
+    },
+    {
+      "text": "sum=0 i=0",
+      "id": "sum=0 i=0",
+      "bbox": [
+        360,
+        340,
+        570,
+        470
+      ],
+      "class": "process"
+    },
+    {
+      "text": "sum=sum+i",
+      "id": "sum=sum+i",
+      "bbox": [
+        363,
+        562,
+        642,
+        674
+      ],
+      "class": "process"
+    },
+    {
+      "text": "i==n?",
+      "id": "i==n?",
+      "bbox": [
+        367,
+        739,
+        602,
+        870
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "output n",
+      "id": "output n",
+      "bbox": [
+        344,
+        987,
+        608,
+        1095
+      ],
+      "class": "data"
+    },
+    {
+      "text": "END",
+      "id": "END",
+      "bbox": [
+        402,
+        1202,
+        591,
+        1330
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "i=i+1",
+      "id": "i=i+1",
+      "bbox": [
+        4,
+        661,
+        155,
+        747
+      ],
+      "class": "process"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "start",
+      "head": "Input n",
+      "bbox": [
+        453,
+        91,
+        480,
+        159
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input n",
+      "head": "sum=0 i=0",
+      "bbox": [
+        460,
+        261,
+        488,
+        322
+      ],
+      "label": null
+    },
+    {
+      "tail": "sum=0 i=0",
+      "head": "sum=sum+i",
+      "bbox": [
+        460,
+        468,
+        487,
+        542
+      ],
+      "label": null
+    },
+    {
+      "tail": "sum=sum+i",
+      "head": "i==n?",
+      "bbox": [
+        458,
+        666,
+        491,
+        736
+      ],
+      "label": null
+    },
+    {
+      "tail": "i==n?",
+      "head": "output n",
+      "bbox": [
+        452,
+        861,
+        493,
+        980
+      ],
+      "label": "Yes"
+    },
+    {
+      "tail": "output n",
+      "head": "END",
+      "bbox": [
+        461,
+        1093,
+        495,
+        1198
+      ],
+      "label": null
+    },
+    {
+      "tail": "i==n?",
+      "head": "i=i+1",
+      "bbox": [
+        79,
+        735,
+        374,
+        806
+      ],
+      "label": "No"
+    },
+    {
+      "tail": "i=i+1",
+      "head": "sum=sum+i",
+      "bbox": [
+        64,
+        604,
+        356,
+        670
+      ],
+      "label": null
+    }
+  ]
+}

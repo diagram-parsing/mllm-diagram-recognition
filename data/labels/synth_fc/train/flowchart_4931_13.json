@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "text": "yarb",
+      "id": "yarb",
+      "class": "circle"
+    },
+    {
+      "text": "deseret",
+      "id": "deseret",
+      "class": "diamond"
+    },
+    {
+      "text": "riverman",
+      "id": "riverman",
+      "class": "document"
+    },
+    {
+      "text": "conjecturalist wumman unbain",
+      "id": "conjecturalist wumman unbain",
+      "class": "hexagon"
+    },
+    {
+      "text": "overrun reviewage",
+      "id": "overrun reviewage",
+      "class": "diamond"
+    },
+    {
+      "text": "geneticist faintful guitarfish",
+      "id": "geneticist faintful guitarfish",
+      "class": "diamond"
+    },
+    {
+      "text": "Moe peppergrass revenge",
+      "id": "Moe peppergrass revenge",
+      "class": "box"
+    },
+    {
+      "text": "noncommorancy Zygaena",
+      "id": "noncommorancy Zygaena",
+      "class": "hexagon"
+    },
+    {
+      "text": "Colchicaceae",
+      "id": "Colchicaceae",
+      "class": "diamond"
+    },
+    {
+      "text": "Malacostraca pretermitter",
+      "id": "Malacostraca pretermitter",
+      "class": "document"
+    },
+    {
+      "text": "semiopalescent metranate tempi",
+      "id": "semiopalescent metranate tempi",
+      "class": "box"
+    },
+    {
+      "text": "extrinsically alalite",
+      "id": "extrinsically alalite",
+      "class": "hexagon"
+    },
+    {
+      "text": "grabble prosecutable",
+      "id": "grabble prosecutable",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "yarb",
+      "head": "deseret",
+      "label": null
+    },
+    {
+      "tail": "deseret",
+      "head": "riverman",
+      "label": "NO"
+    },
+    {
+      "tail": "deseret",
+      "head": "conjecturalist wumman unbain",
+      "label": "NO"
+    },
+    {
+      "tail": "riverman",
+      "head": "overrun reviewage",
+      "label": null
+    },
+    {
+      "tail": "overrun reviewage",
+      "head": "geneticist faintful guitarfish",
+      "label": "no"
+    },
+    {
+      "tail": "overrun reviewage",
+      "head": "conjecturalist wumman unbain",
+      "label": "no"
+    },
+    {
+      "tail": "geneticist faintful guitarfish",
+      "head": "Moe peppergrass revenge",
+      "label": "no"
+    },
+    {
+      "tail": "geneticist faintful guitarfish",
+      "head": "conjecturalist wumman unbain",
+      "label": "no"
+    },
+    {
+      "tail": "Moe peppergrass revenge",
+      "head": "noncommorancy Zygaena",
+      "label": null
+    },
+    {
+      "tail": "noncommorancy Zygaena",
+      "head": "conjecturalist wumman unbain",
+      "label": null
+    },
+    {
+      "tail": "conjecturalist wumman unbain",
+      "head": "Colchicaceae",
+      "label": null
+    },
+    {
+      "tail": "Colchicaceae",
+      "head": "Malacostraca pretermitter",
+      "label": "YES"
+    },
+    {
+      "tail": "Colchicaceae",
+      "head": "geneticist faintful guitarfish",
+      "label": "YES"
+    },
+    {
+      "tail": "Malacostraca pretermitter",
+      "head": "semiopalescent metranate tempi",
+      "label": null
+    },
+    {
+      "tail": "semiopalescent metranate tempi",
+      "head": "extrinsically alalite",
+      "label": null
+    },
+    {
+      "tail": "extrinsically alalite",
+      "head": "grabble prosecutable",
+      "label": null
+    }
+  ]
+}

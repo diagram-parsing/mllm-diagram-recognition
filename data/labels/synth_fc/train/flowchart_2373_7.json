@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "ume",
+      "id": "ume",
+      "class": "circle"
+    },
+    {
+      "text": "outwit",
+      "id": "outwit",
+      "class": "document"
+    },
+    {
+      "text": "carcinolysin silvanity",
+      "id": "carcinolysin silvanity",
+      "class": "document"
+    },
+    {
+      "text": "agoniatite",
+      "id": "agoniatite",
+      "class": "diamond"
+    },
+    {
+      "text": "penumbra",
+      "id": "penumbra",
+      "class": "box"
+    },
+    {
+      "text": "desmoma unhold",
+      "id": "desmoma unhold",
+      "class": "oval"
+    },
+    {
+      "text": "laparomyomectomy",
+      "id": "laparomyomectomy",
+      "class": "diamond"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "ume",
+      "head": "outwit",
+      "label": null
+    },
+    {
+      "tail": "outwit",
+      "head": "carcinolysin silvanity",
+      "label": null
+    },
+    {
+      "tail": "carcinolysin silvanity",
+      "head": "agoniatite",
+      "label": null
+    },
+    {
+      "tail": "agoniatite",
+      "head": "penumbra",
+      "label": "yes"
+    },
+    {
+      "tail": "agoniatite",
+      "head": "desmoma unhold",
+      "label": "yes"
+    },
+    {
+      "tail": "penumbra",
+      "head": "laparomyomectomy",
+      "label": null
+    },
+    {
+      "tail": "laparomyomectomy",
+      "head": "desmoma unhold",
+      "label": "NO"
+    },
+    {
+      "tail": "laparomyomectomy",
+      "head": "agoniatite",
+      "label": "NO"
+    }
+  ]
+}

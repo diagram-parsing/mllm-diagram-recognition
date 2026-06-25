@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "text": "roguery alod",
+      "id": "roguery alod",
+      "class": "node",
+      "bbox": [
+        27,
+        34,
+        133,
+        97
+      ]
+    },
+    {
+      "text": "syntonical",
+      "id": "syntonical",
+      "class": "node",
+      "bbox": [
+        256,
+        130,
+        362,
+        201
+      ]
+    },
+    {
+      "text": "circumaviate",
+      "id": "circumaviate",
+      "class": "node",
+      "bbox": [
+        241,
+        41,
+        377,
+        89
+      ]
+    },
+    {
+      "text": "agoniatite",
+      "id": "agoniatite",
+      "class": "node",
+      "bbox": [
+        493,
+        5,
+        622,
+        53
+      ]
+    },
+    {
+      "text": "phyllopodan",
+      "id": "phyllopodan",
+      "class": "node",
+      "bbox": [
+        481,
+        77,
+        629,
+        125
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "roguery alod",
+      "head": "syntonical",
+      "label": "0.9225",
+      "class": "unidirectional",
+      "bbox": [
+        123,
+        84,
+        264,
+        150
+      ]
+    },
+    {
+      "tail": "circumaviate",
+      "head": "agoniatite",
+      "label": "0.99",
+      "class": "unidirectional",
+      "bbox": [
+        372,
+        31,
+        497,
+        56
+      ]
+    },
+    {
+      "tail": "circumaviate",
+      "head": "phyllopodan",
+      "label": "-0.642",
+      "class": "unidirectional",
+      "bbox": [
+        368,
+        78,
+        484,
+        102
+      ]
+    },
+    {
+      "tail": "roguery alod",
+      "head": "circumaviate",
+      "label": "1",
+      "class": "bidirectional",
+      "bbox": [
+        144,
+        56,
+        240,
+        74
+      ]
+    }
+  ]
+}

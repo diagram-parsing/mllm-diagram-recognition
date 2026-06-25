@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "geebung",
+      "id": "geebung",
+      "class": "circle"
+    },
+    {
+      "text": "placemanship",
+      "id": "placemanship",
+      "class": "diamond"
+    },
+    {
+      "text": "Ribes",
+      "id": "Ribes",
+      "class": "diamond"
+    },
+    {
+      "text": "Anemia unagitatedness",
+      "id": "Anemia unagitatedness",
+      "class": "oval"
+    },
+    {
+      "text": "refreshener",
+      "id": "refreshener",
+      "class": "diamond"
+    },
+    {
+      "text": "examinatory",
+      "id": "examinatory",
+      "class": "document"
+    },
+    {
+      "text": "inauthenticity",
+      "id": "inauthenticity",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "geebung",
+      "head": "placemanship",
+      "label": null
+    },
+    {
+      "tail": "placemanship",
+      "head": "Ribes",
+      "label": "YES"
+    },
+    {
+      "tail": "placemanship",
+      "head": "Anemia unagitatedness",
+      "label": "YES"
+    },
+    {
+      "tail": "Ribes",
+      "head": "refreshener",
+      "label": "yes"
+    },
+    {
+      "tail": "Ribes",
+      "head": "examinatory",
+      "label": "yes"
+    },
+    {
+      "tail": "refreshener",
+      "head": "inauthenticity",
+      "label": "NO"
+    },
+    {
+      "tail": "refreshener",
+      "head": "geebung",
+      "label": "NO"
+    },
+    {
+      "tail": "inauthenticity",
+      "head": "examinatory",
+      "label": null
+    },
+    {
+      "tail": "examinatory",
+      "head": "Anemia unagitatedness",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "text": "geomorphological",
+      "id": "geomorphological",
+      "class": "node"
+    },
+    {
+      "text": "nonviscid",
+      "id": "nonviscid",
+      "class": "node"
+    },
+    {
+      "text": "Patarin Porkopolis",
+      "id": "Patarin Porkopolis",
+      "class": "node"
+    },
+    {
+      "text": "cardiasthenia",
+      "id": "cardiasthenia",
+      "class": "node"
+    },
+    {
+      "text": "Vaucheria polyprotodont legiti",
+      "id": "Vaucheria polyprotodont legiti",
+      "class": "node"
+    },
+    {
+      "text": "phonogramically",
+      "id": "phonogramically",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "geomorphological",
+      "head": "nonviscid",
+      "label": "0.7* x = 0.114",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "geomorphological",
+      "head": "Patarin Porkopolis",
+      "label": "0.85 x = 0.334",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "geomorphological",
+      "head": "cardiasthenia",
+      "label": "0.34* H = 0.843",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Vaucheria polyprotodont legiti",
+      "head": "phonogramically",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "geomorphological",
+      "head": "Vaucheria polyprotodont legiti",
+      "label": null,
+      "class": "bidirectional"
+    }
+  ]
+}

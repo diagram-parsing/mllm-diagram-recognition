@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "text": "q0",
+      "id": "q0",
+      "class": "state"
+    },
+    {
+      "text": "q1",
+      "id": "q1",
+      "class": "final state"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "q0",
+      "head": "q0",
+      "label": "1"
+    },
+    {
+      "tail": "q1",
+      "head": "q1",
+      "label": "1"
+    },
+    {
+      "tail": null,
+      "head": "q0",
+      "label": null
+    },
+    {
+      "tail": "q0",
+      "head": "q1",
+      "label": "0"
+    },
+    {
+      "tail": "q1",
+      "head": "q0",
+      "label": "0"
+    }
+  ]
+}

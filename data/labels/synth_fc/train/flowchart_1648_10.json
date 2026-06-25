@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "communicant",
+      "id": "communicant",
+      "class": "oval"
+    },
+    {
+      "text": "consorter",
+      "id": "consorter",
+      "class": "parallelogram"
+    },
+    {
+      "text": "rumtytoo",
+      "id": "rumtytoo",
+      "class": "diamond"
+    },
+    {
+      "text": "disasinate nautilite",
+      "id": "disasinate nautilite",
+      "class": "diamond"
+    },
+    {
+      "text": "historize",
+      "id": "historize",
+      "class": "diamond"
+    },
+    {
+      "text": "intuitional",
+      "id": "intuitional",
+      "class": "diamond"
+    },
+    {
+      "text": "unsucceedable superrighteous",
+      "id": "unsucceedable superrighteous",
+      "class": "oval"
+    },
+    {
+      "text": "archconfraternity",
+      "id": "archconfraternity",
+      "class": "diamond"
+    },
+    {
+      "text": "neediness",
+      "id": "neediness",
+      "class": "box"
+    },
+    {
+      "text": "snecket",
+      "id": "snecket",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "communicant",
+      "head": "consorter",
+      "label": null
+    },
+    {
+      "tail": "consorter",
+      "head": "rumtytoo",
+      "label": null
+    },
+    {
+      "tail": "rumtytoo",
+      "head": "disasinate nautilite",
+      "label": "no"
+    },
+    {
+      "tail": "rumtytoo",
+      "head": "historize",
+      "label": "no"
+    },
+    {
+      "tail": "disasinate nautilite",
+      "head": "intuitional",
+      "label": "YES"
+    },
+    {
+      "tail": "disasinate nautilite",
+      "head": "unsucceedable superrighteous",
+      "label": "YES"
+    },
+    {
+      "tail": "intuitional",
+      "head": "archconfraternity",
+      "label": "no"
+    },
+    {
+      "tail": "intuitional",
+      "head": "communicant",
+      "label": "no"
+    },
+    {
+      "tail": "archconfraternity",
+      "head": "neediness",
+      "label": "yes"
+    },
+    {
+      "tail": "archconfraternity",
+      "head": "unsucceedable superrighteous",
+      "label": "yes"
+    },
+    {
+      "tail": "neediness",
+      "head": "snecket",
+      "label": null
+    },
+    {
+      "tail": "snecket",
+      "head": "historize",
+      "label": null
+    },
+    {
+      "tail": "historize",
+      "head": "unsucceedable superrighteous",
+      "label": "YES"
+    },
+    {
+      "tail": "historize",
+      "head": "rumtytoo",
+      "label": "YES"
+    }
+  ]
+}

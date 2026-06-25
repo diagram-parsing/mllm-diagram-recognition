@@ -1,0 +1,537 @@
+{
+  "nodes": [
+    {
+      "text": "retrieve files",
+      "id": "retrieve files",
+      "bbox": [
+        549,
+        1088,
+        947,
+        1257
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1085,
+        1074,
+        1237,
+        1257
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1381,
+        1065,
+        1541,
+        1245
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "check if request is compliant",
+      "id": "check if request is compliant",
+      "bbox": [
+        1632,
+        1257,
+        2083,
+        1510
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check if request is acceptable",
+      "id": "check if request is acceptable",
+      "bbox": [
+        1891,
+        890,
+        2342,
+        1124
+      ],
+      "class": "task"
+    },
+    {
+      "text": "allocate hearing date",
+      "id": "allocate hearing date",
+      "bbox": [
+        4056,
+        1068,
+        4462,
+        1313
+      ],
+      "class": "task"
+    },
+    {
+      "text": "fees notice sent",
+      "id": "fees notice sent",
+      "bbox": [
+        3188,
+        1510,
+        3439,
+        1736
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "files",
+      "id": "files",
+      "bbox": [
+        622,
+        1454,
+        871,
+        1691
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "fee recived",
+      "id": "fee recived",
+      "bbox": [
+        2553,
+        1496,
+        2785,
+        1730
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "request for compensation recived",
+      "id": "request for compensation recived",
+      "bbox": [
+        586,
+        637,
+        834,
+        856
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "compensation request",
+      "id": "compensation request",
+      "bbox": [
+        1640,
+        620,
+        2029,
+        831
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        2463,
+        1124,
+        2604,
+        1265
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "set hearing date",
+      "id": "set hearing date",
+      "bbox": [
+        2821,
+        1082,
+        3244,
+        1307
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        3419,
+        1113,
+        3580,
+        1262
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "fees notice",
+      "id": "fees notice",
+      "bbox": [
+        3822,
+        1505,
+        4014,
+        1744
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "bbox": [
+        4778,
+        1099,
+        4989,
+        1307
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "request for compensation recived",
+      "head": "retrieve files",
+      "class": "sequenceFlow",
+      "bbox": [
+        659,
+        871,
+        763,
+        1090
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve files",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        947,
+        1116,
+        1088,
+        1220
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1220,
+        1093,
+        1395,
+        1198
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if request is compliant",
+      "class": "sequenceFlow",
+      "bbox": [
+        1463,
+        1243,
+        1634,
+        1372
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if request is acceptable",
+      "class": "sequenceFlow",
+      "bbox": [
+        1463,
+        985,
+        1894,
+        1089
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if request is acceptable",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2342,
+        1003,
+        2537,
+        1127
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "set hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        2604,
+        1144,
+        2824,
+        1248
+      ],
+      "label": null
+    },
+    {
+      "tail": "set hearing date",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        3244,
+        1138,
+        3427,
+        1243
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "allocate hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        3574,
+        1133,
+        4059,
+        1237
+      ],
+      "label": "fee paid"
+    },
+    {
+      "tail": "allocate hearing date",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "bbox": [
+        4462,
+        1152,
+        4780,
+        1257
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "fees notice sent",
+      "class": "sequenceFlow",
+      "bbox": [
+        3423,
+        1254,
+        3527,
+        1640
+      ],
+      "label": "fee not paid"
+    },
+    {
+      "tail": "fees notice sent",
+      "head": "fee recived",
+      "class": "sequenceFlow",
+      "bbox": [
+        2785,
+        1570,
+        3191,
+        1674
+      ],
+      "label": null
+    },
+    {
+      "tail": "fee recived",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1152,
+        1245,
+        2556,
+        1623
+      ],
+      "label": null
+    },
+    {
+      "tail": "check if request is compliant",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        2083,
+        1265,
+        2537,
+        1386
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrieve files",
+      "head": "files",
+      "class": "dataAssociation",
+      "bbox": [
+        683,
+        1257,
+        787,
+        1457
+      ],
+      "label": null
+    },
+    {
+      "tail": "files",
+      "head": "check if request is compliant",
+      "class": "dataAssociation",
+      "bbox": [
+        732,
+        1510,
+        1854,
+        1739
+      ],
+      "label": null
+    },
+    {
+      "tail": "compensation request",
+      "head": "check if request is compliant",
+      "class": "dataAssociation",
+      "bbox": [
+        1742,
+        831,
+        1846,
+        1260
+      ],
+      "label": null
+    },
+    {
+      "tail": "compensation request",
+      "head": "check if request is acceptable",
+      "class": "dataAssociation",
+      "bbox": [
+        2012,
+        738,
+        2117,
+        893
+      ],
+      "label": null
+    },
+    {
+      "tail": "files",
+      "head": "check if request is acceptable",
+      "class": "dataAssociation",
+      "bbox": [
+        732,
+        1124,
+        2153,
+        1739
+      ],
+      "label": null
+    },
+    {
+      "tail": "fees notice",
+      "head": "fees notice sent",
+      "class": "dataAssociation",
+      "bbox": [
+        3427,
+        1626,
+        3825,
+        1730
+      ],
+      "label": null
+    },
+    {
+      "tail": "request for compensation recived",
+      "head": "compensation request",
+      "class": "dataAssociation",
+      "bbox": [
+        831,
+        651,
+        1643,
+        755
+      ],
+      "label": null
+    },
+    {
+      "tail": "owner",
+      "head": "request for compensation recived",
+      "class": "messageFlow",
+      "bbox": [
+        659,
+        355,
+        763,
+        625
+      ],
+      "label": "compensation request"
+    },
+    {
+      "tail": "owner",
+      "head": "fee recived",
+      "class": "messageFlow",
+      "bbox": [
+        2624,
+        355,
+        2728,
+        1502
+      ],
+      "label": "fee"
+    },
+    {
+      "tail": "fees notice sent",
+      "head": "owner",
+      "class": "messageFlow",
+      "bbox": [
+        3241,
+        355,
+        3346,
+        1502
+      ],
+      "label": "fees notice"
+    }
+  ],
+  "groups": [
+    {
+      "name": "tribunal",
+      "nodes": [
+        "lane_1",
+        "cashier"
+      ],
+      "bbox": [
+        307,
+        617,
+        5074,
+        1815
+      ],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [
+        "request for compensation recived",
+        "compensation request"
+      ],
+      "bbox": [
+        391,
+        617,
+        5074,
+        856
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "cashier",
+      "nodes": [
+        "retrieve files",
+        "exclusiveGateway_1",
+        "parallelGateway_1",
+        "check if request is compliant",
+        "check if request is acceptable",
+        "allocate hearing date",
+        "fees notice sent",
+        "files",
+        "fee recived",
+        "parallelGateway_2",
+        "set hearing date",
+        "exclusiveGateway_2",
+        "fees notice",
+        "process completed"
+      ],
+      "bbox": [
+        391,
+        856,
+        5074,
+        1815
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "owner",
+      "nodes": [],
+      "bbox": [
+        532,
+        186,
+        4422,
+        355
+      ],
+      "class": "pool"
+    }
+  ]
+}

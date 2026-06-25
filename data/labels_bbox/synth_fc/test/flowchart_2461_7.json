@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "text": "houghite",
+      "id": "houghite",
+      "class": "circle",
+      "bbox": [
+        69,
+        19,
+        138,
+        87
+      ]
+    },
+    {
+      "text": "occipitothalamic",
+      "id": "occipitothalamic",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        100,
+        202,
+        148
+      ]
+    },
+    {
+      "text": "botanic uncaparisoned",
+      "id": "botanic uncaparisoned",
+      "class": "parallelogram",
+      "bbox": [
+        29,
+        207,
+        179,
+        280
+      ]
+    },
+    {
+      "text": "harmattan",
+      "id": "harmattan",
+      "class": "diamond",
+      "bbox": [
+        41,
+        291,
+        167,
+        333
+      ]
+    },
+    {
+      "text": "orthoceratoid Ralph",
+      "id": "orthoceratoid Ralph",
+      "class": "box",
+      "bbox": [
+        255,
+        5,
+        333,
+        53
+      ]
+    },
+    {
+      "text": "unsyringed infratemporal",
+      "id": "unsyringed infratemporal",
+      "class": "hexagon",
+      "bbox": [
+        228,
+        95,
+        354,
+        154
+      ]
+    },
+    {
+      "text": "Perugian",
+      "id": "Perugian",
+      "class": "oval",
+      "bbox": [
+        253,
+        172,
+        335,
+        220
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "houghite",
+      "head": "occipitothalamic",
+      "label": null,
+      "bbox": [
+        99,
+        85,
+        108,
+        99
+      ]
+    },
+    {
+      "tail": "occipitothalamic",
+      "head": "botanic uncaparisoned",
+      "label": null,
+      "bbox": [
+        99,
+        149,
+        108,
+        205
+      ]
+    },
+    {
+      "tail": "botanic uncaparisoned",
+      "head": "harmattan",
+      "label": null,
+      "bbox": [
+        99,
+        276,
+        108,
+        289
+      ]
+    },
+    {
+      "tail": "harmattan",
+      "head": "orthoceratoid Ralph",
+      "label": "YES",
+      "bbox": [
+        147,
+        33,
+        253,
+        323
+      ]
+    },
+    {
+      "tail": "harmattan",
+      "head": "houghite",
+      "label": "YES",
+      "bbox": [
+        135,
+        66,
+        211,
+        307
+      ]
+    },
+    {
+      "tail": "orthoceratoid Ralph",
+      "head": "unsyringed infratemporal",
+      "label": null,
+      "bbox": [
+        289,
+        54,
+        299,
+        93
+      ]
+    },
+    {
+      "tail": "unsyringed infratemporal",
+      "head": "Perugian",
+      "label": null,
+      "bbox": [
+        289,
+        155,
+        299,
+        170
+      ]
+    }
+  ]
+}

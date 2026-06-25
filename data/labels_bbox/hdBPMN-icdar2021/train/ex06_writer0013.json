@@ -1,0 +1,436 @@
+{
+  "nodes": [
+    {
+      "text": "order",
+      "id": "order",
+      "bbox": [
+        1227,
+        722,
+        1281,
+        787
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "Pinboard",
+      "id": "Pinboard",
+      "bbox": [
+        1621,
+        275,
+        1692,
+        348
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        1849,
+        460,
+        1904,
+        510
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1417,
+        462,
+        1493,
+        527
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        996,
+        468,
+        1070,
+        541
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        1598,
+        437,
+        1747,
+        545
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "bbox": [
+        1170,
+        439,
+        1319,
+        554
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_3",
+      "bbox": [
+        508,
+        610,
+        661,
+        730
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_4",
+      "bbox": [
+        759,
+        608,
+        904,
+        722
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_5",
+      "bbox": [
+        757,
+        305,
+        896,
+        420
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_6",
+      "bbox": [
+        512,
+        305,
+        661,
+        420
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_7",
+      "bbox": [
+        514,
+        458,
+        663,
+        573
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        344,
+        485,
+        420,
+        552
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "event_2",
+      "bbox": [
+        206,
+        497,
+        260,
+        550
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "task_4",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        906,
+        523,
+        1462,
+        666
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1493,
+        475,
+        1600,
+        515
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1318,
+        478,
+        1421,
+        519
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1068,
+        485,
+        1171,
+        525
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_5",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        897,
+        364,
+        1036,
+        472
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_6",
+      "head": "task_5",
+      "class": "sequenceFlow",
+      "bbox": [
+        661,
+        345,
+        760,
+        385
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_7",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        663,
+        492,
+        999,
+        532
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1747,
+        471,
+        1850,
+        511
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_3",
+      "head": "task_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        661,
+        651,
+        761,
+        691
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "task_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        382,
+        552,
+        511,
+        679
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "task_6",
+      "class": "sequenceFlow",
+      "bbox": [
+        382,
+        366,
+        514,
+        487
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "task_7",
+      "class": "sequenceFlow",
+      "bbox": [
+        420,
+        502,
+        515,
+        542
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_2",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        258,
+        506,
+        353,
+        546
+      ],
+      "label": null
+    },
+    {
+      "tail": "order",
+      "head": "task_1",
+      "class": "dataAssociation",
+      "bbox": [
+        1280,
+        547,
+        1696,
+        758
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "Pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        1643,
+        348,
+        1683,
+        440
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "order",
+      "class": "dataAssociation",
+      "bbox": [
+        1229,
+        555,
+        1270,
+        718
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_4",
+      "head": "order",
+      "class": "dataAssociation",
+      "bbox": [
+        833,
+        722,
+        1229,
+        769
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "task_6",
+      "class": "messageFlow",
+      "bbox": [
+        588,
+        173,
+        628,
+        308
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "task_7",
+      "class": "messageFlow",
+      "bbox": [
+        655,
+        173,
+        695,
+        477
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "task_3",
+      "class": "messageFlow",
+      "bbox": [
+        666,
+        173,
+        721,
+        668
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_5",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        776,
+        173,
+        816,
+        308
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "pizza restaurant",
+      "nodes": [],
+      "bbox": [
+        30,
+        206,
+        1988,
+        845
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        48,
+        44,
+        1948,
+        173
+      ],
+      "class": "pool"
+    }
+  ]
+}

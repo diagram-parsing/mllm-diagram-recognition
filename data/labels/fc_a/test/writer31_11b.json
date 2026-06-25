@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "bbox": [
+        125,
+        4,
+        354,
+        120
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input V",
+      "id": "Input V",
+      "bbox": [
+        4,
+        214,
+        545,
+        151
+      ],
+      "class": "data"
+    },
+    {
+      "text": "Compute f(V)",
+      "id": "Compute f(V)",
+      "bbox": [
+        28,
+        423,
+        555,
+        158
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Compute g(V)",
+      "id": "Compute g(V)",
+      "bbox": [
+        33,
+        722,
+        545,
+        167
+      ],
+      "class": "process"
+    },
+    {
+      "text": "Output f(V)+g(V)",
+      "id": "Output f(V)+g(V)",
+      "bbox": [
+        38,
+        995,
+        587,
+        133
+      ],
+      "class": "data"
+    },
+    {
+      "text": "Stop",
+      "id": "Stop",
+      "bbox": [
+        140,
+        1213,
+        386,
+        117
+      ],
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "Input V",
+      "bbox": [
+        281,
+        111,
+        50,
+        85
+      ],
+      "kps": [
+        301.0,
+        112.0,
+        2.0,
+        311.0,
+        185.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input V",
+      "head": "Compute f(V)",
+      "bbox": [
+        282,
+        339,
+        47,
+        98
+      ],
+      "kps": [
+        295.0,
+        341.0,
+        2.0,
+        299.0,
+        426.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Compute f(V)",
+      "head": "Compute g(V)",
+      "bbox": [
+        288,
+        576,
+        51,
+        139
+      ],
+      "kps": [
+        324.0,
+        577.0,
+        2.0,
+        301.0,
+        707.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Compute g(V)",
+      "head": "Output f(V)+g(V)",
+      "bbox": [
+        326,
+        870,
+        43,
+        120
+      ],
+      "kps": [
+        348.0,
+        871.0,
+        2.0,
+        338.0,
+        983.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Output f(V)+g(V)",
+      "head": "Stop",
+      "bbox": [
+        334,
+        1119,
+        52,
+        106
+      ],
+      "kps": [
+        350.0,
+        1120.0,
+        2.0,
+        359.0,
+        1212.0,
+        2.0
+      ],
+      "label": null
+    }
+  ]
+}

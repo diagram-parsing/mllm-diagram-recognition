@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "templeless",
+      "id": "templeless",
+      "class": "oval"
+    },
+    {
+      "text": "scleroticonyxis",
+      "id": "scleroticonyxis",
+      "class": "parallelogram"
+    },
+    {
+      "text": "pilothouse flaser",
+      "id": "pilothouse flaser",
+      "class": "document"
+    },
+    {
+      "text": "unitariness",
+      "id": "unitariness",
+      "class": "diamond"
+    },
+    {
+      "text": "industrochemical athenaeum",
+      "id": "industrochemical athenaeum",
+      "class": "document"
+    },
+    {
+      "text": "diplosphene moochulka",
+      "id": "diplosphene moochulka",
+      "class": "box"
+    },
+    {
+      "text": "meroistic precancel",
+      "id": "meroistic precancel",
+      "class": "diamond"
+    },
+    {
+      "text": "rallentando",
+      "id": "rallentando",
+      "class": "diamond"
+    },
+    {
+      "text": "androgone semicupola",
+      "id": "androgone semicupola",
+      "class": "parallelogram"
+    },
+    {
+      "text": "extirpationist",
+      "id": "extirpationist",
+      "class": "hexagon"
+    },
+    {
+      "text": "unloveableness",
+      "id": "unloveableness",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "templeless",
+      "head": "scleroticonyxis",
+      "label": null
+    },
+    {
+      "tail": "scleroticonyxis",
+      "head": "pilothouse flaser",
+      "label": null
+    },
+    {
+      "tail": "pilothouse flaser",
+      "head": "unitariness",
+      "label": null
+    },
+    {
+      "tail": "unitariness",
+      "head": "industrochemical athenaeum",
+      "label": "no"
+    },
+    {
+      "tail": "unitariness",
+      "head": "pilothouse flaser",
+      "label": "no"
+    },
+    {
+      "tail": "industrochemical athenaeum",
+      "head": "diplosphene moochulka",
+      "label": null
+    },
+    {
+      "tail": "diplosphene moochulka",
+      "head": "meroistic precancel",
+      "label": null
+    },
+    {
+      "tail": "meroistic precancel",
+      "head": "rallentando",
+      "label": "Yes"
+    },
+    {
+      "tail": "meroistic precancel",
+      "head": "androgone semicupola",
+      "label": "Yes"
+    },
+    {
+      "tail": "rallentando",
+      "head": "androgone semicupola",
+      "label": "no"
+    },
+    {
+      "tail": "rallentando",
+      "head": "extirpationist",
+      "label": "no"
+    },
+    {
+      "tail": "androgone semicupola",
+      "head": "extirpationist",
+      "label": null
+    },
+    {
+      "tail": "extirpationist",
+      "head": "unloveableness",
+      "label": null
+    }
+  ]
+}

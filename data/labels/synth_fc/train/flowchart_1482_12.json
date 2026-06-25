@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "text": "blandish",
+      "id": "blandish",
+      "class": "ellipse"
+    },
+    {
+      "text": "visceropleural",
+      "id": "visceropleural",
+      "class": "document"
+    },
+    {
+      "text": "antediluvially",
+      "id": "antediluvially",
+      "class": "box"
+    },
+    {
+      "text": "Bantingism",
+      "id": "Bantingism",
+      "class": "diamond"
+    },
+    {
+      "text": "efface Natchez polyglottically",
+      "id": "efface Natchez polyglottically",
+      "class": "box"
+    },
+    {
+      "text": "snavvle",
+      "id": "snavvle",
+      "class": "parallelogram"
+    },
+    {
+      "text": "unfashion nonconsequence",
+      "id": "unfashion nonconsequence",
+      "class": "box"
+    },
+    {
+      "text": "odontogen unapproachable bosk",
+      "id": "odontogen unapproachable bosk",
+      "class": "parallelogram"
+    },
+    {
+      "text": "grossularia umbilic",
+      "id": "grossularia umbilic",
+      "class": "diamond"
+    },
+    {
+      "text": "sye conspue hyporchesis",
+      "id": "sye conspue hyporchesis",
+      "class": "hexagon"
+    },
+    {
+      "text": "precriticism unbuild",
+      "id": "precriticism unbuild",
+      "class": "hexagon"
+    },
+    {
+      "text": "patient edgrew simiousness",
+      "id": "patient edgrew simiousness",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "blandish",
+      "head": "visceropleural",
+      "label": null
+    },
+    {
+      "tail": "visceropleural",
+      "head": "antediluvially",
+      "label": null
+    },
+    {
+      "tail": "antediluvially",
+      "head": "Bantingism",
+      "label": null
+    },
+    {
+      "tail": "Bantingism",
+      "head": "efface Natchez polyglottically",
+      "label": "No"
+    },
+    {
+      "tail": "Bantingism",
+      "head": "blandish",
+      "label": "No"
+    },
+    {
+      "tail": "efface Natchez polyglottically",
+      "head": "snavvle",
+      "label": null
+    },
+    {
+      "tail": "snavvle",
+      "head": "unfashion nonconsequence",
+      "label": null
+    },
+    {
+      "tail": "unfashion nonconsequence",
+      "head": "odontogen unapproachable bosk",
+      "label": null
+    },
+    {
+      "tail": "odontogen unapproachable bosk",
+      "head": "grossularia umbilic",
+      "label": null
+    },
+    {
+      "tail": "grossularia umbilic",
+      "head": "sye conspue hyporchesis",
+      "label": "YES"
+    },
+    {
+      "tail": "grossularia umbilic",
+      "head": "unfashion nonconsequence",
+      "label": "YES"
+    },
+    {
+      "tail": "sye conspue hyporchesis",
+      "head": "precriticism unbuild",
+      "label": null
+    },
+    {
+      "tail": "precriticism unbuild",
+      "head": "patient edgrew simiousness",
+      "label": null
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "songless",
+      "id": "songless",
+      "class": "circle"
+    },
+    {
+      "text": "influxable",
+      "id": "influxable",
+      "class": "hexagon"
+    },
+    {
+      "text": "euryprognathous quiddity chiro",
+      "id": "euryprognathous quiddity chiro",
+      "class": "diamond"
+    },
+    {
+      "text": "to",
+      "id": "to",
+      "class": "parallelogram"
+    },
+    {
+      "text": "poetastering",
+      "id": "poetastering",
+      "class": "diamond"
+    },
+    {
+      "text": "subangulate fully",
+      "id": "subangulate fully",
+      "class": "hexagon"
+    },
+    {
+      "text": "rhincospasm preobstruction",
+      "id": "rhincospasm preobstruction",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "songless",
+      "head": "influxable",
+      "label": null
+    },
+    {
+      "tail": "influxable",
+      "head": "euryprognathous quiddity chiro",
+      "label": null
+    },
+    {
+      "tail": "euryprognathous quiddity chiro",
+      "head": "to",
+      "label": "Yes"
+    },
+    {
+      "tail": "euryprognathous quiddity chiro",
+      "head": "poetastering",
+      "label": "Yes"
+    },
+    {
+      "tail": "to",
+      "head": "subangulate fully",
+      "label": null
+    },
+    {
+      "tail": "subangulate fully",
+      "head": "poetastering",
+      "label": null
+    },
+    {
+      "tail": "poetastering",
+      "head": "rhincospasm preobstruction",
+      "label": "YES"
+    },
+    {
+      "tail": "poetastering",
+      "head": "songless",
+      "label": "YES"
+    }
+  ]
+}

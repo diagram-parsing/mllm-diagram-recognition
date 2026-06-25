@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "trichomoniasis",
+      "id": "trichomoniasis",
+      "class": "oval"
+    },
+    {
+      "text": "lucumia",
+      "id": "lucumia",
+      "class": "parallelogram"
+    },
+    {
+      "text": "filtrability aminobenzoic",
+      "id": "filtrability aminobenzoic",
+      "class": "diamond"
+    },
+    {
+      "text": "macrobian Alphean opposable",
+      "id": "macrobian Alphean opposable",
+      "class": "diamond"
+    },
+    {
+      "text": "prolamin ichthyologically",
+      "id": "prolamin ichthyologically",
+      "class": "hexagon"
+    },
+    {
+      "text": "constableship Apolista Jacamar",
+      "id": "constableship Apolista Jacamar",
+      "class": "box"
+    },
+    {
+      "text": "agalite",
+      "id": "agalite",
+      "class": "diamond"
+    },
+    {
+      "text": "periocular antiphonically Mole",
+      "id": "periocular antiphonically Mole",
+      "class": "hexagon"
+    },
+    {
+      "text": "microbium",
+      "id": "microbium",
+      "class": "hexagon"
+    },
+    {
+      "text": "unqualifiedly",
+      "id": "unqualifiedly",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "trichomoniasis",
+      "head": "lucumia",
+      "label": null
+    },
+    {
+      "tail": "lucumia",
+      "head": "filtrability aminobenzoic",
+      "label": null
+    },
+    {
+      "tail": "filtrability aminobenzoic",
+      "head": "macrobian Alphean opposable",
+      "label": "yes"
+    },
+    {
+      "tail": "filtrability aminobenzoic",
+      "head": "trichomoniasis",
+      "label": "yes"
+    },
+    {
+      "tail": "macrobian Alphean opposable",
+      "head": "prolamin ichthyologically",
+      "label": "No"
+    },
+    {
+      "tail": "macrobian Alphean opposable",
+      "head": "constableship Apolista Jacamar",
+      "label": "No"
+    },
+    {
+      "tail": "prolamin ichthyologically",
+      "head": "constableship Apolista Jacamar",
+      "label": null
+    },
+    {
+      "tail": "constableship Apolista Jacamar",
+      "head": "agalite",
+      "label": null
+    },
+    {
+      "tail": "agalite",
+      "head": "periocular antiphonically Mole",
+      "label": "NO"
+    },
+    {
+      "tail": "agalite",
+      "head": "microbium",
+      "label": "NO"
+    },
+    {
+      "tail": "periocular antiphonically Mole",
+      "head": "microbium",
+      "label": null
+    },
+    {
+      "tail": "microbium",
+      "head": "unqualifiedly",
+      "label": null
+    }
+  ]
+}

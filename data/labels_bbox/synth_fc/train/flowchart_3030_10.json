@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "text": "sackdoudle",
+      "id": "sackdoudle",
+      "class": "ellipse",
+      "bbox": [
+        25,
+        5,
+        124,
+        53
+      ]
+    },
+    {
+      "text": "hingeways",
+      "id": "hingeways",
+      "class": "hexagon",
+      "bbox": [
+        35,
+        95,
+        114,
+        154
+      ]
+    },
+    {
+      "text": "rallentando",
+      "id": "rallentando",
+      "class": "diamond",
+      "bbox": [
+        25,
+        183,
+        124,
+        256
+      ]
+    },
+    {
+      "text": "bank Sarcina",
+      "id": "bank Sarcina",
+      "class": "hexagon",
+      "bbox": [
+        30,
+        285,
+        119,
+        345
+      ]
+    },
+    {
+      "text": "metal limited",
+      "id": "metal limited",
+      "class": "parallelogram",
+      "bbox": [
+        212,
+        278,
+        318,
+        351
+      ]
+    },
+    {
+      "text": "herbarist preanterior",
+      "id": "herbarist preanterior",
+      "class": "diamond",
+      "bbox": [
+        5,
+        373,
+        144,
+        441
+      ]
+    },
+    {
+      "text": "geomorphological",
+      "id": "geomorphological",
+      "class": "box",
+      "bbox": [
+        229,
+        5,
+        301,
+        53
+      ]
+    },
+    {
+      "text": "bechern Plowrightia",
+      "id": "bechern Plowrightia",
+      "class": "ellipse",
+      "bbox": [
+        214,
+        384,
+        315,
+        436
+      ]
+    },
+    {
+      "text": "extraordinary dispenser freeho",
+      "id": "extraordinary dispenser freeho",
+      "class": "parallelogram",
+      "bbox": [
+        167,
+        64,
+        357,
+        137
+      ]
+    },
+    {
+      "text": "molluscoid",
+      "id": "molluscoid",
+      "class": "box",
+      "bbox": [
+        224,
+        196,
+        306,
+        244
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "sackdoudle",
+      "head": "hingeways",
+      "label": null,
+      "bbox": [
+        70,
+        53,
+        79,
+        95
+      ]
+    },
+    {
+      "tail": "hingeways",
+      "head": "rallentando",
+      "label": null,
+      "bbox": [
+        70,
+        154,
+        79,
+        183
+      ]
+    },
+    {
+      "tail": "rallentando",
+      "head": "bank Sarcina",
+      "label": "YES",
+      "bbox": [
+        70,
+        256,
+        79,
+        285
+      ]
+    },
+    {
+      "tail": "rallentando",
+      "head": "metal limited",
+      "label": "YES",
+      "bbox": [
+        82,
+        250,
+        222,
+        315
+      ]
+    },
+    {
+      "tail": "bank Sarcina",
+      "head": "herbarist preanterior",
+      "label": null,
+      "bbox": [
+        70,
+        344,
+        79,
+        373
+      ]
+    },
+    {
+      "tail": "herbarist preanterior",
+      "head": "geomorphological",
+      "label": "yes",
+      "bbox": [
+        134,
+        26,
+        229,
+        405
+      ]
+    },
+    {
+      "tail": "herbarist preanterior",
+      "head": "bechern Plowrightia",
+      "label": "yes",
+      "bbox": [
+        142,
+        406,
+        215,
+        415
+      ]
+    },
+    {
+      "tail": "geomorphological",
+      "head": "extraordinary dispenser freeho",
+      "label": null,
+      "bbox": [
+        260,
+        51,
+        270,
+        64
+      ]
+    },
+    {
+      "tail": "extraordinary dispenser freeho",
+      "head": "molluscoid",
+      "label": null,
+      "bbox": [
+        260,
+        137,
+        270,
+        196
+      ]
+    },
+    {
+      "tail": "molluscoid",
+      "head": "metal limited",
+      "label": null,
+      "bbox": [
+        260,
+        243,
+        270,
+        278
+      ]
+    },
+    {
+      "tail": "metal limited",
+      "head": "bechern Plowrightia",
+      "label": null,
+      "bbox": [
+        260,
+        351,
+        270,
+        384
+      ]
+    }
+  ]
+}

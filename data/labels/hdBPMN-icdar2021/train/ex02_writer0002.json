@@ -1,0 +1,207 @@
+{
+  "nodes": [
+    {
+      "text": "examine claim",
+      "id": "examine claim",
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "settelment recommendation [unchecked]",
+      "id": "settelment recommendation [unchecked]",
+      "class": "dataObject"
+    },
+    {
+      "text": "send back recommendation",
+      "id": "send back recommendation",
+      "class": "task"
+    },
+    {
+      "text": "evaluate recommendation",
+      "id": "evaluate recommendation",
+      "class": "task"
+    },
+    {
+      "text": "settelment recommendation [checked]",
+      "id": "settelment recommendation [checked]",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "continue claim handling process",
+      "id": "continue claim handling process",
+      "class": "task"
+    },
+    {
+      "text": "claim\nprocessed",
+      "id": "claim\nprocessed",
+      "class": "event"
+    },
+    {
+      "text": "recieve claim",
+      "id": "recieve claim",
+      "class": "messageEvent"
+    },
+    {
+      "text": "settlement recommendation [denied]",
+      "id": "settlement recommendation [denied]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claims db",
+      "id": "claims db",
+      "class": "dataStore"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "recieve claim",
+      "head": "examine claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "evaluate recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "evaluate recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "send back recommendation",
+      "class": "sequenceFlow",
+      "label": "not ok"
+    },
+    {
+      "tail": "send back recommendation",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "continue claim handling process",
+      "class": "sequenceFlow",
+      "label": "ok"
+    },
+    {
+      "tail": "continue claim handling process",
+      "head": "claim\nprocessed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine claim",
+      "head": "claims db",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation [denied]",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "settelment recommendation [unchecked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settelment recommendation [checked]",
+      "head": "send back recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "send back recommendation",
+      "head": "settlement recommendation [denied]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settelment recommendation [unchecked]",
+      "head": "evaluate recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "evaluate recommendation",
+      "head": "settelment recommendation [checked]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "settelment recommendation [checked]",
+      "head": "continue claim handling process",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "recieve claim",
+      "class": "messageFlow",
+      "label": "request"
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "claim officer",
+        "senior claim officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "examine claim",
+        "write settlement recommendation",
+        "settelment recommendation [unchecked]",
+        "recieve claim",
+        "claims db"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claim officer",
+      "nodes": [
+        "send back recommendation",
+        "evaluate recommendation",
+        "settelment recommendation [checked]",
+        "exclusiveGateway_1",
+        "continue claim handling process",
+        "claim\nprocessed",
+        "settlement recommendation [denied]"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

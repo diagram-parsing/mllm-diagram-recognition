@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "tumefy polygene emetomorphine",
+      "id": "tumefy polygene emetomorphine",
+      "class": "circle"
+    },
+    {
+      "text": "ravison",
+      "id": "ravison",
+      "class": "diamond"
+    },
+    {
+      "text": "gaunty",
+      "id": "gaunty",
+      "class": "parallelogram"
+    },
+    {
+      "text": "memorialization ackey",
+      "id": "memorialization ackey",
+      "class": "diamond"
+    },
+    {
+      "text": "usaron",
+      "id": "usaron",
+      "class": "hexagon"
+    },
+    {
+      "text": "sphacelism",
+      "id": "sphacelism",
+      "class": "document"
+    },
+    {
+      "text": "Romewards",
+      "id": "Romewards",
+      "class": "diamond"
+    },
+    {
+      "text": "vaporoseness chitinocalcareous",
+      "id": "vaporoseness chitinocalcareous",
+      "class": "hexagon"
+    },
+    {
+      "text": "Cooperia",
+      "id": "Cooperia",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "tumefy polygene emetomorphine",
+      "head": "ravison",
+      "label": null
+    },
+    {
+      "tail": "ravison",
+      "head": "gaunty",
+      "label": "no"
+    },
+    {
+      "tail": "ravison",
+      "head": "memorialization ackey",
+      "label": "no"
+    },
+    {
+      "tail": "gaunty",
+      "head": "usaron",
+      "label": null
+    },
+    {
+      "tail": "usaron",
+      "head": "sphacelism",
+      "label": null
+    },
+    {
+      "tail": "sphacelism",
+      "head": "Romewards",
+      "label": null
+    },
+    {
+      "tail": "Romewards",
+      "head": "vaporoseness chitinocalcareous",
+      "label": "YES"
+    },
+    {
+      "tail": "Romewards",
+      "head": "tumefy polygene emetomorphine",
+      "label": "YES"
+    },
+    {
+      "tail": "vaporoseness chitinocalcareous",
+      "head": "memorialization ackey",
+      "label": null
+    },
+    {
+      "tail": "memorialization ackey",
+      "head": "Cooperia",
+      "label": "NO"
+    },
+    {
+      "tail": "memorialization ackey",
+      "head": "tumefy polygene emetomorphine",
+      "label": "NO"
+    }
+  ]
+}

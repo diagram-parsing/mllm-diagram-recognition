@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "rec.",
+      "id": "rec.",
+      "class": "dataObject"
+    },
+    {
+      "text": "cases DB",
+      "id": "cases DB",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "register",
+      "id": "register",
+      "class": "task"
+    },
+    {
+      "text": "examine",
+      "id": "examine",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "writes recommendation",
+      "id": "writes recommendation",
+      "class": "task"
+    },
+    {
+      "text": "checks recommendation",
+      "id": "checks recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "rec. [not ok]",
+      "id": "rec. [not ok]",
+      "class": "dataObject"
+    },
+    {
+      "text": "handling process proceeded",
+      "id": "handling process proceeded",
+      "class": "event"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "register",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "examine",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examine",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "writes recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "writes recommendation",
+      "head": "checks recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "checks recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "writes recommendation",
+      "class": "sequenceFlow",
+      "label": "not OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "handling process proceeded",
+      "class": "sequenceFlow",
+      "label": "OK"
+    },
+    {
+      "tail": "claim received",
+      "head": "claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim",
+      "head": "register",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "register",
+      "head": "cases DB",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "label": "insurance claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "claims officer",
+        "senior claims officer"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "claim received",
+        "rec.",
+        "cases DB",
+        "parallelGateway_1",
+        "register",
+        "examine",
+        "parallelGateway_2",
+        "writes recommendation",
+        "rec. [not ok]",
+        "claim"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "checks recommendation",
+        "exclusiveGateway_1",
+        "handling process proceeded"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

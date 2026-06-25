@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "Kuan",
+      "id": "Kuan",
+      "class": "circle",
+      "bbox": [
+        54,
+        5,
+        125,
+        77
+      ]
+    },
+    {
+      "text": "garnetz propatriotic",
+      "id": "garnetz propatriotic",
+      "class": "diamond",
+      "bbox": [
+        18,
+        97,
+        161,
+        170
+      ]
+    },
+    {
+      "text": "overintellectual eyestrain",
+      "id": "overintellectual eyestrain",
+      "class": "hexagon",
+      "bbox": [
+        22,
+        196,
+        157,
+        256
+      ]
+    },
+    {
+      "text": "Ollie tympanitis quadrans",
+      "id": "Ollie tympanitis quadrans",
+      "class": "diamond",
+      "bbox": [
+        5,
+        282,
+        174,
+        355
+      ]
+    },
+    {
+      "text": "photostat impot",
+      "id": "photostat impot",
+      "class": "hexagon",
+      "bbox": [
+        41,
+        381,
+        138,
+        441
+      ]
+    },
+    {
+      "text": "precomparison affronting ulula",
+      "id": "precomparison affronting ulula",
+      "class": "parallelogram",
+      "bbox": [
+        172,
+        74,
+        372,
+        147
+      ]
+    },
+    {
+      "text": "lob",
+      "id": "lob",
+      "class": "document",
+      "bbox": [
+        54,
+        501,
+        126,
+        547
+      ]
+    },
+    {
+      "text": "extramusical",
+      "id": "extramusical",
+      "class": "document",
+      "bbox": [
+        239,
+        200,
+        311,
+        252
+      ]
+    },
+    {
+      "text": "trombone",
+      "id": "trombone",
+      "class": "oval",
+      "bbox": [
+        231,
+        295,
+        318,
+        343
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Kuan",
+      "head": "garnetz propatriotic",
+      "label": null,
+      "bbox": [
+        85,
+        77,
+        94,
+        97
+      ]
+    },
+    {
+      "tail": "garnetz propatriotic",
+      "head": "overintellectual eyestrain",
+      "label": "yes",
+      "bbox": [
+        85,
+        170,
+        94,
+        196
+      ]
+    },
+    {
+      "tail": "garnetz propatriotic",
+      "head": "Ollie tympanitis quadrans",
+      "label": "yes",
+      "bbox": [
+        111,
+        159,
+        169,
+        315
+      ]
+    },
+    {
+      "tail": "overintellectual eyestrain",
+      "head": "Ollie tympanitis quadrans",
+      "label": null,
+      "bbox": [
+        85,
+        256,
+        94,
+        282
+      ]
+    },
+    {
+      "tail": "Ollie tympanitis quadrans",
+      "head": "photostat impot",
+      "label": "YES",
+      "bbox": [
+        85,
+        355,
+        94,
+        381
+      ]
+    },
+    {
+      "tail": "Ollie tympanitis quadrans",
+      "head": "precomparison affronting ulula",
+      "label": "YES",
+      "bbox": [
+        168,
+        117,
+        186,
+        316
+      ]
+    },
+    {
+      "tail": "photostat impot",
+      "head": "lob",
+      "label": null,
+      "bbox": [
+        85,
+        441,
+        94,
+        501
+      ]
+    },
+    {
+      "tail": "lob",
+      "head": "precomparison affronting ulula",
+      "label": null,
+      "bbox": [
+        125,
+        147,
+        207,
+        527
+      ]
+    },
+    {
+      "tail": "precomparison affronting ulula",
+      "head": "extramusical",
+      "label": null,
+      "bbox": [
+        270,
+        147,
+        279,
+        200
+      ]
+    },
+    {
+      "tail": "extramusical",
+      "head": "trombone",
+      "label": null,
+      "bbox": [
+        270,
+        252,
+        279,
+        295
+      ]
+    }
+  ]
+}

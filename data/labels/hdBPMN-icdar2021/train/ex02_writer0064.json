@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "text": "Registration of the claim",
+      "id": "Registration of the claim",
+      "class": "task"
+    },
+    {
+      "text": "examination of the claim",
+      "id": "examination of the claim",
+      "class": "task"
+    },
+    {
+      "text": "checking of Recommendation",
+      "id": "checking of Recommendation",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "claim",
+      "id": "claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "class": "event"
+    },
+    {
+      "text": "claim\n[recommendation]",
+      "id": "claim\n[recommendation]",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim\n[sr. officer signed]",
+      "id": "claim\n[sr. officer signed]",
+      "class": "dataObject"
+    },
+    {
+      "text": "writing of settlement recommendation",
+      "id": "writing of settlement recommendation",
+      "class": "task"
+    },
+    {
+      "text": "Database (claims)",
+      "id": "Database (claims)",
+      "class": "dataStore"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "Registration of the claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Registration of the claim",
+      "head": "examination of the claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "examination of the claim",
+      "head": "writing of settlement recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "writing of settlement recommendation",
+      "head": "checking of Recommendation",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "checking of Recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "examination of the claim",
+      "class": "sequenceFlow",
+      "label": "\"Not OK\""
+    },
+    {
+      "tail": "claim",
+      "head": "Registration of the claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Registration of the claim",
+      "head": "Database (claims)",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "writing of settlement recommendation",
+      "head": "claim\n[recommendation]",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "claim\n[recommendation]",
+      "head": "checking of Recommendation",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "checking of Recommendation",
+      "head": "claim\n[sr. officer signed]",
+      "class": "dataAssociation",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurence",
+      "nodes": [
+        "sr. claims officer",
+        "claims officer",
+        "lane_1"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "sr. claims officer",
+      "nodes": [
+        "checking of Recommendation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "Registration of the claim",
+        "examination of the claim",
+        "exclusiveGateway_1",
+        "writing of settlement recommendation"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": null,
+      "nodes": [
+        "claim received"
+      ],
+      "class": "lane"
+    }
+  ]
+}

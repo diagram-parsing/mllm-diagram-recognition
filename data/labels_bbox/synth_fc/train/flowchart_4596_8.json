@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "preact",
+      "id": "preact",
+      "class": "oval",
+      "bbox": [
+        62,
+        5,
+        137,
+        53
+      ]
+    },
+    {
+      "text": "invigilance",
+      "id": "invigilance",
+      "class": "hexagon",
+      "bbox": [
+        43,
+        110,
+        157,
+        158
+      ]
+    },
+    {
+      "text": "mad",
+      "id": "mad",
+      "class": "diamond",
+      "bbox": [
+        56,
+        215,
+        143,
+        263
+      ]
+    },
+    {
+      "text": "flashly",
+      "id": "flashly",
+      "class": "box",
+      "bbox": [
+        64,
+        320,
+        136,
+        368
+      ]
+    },
+    {
+      "text": "velocious auxosubstance archtr",
+      "id": "velocious auxosubstance archtr",
+      "class": "document",
+      "bbox": [
+        262,
+        110,
+        352,
+        158
+      ]
+    },
+    {
+      "text": "profeminism reunfold skirting",
+      "id": "profeminism reunfold skirting",
+      "class": "diamond",
+      "bbox": [
+        5,
+        387,
+        194,
+        460
+      ]
+    },
+    {
+      "text": "waggishness",
+      "id": "waggishness",
+      "class": "document",
+      "bbox": [
+        60,
+        530,
+        139,
+        573
+      ]
+    },
+    {
+      "text": "chicane",
+      "id": "chicane",
+      "class": "circle",
+      "bbox": [
+        266,
+        169,
+        352,
+        257
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "preact",
+      "head": "invigilance",
+      "label": null,
+      "bbox": [
+        95,
+        54,
+        104,
+        108
+      ]
+    },
+    {
+      "tail": "invigilance",
+      "head": "mad",
+      "label": null,
+      "bbox": [
+        95,
+        159,
+        104,
+        213
+      ]
+    },
+    {
+      "tail": "mad",
+      "head": "flashly",
+      "label": "YES",
+      "bbox": [
+        95,
+        264,
+        104,
+        318
+      ]
+    },
+    {
+      "tail": "mad",
+      "head": "velocious auxosubstance archtr",
+      "label": "YES",
+      "bbox": [
+        140,
+        138,
+        261,
+        237
+      ]
+    },
+    {
+      "tail": "flashly",
+      "head": "profeminism reunfold skirting",
+      "label": null,
+      "bbox": [
+        83,
+        369,
+        92,
+        389
+      ]
+    },
+    {
+      "tail": "profeminism reunfold skirting",
+      "head": "waggishness",
+      "label": "Yes",
+      "bbox": [
+        95,
+        460,
+        104,
+        529
+      ]
+    },
+    {
+      "tail": "profeminism reunfold skirting",
+      "head": "flashly",
+      "label": "Yes",
+      "bbox": [
+        107,
+        370,
+        116,
+        391
+      ]
+    },
+    {
+      "tail": "waggishness",
+      "head": "velocious auxosubstance archtr",
+      "label": null,
+      "bbox": [
+        139,
+        122,
+        261,
+        554
+      ]
+    },
+    {
+      "tail": "velocious auxosubstance archtr",
+      "head": "chicane",
+      "label": null,
+      "bbox": [
+        305,
+        154,
+        314,
+        167
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "text": "Begin",
+      "id": "Begin",
+      "bbox": [
+        4,
+        154,
+        283,
+        119
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Input X,Y",
+      "id": "Input X,Y",
+      "bbox": [
+        377,
+        149,
+        331,
+        116
+      ],
+      "class": "data"
+    },
+    {
+      "text": "X>=Y",
+      "id": "X>=Y",
+      "bbox": [
+        759,
+        98,
+        196,
+        236
+      ],
+      "class": "decision"
+    },
+    {
+      "text": "display Y",
+      "id": "display Y",
+      "bbox": [
+        969,
+        5,
+        344,
+        111
+      ],
+      "class": "data"
+    },
+    {
+      "text": "display X",
+      "id": "display X",
+      "bbox": [
+        970,
+        329,
+        360,
+        121
+      ],
+      "class": "data"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Begin",
+      "head": "Input X,Y",
+      "bbox": [
+        280,
+        201,
+        108,
+        39
+      ],
+      "kps": [
+        281.0,
+        218.0,
+        2.0,
+        382.0,
+        218.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Input X,Y",
+      "head": "X>=Y",
+      "bbox": [
+        672,
+        193,
+        89,
+        39
+      ],
+      "kps": [
+        674.0,
+        209.0,
+        2.0,
+        755.0,
+        210.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display Y",
+      "bbox": [
+        955,
+        110,
+        163,
+        96
+      ],
+      "kps": [
+        956.0,
+        202.0,
+        2.0,
+        1105.0,
+        111.0,
+        2.0
+      ],
+      "label": "0"
+    },
+    {
+      "tail": "X>=Y",
+      "head": "display X",
+      "bbox": [
+        860,
+        327,
+        142,
+        85
+      ],
+      "kps": [
+        865.0,
+        328.0,
+        2.0,
+        991.0,
+        389.0,
+        2.0
+      ],
+      "label": "1"
+    }
+  ]
+}

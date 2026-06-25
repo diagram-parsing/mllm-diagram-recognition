@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "text": "approachless",
+      "id": "approachless",
+      "class": "oval"
+    },
+    {
+      "text": "equitableness alushtite",
+      "id": "equitableness alushtite",
+      "class": "diamond"
+    },
+    {
+      "text": "enhaunt discerpible encumberme",
+      "id": "enhaunt discerpible encumberme",
+      "class": "parallelogram"
+    },
+    {
+      "text": "strewage",
+      "id": "strewage",
+      "class": "parallelogram"
+    },
+    {
+      "text": "cerebricity dolichocephali",
+      "id": "cerebricity dolichocephali",
+      "class": "box"
+    },
+    {
+      "text": "psychorrhagy",
+      "id": "psychorrhagy",
+      "class": "diamond"
+    },
+    {
+      "text": "thyroidectomize",
+      "id": "thyroidectomize",
+      "class": "document"
+    },
+    {
+      "text": "graphicly",
+      "id": "graphicly",
+      "class": "hexagon"
+    },
+    {
+      "text": "stuss",
+      "id": "stuss",
+      "class": "box"
+    },
+    {
+      "text": "shackland",
+      "id": "shackland",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "approachless",
+      "head": "equitableness alushtite",
+      "label": null
+    },
+    {
+      "tail": "equitableness alushtite",
+      "head": "enhaunt discerpible encumberme",
+      "label": "NO"
+    },
+    {
+      "tail": "equitableness alushtite",
+      "head": "strewage",
+      "label": "NO"
+    },
+    {
+      "tail": "enhaunt discerpible encumberme",
+      "head": "cerebricity dolichocephali",
+      "label": null
+    },
+    {
+      "tail": "cerebricity dolichocephali",
+      "head": "psychorrhagy",
+      "label": null
+    },
+    {
+      "tail": "psychorrhagy",
+      "head": "strewage",
+      "label": "Yes"
+    },
+    {
+      "tail": "psychorrhagy",
+      "head": "equitableness alushtite",
+      "label": "Yes"
+    },
+    {
+      "tail": "strewage",
+      "head": "thyroidectomize",
+      "label": null
+    },
+    {
+      "tail": "thyroidectomize",
+      "head": "graphicly",
+      "label": null
+    },
+    {
+      "tail": "graphicly",
+      "head": "stuss",
+      "label": null
+    },
+    {
+      "tail": "stuss",
+      "head": "shackland",
+      "label": null
+    }
+  ]
+}

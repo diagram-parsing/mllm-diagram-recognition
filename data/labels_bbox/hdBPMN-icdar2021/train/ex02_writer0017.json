@@ -1,0 +1,477 @@
+{
+  "nodes": [
+    {
+      "text": "register",
+      "id": "register",
+      "bbox": [
+        324,
+        758,
+        475,
+        822
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check by senior",
+      "id": "check by senior",
+      "bbox": [
+        768,
+        1018,
+        921,
+        1086
+      ],
+      "class": "task"
+    },
+    {
+      "text": "mark claim",
+      "id": "mark claim",
+      "bbox": [
+        759,
+        1158,
+        879,
+        1230
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        964,
+        1162,
+        1009,
+        1221
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "sent back",
+      "id": "sent back",
+      "bbox": [
+        934,
+        1007,
+        1096,
+        1080
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        214,
+        770,
+        257,
+        812
+      ],
+      "class": "event"
+    },
+    {
+      "text": "proceed claim handling",
+      "id": "proceed claim handling",
+      "bbox": [
+        903,
+        1314,
+        1174,
+        1418
+      ],
+      "class": "task"
+    },
+    {
+      "text": "rewrite settlement",
+      "id": "rewrite settlement",
+      "bbox": [
+        952,
+        702,
+        1076,
+        772
+      ],
+      "class": "task"
+    },
+    {
+      "text": "examine",
+      "id": "examine",
+      "bbox": [
+        541,
+        752,
+        669,
+        807
+      ],
+      "class": "task"
+    },
+    {
+      "text": "insurance claim",
+      "id": "insurance claim",
+      "bbox": [
+        301,
+        597,
+        341,
+        651
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        867,
+        751,
+        914,
+        808
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "marked claim",
+      "id": "marked claim",
+      "bbox": [
+        778,
+        1293,
+        825,
+        1345
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "bbox": [
+        541,
+        1171,
+        573,
+        1212
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "bbox": [
+        489,
+        1018,
+        521,
+        1059
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim procesed",
+      "id": "claim procesed",
+      "bbox": [
+        837,
+        1463,
+        918,
+        1539
+      ],
+      "class": "event"
+    },
+    {
+      "text": "write recommendation",
+      "id": "write recommendation",
+      "bbox": [
+        715,
+        752,
+        824,
+        807
+      ],
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "register",
+      "class": "sequenceFlow",
+      "bbox": [
+        256,
+        767,
+        325,
+        799
+      ],
+      "label": null
+    },
+    {
+      "tail": "register",
+      "head": "examine",
+      "class": "sequenceFlow",
+      "bbox": [
+        475,
+        767,
+        542,
+        799
+      ],
+      "label": null
+    },
+    {
+      "tail": "examine",
+      "head": "write recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        669,
+        764,
+        716,
+        796
+      ],
+      "label": null
+    },
+    {
+      "tail": "write recommendation",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        824,
+        765,
+        869,
+        797
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "check by senior",
+      "class": "sequenceFlow",
+      "bbox": [
+        837,
+        808,
+        891,
+        1019
+      ],
+      "label": null
+    },
+    {
+      "tail": "check by senior",
+      "head": "mark claim",
+      "class": "sequenceFlow",
+      "bbox": [
+        797,
+        1086,
+        829,
+        1159
+      ],
+      "label": null
+    },
+    {
+      "tail": "mark claim",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        879,
+        1176,
+        965,
+        1208
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "sent back",
+      "class": "sequenceFlow",
+      "bbox": [
+        972,
+        1081,
+        1004,
+        1164
+      ],
+      "label": "\"not OK\""
+    },
+    {
+      "tail": "sent back",
+      "head": "rewrite settlement",
+      "class": "sequenceFlow",
+      "bbox": [
+        992,
+        772,
+        1024,
+        1008
+      ],
+      "label": null
+    },
+    {
+      "tail": "rewrite settlement",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        902,
+        748,
+        953,
+        780
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "proceed claim handling",
+      "class": "sequenceFlow",
+      "bbox": [
+        972,
+        1220,
+        1004,
+        1315
+      ],
+      "label": "\"OK\""
+    },
+    {
+      "tail": "proceed claim handling",
+      "head": "claim procesed",
+      "class": "sequenceFlow",
+      "bbox": [
+        918,
+        1418,
+        1022,
+        1502
+      ],
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check by senior",
+      "class": "dataAssociation",
+      "bbox": [
+        521,
+        1050,
+        770,
+        1082
+      ],
+      "label": null
+    },
+    {
+      "tail": "dataObject_1",
+      "head": "check by senior",
+      "class": "dataAssociation",
+      "bbox": [
+        573,
+        1075,
+        770,
+        1185
+      ],
+      "label": null
+    },
+    {
+      "tail": "dataObject_1",
+      "head": "mark claim",
+      "class": "dataAssociation",
+      "bbox": [
+        577,
+        1204,
+        762,
+        1236
+      ],
+      "label": null
+    },
+    {
+      "tail": "mark claim",
+      "head": "marked claim",
+      "class": "dataAssociation",
+      "bbox": [
+        790,
+        1231,
+        822,
+        1294
+      ],
+      "label": null
+    },
+    {
+      "tail": "insurance claim",
+      "head": "examine",
+      "class": "dataAssociation",
+      "bbox": [
+        347,
+        596,
+        553,
+        753
+      ],
+      "label": null
+    },
+    {
+      "tail": "write recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        508,
+        807,
+        742,
+        1019
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        197,
+        485,
+        232,
+        771
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insur",
+      "nodes": [
+        "claim officer",
+        "senior"
+      ],
+      "bbox": [
+        51,
+        519,
+        1220,
+        1557
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "claim officer",
+      "nodes": [
+        "register",
+        "claim received",
+        "rewrite settlement",
+        "examine",
+        "insurance claim",
+        "exclusiveGateway_2",
+        "write recommendation"
+      ],
+      "bbox": [
+        133,
+        519,
+        1220,
+        959
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior",
+      "nodes": [
+        "check by senior",
+        "mark claim",
+        "exclusiveGateway_1",
+        "sent back",
+        "proceed claim handling",
+        "marked claim",
+        "dataObject_1",
+        "settlement recommendation",
+        "claim procesed"
+      ],
+      "bbox": [
+        133,
+        959,
+        1220,
+        1557
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        18,
+        190,
+        847,
+        485
+      ],
+      "class": "pool"
+    }
+  ]
+}

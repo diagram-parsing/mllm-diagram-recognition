@@ -1,0 +1,231 @@
+{
+  "nodes": [
+    {
+      "text": "register the claim",
+      "id": "register the claim",
+      "class": "task"
+    },
+    {
+      "text": "check the insurance",
+      "id": "check the insurance",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "sent a letter to the customer",
+      "id": "sent a letter to the customer",
+      "class": "task"
+    },
+    {
+      "text": "reject claim",
+      "id": "reject claim",
+      "class": "task"
+    },
+    {
+      "text": "insurance DB",
+      "id": "insurance DB",
+      "class": "dataStore"
+    },
+    {
+      "text": "register claim",
+      "id": "register claim",
+      "class": "dataObject"
+    },
+    {
+      "text": "claim rejected",
+      "id": "claim rejected",
+      "class": "dataObject"
+    },
+    {
+      "text": "submited a claim",
+      "id": "submited a claim",
+      "class": "messageEvent"
+    },
+    {
+      "text": "letter",
+      "id": "letter",
+      "class": "messageEvent"
+    },
+    {
+      "text": "claim request",
+      "id": "claim request",
+      "class": "messageEvent"
+    },
+    {
+      "text": "check the document upon completness",
+      "id": "check the document upon completness",
+      "class": "task"
+    },
+    {
+      "text": "call a garage",
+      "id": "call a garage",
+      "class": "task"
+    },
+    {
+      "text": "authorize the repairs",
+      "id": "authorize the repairs",
+      "class": "task"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "class": "task"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "reject claim",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "reject claim",
+      "class": "sequenceFlow",
+      "label": "negativ"
+    },
+    {
+      "tail": "sent a letter to the customer",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "sent a letter to the customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "authorize the repairs",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "call a garage",
+      "head": "authorize the repairs",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "call a garage",
+      "class": "sequenceFlow",
+      "label": "positiv"
+    },
+    {
+      "tail": "check the insurance",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register the claim",
+      "head": "check the insurance",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check the document upon completness",
+      "head": "register the claim",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "submited a claim",
+      "head": "check the document upon completness",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "register the claim",
+      "head": "register claim",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "insurance DB",
+      "head": "check the insurance",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "reject claim",
+      "head": "claim rejected",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "letter",
+      "head": "customer",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "handling department",
+        "notification department"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "handling department",
+      "nodes": [
+        "check the insurance",
+        "exclusiveGateway_1",
+        "exclusiveGateway_2",
+        "sent a letter to the customer",
+        "reject claim",
+        "insurance DB",
+        "claim rejected",
+        "call a garage",
+        "authorize the repairs",
+        "schedule payment",
+        "process completed"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "notification department",
+      "nodes": [
+        "register the claim",
+        "register claim",
+        "submited a claim",
+        "letter",
+        "claim request",
+        "check the document upon completness"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

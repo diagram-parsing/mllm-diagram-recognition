@@ -1,0 +1,196 @@
+{
+  "nodes": [
+    {
+      "text": "muckthrift",
+      "id": "muckthrift",
+      "class": "oval"
+    },
+    {
+      "text": "spiraculum",
+      "id": "spiraculum",
+      "class": "box"
+    },
+    {
+      "text": "coydog unreluctantly",
+      "id": "coydog unreluctantly",
+      "class": "document"
+    },
+    {
+      "text": "uncompact murmurer swapper",
+      "id": "uncompact murmurer swapper",
+      "class": "box"
+    },
+    {
+      "text": "talbot",
+      "id": "talbot",
+      "class": "diamond"
+    },
+    {
+      "text": "octodont manorialize vest",
+      "id": "octodont manorialize vest",
+      "class": "document"
+    },
+    {
+      "text": "elkhound",
+      "id": "elkhound",
+      "class": "hexagon"
+    },
+    {
+      "text": "sibylla Oscillatoriaceae",
+      "id": "sibylla Oscillatoriaceae",
+      "class": "diamond"
+    },
+    {
+      "text": "impoliteness",
+      "id": "impoliteness",
+      "class": "box"
+    },
+    {
+      "text": "bronchohemorrhagia",
+      "id": "bronchohemorrhagia",
+      "class": "diamond"
+    },
+    {
+      "text": "campmaster",
+      "id": "campmaster",
+      "class": "diamond"
+    },
+    {
+      "text": "bespeaker",
+      "id": "bespeaker",
+      "class": "diamond"
+    },
+    {
+      "text": "haulmy",
+      "id": "haulmy",
+      "class": "box"
+    },
+    {
+      "text": "gastrohysterotomy",
+      "id": "gastrohysterotomy",
+      "class": "circle"
+    },
+    {
+      "text": "fohat",
+      "id": "fohat",
+      "class": "hexagon"
+    },
+    {
+      "text": "pantalets aspergillus ammoniti",
+      "id": "pantalets aspergillus ammoniti",
+      "class": "hexagon"
+    },
+    {
+      "text": "criminosis unwelted",
+      "id": "criminosis unwelted",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "muckthrift",
+      "head": "spiraculum",
+      "label": null
+    },
+    {
+      "tail": "spiraculum",
+      "head": "coydog unreluctantly",
+      "label": null
+    },
+    {
+      "tail": "coydog unreluctantly",
+      "head": "uncompact murmurer swapper",
+      "label": null
+    },
+    {
+      "tail": "uncompact murmurer swapper",
+      "head": "talbot",
+      "label": null
+    },
+    {
+      "tail": "talbot",
+      "head": "octodont manorialize vest",
+      "label": "NO"
+    },
+    {
+      "tail": "talbot",
+      "head": "elkhound",
+      "label": "NO"
+    },
+    {
+      "tail": "octodont manorialize vest",
+      "head": "sibylla Oscillatoriaceae",
+      "label": null
+    },
+    {
+      "tail": "sibylla Oscillatoriaceae",
+      "head": "impoliteness",
+      "label": "no"
+    },
+    {
+      "tail": "sibylla Oscillatoriaceae",
+      "head": "uncompact murmurer swapper",
+      "label": "no"
+    },
+    {
+      "tail": "impoliteness",
+      "head": "bronchohemorrhagia",
+      "label": null
+    },
+    {
+      "tail": "bronchohemorrhagia",
+      "head": "campmaster",
+      "label": "no"
+    },
+    {
+      "tail": "bronchohemorrhagia",
+      "head": "elkhound",
+      "label": "no"
+    },
+    {
+      "tail": "campmaster",
+      "head": "bespeaker",
+      "label": "Yes"
+    },
+    {
+      "tail": "campmaster",
+      "head": "coydog unreluctantly",
+      "label": "Yes"
+    },
+    {
+      "tail": "bespeaker",
+      "head": "haulmy",
+      "label": "YES"
+    },
+    {
+      "tail": "bespeaker",
+      "head": "gastrohysterotomy",
+      "label": "YES"
+    },
+    {
+      "tail": "haulmy",
+      "head": "fohat",
+      "label": null
+    },
+    {
+      "tail": "fohat",
+      "head": "pantalets aspergillus ammoniti",
+      "label": null
+    },
+    {
+      "tail": "pantalets aspergillus ammoniti",
+      "head": "criminosis unwelted",
+      "label": null
+    },
+    {
+      "tail": "criminosis unwelted",
+      "head": "elkhound",
+      "label": null
+    },
+    {
+      "tail": "elkhound",
+      "head": "gastrohysterotomy",
+      "label": null
+    }
+  ]
+}

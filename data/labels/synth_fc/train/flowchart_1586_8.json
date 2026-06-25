@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "singularism",
+      "id": "singularism",
+      "class": "circle"
+    },
+    {
+      "text": "antihumbuggist",
+      "id": "antihumbuggist",
+      "class": "hexagon"
+    },
+    {
+      "text": "Simonianism",
+      "id": "Simonianism",
+      "class": "parallelogram"
+    },
+    {
+      "text": "supraorbital",
+      "id": "supraorbital",
+      "class": "hexagon"
+    },
+    {
+      "text": "unabsurd",
+      "id": "unabsurd",
+      "class": "hexagon"
+    },
+    {
+      "text": "potable lucida",
+      "id": "potable lucida",
+      "class": "document"
+    },
+    {
+      "text": "tippler",
+      "id": "tippler",
+      "class": "diamond"
+    },
+    {
+      "text": "unenterprised",
+      "id": "unenterprised",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "singularism",
+      "head": "antihumbuggist",
+      "label": null
+    },
+    {
+      "tail": "antihumbuggist",
+      "head": "Simonianism",
+      "label": null
+    },
+    {
+      "tail": "Simonianism",
+      "head": "supraorbital",
+      "label": null
+    },
+    {
+      "tail": "supraorbital",
+      "head": "unabsurd",
+      "label": null
+    },
+    {
+      "tail": "unabsurd",
+      "head": "potable lucida",
+      "label": null
+    },
+    {
+      "tail": "potable lucida",
+      "head": "tippler",
+      "label": null
+    },
+    {
+      "tail": "tippler",
+      "head": "unenterprised",
+      "label": "yes"
+    },
+    {
+      "tail": "tippler",
+      "head": "Simonianism",
+      "label": "yes"
+    }
+  ]
+}

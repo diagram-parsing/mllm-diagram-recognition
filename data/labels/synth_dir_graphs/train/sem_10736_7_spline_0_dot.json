@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "text": "threnodist frabjous chromazuri",
+      "id": "threnodist frabjous chromazuri",
+      "class": "node"
+    },
+    {
+      "text": "overintellectual eyestrain",
+      "id": "overintellectual eyestrain",
+      "class": "node"
+    },
+    {
+      "text": "peasantism",
+      "id": "peasantism",
+      "class": "node"
+    },
+    {
+      "text": "polylinguist Agnoetae",
+      "id": "polylinguist Agnoetae",
+      "class": "node"
+    },
+    {
+      "text": "cyton",
+      "id": "cyton",
+      "class": "node"
+    },
+    {
+      "text": "invigilance",
+      "id": "invigilance",
+      "class": "node"
+    },
+    {
+      "text": "pleurum",
+      "id": "pleurum",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "threnodist frabjous chromazuri",
+      "head": "overintellectual eyestrain",
+      "label": "0.05** a = 0.332",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "peasantism",
+      "head": "polylinguist Agnoetae",
+      "label": "0.651",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "peasantism",
+      "head": "cyton",
+      "label": "0.21",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "invigilance",
+      "head": "pleurum",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "peasantism",
+      "head": "invigilance",
+      "label": "0.77 H = 0.422",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "threnodist frabjous chromazuri",
+      "head": "peasantism",
+      "label": "0.871",
+      "class": "unidirectional"
+    }
+  ]
+}

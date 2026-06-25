@@ -1,0 +1,423 @@
+{
+  "nodes": [
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "bbox": [
+        300,
+        293,
+        347,
+        337
+      ],
+      "class": "event"
+    },
+    {
+      "text": "file results of interviews as well as expertise",
+      "id": "file results of interviews as well as expertise",
+      "bbox": [
+        1690,
+        335,
+        1994,
+        517
+      ],
+      "class": "task"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "bbox": [
+        506,
+        268,
+        780,
+        413
+      ],
+      "class": "task"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        2213,
+        341,
+        2428,
+        486
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forward expertise to QA specialist",
+      "id": "forward expertise to QA specialist",
+      "bbox": [
+        1896,
+        1200,
+        2136,
+        1344
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "bbox": [
+        2644,
+        1413,
+        2904,
+        1584
+      ],
+      "class": "task"
+    },
+    {
+      "text": "information received",
+      "id": "information received",
+      "bbox": [
+        568,
+        1264,
+        622,
+        1320
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        657,
+        1479,
+        732,
+        1560
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "pay expenses of expert by filling cheque",
+      "id": "pay expenses of expert by filling cheque",
+      "bbox": [
+        2280,
+        1190,
+        2592,
+        1396
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        1284,
+        1204,
+        1390,
+        1307
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "ask external expert to review work",
+      "id": "ask external expert to review work",
+      "bbox": [
+        736,
+        1224,
+        1024,
+        1365
+      ],
+      "class": "task"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "bbox": [
+        1605,
+        1197,
+        1692,
+        1284
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "certain amount of time",
+      "id": "certain amount of time",
+      "bbox": [
+        1301,
+        1396,
+        1388,
+        1468
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "case closed",
+      "id": "case closed",
+      "bbox": [
+        2793,
+        1663,
+        2840,
+        1713
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "new case started",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "bbox": [
+        345,
+        289,
+        508,
+        349
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results of interviews as well as expertise",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1994,
+        384,
+        2215,
+        444
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "file results of interviews as well as expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        780,
+        336,
+        1692,
+        396
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask external expert to review work",
+      "class": "sequenceFlow",
+      "bbox": [
+        724,
+        1365,
+        945,
+        1512
+      ],
+      "label": null
+    },
+    {
+      "tail": "send cheque",
+      "head": "case closed",
+      "class": "sequenceFlow",
+      "bbox": [
+        2772,
+        1584,
+        2832,
+        1667
+      ],
+      "label": null
+    },
+    {
+      "tail": "pay expenses of expert by filling cheque",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        2589,
+        1371,
+        2649,
+        1433
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward expertise to QA specialist",
+      "head": "pay expenses of expert by filling cheque",
+      "class": "sequenceFlow",
+      "bbox": [
+        2135,
+        1243,
+        2282,
+        1303
+      ],
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "forward expertise to QA specialist",
+      "class": "sequenceFlow",
+      "bbox": [
+        1692,
+        1212,
+        1897,
+        1272
+      ],
+      "label": "expertise received"
+    },
+    {
+      "tail": "information received",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        622,
+        1286,
+        693,
+        1485
+      ],
+      "label": null
+    },
+    {
+      "tail": "certain amount of time",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        711,
+        1450,
+        1307,
+        1562
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "certain amount of time",
+      "class": "sequenceFlow",
+      "bbox": [
+        1311,
+        1307,
+        1371,
+        1392
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "bbox": [
+        1390,
+        1219,
+        1607,
+        1279
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review work",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1024,
+        1220,
+        1309,
+        1280
+      ],
+      "label": null
+    },
+    {
+      "tail": "information received",
+      "head": "ask external expert to review work",
+      "class": "sequenceFlow",
+      "bbox": [
+        622,
+        1261,
+        738,
+        1321
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review work",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        747,
+        1365,
+        807,
+        2027
+      ],
+      "label": "review request"
+    },
+    {
+      "tail": "external expert",
+      "head": "expertise received",
+      "class": "messageFlow",
+      "bbox": [
+        1597,
+        1278,
+        1657,
+        2027
+      ],
+      "label": "expertise"
+    },
+    {
+      "tail": "send cheque",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        2385,
+        1580,
+        2654,
+        2027
+      ],
+      "label": "cheque"
+    },
+    {
+      "tail": "forward expertise to QA specialist",
+      "head": "file results of interviews as well as expertise",
+      "class": "messageFlow",
+      "bbox": [
+        1843,
+        517,
+        1951,
+        1202
+      ],
+      "label": "expertise"
+    },
+    {
+      "tail": "interview patients",
+      "head": "information received",
+      "class": "messageFlow",
+      "bbox": [
+        568,
+        413,
+        628,
+        1268
+      ],
+      "label": "information about new case"
+    }
+  ],
+  "groups": [
+    {
+      "name": "QA specialist",
+      "nodes": [],
+      "bbox": [
+        95,
+        227,
+        2911,
+        868
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director of hospital",
+      "nodes": [],
+      "bbox": [
+        47,
+        1148,
+        2975,
+        1967
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "bbox": [
+        312,
+        2025,
+        2671,
+        2124
+      ],
+      "class": "pool"
+    }
+  ]
+}

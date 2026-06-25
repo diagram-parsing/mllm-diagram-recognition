@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "memorialization ackey",
+      "id": "memorialization ackey",
+      "class": "ellipse",
+      "bbox": [
+        5,
+        5,
+        115,
+        57
+      ]
+    },
+    {
+      "text": "thyrse",
+      "id": "thyrse",
+      "class": "box",
+      "bbox": [
+        24,
+        131,
+        96,
+        179
+      ]
+    },
+    {
+      "text": "hectostere",
+      "id": "hectostere",
+      "class": "diamond",
+      "bbox": [
+        9,
+        202,
+        111,
+        275
+      ]
+    },
+    {
+      "text": "stuss",
+      "id": "stuss",
+      "class": "document",
+      "bbox": [
+        17,
+        293,
+        103,
+        349
+      ]
+    },
+    {
+      "text": "nuchal",
+      "id": "nuchal",
+      "class": "box",
+      "bbox": [
+        190,
+        276,
+        262,
+        324
+      ]
+    },
+    {
+      "text": "barysilite tibey",
+      "id": "barysilite tibey",
+      "class": "hexagon",
+      "bbox": [
+        176,
+        105,
+        276,
+        165
+      ]
+    },
+    {
+      "text": "headbander alchymy electroopti",
+      "id": "headbander alchymy electroopti",
+      "class": "diamond",
+      "bbox": [
+        127,
+        181,
+        319,
+        254
+      ]
+    },
+    {
+      "text": "gaited",
+      "id": "gaited",
+      "class": "box",
+      "bbox": [
+        190,
+        359,
+        262,
+        407
+      ]
+    },
+    {
+      "text": "leucogenic",
+      "id": "leucogenic",
+      "class": "circle",
+      "bbox": [
+        177,
+        418,
+        274,
+        509
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "memorialization ackey",
+      "head": "thyrse",
+      "label": null,
+      "bbox": [
+        55,
+        58,
+        65,
+        130
+      ]
+    },
+    {
+      "tail": "thyrse",
+      "head": "hectostere",
+      "label": null,
+      "bbox": [
+        55,
+        180,
+        65,
+        200
+      ]
+    },
+    {
+      "tail": "hectostere",
+      "head": "stuss",
+      "label": "No",
+      "bbox": [
+        55,
+        275,
+        65,
+        292
+      ]
+    },
+    {
+      "tail": "hectostere",
+      "head": "nuchal",
+      "label": "No",
+      "bbox": [
+        75,
+        261,
+        218,
+        275
+      ]
+    },
+    {
+      "tail": "stuss",
+      "head": "barysilite tibey",
+      "label": null,
+      "bbox": [
+        102,
+        144,
+        185,
+        309
+      ]
+    },
+    {
+      "tail": "barysilite tibey",
+      "head": "headbander alchymy electroopti",
+      "label": null,
+      "bbox": [
+        221,
+        165,
+        230,
+        179
+      ]
+    },
+    {
+      "tail": "headbander alchymy electroopti",
+      "head": "nuchal",
+      "label": "Yes",
+      "bbox": [
+        233,
+        250,
+        242,
+        274
+      ]
+    },
+    {
+      "tail": "headbander alchymy electroopti",
+      "head": "thyrse",
+      "label": "Yes",
+      "bbox": [
+        98,
+        168,
+        151,
+        208
+      ]
+    },
+    {
+      "tail": "nuchal",
+      "head": "gaited",
+      "label": null,
+      "bbox": [
+        221,
+        325,
+        230,
+        357
+      ]
+    },
+    {
+      "tail": "gaited",
+      "head": "leucogenic",
+      "label": null,
+      "bbox": [
+        221,
+        403,
+        230,
+        416
+      ]
+    }
+  ]
+}

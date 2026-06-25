@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "text": "angaria",
+      "id": "angaria",
+      "class": "ellipse"
+    },
+    {
+      "text": "maraschino",
+      "id": "maraschino",
+      "class": "hexagon"
+    },
+    {
+      "text": "beclown",
+      "id": "beclown",
+      "class": "hexagon"
+    },
+    {
+      "text": "dauntingness",
+      "id": "dauntingness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "vineal frightless",
+      "id": "vineal frightless",
+      "class": "diamond"
+    },
+    {
+      "text": "aurification knobular phonogra",
+      "id": "aurification knobular phonogra",
+      "class": "diamond"
+    },
+    {
+      "text": "butene ka",
+      "id": "butene ka",
+      "class": "diamond"
+    },
+    {
+      "text": "vesiculus overmournfully",
+      "id": "vesiculus overmournfully",
+      "class": "hexagon"
+    },
+    {
+      "text": "pericardiolysis uncrazed under",
+      "id": "pericardiolysis uncrazed under",
+      "class": "diamond"
+    },
+    {
+      "text": "frenetically",
+      "id": "frenetically",
+      "class": "diamond"
+    },
+    {
+      "text": "Salicales chaetophoraceous",
+      "id": "Salicales chaetophoraceous",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "angaria",
+      "head": "maraschino",
+      "label": null
+    },
+    {
+      "tail": "maraschino",
+      "head": "beclown",
+      "label": null
+    },
+    {
+      "tail": "beclown",
+      "head": "dauntingness",
+      "label": null
+    },
+    {
+      "tail": "dauntingness",
+      "head": "vineal frightless",
+      "label": null
+    },
+    {
+      "tail": "vineal frightless",
+      "head": "aurification knobular phonogra",
+      "label": "Yes"
+    },
+    {
+      "tail": "vineal frightless",
+      "head": "angaria",
+      "label": "Yes"
+    },
+    {
+      "tail": "aurification knobular phonogra",
+      "head": "butene ka",
+      "label": "yes"
+    },
+    {
+      "tail": "aurification knobular phonogra",
+      "head": "dauntingness",
+      "label": "yes"
+    },
+    {
+      "tail": "butene ka",
+      "head": "vesiculus overmournfully",
+      "label": "yes"
+    },
+    {
+      "tail": "butene ka",
+      "head": "maraschino",
+      "label": "yes"
+    },
+    {
+      "tail": "vesiculus overmournfully",
+      "head": "pericardiolysis uncrazed under",
+      "label": null
+    },
+    {
+      "tail": "pericardiolysis uncrazed under",
+      "head": "frenetically",
+      "label": "YES"
+    },
+    {
+      "tail": "pericardiolysis uncrazed under",
+      "head": "maraschino",
+      "label": "YES"
+    },
+    {
+      "tail": "frenetically",
+      "head": "Salicales chaetophoraceous",
+      "label": "NO"
+    },
+    {
+      "tail": "frenetically",
+      "head": "vesiculus overmournfully",
+      "label": "NO"
+    }
+  ]
+}

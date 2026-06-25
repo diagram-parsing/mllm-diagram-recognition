@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "text": "Haematopus trinityhood",
+      "id": "Haematopus trinityhood",
+      "class": "node"
+    },
+    {
+      "text": "peripneumonia",
+      "id": "peripneumonia",
+      "class": "node"
+    },
+    {
+      "text": "ganglionitis",
+      "id": "ganglionitis",
+      "class": "node"
+    },
+    {
+      "text": "grison",
+      "id": "grison",
+      "class": "node"
+    },
+    {
+      "text": "stemma",
+      "id": "stemma",
+      "class": "node"
+    },
+    {
+      "text": "anarchosocialist",
+      "id": "anarchosocialist",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Haematopus trinityhood",
+      "head": "peripneumonia",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Haematopus trinityhood",
+      "head": "ganglionitis",
+      "label": "-1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Haematopus trinityhood",
+      "head": "grison",
+      "label": "-0.857",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "stemma",
+      "head": "anarchosocialist",
+      "label": "0.19 h = 0.331",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Haematopus trinityhood",
+      "head": "stemma",
+      "label": "0.638",
+      "class": "unidirectional"
+    }
+  ]
+}

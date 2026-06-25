@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "counterweigh decart",
+      "id": "counterweigh decart",
+      "class": "circle"
+    },
+    {
+      "text": "gheleem whereat gonion",
+      "id": "gheleem whereat gonion",
+      "class": "diamond"
+    },
+    {
+      "text": "semisuspension Francophobe",
+      "id": "semisuspension Francophobe",
+      "class": "box"
+    },
+    {
+      "text": "comminglement brisk",
+      "id": "comminglement brisk",
+      "class": "document"
+    },
+    {
+      "text": "autocratoric hornthumb",
+      "id": "autocratoric hornthumb",
+      "class": "diamond"
+    },
+    {
+      "text": "medicator",
+      "id": "medicator",
+      "class": "document"
+    },
+    {
+      "text": "reinquiry untaut nonembellishm",
+      "id": "reinquiry untaut nonembellishm",
+      "class": "hexagon"
+    },
+    {
+      "text": "Cetacea pourparler chlorophane",
+      "id": "Cetacea pourparler chlorophane",
+      "class": "document"
+    },
+    {
+      "text": "numskullery",
+      "id": "numskullery",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "counterweigh decart",
+      "head": "gheleem whereat gonion",
+      "label": null
+    },
+    {
+      "tail": "gheleem whereat gonion",
+      "head": "semisuspension Francophobe",
+      "label": "YES"
+    },
+    {
+      "tail": "gheleem whereat gonion",
+      "head": "comminglement brisk",
+      "label": "YES"
+    },
+    {
+      "tail": "semisuspension Francophobe",
+      "head": "autocratoric hornthumb",
+      "label": null
+    },
+    {
+      "tail": "autocratoric hornthumb",
+      "head": "medicator",
+      "label": "no"
+    },
+    {
+      "tail": "autocratoric hornthumb",
+      "head": "semisuspension Francophobe",
+      "label": "no"
+    },
+    {
+      "tail": "medicator",
+      "head": "reinquiry untaut nonembellishm",
+      "label": null
+    },
+    {
+      "tail": "reinquiry untaut nonembellishm",
+      "head": "comminglement brisk",
+      "label": null
+    },
+    {
+      "tail": "comminglement brisk",
+      "head": "Cetacea pourparler chlorophane",
+      "label": null
+    },
+    {
+      "tail": "Cetacea pourparler chlorophane",
+      "head": "numskullery",
+      "label": null
+    }
+  ]
+}

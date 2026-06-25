@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "mazzard",
+      "id": "mazzard",
+      "class": "oval",
+      "bbox": [
+        22,
+        5,
+        117,
+        53
+      ]
+    },
+    {
+      "text": "Donn crucifix",
+      "id": "Donn crucifix",
+      "class": "hexagon",
+      "bbox": [
+        24,
+        95,
+        115,
+        154
+      ]
+    },
+    {
+      "text": "charmel",
+      "id": "charmel",
+      "class": "diamond",
+      "bbox": [
+        5,
+        196,
+        134,
+        244
+      ]
+    },
+    {
+      "text": "leiomyosarcoma",
+      "id": "leiomyosarcoma",
+      "class": "document",
+      "bbox": [
+        14,
+        281,
+        125,
+        348
+      ]
+    },
+    {
+      "text": "photophane",
+      "id": "photophane",
+      "class": "diamond",
+      "bbox": [
+        208,
+        16,
+        306,
+        90
+      ]
+    },
+    {
+      "text": "remotely",
+      "id": "remotely",
+      "class": "document",
+      "bbox": [
+        16,
+        376,
+        123,
+        438
+      ]
+    },
+    {
+      "text": "aerometer",
+      "id": "aerometer",
+      "class": "box",
+      "bbox": [
+        224,
+        100,
+        296,
+        148
+      ]
+    },
+    {
+      "text": "Isegrim",
+      "id": "Isegrim",
+      "class": "ellipse",
+      "bbox": [
+        216,
+        196,
+        303,
+        244
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "mazzard",
+      "head": "Donn crucifix",
+      "label": null,
+      "bbox": [
+        50,
+        52,
+        59,
+        93
+      ]
+    },
+    {
+      "tail": "Donn crucifix",
+      "head": "charmel",
+      "label": null,
+      "bbox": [
+        65,
+        155,
+        74,
+        194
+      ]
+    },
+    {
+      "tail": "charmel",
+      "head": "leiomyosarcoma",
+      "label": "yes",
+      "bbox": [
+        65,
+        244,
+        74,
+        280
+      ]
+    },
+    {
+      "tail": "charmel",
+      "head": "photophane",
+      "label": "yes",
+      "bbox": [
+        125,
+        77,
+        246,
+        216
+      ]
+    },
+    {
+      "tail": "leiomyosarcoma",
+      "head": "remotely",
+      "label": null,
+      "bbox": [
+        65,
+        348,
+        74,
+        376
+      ]
+    },
+    {
+      "tail": "remotely",
+      "head": "photophane",
+      "label": null,
+      "bbox": [
+        123,
+        58,
+        220,
+        411
+      ]
+    },
+    {
+      "tail": "photophane",
+      "head": "aerometer",
+      "label": "no",
+      "bbox": [
+        255,
+        85,
+        264,
+        99
+      ]
+    },
+    {
+      "tail": "photophane",
+      "head": "Donn crucifix",
+      "label": "no",
+      "bbox": [
+        80,
+        72,
+        235,
+        93
+      ]
+    },
+    {
+      "tail": "aerometer",
+      "head": "Isegrim",
+      "label": null,
+      "bbox": [
+        255,
+        149,
+        264,
+        194
+      ]
+    }
+  ]
+}

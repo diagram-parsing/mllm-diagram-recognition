@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "Veronicella",
+      "id": "Veronicella",
+      "class": "oval"
+    },
+    {
+      "text": "incuriosity",
+      "id": "incuriosity",
+      "class": "document"
+    },
+    {
+      "text": "unsyringed infratemporal",
+      "id": "unsyringed infratemporal",
+      "class": "diamond"
+    },
+    {
+      "text": "acanthine",
+      "id": "acanthine",
+      "class": "document"
+    },
+    {
+      "text": "menologium",
+      "id": "menologium",
+      "class": "diamond"
+    },
+    {
+      "text": "Achroanthes",
+      "id": "Achroanthes",
+      "class": "hexagon"
+    },
+    {
+      "text": "outthieve",
+      "id": "outthieve",
+      "class": "parallelogram"
+    },
+    {
+      "text": "tartrous",
+      "id": "tartrous",
+      "class": "diamond"
+    },
+    {
+      "text": "sociophagous",
+      "id": "sociophagous",
+      "class": "box"
+    },
+    {
+      "text": "reptiliform",
+      "id": "reptiliform",
+      "class": "parallelogram"
+    },
+    {
+      "text": "rounce Ibilao",
+      "id": "rounce Ibilao",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Veronicella",
+      "head": "incuriosity",
+      "label": null
+    },
+    {
+      "tail": "incuriosity",
+      "head": "unsyringed infratemporal",
+      "label": null
+    },
+    {
+      "tail": "unsyringed infratemporal",
+      "head": "acanthine",
+      "label": "YES"
+    },
+    {
+      "tail": "unsyringed infratemporal",
+      "head": "menologium",
+      "label": "YES"
+    },
+    {
+      "tail": "acanthine",
+      "head": "Achroanthes",
+      "label": null
+    },
+    {
+      "tail": "Achroanthes",
+      "head": "outthieve",
+      "label": null
+    },
+    {
+      "tail": "outthieve",
+      "head": "tartrous",
+      "label": null
+    },
+    {
+      "tail": "tartrous",
+      "head": "sociophagous",
+      "label": "Yes"
+    },
+    {
+      "tail": "tartrous",
+      "head": "incuriosity",
+      "label": "Yes"
+    },
+    {
+      "tail": "sociophagous",
+      "head": "menologium",
+      "label": null
+    },
+    {
+      "tail": "menologium",
+      "head": "reptiliform",
+      "label": "yes"
+    },
+    {
+      "tail": "menologium",
+      "head": "Veronicella",
+      "label": "yes"
+    },
+    {
+      "tail": "reptiliform",
+      "head": "rounce Ibilao",
+      "label": null
+    }
+  ]
+}

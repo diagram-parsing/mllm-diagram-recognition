@@ -1,0 +1,258 @@
+{
+  "nodes": [
+    {
+      "text": "start a new doctor rating",
+      "id": "start a new doctor rating",
+      "class": "event"
+    },
+    {
+      "text": "doctor rating workflow created",
+      "id": "doctor rating workflow created",
+      "class": "event"
+    },
+    {
+      "text": "fill a cheque",
+      "id": "fill a cheque",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "ask expert to review the work",
+      "id": "ask expert to review the work",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "expertise received",
+      "id": "expertise received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "file the results",
+      "id": "file the results",
+      "class": "task"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "class": "task"
+    },
+    {
+      "text": "24 hours",
+      "id": "24 hours",
+      "class": "timerEvent"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send cheque",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill a cheque",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "fill a cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "doctor rating workflow created",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file the results",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "file the results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "expertise received",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "expertise received",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "24 hours",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "24 hours",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask expert to review the work",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "ask expert to review the work",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "start a new doctor rating",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask expert to review the work",
+      "head": "expert",
+      "class": "messageFlow",
+      "label": "request for a review"
+    },
+    {
+      "tail": "expert",
+      "head": "expertise received",
+      "class": "messageFlow",
+      "label": "expertise"
+    },
+    {
+      "tail": "send cheque",
+      "head": "expert",
+      "class": "messageFlow",
+      "label": "cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "QA Departement",
+        "QA Specialist",
+        "Managing Director"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA Departement",
+      "nodes": [
+        "start a new doctor rating",
+        "doctor rating workflow created",
+        "parallelGateway_1",
+        "file the results",
+        "interview patients",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA Specialist",
+      "nodes": [
+        "start a new doctor rating",
+        "doctor rating workflow created",
+        "parallelGateway_1",
+        "file the results",
+        "interview patients",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Managing Director",
+      "nodes": [
+        "fill a cheque",
+        "exclusiveGateway_1",
+        "ask expert to review the work",
+        "eventBasedGateway_1",
+        "expertise received",
+        "send cheque",
+        "24 hours"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

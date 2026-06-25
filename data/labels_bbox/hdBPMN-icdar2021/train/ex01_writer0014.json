@@ -1,0 +1,272 @@
+{
+  "nodes": [
+    {
+      "text": "assess risk",
+      "id": "assess risk",
+      "bbox": [
+        341,
+        507,
+        581,
+        595
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        664,
+        509,
+        746,
+        600
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "carry out advanced risk assessment",
+      "id": "carry out advanced risk assessment",
+      "bbox": [
+        792,
+        301,
+        1176,
+        463
+      ],
+      "class": "task"
+    },
+    {
+      "text": "carry out simple risk assessment",
+      "id": "carry out simple risk assessment",
+      "bbox": [
+        790,
+        640,
+        1146,
+        800
+      ],
+      "class": "task"
+    },
+    {
+      "text": "notify customerwith result of assessment",
+      "id": "notify customerwith result of assessment",
+      "bbox": [
+        1519,
+        335,
+        1926,
+        511
+      ],
+      "class": "task"
+    },
+    {
+      "text": "organize disbursement",
+      "id": "organize disbursement",
+      "bbox": [
+        1515,
+        589,
+        1926,
+        754
+      ],
+      "class": "task"
+    },
+    {
+      "text": "credit request accepted",
+      "id": "credit request accepted",
+      "bbox": [
+        2138,
+        515,
+        2210,
+        587
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1241,
+        507,
+        1317,
+        600
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1401,
+        501,
+        1485,
+        600
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1970,
+        505,
+        2048,
+        591
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "credit request received",
+      "id": "credit request received",
+      "bbox": [
+        139,
+        517,
+        211,
+        589
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "credit request accepted",
+      "class": "sequenceFlow",
+      "bbox": [
+        2046,
+        528,
+        2140,
+        576
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customerwith result of assessment",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1926,
+        421,
+        2008,
+        511
+      ],
+      "label": null
+    },
+    {
+      "tail": "organize disbursement",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1926,
+        589,
+        2012,
+        678
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "notify customerwith result of assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1435,
+        421,
+        1521,
+        513
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1315,
+        525,
+        1409,
+        573
+      ],
+      "label": null
+    },
+    {
+      "tail": "carry out advanced risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1176,
+        383,
+        1281,
+        509
+      ],
+      "label": null
+    },
+    {
+      "tail": "carry out simple risk assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1146,
+        600,
+        1281,
+        718
+      ],
+      "label": null
+    },
+    {
+      "tail": "assess risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        581,
+        528,
+        670,
+        576
+      ],
+      "label": null
+    },
+    {
+      "tail": "credit request received",
+      "head": "assess risk",
+      "class": "sequenceFlow",
+      "bbox": [
+        211,
+        529,
+        343,
+        577
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out simple risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        706,
+        599,
+        792,
+        722
+      ],
+      "label": "risk equal to below threshold"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "carry out advanced risk assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        706,
+        383,
+        794,
+        513
+      ],
+      "label": "risk above threshold"
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "organize disbursement",
+      "class": "sequenceFlow",
+      "bbox": [
+        1443,
+        600,
+        1517,
+        674
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

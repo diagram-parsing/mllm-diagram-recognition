@@ -1,0 +1,725 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        654,
+        480,
+        718,
+        543
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        819,
+        462,
+        931,
+        561
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "bbox": [
+        845,
+        833,
+        988,
+        907
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_3",
+      "bbox": [
+        1420,
+        436,
+        1536,
+        511
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_4",
+      "bbox": [
+        1637,
+        539,
+        1744,
+        593
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        1067,
+        366,
+        1118,
+        409
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        1241,
+        895,
+        1302,
+        951
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_4",
+      "bbox": [
+        1150,
+        720,
+        1209,
+        772
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_5",
+      "bbox": [
+        1752,
+        335,
+        1818,
+        387
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        966,
+        477,
+        1010,
+        517
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1042,
+        838,
+        1079,
+        877
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        1573,
+        457,
+        1610,
+        495
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        1830,
+        546,
+        1860,
+        573
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_6",
+      "bbox": [
+        1297,
+        448,
+        1369,
+        524
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "dataStore_1",
+      "bbox": [
+        1725,
+        455,
+        1831,
+        507
+      ],
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "dataObject_1",
+      "bbox": [
+        1342,
+        718,
+        1401,
+        787
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_2",
+      "bbox": [
+        1361,
+        894,
+        1420,
+        963
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_3",
+      "bbox": [
+        769,
+        387,
+        797,
+        447
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "dataObject_4",
+      "bbox": [
+        1374,
+        561,
+        1433,
+        625
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "task_4",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1744,
+        539,
+        1831,
+        588
+      ],
+      "kps": [
+        1744.256,
+        566.793,
+        2.0,
+        1830.287,
+        560.052,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "task_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1591,
+        495,
+        1640,
+        574
+      ],
+      "kps": [
+        1592.428,
+        495.954,
+        2.0,
+        1637.977,
+        573.546,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "messageEvent_5",
+      "class": "sequenceFlow",
+      "bbox": [
+        1592,
+        359,
+        1754,
+        458
+      ],
+      "kps": [
+        1592.428,
+        457.144,
+        2.0,
+        1752.681,
+        359.304,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_3",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1532,
+        450,
+        1581,
+        499
+      ],
+      "kps": [
+        1536.767,
+        474.021,
+        2.0,
+        1575.564,
+        474.021,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_6",
+      "head": "task_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1369,
+        461,
+        1421,
+        510
+      ],
+      "kps": [
+        1369.76,
+        487.515,
+        2.0,
+        1420.365,
+        482.446,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "messageEvent_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1061,
+        877,
+        1246,
+        939
+      ],
+      "kps": [
+        1061.061,
+        877.19,
+        2.0,
+        1244.932,
+        937.919,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "messageEvent_4",
+      "class": "sequenceFlow",
+      "bbox": [
+        1061,
+        748,
+        1151,
+        839
+      ],
+      "kps": [
+        1061.061,
+        838.394,
+        2.0,
+        1150.463,
+        748.979,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        988,
+        836,
+        1043,
+        885
+      ],
+      "kps": [
+        988.524,
+        861.998,
+        2.0,
+        1042.499,
+        858.628,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        957,
+        517,
+        1006,
+        836
+      ],
+      "kps": [
+        988.524,
+        517.873,
+        2.0,
+        975.03,
+        835.01,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        988,
+        396,
+        1070,
+        478
+      ],
+      "kps": [
+        988.524,
+        477.391,
+        2.0,
+        1069.486,
+        396.415,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        927,
+        483,
+        976,
+        532
+      ],
+      "kps": [
+        931.165,
+        512.817,
+        2.0,
+        971.646,
+        502.694,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        718,
+        487,
+        821,
+        536
+      ],
+      "kps": [
+        718.621,
+        511.132,
+        2.0,
+        819.831,
+        511.132,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "dataObject_4",
+      "head": "task_3",
+      "class": "dataAssociation",
+      "bbox": [
+        1431,
+        511,
+        1480,
+        579
+      ],
+      "kps": [
+        1433.859,
+        578.601,
+        2.0,
+        1476.039,
+        511.132,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_4",
+      "head": "dataStore_1",
+      "class": "dataAssociation",
+      "bbox": [
+        1690,
+        477,
+        1739,
+        541
+      ],
+      "kps": [
+        1702.076,
+        539.805,
+        2.0,
+        1725.694,
+        477.391,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "dataObject_2",
+      "head": "messageEvent_3",
+      "class": "dataAssociation",
+      "bbox": [
+        1302,
+        902,
+        1362,
+        951
+      ],
+      "kps": [
+        1361.321,
+        927.795,
+        2.0,
+        1302.278,
+        924.425,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "dataObject_1",
+      "head": "messageEvent_4",
+      "class": "dataAssociation",
+      "bbox": [
+        1209,
+        726,
+        1344,
+        775
+      ],
+      "kps": [
+        1342.772,
+        752.362,
+        2.0,
+        1209.506,
+        748.979,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_6",
+      "head": "dataObject_4",
+      "class": "dataAssociation",
+      "bbox": [
+        1330,
+        522,
+        1379,
+        598
+      ],
+      "kps": [
+        1334.334,
+        522.941,
+        2.0,
+        1374.815,
+        597.164,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "claimant",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        659,
+        197,
+        708,
+        482
+      ],
+      "kps": [
+        683.195,
+        197.365,
+        2.0,
+        683.195,
+        480.761,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "claimant",
+      "class": "messageFlow",
+      "bbox": [
+        1233,
+        197,
+        1282,
+        895
+      ],
+      "kps": [
+        1270.235,
+        894.054,
+        2.0,
+        1244.932,
+        197.365,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_4",
+      "head": "claimant",
+      "class": "messageFlow",
+      "bbox": [
+        1175,
+        197,
+        1224,
+        720
+      ],
+      "kps": [
+        1190.387,
+        718.852,
+        2.0,
+        1193.104,
+        197.039,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "claimant",
+      "class": "messageFlow",
+      "bbox": [
+        1058,
+        197,
+        1107,
+        364
+      ],
+      "kps": [
+        1089.734,
+        362.687,
+        2.0,
+        1074.555,
+        197.365,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_5",
+      "head": "claimant",
+      "class": "messageFlow",
+      "bbox": [
+        1751,
+        197,
+        1800,
+        334
+      ],
+      "kps": [
+        1769.273,
+        332.928,
+        2.0,
+        1781.503,
+        197.039,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "insurer",
+      "nodes": [
+        "lane_1",
+        "lane_2"
+      ],
+      "bbox": [
+        524,
+        320,
+        2037,
+        1020
+      ],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [
+        "task_2",
+        "messageEvent_3",
+        "messageEvent_4",
+        "exclusiveGateway_2",
+        "dataObject_1",
+        "dataObject_2"
+      ],
+      "bbox": [
+        575,
+        671,
+        2037,
+        1020
+      ],
+      "class": "lane"
+    },
+    {
+      "name": null,
+      "nodes": [
+        "messageEvent_1",
+        "task_1",
+        "task_3",
+        "task_4",
+        "messageEvent_2",
+        "messageEvent_5",
+        "exclusiveGateway_1",
+        "exclusiveGateway_3",
+        "event_1",
+        "messageEvent_6",
+        "dataStore_1",
+        "dataObject_3",
+        "dataObject_4"
+      ],
+      "bbox": [
+        575,
+        320,
+        2037,
+        671
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claimant",
+      "nodes": [],
+      "bbox": [
+        514,
+        106,
+        2019,
+        197
+      ],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "nodes": [
+    {
+      "text": "order recieved",
+      "id": "order recieved",
+      "bbox": [
+        101,
+        329,
+        187,
+        390
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        489,
+        111,
+        625,
+        191
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order note",
+      "id": "write down order note",
+      "bbox": [
+        461,
+        518,
+        617,
+        607
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "bbox": [
+        664,
+        444,
+        821,
+        514
+      ],
+      "class": "task"
+    },
+    {
+      "text": "attach order to pinboard",
+      "id": "attach order to pinboard",
+      "bbox": [
+        878,
+        522,
+        1070,
+        619
+      ],
+      "class": "task"
+    },
+    {
+      "text": "order processed",
+      "id": "order processed",
+      "bbox": [
+        1154,
+        532,
+        1210,
+        600
+      ],
+      "class": "event"
+    },
+    {
+      "text": "confirmation notice",
+      "id": "confirmation notice",
+      "bbox": [
+        678,
+        34,
+        738,
+        108
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "order [printed out]",
+      "id": "order [printed out]",
+      "bbox": [
+        879,
+        322,
+        930,
+        396
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        328,
+        322,
+        405,
+        393
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        703,
+        321,
+        775,
+        403
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        707,
+        542,
+        767,
+        605
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order [written down]",
+      "id": "order [written down]",
+      "bbox": [
+        519,
+        645,
+        582,
+        733
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "attach order to pinboard",
+      "head": "order processed",
+      "class": "sequenceFlow",
+      "bbox": [
+        1070,
+        552,
+        1155,
+        586
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "attach order to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        765,
+        555,
+        879,
+        589
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        723,
+        512,
+        757,
+        546
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        617,
+        551,
+        709,
+        585
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write down order note",
+      "class": "sequenceFlow",
+      "bbox": [
+        362,
+        389,
+        462,
+        562
+      ],
+      "label": "order recieved by phone"
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "bbox": [
+        726,
+        398,
+        760,
+        445
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        625,
+        156,
+        743,
+        327
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        362,
+        156,
+        490,
+        327
+      ],
+      "label": "Order recieved by Lieferando"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        403,
+        339,
+        708,
+        373
+      ],
+      "label": "order recieved by Website"
+    },
+    {
+      "tail": "order recieved",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        187,
+        344,
+        333,
+        378
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "confirmation notice",
+      "class": "dataAssociation",
+      "bbox": [
+        590,
+        57,
+        679,
+        111
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "order [written down]",
+      "class": "dataAssociation",
+      "bbox": [
+        476,
+        607,
+        520,
+        690
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "order [printed out]",
+      "class": "dataAssociation",
+      "bbox": [
+        799,
+        339,
+        880,
+        445
+      ],
+      "label": null
+    },
+    {
+      "tail": "order [printed out]",
+      "head": "attach order to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        888,
+        396,
+        922,
+        523
+      ],
+      "label": null
+    },
+    {
+      "tail": "order [written down]",
+      "head": "attach order to pinboard",
+      "class": "dataAssociation",
+      "bbox": [
+        582,
+        620,
+        923,
+        685
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

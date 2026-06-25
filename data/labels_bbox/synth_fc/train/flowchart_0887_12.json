@@ -1,0 +1,292 @@
+{
+  "nodes": [
+    {
+      "text": "workbag",
+      "id": "workbag",
+      "class": "oval",
+      "bbox": [
+        20,
+        30,
+        119,
+        78
+      ]
+    },
+    {
+      "text": "isogram",
+      "id": "isogram",
+      "class": "diamond",
+      "bbox": [
+        5,
+        127,
+        134,
+        175
+      ]
+    },
+    {
+      "text": "acrestaff",
+      "id": "acrestaff",
+      "class": "parallelogram",
+      "bbox": [
+        12,
+        225,
+        127,
+        273
+      ]
+    },
+    {
+      "text": "disconvenient cosmosphere",
+      "id": "disconvenient cosmosphere",
+      "class": "ellipse",
+      "bbox": [
+        206,
+        492,
+        324,
+        544
+      ]
+    },
+    {
+      "text": "seilenos",
+      "id": "seilenos",
+      "class": "hexagon",
+      "bbox": [
+        25,
+        323,
+        114,
+        371
+      ]
+    },
+    {
+      "text": "spermatorrhea",
+      "id": "spermatorrhea",
+      "class": "diamond",
+      "bbox": [
+        10,
+        408,
+        129,
+        481
+      ]
+    },
+    {
+      "text": "depravingly understimulus",
+      "id": "depravingly understimulus",
+      "class": "box",
+      "bbox": [
+        29,
+        518,
+        110,
+        561
+      ]
+    },
+    {
+      "text": "prepatellar porcelainization",
+      "id": "prepatellar porcelainization",
+      "class": "document",
+      "bbox": [
+        220,
+        5,
+        310,
+        53
+      ]
+    },
+    {
+      "text": "angiomyosarcoma",
+      "id": "angiomyosarcoma",
+      "class": "parallelogram",
+      "bbox": [
+        160,
+        127,
+        364,
+        175
+      ]
+    },
+    {
+      "text": "poorly",
+      "id": "poorly",
+      "class": "diamond",
+      "bbox": [
+        209,
+        225,
+        321,
+        273
+      ]
+    },
+    {
+      "text": "tyrantship",
+      "id": "tyrantship",
+      "class": "document",
+      "bbox": [
+        220,
+        323,
+        310,
+        371
+      ]
+    },
+    {
+      "text": "ironheartedness rustyback gall",
+      "id": "ironheartedness rustyback gall",
+      "class": "parallelogram",
+      "bbox": [
+        166,
+        408,
+        364,
+        481
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "workbag",
+      "head": "isogram",
+      "label": null,
+      "bbox": [
+        65,
+        78,
+        74,
+        125
+      ]
+    },
+    {
+      "tail": "isogram",
+      "head": "acrestaff",
+      "label": "Yes",
+      "bbox": [
+        65,
+        176,
+        74,
+        223
+      ]
+    },
+    {
+      "tail": "isogram",
+      "head": "disconvenient cosmosphere",
+      "label": "Yes",
+      "bbox": [
+        135,
+        152,
+        207,
+        515
+      ]
+    },
+    {
+      "tail": "acrestaff",
+      "head": "seilenos",
+      "label": null,
+      "bbox": [
+        65,
+        274,
+        74,
+        321
+      ]
+    },
+    {
+      "tail": "seilenos",
+      "head": "spermatorrhea",
+      "label": null,
+      "bbox": [
+        50,
+        371,
+        59,
+        415
+      ]
+    },
+    {
+      "tail": "spermatorrhea",
+      "head": "depravingly understimulus",
+      "label": "NO",
+      "bbox": [
+        65,
+        481,
+        74,
+        516
+      ]
+    },
+    {
+      "tail": "spermatorrhea",
+      "head": "seilenos",
+      "label": "NO",
+      "bbox": [
+        80,
+        372,
+        89,
+        417
+      ]
+    },
+    {
+      "tail": "depravingly understimulus",
+      "head": "prepatellar porcelainization",
+      "label": null,
+      "bbox": [
+        111,
+        38,
+        219,
+        532
+      ]
+    },
+    {
+      "tail": "prepatellar porcelainization",
+      "head": "angiomyosarcoma",
+      "label": null,
+      "bbox": [
+        260,
+        53,
+        270,
+        126
+      ]
+    },
+    {
+      "tail": "angiomyosarcoma",
+      "head": "poorly",
+      "label": null,
+      "bbox": [
+        260,
+        176,
+        270,
+        223
+      ]
+    },
+    {
+      "tail": "poorly",
+      "head": "tyrantship",
+      "label": "yes",
+      "bbox": [
+        260,
+        274,
+        270,
+        322
+      ]
+    },
+    {
+      "tail": "poorly",
+      "head": "disconvenient cosmosphere",
+      "label": "yes",
+      "bbox": [
+        154,
+        250,
+        218,
+        506
+      ]
+    },
+    {
+      "tail": "tyrantship",
+      "head": "ironheartedness rustyback gall",
+      "label": null,
+      "bbox": [
+        260,
+        370,
+        270,
+        406
+      ]
+    },
+    {
+      "tail": "ironheartedness rustyback gall",
+      "head": "disconvenient cosmosphere",
+      "label": null,
+      "bbox": [
+        260,
+        477,
+        270,
+        490
+      ]
+    }
+  ]
+}

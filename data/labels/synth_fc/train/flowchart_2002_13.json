@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "text": "infuriate",
+      "id": "infuriate",
+      "class": "circle"
+    },
+    {
+      "text": "astragalocentral",
+      "id": "astragalocentral",
+      "class": "hexagon"
+    },
+    {
+      "text": "tarentala amphorous Rauraci",
+      "id": "tarentala amphorous Rauraci",
+      "class": "diamond"
+    },
+    {
+      "text": "pronominalize iconoclasm",
+      "id": "pronominalize iconoclasm",
+      "class": "document"
+    },
+    {
+      "text": "thundering Turveydropian stryc",
+      "id": "thundering Turveydropian stryc",
+      "class": "document"
+    },
+    {
+      "text": "susceptibility",
+      "id": "susceptibility",
+      "class": "diamond"
+    },
+    {
+      "text": "submolecule polysomy",
+      "id": "submolecule polysomy",
+      "class": "parallelogram"
+    },
+    {
+      "text": "counterpart twinness",
+      "id": "counterpart twinness",
+      "class": "diamond"
+    },
+    {
+      "text": "hypocrater uninfringeable Trac",
+      "id": "hypocrater uninfringeable Trac",
+      "class": "parallelogram"
+    },
+    {
+      "text": "sphenobasilar imperialness",
+      "id": "sphenobasilar imperialness",
+      "class": "parallelogram"
+    },
+    {
+      "text": "uncunning",
+      "id": "uncunning",
+      "class": "diamond"
+    },
+    {
+      "text": "friability",
+      "id": "friability",
+      "class": "diamond"
+    },
+    {
+      "text": "evangeliary Odonata",
+      "id": "evangeliary Odonata",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "infuriate",
+      "head": "astragalocentral",
+      "label": null
+    },
+    {
+      "tail": "astragalocentral",
+      "head": "tarentala amphorous Rauraci",
+      "label": null
+    },
+    {
+      "tail": "tarentala amphorous Rauraci",
+      "head": "pronominalize iconoclasm",
+      "label": "No"
+    },
+    {
+      "tail": "tarentala amphorous Rauraci",
+      "head": "thundering Turveydropian stryc",
+      "label": "No"
+    },
+    {
+      "tail": "pronominalize iconoclasm",
+      "head": "susceptibility",
+      "label": null
+    },
+    {
+      "tail": "susceptibility",
+      "head": "thundering Turveydropian stryc",
+      "label": "yes"
+    },
+    {
+      "tail": "susceptibility",
+      "head": "submolecule polysomy",
+      "label": "yes"
+    },
+    {
+      "tail": "thundering Turveydropian stryc",
+      "head": "counterpart twinness",
+      "label": null
+    },
+    {
+      "tail": "counterpart twinness",
+      "head": "submolecule polysomy",
+      "label": "yes"
+    },
+    {
+      "tail": "counterpart twinness",
+      "head": "susceptibility",
+      "label": "yes"
+    },
+    {
+      "tail": "submolecule polysomy",
+      "head": "hypocrater uninfringeable Trac",
+      "label": null
+    },
+    {
+      "tail": "hypocrater uninfringeable Trac",
+      "head": "sphenobasilar imperialness",
+      "label": null
+    },
+    {
+      "tail": "sphenobasilar imperialness",
+      "head": "uncunning",
+      "label": null
+    },
+    {
+      "tail": "uncunning",
+      "head": "friability",
+      "label": "yes"
+    },
+    {
+      "tail": "uncunning",
+      "head": "tarentala amphorous Rauraci",
+      "label": "yes"
+    },
+    {
+      "tail": "friability",
+      "head": "evangeliary Odonata",
+      "label": "yes"
+    },
+    {
+      "tail": "friability",
+      "head": "counterpart twinness",
+      "label": "yes"
+    }
+  ]
+}

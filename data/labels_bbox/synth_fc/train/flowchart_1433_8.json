@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "text": "glossa",
+      "id": "glossa",
+      "class": "circle",
+      "bbox": [
+        62,
+        22,
+        138,
+        99
+      ]
+    },
+    {
+      "text": "paleethnologist",
+      "id": "paleethnologist",
+      "class": "parallelogram",
+      "bbox": [
+        39,
+        119,
+        162,
+        192
+      ]
+    },
+    {
+      "text": "unsold",
+      "id": "unsold",
+      "class": "box",
+      "bbox": [
+        64,
+        203,
+        136,
+        251
+      ]
+    },
+    {
+      "text": "pseudopious",
+      "id": "pseudopious",
+      "class": "hexagon",
+      "bbox": [
+        38,
+        322,
+        162,
+        370
+      ]
+    },
+    {
+      "text": "zonar tubiferous",
+      "id": "zonar tubiferous",
+      "class": "diamond",
+      "bbox": [
+        36,
+        380,
+        164,
+        454
+      ]
+    },
+    {
+      "text": "anticatalyzer supersentimental",
+      "id": "anticatalyzer supersentimental",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        499,
+        195,
+        567
+      ]
+    },
+    {
+      "text": "antimoniate",
+      "id": "antimoniate",
+      "class": "document",
+      "bbox": [
+        240,
+        5,
+        339,
+        68
+      ]
+    },
+    {
+      "text": "unrecollected centauri",
+      "id": "unrecollected centauri",
+      "class": "ellipse",
+      "bbox": [
+        236,
+        153,
+        339,
+        205
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "glossa",
+      "head": "paleethnologist",
+      "label": null,
+      "bbox": [
+        95,
+        99,
+        105,
+        117
+      ]
+    },
+    {
+      "tail": "paleethnologist",
+      "head": "unsold",
+      "label": null,
+      "bbox": [
+        95,
+        188,
+        105,
+        201
+      ]
+    },
+    {
+      "tail": "unsold",
+      "head": "pseudopious",
+      "label": null,
+      "bbox": [
+        95,
+        252,
+        105,
+        320
+      ]
+    },
+    {
+      "tail": "pseudopious",
+      "head": "zonar tubiferous",
+      "label": null,
+      "bbox": [
+        95,
+        365,
+        105,
+        378
+      ]
+    },
+    {
+      "tail": "zonar tubiferous",
+      "head": "anticatalyzer supersentimental",
+      "label": "yes",
+      "bbox": [
+        95,
+        454,
+        105,
+        498
+      ]
+    },
+    {
+      "tail": "zonar tubiferous",
+      "head": "unsold",
+      "label": "yes",
+      "bbox": [
+        138,
+        224,
+        174,
+        418
+      ]
+    },
+    {
+      "tail": "anticatalyzer supersentimental",
+      "head": "antimoniate",
+      "label": null,
+      "bbox": [
+        185,
+        41,
+        239,
+        499
+      ]
+    },
+    {
+      "tail": "antimoniate",
+      "head": "unrecollected centauri",
+      "label": null,
+      "bbox": [
+        286,
+        68,
+        295,
+        152
+      ]
+    }
+  ]
+}

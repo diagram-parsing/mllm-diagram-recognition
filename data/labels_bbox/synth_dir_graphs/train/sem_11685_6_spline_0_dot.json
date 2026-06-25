@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "semispheric illuviate",
+      "id": "semispheric illuviate",
+      "class": "node",
+      "bbox": [
+        27,
+        99,
+        139,
+        149
+      ]
+    },
+    {
+      "text": "bijouterie",
+      "id": "bijouterie",
+      "class": "node",
+      "bbox": [
+        293,
+        24,
+        387,
+        72
+      ]
+    },
+    {
+      "text": "geobotanical shinty",
+      "id": "geobotanical shinty",
+      "class": "node",
+      "bbox": [
+        274,
+        97,
+        407,
+        154
+      ]
+    },
+    {
+      "text": "hyperneuria livable",
+      "id": "hyperneuria livable",
+      "class": "node",
+      "bbox": [
+        482,
+        61,
+        598,
+        112
+      ]
+    },
+    {
+      "text": "alternance",
+      "id": "alternance",
+      "class": "node",
+      "bbox": [
+        504,
+        136,
+        576,
+        187
+      ]
+    },
+    {
+      "text": "hora",
+      "id": "hora",
+      "class": "node",
+      "bbox": [
+        46,
+        192,
+        120,
+        240
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "semispheric illuviate",
+      "head": "bijouterie",
+      "label": "0.22 a = 0.748",
+      "class": "unidirectional",
+      "bbox": [
+        121,
+        54,
+        292,
+        105
+      ]
+    },
+    {
+      "tail": "geobotanical shinty",
+      "head": "hyperneuria livable",
+      "label": "-1",
+      "class": "unidirectional",
+      "bbox": [
+        402,
+        96,
+        481,
+        114
+      ]
+    },
+    {
+      "tail": "geobotanical shinty",
+      "head": "alternance",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        393,
+        144,
+        502,
+        165
+      ]
+    },
+    {
+      "tail": "hora",
+      "head": "geobotanical shinty",
+      "label": "-0.75** t = 0.943",
+      "class": "bidirectional",
+      "bbox": [
+        135,
+        153,
+        308,
+        213
+      ]
+    },
+    {
+      "tail": "semispheric illuviate",
+      "head": "geobotanical shinty",
+      "label": "0.383",
+      "class": "unidirectional",
+      "bbox": [
+        139,
+        120,
+        272,
+        130
+      ]
+    }
+  ]
+}

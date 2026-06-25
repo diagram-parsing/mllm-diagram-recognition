@@ -1,0 +1,314 @@
+{
+  "nodes": [
+    {
+      "text": "Dioscurian",
+      "id": "Dioscurian",
+      "class": "ellipse",
+      "bbox": [
+        18,
+        5,
+        114,
+        53
+      ]
+    },
+    {
+      "text": "doughman",
+      "id": "doughman",
+      "class": "box",
+      "bbox": [
+        26,
+        124,
+        106,
+        172
+      ]
+    },
+    {
+      "text": "Hildebrandian syphilographer",
+      "id": "Hildebrandian syphilographer",
+      "class": "box",
+      "bbox": [
+        20,
+        243,
+        112,
+        291
+      ]
+    },
+    {
+      "text": "appulse",
+      "id": "appulse",
+      "class": "box",
+      "bbox": [
+        30,
+        314,
+        102,
+        362
+      ]
+    },
+    {
+      "text": "rotated",
+      "id": "rotated",
+      "class": "box",
+      "bbox": [
+        30,
+        410,
+        102,
+        458
+      ]
+    },
+    {
+      "text": "spellbind",
+      "id": "spellbind",
+      "class": "diamond",
+      "bbox": [
+        5,
+        481,
+        126,
+        529
+      ]
+    },
+    {
+      "text": "phyllocarid",
+      "id": "phyllocarid",
+      "class": "box",
+      "bbox": [
+        214,
+        29,
+        298,
+        77
+      ]
+    },
+    {
+      "text": "subvesicular",
+      "id": "subvesicular",
+      "class": "diamond",
+      "bbox": [
+        200,
+        112,
+        312,
+        185
+      ]
+    },
+    {
+      "text": "haydenite",
+      "id": "haydenite",
+      "class": "diamond",
+      "bbox": [
+        193,
+        219,
+        319,
+        267
+      ]
+    },
+    {
+      "text": "electroosmosis knifeproof",
+      "id": "electroosmosis knifeproof",
+      "class": "parallelogram",
+      "bbox": [
+        169,
+        326,
+        338,
+        399
+      ]
+    },
+    {
+      "text": "trajet",
+      "id": "trajet",
+      "class": "parallelogram",
+      "bbox": [
+        207,
+        410,
+        305,
+        458
+      ]
+    },
+    {
+      "text": "nonidealist Kalekah queest",
+      "id": "nonidealist Kalekah queest",
+      "class": "document",
+      "bbox": [
+        195,
+        496,
+        317,
+        561
+      ]
+    },
+    {
+      "text": "forlornity",
+      "id": "forlornity",
+      "class": "oval",
+      "bbox": [
+        220,
+        598,
+        292,
+        644
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Dioscurian",
+      "head": "doughman",
+      "label": null,
+      "bbox": [
+        61,
+        54,
+        71,
+        122
+      ]
+    },
+    {
+      "tail": "doughman",
+      "head": "Hildebrandian syphilographer",
+      "label": null,
+      "bbox": [
+        61,
+        173,
+        71,
+        241
+      ]
+    },
+    {
+      "tail": "Hildebrandian syphilographer",
+      "head": "appulse",
+      "label": null,
+      "bbox": [
+        61,
+        292,
+        71,
+        313
+      ]
+    },
+    {
+      "tail": "appulse",
+      "head": "rotated",
+      "label": null,
+      "bbox": [
+        61,
+        363,
+        71,
+        408
+      ]
+    },
+    {
+      "tail": "rotated",
+      "head": "spellbind",
+      "label": null,
+      "bbox": [
+        49,
+        458,
+        59,
+        484
+      ]
+    },
+    {
+      "tail": "spellbind",
+      "head": "phyllocarid",
+      "label": "No",
+      "bbox": [
+        120,
+        61,
+        212,
+        502
+      ]
+    },
+    {
+      "tail": "spellbind",
+      "head": "rotated",
+      "label": "No",
+      "bbox": [
+        73,
+        459,
+        83,
+        485
+      ]
+    },
+    {
+      "tail": "phyllocarid",
+      "head": "subvesicular",
+      "label": null,
+      "bbox": [
+        251,
+        78,
+        261,
+        110
+      ]
+    },
+    {
+      "tail": "subvesicular",
+      "head": "haydenite",
+      "label": "yes",
+      "bbox": [
+        233,
+        173,
+        242,
+        225
+      ]
+    },
+    {
+      "tail": "subvesicular",
+      "head": "doughman",
+      "label": "yes",
+      "bbox": [
+        107,
+        144,
+        199,
+        153
+      ]
+    },
+    {
+      "tail": "haydenite",
+      "head": "electroosmosis knifeproof",
+      "label": "YES",
+      "bbox": [
+        251,
+        268,
+        261,
+        324
+      ]
+    },
+    {
+      "tail": "haydenite",
+      "head": "subvesicular",
+      "label": "YES",
+      "bbox": [
+        270,
+        175,
+        280,
+        226
+      ]
+    },
+    {
+      "tail": "electroosmosis knifeproof",
+      "head": "trajet",
+      "label": null,
+      "bbox": [
+        251,
+        395,
+        261,
+        408
+      ]
+    },
+    {
+      "tail": "trajet",
+      "head": "nonidealist Kalekah queest",
+      "label": null,
+      "bbox": [
+        251,
+        458,
+        261,
+        495
+      ]
+    },
+    {
+      "tail": "nonidealist Kalekah queest",
+      "head": "forlornity",
+      "label": null,
+      "bbox": [
+        251,
+        561,
+        261,
+        596
+      ]
+    }
+  ]
+}

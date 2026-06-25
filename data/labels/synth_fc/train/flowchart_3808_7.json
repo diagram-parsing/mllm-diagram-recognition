@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "impassable",
+      "id": "impassable",
+      "class": "circle"
+    },
+    {
+      "text": "retrocopulation",
+      "id": "retrocopulation",
+      "class": "hexagon"
+    },
+    {
+      "text": "rodomontador reinsurer",
+      "id": "rodomontador reinsurer",
+      "class": "document"
+    },
+    {
+      "text": "Monograptidae legioner",
+      "id": "Monograptidae legioner",
+      "class": "diamond"
+    },
+    {
+      "text": "Maytime",
+      "id": "Maytime",
+      "class": "box"
+    },
+    {
+      "text": "inextensile",
+      "id": "inextensile",
+      "class": "ellipse"
+    },
+    {
+      "text": "Rousseauite",
+      "id": "Rousseauite",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "impassable",
+      "head": "retrocopulation",
+      "label": null
+    },
+    {
+      "tail": "retrocopulation",
+      "head": "rodomontador reinsurer",
+      "label": null
+    },
+    {
+      "tail": "rodomontador reinsurer",
+      "head": "Monograptidae legioner",
+      "label": null
+    },
+    {
+      "tail": "Monograptidae legioner",
+      "head": "Maytime",
+      "label": "YES"
+    },
+    {
+      "tail": "Monograptidae legioner",
+      "head": "inextensile",
+      "label": "YES"
+    },
+    {
+      "tail": "Maytime",
+      "head": "Rousseauite",
+      "label": null
+    },
+    {
+      "tail": "Rousseauite",
+      "head": "inextensile",
+      "label": null
+    }
+  ]
+}

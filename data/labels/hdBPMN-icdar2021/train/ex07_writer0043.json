@@ -1,0 +1,296 @@
+{
+  "nodes": [
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "task"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "forward expertise",
+      "id": "forward expertise",
+      "class": "task"
+    },
+    {
+      "text": "filling cheque",
+      "id": "filling cheque",
+      "class": "task"
+    },
+    {
+      "text": "integrate old WF in new WF",
+      "id": "integrate old WF in new WF",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "file interview and expertise",
+      "id": "file interview and expertise",
+      "class": "task"
+    },
+    {
+      "text": "use new WF",
+      "id": "use new WF",
+      "class": "task"
+    },
+    {
+      "text": "ask experts to review",
+      "id": "ask experts to review",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "received expertise",
+      "id": "received expertise",
+      "class": "messageEvent"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "class": "messageEvent"
+    },
+    {
+      "text": "new case started",
+      "id": "new case started",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "case closed",
+      "id": "case closed",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "create report",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "case closed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send cheque",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "filling cheque",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "received expertise",
+      "head": "forward expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask experts to review",
+      "head": "received expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "ask experts to review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "use new WF",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "use new WF",
+      "class": "sequenceFlow",
+      "label": "workflow not established"
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "filling cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file interview and expertise",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "file interview and expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "integrate old WF in new WF",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "integrate old WF in new WF",
+      "class": "sequenceFlow",
+      "label": "workflow already established"
+    },
+    {
+      "tail": "new case started",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask experts to review",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": "request by review"
+    },
+    {
+      "tail": "experts",
+      "head": "received expertise",
+      "class": "messageFlow",
+      "label": "expertise"
+    },
+    {
+      "tail": "send cheque",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Patients",
+      "head": "interview patients",
+      "class": "messageFlow",
+      "label": "answers"
+    },
+    {
+      "tail": "interview patients",
+      "head": "Patients",
+      "class": "messageFlow",
+      "label": "questions"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "managing director",
+        "QA deaprtement"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "forward expertise",
+        "filling cheque",
+        "ask experts to review",
+        "parallelGateway_1",
+        "received expertise",
+        "send cheque",
+        "case closed"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA deaprtement",
+      "nodes": [
+        "interview patients",
+        "create report",
+        "integrate old WF in new WF",
+        "exclusiveGateway_1",
+        "file interview and expertise",
+        "use new WF",
+        "parallelGateway_2",
+        "new case started",
+        "exclusiveGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Patients",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "experts",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

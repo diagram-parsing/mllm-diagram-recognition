@@ -1,0 +1,196 @@
+{
+  "nodes": [
+    {
+      "text": "request for compensation",
+      "id": "request for compensation",
+      "class": "event"
+    },
+    {
+      "text": "retrieve files",
+      "id": "retrieve files",
+      "class": "task"
+    },
+    {
+      "text": "check if request is acceptable with files",
+      "id": "check if request is acceptable with files",
+      "class": "task"
+    },
+    {
+      "text": "set hearing date",
+      "id": "set hearing date",
+      "class": "task"
+    },
+    {
+      "text": "allocate a hearing date",
+      "id": "allocate a hearing date",
+      "class": "task"
+    },
+    {
+      "text": "produce a fees notice",
+      "id": "produce a fees notice",
+      "class": "task"
+    },
+    {
+      "text": "wait for owner ot pay",
+      "id": "wait for owner ot pay",
+      "class": "task"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "class": "event"
+    },
+    {
+      "text": "request",
+      "id": "request",
+      "class": "dataObject"
+    },
+    {
+      "text": "fees notice",
+      "id": "fees notice",
+      "class": "dataObject"
+    },
+    {
+      "text": "premises contracts",
+      "id": "premises contracts",
+      "class": "dataStore"
+    },
+    {
+      "text": "payment invoice",
+      "id": "payment invoice",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "file of premises",
+      "id": "file of premises",
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "request for compensation",
+      "head": "retrieve files",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieve files",
+      "head": "check if request is acceptable with files",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check if request is acceptable with files",
+      "head": "set hearing date",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "set hearing date",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "allocate a hearing date",
+      "class": "sequenceFlow",
+      "label": "fees pid"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "produce a fees notice",
+      "class": "sequenceFlow",
+      "label": "fees not paid"
+    },
+    {
+      "tail": "produce a fees notice",
+      "head": "wait for owner ot pay",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "wait for owner ot pay",
+      "head": "allocate a hearing date",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "allocate a hearing date",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "premises contracts",
+      "head": "retrieve files",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "retrieve files",
+      "head": "file of premises",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "check if request is acceptable with files",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "file of premises",
+      "head": "check if request is acceptable with files",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "produce a fees notice",
+      "head": "fees notice",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "payment invoice",
+      "head": "wait for owner ot pay",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "The Owner",
+      "head": "request for compensation",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "The Owner",
+      "head": "wait for owner ot pay",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "produce a fees notice",
+      "head": "The Owner",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "cashier of the tribunal",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "The Owner",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

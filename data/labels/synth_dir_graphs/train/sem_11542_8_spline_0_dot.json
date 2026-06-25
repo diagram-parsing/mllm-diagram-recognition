@@ -1,0 +1,118 @@
+{
+  "nodes": [
+    {
+      "text": "feature",
+      "id": "feature",
+      "class": "node"
+    },
+    {
+      "text": "Rattus",
+      "id": "Rattus",
+      "class": "node"
+    },
+    {
+      "text": "sobriquet",
+      "id": "sobriquet",
+      "class": "node"
+    },
+    {
+      "text": "moralless walloping",
+      "id": "moralless walloping",
+      "class": "node"
+    },
+    {
+      "text": "hyperneurotic heartache toxino",
+      "id": "hyperneurotic heartache toxino",
+      "class": "node"
+    },
+    {
+      "text": "halogenate irrelevancy populic",
+      "id": "halogenate irrelevancy populic",
+      "class": "node"
+    },
+    {
+      "text": "purrone mitra",
+      "id": "purrone mitra",
+      "class": "node"
+    },
+    {
+      "text": "puppysnatch",
+      "id": "puppysnatch",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "feature",
+      "head": "Rattus",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "sobriquet",
+      "head": "moralless walloping",
+      "label": "-0.817",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "sobriquet",
+      "head": "hyperneurotic heartache toxino",
+      "label": "0.32*** s = 0.476",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "halogenate irrelevancy populic",
+      "head": "purrone mitra",
+      "label": "0.95 a = 0.851",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "purrone mitra",
+      "head": "feature",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "purrone mitra",
+      "head": "sobriquet",
+      "label": "0.959",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "puppysnatch",
+      "head": "feature",
+      "label": "0.07",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "puppysnatch",
+      "head": "sobriquet",
+      "label": "0.76 t = 0.349",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "halogenate irrelevancy populic",
+      "head": "sobriquet",
+      "label": "-0.69** x = 0.815",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "halogenate irrelevancy populic",
+      "head": "puppysnatch",
+      "label": "1",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "purrone mitra",
+      "head": "puppysnatch",
+      "label": "0.33 x = 0.608",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "halogenate irrelevancy populic",
+      "head": "feature",
+      "label": "-0.88** t = 0.164",
+      "class": "unidirectional"
+    }
+  ]
+}

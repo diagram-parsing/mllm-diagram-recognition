@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "text": "nonnarcotic",
+      "id": "nonnarcotic",
+      "class": "node"
+    },
+    {
+      "text": "vivency",
+      "id": "vivency",
+      "class": "node"
+    },
+    {
+      "text": "arsenotherapy",
+      "id": "arsenotherapy",
+      "class": "node"
+    },
+    {
+      "text": "sabeca hemophagocytosis",
+      "id": "sabeca hemophagocytosis",
+      "class": "node"
+    },
+    {
+      "text": "ungleeful weathering supercarg",
+      "id": "ungleeful weathering supercarg",
+      "class": "node"
+    },
+    {
+      "text": "Suberitidae",
+      "id": "Suberitidae",
+      "class": "node"
+    },
+    {
+      "text": "iodinate precompoundly",
+      "id": "iodinate precompoundly",
+      "class": "node"
+    },
+    {
+      "text": "scudder",
+      "id": "scudder",
+      "class": "node"
+    },
+    {
+      "text": "androidal unbracedness dive",
+      "id": "androidal unbracedness dive",
+      "class": "node"
+    },
+    {
+      "text": "uxorially cryptoneurous skogbo",
+      "id": "uxorially cryptoneurous skogbo",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "nonnarcotic",
+      "head": "vivency",
+      "label": "0.35",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "nonnarcotic",
+      "head": "arsenotherapy",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "sabeca hemophagocytosis",
+      "head": "ungleeful weathering supercarg",
+      "label": "0.36* x = 0.937",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "sabeca hemophagocytosis",
+      "head": "Suberitidae",
+      "label": "0.493",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "sabeca hemophagocytosis",
+      "head": "iodinate precompoundly",
+      "label": "0.88 t = 0.95",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "scudder",
+      "head": "androidal unbracedness dive",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "uxorially cryptoneurous skogbo",
+      "head": "sabeca hemophagocytosis",
+      "label": "0.63* s = 0.079",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "nonnarcotic",
+      "head": "sabeca hemophagocytosis",
+      "label": "0.07*** s = 0.751",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "scudder",
+      "head": "nonnarcotic",
+      "label": "0.758",
+      "class": "bidirectional"
+    }
+  ]
+}

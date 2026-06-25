@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "text": "dermatoid",
+      "id": "dermatoid",
+      "class": "circle"
+    },
+    {
+      "text": "Frontignan stratagemically",
+      "id": "Frontignan stratagemically",
+      "class": "diamond"
+    },
+    {
+      "text": "witheredness temporosphenoid",
+      "id": "witheredness temporosphenoid",
+      "class": "hexagon"
+    },
+    {
+      "text": "cocksure",
+      "id": "cocksure",
+      "class": "diamond"
+    },
+    {
+      "text": "heterosomatous",
+      "id": "heterosomatous",
+      "class": "box"
+    },
+    {
+      "text": "Ecuadorian goodyship",
+      "id": "Ecuadorian goodyship",
+      "class": "document"
+    },
+    {
+      "text": "acetylfluoride peptonate",
+      "id": "acetylfluoride peptonate",
+      "class": "diamond"
+    },
+    {
+      "text": "Eustathian",
+      "id": "Eustathian",
+      "class": "hexagon"
+    },
+    {
+      "text": "discrepance lushy asphaltene",
+      "id": "discrepance lushy asphaltene",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "dermatoid",
+      "head": "Frontignan stratagemically",
+      "label": null
+    },
+    {
+      "tail": "Frontignan stratagemically",
+      "head": "witheredness temporosphenoid",
+      "label": "Yes"
+    },
+    {
+      "tail": "Frontignan stratagemically",
+      "head": "cocksure",
+      "label": "Yes"
+    },
+    {
+      "tail": "witheredness temporosphenoid",
+      "head": "heterosomatous",
+      "label": null
+    },
+    {
+      "tail": "heterosomatous",
+      "head": "Ecuadorian goodyship",
+      "label": null
+    },
+    {
+      "tail": "Ecuadorian goodyship",
+      "head": "cocksure",
+      "label": null
+    },
+    {
+      "tail": "cocksure",
+      "head": "acetylfluoride peptonate",
+      "label": "YES"
+    },
+    {
+      "tail": "cocksure",
+      "head": "dermatoid",
+      "label": "YES"
+    },
+    {
+      "tail": "acetylfluoride peptonate",
+      "head": "Eustathian",
+      "label": "No"
+    },
+    {
+      "tail": "acetylfluoride peptonate",
+      "head": "cocksure",
+      "label": "No"
+    },
+    {
+      "tail": "Eustathian",
+      "head": "discrepance lushy asphaltene",
+      "label": null
+    }
+  ]
+}

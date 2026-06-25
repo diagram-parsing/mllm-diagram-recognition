@@ -1,0 +1,267 @@
+{
+  "nodes": [
+    {
+      "text": "New case",
+      "id": "New case",
+      "class": "event"
+    },
+    {
+      "text": "process ends",
+      "id": "process ends",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "fill cheque for expert",
+      "id": "fill cheque for expert",
+      "class": "task"
+    },
+    {
+      "text": "Receive expertise",
+      "id": "Receive expertise",
+      "class": "task"
+    },
+    {
+      "text": "forward expertise to QA specialist",
+      "id": "forward expertise to QA specialist",
+      "class": "task"
+    },
+    {
+      "text": "Ask for review of another external expert",
+      "id": "Ask for review of another external expert",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "File results",
+      "id": "File results",
+      "class": "task"
+    },
+    {
+      "text": "send cheque to expert",
+      "id": "send cheque to expert",
+      "class": "task"
+    },
+    {
+      "text": "Wait for expert to respond on time",
+      "id": "Wait for expert to respond on time",
+      "class": "timerEvent"
+    },
+    {
+      "text": "interview patients",
+      "id": "interview patients",
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "process ends",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "send cheque to expert",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fill cheque for expert",
+      "head": "send cheque to expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "fill cheque for expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "File results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "File results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interview patients",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward expertise to QA specialist",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Receive expertise",
+      "head": "forward expertise to QA specialist",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": "Expert does not respond on time"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "Receive expertise",
+      "class": "sequenceFlow",
+      "label": "Experts sends expertise on time"
+    },
+    {
+      "tail": "Wait for expert to respond on time",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask for review of another external expert",
+      "head": "Wait for expert to respond on time",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Ask for review of another external expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "interview patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "New case",
+      "head": "parallelGateway_4",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Ask for review of another external expert",
+      "head": "External, independent experts",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "External, independent experts",
+      "head": "Receive expertise",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "send cheque to expert",
+      "head": "External, independent experts",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "QA specialist",
+        "Managing director"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "New case",
+        "process ends",
+        "create report",
+        "parallelGateway_1",
+        "File results",
+        "interview patients",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "parallelGateway_4"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Managing director",
+      "nodes": [
+        "fill cheque for expert",
+        "Receive expertise",
+        "forward expertise to QA specialist",
+        "Ask for review of another external expert",
+        "exclusiveGateway_1",
+        "send cheque to expert",
+        "Wait for expert to respond on time",
+        "exclusiveGateway_2"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "External, independent experts",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

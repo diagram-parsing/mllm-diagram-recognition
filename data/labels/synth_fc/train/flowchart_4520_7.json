@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "text": "Apoidea",
+      "id": "Apoidea",
+      "class": "oval"
+    },
+    {
+      "text": "Leonist",
+      "id": "Leonist",
+      "class": "document"
+    },
+    {
+      "text": "astragalocentral",
+      "id": "astragalocentral",
+      "class": "box"
+    },
+    {
+      "text": "butadiene",
+      "id": "butadiene",
+      "class": "diamond"
+    },
+    {
+      "text": "uncontaminable",
+      "id": "uncontaminable",
+      "class": "parallelogram"
+    },
+    {
+      "text": "bigamize untimorous",
+      "id": "bigamize untimorous",
+      "class": "diamond"
+    },
+    {
+      "text": "verberation antimetrical otate",
+      "id": "verberation antimetrical otate",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Apoidea",
+      "head": "Leonist",
+      "label": null
+    },
+    {
+      "tail": "Leonist",
+      "head": "astragalocentral",
+      "label": null
+    },
+    {
+      "tail": "astragalocentral",
+      "head": "butadiene",
+      "label": null
+    },
+    {
+      "tail": "butadiene",
+      "head": "uncontaminable",
+      "label": "NO"
+    },
+    {
+      "tail": "butadiene",
+      "head": "Leonist",
+      "label": "NO"
+    },
+    {
+      "tail": "uncontaminable",
+      "head": "bigamize untimorous",
+      "label": null
+    },
+    {
+      "tail": "bigamize untimorous",
+      "head": "verberation antimetrical otate",
+      "label": "no"
+    },
+    {
+      "tail": "bigamize untimorous",
+      "head": "Leonist",
+      "label": "no"
+    }
+  ]
+}

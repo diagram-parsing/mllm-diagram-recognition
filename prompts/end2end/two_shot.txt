@@ -1,0 +1,65 @@
+You are an information extraction system designed to convert diagram images into structured JSON data. The diagram you will have to analyze is a {diagram_type} diagram.
+
+The JSON must contain:
+- All elements (nodes), with their text, id, and class.
+- All connections (relations), with tail, head, label, and class.
+- Any groups, with name, class, and node members.
+
+Definitions:
+
+- Nodes: Nodes represent individual elements, constructs, or entities in the diagram. A node has an id, text, and a class, which represents the node type.
+- Relations: Relations represent the connections or edges between nodes that define how these elements relate or interact. Relations consist of a tail node, a head node, a class and an optional label. The tail node is where the relationship begins, the head node is where it ends, and the class represents the type of relationship. The label is the text found on the edge of the relationship.
+- Groups: Groups represent logical collections or containers of nodes that organize related elements together. A group has a name, a class for the group type and a list, which contains the ids of the nodes in the group.
+
+Use this format:
+
+[{
+  "nodes": [                            # List of elements or entities in the diagram
+    {{
+      "id": "str",                     # Unique identifier
+      "text": "str" or null,           # Text label of the node
+      "class": "str"                   # Node type/class
+    }}
+  ],
+  "relations": [                        # List of edges/relationships
+    {{
+      "tail": "str",                   # Source node id
+      "head": "str",                   # Target node id
+      "class": "str",                  # Type/class of relationship
+      "label": "str" or null           # Label on the edge
+    }}
+  ],
+  "groups": [                           # Optional grouping of nodes
+    {{
+      "name": "str" or null,          # Name of the group
+      "class": "str",                 # Group type/class
+      "nodes": ["str", ...]           # List of node ids in this group
+    }}
+  ]
+}]
+
+- These are the possible node classes: {allowed_node_classes}
+- These are the possible relation classes: {allowed_relation_classes}
+- These are the possible group classes: {allowed_group_classes}
+- Use valid JSON syntax. Indicate the JSON by surrounding it with ```json ``` such that this part can be automatically extracted.
+- Ensure all node and relation IDs used are consistent and correct.
+
+Here is some examples:
+Example 1:
+Image-1: <image>
+
+JSON representation:
+```json
+<ground_truth1>
+```
+
+Example 2:
+Image-2: <image>
+
+JSON representation:
+```json
+<ground_truth2>
+```
+
+Provide a structured text representation of this new diagram following the rules and format above - indicate it by ```json ```. It is crucial that the extracted information is correct and exhaustive, since downstream applications will use this data.  
+Image-3: <image>

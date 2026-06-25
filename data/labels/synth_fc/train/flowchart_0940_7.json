@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "agrotechny springly",
+      "id": "agrotechny springly",
+      "class": "circle"
+    },
+    {
+      "text": "veinage counterequivalent ream",
+      "id": "veinage counterequivalent ream",
+      "class": "hexagon"
+    },
+    {
+      "text": "semibarbarianism",
+      "id": "semibarbarianism",
+      "class": "hexagon"
+    },
+    {
+      "text": "reserve Teutonism",
+      "id": "reserve Teutonism",
+      "class": "diamond"
+    },
+    {
+      "text": "diglottic Pernettia chamois",
+      "id": "diglottic Pernettia chamois",
+      "class": "diamond"
+    },
+    {
+      "text": "sultaness humph",
+      "id": "sultaness humph",
+      "class": "diamond"
+    },
+    {
+      "text": "ungroundedness",
+      "id": "ungroundedness",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "agrotechny springly",
+      "head": "veinage counterequivalent ream",
+      "label": null
+    },
+    {
+      "tail": "veinage counterequivalent ream",
+      "head": "semibarbarianism",
+      "label": null
+    },
+    {
+      "tail": "semibarbarianism",
+      "head": "reserve Teutonism",
+      "label": null
+    },
+    {
+      "tail": "reserve Teutonism",
+      "head": "diglottic Pernettia chamois",
+      "label": "YES"
+    },
+    {
+      "tail": "reserve Teutonism",
+      "head": "semibarbarianism",
+      "label": "YES"
+    },
+    {
+      "tail": "diglottic Pernettia chamois",
+      "head": "sultaness humph",
+      "label": "yes"
+    },
+    {
+      "tail": "diglottic Pernettia chamois",
+      "head": "ungroundedness",
+      "label": "yes"
+    },
+    {
+      "tail": "sultaness humph",
+      "head": "ungroundedness",
+      "label": "YES"
+    },
+    {
+      "tail": "sultaness humph",
+      "head": "agrotechny springly",
+      "label": "YES"
+    }
+  ]
+}

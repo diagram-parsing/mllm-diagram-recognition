@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "planting",
+      "id": "planting",
+      "class": "oval"
+    },
+    {
+      "text": "cantiness kipperer",
+      "id": "cantiness kipperer",
+      "class": "box"
+    },
+    {
+      "text": "homocercy caky",
+      "id": "homocercy caky",
+      "class": "diamond"
+    },
+    {
+      "text": "docility Phyllocarida",
+      "id": "docility Phyllocarida",
+      "class": "hexagon"
+    },
+    {
+      "text": "unworking",
+      "id": "unworking",
+      "class": "oval"
+    },
+    {
+      "text": "nonteacher misopaterist",
+      "id": "nonteacher misopaterist",
+      "class": "diamond"
+    },
+    {
+      "text": "illusively prescriber beknit",
+      "id": "illusively prescriber beknit",
+      "class": "box"
+    },
+    {
+      "text": "semiopacous",
+      "id": "semiopacous",
+      "class": "box"
+    },
+    {
+      "text": "bedye",
+      "id": "bedye",
+      "class": "diamond"
+    },
+    {
+      "text": "phosphyl archpatriarch represe",
+      "id": "phosphyl archpatriarch represe",
+      "class": "hexagon"
+    },
+    {
+      "text": "semisporting",
+      "id": "semisporting",
+      "class": "document"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "planting",
+      "head": "cantiness kipperer",
+      "label": null
+    },
+    {
+      "tail": "cantiness kipperer",
+      "head": "homocercy caky",
+      "label": null
+    },
+    {
+      "tail": "homocercy caky",
+      "head": "docility Phyllocarida",
+      "label": "no"
+    },
+    {
+      "tail": "homocercy caky",
+      "head": "unworking",
+      "label": "no"
+    },
+    {
+      "tail": "docility Phyllocarida",
+      "head": "nonteacher misopaterist",
+      "label": null
+    },
+    {
+      "tail": "nonteacher misopaterist",
+      "head": "illusively prescriber beknit",
+      "label": "Yes"
+    },
+    {
+      "tail": "nonteacher misopaterist",
+      "head": "unworking",
+      "label": "Yes"
+    },
+    {
+      "tail": "illusively prescriber beknit",
+      "head": "semiopacous",
+      "label": null
+    },
+    {
+      "tail": "semiopacous",
+      "head": "bedye",
+      "label": null
+    },
+    {
+      "tail": "bedye",
+      "head": "phosphyl archpatriarch represe",
+      "label": "YES"
+    },
+    {
+      "tail": "bedye",
+      "head": "cantiness kipperer",
+      "label": "YES"
+    },
+    {
+      "tail": "phosphyl archpatriarch represe",
+      "head": "semisporting",
+      "label": null
+    },
+    {
+      "tail": "semisporting",
+      "head": "unworking",
+      "label": null
+    }
+  ]
+}

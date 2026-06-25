@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "text": "transumpt",
+      "id": "transumpt",
+      "class": "node",
+      "bbox": [
+        15,
+        297,
+        126,
+        340
+      ]
+    },
+    {
+      "text": "quadriserial Forst",
+      "id": "quadriserial Forst",
+      "class": "node",
+      "bbox": [
+        5,
+        162,
+        120,
+        213
+      ]
+    },
+    {
+      "text": "formed",
+      "id": "formed",
+      "class": "node",
+      "bbox": [
+        144,
+        163,
+        245,
+        211
+      ]
+    },
+    {
+      "text": "ammonitoid lepidine",
+      "id": "ammonitoid lepidine",
+      "class": "node",
+      "bbox": [
+        58,
+        27,
+        174,
+        77
+      ]
+    },
+    {
+      "text": "intricacy belligerently",
+      "id": "intricacy belligerently",
+      "class": "node",
+      "bbox": [
+        198,
+        27,
+        311,
+        77
+      ]
+    },
+    {
+      "text": "teng",
+      "id": "teng",
+      "class": "node",
+      "bbox": [
+        158,
+        297,
+        231,
+        340
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "transumpt",
+      "head": "quadriserial Forst",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        59,
+        213,
+        71,
+        297
+      ]
+    },
+    {
+      "tail": "formed",
+      "head": "ammonitoid lepidine",
+      "label": "0.083",
+      "class": "unidirectional",
+      "bbox": [
+        130,
+        78,
+        182,
+        164
+      ]
+    },
+    {
+      "tail": "formed",
+      "head": "intricacy belligerently",
+      "label": "0.83 y = 0.684",
+      "class": "unidirectional",
+      "bbox": [
+        205,
+        78,
+        243,
+        163
+      ]
+    },
+    {
+      "tail": "transumpt",
+      "head": "formed",
+      "label": "0.36 f = 0.221",
+      "class": "unidirectional",
+      "bbox": [
+        90,
+        210,
+        175,
+        299
+      ]
+    },
+    {
+      "tail": "teng",
+      "head": "formed",
+      "label": "0.1 h = 0.92",
+      "class": "unidirectional",
+      "bbox": [
+        189,
+        212,
+        201,
+        297
+      ]
+    }
+  ]
+}

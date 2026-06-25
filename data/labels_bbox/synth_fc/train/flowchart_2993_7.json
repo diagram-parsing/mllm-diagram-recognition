@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "Locrian",
+      "id": "Locrian",
+      "class": "circle",
+      "bbox": [
+        113,
+        5,
+        202,
+        95
+      ]
+    },
+    {
+      "text": "spannerman",
+      "id": "spannerman",
+      "class": "diamond",
+      "bbox": [
+        105,
+        125,
+        210,
+        199
+      ]
+    },
+    {
+      "text": "imbecilely archicontinent anil",
+      "id": "imbecilely archicontinent anil",
+      "class": "diamond",
+      "bbox": [
+        62,
+        209,
+        247,
+        283
+      ]
+    },
+    {
+      "text": "baptizee",
+      "id": "baptizee",
+      "class": "box",
+      "bbox": [
+        121,
+        586,
+        193,
+        634
+      ]
+    },
+    {
+      "text": "agaricaceous",
+      "id": "agaricaceous",
+      "class": "parallelogram",
+      "bbox": [
+        78,
+        362,
+        237,
+        410
+      ]
+    },
+    {
+      "text": "unencysted",
+      "id": "unencysted",
+      "class": "oval",
+      "bbox": [
+        108,
+        698,
+        207,
+        741
+      ]
+    },
+    {
+      "text": "northmost",
+      "id": "northmost",
+      "class": "document",
+      "bbox": [
+        119,
+        471,
+        196,
+        525
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Locrian",
+      "head": "spannerman",
+      "label": null,
+      "bbox": [
+        153,
+        95,
+        162,
+        123
+      ]
+    },
+    {
+      "tail": "spannerman",
+      "head": "imbecilely archicontinent anil",
+      "label": "No",
+      "bbox": [
+        153,
+        195,
+        162,
+        208
+      ]
+    },
+    {
+      "tail": "spannerman",
+      "head": "baptizee",
+      "label": "No",
+      "bbox": [
+        38,
+        162,
+        120,
+        615
+      ]
+    },
+    {
+      "tail": "imbecilely archicontinent anil",
+      "head": "agaricaceous",
+      "label": "yes",
+      "bbox": [
+        153,
+        283,
+        162,
+        360
+      ]
+    },
+    {
+      "tail": "imbecilely archicontinent anil",
+      "head": "unencysted",
+      "label": "yes",
+      "bbox": [
+        70,
+        250,
+        106,
+        727
+      ]
+    },
+    {
+      "tail": "agaricaceous",
+      "head": "northmost",
+      "label": null,
+      "bbox": [
+        153,
+        410,
+        162,
+        470
+      ]
+    },
+    {
+      "tail": "northmost",
+      "head": "baptizee",
+      "label": null,
+      "bbox": [
+        153,
+        525,
+        162,
+        584
+      ]
+    },
+    {
+      "tail": "baptizee",
+      "head": "unencysted",
+      "label": null,
+      "bbox": [
+        153,
+        634,
+        162,
+        696
+      ]
+    }
+  ]
+}

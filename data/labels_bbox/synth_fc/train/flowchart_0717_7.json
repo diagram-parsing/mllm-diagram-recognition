@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "text": "songless",
+      "id": "songless",
+      "class": "circle",
+      "bbox": [
+        64,
+        5,
+        144,
+        85
+      ]
+    },
+    {
+      "text": "influxable",
+      "id": "influxable",
+      "class": "hexagon",
+      "bbox": [
+        51,
+        98,
+        157,
+        146
+      ]
+    },
+    {
+      "text": "euryprognathous quiddity chiro",
+      "id": "euryprognathous quiddity chiro",
+      "class": "diamond",
+      "bbox": [
+        5,
+        163,
+        202,
+        236
+      ]
+    },
+    {
+      "text": "to",
+      "id": "to",
+      "class": "parallelogram",
+      "bbox": [
+        66,
+        253,
+        141,
+        301
+      ]
+    },
+    {
+      "text": "poetastering",
+      "id": "poetastering",
+      "class": "diamond",
+      "bbox": [
+        48,
+        395,
+        159,
+        468
+      ]
+    },
+    {
+      "text": "subangulate fully",
+      "id": "subangulate fully",
+      "class": "hexagon",
+      "bbox": [
+        45,
+        324,
+        162,
+        384
+      ]
+    },
+    {
+      "text": "rhincospasm preobstruction",
+      "id": "rhincospasm preobstruction",
+      "class": "oval",
+      "bbox": [
+        40,
+        483,
+        167,
+        529
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "songless",
+      "head": "influxable",
+      "label": null,
+      "bbox": [
+        99,
+        83,
+        108,
+        97
+      ]
+    },
+    {
+      "tail": "influxable",
+      "head": "euryprognathous quiddity chiro",
+      "label": null,
+      "bbox": [
+        99,
+        147,
+        108,
+        161
+      ]
+    },
+    {
+      "tail": "euryprognathous quiddity chiro",
+      "head": "to",
+      "label": "Yes",
+      "bbox": [
+        99,
+        237,
+        108,
+        251
+      ]
+    },
+    {
+      "tail": "euryprognathous quiddity chiro",
+      "head": "poetastering",
+      "label": "Yes",
+      "bbox": [
+        144,
+        207,
+        184,
+        425
+      ]
+    },
+    {
+      "tail": "to",
+      "head": "subangulate fully",
+      "label": null,
+      "bbox": [
+        99,
+        301,
+        108,
+        322
+      ]
+    },
+    {
+      "tail": "subangulate fully",
+      "head": "poetastering",
+      "label": null,
+      "bbox": [
+        99,
+        380,
+        108,
+        393
+      ]
+    },
+    {
+      "tail": "poetastering",
+      "head": "rhincospasm preobstruction",
+      "label": "YES",
+      "bbox": [
+        99,
+        468,
+        108,
+        481
+      ]
+    },
+    {
+      "tail": "poetastering",
+      "head": "songless",
+      "label": "YES",
+      "bbox": [
+        141,
+        41,
+        226,
+        444
+      ]
+    }
+  ]
+}

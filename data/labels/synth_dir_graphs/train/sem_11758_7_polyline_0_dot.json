@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "text": "geogenetic",
+      "id": "geogenetic",
+      "class": "node"
+    },
+    {
+      "text": "platypus Callistephus",
+      "id": "platypus Callistephus",
+      "class": "node"
+    },
+    {
+      "text": "ardor amice",
+      "id": "ardor amice",
+      "class": "node"
+    },
+    {
+      "text": "mnemonist",
+      "id": "mnemonist",
+      "class": "node"
+    },
+    {
+      "text": "Klanswoman loaded",
+      "id": "Klanswoman loaded",
+      "class": "node"
+    },
+    {
+      "text": "multilobed",
+      "id": "multilobed",
+      "class": "node"
+    },
+    {
+      "text": "charmfully  egocentric",
+      "id": "charmfully  egocentric",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "geogenetic",
+      "head": "platypus Callistephus",
+      "label": null,
+      "class": "unidirectional"
+    },
+    {
+      "tail": "geogenetic",
+      "head": "ardor amice",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "mnemonist",
+      "head": "Klanswoman loaded",
+      "label": "0.09* x = 0.114",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "multilobed",
+      "head": "charmfully  egocentric",
+      "label": "-0.91*** x = 0.914",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "mnemonist",
+      "head": "multilobed",
+      "label": "-0.63*** s = 0.711",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "geogenetic",
+      "head": "multilobed",
+      "label": "-1",
+      "class": "unidirectional"
+    }
+  ]
+}

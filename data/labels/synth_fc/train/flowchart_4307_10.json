@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "text": "whirry",
+      "id": "whirry",
+      "class": "circle"
+    },
+    {
+      "text": "wittily tramcar mastman",
+      "id": "wittily tramcar mastman",
+      "class": "document"
+    },
+    {
+      "text": "scoptophilia screaming",
+      "id": "scoptophilia screaming",
+      "class": "box"
+    },
+    {
+      "text": "efflorescency bilipyrrhin",
+      "id": "efflorescency bilipyrrhin",
+      "class": "diamond"
+    },
+    {
+      "text": "perforation unindustrialized",
+      "id": "perforation unindustrialized",
+      "class": "parallelogram"
+    },
+    {
+      "text": "riderless",
+      "id": "riderless",
+      "class": "oval"
+    },
+    {
+      "text": "asak hemiprotein",
+      "id": "asak hemiprotein",
+      "class": "diamond"
+    },
+    {
+      "text": "marijuana",
+      "id": "marijuana",
+      "class": "diamond"
+    },
+    {
+      "text": "reviewish homeward Farouk",
+      "id": "reviewish homeward Farouk",
+      "class": "parallelogram"
+    },
+    {
+      "text": "bibracteate Pitahauerat",
+      "id": "bibracteate Pitahauerat",
+      "class": "hexagon"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "whirry",
+      "head": "wittily tramcar mastman",
+      "label": null
+    },
+    {
+      "tail": "wittily tramcar mastman",
+      "head": "scoptophilia screaming",
+      "label": null
+    },
+    {
+      "tail": "scoptophilia screaming",
+      "head": "efflorescency bilipyrrhin",
+      "label": null
+    },
+    {
+      "tail": "efflorescency bilipyrrhin",
+      "head": "perforation unindustrialized",
+      "label": "NO"
+    },
+    {
+      "tail": "efflorescency bilipyrrhin",
+      "head": "riderless",
+      "label": "NO"
+    },
+    {
+      "tail": "perforation unindustrialized",
+      "head": "asak hemiprotein",
+      "label": null
+    },
+    {
+      "tail": "asak hemiprotein",
+      "head": "marijuana",
+      "label": "Yes"
+    },
+    {
+      "tail": "asak hemiprotein",
+      "head": "riderless",
+      "label": "Yes"
+    },
+    {
+      "tail": "marijuana",
+      "head": "reviewish homeward Farouk",
+      "label": "no"
+    },
+    {
+      "tail": "marijuana",
+      "head": "perforation unindustrialized",
+      "label": "no"
+    },
+    {
+      "tail": "reviewish homeward Farouk",
+      "head": "bibracteate Pitahauerat",
+      "label": null
+    },
+    {
+      "tail": "bibracteate Pitahauerat",
+      "head": "riderless",
+      "label": null
+    }
+  ]
+}

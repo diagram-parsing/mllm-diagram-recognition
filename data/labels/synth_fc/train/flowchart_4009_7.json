@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "text": "quietism",
+      "id": "quietism",
+      "class": "circle"
+    },
+    {
+      "text": "northmost",
+      "id": "northmost",
+      "class": "box"
+    },
+    {
+      "text": "pentamethylene",
+      "id": "pentamethylene",
+      "class": "box"
+    },
+    {
+      "text": "fractonimbus",
+      "id": "fractonimbus",
+      "class": "diamond"
+    },
+    {
+      "text": "smalter",
+      "id": "smalter",
+      "class": "hexagon"
+    },
+    {
+      "text": "Narcissus slackly guilt",
+      "id": "Narcissus slackly guilt",
+      "class": "hexagon"
+    },
+    {
+      "text": "nonvital halophilous",
+      "id": "nonvital halophilous",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "quietism",
+      "head": "northmost",
+      "label": null
+    },
+    {
+      "tail": "northmost",
+      "head": "pentamethylene",
+      "label": null
+    },
+    {
+      "tail": "pentamethylene",
+      "head": "fractonimbus",
+      "label": null
+    },
+    {
+      "tail": "fractonimbus",
+      "head": "smalter",
+      "label": "yes"
+    },
+    {
+      "tail": "fractonimbus",
+      "head": "pentamethylene",
+      "label": "yes"
+    },
+    {
+      "tail": "smalter",
+      "head": "Narcissus slackly guilt",
+      "label": null
+    },
+    {
+      "tail": "Narcissus slackly guilt",
+      "head": "nonvital halophilous",
+      "label": null
+    }
+  ]
+}

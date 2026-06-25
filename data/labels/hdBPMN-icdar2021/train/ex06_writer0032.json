@@ -1,0 +1,300 @@
+{
+  "nodes": [
+    {
+      "text": "order process started",
+      "id": "order process started",
+      "class": "messageEvent"
+    },
+    {
+      "text": "take order by phone",
+      "id": "take order by phone",
+      "class": "task"
+    },
+    {
+      "text": "receive order by Website",
+      "id": "receive order by Website",
+      "class": "task"
+    },
+    {
+      "text": "receive order by Lieferando",
+      "id": "receive order by Lieferando",
+      "class": "task"
+    },
+    {
+      "text": "write down order note",
+      "id": "write down order note",
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "class": "task"
+    },
+    {
+      "text": "order process fulfilled",
+      "id": "order process fulfilled",
+      "class": "event"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "class": "task"
+    },
+    {
+      "text": "Orders",
+      "id": "Orders",
+      "class": "dataStore"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Order note",
+      "id": "Order note",
+      "class": "dataObject"
+    },
+    {
+      "text": "Order\nlist",
+      "id": "Order\nlist",
+      "class": "dataObject"
+    },
+    {
+      "text": "Order\npositions",
+      "id": "Order\npositions",
+      "class": "dataObject"
+    },
+    {
+      "text": "attach order note to pinboard",
+      "id": "attach order note to pinboard",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "attach order note to pinboard",
+      "head": "order process fulfilled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach order note to pinboard",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive order by Lieferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive order by Website",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "take order by phone",
+      "head": "write down order note",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "take order by phone",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by Website",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "receive order by Lieferando",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "order process started",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "Order\npositions",
+      "head": "take order by phone",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "take order by phone",
+      "head": "Order\nlist",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order\npositions",
+      "head": "receive order by Website",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "receive order by Website",
+      "head": "Order\nlist",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order\npositions",
+      "head": "receive order by Lieferando",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "receive order by Lieferando",
+      "head": "Order\nlist",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order\nlist",
+      "head": "write down order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "Order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order\nlist",
+      "head": "print out order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "Order note",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order\nlist",
+      "head": "confirm order",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "Order\nlist",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Order note",
+      "head": "attach order note to pinboard",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "attach order note to pinboard",
+      "head": "Orders",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "Consumer/ Customer",
+      "head": "Website",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Consumer/ Customer",
+      "head": "Lieferando",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Lieferando",
+      "head": "order process started",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Website",
+      "head": "order process started",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "Consumer/ Customer",
+      "head": "order process started",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Pizzeria",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Lieferando",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Website",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "Consumer/ Customer",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

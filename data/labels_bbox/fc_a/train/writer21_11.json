@@ -1,0 +1,127 @@
+{
+  "nodes": [
+    {
+      "text": "begin",
+      "id": "begin",
+      "bbox": [
+        4,
+        12,
+        158,
+        89
+      ],
+      "class": "terminator"
+    },
+    {
+      "text": "Enter x",
+      "id": "Enter x",
+      "bbox": [
+        252,
+        8,
+        478,
+        87
+      ],
+      "class": "data"
+    },
+    {
+      "text": "calculate h(x)",
+      "id": "calculate h(x)",
+      "bbox": [
+        622,
+        4,
+        943,
+        95
+      ],
+      "class": "process"
+    },
+    {
+      "text": "calculate g(x)",
+      "id": "calculate g(x)",
+      "bbox": [
+        1047,
+        135,
+        1330,
+        227
+      ],
+      "class": "process"
+    },
+    {
+      "text": "display h(x)g(x)",
+      "id": "display h(x)g(x)",
+      "bbox": [
+        586,
+        153,
+        925,
+        244
+      ],
+      "class": "data"
+    },
+    {
+      "text": "end",
+      "id": "end",
+      "bbox": [
+        266,
+        166,
+        418,
+        256
+      ],
+      "class": "terminator"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "begin",
+      "head": "Enter x",
+      "bbox": [
+        152,
+        36,
+        278,
+        65
+      ],
+      "label": null
+    },
+    {
+      "tail": "Enter x",
+      "head": "calculate h(x)",
+      "bbox": [
+        453,
+        29,
+        630,
+        55
+      ],
+      "label": null
+    },
+    {
+      "tail": "calculate h(x)",
+      "head": "calculate g(x)",
+      "bbox": [
+        936,
+        33,
+        1213,
+        145
+      ],
+      "label": null
+    },
+    {
+      "tail": "calculate g(x)",
+      "head": "display h(x)g(x)",
+      "bbox": [
+        906,
+        169,
+        1055,
+        205
+      ],
+      "label": null
+    },
+    {
+      "tail": "display h(x)g(x)",
+      "head": "end",
+      "bbox": [
+        417,
+        178,
+        615,
+        211
+      ],
+      "label": null
+    }
+  ]
+}

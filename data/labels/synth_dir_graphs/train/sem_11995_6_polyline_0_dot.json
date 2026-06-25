@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "text": "swot",
+      "id": "swot",
+      "class": "node"
+    },
+    {
+      "text": "hilltrot",
+      "id": "hilltrot",
+      "class": "node"
+    },
+    {
+      "text": "ume",
+      "id": "ume",
+      "class": "node"
+    },
+    {
+      "text": "brasse incondensible",
+      "id": "brasse incondensible",
+      "class": "node"
+    },
+    {
+      "text": "carcinolysin silvanity",
+      "id": "carcinolysin silvanity",
+      "class": "node"
+    },
+    {
+      "text": "Pastinaca dictyopteran",
+      "id": "Pastinaca dictyopteran",
+      "class": "node"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "swot",
+      "head": "hilltrot",
+      "label": "0.59*** H = 0.825",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "ume",
+      "head": "brasse incondensible",
+      "label": "1",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "ume",
+      "head": "carcinolysin silvanity",
+      "label": "-0.41*** h = 0.777",
+      "class": "unidirectional"
+    },
+    {
+      "tail": "Pastinaca dictyopteran",
+      "head": "swot",
+      "label": "0.7496",
+      "class": "bidirectional"
+    },
+    {
+      "tail": "ume",
+      "head": "Pastinaca dictyopteran",
+      "label": "0.97* t = 0.326",
+      "class": "unidirectional"
+    }
+  ]
+}

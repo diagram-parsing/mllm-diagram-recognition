@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "text": "asses risk",
+      "id": "asses risk",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "organize disbursement",
+      "id": "organize disbursement",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "new credit requested",
+      "id": "new credit requested",
+      "class": "event"
+    },
+    {
+      "text": "asses simple risk",
+      "id": "asses simple risk",
+      "class": "task"
+    },
+    {
+      "text": "asses advanced risk",
+      "id": "asses advanced risk",
+      "class": "task"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "class": "task"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "new credit requested",
+      "head": "asses risk",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "notify customer",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "organize disbursement",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "organize disbursement",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "asses advanced risk",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "asses simple risk",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "asses simple risk",
+      "class": "sequenceFlow",
+      "label": "risk under threshold"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "asses advanced risk",
+      "class": "sequenceFlow",
+      "label": "risk above threshold"
+    },
+    {
+      "tail": "asses risk",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    }
+  ],
+  "groups": []
+}

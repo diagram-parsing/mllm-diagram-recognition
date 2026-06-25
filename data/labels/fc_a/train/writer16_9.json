@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "text": "A>B",
+      "id": "A>B",
+      "class": "decision"
+    },
+    {
+      "text": "T=B",
+      "id": "T=B",
+      "class": "process"
+    },
+    {
+      "text": "B=A A=T",
+      "id": "B=A A=T",
+      "class": "process"
+    },
+    {
+      "text": null,
+      "id": "connection_1",
+      "class": "connection"
+    },
+    {
+      "text": null,
+      "id": "connection_2",
+      "class": "connection"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "connection_1",
+      "head": "A>B",
+      "label": null
+    },
+    {
+      "tail": "T=B",
+      "head": "B=A A=T",
+      "label": null
+    },
+    {
+      "tail": "A>B",
+      "head": "connection_2",
+      "label": "No"
+    },
+    {
+      "tail": "B=A A=T",
+      "head": "connection_2",
+      "label": null
+    },
+    {
+      "tail": "A>B",
+      "head": "T=B",
+      "label": "yes"
+    }
+  ]
+}

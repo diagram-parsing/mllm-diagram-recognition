@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "text": "unintermitted chidingness",
+      "id": "unintermitted chidingness",
+      "class": "oval"
+    },
+    {
+      "text": "reconfusion",
+      "id": "reconfusion",
+      "class": "diamond"
+    },
+    {
+      "text": "jossakeed",
+      "id": "jossakeed",
+      "class": "box"
+    },
+    {
+      "text": "insectivore",
+      "id": "insectivore",
+      "class": "document"
+    },
+    {
+      "text": "gaulter",
+      "id": "gaulter",
+      "class": "box"
+    },
+    {
+      "text": "mastigobranchial",
+      "id": "mastigobranchial",
+      "class": "diamond"
+    },
+    {
+      "text": "dullsome",
+      "id": "dullsome",
+      "class": "diamond"
+    },
+    {
+      "text": "dihydrotachysterol",
+      "id": "dihydrotachysterol",
+      "class": "diamond"
+    },
+    {
+      "text": "flapperdom Coliidae",
+      "id": "flapperdom Coliidae",
+      "class": "document"
+    },
+    {
+      "text": "suavely",
+      "id": "suavely",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unintermitted chidingness",
+      "head": "reconfusion",
+      "label": null
+    },
+    {
+      "tail": "reconfusion",
+      "head": "jossakeed",
+      "label": "No"
+    },
+    {
+      "tail": "reconfusion",
+      "head": "insectivore",
+      "label": "No"
+    },
+    {
+      "tail": "jossakeed",
+      "head": "gaulter",
+      "label": null
+    },
+    {
+      "tail": "gaulter",
+      "head": "mastigobranchial",
+      "label": null
+    },
+    {
+      "tail": "mastigobranchial",
+      "head": "dullsome",
+      "label": "YES"
+    },
+    {
+      "tail": "mastigobranchial",
+      "head": "jossakeed",
+      "label": "YES"
+    },
+    {
+      "tail": "dullsome",
+      "head": "dihydrotachysterol",
+      "label": "No"
+    },
+    {
+      "tail": "dullsome",
+      "head": "jossakeed",
+      "label": "No"
+    },
+    {
+      "tail": "dihydrotachysterol",
+      "head": "insectivore",
+      "label": "NO"
+    },
+    {
+      "tail": "dihydrotachysterol",
+      "head": "reconfusion",
+      "label": "NO"
+    },
+    {
+      "tail": "insectivore",
+      "head": "flapperdom Coliidae",
+      "label": null
+    },
+    {
+      "tail": "flapperdom Coliidae",
+      "head": "suavely",
+      "label": null
+    }
+  ]
+}

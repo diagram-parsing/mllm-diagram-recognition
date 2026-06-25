@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "text": "psammoma",
+      "id": "psammoma",
+      "class": "ellipse",
+      "bbox": [
+        9,
+        5,
+        107,
+        53
+      ]
+    },
+    {
+      "text": "suprapubic",
+      "id": "suprapubic",
+      "class": "diamond",
+      "bbox": [
+        7,
+        89,
+        109,
+        162
+      ]
+    },
+    {
+      "text": "confederate",
+      "id": "confederate",
+      "class": "box",
+      "bbox": [
+        16,
+        221,
+        100,
+        269
+      ]
+    },
+    {
+      "text": "Gymnura",
+      "id": "Gymnura",
+      "class": "circle",
+      "bbox": [
+        198,
+        170,
+        296,
+        273
+      ]
+    },
+    {
+      "text": "bodyless subpostscript",
+      "id": "bodyless subpostscript",
+      "class": "box",
+      "bbox": [
+        20,
+        293,
+        96,
+        336
+      ]
+    },
+    {
+      "text": "Chinatown oncin",
+      "id": "Chinatown oncin",
+      "class": "document",
+      "bbox": [
+        204,
+        23,
+        296,
+        84
+      ]
+    },
+    {
+      "text": "Mohawkian",
+      "id": "Mohawkian",
+      "class": "document",
+      "bbox": [
+        204,
+        95,
+        296,
+        156
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "psammoma",
+      "head": "suprapubic",
+      "label": null,
+      "bbox": [
+        53,
+        53,
+        63,
+        87
+      ]
+    },
+    {
+      "tail": "suprapubic",
+      "head": "confederate",
+      "label": "no",
+      "bbox": [
+        39,
+        151,
+        49,
+        220
+      ]
+    },
+    {
+      "tail": "suprapubic",
+      "head": "Gymnura",
+      "label": "no",
+      "bbox": [
+        72,
+        152,
+        204,
+        201
+      ]
+    },
+    {
+      "tail": "confederate",
+      "head": "bodyless subpostscript",
+      "label": null,
+      "bbox": [
+        53,
+        269,
+        63,
+        292
+      ]
+    },
+    {
+      "tail": "bodyless subpostscript",
+      "head": "Chinatown oncin",
+      "label": null,
+      "bbox": [
+        96,
+        65,
+        203,
+        317
+      ]
+    },
+    {
+      "tail": "Chinatown oncin",
+      "head": "Mohawkian",
+      "label": null,
+      "bbox": [
+        245,
+        80,
+        255,
+        94
+      ]
+    },
+    {
+      "tail": "Mohawkian",
+      "head": "Gymnura",
+      "label": null,
+      "bbox": [
+        245,
+        155,
+        255,
+        168
+      ]
+    }
+  ]
+}

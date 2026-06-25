@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "nucleation Sinupallialia",
+      "id": "nucleation Sinupallialia",
+      "class": "circle"
+    },
+    {
+      "text": "necrophile",
+      "id": "necrophile",
+      "class": "hexagon"
+    },
+    {
+      "text": "infidelic",
+      "id": "infidelic",
+      "class": "diamond"
+    },
+    {
+      "text": "fecaloid",
+      "id": "fecaloid",
+      "class": "box"
+    },
+    {
+      "text": "reslash",
+      "id": "reslash",
+      "class": "hexagon"
+    },
+    {
+      "text": "unloveableness",
+      "id": "unloveableness",
+      "class": "box"
+    },
+    {
+      "text": "jaspoid daemonic",
+      "id": "jaspoid daemonic",
+      "class": "box"
+    },
+    {
+      "text": "utterly undigitated",
+      "id": "utterly undigitated",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "nucleation Sinupallialia",
+      "head": "necrophile",
+      "label": null
+    },
+    {
+      "tail": "necrophile",
+      "head": "infidelic",
+      "label": null
+    },
+    {
+      "tail": "infidelic",
+      "head": "fecaloid",
+      "label": "Yes"
+    },
+    {
+      "tail": "infidelic",
+      "head": "reslash",
+      "label": "Yes"
+    },
+    {
+      "tail": "fecaloid",
+      "head": "unloveableness",
+      "label": null
+    },
+    {
+      "tail": "unloveableness",
+      "head": "jaspoid daemonic",
+      "label": null
+    },
+    {
+      "tail": "jaspoid daemonic",
+      "head": "reslash",
+      "label": null
+    },
+    {
+      "tail": "reslash",
+      "head": "utterly undigitated",
+      "label": null
+    }
+  ]
+}

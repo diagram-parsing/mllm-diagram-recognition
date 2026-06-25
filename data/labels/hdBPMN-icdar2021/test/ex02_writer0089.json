@@ -1,0 +1,418 @@
+{
+  "nodes": [
+    {
+      "text": "register and examine claim*",
+      "id": "register and examine claim*",
+      "bbox": [
+        412.469,
+        916.834,
+        299.2,
+        213.714
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write settlement recommendation",
+      "id": "write settlement recommendation",
+      "bbox": [
+        1081.394,
+        918.971,
+        401.783,
+        143.189
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check settlement recommendation",
+      "id": "check settlement recommendation",
+      "bbox": [
+        1440.434,
+        1491.726,
+        344.08,
+        185.931
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1993.954,
+        1513.097,
+        117.543,
+        149.6
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "cllaim",
+      "id": "cllaim",
+      "bbox": [
+        307.749,
+        1188.251,
+        98.309,
+        123.954
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "[register, examined] claim",
+      "id": "[register, examined] claim",
+      "bbox": [
+        760.823,
+        1162.606,
+        98.309,
+        123.954
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "claim received",
+      "id": "claim received",
+      "bbox": [
+        277.829,
+        703.12,
+        64.114,
+        53.429
+      ],
+      "class": "event"
+    },
+    {
+      "text": "settlement recommendation",
+      "id": "settlement recommendation",
+      "bbox": [
+        1245.954,
+        1190.389,
+        98.309,
+        123.954
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "handling process proceeded",
+      "id": "handling process proceeded",
+      "bbox": [
+        2320.937,
+        724.491,
+        42.743,
+        42.743
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "claim received",
+      "head": "register and examine claim*",
+      "class": "sequenceFlow",
+      "bbox": [
+        309.886,
+        762.96,
+        104.72,
+        263.488
+      ],
+      "kps": [
+        309.886,
+        762.96,
+        2.0,
+        412.469,
+        1023.691,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register and examine claim*",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        711.669,
+        994.84,
+        371.863,
+        59.84
+      ],
+      "kps": [
+        711.669,
+        1023.691,
+        2.0,
+        1081.394,
+        1023.691,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "check settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1474.629,
+        1055.749,
+        111.131,
+        438.114
+      ],
+      "kps": [
+        1474.629,
+        1055.749,
+        2.0,
+        1583.623,
+        1491.726,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check settlement recommendation",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1784.514,
+        1556.909,
+        213.714,
+        59.84
+      ],
+      "kps": [
+        1784.514,
+        1585.76,
+        2.0,
+        1996.091,
+        1585.76,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "handling process proceeded",
+      "class": "sequenceFlow",
+      "bbox": [
+        2109.36,
+        765.097,
+        226.537,
+        822.8
+      ],
+      "kps": [
+        2109.36,
+        1585.76,
+        2.0,
+        2333.76,
+        765.097,
+        2.0
+      ],
+      "label": "OK"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write settlement recommendation",
+      "class": "sequenceFlow",
+      "bbox": [
+        1483.177,
+        991.634,
+        577.029,
+        530.011
+      ],
+      "kps": [
+        2058.069,
+        1519.509,
+        2.0,
+        1483.177,
+        991.634,
+        2.0
+      ],
+      "label": "not OK"
+    },
+    {
+      "tail": "cllaim",
+      "head": "register and examine claim*",
+      "class": "dataAssociation",
+      "bbox": [
+        406.057,
+        1130.549,
+        113.525,
+        115.406
+      ],
+      "kps": [
+        406.057,
+        1243.817,
+        2.0,
+        517.189,
+        1130.549,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "register and examine claim*",
+      "head": "[register, examined] claim",
+      "class": "dataAssociation",
+      "bbox": [
+        632.594,
+        1134.823,
+        130.366,
+        96.171
+      ],
+      "kps": [
+        632.594,
+        1134.823,
+        2.0,
+        760.823,
+        1220.309,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "[register, examined] claim",
+      "head": "write settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        859.131,
+        1055.749,
+        230.811,
+        170.971
+      ],
+      "kps": [
+        859.131,
+        1224.583,
+        2.0,
+        1087.806,
+        1055.749,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write settlement recommendation",
+      "head": "settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        1267.326,
+        1062.16,
+        59.84,
+        130.366
+      ],
+      "kps": [
+        1284.423,
+        1062.16,
+        2.0,
+        1307.931,
+        1190.389,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "settlement recommendation",
+      "head": "check settlement recommendation",
+      "class": "dataAssociation",
+      "bbox": [
+        1301.52,
+        1314.343,
+        141.051,
+        271.417
+      ],
+      "kps": [
+        1301.52,
+        1314.343,
+        2.0,
+        1440.434,
+        1583.623,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Customer",
+      "head": "claim received",
+      "class": "messageFlow",
+      "bbox": [
+        281.034,
+        461.623,
+        59.84,
+        239.36
+      ],
+      "kps": [
+        309.886,
+        461.623,
+        2.0,
+        309.886,
+        698.846,
+        2.0
+      ],
+      "label": "claim"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurer",
+      "nodes": [
+        "system",
+        "claims officer",
+        "senior claims officer"
+      ],
+      "bbox": [
+        0,
+        632.594,
+        2981.314,
+        1342.126
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "system",
+      "nodes": [
+        "claim received",
+        "handling process proceeded"
+      ],
+      "bbox": [
+        94.034,
+        632.594,
+        2887.28,
+        181.657
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "claims officer",
+      "nodes": [
+        "register and examine claim*",
+        "write settlement recommendation",
+        "cllaim",
+        "[register, examined] claim",
+        "settlement recommendation"
+      ],
+      "bbox": [
+        95.017,
+        813.097,
+        2886.404,
+        563.223
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "senior claims officer",
+      "nodes": [
+        "check settlement recommendation",
+        "exclusiveGateway_1"
+      ],
+      "bbox": [
+        95.017,
+        1376.32,
+        2886.404,
+        598.4
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Customer",
+      "nodes": [],
+      "bbox": [
+        0,
+        203.029,
+        2992,
+        258.594
+      ],
+      "class": "pool"
+    }
+  ]
+}

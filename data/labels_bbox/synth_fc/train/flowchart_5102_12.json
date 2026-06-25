@@ -1,0 +1,292 @@
+{
+  "nodes": [
+    {
+      "text": "overpopulation",
+      "id": "overpopulation",
+      "class": "ellipse",
+      "bbox": [
+        10,
+        29,
+        98,
+        81
+      ]
+    },
+    {
+      "text": "zoonomic",
+      "id": "zoonomic",
+      "class": "diamond",
+      "bbox": [
+        5,
+        97,
+        102,
+        170
+      ]
+    },
+    {
+      "text": "marang",
+      "id": "marang",
+      "class": "box",
+      "bbox": [
+        18,
+        187,
+        90,
+        235
+      ]
+    },
+    {
+      "text": "deferable tympanomastoid",
+      "id": "deferable tympanomastoid",
+      "class": "diamond",
+      "bbox": [
+        179,
+        97,
+        344,
+        170
+      ]
+    },
+    {
+      "text": "erythromelalgia",
+      "id": "erythromelalgia",
+      "class": "document",
+      "bbox": [
+        8,
+        311,
+        100,
+        372
+      ]
+    },
+    {
+      "text": "mastigobranchial",
+      "id": "mastigobranchial",
+      "class": "document",
+      "bbox": [
+        204,
+        181,
+        319,
+        242
+      ]
+    },
+    {
+      "text": "despise",
+      "id": "despise",
+      "class": "hexagon",
+      "bbox": [
+        212,
+        317,
+        311,
+        365
+      ]
+    },
+    {
+      "text": "naviform",
+      "id": "naviform",
+      "class": "diamond",
+      "bbox": [
+        203,
+        421,
+        321,
+        464
+      ]
+    },
+    {
+      "text": "antilift gonorrheic",
+      "id": "antilift gonorrheic",
+      "class": "box",
+      "bbox": [
+        434,
+        5,
+        506,
+        53
+      ]
+    },
+    {
+      "text": "plumber corneum",
+      "id": "plumber corneum",
+      "class": "box",
+      "bbox": [
+        434,
+        83,
+        506,
+        131
+      ]
+    },
+    {
+      "text": "interdepartmental nasalward",
+      "id": "interdepartmental nasalward",
+      "class": "box",
+      "bbox": [
+        426,
+        213,
+        514,
+        261
+      ]
+    },
+    {
+      "text": "Christdom ladderway bewitchful",
+      "id": "Christdom ladderway bewitchful",
+      "class": "oval",
+      "bbox": [
+        400,
+        289,
+        534,
+        341
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "overpopulation",
+      "head": "zoonomic",
+      "label": null,
+      "bbox": [
+        48,
+        82,
+        60,
+        96
+      ]
+    },
+    {
+      "tail": "zoonomic",
+      "head": "marang",
+      "label": "No",
+      "bbox": [
+        48,
+        171,
+        60,
+        187
+      ]
+    },
+    {
+      "tail": "zoonomic",
+      "head": "deferable tympanomastoid",
+      "label": "No",
+      "bbox": [
+        85,
+        141,
+        208,
+        153
+      ]
+    },
+    {
+      "tail": "marang",
+      "head": "erythromelalgia",
+      "label": null,
+      "bbox": [
+        48,
+        236,
+        60,
+        311
+      ]
+    },
+    {
+      "tail": "erythromelalgia",
+      "head": "deferable tympanomastoid",
+      "label": null,
+      "bbox": [
+        99,
+        139,
+        197,
+        341
+      ]
+    },
+    {
+      "tail": "deferable tympanomastoid",
+      "head": "mastigobranchial",
+      "label": "YES",
+      "bbox": [
+        256,
+        167,
+        268,
+        181
+      ]
+    },
+    {
+      "tail": "deferable tympanomastoid",
+      "head": "zoonomic",
+      "label": "YES",
+      "bbox": [
+        87,
+        115,
+        205,
+        127
+      ]
+    },
+    {
+      "tail": "mastigobranchial",
+      "head": "despise",
+      "label": null,
+      "bbox": [
+        256,
+        242,
+        268,
+        317
+      ]
+    },
+    {
+      "tail": "despise",
+      "head": "naviform",
+      "label": null,
+      "bbox": [
+        239,
+        366,
+        251,
+        428
+      ]
+    },
+    {
+      "tail": "naviform",
+      "head": "antilift gonorrheic",
+      "label": "No",
+      "bbox": [
+        322,
+        35,
+        433,
+        445
+      ]
+    },
+    {
+      "tail": "naviform",
+      "head": "despise",
+      "label": "No",
+      "bbox": [
+        272,
+        366,
+        284,
+        428
+      ]
+    },
+    {
+      "tail": "antilift gonorrheic",
+      "head": "plumber corneum",
+      "label": null,
+      "bbox": [
+        464,
+        54,
+        476,
+        83
+      ]
+    },
+    {
+      "tail": "plumber corneum",
+      "head": "interdepartmental nasalward",
+      "label": null,
+      "bbox": [
+        464,
+        132,
+        476,
+        213
+      ]
+    },
+    {
+      "tail": "interdepartmental nasalward",
+      "head": "Christdom ladderway bewitchful",
+      "label": null,
+      "bbox": [
+        464,
+        262,
+        476,
+        289
+      ]
+    }
+  ]
+}

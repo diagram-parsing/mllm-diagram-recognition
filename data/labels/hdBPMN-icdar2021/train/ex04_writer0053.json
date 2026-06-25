@@ -1,0 +1,273 @@
+{
+  "nodes": [
+    {
+      "text": "retrieve files",
+      "id": "retrieve files",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "check if request is compliant",
+      "id": "check if request is compliant",
+      "class": "task"
+    },
+    {
+      "text": "check if request is acceptable",
+      "id": "check if request is acceptable",
+      "class": "task"
+    },
+    {
+      "text": "allocate hearing date",
+      "id": "allocate hearing date",
+      "class": "task"
+    },
+    {
+      "text": "fees notice sent",
+      "id": "fees notice sent",
+      "class": "messageEvent"
+    },
+    {
+      "text": "files",
+      "id": "files",
+      "class": "dataObject"
+    },
+    {
+      "text": "fee recived",
+      "id": "fee recived",
+      "class": "messageEvent"
+    },
+    {
+      "text": "request for compensation recived",
+      "id": "request for compensation recived",
+      "class": "messageEvent"
+    },
+    {
+      "text": "compensation request",
+      "id": "compensation request",
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "set hearing date",
+      "id": "set hearing date",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "fees notice",
+      "id": "fees notice",
+      "class": "dataObject"
+    },
+    {
+      "text": "process completed",
+      "id": "process completed",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "request for compensation recived",
+      "head": "retrieve files",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieve files",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if request is compliant",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check if request is acceptable",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check if request is acceptable",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "set hearing date",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "set hearing date",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "allocate hearing date",
+      "class": "sequenceFlow",
+      "label": "fee paid"
+    },
+    {
+      "tail": "allocate hearing date",
+      "head": "process completed",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "fees notice sent",
+      "class": "sequenceFlow",
+      "label": "fee not paid"
+    },
+    {
+      "tail": "fees notice sent",
+      "head": "fee recived",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "fee recived",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check if request is compliant",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieve files",
+      "head": "files",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "files",
+      "head": "check if request is compliant",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "compensation request",
+      "head": "check if request is compliant",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "compensation request",
+      "head": "check if request is acceptable",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "files",
+      "head": "check if request is acceptable",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "fees notice",
+      "head": "fees notice sent",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "request for compensation recived",
+      "head": "compensation request",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "owner",
+      "head": "request for compensation recived",
+      "class": "messageFlow",
+      "label": "compensation request"
+    },
+    {
+      "tail": "owner",
+      "head": "fee recived",
+      "class": "messageFlow",
+      "label": "fee"
+    },
+    {
+      "tail": "fees notice sent",
+      "head": "owner",
+      "class": "messageFlow",
+      "label": "fees notice"
+    }
+  ],
+  "groups": [
+    {
+      "name": "tribunal",
+      "nodes": [
+        "lane_1",
+        "cashier"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": null,
+      "nodes": [
+        "request for compensation recived",
+        "compensation request"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "cashier",
+      "nodes": [
+        "retrieve files",
+        "exclusiveGateway_1",
+        "parallelGateway_1",
+        "check if request is compliant",
+        "check if request is acceptable",
+        "allocate hearing date",
+        "fees notice sent",
+        "files",
+        "fee recived",
+        "parallelGateway_2",
+        "set hearing date",
+        "exclusiveGateway_2",
+        "fees notice",
+        "process completed"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "owner",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

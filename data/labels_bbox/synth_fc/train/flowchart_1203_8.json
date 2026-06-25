@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "text": "anaplasm",
+      "id": "anaplasm",
+      "class": "ellipse",
+      "bbox": [
+        34,
+        5,
+        106,
+        57
+      ]
+    },
+    {
+      "text": "usuriously",
+      "id": "usuriously",
+      "class": "document",
+      "bbox": [
+        31,
+        88,
+        109,
+        136
+      ]
+    },
+    {
+      "text": "accomplishment",
+      "id": "accomplishment",
+      "class": "diamond",
+      "bbox": [
+        5,
+        156,
+        134,
+        230
+      ]
+    },
+    {
+      "text": "Telinga",
+      "id": "Telinga",
+      "class": "diamond",
+      "bbox": [
+        8,
+        250,
+        131,
+        298
+      ]
+    },
+    {
+      "text": "bolo",
+      "id": "bolo",
+      "class": "hexagon",
+      "bbox": [
+        195,
+        88,
+        262,
+        136
+      ]
+    },
+    {
+      "text": "infancy",
+      "id": "infancy",
+      "class": "document",
+      "bbox": [
+        195,
+        189,
+        262,
+        237
+      ]
+    },
+    {
+      "text": "soonish ornithologic",
+      "id": "soonish ornithologic",
+      "class": "document",
+      "bbox": [
+        195,
+        270,
+        262,
+        318
+      ]
+    },
+    {
+      "text": "sporocarp",
+      "id": "sporocarp",
+      "class": "ellipse",
+      "bbox": [
+        195,
+        329,
+        262,
+        375
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "anaplasm",
+      "head": "usuriously",
+      "label": null,
+      "bbox": [
+        65,
+        58,
+        74,
+        87
+      ]
+    },
+    {
+      "tail": "usuriously",
+      "head": "accomplishment",
+      "label": null,
+      "bbox": [
+        65,
+        136,
+        74,
+        154
+      ]
+    },
+    {
+      "tail": "accomplishment",
+      "head": "Telinga",
+      "label": "yes",
+      "bbox": [
+        65,
+        230,
+        74,
+        248
+      ]
+    },
+    {
+      "tail": "accomplishment",
+      "head": "bolo",
+      "label": "yes",
+      "bbox": [
+        121,
+        116,
+        199,
+        185
+      ]
+    },
+    {
+      "tail": "Telinga",
+      "head": "bolo",
+      "label": "No",
+      "bbox": [
+        109,
+        100,
+        199,
+        264
+      ]
+    },
+    {
+      "tail": "Telinga",
+      "head": "anaplasm",
+      "label": "No",
+      "bbox": [
+        92,
+        28,
+        154,
+        258
+      ]
+    },
+    {
+      "tail": "bolo",
+      "head": "infancy",
+      "label": null,
+      "bbox": [
+        227,
+        137,
+        236,
+        188
+      ]
+    },
+    {
+      "tail": "infancy",
+      "head": "soonish ornithologic",
+      "label": null,
+      "bbox": [
+        227,
+        237,
+        236,
+        269
+      ]
+    },
+    {
+      "tail": "soonish ornithologic",
+      "head": "sporocarp",
+      "label": null,
+      "bbox": [
+        227,
+        313,
+        236,
+        327
+      ]
+    }
+  ]
+}

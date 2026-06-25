@@ -1,0 +1,519 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        116,
+        264,
+        183,
+        341
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "bbox": [
+        291,
+        230,
+        496,
+        329
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_2",
+      "bbox": [
+        259,
+        388,
+        447,
+        469
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_3",
+      "bbox": [
+        549,
+        209,
+        717,
+        327
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_4",
+      "bbox": [
+        822,
+        117,
+        990,
+        202
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_5",
+      "bbox": [
+        819,
+        233,
+        1063,
+        367
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_6",
+      "bbox": [
+        1093,
+        256,
+        1216,
+        388
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        751,
+        300,
+        804,
+        364
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_1",
+      "bbox": [
+        549,
+        390,
+        606,
+        453
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        1134,
+        159,
+        1179,
+        204
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "task_7",
+      "bbox": [
+        260,
+        672,
+        436,
+        776
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_8",
+      "bbox": [
+        535,
+        788,
+        760,
+        901
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_9",
+      "bbox": [
+        964,
+        670,
+        1070,
+        729
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_10",
+      "bbox": [
+        776,
+        941,
+        954,
+        1029
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "task_11",
+      "bbox": [
+        928,
+        1161,
+        1191,
+        1328
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_3",
+      "bbox": [
+        641,
+        605,
+        744,
+        689
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_2",
+      "bbox": [
+        386,
+        825,
+        448,
+        899
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "timerEvent_3",
+      "bbox": [
+        89,
+        708,
+        145,
+        766
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        834,
+        713,
+        896,
+        761
+      ],
+      "class": "exclusiveGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "messageEvent_1",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        183,
+        285,
+        292,
+        320
+      ],
+      "kps": [
+        183.52,
+        302.56,
+        2.0,
+        291.4,
+        302.56,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "task_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        347,
+        329,
+        381,
+        389
+      ],
+      "kps": [
+        364.56,
+        329.84,
+        2.0,
+        363.32,
+        388.12,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_2",
+      "head": "timerEvent_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        447,
+        411,
+        550,
+        446
+      ],
+      "kps": [
+        447.64,
+        429.04,
+        2.0,
+        549.32,
+        427.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_5",
+      "head": "task_6",
+      "class": "sequenceFlow",
+      "bbox": [
+        1062,
+        284,
+        1096,
+        318
+      ],
+      "kps": [
+        1063.92,
+        300.08,
+        2.0,
+        1093.68,
+        301.32,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_6",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1134,
+        203,
+        1169,
+        257
+      ],
+      "kps": [
+        1151.96,
+        256.68,
+        2.0,
+        1150.72,
+        203.36,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_4",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        990,
+        149,
+        1138,
+        184
+      ],
+      "kps": [
+        990.76,
+        159.96,
+        2.0,
+        1137.08,
+        172.36,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "task_5",
+      "class": "sequenceFlow",
+      "bbox": [
+        795,
+        315,
+        830,
+        350
+      ],
+      "kps": [
+        804.76,
+        332.32,
+        2.0,
+        819.64,
+        332.32,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_3",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        679,
+        698,
+        837,
+        739
+      ],
+      "kps": [
+        685.72,
+        698.12,
+        2.0,
+        835.76,
+        737.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_9",
+      "class": "sequenceFlow",
+      "bbox": [
+        865,
+        683,
+        965,
+        718
+      ],
+      "kps": [
+        865.52,
+        713.0,
+        2.0,
+        964.72,
+        688.2,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "task_10",
+      "class": "sequenceFlow",
+      "bbox": [
+        843,
+        761,
+        878,
+        942
+      ],
+      "kps": [
+        865.52,
+        761.36,
+        2.0,
+        855.6,
+        941.16,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "timerEvent_3",
+      "head": "task_7",
+      "class": "sequenceFlow",
+      "bbox": [
+        145,
+        719,
+        261,
+        754
+      ],
+      "kps": [
+        145.08,
+        737.8,
+        2.0,
+        260.4,
+        735.32,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_7",
+      "head": "timerEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        329,
+        776,
+        388,
+        860
+      ],
+      "kps": [
+        341.0,
+        776.24,
+        2.0,
+        386.88,
+        859.32,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_10",
+      "head": "task_11",
+      "class": "sequenceFlow",
+      "bbox": [
+        913,
+        1029,
+        974,
+        1163
+      ],
+      "kps": [
+        930.0,
+        1029.2,
+        2.0,
+        973.4,
+        1161.88,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "task_9",
+      "head": "task_4",
+      "class": "messageFlow",
+      "bbox": [
+        990,
+        174,
+        1080,
+        672
+      ],
+      "kps": [
+        1025.48,
+        670.84,
+        2.0,
+        990.76,
+        174.84,
+        2.0
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Secretary",
+      "nodes": [],
+      "bbox": [
+        3,
+        110,
+        1240,
+        482
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "teacher",
+      "nodes": [],
+      "bbox": [
+        37,
+        527,
+        1240,
+        1368
+      ],
+      "class": "pool"
+    }
+  ]
+}

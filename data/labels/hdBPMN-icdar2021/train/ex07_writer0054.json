@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "text": "ask external expert to review the work of the doctor underrating",
+      "id": "ask external expert to review the work of the doctor underrating",
+      "class": "task"
+    },
+    {
+      "text": "ask another external expert",
+      "id": "ask another external expert",
+      "class": "task"
+    },
+    {
+      "text": "receives expertise",
+      "id": "receives expertise",
+      "class": "task"
+    },
+    {
+      "text": "forward the expertise",
+      "id": "forward the expertise",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "results get filled",
+      "id": "results get filled",
+      "class": "task"
+    },
+    {
+      "text": "filling a cheque and sending it to the expert",
+      "id": "filling a cheque and sending it to the expert",
+      "class": "task"
+    },
+    {
+      "text": "report created",
+      "id": "report created",
+      "class": "event"
+    },
+    {
+      "text": "patient interview workflow",
+      "id": "patient interview workflow",
+      "class": "task"
+    },
+    {
+      "text": "new case",
+      "id": "new case",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "ask external expert to review the work of the doctor underrating",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new case",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "patient interview workflow",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receives expertise",
+      "head": "forward the expertise",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward the expertise",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "results get filled",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "filling a cheque and sending it to the expert",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "results get filled",
+      "head": "report created",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review the work of the doctor underrating",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "ask another external expert",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "external expert",
+      "head": "ask another external expert",
+      "class": "messageFlow",
+      "label": "not responding in time"
+    },
+    {
+      "tail": "external expert",
+      "head": "receives expertise",
+      "class": "messageFlow",
+      "label": "expertise send"
+    },
+    {
+      "tail": "filling a cheque and sending it to the expert",
+      "head": "external expert",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

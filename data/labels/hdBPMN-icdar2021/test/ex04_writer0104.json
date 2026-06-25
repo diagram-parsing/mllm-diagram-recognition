@@ -1,0 +1,442 @@
+{
+  "nodes": [
+    {
+      "text": "retrive file",
+      "id": "retrive file",
+      "bbox": [
+        383.936,
+        875.561,
+        187.286,
+        62.429
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        672.668,
+        859.954,
+        78.036,
+        78.036
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "check acceptability corfiling",
+      "id": "check acceptability corfiling",
+      "bbox": [
+        820.936,
+        703.882,
+        193.529,
+        85.839
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1089.379,
+        856.832,
+        79.596,
+        76.475
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "check compliantity",
+      "id": "check compliantity",
+      "bbox": [
+        836.543,
+        1016.025,
+        187.286,
+        78.036
+      ],
+      "class": "task"
+    },
+    {
+      "text": "set hearing date",
+      "id": "set hearing date",
+      "bbox": [
+        1273.543,
+        856.832,
+        187.286,
+        73.354
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1577.882,
+        852.15,
+        78.036,
+        78.036
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "allocate hearing date",
+      "id": "allocate hearing date",
+      "bbox": [
+        1538.864,
+        657.061,
+        187.286,
+        93.643
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        1854.129,
+        667.986,
+        56.186,
+        56.186
+      ],
+      "class": "event"
+    },
+    {
+      "text": "produce fees notice",
+      "id": "produce fees notice",
+      "bbox": [
+        1538.864,
+        1031.632,
+        202.893,
+        84.279
+      ],
+      "class": "task"
+    },
+    {
+      "text": "wait that owner pay",
+      "id": "wait that owner pay",
+      "bbox": [
+        1554.471,
+        1187.704,
+        187.286,
+        78.036
+      ],
+      "class": "task"
+    },
+    {
+      "text": "quest received",
+      "id": "quest received",
+      "bbox": [
+        190.407,
+        875.561,
+        67.111,
+        65.55
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "quest received",
+      "head": "retrive file",
+      "class": "sequenceFlow",
+      "bbox": [
+        257.518,
+        891.948,
+        127.979,
+        43.7
+      ],
+      "kps": [
+        257.518,
+        913.018,
+        2.0,
+        383.936,
+        913.018,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "retrive file",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        571.221,
+        885.705,
+        110.811,
+        43.7
+      ],
+      "kps": [
+        571.221,
+        906.775,
+        2.0,
+        680.471,
+        906.775,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check acceptability corfiling",
+      "class": "sequenceFlow",
+      "bbox": [
+        711.686,
+        750.704,
+        110.811,
+        110.811
+      ],
+      "kps": [
+        711.686,
+        859.954,
+        2.0,
+        820.936,
+        750.704,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check acceptability corfiling",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1014.464,
+        742.9,
+        120.175,
+        118.614
+      ],
+      "kps": [
+        1014.464,
+        742.9,
+        2.0,
+        1133.079,
+        859.954,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check compliantity",
+      "class": "sequenceFlow",
+      "bbox": [
+        711.686,
+        937.989,
+        126.418,
+        110.811
+      ],
+      "kps": [
+        711.686,
+        937.989,
+        2.0,
+        836.543,
+        1047.239,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "check compliantity",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1023.829,
+        930.186,
+        110.811,
+        118.614
+      ],
+      "kps": [
+        1023.829,
+        1047.239,
+        2.0,
+        1133.079,
+        930.186,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "set hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        1164.293,
+        870.098,
+        110.811,
+        43.7
+      ],
+      "kps": [
+        1164.293,
+        891.168,
+        2.0,
+        1273.543,
+        891.168,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "set hearing date",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1460.829,
+        868.538,
+        118.614,
+        43.7
+      ],
+      "kps": [
+        1460.829,
+        888.046,
+        2.0,
+        1577.882,
+        891.168,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "allocate hearing date",
+      "class": "sequenceFlow",
+      "bbox": [
+        1595.83,
+        750.704,
+        43.7,
+        103.007
+      ],
+      "kps": [
+        1616.9,
+        852.15,
+        2.0,
+        1616.9,
+        750.704,
+        2.0
+      ],
+      "label": "owner has already paid"
+    },
+    {
+      "tail": "allocate hearing date",
+      "head": "event_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1726.15,
+        675.009,
+        129.539,
+        43.7
+      ],
+      "kps": [
+        1726.15,
+        696.079,
+        2.0,
+        1854.129,
+        696.079,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "produce fees notice",
+      "class": "sequenceFlow",
+      "bbox": [
+        1595.83,
+        930.186,
+        43.7,
+        103.007
+      ],
+      "kps": [
+        1616.9,
+        930.186,
+        2.0,
+        1616.9,
+        1031.632,
+        2.0
+      ],
+      "label": "owner has not paid"
+    },
+    {
+      "tail": "produce fees notice",
+      "head": "wait that owner pay",
+      "class": "sequenceFlow",
+      "bbox": [
+        1598.171,
+        1115.911,
+        43.7,
+        73.354
+      ],
+      "kps": [
+        1623.143,
+        1115.911,
+        2.0,
+        1615.339,
+        1187.704,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "wait that owner pay",
+      "head": "check compliantity",
+      "class": "sequenceFlow",
+      "bbox": [
+        914.579,
+        1094.061,
+        641.454,
+        134.221
+      ],
+      "kps": [
+        1554.471,
+        1226.721,
+        2.0,
+        914.579,
+        1094.061,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "owner",
+      "head": "quest received",
+      "class": "messageFlow",
+      "bbox": [
+        206.795,
+        346.479,
+        43.7,
+        530.643
+      ],
+      "kps": [
+        227.864,
+        346.479,
+        2.0,
+        227.864,
+        875.561,
+        2.0
+      ],
+      "label": "request"
+    }
+  ],
+  "groups": [
+    {
+      "name": "cashier",
+      "nodes": [],
+      "bbox": [
+        87.4,
+        454.168,
+        2028.929,
+        905.214
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "owner",
+      "nodes": [],
+      "bbox": [
+        71.793,
+        220.061,
+        2028.929,
+        126.418
+      ],
+      "class": "pool"
+    }
+  ]
+}

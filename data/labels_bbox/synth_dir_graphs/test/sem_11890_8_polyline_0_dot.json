@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "text": "lacewood",
+      "id": "lacewood",
+      "class": "node",
+      "bbox": [
+        481,
+        276,
+        562,
+        325
+      ]
+    },
+    {
+      "text": "remisrepresent hemerythrin",
+      "id": "remisrepresent hemerythrin",
+      "class": "node",
+      "bbox": [
+        505,
+        109,
+        692,
+        164
+      ]
+    },
+    {
+      "text": "pneumopericardium",
+      "id": "pneumopericardium",
+      "class": "node",
+      "bbox": [
+        716,
+        109,
+        842,
+        164
+      ]
+    },
+    {
+      "text": "interopercle",
+      "id": "interopercle",
+      "class": "node",
+      "bbox": [
+        372,
+        109,
+        481,
+        164
+      ]
+    },
+    {
+      "text": "Blattidae Anthropopithecus",
+      "id": "Blattidae Anthropopithecus",
+      "class": "node",
+      "bbox": [
+        219,
+        113,
+        330,
+        161
+      ]
+    },
+    {
+      "text": "glucofrangulin",
+      "id": "glucofrangulin",
+      "class": "node",
+      "bbox": [
+        214,
+        5,
+        335,
+        60
+      ]
+    },
+    {
+      "text": "antediluvial",
+      "id": "antediluvial",
+      "class": "node",
+      "bbox": [
+        224,
+        276,
+        325,
+        325
+      ]
+    },
+    {
+      "text": "perimetry buildable chondrodyn",
+      "id": "perimetry buildable chondrodyn",
+      "class": "node",
+      "bbox": [
+        26,
+        275,
+        201,
+        327
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "lacewood",
+      "head": "remisrepresent hemerythrin",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        532,
+        164,
+        586,
+        276
+      ]
+    },
+    {
+      "tail": "lacewood",
+      "head": "pneumopericardium",
+      "label": "1",
+      "class": "unidirectional",
+      "bbox": [
+        558,
+        164,
+        739,
+        276
+      ]
+    },
+    {
+      "tail": "lacewood",
+      "head": "interopercle",
+      "label": "-0.371",
+      "class": "unidirectional",
+      "bbox": [
+        433,
+        164,
+        494,
+        276
+      ]
+    },
+    {
+      "tail": "Blattidae Anthropopithecus",
+      "head": "glucofrangulin",
+      "label": null,
+      "class": "unidirectional",
+      "bbox": [
+        267,
+        60,
+        282,
+        113
+      ]
+    },
+    {
+      "tail": "lacewood",
+      "head": "Blattidae Anthropopithecus",
+      "label": "0.96",
+      "class": "unidirectional",
+      "bbox": [
+        300,
+        161,
+        481,
+        285
+      ]
+    },
+    {
+      "tail": "antediluvial",
+      "head": "Blattidae Anthropopithecus",
+      "label": "0.38",
+      "class": "bidirectional",
+      "bbox": [
+        267,
+        161,
+        282,
+        260
+      ]
+    },
+    {
+      "tail": "perimetry buildable chondrodyn",
+      "head": "Blattidae Anthropopithecus",
+      "label": "-0.63** a = 0.817",
+      "class": "bidirectional",
+      "bbox": [
+        130,
+        160,
+        223,
+        259
+      ]
+    }
+  ]
+}

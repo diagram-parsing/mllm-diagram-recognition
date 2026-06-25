@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "democratic crabby Shakespearea",
+      "id": "democratic crabby Shakespearea",
+      "class": "oval"
+    },
+    {
+      "text": "rewood",
+      "id": "rewood",
+      "class": "document"
+    },
+    {
+      "text": "carotic",
+      "id": "carotic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "outdoer",
+      "id": "outdoer",
+      "class": "hexagon"
+    },
+    {
+      "text": "rig wrung",
+      "id": "rig wrung",
+      "class": "diamond"
+    },
+    {
+      "text": "antepredicamental",
+      "id": "antepredicamental",
+      "class": "parallelogram"
+    },
+    {
+      "text": "vengefulness",
+      "id": "vengefulness",
+      "class": "hexagon"
+    },
+    {
+      "text": "steal",
+      "id": "steal",
+      "class": "diamond"
+    },
+    {
+      "text": "Bonbo bipedality mightyhearted",
+      "id": "Bonbo bipedality mightyhearted",
+      "class": "document"
+    },
+    {
+      "text": "mudsucker",
+      "id": "mudsucker",
+      "class": "diamond"
+    },
+    {
+      "text": "windup youthtide nonstarch",
+      "id": "windup youthtide nonstarch",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "democratic crabby Shakespearea",
+      "head": "rewood",
+      "label": null
+    },
+    {
+      "tail": "rewood",
+      "head": "carotic",
+      "label": null
+    },
+    {
+      "tail": "carotic",
+      "head": "outdoer",
+      "label": null
+    },
+    {
+      "tail": "outdoer",
+      "head": "rig wrung",
+      "label": null
+    },
+    {
+      "tail": "rig wrung",
+      "head": "antepredicamental",
+      "label": "YES"
+    },
+    {
+      "tail": "rig wrung",
+      "head": "carotic",
+      "label": "YES"
+    },
+    {
+      "tail": "antepredicamental",
+      "head": "vengefulness",
+      "label": null
+    },
+    {
+      "tail": "vengefulness",
+      "head": "steal",
+      "label": null
+    },
+    {
+      "tail": "steal",
+      "head": "Bonbo bipedality mightyhearted",
+      "label": "no"
+    },
+    {
+      "tail": "steal",
+      "head": "democratic crabby Shakespearea",
+      "label": "no"
+    },
+    {
+      "tail": "Bonbo bipedality mightyhearted",
+      "head": "mudsucker",
+      "label": null
+    },
+    {
+      "tail": "mudsucker",
+      "head": "windup youthtide nonstarch",
+      "label": "YES"
+    },
+    {
+      "tail": "mudsucker",
+      "head": "rig wrung",
+      "label": "YES"
+    }
+  ]
+}

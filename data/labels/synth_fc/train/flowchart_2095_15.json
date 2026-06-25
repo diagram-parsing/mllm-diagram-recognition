@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "text": "auspicy",
+      "id": "auspicy",
+      "class": "circle"
+    },
+    {
+      "text": "dray",
+      "id": "dray",
+      "class": "box"
+    },
+    {
+      "text": "unauthorizable",
+      "id": "unauthorizable",
+      "class": "diamond"
+    },
+    {
+      "text": "papmeat",
+      "id": "papmeat",
+      "class": "document"
+    },
+    {
+      "text": "perpetuate",
+      "id": "perpetuate",
+      "class": "document"
+    },
+    {
+      "text": "Dipladenia jete spumiform",
+      "id": "Dipladenia jete spumiform",
+      "class": "diamond"
+    },
+    {
+      "text": "treeman",
+      "id": "treeman",
+      "class": "document"
+    },
+    {
+      "text": "hemathermous",
+      "id": "hemathermous",
+      "class": "hexagon"
+    },
+    {
+      "text": "mnemonist",
+      "id": "mnemonist",
+      "class": "hexagon"
+    },
+    {
+      "text": "Rhinelander insensateness sita",
+      "id": "Rhinelander insensateness sita",
+      "class": "document"
+    },
+    {
+      "text": "phyllocarid",
+      "id": "phyllocarid",
+      "class": "document"
+    },
+    {
+      "text": "drumlinoid postdevelopmental",
+      "id": "drumlinoid postdevelopmental",
+      "class": "parallelogram"
+    },
+    {
+      "text": "pseudomorphine abovedeck hygro",
+      "id": "pseudomorphine abovedeck hygro",
+      "class": "box"
+    },
+    {
+      "text": "hobnailer cubit",
+      "id": "hobnailer cubit",
+      "class": "document"
+    },
+    {
+      "text": "mononymization",
+      "id": "mononymization",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "auspicy",
+      "head": "dray",
+      "label": null
+    },
+    {
+      "tail": "dray",
+      "head": "unauthorizable",
+      "label": null
+    },
+    {
+      "tail": "unauthorizable",
+      "head": "papmeat",
+      "label": "no"
+    },
+    {
+      "tail": "unauthorizable",
+      "head": "auspicy",
+      "label": "no"
+    },
+    {
+      "tail": "papmeat",
+      "head": "perpetuate",
+      "label": null
+    },
+    {
+      "tail": "perpetuate",
+      "head": "Dipladenia jete spumiform",
+      "label": null
+    },
+    {
+      "tail": "Dipladenia jete spumiform",
+      "head": "treeman",
+      "label": "Yes"
+    },
+    {
+      "tail": "Dipladenia jete spumiform",
+      "head": "hemathermous",
+      "label": "Yes"
+    },
+    {
+      "tail": "treeman",
+      "head": "mnemonist",
+      "label": null
+    },
+    {
+      "tail": "mnemonist",
+      "head": "Rhinelander insensateness sita",
+      "label": null
+    },
+    {
+      "tail": "Rhinelander insensateness sita",
+      "head": "hemathermous",
+      "label": null
+    },
+    {
+      "tail": "hemathermous",
+      "head": "phyllocarid",
+      "label": null
+    },
+    {
+      "tail": "phyllocarid",
+      "head": "drumlinoid postdevelopmental",
+      "label": null
+    },
+    {
+      "tail": "drumlinoid postdevelopmental",
+      "head": "pseudomorphine abovedeck hygro",
+      "label": null
+    },
+    {
+      "tail": "pseudomorphine abovedeck hygro",
+      "head": "hobnailer cubit",
+      "label": null
+    },
+    {
+      "tail": "hobnailer cubit",
+      "head": "mononymization",
+      "label": null
+    }
+  ]
+}

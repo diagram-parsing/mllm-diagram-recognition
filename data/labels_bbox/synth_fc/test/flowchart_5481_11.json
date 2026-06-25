@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "text": "reimage",
+      "id": "reimage",
+      "class": "oval",
+      "bbox": [
+        9,
+        5,
+        100,
+        53
+      ]
+    },
+    {
+      "text": "tetter",
+      "id": "tetter",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        134,
+        103,
+        182
+      ]
+    },
+    {
+      "text": "anepigraphic",
+      "id": "anepigraphic",
+      "class": "box",
+      "bbox": [
+        8,
+        211,
+        100,
+        259
+      ]
+    },
+    {
+      "text": "athletics",
+      "id": "athletics",
+      "class": "diamond",
+      "bbox": [
+        10,
+        328,
+        98,
+        401
+      ]
+    },
+    {
+      "text": "quarreling",
+      "id": "quarreling",
+      "class": "document",
+      "bbox": [
+        208,
+        23,
+        313,
+        87
+      ]
+    },
+    {
+      "text": "labilize masticability overrea",
+      "id": "labilize masticability overrea",
+      "class": "hexagon",
+      "bbox": [
+        186,
+        231,
+        335,
+        291
+      ]
+    },
+    {
+      "text": "mosquitoproof Goyana",
+      "id": "mosquitoproof Goyana",
+      "class": "document",
+      "bbox": [
+        208,
+        152,
+        313,
+        216
+      ]
+    },
+    {
+      "text": "stormbound",
+      "id": "stormbound",
+      "class": "diamond",
+      "bbox": [
+        208,
+        302,
+        313,
+        375
+      ]
+    },
+    {
+      "text": "creeping",
+      "id": "creeping",
+      "class": "document",
+      "bbox": [
+        414,
+        203,
+        514,
+        267
+      ]
+    },
+    {
+      "text": "butadiene",
+      "id": "butadiene",
+      "class": "document",
+      "bbox": [
+        414,
+        332,
+        514,
+        396
+      ]
+    },
+    {
+      "text": "pastrami",
+      "id": "pastrami",
+      "class": "circle",
+      "bbox": [
+        434,
+        435,
+        498,
+        494
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "reimage",
+      "head": "tetter",
+      "label": null,
+      "bbox": [
+        48,
+        54,
+        60,
+        134
+      ]
+    },
+    {
+      "tail": "tetter",
+      "head": "anepigraphic",
+      "label": null,
+      "bbox": [
+        48,
+        183,
+        60,
+        211
+      ]
+    },
+    {
+      "tail": "anepigraphic",
+      "head": "athletics",
+      "label": null,
+      "bbox": [
+        48,
+        260,
+        60,
+        327
+      ]
+    },
+    {
+      "tail": "athletics",
+      "head": "quarreling",
+      "label": "Yes",
+      "bbox": [
+        76,
+        65,
+        208,
+        345
+      ]
+    },
+    {
+      "tail": "athletics",
+      "head": "labilize masticability overrea",
+      "label": "Yes",
+      "bbox": [
+        93,
+        271,
+        203,
+        359
+      ]
+    },
+    {
+      "tail": "quarreling",
+      "head": "mosquitoproof Goyana",
+      "label": null,
+      "bbox": [
+        254,
+        87,
+        266,
+        152
+      ]
+    },
+    {
+      "tail": "mosquitoproof Goyana",
+      "head": "labilize masticability overrea",
+      "label": null,
+      "bbox": [
+        254,
+        216,
+        266,
+        231
+      ]
+    },
+    {
+      "tail": "labilize masticability overrea",
+      "head": "stormbound",
+      "label": null,
+      "bbox": [
+        254,
+        288,
+        266,
+        301
+      ]
+    },
+    {
+      "tail": "stormbound",
+      "head": "creeping",
+      "label": "yes",
+      "bbox": [
+        284,
+        267,
+        455,
+        318
+      ]
+    },
+    {
+      "tail": "stormbound",
+      "head": "butadiene",
+      "label": "yes",
+      "bbox": [
+        292,
+        348,
+        414,
+        360
+      ]
+    },
+    {
+      "tail": "creeping",
+      "head": "butadiene",
+      "label": null,
+      "bbox": [
+        478,
+        267,
+        490,
+        332
+      ]
+    },
+    {
+      "tail": "butadiene",
+      "head": "pastrami",
+      "label": null,
+      "bbox": [
+        460,
+        396,
+        472,
+        435
+      ]
+    }
+  ]
+}

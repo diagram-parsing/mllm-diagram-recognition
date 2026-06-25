@@ -1,0 +1,141 @@
+{
+  "nodes": [
+    {
+      "text": "decrepit",
+      "id": "decrepit",
+      "class": "ellipse"
+    },
+    {
+      "text": "epiclastic",
+      "id": "epiclastic",
+      "class": "box"
+    },
+    {
+      "text": "forged",
+      "id": "forged",
+      "class": "box"
+    },
+    {
+      "text": "suavely",
+      "id": "suavely",
+      "class": "diamond"
+    },
+    {
+      "text": "songless",
+      "id": "songless",
+      "class": "diamond"
+    },
+    {
+      "text": "freeze indiscriminate",
+      "id": "freeze indiscriminate",
+      "class": "parallelogram"
+    },
+    {
+      "text": "centonical Ascalabota",
+      "id": "centonical Ascalabota",
+      "class": "hexagon"
+    },
+    {
+      "text": "mesoplastic",
+      "id": "mesoplastic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "Scitamineae",
+      "id": "Scitamineae",
+      "class": "hexagon"
+    },
+    {
+      "text": "mantrap",
+      "id": "mantrap",
+      "class": "box"
+    },
+    {
+      "text": "coinsure",
+      "id": "coinsure",
+      "class": "parallelogram"
+    },
+    {
+      "text": "innervate squatarole",
+      "id": "innervate squatarole",
+      "class": "box"
+    },
+    {
+      "text": "milarite",
+      "id": "milarite",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "decrepit",
+      "head": "epiclastic",
+      "label": null
+    },
+    {
+      "tail": "epiclastic",
+      "head": "forged",
+      "label": null
+    },
+    {
+      "tail": "forged",
+      "head": "suavely",
+      "label": null
+    },
+    {
+      "tail": "suavely",
+      "head": "songless",
+      "label": "NO"
+    },
+    {
+      "tail": "suavely",
+      "head": "decrepit",
+      "label": "NO"
+    },
+    {
+      "tail": "songless",
+      "head": "freeze indiscriminate",
+      "label": "YES"
+    },
+    {
+      "tail": "songless",
+      "head": "centonical Ascalabota",
+      "label": "YES"
+    },
+    {
+      "tail": "freeze indiscriminate",
+      "head": "mesoplastic",
+      "label": null
+    },
+    {
+      "tail": "mesoplastic",
+      "head": "centonical Ascalabota",
+      "label": null
+    },
+    {
+      "tail": "centonical Ascalabota",
+      "head": "Scitamineae",
+      "label": null
+    },
+    {
+      "tail": "Scitamineae",
+      "head": "mantrap",
+      "label": null
+    },
+    {
+      "tail": "mantrap",
+      "head": "coinsure",
+      "label": null
+    },
+    {
+      "tail": "coinsure",
+      "head": "innervate squatarole",
+      "label": null
+    },
+    {
+      "tail": "innervate squatarole",
+      "head": "milarite",
+      "label": null
+    }
+  ]
+}

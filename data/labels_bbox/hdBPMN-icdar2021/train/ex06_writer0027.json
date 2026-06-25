@@ -1,0 +1,319 @@
+{
+  "nodes": [
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        1287,
+        139,
+        1672,
+        301
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order",
+      "id": "write down order",
+      "bbox": [
+        1321,
+        544,
+        1645,
+        706
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print order",
+      "id": "print order",
+      "bbox": [
+        1807,
+        341,
+        2132,
+        503
+      ],
+      "class": "task"
+    },
+    {
+      "text": "attach to clipboard",
+      "id": "attach to clipboard",
+      "bbox": [
+        1848,
+        821,
+        2172,
+        997
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "event_1",
+      "bbox": [
+        283,
+        666,
+        362,
+        744
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        608,
+        598,
+        854,
+        801
+      ],
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "Liferando",
+      "id": "Liferando",
+      "bbox": [
+        905,
+        133,
+        1064,
+        252
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "website",
+      "id": "website",
+      "bbox": [
+        918,
+        328,
+        1105,
+        474
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "phone",
+      "id": "phone",
+      "bbox": [
+        999,
+        544,
+        1159,
+        703
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1412,
+        372,
+        1538,
+        484
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1886,
+        604,
+        2036,
+        700
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order note paper",
+      "id": "order note paper",
+      "bbox": [
+        2188,
+        530,
+        2294,
+        683
+      ],
+      "class": "dataObject"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "print order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1941,
+        504,
+        1990,
+        606
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "attach to clipboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        1937,
+        700,
+        1985,
+        822
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1644,
+        626,
+        1890,
+        675
+      ],
+      "label": null
+    },
+    {
+      "tail": "phone",
+      "head": "write down order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1159,
+        601,
+        1322,
+        649
+      ],
+      "label": null
+    },
+    {
+      "tail": "website",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1105,
+        390,
+        1415,
+        439
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "print order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1521,
+        420,
+        1808,
+        468
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1455,
+        302,
+        1504,
+        375
+      ],
+      "label": null
+    },
+    {
+      "tail": "Liferando",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1065,
+        169,
+        1288,
+        218
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "website",
+      "class": "sequenceFlow",
+      "bbox": [
+        842,
+        383,
+        919,
+        691
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "phone",
+      "class": "sequenceFlow",
+      "bbox": [
+        731,
+        598,
+        1006,
+        802
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "Liferando",
+      "class": "sequenceFlow",
+      "bbox": [
+        712,
+        193,
+        915,
+        615
+      ],
+      "label": null
+    },
+    {
+      "tail": "event_1",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        363,
+        689,
+        633,
+        737
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order",
+      "head": "order note paper",
+      "class": "dataAssociation",
+      "bbox": [
+        1483,
+        683,
+        2255,
+        775
+      ],
+      "label": null
+    },
+    {
+      "tail": "print order",
+      "head": "order note paper",
+      "class": "dataAssociation",
+      "bbox": [
+        2132,
+        422,
+        2255,
+        532
+      ],
+      "label": null
+    },
+    {
+      "tail": "order note paper",
+      "head": "attach to clipboard",
+      "class": "dataAssociation",
+      "bbox": [
+        2172,
+        608,
+        2376,
+        945
+      ],
+      "label": null
+    }
+  ],
+  "groups": []
+}

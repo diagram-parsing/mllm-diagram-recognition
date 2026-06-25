@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "text": "unvaccinated",
+      "id": "unvaccinated",
+      "class": "oval"
+    },
+    {
+      "text": "Locarnist derivately",
+      "id": "Locarnist derivately",
+      "class": "parallelogram"
+    },
+    {
+      "text": "mediastinum katalyst",
+      "id": "mediastinum katalyst",
+      "class": "document"
+    },
+    {
+      "text": "apractic",
+      "id": "apractic",
+      "class": "hexagon"
+    },
+    {
+      "text": "protonephridial",
+      "id": "protonephridial",
+      "class": "diamond"
+    },
+    {
+      "text": "termage",
+      "id": "termage",
+      "class": "parallelogram"
+    },
+    {
+      "text": "mildewy blackbirding quaternio",
+      "id": "mildewy blackbirding quaternio",
+      "class": "hexagon"
+    },
+    {
+      "text": "myocolpitis",
+      "id": "myocolpitis",
+      "class": "diamond"
+    },
+    {
+      "text": "attaint",
+      "id": "attaint",
+      "class": "circle"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unvaccinated",
+      "head": "Locarnist derivately",
+      "label": null
+    },
+    {
+      "tail": "Locarnist derivately",
+      "head": "mediastinum katalyst",
+      "label": null
+    },
+    {
+      "tail": "mediastinum katalyst",
+      "head": "apractic",
+      "label": null
+    },
+    {
+      "tail": "apractic",
+      "head": "protonephridial",
+      "label": null
+    },
+    {
+      "tail": "protonephridial",
+      "head": "termage",
+      "label": "No"
+    },
+    {
+      "tail": "protonephridial",
+      "head": "apractic",
+      "label": "No"
+    },
+    {
+      "tail": "termage",
+      "head": "mildewy blackbirding quaternio",
+      "label": null
+    },
+    {
+      "tail": "mildewy blackbirding quaternio",
+      "head": "myocolpitis",
+      "label": null
+    },
+    {
+      "tail": "myocolpitis",
+      "head": "attaint",
+      "label": "yes"
+    },
+    {
+      "tail": "myocolpitis",
+      "head": "mildewy blackbirding quaternio",
+      "label": "yes"
+    }
+  ]
+}

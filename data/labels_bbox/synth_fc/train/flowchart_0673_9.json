@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "text": "assai prionine",
+      "id": "assai prionine",
+      "class": "ellipse",
+      "bbox": [
+        19,
+        5,
+        99,
+        57
+      ]
+    },
+    {
+      "text": "disanalogous",
+      "id": "disanalogous",
+      "class": "hexagon",
+      "bbox": [
+        14,
+        168,
+        104,
+        228
+      ]
+    },
+    {
+      "text": "copse",
+      "id": "copse",
+      "class": "diamond",
+      "bbox": [
+        7,
+        299,
+        111,
+        347
+      ]
+    },
+    {
+      "text": "verminicide",
+      "id": "verminicide",
+      "class": "diamond",
+      "bbox": [
+        6,
+        495,
+        112,
+        568
+      ]
+    },
+    {
+      "text": "symphonion",
+      "id": "symphonion",
+      "class": "document",
+      "bbox": [
+        333,
+        537,
+        452,
+        609
+      ]
+    },
+    {
+      "text": "compensation",
+      "id": "compensation",
+      "class": "box",
+      "bbox": [
+        356,
+        174,
+        428,
+        222
+      ]
+    },
+    {
+      "text": "scientician",
+      "id": "scientician",
+      "class": "diamond",
+      "bbox": [
+        325,
+        341,
+        460,
+        389
+      ]
+    },
+    {
+      "text": "ascriptitii languidness",
+      "id": "ascriptitii languidness",
+      "class": "parallelogram",
+      "bbox": [
+        316,
+        620,
+        463,
+        693
+      ]
+    },
+    {
+      "text": "subtense",
+      "id": "subtense",
+      "class": "oval",
+      "bbox": [
+        352,
+        841,
+        433,
+        883
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "assai prionine",
+      "head": "disanalogous",
+      "label": null,
+      "bbox": [
+        54,
+        58,
+        64,
+        166
+      ]
+    },
+    {
+      "tail": "disanalogous",
+      "head": "copse",
+      "label": null,
+      "bbox": [
+        54,
+        228,
+        64,
+        297
+      ]
+    },
+    {
+      "tail": "copse",
+      "head": "verminicide",
+      "label": "YES",
+      "bbox": [
+        54,
+        348,
+        64,
+        493
+      ]
+    },
+    {
+      "tail": "copse",
+      "head": "symphonion",
+      "label": "YES",
+      "bbox": [
+        102,
+        327,
+        332,
+        552
+      ]
+    },
+    {
+      "tail": "verminicide",
+      "head": "compensation",
+      "label": "Yes",
+      "bbox": [
+        92,
+        193,
+        355,
+        517
+      ]
+    },
+    {
+      "tail": "verminicide",
+      "head": "symphonion",
+      "label": "Yes",
+      "bbox": [
+        75,
+        553,
+        332,
+        563
+      ]
+    },
+    {
+      "tail": "compensation",
+      "head": "scientician",
+      "label": null,
+      "bbox": [
+        388,
+        223,
+        397,
+        339
+      ]
+    },
+    {
+      "tail": "scientician",
+      "head": "symphonion",
+      "label": "NO",
+      "bbox": [
+        388,
+        389,
+        397,
+        536
+      ]
+    },
+    {
+      "tail": "scientician",
+      "head": "copse",
+      "label": "NO",
+      "bbox": [
+        94,
+        309,
+        341,
+        358
+      ]
+    },
+    {
+      "tail": "symphonion",
+      "head": "ascriptitii languidness",
+      "label": null,
+      "bbox": [
+        388,
+        605,
+        397,
+        618
+      ]
+    },
+    {
+      "tail": "ascriptitii languidness",
+      "head": "subtense",
+      "label": null,
+      "bbox": [
+        388,
+        694,
+        397,
+        839
+      ]
+    }
+  ]
+}

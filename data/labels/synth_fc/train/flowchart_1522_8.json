@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "recede eventime",
+      "id": "recede eventime",
+      "class": "oval"
+    },
+    {
+      "text": "diplosphene moochulka",
+      "id": "diplosphene moochulka",
+      "class": "box"
+    },
+    {
+      "text": "Yildun",
+      "id": "Yildun",
+      "class": "parallelogram"
+    },
+    {
+      "text": "glucofrangulin",
+      "id": "glucofrangulin",
+      "class": "diamond"
+    },
+    {
+      "text": "cerebrin precollector",
+      "id": "cerebrin precollector",
+      "class": "box"
+    },
+    {
+      "text": "Alphecca bundweed",
+      "id": "Alphecca bundweed",
+      "class": "box"
+    },
+    {
+      "text": "metoposcopic capillation misco",
+      "id": "metoposcopic capillation misco",
+      "class": "diamond"
+    },
+    {
+      "text": "blaubok",
+      "id": "blaubok",
+      "class": "ellipse"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "recede eventime",
+      "head": "diplosphene moochulka",
+      "label": null
+    },
+    {
+      "tail": "diplosphene moochulka",
+      "head": "Yildun",
+      "label": null
+    },
+    {
+      "tail": "Yildun",
+      "head": "glucofrangulin",
+      "label": null
+    },
+    {
+      "tail": "glucofrangulin",
+      "head": "cerebrin precollector",
+      "label": "Yes"
+    },
+    {
+      "tail": "glucofrangulin",
+      "head": "Alphecca bundweed",
+      "label": "Yes"
+    },
+    {
+      "tail": "cerebrin precollector",
+      "head": "metoposcopic capillation misco",
+      "label": null
+    },
+    {
+      "tail": "metoposcopic capillation misco",
+      "head": "Alphecca bundweed",
+      "label": "No"
+    },
+    {
+      "tail": "metoposcopic capillation misco",
+      "head": "glucofrangulin",
+      "label": "No"
+    },
+    {
+      "tail": "Alphecca bundweed",
+      "head": "blaubok",
+      "label": null
+    }
+  ]
+}

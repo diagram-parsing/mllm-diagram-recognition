@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "text": "quietism",
+      "id": "quietism",
+      "class": "circle",
+      "bbox": [
+        42,
+        5,
+        123,
+        86
+      ]
+    },
+    {
+      "text": "northmost",
+      "id": "northmost",
+      "class": "box",
+      "bbox": [
+        47,
+        129,
+        119,
+        177
+      ]
+    },
+    {
+      "text": "pentamethylene",
+      "id": "pentamethylene",
+      "class": "box",
+      "bbox": [
+        28,
+        194,
+        137,
+        242
+      ]
+    },
+    {
+      "text": "fractonimbus",
+      "id": "fractonimbus",
+      "class": "diamond",
+      "bbox": [
+        5,
+        280,
+        155,
+        328
+      ]
+    },
+    {
+      "text": "smalter",
+      "id": "smalter",
+      "class": "hexagon",
+      "bbox": [
+        34,
+        366,
+        131,
+        414
+      ]
+    },
+    {
+      "text": "Narcissus slackly guilt",
+      "id": "Narcissus slackly guilt",
+      "class": "hexagon",
+      "bbox": [
+        19,
+        425,
+        146,
+        485
+      ]
+    },
+    {
+      "text": "nonvital halophilous",
+      "id": "nonvital halophilous",
+      "class": "oval",
+      "bbox": [
+        34,
+        537,
+        132,
+        583
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "quietism",
+      "head": "northmost",
+      "label": null,
+      "bbox": [
+        78,
+        86,
+        87,
+        130
+      ]
+    },
+    {
+      "tail": "northmost",
+      "head": "pentamethylene",
+      "label": null,
+      "bbox": [
+        78,
+        177,
+        87,
+        194
+      ]
+    },
+    {
+      "tail": "pentamethylene",
+      "head": "fractonimbus",
+      "label": null,
+      "bbox": [
+        60,
+        242,
+        69,
+        286
+      ]
+    },
+    {
+      "tail": "fractonimbus",
+      "head": "smalter",
+      "label": "yes",
+      "bbox": [
+        78,
+        328,
+        87,
+        366
+      ]
+    },
+    {
+      "tail": "fractonimbus",
+      "head": "pentamethylene",
+      "label": "yes",
+      "bbox": [
+        96,
+        242,
+        105,
+        286
+      ]
+    },
+    {
+      "tail": "smalter",
+      "head": "Narcissus slackly guilt",
+      "label": null,
+      "bbox": [
+        78,
+        412,
+        87,
+        425
+      ]
+    },
+    {
+      "tail": "Narcissus slackly guilt",
+      "head": "nonvital halophilous",
+      "label": null,
+      "bbox": [
+        78,
+        484,
+        87,
+        537
+      ]
+    }
+  ]
+}

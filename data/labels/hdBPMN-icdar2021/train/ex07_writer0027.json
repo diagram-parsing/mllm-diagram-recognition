@@ -1,0 +1,219 @@
+{
+  "nodes": [
+    {
+      "text": "new case",
+      "id": "new case",
+      "class": "event"
+    },
+    {
+      "text": "case finished",
+      "id": "case finished",
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "filling a cheque",
+      "id": "filling a cheque",
+      "class": "task"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "class": "task"
+    },
+    {
+      "text": "ask expert for review",
+      "id": "ask expert for review",
+      "class": "task"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "class": "task"
+    },
+    {
+      "text": "review received",
+      "id": "review received",
+      "class": "messageEvent"
+    },
+    {
+      "text": "forward review",
+      "id": "forward review",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "send payment",
+      "id": "send payment",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "interviewing patients",
+      "id": "interviewing patients",
+      "class": "subProcess"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "forward review",
+      "head": "ask expert for review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "review received",
+      "head": "forward review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "filling a cheque",
+      "head": "send payment",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask expert for review",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "ask expert for review",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "filling a cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "case finished",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "interviewing patients",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "interviewing patients",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new case",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "ask expert for review",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": "question"
+    },
+    {
+      "tail": "experts",
+      "head": "review received",
+      "class": "messageFlow",
+      "label": "review"
+    },
+    {
+      "tail": "send payment",
+      "head": "experts",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "managing director",
+        "QA specialist"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "filling a cheque",
+        "review received",
+        "forward review",
+        "send payment"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "new case",
+        "case finished",
+        "create report",
+        "file results",
+        "ask expert for review",
+        "file results",
+        "parallelGateway_1",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "interviewing patients"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "experts",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "nodes": [
+    {
+      "text": "ask external expert to review the work of the doctor underrating",
+      "id": "ask external expert to review the work of the doctor underrating",
+      "bbox": [
+        1056,
+        527,
+        1597,
+        707
+      ],
+      "class": "task"
+    },
+    {
+      "text": "ask another external expert",
+      "id": "ask another external expert",
+      "bbox": [
+        1053,
+        820,
+        1491,
+        954
+      ],
+      "class": "task"
+    },
+    {
+      "text": "receives expertise",
+      "id": "receives expertise",
+      "bbox": [
+        1082,
+        1113,
+        1391,
+        1237
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forward the expertise",
+      "id": "forward the expertise",
+      "bbox": [
+        1083,
+        1296,
+        1392,
+        1425
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        1184,
+        1522,
+        1237,
+        1588
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "results get filled",
+      "id": "results get filled",
+      "bbox": [
+        342,
+        1523,
+        686,
+        1662
+      ],
+      "class": "task"
+    },
+    {
+      "text": "filling a cheque and sending it to the expert",
+      "id": "filling a cheque and sending it to the expert",
+      "bbox": [
+        1029,
+        1639,
+        1448,
+        1844
+      ],
+      "class": "task"
+    },
+    {
+      "text": "report created",
+      "id": "report created",
+      "bbox": [
+        408,
+        1763,
+        471,
+        1823
+      ],
+      "class": "event"
+    },
+    {
+      "text": "patient interview workflow",
+      "id": "patient interview workflow",
+      "bbox": [
+        469,
+        579,
+        917,
+        691
+      ],
+      "class": "task"
+    },
+    {
+      "text": "new case",
+      "id": "new case",
+      "bbox": [
+        222,
+        587,
+        275,
+        642
+      ],
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        329,
+        587,
+        396,
+        647
+      ],
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "parallelGateway_2",
+      "head": "ask external expert to review the work of the doctor underrating",
+      "class": "sequenceFlow",
+      "bbox": [
+        365,
+        520,
+        1058,
+        614
+      ],
+      "label": null
+    },
+    {
+      "tail": "new case",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        273,
+        593,
+        334,
+        643
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "patient interview workflow",
+      "class": "sequenceFlow",
+      "bbox": [
+        394,
+        594,
+        471,
+        644
+      ],
+      "label": null
+    },
+    {
+      "tail": "receives expertise",
+      "head": "forward the expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1187,
+        1236,
+        1237,
+        1298
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward the expertise",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1190,
+        1425,
+        1239,
+        1529
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "results get filled",
+      "class": "sequenceFlow",
+      "bbox": [
+        686,
+        1532,
+        1186,
+        1582
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "filling a cheque and sending it to the expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1187,
+        1587,
+        1237,
+        1641
+      ],
+      "label": null
+    },
+    {
+      "tail": "results get filled",
+      "head": "report created",
+      "class": "sequenceFlow",
+      "bbox": [
+        416,
+        1662,
+        465,
+        1765
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask external expert to review the work of the doctor underrating",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        1597,
+        586,
+        1925,
+        635
+      ],
+      "label": null
+    },
+    {
+      "tail": "ask another external expert",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        1488,
+        817,
+        1925,
+        867
+      ],
+      "label": null
+    },
+    {
+      "tail": "external expert",
+      "head": "ask another external expert",
+      "class": "messageFlow",
+      "bbox": [
+        1491,
+        893,
+        1925,
+        943
+      ],
+      "label": "not responding in time"
+    },
+    {
+      "tail": "external expert",
+      "head": "receives expertise",
+      "class": "messageFlow",
+      "bbox": [
+        1391,
+        1145,
+        1925,
+        1194
+      ],
+      "label": "expertise send"
+    },
+    {
+      "tail": "filling a cheque and sending it to the expert",
+      "head": "external expert",
+      "class": "messageFlow",
+      "bbox": [
+        1448,
+        1696,
+        1925,
+        1746
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [],
+      "bbox": [
+        147,
+        280,
+        1639,
+        1996
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "external expert",
+      "nodes": [],
+      "bbox": [
+        1923,
+        448,
+        2039,
+        1992
+      ],
+      "class": "pool"
+    }
+  ]
+}

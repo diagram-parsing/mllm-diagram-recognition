@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "text": "Calathea",
+      "id": "Calathea",
+      "class": "node",
+      "bbox": [
+        278,
+        175,
+        400,
+        223
+      ]
+    },
+    {
+      "text": "iliotrochanteric ophthalmoleuc",
+      "id": "iliotrochanteric ophthalmoleuc",
+      "class": "node",
+      "bbox": [
+        5,
+        173,
+        159,
+        224
+      ]
+    },
+    {
+      "text": "grime",
+      "id": "grime",
+      "class": "node",
+      "bbox": [
+        528,
+        204,
+        615,
+        247
+      ]
+    },
+    {
+      "text": "persist",
+      "id": "persist",
+      "class": "node",
+      "bbox": [
+        523,
+        132,
+        620,
+        180
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Calathea",
+      "head": "iliotrochanteric ophthalmoleuc",
+      "label": "0.01** f = 0.483",
+      "class": "unidirectional",
+      "bbox": [
+        160,
+        192,
+        278,
+        206
+      ]
+    },
+    {
+      "tail": "grime",
+      "head": "Calathea",
+      "label": "0.705",
+      "class": "unidirectional",
+      "bbox": [
+        393,
+        210,
+        527,
+        226
+      ]
+    },
+    {
+      "tail": "persist",
+      "head": "Calathea",
+      "label": "-0.29 s = 0.147",
+      "class": "unidirectional",
+      "bbox": [
+        396,
+        164,
+        526,
+        192
+      ]
+    }
+  ]
+}

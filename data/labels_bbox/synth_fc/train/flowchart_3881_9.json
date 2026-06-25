@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "amidoketone",
+      "id": "amidoketone",
+      "class": "oval",
+      "bbox": [
+        26,
+        56,
+        103,
+        108
+      ]
+    },
+    {
+      "text": "prodigiousness",
+      "id": "prodigiousness",
+      "class": "box",
+      "bbox": [
+        13,
+        119,
+        116,
+        167
+      ]
+    },
+    {
+      "text": "unlay",
+      "id": "unlay",
+      "class": "diamond",
+      "bbox": [
+        14,
+        200,
+        115,
+        248
+      ]
+    },
+    {
+      "text": "dentex",
+      "id": "dentex",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        281,
+        123,
+        329
+      ]
+    },
+    {
+      "text": "scrimshon dissatisfiedness",
+      "id": "scrimshon dissatisfiedness",
+      "class": "parallelogram",
+      "bbox": [
+        136,
+        5,
+        310,
+        79
+      ]
+    },
+    {
+      "text": "cornbin purga oosperm",
+      "id": "cornbin purga oosperm",
+      "class": "hexagon",
+      "bbox": [
+        166,
+        113,
+        286,
+        173
+      ]
+    },
+    {
+      "text": "pretraining",
+      "id": "pretraining",
+      "class": "document",
+      "bbox": [
+        190,
+        200,
+        262,
+        248
+      ]
+    },
+    {
+      "text": "lipography",
+      "id": "lipography",
+      "class": "diamond",
+      "bbox": [
+        158,
+        281,
+        294,
+        329
+      ]
+    },
+    {
+      "text": "antler",
+      "id": "antler",
+      "class": "circle",
+      "bbox": [
+        190,
+        350,
+        262,
+        416
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "amidoketone",
+      "head": "prodigiousness",
+      "label": null,
+      "bbox": [
+        58,
+        105,
+        70,
+        118
+      ]
+    },
+    {
+      "tail": "prodigiousness",
+      "head": "unlay",
+      "label": null,
+      "bbox": [
+        58,
+        167,
+        70,
+        200
+      ]
+    },
+    {
+      "tail": "unlay",
+      "head": "dentex",
+      "label": "Yes",
+      "bbox": [
+        58,
+        248,
+        70,
+        280
+      ]
+    },
+    {
+      "tail": "unlay",
+      "head": "scrimshon dissatisfiedness",
+      "label": "Yes",
+      "bbox": [
+        116,
+        79,
+        150,
+        224
+      ]
+    },
+    {
+      "tail": "dentex",
+      "head": "scrimshon dissatisfiedness",
+      "label": null,
+      "bbox": [
+        112,
+        79,
+        157,
+        305
+      ]
+    },
+    {
+      "tail": "scrimshon dissatisfiedness",
+      "head": "cornbin purga oosperm",
+      "label": null,
+      "bbox": [
+        220,
+        79,
+        232,
+        113
+      ]
+    },
+    {
+      "tail": "cornbin purga oosperm",
+      "head": "pretraining",
+      "label": null,
+      "bbox": [
+        220,
+        174,
+        232,
+        200
+      ]
+    },
+    {
+      "tail": "pretraining",
+      "head": "lipography",
+      "label": null,
+      "bbox": [
+        208,
+        248,
+        220,
+        285
+      ]
+    },
+    {
+      "tail": "lipography",
+      "head": "antler",
+      "label": "no",
+      "bbox": [
+        220,
+        329,
+        232,
+        349
+      ]
+    },
+    {
+      "tail": "lipography",
+      "head": "pretraining",
+      "label": "no",
+      "bbox": [
+        232,
+        247,
+        244,
+        284
+      ]
+    }
+  ]
+}

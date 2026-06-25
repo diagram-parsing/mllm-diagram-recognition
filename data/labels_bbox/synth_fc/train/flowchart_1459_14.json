@@ -1,0 +1,325 @@
+{
+  "nodes": [
+    {
+      "text": "boliviano",
+      "id": "boliviano",
+      "class": "circle",
+      "bbox": [
+        92,
+        18,
+        155,
+        80
+      ]
+    },
+    {
+      "text": "sulphoindigotic",
+      "id": "sulphoindigotic",
+      "class": "parallelogram",
+      "bbox": [
+        29,
+        123,
+        217,
+        171
+      ]
+    },
+    {
+      "text": "jaborine",
+      "id": "jaborine",
+      "class": "box",
+      "bbox": [
+        87,
+        181,
+        159,
+        229
+      ]
+    },
+    {
+      "text": "peristomium",
+      "id": "peristomium",
+      "class": "diamond",
+      "bbox": [
+        70,
+        247,
+        177,
+        320
+      ]
+    },
+    {
+      "text": "kiladja frig",
+      "id": "kiladja frig",
+      "class": "document",
+      "bbox": [
+        87,
+        338,
+        159,
+        380
+      ]
+    },
+    {
+      "text": "inauthenticity",
+      "id": "inauthenticity",
+      "class": "hexagon",
+      "bbox": [
+        388,
+        175,
+        485,
+        235
+      ]
+    },
+    {
+      "text": "curvinerved",
+      "id": "curvinerved",
+      "class": "document",
+      "bbox": [
+        237,
+        5,
+        323,
+        53
+      ]
+    },
+    {
+      "text": "spor prodroma misreward",
+      "id": "spor prodroma misreward",
+      "class": "document",
+      "bbox": [
+        238,
+        84,
+        321,
+        132
+      ]
+    },
+    {
+      "text": "sclerogenous coresidual drafte",
+      "id": "sclerogenous coresidual drafte",
+      "class": "document",
+      "bbox": [
+        232,
+        181,
+        328,
+        229
+      ]
+    },
+    {
+      "text": "octofid",
+      "id": "octofid",
+      "class": "document",
+      "bbox": [
+        244,
+        260,
+        316,
+        308
+      ]
+    },
+    {
+      "text": "gallous",
+      "id": "gallous",
+      "class": "parallelogram",
+      "bbox": [
+        218,
+        338,
+        342,
+        380
+      ]
+    },
+    {
+      "text": "illiquidity seroprevention",
+      "id": "illiquidity seroprevention",
+      "class": "diamond",
+      "bbox": [
+        356,
+        12,
+        511,
+        86
+      ]
+    },
+    {
+      "text": "yabu",
+      "id": "yabu",
+      "class": "parallelogram",
+      "bbox": [
+        387,
+        103,
+        485,
+        151
+      ]
+    },
+    {
+      "text": "bocal",
+      "id": "bocal",
+      "class": "circle",
+      "bbox": [
+        401,
+        248,
+        471,
+        319
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "boliviano",
+      "head": "sulphoindigotic",
+      "label": null,
+      "bbox": [
+        119,
+        80,
+        128,
+        121
+      ]
+    },
+    {
+      "tail": "sulphoindigotic",
+      "head": "jaborine",
+      "label": null,
+      "bbox": [
+        119,
+        166,
+        128,
+        179
+      ]
+    },
+    {
+      "tail": "jaborine",
+      "head": "peristomium",
+      "label": null,
+      "bbox": [
+        119,
+        230,
+        128,
+        245
+      ]
+    },
+    {
+      "tail": "peristomium",
+      "head": "kiladja frig",
+      "label": "yes",
+      "bbox": [
+        119,
+        321,
+        128,
+        337
+      ]
+    },
+    {
+      "tail": "peristomium",
+      "head": "inauthenticity",
+      "label": "yes",
+      "bbox": [
+        136,
+        216,
+        399,
+        255
+      ]
+    },
+    {
+      "tail": "kiladja frig",
+      "head": "curvinerved",
+      "label": null,
+      "bbox": [
+        5,
+        8,
+        236,
+        363
+      ]
+    },
+    {
+      "tail": "curvinerved",
+      "head": "spor prodroma misreward",
+      "label": null,
+      "bbox": [
+        275,
+        53,
+        284,
+        82
+      ]
+    },
+    {
+      "tail": "spor prodroma misreward",
+      "head": "sclerogenous coresidual drafte",
+      "label": null,
+      "bbox": [
+        275,
+        131,
+        284,
+        180
+      ]
+    },
+    {
+      "tail": "sclerogenous coresidual drafte",
+      "head": "octofid",
+      "label": null,
+      "bbox": [
+        275,
+        229,
+        284,
+        258
+      ]
+    },
+    {
+      "tail": "octofid",
+      "head": "gallous",
+      "label": null,
+      "bbox": [
+        275,
+        307,
+        284,
+        336
+      ]
+    },
+    {
+      "tail": "gallous",
+      "head": "illiquidity seroprevention",
+      "label": null,
+      "bbox": [
+        335,
+        62,
+        393,
+        337
+      ]
+    },
+    {
+      "tail": "illiquidity seroprevention",
+      "head": "yabu",
+      "label": "YES",
+      "bbox": [
+        432,
+        86,
+        441,
+        102
+      ]
+    },
+    {
+      "tail": "illiquidity seroprevention",
+      "head": "sulphoindigotic",
+      "label": "YES",
+      "bbox": [
+        204,
+        57,
+        372,
+        146
+      ]
+    },
+    {
+      "tail": "yabu",
+      "head": "inauthenticity",
+      "label": null,
+      "bbox": [
+        432,
+        151,
+        441,
+        174
+      ]
+    },
+    {
+      "tail": "inauthenticity",
+      "head": "bocal",
+      "label": null,
+      "bbox": [
+        432,
+        233,
+        441,
+        247
+      ]
+    }
+  ]
+}

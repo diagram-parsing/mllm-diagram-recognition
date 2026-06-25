@@ -1,0 +1,501 @@
+{
+  "nodes": [
+    {
+      "text": "start new case",
+      "id": "start new case",
+      "bbox": [
+        383,
+        264,
+        463,
+        344
+      ],
+      "class": "event"
+    },
+    {
+      "text": "finished review",
+      "id": "finished review",
+      "bbox": [
+        2590,
+        238,
+        2707,
+        349
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "bbox": [
+        1947,
+        238,
+        2183,
+        437
+      ],
+      "class": "task"
+    },
+    {
+      "text": "fill a check",
+      "id": "fill a check",
+      "bbox": [
+        1588,
+        1154,
+        1826,
+        1318
+      ],
+      "class": "task"
+    },
+    {
+      "text": "forward to QA",
+      "id": "forward to QA",
+      "bbox": [
+        1162,
+        1143,
+        1387,
+        1301
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "bbox": [
+        515,
+        251,
+        593,
+        343
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results of patients interview",
+      "id": "file results of patients interview",
+      "bbox": [
+        1162,
+        58,
+        1656,
+        304
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "bbox": [
+        1728,
+        308,
+        1810,
+        413
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "bbox": [
+        2395,
+        247,
+        2495,
+        378
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "external expert asked",
+      "id": "external expert asked",
+      "bbox": [
+        450,
+        998,
+        616,
+        1170
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        786,
+        1223,
+        905,
+        1338
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_4",
+      "bbox": [
+        983,
+        1172,
+        1057,
+        1268
+      ],
+      "class": "parallelGateway"
+    },
+    {
+      "text": "cheque sent to expert",
+      "id": "cheque sent to expert",
+      "bbox": [
+        1947,
+        1160,
+        2142,
+        1344
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "no response in time",
+      "id": "no response in time",
+      "bbox": [
+        803,
+        881,
+        913,
+        985
+      ],
+      "class": "timerEvent"
+    },
+    {
+      "text": "interview patient",
+      "id": "interview patient",
+      "bbox": [
+        714,
+        238,
+        940,
+        392
+      ],
+      "class": "subProcess"
+    },
+    {
+      "text": "file results of expertise",
+      "id": "file results of expertise",
+      "bbox": [
+        1004,
+        438,
+        1297,
+        634
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "bbox": [
+        784,
+        1047,
+        901,
+        1162
+      ],
+      "class": "eventBasedGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "file results of expertise",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1297,
+        413,
+        1771,
+        524
+      ],
+      "label": null
+    },
+    {
+      "tail": "forward to QA",
+      "head": "file results of expertise",
+      "class": "sequenceFlow",
+      "bbox": [
+        1158,
+        634,
+        1252,
+        1145
+      ],
+      "label": null
+    },
+    {
+      "tail": "cheque sent to expert",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        2046,
+        368,
+        2440,
+        1156
+      ],
+      "label": null
+    },
+    {
+      "tail": "fill a check",
+      "head": "cheque sent to expert",
+      "class": "sequenceFlow",
+      "bbox": [
+        1826,
+        1223,
+        1949,
+        1283
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "fill a check",
+      "class": "sequenceFlow",
+      "bbox": [
+        1028,
+        1066,
+        1701,
+        1184
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_4",
+      "head": "forward to QA",
+      "class": "sequenceFlow",
+      "bbox": [
+        1055,
+        1193,
+        1164,
+        1254
+      ],
+      "label": null
+    },
+    {
+      "tail": "no response in time",
+      "head": "external expert asked",
+      "class": "sequenceFlow",
+      "bbox": [
+        600,
+        932,
+        805,
+        1037
+      ],
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "no response in time",
+      "class": "sequenceFlow",
+      "bbox": [
+        817,
+        987,
+        877,
+        1051
+      ],
+      "label": null
+    },
+    {
+      "tail": "external expert asked",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        616,
+        1064,
+        788,
+        1124
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "external expert asked",
+      "class": "sequenceFlow",
+      "bbox": [
+        532,
+        323,
+        626,
+        1004
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "finished review",
+      "class": "sequenceFlow",
+      "bbox": [
+        2489,
+        268,
+        2592,
+        328
+      ],
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        2183,
+        298,
+        2409,
+        358
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "bbox": [
+        1785,
+        298,
+        1949,
+        358
+      ],
+      "label": null
+    },
+    {
+      "tail": "file results of patients interview",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1656,
+        179,
+        1769,
+        312
+      ],
+      "label": null
+    },
+    {
+      "tail": "interview patient",
+      "head": "file results of patients interview",
+      "class": "sequenceFlow",
+      "bbox": [
+        940,
+        218,
+        1164,
+        278
+      ],
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "interview patient",
+      "class": "sequenceFlow",
+      "bbox": [
+        587,
+        275,
+        716,
+        335
+      ],
+      "label": null
+    },
+    {
+      "tail": "start new case",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        462,
+        275,
+        522,
+        335
+      ],
+      "label": null
+    },
+    {
+      "tail": "external expert asked",
+      "head": "umpung expert",
+      "class": "messageFlow",
+      "bbox": [
+        550,
+        1153,
+        610,
+        1837
+      ],
+      "label": "work of doctor"
+    },
+    {
+      "tail": "umpung expert",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        817,
+        1340,
+        877,
+        1837
+      ],
+      "label": "expertise"
+    },
+    {
+      "tail": "cheque sent to expert",
+      "head": "umpung expert",
+      "class": "messageFlow",
+      "bbox": [
+        2017,
+        1350,
+        2077,
+        1837
+      ],
+      "label": "cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Hospital",
+      "nodes": [
+        "managing director",
+        "QA specialist"
+      ],
+      "bbox": [
+        206,
+        70,
+        2819,
+        1469
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "fill a check",
+        "forward to QA",
+        "external expert asked",
+        "messageEvent_1",
+        "parallelGateway_4",
+        "cheque sent to expert",
+        "no response in time",
+        "eventBasedGateway_1"
+      ],
+      "bbox": [
+        275,
+        819,
+        2821,
+        1469
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "QA specialist",
+      "nodes": [
+        "start new case",
+        "finished review",
+        "create report",
+        "parallelGateway_1",
+        "file results of patients interview",
+        "parallelGateway_2",
+        "parallelGateway_3",
+        "interview patient",
+        "file results of expertise"
+      ],
+      "bbox": [
+        275,
+        70,
+        2821,
+        819
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "umpung expert",
+      "nodes": [],
+      "bbox": [
+        198,
+        1835,
+        2419,
+        1986
+      ],
+      "class": "pool"
+    }
+  ]
+}

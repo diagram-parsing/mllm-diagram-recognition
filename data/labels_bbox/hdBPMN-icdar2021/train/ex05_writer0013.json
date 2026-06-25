@@ -1,0 +1,572 @@
+{
+  "nodes": [
+    {
+      "text": "check Documentation",
+      "id": "check Documentation",
+      "bbox": [
+        225,
+        623,
+        358,
+        729
+      ],
+      "class": "task"
+    },
+    {
+      "text": "Documentation cancelled",
+      "id": "Documentation cancelled",
+      "bbox": [
+        433,
+        647,
+        485,
+        699
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Register documentation",
+      "id": "Register documentation",
+      "bbox": [
+        557,
+        636,
+        686,
+        725
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check insurance",
+      "id": "check insurance",
+      "bbox": [
+        752,
+        949,
+        875,
+        1048
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        949,
+        967,
+        1007,
+        1024
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "perform assessment",
+      "id": "perform assessment",
+      "bbox": [
+        1088,
+        948,
+        1207,
+        1048
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1283,
+        968,
+        1336,
+        1031
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "Authorize repairs",
+      "id": "Authorize repairs",
+      "bbox": [
+        1415,
+        975,
+        1470,
+        1026
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "Auhtorize repairs",
+      "id": "Auhtorize repairs",
+      "bbox": [
+        1555,
+        977,
+        1602,
+        1025
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "schedule payment",
+      "id": "schedule payment",
+      "bbox": [
+        1689,
+        955,
+        1817,
+        1044
+      ],
+      "class": "task"
+    },
+    {
+      "text": "claim documentation",
+      "id": "claim documentation",
+      "bbox": [
+        440,
+        837,
+        488,
+        895
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": "letter to customer",
+      "id": "letter to customer",
+      "bbox": [
+        1462,
+        484,
+        1510,
+        550
+      ],
+      "class": "dataObject"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "bbox": [
+        108,
+        648,
+        156,
+        696
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "messageEvent_2",
+      "bbox": [
+        1575,
+        572,
+        1625,
+        611
+      ],
+      "class": "messageEvent"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1314,
+        613,
+        1613,
+        974
+      ],
+      "label": "Assessment not ok"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        981,
+        616,
+        1601,
+        972
+      ],
+      "label": "Insurance not ok"
+    },
+    {
+      "tail": "Documentation cancelled",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        459,
+        608,
+        1583,
+        648
+      ],
+      "label": "Documentation incomplete"
+    },
+    {
+      "tail": "schedule payment",
+      "head": "messageEvent_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1618,
+        608,
+        1779,
+        956
+      ],
+      "label": null
+    },
+    {
+      "tail": "Auhtorize repairs",
+      "head": "schedule payment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1603,
+        983,
+        1690,
+        1021
+      ],
+      "label": null
+    },
+    {
+      "tail": "Authorize repairs",
+      "head": "Auhtorize repairs",
+      "class": "sequenceFlow",
+      "bbox": [
+        1470,
+        982,
+        1556,
+        1021
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "Authorize repairs",
+      "class": "sequenceFlow",
+      "bbox": [
+        1335,
+        982,
+        1416,
+        1021
+      ],
+      "label": "Assessment ok"
+    },
+    {
+      "tail": "perform assessment",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1206,
+        978,
+        1289,
+        1016
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "perform assessment",
+      "class": "sequenceFlow",
+      "bbox": [
+        1005,
+        979,
+        1089,
+        1018
+      ],
+      "label": "Insurance ok"
+    },
+    {
+      "tail": "check insurance",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        875,
+        975,
+        952,
+        1014
+      ],
+      "label": null
+    },
+    {
+      "tail": "Register documentation",
+      "head": "check insurance",
+      "class": "sequenceFlow",
+      "bbox": [
+        686,
+        680,
+        753,
+        1000
+      ],
+      "label": null
+    },
+    {
+      "tail": "Documentation cancelled",
+      "head": "Register documentation",
+      "class": "sequenceFlow",
+      "bbox": [
+        482,
+        657,
+        558,
+        696
+      ],
+      "label": null
+    },
+    {
+      "tail": "check Documentation",
+      "head": "Documentation cancelled",
+      "class": "sequenceFlow",
+      "bbox": [
+        357,
+        657,
+        437,
+        696
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "check Documentation",
+      "class": "sequenceFlow",
+      "bbox": [
+        156,
+        652,
+        226,
+        691
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "claim documentation",
+      "class": "dataAssociation",
+      "bbox": [
+        117,
+        697,
+        441,
+        890
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim documentation",
+      "head": "check Documentation",
+      "class": "dataAssociation",
+      "bbox": [
+        291,
+        729,
+        441,
+        844
+      ],
+      "label": null
+    },
+    {
+      "tail": "check Documentation",
+      "head": "letter to customer",
+      "class": "dataAssociation",
+      "bbox": [
+        291,
+        477,
+        1463,
+        625
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim documentation",
+      "head": "Register documentation",
+      "class": "dataAssociation",
+      "bbox": [
+        488,
+        725,
+        598,
+        864
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim documentation",
+      "head": "check insurance",
+      "class": "dataAssociation",
+      "bbox": [
+        471,
+        895,
+        753,
+        1036
+      ],
+      "label": null
+    },
+    {
+      "tail": "check insurance",
+      "head": "letter to customer",
+      "class": "dataAssociation",
+      "bbox": [
+        816,
+        511,
+        1463,
+        950
+      ],
+      "label": null
+    },
+    {
+      "tail": "claim documentation",
+      "head": "perform assessment",
+      "class": "dataAssociation",
+      "bbox": [
+        451,
+        895,
+        1148,
+        1075
+      ],
+      "label": null
+    },
+    {
+      "tail": "perform assessment",
+      "head": "letter to customer",
+      "class": "dataAssociation",
+      "bbox": [
+        1147,
+        544,
+        1463,
+        950
+      ],
+      "label": null
+    },
+    {
+      "tail": "schedule payment",
+      "head": "letter to customer",
+      "class": "dataAssociation",
+      "bbox": [
+        1472,
+        550,
+        1725,
+        952
+      ],
+      "label": null
+    },
+    {
+      "tail": "Authorize repairs",
+      "head": "Garage",
+      "class": "messageFlow",
+      "bbox": [
+        1427,
+        1028,
+        1465,
+        1138
+      ],
+      "label": null
+    },
+    {
+      "tail": "Garage",
+      "head": "Auhtorize repairs",
+      "class": "messageFlow",
+      "bbox": [
+        1560,
+        1025,
+        1598,
+        1138
+      ],
+      "label": null
+    },
+    {
+      "tail": "messageEvent_2",
+      "head": "customer",
+      "class": "messageFlow",
+      "bbox": [
+        1581,
+        423,
+        1619,
+        567
+      ],
+      "label": null
+    },
+    {
+      "tail": "customer",
+      "head": "messageEvent_1",
+      "class": "messageFlow",
+      "bbox": [
+        114,
+        423,
+        152,
+        649
+      ],
+      "label": null
+    },
+    {
+      "tail": "letter to customer",
+      "head": "messageEvent_2",
+      "class": "dataAssociation",
+      "bbox": [
+        1486,
+        550,
+        1576,
+        592
+      ],
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "Insurance",
+      "nodes": [
+        "Handling department",
+        "Notification Department"
+      ],
+      "bbox": [
+        40,
+        461,
+        1877,
+        1114
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Handling department",
+      "nodes": [
+        "check insurance",
+        "exclusiveGateway_1",
+        "perform assessment",
+        "exclusiveGateway_2",
+        "Authorize repairs",
+        "Auhtorize repairs",
+        "schedule payment"
+      ],
+      "bbox": [
+        80,
+        915,
+        1876,
+        1114
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Notification Department",
+      "nodes": [
+        "check Documentation",
+        "Documentation cancelled",
+        "Register documentation",
+        "claim documentation",
+        "letter to customer",
+        "messageEvent_1",
+        "messageEvent_2"
+      ],
+      "bbox": [
+        80,
+        461,
+        1876,
+        915
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "customer",
+      "nodes": [],
+      "bbox": [
+        51,
+        324,
+        1863,
+        423
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Garage",
+      "nodes": [],
+      "bbox": [
+        41,
+        1137,
+        1880,
+        1186
+      ],
+      "class": "pool"
+    }
+  ]
+}

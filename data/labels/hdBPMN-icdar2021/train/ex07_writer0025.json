@@ -1,0 +1,249 @@
+{
+  "nodes": [
+    {
+      "text": null,
+      "id": "messageEvent_1",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "eventBasedGateway_1",
+      "class": "eventBasedGateway"
+    },
+    {
+      "text": "respond in time over",
+      "id": "respond in time over",
+      "class": "timerEvent"
+    },
+    {
+      "text": "receive feeback",
+      "id": "receive feeback",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "task_1",
+      "class": "task"
+    },
+    {
+      "text": "new doctor rating",
+      "id": "new doctor rating",
+      "class": "event"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "patient interview",
+      "id": "patient interview",
+      "class": "subProcess"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "file results",
+      "id": "file results",
+      "class": "task"
+    },
+    {
+      "text": "create report",
+      "id": "create report",
+      "class": "task"
+    },
+    {
+      "text": "report created",
+      "id": "report created",
+      "class": "event"
+    },
+    {
+      "text": "feedback provided",
+      "id": "feedback provided",
+      "class": "event"
+    },
+    {
+      "text": "send cheque",
+      "id": "send cheque",
+      "class": "messageEvent"
+    },
+    {
+      "text": "forward feedback",
+      "id": "forward feedback",
+      "class": "messageEvent"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_3",
+      "class": "parallelGateway"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send cheque",
+      "head": "feedback provided",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "task_1",
+      "head": "send cheque",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "forward feedback",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "forward feedback",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_3",
+      "head": "task_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "receive feeback",
+      "head": "parallelGateway_3",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "receive feeback",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "respond in time over",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "eventBasedGateway_1",
+      "head": "respond in time over",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "eventBasedGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "messageEvent_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "create report",
+      "head": "report created",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "file results",
+      "head": "create report",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "file results",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "patient interview",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "patient interview",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "new doctor rating",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "messageEvent_1",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": "work of doctor review"
+    },
+    {
+      "tail": "Expert",
+      "head": "receive feeback",
+      "class": "messageFlow",
+      "label": "feedback"
+    },
+    {
+      "tail": "send cheque",
+      "head": "Expert",
+      "class": "messageFlow",
+      "label": "cheque"
+    }
+  ],
+  "groups": [
+    {
+      "name": "hospital",
+      "nodes": [
+        "quality assurance departement",
+        "managing director"
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "quality assurance departement",
+      "nodes": [
+        "new doctor rating",
+        "parallelGateway_1",
+        "patient interview",
+        "parallelGateway_2",
+        "file results",
+        "create report",
+        "report created"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "managing director",
+      "nodes": [
+        "messageEvent_1",
+        "eventBasedGateway_1",
+        "respond in time over",
+        "receive feeback",
+        "task_1",
+        "feedback provided",
+        "send cheque",
+        "forward feedback",
+        "parallelGateway_3"
+      ],
+      "class": "lane"
+    },
+    {
+      "name": "Expert",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

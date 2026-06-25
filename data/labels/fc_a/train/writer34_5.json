@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "text": "Start",
+      "id": "Start",
+      "class": "terminator"
+    },
+    {
+      "text": "more examples?",
+      "id": "more examples?",
+      "class": "decision"
+    },
+    {
+      "text": "update weights",
+      "id": "update weights",
+      "class": "process"
+    },
+    {
+      "text": "next example",
+      "id": "next example",
+      "class": "process"
+    },
+    {
+      "text": "i++",
+      "id": "i++",
+      "class": "process"
+    },
+    {
+      "text": "Stop",
+      "id": "Stop",
+      "class": "terminator"
+    },
+    {
+      "text": "best_error=error",
+      "id": "best_error=error",
+      "class": "process"
+    },
+    {
+      "text": "back to first example",
+      "id": "back to first example",
+      "class": "process"
+    },
+    {
+      "text": "error<best_error",
+      "id": "error<best_error",
+      "class": "decision"
+    },
+    {
+      "text": "i<100?",
+      "id": "i<100?",
+      "class": "decision"
+    },
+    {
+      "text": "save weights",
+      "id": "save weights",
+      "class": "process"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "Start",
+      "head": "more examples?",
+      "label": null
+    },
+    {
+      "tail": "update weights",
+      "head": "next example",
+      "label": null
+    },
+    {
+      "tail": "next example",
+      "head": "more examples?",
+      "label": null
+    },
+    {
+      "tail": "more examples?",
+      "head": "error<best_error",
+      "label": "No"
+    },
+    {
+      "tail": "error<best_error",
+      "head": "i++",
+      "label": "No"
+    },
+    {
+      "tail": "i++",
+      "head": "i<100?",
+      "label": null
+    },
+    {
+      "tail": "i<100?",
+      "head": "Stop",
+      "label": "No"
+    },
+    {
+      "tail": "i<100?",
+      "head": "back to first example",
+      "label": null
+    },
+    {
+      "tail": "error<best_error",
+      "head": "best_error=error",
+      "label": "Yes"
+    },
+    {
+      "tail": "best_error=error",
+      "head": "save weights",
+      "label": null
+    },
+    {
+      "tail": "save weights",
+      "head": "i++",
+      "label": null
+    },
+    {
+      "tail": "back to first example",
+      "head": "more examples?",
+      "label": null
+    },
+    {
+      "tail": "more examples?",
+      "head": "update weights",
+      "label": "Yes"
+    }
+  ]
+}

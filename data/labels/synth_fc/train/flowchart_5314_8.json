@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "text": "seasonality postvertebral",
+      "id": "seasonality postvertebral",
+      "class": "ellipse"
+    },
+    {
+      "text": "Turneresque proxenos",
+      "id": "Turneresque proxenos",
+      "class": "box"
+    },
+    {
+      "text": "canoodler",
+      "id": "canoodler",
+      "class": "diamond"
+    },
+    {
+      "text": "ropiness",
+      "id": "ropiness",
+      "class": "document"
+    },
+    {
+      "text": "doughman",
+      "id": "doughman",
+      "class": "circle"
+    },
+    {
+      "text": "pyopneumoperitonitis",
+      "id": "pyopneumoperitonitis",
+      "class": "diamond"
+    },
+    {
+      "text": "zoanthodemic",
+      "id": "zoanthodemic",
+      "class": "parallelogram"
+    },
+    {
+      "text": "keet habitacule",
+      "id": "keet habitacule",
+      "class": "parallelogram"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "seasonality postvertebral",
+      "head": "Turneresque proxenos",
+      "label": null
+    },
+    {
+      "tail": "Turneresque proxenos",
+      "head": "canoodler",
+      "label": null
+    },
+    {
+      "tail": "canoodler",
+      "head": "ropiness",
+      "label": "No"
+    },
+    {
+      "tail": "canoodler",
+      "head": "doughman",
+      "label": "No"
+    },
+    {
+      "tail": "ropiness",
+      "head": "pyopneumoperitonitis",
+      "label": null
+    },
+    {
+      "tail": "pyopneumoperitonitis",
+      "head": "zoanthodemic",
+      "label": "YES"
+    },
+    {
+      "tail": "pyopneumoperitonitis",
+      "head": "Turneresque proxenos",
+      "label": "YES"
+    },
+    {
+      "tail": "zoanthodemic",
+      "head": "keet habitacule",
+      "label": null
+    },
+    {
+      "tail": "keet habitacule",
+      "head": "doughman",
+      "label": null
+    }
+  ]
+}

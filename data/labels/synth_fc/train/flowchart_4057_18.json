@@ -1,0 +1,211 @@
+{
+  "nodes": [
+    {
+      "text": "pigeoner undedicate",
+      "id": "pigeoner undedicate",
+      "class": "oval"
+    },
+    {
+      "text": "ochlocratic",
+      "id": "ochlocratic",
+      "class": "box"
+    },
+    {
+      "text": "zamarro",
+      "id": "zamarro",
+      "class": "box"
+    },
+    {
+      "text": "ribonucleic",
+      "id": "ribonucleic",
+      "class": "diamond"
+    },
+    {
+      "text": "rectification adenophthalmia",
+      "id": "rectification adenophthalmia",
+      "class": "box"
+    },
+    {
+      "text": "swordsmanship",
+      "id": "swordsmanship",
+      "class": "diamond"
+    },
+    {
+      "text": "fascinatingly",
+      "id": "fascinatingly",
+      "class": "hexagon"
+    },
+    {
+      "text": "bulkheaded",
+      "id": "bulkheaded",
+      "class": "diamond"
+    },
+    {
+      "text": "knightlike playmonger",
+      "id": "knightlike playmonger",
+      "class": "parallelogram"
+    },
+    {
+      "text": "feckful",
+      "id": "feckful",
+      "class": "hexagon"
+    },
+    {
+      "text": "sinuate unchangeable ungolden",
+      "id": "sinuate unchangeable ungolden",
+      "class": "diamond"
+    },
+    {
+      "text": "bitty",
+      "id": "bitty",
+      "class": "parallelogram"
+    },
+    {
+      "text": "oscule",
+      "id": "oscule",
+      "class": "box"
+    },
+    {
+      "text": "eggfruit",
+      "id": "eggfruit",
+      "class": "diamond"
+    },
+    {
+      "text": "bulldogism Dictyotales",
+      "id": "bulldogism Dictyotales",
+      "class": "hexagon"
+    },
+    {
+      "text": "uily periscopism Donacidae",
+      "id": "uily periscopism Donacidae",
+      "class": "diamond"
+    },
+    {
+      "text": "leadingly Maranta tested",
+      "id": "leadingly Maranta tested",
+      "class": "parallelogram"
+    },
+    {
+      "text": "lactam",
+      "id": "lactam",
+      "class": "oval"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "pigeoner undedicate",
+      "head": "ochlocratic",
+      "label": null
+    },
+    {
+      "tail": "ochlocratic",
+      "head": "zamarro",
+      "label": null
+    },
+    {
+      "tail": "zamarro",
+      "head": "ribonucleic",
+      "label": null
+    },
+    {
+      "tail": "ribonucleic",
+      "head": "rectification adenophthalmia",
+      "label": "No"
+    },
+    {
+      "tail": "ribonucleic",
+      "head": "swordsmanship",
+      "label": "No"
+    },
+    {
+      "tail": "rectification adenophthalmia",
+      "head": "fascinatingly",
+      "label": null
+    },
+    {
+      "tail": "fascinatingly",
+      "head": "bulkheaded",
+      "label": null
+    },
+    {
+      "tail": "bulkheaded",
+      "head": "knightlike playmonger",
+      "label": "yes"
+    },
+    {
+      "tail": "bulkheaded",
+      "head": "zamarro",
+      "label": "yes"
+    },
+    {
+      "tail": "knightlike playmonger",
+      "head": "swordsmanship",
+      "label": null
+    },
+    {
+      "tail": "swordsmanship",
+      "head": "feckful",
+      "label": "NO"
+    },
+    {
+      "tail": "swordsmanship",
+      "head": "sinuate unchangeable ungolden",
+      "label": "NO"
+    },
+    {
+      "tail": "feckful",
+      "head": "bitty",
+      "label": null
+    },
+    {
+      "tail": "bitty",
+      "head": "oscule",
+      "label": null
+    },
+    {
+      "tail": "oscule",
+      "head": "eggfruit",
+      "label": null
+    },
+    {
+      "tail": "eggfruit",
+      "head": "sinuate unchangeable ungolden",
+      "label": "Yes"
+    },
+    {
+      "tail": "eggfruit",
+      "head": "knightlike playmonger",
+      "label": "Yes"
+    },
+    {
+      "tail": "sinuate unchangeable ungolden",
+      "head": "bulldogism Dictyotales",
+      "label": "NO"
+    },
+    {
+      "tail": "sinuate unchangeable ungolden",
+      "head": "rectification adenophthalmia",
+      "label": "NO"
+    },
+    {
+      "tail": "bulldogism Dictyotales",
+      "head": "uily periscopism Donacidae",
+      "label": null
+    },
+    {
+      "tail": "uily periscopism Donacidae",
+      "head": "leadingly Maranta tested",
+      "label": "YES"
+    },
+    {
+      "tail": "uily periscopism Donacidae",
+      "head": "lactam",
+      "label": "YES"
+    },
+    {
+      "tail": "leadingly Maranta tested",
+      "head": "lactam",
+      "label": null
+    }
+  ]
+}

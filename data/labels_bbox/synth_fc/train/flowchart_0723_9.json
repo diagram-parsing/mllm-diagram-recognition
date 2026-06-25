@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "unvaccinated",
+      "id": "unvaccinated",
+      "class": "oval",
+      "bbox": [
+        31,
+        5,
+        113,
+        57
+      ]
+    },
+    {
+      "text": "Locarnist derivately",
+      "id": "Locarnist derivately",
+      "class": "parallelogram",
+      "bbox": [
+        5,
+        115,
+        139,
+        189
+      ]
+    },
+    {
+      "text": "mediastinum katalyst",
+      "id": "mediastinum katalyst",
+      "class": "document",
+      "bbox": [
+        26,
+        200,
+        118,
+        248
+      ]
+    },
+    {
+      "text": "apractic",
+      "id": "apractic",
+      "class": "hexagon",
+      "bbox": [
+        33,
+        291,
+        111,
+        351
+      ]
+    },
+    {
+      "text": "protonephridial",
+      "id": "protonephridial",
+      "class": "diamond",
+      "bbox": [
+        176,
+        7,
+        349,
+        55
+      ]
+    },
+    {
+      "text": "termage",
+      "id": "termage",
+      "class": "parallelogram",
+      "bbox": [
+        199,
+        104,
+        332,
+        152
+      ]
+    },
+    {
+      "text": "mildewy blackbirding quaternio",
+      "id": "mildewy blackbirding quaternio",
+      "class": "hexagon",
+      "bbox": [
+        184,
+        170,
+        346,
+        230
+      ]
+    },
+    {
+      "text": "myocolpitis",
+      "id": "myocolpitis",
+      "class": "diamond",
+      "bbox": [
+        193,
+        297,
+        337,
+        345
+      ]
+    },
+    {
+      "text": "attaint",
+      "id": "attaint",
+      "class": "circle",
+      "bbox": [
+        227,
+        356,
+        303,
+        426
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unvaccinated",
+      "head": "Locarnist derivately",
+      "label": null,
+      "bbox": [
+        67,
+        57,
+        77,
+        113
+      ]
+    },
+    {
+      "tail": "Locarnist derivately",
+      "head": "mediastinum katalyst",
+      "label": null,
+      "bbox": [
+        67,
+        186,
+        77,
+        199
+      ]
+    },
+    {
+      "tail": "mediastinum katalyst",
+      "head": "apractic",
+      "label": null,
+      "bbox": [
+        67,
+        248,
+        77,
+        289
+      ]
+    },
+    {
+      "tail": "apractic",
+      "head": "protonephridial",
+      "label": null,
+      "bbox": [
+        106,
+        20,
+        198,
+        330
+      ]
+    },
+    {
+      "tail": "protonephridial",
+      "head": "termage",
+      "label": "No",
+      "bbox": [
+        260,
+        56,
+        270,
+        102
+      ]
+    },
+    {
+      "tail": "protonephridial",
+      "head": "apractic",
+      "label": "No",
+      "bbox": [
+        108,
+        40,
+        207,
+        318
+      ]
+    },
+    {
+      "tail": "termage",
+      "head": "mildewy blackbirding quaternio",
+      "label": null,
+      "bbox": [
+        260,
+        152,
+        270,
+        168
+      ]
+    },
+    {
+      "tail": "mildewy blackbirding quaternio",
+      "head": "myocolpitis",
+      "label": null,
+      "bbox": [
+        236,
+        231,
+        246,
+        303
+      ]
+    },
+    {
+      "tail": "myocolpitis",
+      "head": "attaint",
+      "label": "yes",
+      "bbox": [
+        260,
+        340,
+        270,
+        354
+      ]
+    },
+    {
+      "tail": "myocolpitis",
+      "head": "mildewy blackbirding quaternio",
+      "label": "yes",
+      "bbox": [
+        285,
+        232,
+        294,
+        305
+      ]
+    }
+  ]
+}

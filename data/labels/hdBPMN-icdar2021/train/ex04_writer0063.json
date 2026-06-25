@@ -1,0 +1,196 @@
+{
+  "nodes": [
+    {
+      "text": "request received",
+      "id": "request received",
+      "class": "event"
+    },
+    {
+      "text": "retrieve file",
+      "id": "retrieve file",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_1",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "check compliance with premises",
+      "id": "check compliance with premises",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "parallelGateway_2",
+      "class": "parallelGateway"
+    },
+    {
+      "text": "check acceptance for filing",
+      "id": "check acceptance for filing",
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "allocate hearing date",
+      "id": "allocate hearing date",
+      "class": "task"
+    },
+    {
+      "text": "process complete",
+      "id": "process complete",
+      "class": "event"
+    },
+    {
+      "text": "produce fees notice",
+      "id": "produce fees notice",
+      "class": "task"
+    },
+    {
+      "text": "file for promises",
+      "id": "file for promises",
+      "class": "dataObject"
+    },
+    {
+      "text": "request",
+      "id": "request",
+      "class": "dataObject"
+    },
+    {
+      "text": "fees notice",
+      "id": "fees notice",
+      "class": "dataObject"
+    },
+    {
+      "text": "fees paid",
+      "id": "fees paid",
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "fees paid",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "produce fees notice",
+      "class": "sequenceFlow",
+      "label": "fees not paid"
+    },
+    {
+      "tail": "allocate hearing date",
+      "head": "process complete",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "allocate hearing date",
+      "class": "sequenceFlow",
+      "label": "fees paid"
+    },
+    {
+      "tail": "parallelGateway_2",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check acceptance for filing",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check acceptance for filing",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "check compliance with premises",
+      "head": "parallelGateway_2",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "parallelGateway_1",
+      "head": "check compliance with premises",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieve file",
+      "head": "parallelGateway_1",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "request received",
+      "head": "retrieve file",
+      "class": "sequenceFlow",
+      "label": null
+    },
+    {
+      "tail": "retrieve file",
+      "head": "file for promises",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "file for promises",
+      "head": "check compliance with premises",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "request",
+      "head": "check acceptance for filing",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "produce fees notice",
+      "head": "fees notice",
+      "class": "dataAssociation",
+      "label": null
+    },
+    {
+      "tail": "produce fees notice",
+      "head": "owner",
+      "class": "messageFlow",
+      "label": "fees notice"
+    },
+    {
+      "tail": "owner",
+      "head": "fees paid",
+      "class": "messageFlow",
+      "label": null
+    },
+    {
+      "tail": "owner",
+      "head": "request received",
+      "class": "messageFlow",
+      "label": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "tribunal",
+      "nodes": [],
+      "class": "pool"
+    },
+    {
+      "name": "owner",
+      "nodes": [],
+      "class": "pool"
+    }
+  ]
+}

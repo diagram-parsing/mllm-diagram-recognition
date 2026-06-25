@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "text": "iliotrochanteric ophthalmoleuc",
+      "id": "iliotrochanteric ophthalmoleuc",
+      "class": "ellipse"
+    },
+    {
+      "text": "serrulate bromate grossulariou",
+      "id": "serrulate bromate grossulariou",
+      "class": "hexagon"
+    },
+    {
+      "text": "plaintiveness",
+      "id": "plaintiveness",
+      "class": "hexagon"
+    },
+    {
+      "text": "Amblycephalidae",
+      "id": "Amblycephalidae",
+      "class": "diamond"
+    },
+    {
+      "text": "tressure",
+      "id": "tressure",
+      "class": "hexagon"
+    },
+    {
+      "text": "ossification",
+      "id": "ossification",
+      "class": "ellipse"
+    },
+    {
+      "text": "nonrequisition skeletony bronc",
+      "id": "nonrequisition skeletony bronc",
+      "class": "diamond"
+    },
+    {
+      "text": "Capricorn isocryme",
+      "id": "Capricorn isocryme",
+      "class": "hexagon"
+    },
+    {
+      "text": "equidimensional invaluable",
+      "id": "equidimensional invaluable",
+      "class": "document"
+    },
+    {
+      "text": "leafed",
+      "id": "leafed",
+      "class": "diamond"
+    },
+    {
+      "text": "chromatosis",
+      "id": "chromatosis",
+      "class": "parallelogram"
+    },
+    {
+      "text": "rattlebrain cornbin",
+      "id": "rattlebrain cornbin",
+      "class": "diamond"
+    },
+    {
+      "text": "tireroom dentonasal",
+      "id": "tireroom dentonasal",
+      "class": "parallelogram"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "iliotrochanteric ophthalmoleuc",
+      "head": "serrulate bromate grossulariou",
+      "label": null
+    },
+    {
+      "tail": "serrulate bromate grossulariou",
+      "head": "plaintiveness",
+      "label": null
+    },
+    {
+      "tail": "plaintiveness",
+      "head": "Amblycephalidae",
+      "label": null
+    },
+    {
+      "tail": "Amblycephalidae",
+      "head": "tressure",
+      "label": "YES"
+    },
+    {
+      "tail": "Amblycephalidae",
+      "head": "ossification",
+      "label": "YES"
+    },
+    {
+      "tail": "tressure",
+      "head": "nonrequisition skeletony bronc",
+      "label": null
+    },
+    {
+      "tail": "nonrequisition skeletony bronc",
+      "head": "Capricorn isocryme",
+      "label": "No"
+    },
+    {
+      "tail": "nonrequisition skeletony bronc",
+      "head": "equidimensional invaluable",
+      "label": "No"
+    },
+    {
+      "tail": "Capricorn isocryme",
+      "head": "leafed",
+      "label": null
+    },
+    {
+      "tail": "leafed",
+      "head": "equidimensional invaluable",
+      "label": "YES"
+    },
+    {
+      "tail": "leafed",
+      "head": "chromatosis",
+      "label": "YES"
+    },
+    {
+      "tail": "equidimensional invaluable",
+      "head": "rattlebrain cornbin",
+      "label": null
+    },
+    {
+      "tail": "rattlebrain cornbin",
+      "head": "chromatosis",
+      "label": "Yes"
+    },
+    {
+      "tail": "rattlebrain cornbin",
+      "head": "leafed",
+      "label": "Yes"
+    },
+    {
+      "tail": "chromatosis",
+      "head": "tireroom dentonasal",
+      "label": null
+    },
+    {
+      "tail": "tireroom dentonasal",
+      "head": "ossification",
+      "label": null
+    }
+  ]
+}

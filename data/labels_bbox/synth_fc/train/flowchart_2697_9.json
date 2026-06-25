@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "text": "snecket",
+      "id": "snecket",
+      "class": "circle",
+      "bbox": [
+        96,
+        5,
+        183,
+        92
+      ]
+    },
+    {
+      "text": "synesis",
+      "id": "synesis",
+      "class": "document",
+      "bbox": [
+        90,
+        118,
+        189,
+        176
+      ]
+    },
+    {
+      "text": "jangly",
+      "id": "jangly",
+      "class": "diamond",
+      "bbox": [
+        85,
+        221,
+        194,
+        269
+      ]
+    },
+    {
+      "text": "photophane",
+      "id": "photophane",
+      "class": "box",
+      "bbox": [
+        104,
+        319,
+        176,
+        367
+      ]
+    },
+    {
+      "text": "holstered",
+      "id": "holstered",
+      "class": "diamond",
+      "bbox": [
+        80,
+        417,
+        199,
+        460
+      ]
+    },
+    {
+      "text": "protoforaminifer pave",
+      "id": "protoforaminifer pave",
+      "class": "parallelogram",
+      "bbox": [
+        257,
+        12,
+        410,
+        85
+      ]
+    },
+    {
+      "text": "cockneyize",
+      "id": "cockneyize",
+      "class": "parallelogram",
+      "bbox": [
+        264,
+        123,
+        408,
+        171
+      ]
+    },
+    {
+      "text": "melancholily acapu",
+      "id": "melancholily acapu",
+      "class": "hexagon",
+      "bbox": [
+        274,
+        215,
+        398,
+        275
+      ]
+    },
+    {
+      "text": "metaphysicous cystogram",
+      "id": "metaphysicous cystogram",
+      "class": "circle",
+      "bbox": [
+        278,
+        286,
+        393,
+        401
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "snecket",
+      "head": "synesis",
+      "label": null,
+      "bbox": [
+        135,
+        92,
+        144,
+        118
+      ]
+    },
+    {
+      "tail": "synesis",
+      "head": "jangly",
+      "label": null,
+      "bbox": [
+        135,
+        176,
+        144,
+        221
+      ]
+    },
+    {
+      "tail": "jangly",
+      "head": "photophane",
+      "label": "YES",
+      "bbox": [
+        135,
+        269,
+        144,
+        319
+      ]
+    },
+    {
+      "tail": "jangly",
+      "head": "snecket",
+      "label": "YES",
+      "bbox": [
+        64,
+        59,
+        99,
+        245
+      ]
+    },
+    {
+      "tail": "photophane",
+      "head": "holstered",
+      "label": null,
+      "bbox": [
+        135,
+        367,
+        144,
+        417
+      ]
+    },
+    {
+      "tail": "holstered",
+      "head": "protoforaminifer pave",
+      "label": "No",
+      "bbox": [
+        199,
+        45,
+        273,
+        441
+      ]
+    },
+    {
+      "tail": "holstered",
+      "head": "snecket",
+      "label": "No",
+      "bbox": [
+        48,
+        30,
+        99,
+        441
+      ]
+    },
+    {
+      "tail": "protoforaminifer pave",
+      "head": "cockneyize",
+      "label": null,
+      "bbox": [
+        331,
+        85,
+        341,
+        123
+      ]
+    },
+    {
+      "tail": "cockneyize",
+      "head": "melancholily acapu",
+      "label": null,
+      "bbox": [
+        331,
+        171,
+        341,
+        215
+      ]
+    },
+    {
+      "tail": "melancholily acapu",
+      "head": "metaphysicous cystogram",
+      "label": null,
+      "bbox": [
+        331,
+        272,
+        341,
+        286
+      ]
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "text": "unsanction",
+      "id": "unsanction",
+      "class": "ellipse",
+      "bbox": [
+        8,
+        5,
+        104,
+        53
+      ]
+    },
+    {
+      "text": "mislest",
+      "id": "mislest",
+      "class": "hexagon",
+      "bbox": [
+        9,
+        79,
+        103,
+        127
+      ]
+    },
+    {
+      "text": "pseudoviperine",
+      "id": "pseudoviperine",
+      "class": "hexagon",
+      "bbox": [
+        5,
+        171,
+        107,
+        230
+      ]
+    },
+    {
+      "text": "ember",
+      "id": "ember",
+      "class": "box",
+      "bbox": [
+        20,
+        250,
+        92,
+        298
+      ]
+    },
+    {
+      "text": "Archidamus",
+      "id": "Archidamus",
+      "class": "box",
+      "bbox": [
+        13,
+        372,
+        100,
+        420
+      ]
+    },
+    {
+      "text": "extratarsal redberry",
+      "id": "extratarsal redberry",
+      "class": "box",
+      "bbox": [
+        20,
+        470,
+        92,
+        514
+      ]
+    },
+    {
+      "text": "empathic autodyne Vickie",
+      "id": "empathic autodyne Vickie",
+      "class": "diamond",
+      "bbox": [
+        168,
+        66,
+        330,
+        139
+      ]
+    },
+    {
+      "text": "Delphinoidea",
+      "id": "Delphinoidea",
+      "class": "diamond",
+      "bbox": [
+        171,
+        176,
+        330,
+        224
+      ]
+    },
+    {
+      "text": "magnetoelectrical",
+      "id": "magnetoelectrical",
+      "class": "document",
+      "bbox": [
+        193,
+        297,
+        311,
+        349
+      ]
+    },
+    {
+      "text": "shyster boringness",
+      "id": "shyster boringness",
+      "class": "diamond",
+      "bbox": [
+        185,
+        359,
+        318,
+        433
+      ]
+    },
+    {
+      "text": "restlessly acquainted",
+      "id": "restlessly acquainted",
+      "class": "oval",
+      "bbox": [
+        202,
+        468,
+        302,
+        514
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "unsanction",
+      "head": "mislest",
+      "label": null,
+      "bbox": [
+        52,
+        53,
+        61,
+        78
+      ]
+    },
+    {
+      "tail": "mislest",
+      "head": "pseudoviperine",
+      "label": null,
+      "bbox": [
+        36,
+        126,
+        45,
+        169
+      ]
+    },
+    {
+      "tail": "pseudoviperine",
+      "head": "ember",
+      "label": null,
+      "bbox": [
+        52,
+        230,
+        61,
+        249
+      ]
+    },
+    {
+      "tail": "ember",
+      "head": "Archidamus",
+      "label": null,
+      "bbox": [
+        52,
+        297,
+        61,
+        371
+      ]
+    },
+    {
+      "tail": "Archidamus",
+      "head": "extratarsal redberry",
+      "label": null,
+      "bbox": [
+        52,
+        420,
+        61,
+        469
+      ]
+    },
+    {
+      "tail": "extratarsal redberry",
+      "head": "empathic autodyne Vickie",
+      "label": null,
+      "bbox": [
+        92,
+        127,
+        234,
+        494
+      ]
+    },
+    {
+      "tail": "empathic autodyne Vickie",
+      "head": "Delphinoidea",
+      "label": "yes",
+      "bbox": [
+        247,
+        139,
+        256,
+        175
+      ]
+    },
+    {
+      "tail": "empathic autodyne Vickie",
+      "head": "pseudoviperine",
+      "label": "yes",
+      "bbox": [
+        67,
+        136,
+        244,
+        169
+      ]
+    },
+    {
+      "tail": "Delphinoidea",
+      "head": "magnetoelectrical",
+      "label": "no",
+      "bbox": [
+        247,
+        224,
+        256,
+        296
+      ]
+    },
+    {
+      "tail": "Delphinoidea",
+      "head": "mislest",
+      "label": "no",
+      "bbox": [
+        103,
+        99,
+        174,
+        201
+      ]
+    },
+    {
+      "tail": "magnetoelectrical",
+      "head": "shyster boringness",
+      "label": null,
+      "bbox": [
+        247,
+        345,
+        256,
+        358
+      ]
+    },
+    {
+      "tail": "shyster boringness",
+      "head": "restlessly acquainted",
+      "label": "YES",
+      "bbox": [
+        247,
+        432,
+        256,
+        467
+      ]
+    },
+    {
+      "tail": "shyster boringness",
+      "head": "Delphinoidea",
+      "label": "YES",
+      "bbox": [
+        174,
+        204,
+        240,
+        366
+      ]
+    }
+  ]
+}

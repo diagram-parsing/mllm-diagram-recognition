@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "text": "amniotic",
+      "id": "amniotic",
+      "class": "circle",
+      "bbox": [
+        52,
+        5,
+        134,
+        87
+      ]
+    },
+    {
+      "text": "raser unurgent",
+      "id": "raser unurgent",
+      "class": "box",
+      "bbox": [
+        57,
+        98,
+        129,
+        146
+      ]
+    },
+    {
+      "text": "antimoniate",
+      "id": "antimoniate",
+      "class": "document",
+      "bbox": [
+        34,
+        190,
+        151,
+        256
+      ]
+    },
+    {
+      "text": "schemata",
+      "id": "schemata",
+      "class": "diamond",
+      "bbox": [
+        45,
+        287,
+        140,
+        361
+      ]
+    },
+    {
+      "text": "trey Siphunculata Comitium",
+      "id": "trey Siphunculata Comitium",
+      "class": "diamond",
+      "bbox": [
+        5,
+        388,
+        180,
+        462
+      ]
+    },
+    {
+      "text": "macrosepalous leptoprosopy",
+      "id": "macrosepalous leptoprosopy",
+      "class": "parallelogram",
+      "bbox": [
+        200,
+        186,
+        386,
+        260
+      ]
+    },
+    {
+      "text": "uninfringed Gothlander heterad",
+      "id": "uninfringed Gothlander heterad",
+      "class": "diamond",
+      "bbox": [
+        198,
+        85,
+        386,
+        159
+      ]
+    },
+    {
+      "text": "speckly",
+      "id": "speckly",
+      "class": "oval",
+      "bbox": [
+        250,
+        603,
+        339,
+        645
+      ]
+    },
+    {
+      "text": "myocardiogram",
+      "id": "myocardiogram",
+      "class": "hexagon",
+      "bbox": [
+        246,
+        294,
+        343,
+        354
+      ]
+    },
+    {
+      "text": "Novanglian",
+      "id": "Novanglian",
+      "class": "hexagon",
+      "bbox": [
+        236,
+        376,
+        354,
+        424
+      ]
+    },
+    {
+      "text": "regrate",
+      "id": "regrate",
+      "class": "hexagon",
+      "bbox": [
+        247,
+        502,
+        342,
+        550
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "tail": "amniotic",
+      "head": "raser unurgent",
+      "label": null,
+      "bbox": [
+        88,
+        83,
+        97,
+        96
+      ]
+    },
+    {
+      "tail": "raser unurgent",
+      "head": "antimoniate",
+      "label": null,
+      "bbox": [
+        88,
+        146,
+        97,
+        189
+      ]
+    },
+    {
+      "tail": "antimoniate",
+      "head": "schemata",
+      "label": null,
+      "bbox": [
+        88,
+        256,
+        97,
+        285
+      ]
+    },
+    {
+      "tail": "schemata",
+      "head": "trey Siphunculata Comitium",
+      "label": "yes",
+      "bbox": [
+        88,
+        361,
+        97,
+        386
+      ]
+    },
+    {
+      "tail": "schemata",
+      "head": "macrosepalous leptoprosopy",
+      "label": "yes",
+      "bbox": [
+        129,
+        262,
+        222,
+        315
+      ]
+    },
+    {
+      "tail": "trey Siphunculata Comitium",
+      "head": "uninfringed Gothlander heterad",
+      "label": "YES",
+      "bbox": [
+        166,
+        146,
+        271,
+        419
+      ]
+    },
+    {
+      "tail": "trey Siphunculata Comitium",
+      "head": "speckly",
+      "label": "YES",
+      "bbox": [
+        93,
+        462,
+        249,
+        631
+      ]
+    },
+    {
+      "tail": "uninfringed Gothlander heterad",
+      "head": "macrosepalous leptoprosopy",
+      "label": "NO",
+      "bbox": [
+        290,
+        159,
+        299,
+        185
+      ]
+    },
+    {
+      "tail": "uninfringed Gothlander heterad",
+      "head": "myocardiogram",
+      "label": "NO",
+      "bbox": [
+        189,
+        155,
+        282,
+        339
+      ]
+    },
+    {
+      "tail": "macrosepalous leptoprosopy",
+      "head": "myocardiogram",
+      "label": null,
+      "bbox": [
+        290,
+        260,
+        299,
+        292
+      ]
+    },
+    {
+      "tail": "myocardiogram",
+      "head": "Novanglian",
+      "label": null,
+      "bbox": [
+        290,
+        354,
+        299,
+        374
+      ]
+    },
+    {
+      "tail": "Novanglian",
+      "head": "regrate",
+      "label": null,
+      "bbox": [
+        290,
+        424,
+        299,
+        500
+      ]
+    },
+    {
+      "tail": "regrate",
+      "head": "speckly",
+      "label": null,
+      "bbox": [
+        290,
+        550,
+        299,
+        601
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "nodes": [
+    {
+      "text": "application received",
+      "id": "application received",
+      "bbox": [
+        102,
+        300,
+        174,
+        355
+      ],
+      "class": "event"
+    },
+    {
+      "text": "evaluate application",
+      "id": "evaluate application",
+      "bbox": [
+        318,
+        268,
+        485,
+        366
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        624,
+        269,
+        713,
+        359
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "notify customer",
+      "id": "notify customer",
+      "bbox": [
+        814,
+        510,
+        966,
+        600
+      ],
+      "class": "task"
+    },
+    {
+      "text": "application rejected",
+      "id": "application rejected",
+      "bbox": [
+        1127,
+        526,
+        1168,
+        577
+      ],
+      "class": "event"
+    },
+    {
+      "text": "create new bank account",
+      "id": "create new bank account",
+      "bbox": [
+        768,
+        63,
+        951,
+        164
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send welcome pack",
+      "id": "send welcome pack",
+      "bbox": [
+        1070,
+        58,
+        1233,
+        146
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send bank card",
+      "id": "send bank card",
+      "bbox": [
+        1349,
+        66,
+        1503,
+        146
+      ],
+      "class": "task"
+    },
+    {
+      "text": "send PIN number",
+      "id": "send PIN number",
+      "bbox": [
+        1361,
+        264,
+        1509,
+        330
+      ],
+      "class": "task"
+    },
+    {
+      "text": "account created",
+      "id": "account created",
+      "bbox": [
+        1388,
+        429,
+        1448,
+        470
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "send PIN number",
+      "head": "account created",
+      "class": "sequenceFlow",
+      "bbox": [
+        1408,
+        330,
+        1439,
+        422
+      ],
+      "label": null
+    },
+    {
+      "tail": "send bank card",
+      "head": "send PIN number",
+      "class": "sequenceFlow",
+      "bbox": [
+        1412,
+        146,
+        1443,
+        265
+      ],
+      "label": null
+    },
+    {
+      "tail": "send welcome pack",
+      "head": "send bank card",
+      "class": "sequenceFlow",
+      "bbox": [
+        1233,
+        94,
+        1351,
+        125
+      ],
+      "label": null
+    },
+    {
+      "tail": "create new bank account",
+      "head": "send welcome pack",
+      "class": "sequenceFlow",
+      "bbox": [
+        951,
+        96,
+        1071,
+        126
+      ],
+      "label": null
+    },
+    {
+      "tail": "notify customer",
+      "head": "application rejected",
+      "class": "sequenceFlow",
+      "bbox": [
+        966,
+        551,
+        1133,
+        582
+      ],
+      "label": null
+    },
+    {
+      "tail": "evaluate application",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        485,
+        303,
+        628,
+        334
+      ],
+      "label": null
+    },
+    {
+      "tail": "application received",
+      "head": "evaluate application",
+      "class": "sequenceFlow",
+      "bbox": [
+        174,
+        316,
+        319,
+        346
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "notify customer",
+      "class": "sequenceFlow",
+      "bbox": [
+        686,
+        341,
+        815,
+        546
+      ],
+      "label": "application rejected"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "create new bank account",
+      "class": "sequenceFlow",
+      "bbox": [
+        649,
+        110,
+        769,
+        275
+      ],
+      "label": "application approved"
+    }
+  ],
+  "groups": []
+}

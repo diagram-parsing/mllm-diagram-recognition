@@ -1,0 +1,380 @@
+{
+  "nodes": [
+    {
+      "text": "Purchase order received",
+      "id": "Purchase order received",
+      "bbox": [
+        549.12,
+        840.96,
+        82.56,
+        71.04
+      ],
+      "class": "messageEvent"
+    },
+    {
+      "text": "attach order to pinboard",
+      "id": "attach order to pinboard",
+      "bbox": [
+        2469.12,
+        1111.68,
+        253.44,
+        138.24
+      ],
+      "class": "task"
+    },
+    {
+      "text": "print out order",
+      "id": "print out order",
+      "bbox": [
+        1940.352,
+        790.771,
+        255.091,
+        136.051
+      ],
+      "class": "task"
+    },
+    {
+      "text": "write down order note",
+      "id": "write down order note",
+      "bbox": [
+        1489.709,
+        1130.88,
+        280.589,
+        119.04
+      ],
+      "class": "task"
+    },
+    {
+      "text": "confirm order",
+      "id": "confirm order",
+      "bbox": [
+        1557.715,
+        467.654,
+        212.563,
+        102.029
+      ],
+      "class": "task"
+    },
+    {
+      "text": "check kind of Transmitten",
+      "id": "check kind of Transmitten",
+      "bbox": [
+        868.992,
+        814.579,
+        323.117,
+        136.051
+      ],
+      "class": "task"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_1",
+      "bbox": [
+        1336.32,
+        817.92,
+        80.64,
+        120.96
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_2",
+      "bbox": [
+        1722.24,
+        806.4,
+        67.2,
+        115.2
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": null,
+      "id": "exclusiveGateway_3",
+      "bbox": [
+        2305.92,
+        1117.44,
+        84.48,
+        138.24
+      ],
+      "class": "exclusiveGateway"
+    },
+    {
+      "text": "order attached",
+      "id": "order attached",
+      "bbox": [
+        2824.32,
+        1165.44,
+        46.08,
+        51.84
+      ],
+      "class": "event"
+    }
+  ],
+  "relations": [
+    {
+      "tail": "attach order to pinboard",
+      "head": "order attached",
+      "class": "sequenceFlow",
+      "bbox": [
+        2722.56,
+        1165.44,
+        105.6,
+        59.52
+      ],
+      "kps": [
+        2722.56,
+        1190.4,
+        2.0,
+        2826.24,
+        1198.08,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_3",
+      "head": "attach order to pinboard",
+      "class": "sequenceFlow",
+      "bbox": [
+        2386.56,
+        1152.96,
+        84.48,
+        59.52
+      ],
+      "kps": [
+        2386.56,
+        1180.8,
+        2.0,
+        2469.12,
+        1182.72,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "write down order note",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        1770.24,
+        1156.8,
+        541.44,
+        59.52
+      ],
+      "kps": [
+        1770.24,
+        1190.4,
+        2.0,
+        2309.76,
+        1180.8,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "print out order",
+      "head": "exclusiveGateway_3",
+      "class": "sequenceFlow",
+      "bbox": [
+        2196.48,
+        875.52,
+        157.44,
+        249.6
+      ],
+      "kps": [
+        2196.48,
+        875.52,
+        2.0,
+        2352.0,
+        1123.2,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_2",
+      "head": "print out order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1789.44,
+        835.2,
+        153.6,
+        59.52
+      ],
+      "kps": [
+        1789.44,
+        864.0,
+        2.0,
+        1941.12,
+        864.0,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1723.2,
+        570.24,
+        59.52,
+        249.6
+      ],
+      "kps": [
+        1729.92,
+        570.24,
+        2.0,
+        1762.56,
+        817.92,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "exclusiveGateway_2",
+      "class": "sequenceFlow",
+      "bbox": [
+        1407.36,
+        859.2,
+        328.32,
+        59.52
+      ],
+      "kps": [
+        1407.36,
+        892.8,
+        2.0,
+        1733.76,
+        883.2,
+        2.0
+      ],
+      "label": "website"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "write down order note",
+      "class": "sequenceFlow",
+      "bbox": [
+        1378.56,
+        936.96,
+        113.28,
+        243.84
+      ],
+      "kps": [
+        1378.56,
+        936.96,
+        2.0,
+        1489.92,
+        1178.88,
+        2.0
+      ],
+      "label": "phone"
+    },
+    {
+      "tail": "exclusiveGateway_1",
+      "head": "confirm order",
+      "class": "sequenceFlow",
+      "bbox": [
+        1384.32,
+        516.48,
+        174.72,
+        316.8
+      ],
+      "kps": [
+        1384.32,
+        831.36,
+        2.0,
+        1557.12,
+        516.48,
+        2.0
+      ],
+      "label": "Lieferando"
+    },
+    {
+      "tail": "check kind of Transmitten",
+      "head": "exclusiveGateway_1",
+      "class": "sequenceFlow",
+      "bbox": [
+        1192.32,
+        854.4,
+        147.84,
+        59.52
+      ],
+      "kps": [
+        1192.32,
+        883.2,
+        2.0,
+        1338.24,
+        883.2,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "Purchase order received",
+      "head": "check kind of Transmitten",
+      "class": "sequenceFlow",
+      "bbox": [
+        631.68,
+        848.64,
+        240,
+        59.52
+      ],
+      "kps": [
+        631.68,
+        877.44,
+        2.0,
+        869.76,
+        877.44,
+        2.0
+      ],
+      "label": null
+    },
+    {
+      "tail": "confirm order",
+      "head": "Lieferando",
+      "class": "messageFlow",
+      "bbox": [
+        1656.461,
+        263.597,
+        59.52,
+        205.978
+      ],
+      "kps": [
+        1685.261,
+        467.654,
+        2.0,
+        1685.261,
+        263.597,
+        2.0
+      ],
+      "label": "order confirmation"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Pizzeria",
+      "nodes": [],
+      "bbox": [
+        52.723,
+        416.64,
+        2923.277,
+        918.317
+      ],
+      "class": "pool"
+    },
+    {
+      "name": "Lieferando",
+      "nodes": [],
+      "bbox": [
+        52.723,
+        127.546,
+        2873.971,
+        136.051
+      ],
+      "class": "pool"
+    }
+  ]
+}
